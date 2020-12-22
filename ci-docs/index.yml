@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: Dynamics 365 Customer Insights 的帮助中心
+  author: m-hartmann
+  description: 查找相关文章以开始了解帮助内容。
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405233"
+title: Dynamics 365 Customer Insights 文档
+summary: 查找有用资源以开始了解有关 Customer Insights 的特性和功能。
+landingContent:
+- title: 了解 Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Customer Insights 概述
+      url: overview.md
+    - text: 发布计划
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: 访问您的环境
+      url: https://home.ci.ai.dynamics.com/
+- title: 访问群体见解入门
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: 注册试用版
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: 新增功能
+      url: audience-insights/whats-new-audience-insights.md
+    - text: 访问群体见解文档
+      url: audience-insights/index.yml
+- title: 获取联系
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 加入 Dynamics 365 社区
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: 分享您的观点
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: 报告问题
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: 访问群体见解教程
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 创建新环境
+      url: audience-insights/home.md
+    - text: 创建统一的客户配置文件
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: 使用应用
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: 导出访问群体见解数据
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 设置导出目标
+      url: audience-insights/export-destinations.md
+    - text: Dynamics 365 应用中的客户卡
+      url: audience-insights/customer-card-add-in.md
+    - text: Power BI 连接器
+      url: audience-insights/export-power-bi.md
+- title: 管理访问群体见解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 配置系统
+      url: audience-insights/system.md
+    - text: 定义用户权限
+      url: audience-insights/permissions.md
+    - text: 管理多个环境
+      url: audience-insights/manage-environments.md
+- title: 关于参与见解（预览）
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 功能概述
+      url: engagement-insights/overview.md
+    - text: 条款和概念
+      url: engagement-insights/glossary.md
+    - text: 开始
+      url: engagement-insights/get-started.md
+- title: 参与见解的报表（预览）
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 查看报表
+      url: engagement-insights/view-reports.md
+    - text: 创建自定义报表
+      url: engagement-insights/custom-reports.md
+    - text: 查看统一配置文件报表
+      url: engagement-insights/profile-reports.md
+- title: 参与见解的事件（预览）
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 创建细化的事件
+      url: engagement-insights/refined-events.md
+    - text: 导出事件
+      url: engagement-insights/export-events.md
+    - text: 删除和导出个人数据
+      url: engagement-insights/delete-export-personal-data.md
