@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2cf01029ef6b64fe566022d09ce65bca3603189c
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643897"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269273"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model 中的实体架构
 
@@ -45,3 +45,6 @@ ms.locfileid: "4643897"
 您可以在 [Common Data Model 实体导航器中](https://microsoft.github.io/CDM/)查看实体。 选择 **从 GitHub 加载!** 按钮，然后导航到 **foundationCommon** > **crmCommon** > **解决方案** > **customerInsights**，可在这里找到 Customer Insights 实体及其定义的列表。
 > [!div class="mx-imgBorder"]
 > ![CDM 实体导航器，其中显示了 CustomerActivity 实体](media/CDM-entity-navigator.png "CDM 实体导航器，其中显示了 CustomerActivity 实体")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

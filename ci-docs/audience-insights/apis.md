@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 5a03e916676800afdd8692da865a1060952d5c4f
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689119"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267513"
 ---
 # <a name="work-with-customer-insights-apis"></a>使用 Customer Insights API
 
@@ -140,3 +140,6 @@ HTTP 响应将立即显示在下方。
 
 1. 响应可能为类型 `object`，因为该方法可以返回多个类型（例如 `IList<InstanceInfo>` 和 `ApiErrorResult`）。 若要检查返回类型，您可以针对该操作安全地将对象强制转换为在 [API 详细信息页面](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)上指定的响应类型。    
    如果需要有关请求的详细信息，请使用 **http 消息方法** 访问原始响应对象。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

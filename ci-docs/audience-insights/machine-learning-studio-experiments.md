@@ -4,17 +4,17 @@ description: 在 Dynamics 365 Customer Insights 中使用机器学习工作室�
 ms.date: 12/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: ameetj
 manager: shellyha
-ms.openlocfilehash: 556b6810db0ed2733a3f086291757bd85b77e371
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4669007"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270193"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>基于 Azure 机器学习工作室（经典）使用模型
 
@@ -171,3 +171,6 @@ Dynamics 365 Customer Insights 中的统一数据是构建可生成其他业务�
 若要在 Customer Insights 中使用这些预测，您需要 **导出** 预测以及客户 ID。 [将其导出到相同的 Azure Blob 存储位置](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs)，您要向该位置导出元数据。 可以将预测性 Web 服务计划为定期运行，然后更新分数。
 
 自定义模型生成的数据可用于进一步扩充您的客户数据。 有关详细信息，请参阅[自定义机器学习模型](custom-models.md)。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

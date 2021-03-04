@@ -1,20 +1,20 @@
 ---
 title: 通过 Microsoft Graph 扩充客户配置文件
 description: 使用 Microsoft Graph 中的专用数据和品牌与兴趣相似性扩展客户数据。
-ms.date: 09/28/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 4f93a2337815f76b98185ecb3755e08443031748
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 2c95369c778f592bc1460799aca0fa8cff813d68
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405192"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269319"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
 
@@ -35,16 +35,21 @@ ms.locfileid: "4405192"
 
 [详细了解 Microsoft Graph](https://docs.microsoft.com/graph/overview)。
 
-## <a name="affinity-score-and-confidence"></a>相似度分数和置信度
+## <a name="affinity-level-and-score"></a>相似性级别和分数
 
-**相似度分数** 的计算基准为 100 点，100 表示细分的品牌或兴趣相似度最高。
+在每个扩充的客户配置文件中，我们将提供两个相关值 - 相似性级别和相似性分数。 这些值有助于确定与其他人口统计客户细分相比，该配置文件的人口统计客户细分中品牌或兴趣的相似性强度。
 
-**相似置信度** 也按 100 点的等级计算。 其指示细分的品牌或兴趣相似性置信度级别。 置信度级别基于细分大小和细分粒度。 细分大小由我们拥有的给定细分数据量决定。 细分粒度由配置文件中的属性（年龄、性别、位置）数量决定。
+*相似性级别* 由四个级别组成，并且 *相似性分数* 是根据映射到相似性级别的100 分等级计算的。
 
-我们不标准化您的数据集的分数。 因此，您可能无法查看自己的数据集的所有可能的相似度分数值。 例如，您的数据中没有相似性分数为 100 的未扩充配置文件。 如果给定品牌或兴趣评分为 100 的人口统计细分中没有客户，则可以。
 
-> [!TIP]
-> 使用相似度分数[创建细分](segments.md)时，请在决定正确的分数阈值之前，检查数据集的相似度分数分配。 例如，可以认为在特定品牌或兴趣的最高相似度分数只有 25 的数据集中，相似度分数 10 相当大。
+|相似性级别 |关联分数  |
+|---------|---------|
+|非常高     | 85-100       |
+|高     | 70-84        |
+|中     | 35-69        |
+|低     | 1-34        |
+
+取决于想要用于测量相似性的粒度，您可以使用相似性级别或分数。 相似性分数使您可以更精确地进行控制。
 
 ## <a name="supported-countriesregions"></a>支持的国家/地区
 
@@ -54,17 +59,13 @@ ms.locfileid: "4405192"
 
 ### <a name="implications-related-to-country-selection"></a>与国家/地区选择相关的含义
 
-- 当[选择您自己的品牌](#define-your-brands-or-interests)时，我们将根据所选国家/地区提供建议。
+- 在[选择自己的品牌](#define-your-brands-or-interests)时，系统会基于所选的国家/地区提供建议。
 
-- 在[选择行业](#define-your-brands-or-interests)时，我们将根据所选的国家/地区确定最相关的品牌或兴趣。
+- 在[选择行业](#define-your-brands-or-interests)时，您将基于所选国家/地区获得最相关的品牌或兴趣。
 
-- 在[映射您的字段](#map-your-fields)时，如果未映射“国家/地区”字段，我们将使用来自所选国家/地区的 Microsoft Graph 数据来扩充您的客户资料。 我们还将使用该选择来扩充没有可用国家/地区数据的客户资料。
-
-- 在[扩充资料](#refresh-enrichment)时，我们将扩充我们有其所选品牌和兴趣的可用 Microsoft Graph 数据的所有客户资料，包括不在所选国家/地区的资料。 例如，如果您选择了德国，如果我们有美国的选定品牌和兴趣的可用 Microsoft Graph 数据，我们将扩充位于美国的资料。
+- 在[扩充配置文件](#refresh-enrichment)时，我们将扩充获取所选品牌和兴趣数据所针对的所有客户配置文件。 包括未在选定国家/地区中的配置文件。 例如，如果您选择了德国，如果我们有美国的选定品牌和兴趣的可用 Microsoft Graph 数据，我们将扩充位于美国的资料。
 
 ## <a name="configure-enrichment"></a>配置扩充
-
-配置品牌或兴趣扩充包括以下两个步骤：
 
 ### <a name="define-your-brands-or-interests"></a>定义您的品牌或兴趣
 
@@ -75,9 +76,19 @@ ms.locfileid: "4405192"
 
 若要添加品牌或兴趣，请在输入区域中输入该品牌或兴趣，以获取基于匹配项的建议。 如果我们未列出您在查找的品牌或兴趣，请使用 **建议** 链接向我们发送反馈。
 
+### <a name="review-enrichment-preferences"></a>查看扩充首选项
+
+查看默认扩充首选项，然后根据需要更新这些首选项。
+
+:::image type="content" source="media/affinity-enrichment-preferences.png" alt-text="扩充首选项窗口的屏幕截图。":::
+
+### <a name="select-entity-to-enrich"></a>选择要扩充的实体
+
+选择 **扩充的实体** 并选择要使用 Microsoft Graph 的公司数据扩充的数据集。 您可以选择客户实体以扩充所有客户配置文件，也可以选择客户细分实体以仅扩充该客户细分中包含的客户配置文件。
+
 ### <a name="map-your-fields"></a>映射字段
 
-将您的统一客户实体中的字段映射到至少两个属性，以定义您希望我们用于扩充您的客户数据的人口统计细分。 选择 **编辑** 以定义字段的映射，然后在完成后选择 **应用**。 选择 **保存** 完成字段映射。
+映射来自统一客户实体的字段，以定义希望系统用于扩充客户数据的人口统计客户细分。 映射国家/地区，并至少映射“出生日期”或“性别”属性。 此外，必须至少映射一个市/县（和省/市/自治区）或邮政编码。 选择 **编辑** 以定义字段的映射，然后在完成后选择 **应用**。 选择 **保存** 完成字段映射。
 
 支持下列格式和值，值不区分大小写：
 
@@ -120,3 +131,6 @@ ms.locfileid: "4405192"
 ## <a name="next-steps"></a>后续步骤
 
 基于扩充的客户数据构建。 创建[细分](segments.md)、[度量](measures.md)，甚至[导出数据](export-destinations.md)，以便为客户提供个性化的体验。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

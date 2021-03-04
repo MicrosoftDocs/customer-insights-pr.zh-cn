@@ -1,7 +1,7 @@
 ---
 title: 访问群体见解中的系统配置
 description: 了解 Dynamics 365 Customer Insights 访问群体见解功能中的系统设置。
-ms.date: 06/02/2020
+ms.date: 02/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,25 +9,30 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: nimagen
 manager: shellyha
-ms.openlocfilehash: 7dd72e6512cd87ac70235d21667399298408db21
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: a9c9e258da49b8f452550794539962d48b856829
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405224"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267329"
 ---
 # <a name="system-configuration"></a>系统配置
 
-**系统** 页面包括四个选项卡：**状态**、**计划**、**关于** 和 **常规**。
+**系统** 页包含以下选项卡：
+- [状态](#status-tab)
+- [Schedule](#schedule-tab)
+- [API 使用情况](#api-usage-tab)
+- [关于](#about-tab)
+- [常规](#general-tab)
 
 > [!div class="mx-imgBorder"]
 > ![“系统”页面](media/system-tabs.png "“系统”页面")
 
 ## <a name="status-tab"></a>“状态”选项卡
 
-**状态** 选项卡用于跟踪数据引入、数据导出和若干重要产品流程的进度。 查看此选项卡上的信息以确保活动流程的完整性。
+使用 **状态** 选项卡，可以跟踪数据引入、数据导出和几个其他重要产品流程的进度。 查看此选项卡上的信息以确保活动流程的完整性。
 
-此选项卡包含 **数据源**、**系统进程** 和 **数据准备** 的状态表。 每个表都会跟踪任务及其相应实体的 **名称**、任务最近运行的 **状态**，以及 **上次更新** 的时间。
+此选项卡包括的表中具有各个流程的状态和处理信息。 每个表都会跟踪任务及其相应实体的 **名称**、任务最近运行的 **状态**，以及 **上次更新** 的时间。
 
 通过选择任务名称查看任务最近几次运行的详细信息。
 
@@ -40,7 +45,7 @@ ms.locfileid: "4405224"
 - **已跳过：** 已跳过任务。 此任务依赖的一个或多个下游流程出现故障或已跳过。
 - **失败：** 处理任务失败。
 - **已取消：** 用户在完成之前取消了处理。
-- **已排队：** 处理已排队，将在完成所有下游任务后开始。 有关详细信息，请参阅[刷新策略](#refresh-policies)。
+- **已排队**：处理已排队，所有上游任务完成后将开始处理。 有关详细信息，请参阅[刷新策略](#refresh-policies)。
 
 ### <a name="refresh-policies"></a>刷新策略
 
@@ -89,4 +94,17 @@ ms.locfileid: "4405224"
 
 ## <a name="api-usage-tab"></a>“API 使用情况”选项卡
 
-查找有关实时 API 使用情况的详细信息，并查看在给定时间范围内发生的事件。 有关详细信息，请参阅[实时数据引入](real-time-data-ingestion.md)。
+查找有关实时 API 使用情况的详细信息，并查看在给定的期限内发生了哪些事件。 您可以在 **选择期限** 下拉菜单中选择期限。 
+
+**API 使用情况** 包含三个部分： 
+- **API 调用** - 一个显示选定期限内的 API 调用总数的图表。
+
+- **数据传输** - 一个显示在选定期限内通过 API 传输的数据量的图表。
+
+-  **操作** - 一个表，其中包含每个可用 API 操作的行以及操作使用情况的详细信息。 您可以选择操作名称以转到 [API 参考](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)。
+
+   使用[实时数据引用](real-time-data-ingestion.md)的操作包含带有双筒望远镜符号的按钮，用于查看实时 API 使用情况。 选择该按钮以打开一个侧窗格，其中包含在当前环境中使用实时 API 的使用情况详细信息。   
+   使用 **实时 API 使用情况** 窗格中的 **分组依据** 框，以选择如何最好地呈现实时交互。 您可以按 API 方法、实体限定名称（引入的实体）、创建者（事件来源）、结果（成功或失败）或错误代码对数据进行分组。 数据以历史图表和表格形式提供。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

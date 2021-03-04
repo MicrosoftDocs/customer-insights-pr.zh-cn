@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405226"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269858"
 ---
 # <a name="relationships-between-entities"></a>实体之间的关系
 
@@ -28,8 +28,8 @@ ms.locfileid: "4405226"
 > ![关系创建](media/relationships-entities-merge.png "关系创建")
 
 - 创建了客户实体与联系人实体之间的 ***CustomerToContact* 关系**。 客户实体获取了键字段 **Contact_contactId**，以便关联到联系人实体键字段 **contactId**。
-- 创建了客户实体与帐户实体之间的 **_CustomerToAccount_ 关系**。 客户实体获取了键字段 **Account_accountId**，以便关联到帐户实体键字段 **accountId**。
-- 创建了客户实体与 WebAccount 实体之间的 **_CustomerToWebAccount_ 关系**。 客户实体获取了键字段 **WebAccount_webaccountId**，以便关联到 WebAccount 实体键字段 **webaccountId**。
+- 创建了客户实体与帐户实体之间的 ***CustomerToAccount* 关系**。 客户实体获取了键字段 **Account_accountId**，以便关联到帐户实体键字段 **accountId**。
+- 创建了客户实体与 WebAccount 实体之间的 ***CustomerToWebAccount* 关系**。 客户实体获取了键字段 **WebAccount_webaccountId**，以便关联到 WebAccount 实体键字段 **webaccountId**。
 
 ## <a name="create-a-relationship"></a>创建关系
 
@@ -69,3 +69,6 @@ ms.locfileid: "4405226"
 ## <a name="next-step"></a>下一步
 
 系统关系和自定义关系用于基于多个数据源创建不再分散的细分。 有关详细信息，请参阅[细分](segments.md)。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

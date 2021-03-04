@@ -1,20 +1,20 @@
 ---
 title: 通过第三方扩充 Experian 扩充
 description: 有关 Experian 第三方扩充的常规信息。
-ms.date: 09/17/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 60fc49734e54740e83b47a7028be216a0eb81e49
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: baf3cc58a233b70c48fb94ac4a543d162f91bdd1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668792"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269549"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>使用来自 Experian 的人口统计数据扩充客户配置文件（预览）
 
@@ -41,7 +41,9 @@ Experian 是消费者和企业信用报告以及营销服务的全球领导者�
 
 ## <a name="map-your-fields"></a>映射字段
 
-1. 选择 **添加数据**，然后从 **名称和地址**、**电子邮件** 或 **电话** 中选择密钥标识符，发送给 Experian 进行身份解析。
+1.  选择 **添加数据** 并选择要使用 Experian 的统计信息数据扩充的 **客户数据集**。 您可以选择 **客户** 实体以扩充所有客户配置文件，也可以选择客户细分实体以仅扩充该客户细分中包含的客户配置文件。
+
+1. 从 **姓名和地址**、**电子邮件** 或 **电话** 中选择您的密钥标识符，以发送给 Experian 进行身份解析。
 
    > [!TIP]
    > 发送给 Experian 的密钥标识符属性越多，匹配率会越高。
@@ -52,8 +54,8 @@ Experian 是消费者和企业信用报告以及营销服务的全球领导者�
 
 1.  选择 **保存** 完成字段映射。
 
-   > [!div class="mx-imgBorder"]
-   > ![Experian 字段映射](media/experian-field-mapping.png "Experian 字段映射")
+    > [!div class="mx-imgBorder"]
+    > ![Experian 字段映射](media/experian-field-mapping.png "Experian 字段映射")
 
 ## <a name="enrichment-results"></a>扩充结果
 
@@ -71,3 +73,6 @@ Experian 是消费者和企业信用报告以及营销服务的全球领导者�
 
 当您启用 Dynamics 365 Customer Insights 将数据传输到 Experian 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将在您的指导下传输此类数据，但您有责任确保 Experian 满足您可能需遵守的任何隐私或安全义务。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
 您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

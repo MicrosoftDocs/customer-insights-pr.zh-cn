@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1c95cba333266a73959de0a3afe1c8677130a3ec
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: dcef8f0547009e1488f1abe91423fa0bf5b061de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667218"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267421"
 ---
 # <a name="customer-activities"></a>客户活动
 
@@ -44,13 +44,13 @@ ms.locfileid: "4667218"
 
 1. 在 **设置关系** 部分中，配置详细信息以将活动数据连接到其相应客户。
 
-   > [!div class="mx-imgBorder"]
-   > ![定义实体关系](media/activities-entities-define.png "定义实体关系")
-
     - **活动实体字段**：在活动实体中选择将用于建立与其他实体之间的关系的字段。
     - **客户实体**：选择您的活动实体将与其具有关系的相应源客户实体。 只能与数据统一过程中使用的源客户实体关联。
     - **客户实体字段**：此字段显示映射过程中选择的源客户实体的主键。 源客户实体中的主键字段用于建立与活动实体之间的关系。
     - **名称**：如果此活动实体与所选源客户实体之间的关系已存在，则关系名称处于只读模式。 如果不存在此类关系，则使用此处提供的名称创建新关系。
+   
+   > [!div class="mx-imgBorder"]
+   > ![定义实体关系](media/activities-entities-define.png "定义实体关系")
 
 1. 选择 **保存** 以应用您所做的更改。
 
@@ -82,3 +82,6 @@ ms.locfileid: "4667218"
 3. 选择 **删除** 图标。
 
 4. 确认删除。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

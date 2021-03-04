@@ -5,16 +5,16 @@ ms.date: 09/21/2020
 ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405185"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477077"
 ---
 # <a name="connector-for-power-bi-preview"></a>适用于 Power BI 的连接器（预览版）
 
@@ -31,7 +31,7 @@ ms.locfileid: "4405185"
 
 1. 选择 **查看更多**，然后搜索 **Dynamics 365 Customer Insights**
 
-1. 选择结果，然后选择 **连接**。
+1. 选择 **连接**。
 
 1. 使用用于 Customer Insights 的相同组织帐户 **登录**，然后选择 **连接**。
    > [!NOTE]
@@ -52,3 +52,22 @@ Power BI 的 Customer Insights 连接器用于最多包含 100 万个客户配�
 ### <a name="work-with-a-subset-of-data"></a>使用数据的子集
 
 考虑使用数据的子集。 例如，您可以创建[客户细分](segments.md)，而不是将所有客户记录导出到 Power BI。
+
+## <a name="troubleshooting"></a>疑难解答​​
+
+### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Customer Insights 环境不会显示在 Power BI 中
+
+在访问群体见解中的两个相同实体之间定义了多种[关系](relationships.md)的环境在 Power BI 连接器中不可用。
+
+您可以标识和删除重复的关系。
+
+1. 在访问群体见解中，在 Power BI 中缺少的环境上转到 **数据** > **关系**。
+2. 识别重复关系：
+   - 检查是否在这两个实体之间定义了多种关系。
+   - 检查在统一过程中都包含的两个实体之间是否创建了关系。 在统一过程中包括的所有实体之间定义了隐式关系。
+3. 删除标识的任何重复关系。
+
+在删除重复的关系后，尝试再次配置 Power BI 连接器。 该环境现在应该可用了。
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

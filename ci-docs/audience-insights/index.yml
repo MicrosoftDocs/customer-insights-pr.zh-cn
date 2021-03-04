@@ -6,16 +6,16 @@ metadata:
   description: 具有访问群体见解的关键链接的帮助中心。
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4405216"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745710"
 landingContent:
 - title: 关于访问群体见解
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: 社区网站
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: 引入数据源
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 添加数据源
-      url: data-sources.md
-    - text: 增量刷新
-      url: incremental-refresh-data-sources.md
-    - text: 了解实体
-      url: entities.md
 - title: 统一数据
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 映射
-      url: map-entities.md
-    - text: 匹配项
-      url: match-entities.md
-    - text: 合并​​
-      url: merge-entities.md
-- title: 优化客户配置文件
+    - text: 数据源概述
+      url: data-sources.md
+    - text: 统一概述
+      url: data-unification.md
+    - text: 了解实体
+      url: entities.md
+- title: 扩充并优化数据
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: 扩充客户配置文件
+      url: enrichment-hub.md
     - text: 配置关系
       url: relationships.md
     - text: 列出客户活动
       url: activities.md
-    - text: 引入您自己的机器学习模型
-      url: custom-models.md
+- title: 获取见解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 创建客户细分
+      url: segments.md
+    - text: 创建度量
+      url: measures.md
+    - text: 通过预测来填写数据
+      url: predictions.md
 - title: 导出客户数据
   linkLists:
   - linkListType: how-to-guide

@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 9032d99357db86e66588eda544211a5f8eb2f23b
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 63caa2ebdd7d637d14ac9c9cc7972095803aee2f
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643852"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477122"
 ---
-# <a name="export-destinations-preview"></a>导出的目标(预览)
+# <a name="export-destinations-preview-overview"></a>导出目标（预览版）概述
 
 **导出目标** 页显示您已设置的要将数据导出到的所有位置。 您还可以为导出添加新目标。 此外，它将显示导出当前可用选项。 获取简要概述、说明，并了解使用每个扩展性选项可以做什么。 将统一的配置文件、度量和细分导出到与您的业务相关的受支持的应用。
 
@@ -27,10 +27,13 @@ ms.locfileid: "4643852"
 - [Power Automate 连接器](export-power-automate.md)
 - [Power Apps 连接器](export-power-apps.md)
 - [Power BI 连接器](export-power-bi.md)
+- [Autopilot](export-autopilot.md)
 - [DotDigital](export-dotdigital.md)
 - [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [Azure Blob 存储](export-azure-blob-storage.md)
+- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
+- [SendGrid](export-sendgrid.md)
 - [LiveRamp&reg; 连接器](export-liveramp.md)
 - [Microsoft Teams 的机器人](export-teams-bot.md)
 - [Mailchimp](export-mailchimp.md)
@@ -95,3 +98,6 @@ ms.locfileid: "4643852"
 2. 此下拉菜单中选择 **删除**。
 
 3. 选择确认屏幕中的 **删除** 确认删除。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

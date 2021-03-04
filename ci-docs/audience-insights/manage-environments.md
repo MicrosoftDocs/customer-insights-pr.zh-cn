@@ -1,20 +1,20 @@
 ---
 title: 创建和管理环境
 description: 了解如何注册服务以及如何管理环境。
-ms.date: 11/10/2020
+ms.date: 02/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: nimagen
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 010336445d0825a7ff82d1b7a65702fc12245788
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 744f0bcbf5d2700363180f44e38d6dee9bf5df63
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644122"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270101"
 ---
 # <a name="manage-environments"></a>管理环境
 
@@ -46,9 +46,9 @@ ms.locfileid: "4644122"
 
 创建环境：
 
-1. 在应用标题中选择 **设置** 符号。
+1. 选择应用标题中的 **环境** 选择器。
 
-1. 选择 **新建环境**。
+1. 选择 **新建**。
 
    > [!div class="mx-imgBorder"]
    > ![环境设置](media/environment-settings-dialog.png)
@@ -75,7 +75,14 @@ ms.locfileid: "4644122"
 
    - 对于 Azure Data Lake Storage Gen2 选项，在进行身份验证时，您可以在基于资源的选项和基于订阅的选项之间进行选择。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 **容器** 名称不可更改，该名称将为“customerinsights”。
    
-   - 如果要使用 [预测](predictions.md)，请在 **使用预测** 下的 **服务器地址** 字段中输入 Common Data Service 实例 URL。
+   - 如果您希望使用 [预测](predictions.md)或基于 Microsoft Dataverse 配置与应用程序和解决方案的数据共享，请在 **配置与 Microsoft Dataverse 的数据共享并启用其他功能** 下面提供 Microsoft Dataverse 环境 URL。 选择 **启用数据共享** 以与 Microsoft Dataverse 托管 Data Lake 共享 Customer Insights 输出数据。
+
+     > [!NOTE]
+     > - 将所有数据保存到自己的 Azure Data Lake Storage 时，当前不支持与 Microsoft Dataverse 托管 Data Lake 共享数据。
+     > - 启用与 Microsoft Dataverse 托管 Data Lake 的数据共享时，当前不支持[预测实体中缺少的值 ](predictions.md)。
+
+     > [!div class="mx-imgBorder"]
+     > ![用于启用与 Microsoft Dataverse 的数据共享的配置选项](media/Datasharing-with-DataverseMDL.png)
 
    当您运行流程（例如数据引入或客户细分创建）时，将在上述指定的存储帐户中创建相应的文件夹。 数据文件和 model.json 文件将根据您运行的流程创建并添加到相应的子文件夹中。
 
@@ -120,11 +127,11 @@ ms.locfileid: "4644122"
 
 您可以编辑现有环境的某些详细信息。
 
-1. 转到 **管理** > **系统** > **关于**。
+1.  选择应用标题中的 **环境** 选择器。
 
-2. 选择 **编辑**。
+2.  选择 **编辑** 图标。
 
-3. 您可以更新环境的 **显示名称**，但不能更改 **区域** 或 **类型**。
+3. 在 **编辑环境** 框中，可以更新环境的 **显示名称**，但不能更改 **区域** 或 **类型**。
 
 4. 如果环境配置为在Azure Data Lake Storage Gen2 中存储数据，则可以更新 **帐户密钥**。 但是，您不能更改 **帐户名称** 或 **容器** 名称。
 
@@ -132,19 +139,27 @@ ms.locfileid: "4644122"
 
 ## <a name="reset-an-existing-environment"></a>重置现有环境
 
-如果您想要删除所有配置并删除引入的数据，可以将环境重置为空状态。
+作为管理员，如果您想要删除所有配置并删除引入的数据，可以将环境重置为空状态。
 
-1.  转到 **管理** > **系统** > **关于**。
+1.  选择应用标题中的 **环境** 选择器。 
 
-2.  选择 **重置**。 
+2.  选择要重置的环境，并选择省略号 **...**。 
 
-3.  若要确认删除，请输入环境名称并选择 **重置**。
+3. 选择 **重置** 选项。 
+
+4.  若要确认删除，请输入环境名称并选择 **重置**。
+
+## <a name="delete-an-existing-environment-available-only-for-admins"></a>删除现有环境（仅适用于管理员）
+
+作为管理员，您可以删除您管理的环境。
+
+1.  选择应用标题中的 **环境** 选择器。
+
+2.  选择要重置的环境，并选择省略号 **...**。 
+
+3. 选择 **删除** 选项。 
+
+4.  若要确认删除，请输入环境名称，然后选择 **删除**。
 
 
-## <a name="delete-an-existing-environment"></a>删除现有环境
-
-1. 转到 **管理** > **系统** > **关于**。
-
-1. 选择 **删除**。
-
-1. 若要确认删除，请输入环境名称，然后选择 **删除**。
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

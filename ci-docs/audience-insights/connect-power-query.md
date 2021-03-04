@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8a170cc5b64b4b383501021232c83948e838a0e2
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405204"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267757"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>连接到 Power Query 数据源
 
@@ -28,7 +28,10 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 
 1. 选择 **导入数据** 方法，然后选择 **下一步**。
 
-1. 为数据源提供 **名称**，然后选择 **下一步** 创建数据源。
+1. 为数据源提供 **名称**，然后选择 **下一步** 创建数据源。 名称准则： 
+   - 以字母开头。
+   - 只能使用字母和数字。 不允许使用特殊字符和空格。
+   - 使用 3 至 64 个字符。
 
 1. 选择一个[可用连接器](#available-power-query-data-sources), 在本例中，我们选择 **文本/CSV** 连接器。
 
@@ -77,3 +80,6 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 3. 按照 [创建新数据源](#create-a-new-data-source)一节中所述，在 **Power Query - 编辑查询** 对话框中应用更改和转换。
 
 4. 完成编辑后，在 Power Query 中选择 **保存** 保存所作的更改。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

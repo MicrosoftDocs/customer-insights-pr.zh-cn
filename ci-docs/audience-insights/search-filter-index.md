@@ -1,7 +1,7 @@
 ---
 title: 搜索和筛选客户配置文件
 description: 快速查找有关统一的客户配置文件的信息和筛选出指定的属性。
-ms.date: 04/16/2020
+ms.date: 01/19/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1842ad333c23bb155abc89167556163ae79cdd34
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d675738c43cbdb5f9b478d53d6124db38ba3004d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405227"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270055"
 ---
 # <a name="customer-profiles-search--filter-index"></a>客户配置文件：搜索和筛选索引
 
@@ -28,14 +28,6 @@ ms.locfileid: "4405227"
 如果这是您首次以管理员身份定义可搜索属性，您需要首先定义索引字段。 建议您选择用户在 **客户** 页中可用于搜索和筛选客户的所有属性。 只能指定您在数据统一过程中创建的客户配置文件实体内的已有属性。
 
 1. 打开 **客户** 页，然后选择 **搜索和筛选索引**。
-
-> [!NOTE]
-> 我们根据“地图”页面上定义的以下语义类型，针对“客户”实体中的可用属性创建默认搜索索引配置。
-> - 人员的名、姓、中间名、全名
-> - 组织名称
-> - 电子邮件地址
-> - 电话号码
-> - 位置信息
 
 2. 选择 **+ 添加** 以指定索引字段。
 
@@ -65,3 +57,10 @@ ms.locfileid: "4405227"
 2. 选择 **保存** 以应用您所做的更改。
 
 3. 准备好应用设置时，选择 **运行**。
+
+## <a name="next-steps"></a>后续步骤
+
+转到 **客户** 页以搜索客户配置文件，或使用索引字段来查看所有客户配置文件的子集。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

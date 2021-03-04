@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c25cfbf3808fc1534b54d2d834f1c63ff4c9fe0a
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: 6b73aa93ec1a98f2b8d20d02e88bc6304f887078
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667083"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269457"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -51,3 +51,6 @@ ms.locfileid: "4667083"
 - **删除** 扩充。
 
 您可以通过在列表中选择扩充来一次运行或停用多个扩充。 查看和编辑选项不能用作批量操作，一次只能对一个扩充执行。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

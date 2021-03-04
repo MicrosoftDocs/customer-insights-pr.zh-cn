@@ -5,16 +5,16 @@ ms.date: 09/18/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 925b53260e7c633e17d7f172d2dd2d581e982e10
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667128"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269181"
 ---
 # <a name="connector-for-azure-blob-storage-preview"></a>Azure Blob 存储的连接器（预览版）
 
@@ -47,4 +47,7 @@ ms.locfileid: "4667128"
 
 ## <a name="export-the-data"></a>导出数据
 
-可以[根据需要导出数据](/export-destinations.md#export-data-on-demand)。 导出也会在每次[计划刷新](system.md#schedule-tab)时运行。
+可以[根据需要导出数据](export-destinations.md#export-data-on-demand)。 导出也会在每次[计划刷新](system.md#schedule-tab)时运行。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

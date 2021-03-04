@@ -4,16 +4,16 @@ description: 在 Dynamics 365 Customer Insights 中使用来自 Azure 机器学�
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668892"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267223"
 ---
 # <a name="custom-machine-learning-models"></a>自定义机器学习模型
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668892"
 
 1. 在 **包含您的模型的 Web 服务** 下拉菜单中选择机器学习工作室（经典）Web 服务或 Azure 机器学习管道。 然后选择 **下一步**。
    - 了解有关[在机器学习工作室（经典）中发布 Web 服务](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)的详细信息
-   - 了解有关[使用设计器在 Azure 机器学习中发布管道](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)或使用 [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 进行发布的详细信息。 
-     > [!NOTE]
-     > 您的管道必须在[管道终结点](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)下发布。
+   - 了解有关[使用设计器在 Azure 机器学习中发布管道](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)或使用 [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 进行发布的详细信息。 您的管道必须在[管道终结点](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)下发布。
 
 1. 对于每个 **Web 服务输入**，从访问群体见解中选择匹配的 **实体**，然后选择 **下一步**。
+   > [!NOTE]
+   > 自定义模型工作流将应用启发式方法，根据字段的名称和数据类型将 Web 服务输入字段映射到实体属性。 如果 Web 服务字段无法映射到实体，将出现错误。
 
    > [!div class="mx-imgBorder"]
    > ![配置工作流](media/intelligence-screen2-updated.png "配置工作流")
-
+   
 1. 在 **模型输出参数** 步骤中，设置以下属性：
    - 机器学习工作室（经典）
       1. 输入您希望 Web 服务输出结果流入的输出 **实体名称**。
@@ -112,3 +112,6 @@ ms.locfileid: "4668892"
 1. 选择 **删除**，然后确认删除。
 
 将删除您的工作流。 您创建工作流时创建的 [实体](entities.md)将保留，并且可以从 **实体** 页查看。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

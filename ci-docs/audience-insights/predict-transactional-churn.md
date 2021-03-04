@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644392"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268307"
 ---
 # <a name="transactional-churn-prediction-preview"></a>交易流失预测（预览）
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644392"
 1. 或者，针对 **客户活动** 选择 **添加数据**。 选择提供客户活动信息的实体，如先决条件中所述。
 
 1. 将语义字段映射到客户活动实体中的属性，然后选择 **下一步**。 有关字段的说明，请查看[先决条件](#prerequisites)。
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="映射交易数据的客户字段。":::
 
 1. 选择与您要配置的客户活动类型匹配的活动类型。 选择 **新建**，然后选择可用活动类型或创建新类型。
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644392"
 1. 选择要删除的预测旁边的垂直省略号。
 
 1. 选择 **删除**。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

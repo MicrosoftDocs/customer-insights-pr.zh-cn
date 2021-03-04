@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689164"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270269"
 ---
 # <a name="real-time-data-ingestion-preview"></a>实时数据引入（预览版）
 
@@ -83,6 +83,7 @@ ms.locfileid: "4689164"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>了解遥测时的实时使用情况
 
-概要介绍实时 API 的请求量以及有关系统可能遇到的问题的信息。 通过转到 **管理** > **系统** > **API 使用情况**，您可以[访问实时遥测](system.md#api-usage-tab)。 在 **操作** 表中，使用实时方法的 API 操作行包含一个用于查看实时 API 使用情况的按钮。 该按钮显示有望远镜符号。 选择该按钮以打开一个侧窗格，其中包含在当前环境中使用实时 API 的使用情况详细信息。
+概要介绍实时 API 的请求量以及有关系统可能遇到的问题的信息。 您可以[访问实时遥测数据](system.md#api-usage-tab)。 
 
-使用 **分组依据** 选择器可以选择如何在最近 24 小时到最近 30 天之间的时间线上最好地呈现您的实时互动。 您可以按 API 方法、实体限定名称（引入的实体）、创建者（事件来源）、结果（成功或失败）或错误代码对数据进行分组。 数据以历史图表和表格形式提供。
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

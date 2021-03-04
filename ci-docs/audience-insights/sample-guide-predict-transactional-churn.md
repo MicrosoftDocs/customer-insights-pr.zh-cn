@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643582"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269779"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>交易流失预测（预览）示例指南
 
@@ -49,7 +49,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
    [!div class="mx-imgBorder"]
    ![将 DoB 转换为日期](media/ecommerce-dob-date.PNG "将出生日期转换为日期")
 
-1. 在右侧窗格上的“名称”字段中，将您的数据源从 **Query** 重命名为 **eCommerceContacts**
+1. 在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommerceContacts**
 
 1. 保存数据源。
 
@@ -66,7 +66,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
    - **PurchasedOn**：日期/时间
    - **TotalPrice**：货币
    
-1. 在右侧窗格上的“名称”字段中，将您的数据源从 **Query** 重命名为 **eCommercePurchases**。
+1. 在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommercePurchases**。
 
 1. 保存数据源。
 
@@ -84,7 +84,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
    - **RewardsPoints**：整数
    - **CreatedOn**：日期/时间
 
-1. 在右侧窗格上的“名称”字段中，将您的数据源从 **Query** 重命名为 **loyCustomers**。
+1. 在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **loyCustomers**。
 
 1. 保存数据源。
 
@@ -166,7 +166,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
      :::image type="content" source="media/model-levers.PNG" alt-text="选择模型方法预测时间范围和流失定义。":::
 
-1. 选择 **购买历史记录（必需）**，然后针对订阅历史记录选择 **添加数据**。
+1. 选择 **购买历史记录（必需）**，然后针对购买历史记录选择 **添加数据**。
 
 1. 添加 **eCommercePurchases：电子商务** 实体，并将电子商务中的字段映射到模型所需的相应字段。
 
@@ -204,3 +204,6 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 现在，您已具有将动态更新的客户细分，可用于确定此订阅业务的高流失风险客户。
 
 有关详细信息，请参阅[创建和管理客户细分](segments.md)。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

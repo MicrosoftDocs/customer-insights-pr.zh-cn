@@ -3,26 +3,34 @@ title: 产品概述
 author: m-hartmann
 description: 获取 Dynamics 365 Customer Insights 及其功能的概述。
 ms.author: mhart
-ms.date: 10/16/2020
+ms.date: 02/16/2021
 ms.service: customer-insights
-ms.topic: conceptual
-ms.openlocfilehash: e0b46652a087f9d16d9f2f5c6e955761be8da208
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.topic: overview
+ms.manager: shellyha
+ms.openlocfilehash: 815220b7dd2fcd4df31c0cff8f6b55eb3a055669
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405234"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476938"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的产品概述
 
-Dynamics 365 Customer Insights 是 Microsoft 的客户数据平台 (CDP) 的一部分，可帮助您提供个性化的客户体验。 统一跨各种来源的客户数据以获得单一的客户视图。 
+Dynamics 365 Customer Insights 是 Microsoft 的客户数据平台 (CDP) 的一部分，可帮助您提供个性化的客户体验。 利用该平台的功能，可以深入了解您的客户是谁，以及他们如何通过您的平台互动。 统一跨多种来源的客户数据以获得单一的客户视图。
 
-转换为以客户为中心的组织，其中市场营销、销售和服务专业人员具有个性化体验所需的见解。 更深入地了解客户。 连接来自各种事务、行为和观察源的数据以建立 360 度的客户视图。 使用设计用于提供可采取行动的见解的 CDP，以更快显示结果。 
 
-使用快速入门模板派生现成的见解。 使用分析解决方案大规模地快速生成、测试和部署自定义 AI/ML 模型。 激活实时见解以驱动操作。 保持对客户数据的完全控制，以确保最高级别的数据治理和合规性。 
+- [访问群体见解](audience-insights/overview.md)可帮助您将业务转换为以客户为中心的组织。 市场营销、销售和服务专业人员具有个性化体验所需的见解。 连接交易、行为和观察来源的数据以创建 360 度客户视图。 使用设计用于提供可采取行动的见解的 CDP，以更快显示结果。 
 
-有两个主要功能： 
-
-- [受众见解](audience-insights/overview.md)
-- [参与见解（预览）](engagement-insights/index.yml)
+- [通过参与见解（预览版）](engagement-insights/index.yml)，您可以以交互方式了解客户如何在网站、移动应用和已连接的产品上分别和全面使用您的服务和产品。 将行为分析与 Microsoft Dynamics 365 Customer Insights 中的交易、人口统计、调查和其他数据类型合并。 保持对客户数据的完全控制，以确保最高级别的数据治理和合规性。
  
+## <a name="choose-a-capability"></a>选择功能
+
+:::image type="content" source="engagement-insights/media/choose_focus.png" alt-text="可让您导航到访问群体见解或参与见解的 Customer Insights 页面。":::
+
+若要选择功能，请执行以下操作
+
+1. 在导航窗格中，选择 **所有应用 **以打开** 选择焦点** 窗口。
+1. 选择 **立即前往** 以导航到选择的功能。
+
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,20 +1,20 @@
 ---
 title: 将 Customer Insights 数据导出到 Dynamics 365 Marketing
 description: 了解如何配置与 Dynamics 365 Marketing 之间的连接。
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 163387779b64bd78ef08e2d96a5f1c9615062f28
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643762"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269043"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>Dynamics 365 Marketing 的连接器（预览版）
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643762"
 
 ## <a name="prerequisite"></a>先决条件
 
-[使用 Common Data Service 引入的 Dynamics 365 Marketing](connect-power-query.md)的联系人记录。
+- Dynamics 365 Marketing 中必须先存在联系人记录，然后才能从 Customer Insights 中将客户细分导出到 Marketing。 详细了解如何[在 Dynamics 365 Marketing 中使用 Common Data Services](connect-power-query.md)引入联系人。
+
+  > [!NOTE]
+  > 如果将客户细分从受众见解导出到 Marketing，则将不会在 Marketing 实例中创建新的联系人记录。 Marketing 中的联系人记录必须引入到受众见解中，并用作数据源。 在导出客户细分之前，还需要将它们包含在统一客户实体中，以将客户 ID 映射到联系人 ID。
 
 ## <a name="configure-the-connector-for-marketing"></a>配置 Marketing 的连接器
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643762"
 ## <a name="export-the-data"></a>导出数据
 
 可以[根据需要导出数据](export-destinations.md)。 导出也会在每次[计划刷新](system.md#schedule-tab)时运行。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

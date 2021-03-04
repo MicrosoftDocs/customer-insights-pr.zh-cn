@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 24321e9e11f9fd4e800526673726e5146ed33674
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 44f97696ec91dc488dd6a7528e186abb99c8288b
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405188"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269641"
 ---
-# <a name="data-unification"></a>数据统一
+# <a name="data-unification-overview"></a>数据统一概述
 
 在[设置数据源](data-sources.md)后，您可以统一数据。 数据的使用包括三个步骤：**映射**、**匹配** 和 **合并**。
 
@@ -31,3 +31,6 @@ ms.locfileid: "4405188"
 - [设置实体之间的关系](relationships.md)以创建精细的细分
 - [扩充数据](enrichment-hub.md)以深入了解客户
 - 从某些引入的属性[定义活动](activities.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

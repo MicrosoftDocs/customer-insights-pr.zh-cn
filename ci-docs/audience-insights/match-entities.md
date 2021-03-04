@@ -4,17 +4,17 @@ description: 匹配实体以创建统一客户配置文件。
 ms.date: 10/14/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: 78549037f9c9e59329f5423c36eeb058128802c0
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 05afd17b7f1b34f7f24a8fa8cb2dc32c1649d40f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405221"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267467"
 ---
 # <a name="match-entities"></a>匹配实体
 
@@ -22,7 +22,7 @@ ms.locfileid: "4405221"
 
 ## <a name="specify-the-match-order"></a>指定匹配顺序
 
-转到 **统一** > **匹配**，然后选择 **设置顺序** 开始进行匹配阶段。
+转到 **数据** > **统一** > **匹配**，并选择 **设置顺序** 以开始匹配阶段。
 
 每次匹配都会将两个或更多实体统一为一个实体，同时保留每个唯一客户记录。 在下面的示例中，我们选择了三个实体：**ContactCSV: TestData** 是 **主** 实体，**WebAccountCSV: TestData** 是 **实体 2**，**CallRecordSmall: TestData** 是 **实体 3**。 所选内容上面的图演示如何执行匹配顺序。
 
@@ -136,7 +136,7 @@ ms.locfileid: "4405221"
 
 1. 现在，运行匹配流程将根据在删除重复规则中定义的条件对记录进行分组。 对记录进行分组后，将应用合并策略以标识入选记录。
 
-1. 然后，此入选记录会传递到跨实体匹配。
+1. 然后，该入选记录将与非入选记录（例如，备用 ID）一起传递给跨实体匹配，以提高匹配质量。
 
 1. 为始终匹配和永不匹配定义的任何自定义匹配规则将取代删除重复规则。 如果删除重复规则确定匹配的记录，并且将某个自定义匹配规则设置为永不匹配这些记录，则将无法匹配这两个记录。
 
@@ -157,6 +157,17 @@ ms.locfileid: "4405221"
 
 > [!TIP]
 > 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
+
+## <a name="deduplication-output-as-an-entity"></a>实体形式的删除重复输出
+除了会在跨实体匹配过程中创建统一主实体之外，删除重复过程还会为匹配顺序中的每个实体生成一个新实体，以标识删除了重复数据的记录。 这些实体可以与名称为 **Deduplication_Datasource_Entity** 的 **实体** 页面内 **系统** 部分中的 **ConflationMatchPairs:CustomerInsights** 一起找到。
+
+删除重复输出实体包含以下信息：
+- ID/键
+  - 主键字段及其备用 ID 字段。 备用 ID 字段由为一条记录标识的所有备用 ID 组成。
+  - Deduplication_GroupId 字段显示在实体中标识的组或群集，该组或群集根据指定的删除重复字段将所有相似记录归组。 这用于系统处理目的。 如果没有指定手动删除重复规则并且系统定义的删除重复规则适用，则您可能在重复删除输出实体中找不到此字段。
+  - Deduplication_WinnerId：此字段包含标识的组或群集中的获胜者 ID。 如果 Deduplication_WinnerId 与记录的主键值相同，则这意味着该记录是入选记录。
+- 用于定义删除重复规则的字段。
+- “规则”和“分数”字段，分别用于表示所应用的删除重复规则以及匹配算法返回的分数。
 
 ## <a name="review-and-validate-your-matches"></a>预览和验证匹配
 
@@ -200,6 +211,11 @@ ms.locfileid: "4405221"
   > [!div class="mx-imgBorder"]
   > ![复制规则](media/configure-data-duplicate-rule.png "复制规则")
 
+- 用于从匹配过程中排除匹配规则时保留匹配规则的 **停用规则**。
+
+  > [!div class="mx-imgBorder"]
+  > ![停用规则](media/configure-data-deactivate-rule.png "停用规则")
+
 - 通过选择 **编辑** 符号 **编辑规则**。 可以应用以下更改：
 
   - 更改条件的属性：在特定条件行内选择新属性。
@@ -229,6 +245,8 @@ ms.locfileid: "4405221"
     - 实体 2 键：34567
 
    同一个模板文件可以指定多个实体的自定义匹配记录。
+   
+   如果要为实体上的删除重复操作指定自定义匹配，请提供与 Entity1 和 Entity2 相同的实体，并设置不同的主键值。
 
 5. 添加要应用的所有替代项之后，保存模板文件。
 
@@ -250,3 +268,6 @@ ms.locfileid: "4405221"
 ## <a name="next-step"></a>下一步
 
 完成至少一个匹配对的匹配过程后，可以通过浏览 [**合并**](merge-entities.md)主题解决数据中可能的冲突。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

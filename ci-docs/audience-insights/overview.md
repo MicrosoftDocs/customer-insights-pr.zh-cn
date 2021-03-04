@@ -1,30 +1,26 @@
 ---
-title: 访问群体见解功能
-description: Dynamics 365 Customer Insights 访问群体见解功能的概述。
-ms.date: 02/05/2020
+title: Dynamics 365 Customer Insights 访问群体见解概述
+description: Dynamics 365 Customer Insights 访问群体见解概述。
+ms.date: 01/18/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 82763b294484cca4a3982f4ebef6f914a02f5cca
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405214"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476984"
 ---
-# <a name="dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights 访问群体见解功能
+# <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Dynamics 365 Customer Insights 访问群体见解概述
 
-客户体验是所有组织的数字转换目标的核心。 为了在今天的市场上竞争，组织必须在个人层面与客户建立有意义的关系。 成规模地进行有效个性化需要完整、统一的客户视图。
+访问群体见解可帮助您更深入地了解客户。 连接来自各种事务、行为和观察源的数据以建立 360 度的客户视图。 使用这些见解推动以客户为中心的体验和过程。 统一和理解客户数据，并利用数据来获得智能见解和采取行动。
 
-访问群体见解可帮助您更深入地了解客户。 连接来自各种事务、行为和观察源的数据以建立 360 度的客户视图。 使用这些见解推动以客户为中心的体验和过程。
-
-**统一和理解客户数据，并利用数据来获得智能见解和采取行动。**
-
-通过访问群体见解，组织可以：  
+## <a name="main-benefits"></a>主要好处 
 
 - **消除数据孤岛和整合客户数据**
 
@@ -33,15 +29,15 @@ ms.locfileid: "4405214"
 
 - **通过 Microsoft Graph 内包含的受众智能进行充实**
 
-  - 通过合并 Microsoft Graph 内包含的受众智能生成更丰富的客户资料。  
+  - 通过[合并 Microsoft Graph 内包含的访问群体智能](enrichment-microsoft-graph.md)生成更丰富的客户配置文件。  
 
 - **增强业务流程和个性化的客户体验**
 
   - 在渠道之间推动个性化的参与 — 使用已经注入了市场营销、销售和服务专业人士已经在日常使用的业务应用程序中的自带上下文客户见解和度身定制的客户资料卡助力这些专业人士
   - 基于可自定义的资料、业务度量和细分自动化以客户为中心的体验和过程。
-  - 启用和扩展基于 Microsoft Power Platform 生成的业务线体验。 从 PowerApps 中使用功能强大的低代码方法快速生成具有嵌入式见解的应用程序。  
+  - 启用和扩展以 [Microsoft Power Platform](https://powerplatform.microsoft.com/) 为基础建立的业务线体验。 从 PowerApps 中使用功能强大的低代码方法快速生成具有嵌入式见解的应用程序。  
 
-访问群体见解包含适用于以下关键用户的功能：
+## <a name="key-audiences"></a>主要访问群体
 
 - **数据分析员/管理员**
 
@@ -58,5 +54,8 @@ ms.locfileid: "4405214"
 
 - **业务分析员：**
 
-  - 生成可自定义的资料，定义度量，以及创建细分来获取 360 度的客户视图（特定于组织）。  
-  - 使用 PowerApps 或 Microsoft Power BI 或 API 的现成连接器以在 Business Applications 或 BI 解决方案中显示见解。  
+  - 生成可自定义的配置文件，定义度量，创建客户细分，以及从预测性分析中受益，从而获取 360 度的客户视图（特定于组织）。  
+  - 将现成的连接器用于多个 Microsoft 和第三方应用程序或 API，以进一步处理见解。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

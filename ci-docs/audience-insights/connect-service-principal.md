@@ -1,20 +1,20 @@
 ---
 title: 使用服务主体连接到 Azure Data Lake Storage Gen2 帐户
 description: 在要附加到访问群体见解时，使用访问群体见解的 Azure 服务主体连接到您自己的 Data Lake。
-ms.date: 11/24/2020
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644077"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267711"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>使用访问群体见解的 Azure 服务主体连接到 Azure Data Lake Storage Gen2 帐户
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644077"
 
 您可以使用服务主体安全地[添加或编辑 Common Data Model 文件夹作为数据源](connect-common-data-model.md)或[创建新环境或更新现有环境](manage-environments.md#create-an-environment-in-an-existing-organization)。
 
-您需要 Azure 订阅的管理员权限才能创建服务主体。
+> [!IMPORTANT]
+> - 必须为想要使用服务主体的 Azure Data Lake Gen2 存储帐户[启用分层命名空间 (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace)。
+> - 您需要 Azure 订阅的管理员权限才能创建服务主体。
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>为访问群体见解创建 Azure 服务主体
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644077"
 
 按照以下步骤提供所选方法的必要信息。
 
-### <a name="resounce-based-storage-account-connection"></a>基于资源的存储帐户连接
+### <a name="resource-based-storage-account-connection"></a>基于资源的存储帐户连接
 
 1. 转到 [Azure 管理门户](https://portal.azure.com)，登录到您的订阅并打开存储帐户。
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644077"
 1. 查看 **订阅**、**资源组** 和存储帐户的 **名称**，以确保在访问群体见解中选择正确的值。
 
 1. 在访问群体见解中，在附加存储帐户时，请选择相应字段的值。
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="输入存储帐户资源 ID 信息。":::
    
 1. 继续执行访问群体见解中的剩余步骤以附加存储帐户。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

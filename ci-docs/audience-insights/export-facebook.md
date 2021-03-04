@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643672"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269963"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>Facebook Ads Manager 连接器（预览）
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643672"
 
 可以[根据需要导出数据](export-destinations.md)。 导出也会在每次[计划刷新](system.md#schedule-tab)时运行。
 
+## <a name="known-limitations"></a>已知限制
+
+- 每次向 Facebook 广告管理器导出的客户配置文件最多为 1000 万个 
+- 导出到 Facebook 广告管理器仅限于客户细分
+- 导出总共包含 1000 万个配置文件的客户细分可能最多需要 90 分钟才能完成
+
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 
 当您启用 Dynamics 365 Customer Insights 将数据传输到 Facebook Ads Manager 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将在您的指导下传输此类数据，但您有责任确保 Facebook Ads 满足您可能需遵守的任何隐私或安全义务。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
 您的 Dynamics 365 Customer Insights 管理员可以随时删除此导出目标来中止使用此功能。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

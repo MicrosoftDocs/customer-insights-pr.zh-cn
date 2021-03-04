@@ -1,7 +1,7 @@
 ---
 title: 安装和配置客户卡加载项
 description: 安装和配置适用于 Dynamics 365 Customer Insights 的客户卡加载项。
-ms.date: 08/04/2020
+ms.date: 01/20/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: aab5deaf89b4b019f6688a1bca950ec2277ad5fb
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a6d5b49380ed129cf147698a16f5f3f597bf7fbc
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644032"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268033"
 ---
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
 
@@ -92,10 +92,26 @@ ms.locfileid: "4644032"
 
 1. 在 **字段属性** 对话框中，清除 **在窗体上显示标签** 复选框。
 
-1. 为控件选择 **Web** 选项。 对于“扩充”控件，通过配置 **enrichmentType** 字段选择要显示的扩充类型。 您需要为每种扩充类型添加单独的扩充控件。
+1. 为控件选择 **Web** 选项。 对于“扩充”控件，通过配置 **enrichmentType** 字段选择要显示的扩充类型。 为每种扩充类型添加一个单独的扩充控件。
 
 1. 选择 **保存** 和 **发布** 发布更新后的联系人窗体。
 
 1. 转到发布的联系人窗体。 将看到新添加的控件。 首次使用时，可能需要登录。
 
 1. 若要自定义自定义控件中显示的内容，请选择右上角的编辑按钮。
+
+## <a name="upgrade-customer-card-add-in"></a>升级客户卡加载项
+客户卡加载项不会自动升级。 若要升级到最新版本，请在安装了该加载项的 Dynamics 365 应用中按照此过程进行操作。
+
+1. 在 Dynamics 365 应用中，转到 **设置** > **自定义**，并选择 **解决方案**。
+
+1. 在加载项表中，查找 **CustomerInsightsCustomerCard** 并选择此行。
+
+1. 在操作栏中选择 **应用解决方案升级**。
+
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="在 Dynamics 365 应用的自定义区域中升级解决方案":::
+
+1. 开始升级过程后，您将看到一个加载指示器，直到升级完成为止。 如果没有较新版本，升级将显示一条错误消息。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

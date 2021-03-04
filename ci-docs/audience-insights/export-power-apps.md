@@ -1,20 +1,20 @@
 ---
 title: Power Apps 连接器
 description: 与 Power Apps 和 Power Automate 连接。
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405182"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268905"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 连接器（预览版）
 
@@ -31,7 +31,7 @@ Customer Insights 是 [Power Apps 中众多数据源](https://docs.microsoft.com
 将 Customer Insights 作为数据连接添加之后，可以在 Power Apps 中选择以下实体：
 
 - 客户：如果要使用[统一客户配置文件](customer-profiles.md)中的数据。
-- 统一客户活动：如果要在应用中显示[活动时间线](activities.md)。
+- UnifiedActivity：在应用中显示[活动时间线](activities.md)。
 
 ## <a name="limitations"></a>限制
 
@@ -72,3 +72,6 @@ Customer Insights 是 [Power Apps 中众多数据源](https://docs.microsoft.com
 1. 若要显示客户的统一时间线，请添加一个库元素，然后添加项属性：**Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
     示例：Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
