@@ -4,64 +4,70 @@ description: 从 Common Data Service 托管数据湖导入数据。
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643387"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267792"
 ---
-# <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a><span data-ttu-id="89532-103">连接到 Common Data Service 托管数据湖中的数据</span><span class="sxs-lookup"><span data-stu-id="89532-103">Connect to data in a Common Data Service managed data lake</span></span>
+# <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a><span data-ttu-id="9b55e-103">连接到 Common Data Service 托管数据湖中的数据</span><span class="sxs-lookup"><span data-stu-id="9b55e-103">Connect to data in a Common Data Service managed data lake</span></span>
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="89532-104">本文提供有关现有 Dynamics 365 客户如何快速连接他们到 Common Data Service 托管湖中的分析实体的信息。</span><span class="sxs-lookup"><span data-stu-id="89532-104">This article provides information on how existing Dynamics 365 customers can quickly connect to their analytical entities in the Common Data Service managed lake.</span></span> <span data-ttu-id="89532-105">您必须是 Common Data Service 组织的管理员才能继续和查看托管湖中提供的实体列表。</span><span class="sxs-lookup"><span data-stu-id="89532-105">You must be an admin on the Common Data Service organization to proceed and see the list of entities available in the managed lake.</span></span>
+<span data-ttu-id="9b55e-104">本文提供有关现有 Dynamics 365 客户如何快速连接他们到 Common Data Service 托管湖中的分析实体的信息。</span><span class="sxs-lookup"><span data-stu-id="9b55e-104">This article provides information on how existing Dynamics 365 customers can quickly connect to their analytical entities in the Common Data Service managed lake.</span></span> <span data-ttu-id="9b55e-105">您必须是 Common Data Service 组织的管理员才能继续和查看托管湖中提供的实体列表。</span><span class="sxs-lookup"><span data-stu-id="9b55e-105">You must be an admin on the Common Data Service organization to proceed and see the list of entities available in the managed lake.</span></span>
 
-## <a name="important-considerations"></a><span data-ttu-id="89532-106">重要考虑因素</span><span class="sxs-lookup"><span data-stu-id="89532-106">Important considerations</span></span>
+## <a name="important-considerations"></a><span data-ttu-id="9b55e-106">重要考虑因素</span><span class="sxs-lookup"><span data-stu-id="9b55e-106">Important considerations</span></span>
 
-<span data-ttu-id="89532-107">可以将联机服务（如 Azure Data Lake Storage）中存储的数据存储到 Dynamics 365 Customer Insights 中处理或存储数据之外的位置。</span><span class="sxs-lookup"><span data-stu-id="89532-107">Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights.</span></span><span data-ttu-id="89532-108">导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心。](https://www.microsoft.com/trust-center)</span><span class="sxs-lookup"><span data-stu-id="89532-108"> By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)</span></span>
+<span data-ttu-id="9b55e-107">可以将联机服务（如 Azure Data Lake Storage）中存储的数据存储到 Dynamics 365 Customer Insights 中处理或存储数据之外的位置。</span><span class="sxs-lookup"><span data-stu-id="9b55e-107">Data stored in online services, such as Azure Data Lake Storage, may be stored in a different location than where data is processed or stored in Dynamics 365 Customer Insights.</span></span><span data-ttu-id="9b55e-108">导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心。](https://www.microsoft.com/trust-center)</span><span class="sxs-lookup"><span data-stu-id="9b55e-108"> By importing or connecting to data stored in online services, you agree that data can be transferred to and stored with Dynamics 365 Customer Insights. [Learn more at the Microsoft Trust Center.](https://www.microsoft.com/trust-center)</span></span>
 
-## <a name="connect-to-a-common-data-service-managed-lake"></a><span data-ttu-id="89532-109">连接到 Common Data Service 托管湖</span><span class="sxs-lookup"><span data-stu-id="89532-109">Connect to a Common Data Service managed lake</span></span>
+## <a name="connect-to-a-common-data-service-managed-lake"></a><span data-ttu-id="9b55e-109">连接到 Common Data Service 托管湖</span><span class="sxs-lookup"><span data-stu-id="9b55e-109">Connect to a Common Data Service managed lake</span></span>
 
-1. <span data-ttu-id="89532-110">在访问群体见解中，转到 **数据** > **数据源**。</span><span class="sxs-lookup"><span data-stu-id="89532-110">In audience insights, go to **Data** > **Data sources**.</span></span>
+1. <span data-ttu-id="9b55e-110">在访问群体见解中，转到 **数据** > **数据源**。</span><span class="sxs-lookup"><span data-stu-id="9b55e-110">In audience insights, go to **Data** > **Data sources**.</span></span>
 
-2. <span data-ttu-id="89532-111">选择 **添加数据源**。</span><span class="sxs-lookup"><span data-stu-id="89532-111">Select **Add data source**.</span></span>
+2. <span data-ttu-id="9b55e-111">选择 **添加数据源**。</span><span class="sxs-lookup"><span data-stu-id="9b55e-111">Select **Add data source**.</span></span>
 
-3. <span data-ttu-id="89532-112">选择 **连接到 Common Data Service**，然后选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="89532-112">Select **Connect to Common Data Service** and select **Next**.</span></span>
+3. <span data-ttu-id="9b55e-112">选择 **连接到 Common Data Service**，然后选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="9b55e-112">Select **Connect to Common Data Service** and select **Next**.</span></span>
 
-4. <span data-ttu-id="89532-113">输入数据源的 **名称**，然后选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="89532-113">Enter a **Name** for the data source and select **Next**.</span></span>
+4. <span data-ttu-id="9b55e-113">输入数据源的 **名称**，然后选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="9b55e-113">Enter a **Name** for the data source and select **Next**.</span></span> <span data-ttu-id="9b55e-114">命名准则：</span><span class="sxs-lookup"><span data-stu-id="9b55e-114">Name guidelines:</span></span> 
+   - <span data-ttu-id="9b55e-115">以字母开头。</span><span class="sxs-lookup"><span data-stu-id="9b55e-115">Start with a letter.</span></span>
+   - <span data-ttu-id="9b55e-116">只能使用字母和数字。</span><span class="sxs-lookup"><span data-stu-id="9b55e-116">Use letters and numbers only.</span></span> <span data-ttu-id="9b55e-117">不允许使用特殊字符和空格。</span><span class="sxs-lookup"><span data-stu-id="9b55e-117">Special characters and spaces are not allowed.</span></span>
+   - <span data-ttu-id="9b55e-118">使用 3 至 64 个字符。</span><span class="sxs-lookup"><span data-stu-id="9b55e-118">Use between 3 and 64 characters.</span></span>
 
-5. <span data-ttu-id="89532-114">提供您的 Common Data Service 组织的 **服务器地址**，然后选择 **登录**。</span><span class="sxs-lookup"><span data-stu-id="89532-114">Provide the **Server address** for your Common Data Service organization, and select **Sign in**.</span></span>
+5. <span data-ttu-id="9b55e-119">提供您的 Common Data Service 组织的 **服务器地址**，然后选择 **登录**。</span><span class="sxs-lookup"><span data-stu-id="9b55e-119">Provide the **Server address** for your Common Data Service organization, and select **Sign in**.</span></span>
 
    > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="89532-115">![用于输入 Common Data Service 服务器地址的对话框](media/enter-CDS-org-details.png)</span><span class="sxs-lookup"><span data-stu-id="89532-115">![Dialog box to enter Common Data Service server address](media/enter-CDS-org-details.png)</span></span>
+   > <span data-ttu-id="9b55e-120">![用于输入 Common Data Service 服务器地址的对话框](media/enter-CDS-org-details.png)</span><span class="sxs-lookup"><span data-stu-id="9b55e-120">![Dialog box to enter Common Data Service server address](media/enter-CDS-org-details.png)</span></span>
 
-6. <span data-ttu-id="89532-116">选择您希望从可用列表中引入的实体。</span><span class="sxs-lookup"><span data-stu-id="89532-116">Select the entities you want to ingest from the available list.</span></span>    
+6. <span data-ttu-id="9b55e-121">选择您希望从可用列表中引入的实体。</span><span class="sxs-lookup"><span data-stu-id="9b55e-121">Select the entities you want to ingest from the available list.</span></span>    
 
    > [!NOTE]
-   > <span data-ttu-id="89532-117">如果已经选择了某些实体，其他 Dynamics 365 应用程序（例如 Dynamics 365 Sales Insights 或 Customer Service Insights）可能会使用它们。</span><span class="sxs-lookup"><span data-stu-id="89532-117">If some entities are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights).</span></span> <span data-ttu-id="89532-118">您不能更改此选择。</span><span class="sxs-lookup"><span data-stu-id="89532-118">You can't change the selection.</span></span> <span data-ttu-id="89532-119">这些实体在创建数据源后即可供使用。</span><span class="sxs-lookup"><span data-stu-id="89532-119">These entities will be available once the data source is created.</span></span>
+   > <span data-ttu-id="9b55e-122">如果已经选择了某些实体，其他 Dynamics 365 应用程序（例如 Dynamics 365 Sales Insights 或 Customer Service Insights）可能会使用它们。</span><span class="sxs-lookup"><span data-stu-id="9b55e-122">If some entities are already selected, they might be used by other Dynamics 365 applications (such as Dynamics 365 Sales Insights or Customer Service Insights).</span></span> <span data-ttu-id="9b55e-123">您不能更改此选择。</span><span class="sxs-lookup"><span data-stu-id="9b55e-123">You can't change the selection.</span></span> <span data-ttu-id="9b55e-124">这些实体在创建数据源后即可供使用。</span><span class="sxs-lookup"><span data-stu-id="9b55e-124">These entities will be available once the data source is created.</span></span>
 
    > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="89532-120">![显示 Common Data Service 组织中的实体列表的对话框](media/select-analytical-entities.png)</span><span class="sxs-lookup"><span data-stu-id="89532-120">![Dialog box showing a list of entities in the Common Data Service org](media/select-analytical-entities.png)</span></span>
+   > <span data-ttu-id="9b55e-125">![显示 Common Data Service 组织中的实体列表的对话框](media/select-analytical-entities.png)</span><span class="sxs-lookup"><span data-stu-id="9b55e-125">![Dialog box showing a list of entities in the Common Data Service org](media/select-analytical-entities.png)</span></span>
 
-7. <span data-ttu-id="89532-121">保存您的选择以开始将所选实体同步到 Common Data Service 托管湖。</span><span class="sxs-lookup"><span data-stu-id="89532-121">Save your selection to start syncing the selected entities to the Common Data Service managed lake.</span></span> <span data-ttu-id="89532-122">您将在 **数据源** 页上找到新添加的连接。</span><span class="sxs-lookup"><span data-stu-id="89532-122">You'll find the newly added connection on the **Data sources** page.</span></span> <span data-ttu-id="89532-123">它将排队等待刷新，显示实体计数为 0，直到所有实体都同步为止。</span><span class="sxs-lookup"><span data-stu-id="89532-123">It will be queued for refresh and show the entities count as 0 until all the entities are synced.</span></span>
+7. <span data-ttu-id="9b55e-126">保存您的选择以开始将所选实体同步到 Common Data Service 托管湖。</span><span class="sxs-lookup"><span data-stu-id="9b55e-126">Save your selection to start syncing the selected entities to the Common Data Service managed lake.</span></span> <span data-ttu-id="9b55e-127">您将在 **数据源** 页上找到新添加的连接。</span><span class="sxs-lookup"><span data-stu-id="9b55e-127">You'll find the newly added connection on the **Data sources** page.</span></span> <span data-ttu-id="9b55e-128">它将排队等待刷新，显示实体计数为 0，直到所有实体都同步为止。</span><span class="sxs-lookup"><span data-stu-id="9b55e-128">It will be queued for refresh and show the entities count as 0 until all the entities are synced.</span></span>
 
-<span data-ttu-id="89532-124">仅环境中的一个数据源可以同时使用相同的 Common Data Service 托管湖。</span><span class="sxs-lookup"><span data-stu-id="89532-124">Only one data source of an environment can simultaneously use the same Common Data Service managed lake.</span></span>
+<span data-ttu-id="9b55e-129">仅环境中的一个数据源可以同时使用相同的 Common Data Service 托管湖。</span><span class="sxs-lookup"><span data-stu-id="9b55e-129">Only one data source of an environment can simultaneously use the same Common Data Service managed lake.</span></span>
 
-## <a name="edit-a-common-data-service-managed-lake-data-source"></a><span data-ttu-id="89532-125">编辑 Common Data Service 托管湖数据源</span><span class="sxs-lookup"><span data-stu-id="89532-125">Edit a Common Data Service managed lake data source</span></span>
+## <a name="edit-a-common-data-service-managed-lake-data-source"></a><span data-ttu-id="9b55e-130">编辑 Common Data Service 托管湖数据源</span><span class="sxs-lookup"><span data-stu-id="9b55e-130">Edit a Common Data Service managed lake data source</span></span>
 
-<span data-ttu-id="89532-126">您仅在创建数据源之后才编辑对实体的选择。</span><span class="sxs-lookup"><span data-stu-id="89532-126">You only edit the entity selection after creating the data source.</span></span> <span data-ttu-id="89532-127">例如，如果其他实体被添加到 Common Data Service 中，并且您也希望导入它们。</span><span class="sxs-lookup"><span data-stu-id="89532-127">For example, if additional entities were added to Common Data Service and you want to import them too.</span></span>    
-<span data-ttu-id="89532-128">要连接到其他 Common Data Service，请[创建新数据源](#connect-to-a-common-data-service-managed-lake)。</span><span class="sxs-lookup"><span data-stu-id="89532-128">To connect to a different Common Data Service, [create a new data source](#connect-to-a-common-data-service-managed-lake).</span></span>
+<span data-ttu-id="9b55e-131">您仅在创建数据源之后才编辑对实体的选择。</span><span class="sxs-lookup"><span data-stu-id="9b55e-131">You only edit the entity selection after creating the data source.</span></span> <span data-ttu-id="9b55e-132">例如，如果其他实体被添加到 Common Data Service 中，并且您也希望导入它们。</span><span class="sxs-lookup"><span data-stu-id="9b55e-132">For example, if additional entities were added to Common Data Service and you want to import them too.</span></span>    
+<span data-ttu-id="9b55e-133">要连接到其他 Common Data Service，请[创建新数据源](#connect-to-a-common-data-service-managed-lake)。</span><span class="sxs-lookup"><span data-stu-id="9b55e-133">To connect to a different Common Data Service, [create a new data source](#connect-to-a-common-data-service-managed-lake).</span></span>
 
-1. <span data-ttu-id="89532-129">在访问群体见解中，转到 **数据** > **数据源**。</span><span class="sxs-lookup"><span data-stu-id="89532-129">In audience insights, go to **Data** > **Data sources**.</span></span>
+1. <span data-ttu-id="9b55e-134">在访问群体见解中，转到 **数据** > **数据源**。</span><span class="sxs-lookup"><span data-stu-id="9b55e-134">In audience insights, go to **Data** > **Data sources**.</span></span>
 
-2. <span data-ttu-id="89532-130">选择要更新的数据源旁边的省略号。</span><span class="sxs-lookup"><span data-stu-id="89532-130">Next to the data source you'd like to update, select the ellipsis.</span></span>
+2. <span data-ttu-id="9b55e-135">选择要更新的数据源旁边的省略号。</span><span class="sxs-lookup"><span data-stu-id="9b55e-135">Next to the data source you'd like to update, select the ellipsis.</span></span>
 
-3. <span data-ttu-id="89532-131">从列表中选择 **编辑** 选项。</span><span class="sxs-lookup"><span data-stu-id="89532-131">Select the **Edit** option from the list.</span></span>
+3. <span data-ttu-id="9b55e-136">从列表中选择 **编辑** 选项。</span><span class="sxs-lookup"><span data-stu-id="9b55e-136">Select the **Edit** option from the list.</span></span>
 
-4. <span data-ttu-id="89532-132">从可用实体列表中选择其他实体，然后选择 **保存**。</span><span class="sxs-lookup"><span data-stu-id="89532-132">Select additional entities from the available list of entities and select **Save**.</span></span>
+4. <span data-ttu-id="9b55e-137">从可用实体列表中选择其他实体，然后选择 **保存**。</span><span class="sxs-lookup"><span data-stu-id="9b55e-137">Select additional entities from the available list of entities and select **Save**.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
