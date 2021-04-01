@@ -1,19 +1,20 @@
 ---
 title: 自定义机器学习模型 | Microsoft Docs
 description: 在 Dynamics 365 Customer Insights 中使用来自 Azure 机器学习的自定义模型。
-ms.date: 11/19/2020
-ms.reviewer: zacook
-ms.service: dynamics-365-ai
+ms.date: 03/22/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 87fb517e9f0b380f9721f77470dceb3bcb7e5616
+ms.sourcegitcommit: 55c00ea61c78db7b3b54894c01afb3246dff31c8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267223"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "5700657"
 ---
 # <a name="custom-machine-learning-models"></a>自定义机器学习模型
 
@@ -21,13 +22,18 @@ ms.locfileid: "5267223"
 
 ## <a name="responsible-ai"></a>负责 AI
 
-预测提供创建更好的客户体验、改进业务功能和创收流的功能。 强烈建议您在预测针对其影响的价值以及以道德方式引入的偏见之间进行权衡。 了解有关 Microsoft 如何[处理负责 AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) 的详细信息。 您还可以了解特定于 Azure 机器学习的[负载机器学习的技术和流程](https://docs.microsoft.com/azure/machine-learning/concept-responsible-ml)。
+预测提供创建更好的客户体验、改进业务功能和创收流的功能。 强烈建议您在预测针对其影响的价值以及以道德方式引入的偏见之间进行权衡。 了解有关 Microsoft 如何[处理负责 AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6) 的详细信息。 您还可以了解特定于 Azure 机器学习的[负载机器学习的技术和流程](/azure/machine-learning/concept-responsible-ml)。
 
 ## <a name="prerequisites"></a>先决条件
 
-- 当前，此功能支持通过[机器学习工作室（经典）](https://studio.azureml.net)和 [Azure 机器学习批处理管道](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines)发布的 Web 服务。
+- 当前，此功能支持通过[机器学习工作室（经典）](https://studio.azureml.net)和 [Azure 机器学习批处理管道](/azure/machine-learning/concept-ml-pipelines)发布的 Web 服务。
 
-- 您需要与 Azure Studio 实例关联的 Azure Data Lake Gen2 存储帐户才能使用此功能。 有关详细信息，请参阅[创建 Azure Data Lake Storage Gen2 存储帐户](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- 您需要与 Azure Studio 实例关联的 Azure Data Lake Gen2 存储帐户才能使用此功能。 有关详细信息，请参阅[创建 Azure Data Lake Storage Gen2 存储帐户](/azure/storage/blobs/data-lake-storage-quickstart-create-account)。
+
+- 对于具有管道的 Azure 机器学习工作区，您需要具有针对 Azure 机器学习工作区的负责人或用户访问管理员权限。
+
+   > [!NOTE]
+   > 数据是在 Customer Insights 实例和工作流中的所选 Azure Web 服务或管道之间传输的。 将数据传输至 Azure 服务时，请确保服务已配置为按照所需的方式和位置处理数据，以符合组织数据的任何法律或法规要求。
 
 ## <a name="add-a-new-workflow"></a>添加新工作流
 
@@ -45,8 +51,8 @@ ms.locfileid: "5267223"
 1. 选择与您的 Web 服务相关联的 **工作区**。 其中列出了两个部分，一个用于 Azure 机器学习 v1（机器学习工作室（经典）），另一个用于 Azure 机器学习 v2（Azure 机器学习）。 如果您不确定哪个工作区适合您的机器学习工作室（经典）Web 服务，请选择 **任意**。
 
 1. 在 **包含您的模型的 Web 服务** 下拉菜单中选择机器学习工作室（经典）Web 服务或 Azure 机器学习管道。 然后选择 **下一步**。
-   - 了解有关[在机器学习工作室（经典）中发布 Web 服务](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)的详细信息
-   - 了解有关[使用设计器在 Azure 机器学习中发布管道](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)或使用 [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 进行发布的详细信息。 您的管道必须在[管道终结点](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)下发布。
+   - 了解有关[在机器学习工作室（经典）中发布 Web 服务](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)的详细信息
+   - 了解有关[使用设计器在 Azure 机器学习中发布管道](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)或使用 [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 进行发布的详细信息。 您的管道必须在[管道终结点](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)下发布。
 
 1. 对于每个 **Web 服务输入**，从访问群体见解中选择匹配的 **实体**，然后选择 **下一步**。
    > [!NOTE]
@@ -54,7 +60,7 @@ ms.locfileid: "5267223"
 
    > [!div class="mx-imgBorder"]
    > ![配置工作流](media/intelligence-screen2-updated.png "配置工作流")
-   
+
 1. 在 **模型输出参数** 步骤中，设置以下属性：
    - 机器学习工作室（经典）
       1. 输入您希望 Web 服务输出结果流入的输出 **实体名称**。
@@ -62,12 +68,12 @@ ms.locfileid: "5267223"
       1. 输入您希望管道输出结果流入的输出 **实体名称**。
       1. 从下拉列表中选择批处理管道的 **输出数据存储参数名称**。
       1. 从下拉列表中选择批处理管道的 **输出路径参数名称**。
-      
+
       > [!div class="mx-imgBorder"]
       > ![模型输出参数窗格](media/intelligence-screen3-outputparameters.png "模型输出参数窗格")
 
 1. 从 **结果中的客户 ID** 下拉列表中选择标识客户的匹配属性，然后选择 **保存**。
-   
+
    > [!div class="mx-imgBorder"]
    > ![将结果与客户数据关联窗格](media/intelligence-screen4-relatetocustomer.png "将结果与客户数据关联窗格")
 
@@ -95,7 +101,7 @@ ms.locfileid: "5267223"
       1. 选择测试管道的 **输出路径参数名称**。
 
 1. 从 **结果中的客户 ID** 下拉列表中选择标识客户的匹配属性，然后选择 **保存**。
-   您需要从包含类似于客户实体的客户 ID 的值的推理输出中选择一个属性。 如果您的数据集中没有这样的列，请选择可唯一标识该行的属性。
+   从包含类似于客户实体的客户 ID 列的值的推理输出中选择一个属性。 如果您的数据集中没有这样的列，请选择可唯一标识该行的属性。
 
 ## <a name="run-a-workflow"></a>运行工作流
 
@@ -113,5 +119,28 @@ ms.locfileid: "5267223"
 
 将删除您的工作流。 您创建工作流时创建的 [实体](entities.md)将保留，并且可以从 **实体** 页查看。
 
+## <a name="results"></a>结果​​
+
+工作流的结果存储在模型输出参数阶段中配置的实体中。 您可以通过[实体页](entities.md)或 [API 访问](apis.md)来访问此数据。
+
+### <a name="api-access"></a>API 访问
+
+对于从自定义模型实体获取数据的特定 OData 查询，请使用以下格式：
+
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+
+1. 将 `<your instance id>` 替换为您的 Customer Insights 环境的 ID，该 ID 可在访问 Customer Insights 时在浏览器的地址栏中找到。
+
+1. 用您在此自定义模型配置的“模型输出参数”步骤中提供的实体名称替换 `<custom model output entity>`。
+
+1. 用要访问其记录的客户的客户 ID 替换 `<guid value>`。 通常可在[客户配置文件页](customer-profiles.md)上的 CustomerID 字段中找到此 ID。
+
+## <a name="frequently-asked-questions"></a>常见问题
+
+- 为什么在设置自定义模型工作流时看不到我的管道？    
+  此问题通常由于管道中的配置问题所导致。 确保[配置了输入参数](azure-machine-learning-experiments.md#dataset-configuration)，并且还配置了[输出数据存储和路径参数](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights)。
+
+- “无法保存智能工作流”错误是什么意思？    
+  如果用户对工作区没有“负责人”或“用户访问管理员”特权，则通常会看到此错误消息。 用户需要更高级别的权限才能使 Customer Insights 能够将工作流作为服务处理，而非使用用户凭据处理工作流的后续运行。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

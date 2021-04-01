@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: wameng
+ms.author: wameng
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5bcee3b4c51880740715575b18fd7a4dbf87e6d0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 202ea22d290be04e54ce9676b6b693162354607f
+ms.sourcegitcommit: d3eb07dcc72624a2d5cfc95c7ea9faaa2c1b6001
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269917"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5654721"
 ---
 # <a name="define-and-manage-measures"></a>定义和管理度量
 
@@ -72,8 +72,8 @@ ms.locfileid: "5269917"
    1. 选择 **编辑维度** 以添加要作为度量值分组依据的数据属性。 例如，市/县或性别。 默认情况下选择了 *CustomerID *维度来创建* 客户级别的度量*。 如果要创建 *业务级别的度量*，可以删除默认维度。
    1. 选择 **完成** 以将维度添加到度量中。
 
-1. 如果所映射的数据实体与客户实体之间有多个路径，您必须选择其中一个标识的[实体关系路径](relationships.md)。 根据所选路径的不同，度量结果可能有所不同。
-   1. 选择 **数据首选项**，并选择将用于标识度量的实体路径。
+1. 如果所映射的数据实体与 *客户* 实体之间有多个路径，您必须选择其中一个标识的[实体关系路径](relationships.md)。 根据所选路径的不同，度量结果可能有所不同。 
+   1. 选择 **数据首选项**，并选择将用于标识度量的实体路径。 如果只有一个指向 *客户* 实体的路径，则不会显示此控件。
    1. 选择 **完成** 以应用您的选择。 
 
    :::image type="content" source="media/measures-data-preferences.png" alt-text="为度量选择实体路径。":::

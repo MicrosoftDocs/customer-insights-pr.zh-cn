@@ -1,20 +1,20 @@
 ---
 title: 使用 API
 description: 使用 API 并了解限制。
-ms.date: 12/04/2020
+ms.date: 03/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
+ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267513"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "5710449"
 ---
 # <a name="work-with-customer-insights-apis"></a>使用 Customer Insights API
 
@@ -36,7 +36,7 @@ Dynamics 365 Customer Insights 提供 API，用于基于 Customer Insights 中�
 
    :::image type="content" source="media/enable-apis.gif" alt-text="启用 Customer Insights API":::
 
-1. 选择 **浏览我们的 API** 以试用 API。
+1. 选择 **浏览我们的 API** 以[试用 API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)。
 
 1. 选择 API 操作并选择 **试用**。
 
@@ -47,6 +47,9 @@ Dynamics 365 Customer Insights 提供 API，用于基于 Customer Insights 中�
 1. 滚动到侧窗格底部并选择 **发送**。
 
 HTTP 响应将立即显示在下方。
+
+
+   :::image type="content" source="media/try-apis.gif" alt-text="一个显示如何选择测试 API 的动画 GIF。":::
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>在 Azure 门户中创建新的应用注册
 
@@ -61,6 +64,8 @@ HTTP 响应将立即显示在下方。
 
 1. 在您的新应用注册上，转到 **API 权限**。
 
+   :::image type="content" source="media/app-registration-1.gif" alt-text="一个用于在应用程序注册中设置 API 权限的动画 GIF。":::
+
 1. 选择 **添加权限**，然后在侧窗格中选择 **Customer Insights**。
 
 1. 对于 **权限类型**，选择 **委托的权限**，然后选择 **user_impersonation** 权限。
@@ -71,9 +76,11 @@ HTTP 响应将立即显示在下方。
 
 您可以结合使用此应用注册的应用程序/客户端 ID 与 Microsoft 身份验证库 (MSAL)，获取持有者令牌以发送您的 API 请求。
 
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="一个用于授予管理员同意的动画 GIF。":::
+
 有关 MSAL 的详细信息，请参阅 [Microsoft 身份验证库 (MSAL) 概述](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)。
 
-有关 Azure 中应用注册的详细信息，请参阅[新的 Azure 门户应用注册体验](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide)。
+有关 Azure 中应用注册的详细信息，请参阅[新的 Azure 门户应用注册体验](/azure/active-directory/develop/app-registration-portal-training-guide)。
 
 有关使用 API 和我们的客户端库的信息，请参阅 [Customer Insights 客户端库](#customer-insights-client-libraries)。
 
@@ -101,6 +108,8 @@ HTTP 响应将立即显示在下方。
 
 1. 选择 **对其授予管理员同意** 以完成应用注册。
 
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="一个用于授予管理员同意的动画 GIF。":::
+
 1. 总之，我们必须在 Customer Insights 中添加应用注册的名称作为用户。    
    打开 Customer Insights，转到 **管理员** > **权限**，然后选择 **添加用户**。
 
@@ -108,7 +117,7 @@ HTTP 响应将立即显示在下方。
 
 ## <a name="customer-insights-client-libraries"></a>Customer Insights 客户端库
 
-本部分帮助您开始使用可用于 Customer Insights API 的客户端库。
+本部分帮助您开始使用可用于 Customer Insights API 的客户端库。 所有库源代码和示例应用程序都可以在 [Customer Insights GitHub 页](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries)上找到。 
 
 ### <a name="c-nuget"></a>C# NuGet
 
@@ -127,7 +136,7 @@ HTTP 响应将立即显示在下方。
 
 #### <a name="use-the-c-client-library"></a>使用 C# 客户端库
 
-1. 使用 [Microsoft 身份验证库 (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) 以使用现有的 [Azure 应用注册](#create-a-new-app-registration-in-the-azure-portal)获取 `AccessToken`。
+1. 使用 [Microsoft 身份验证库 (MSAL)](/azure/active-directory/develop/msal-overview) 以使用现有的 [Azure 应用注册](#create-a-new-app-registration-in-the-azure-portal)获取 `AccessToken`。
 
 1. 在成功进行身份验证并获取令牌后，从您的 [Customer Insights 环境](#get-started-trying-the-customer-insights-apis)中构建新的客户端或使用现有的 `HttpClient`，其中其他 **DefaultRequestHeaders "Authorization"** 设置为 **Bearer <access token>** 和 **Ocp-Apim-Subscription-Key** 设置为 **subscription key**。    
    根据需要重置 **授权** 标头。 例如，当令牌到期时。
@@ -141,5 +150,12 @@ HTTP 响应将立即显示在下方。
 1. 响应可能为类型 `object`，因为该方法可以返回多个类型（例如 `IList<InstanceInfo>` 和 `ApiErrorResult`）。 若要检查返回类型，您可以针对该操作安全地将对象强制转换为在 [API 详细信息页面](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights)上指定的响应类型。    
    如果需要有关请求的详细信息，请使用 **http 消息方法** 访问原始响应对象。
 
+### <a name="nodejs-package"></a>NodeJS 程序包
+
+使用通过 NPM 提供的 NodeJS 客户端库：https://www.npmjs.com/package/@microsoft/customerinsights
+
+### <a name="python-package"></a>Python 程序包
+
+使用通过 PyPi 提供的 Python 客户端库：https://pypi.org/project/customerinsights/
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
