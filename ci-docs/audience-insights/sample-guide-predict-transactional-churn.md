@@ -2,208 +2,208 @@
 title: 交易流失预测示例指南
 description: 使用本示例指南试用现成的交易流失预测模型。
 ms.date: 11/19/2020
-ms.reviewer: digranad
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: diegogranados117
+ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 251bc26246cee16952e8e4cb08e2ed7aa4d18488
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269779"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595415"
 ---
-# <a name="transactional-churn-prediction-preview-sample-guide"></a><span data-ttu-id="afce8-103">交易流失预测（预览）示例指南</span><span class="sxs-lookup"><span data-stu-id="afce8-103">Transactional churn prediction (preview) sample guide</span></span>
+# <a name="transactional-churn-prediction-preview-sample-guide"></a><span data-ttu-id="143ae-103">交易流失预测（预览）示例指南</span><span class="sxs-lookup"><span data-stu-id="143ae-103">Transactional churn prediction (preview) sample guide</span></span>
 
-<span data-ttu-id="afce8-104">本指南将向您演示使用下面提供的数据的 Customer Insights 中交易流失预测的端到端示例。</span><span class="sxs-lookup"><span data-stu-id="afce8-104">This guide will walk you through an end to end example of Transactional Churn prediction in Customer Insights using the data provided below.</span></span> <span data-ttu-id="afce8-105">本指南中使用的所有数据都不是真正的客户数据，而是在 Customer Insights 订阅内在 *演示* 环境中找到的 Contoso 数据集的一部分。</span><span class="sxs-lookup"><span data-stu-id="afce8-105">All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights Subscription.</span></span>
+<span data-ttu-id="143ae-104">本指南将向您演示使用下面提供的数据的 Customer Insights 中交易流失预测的端到端示例。</span><span class="sxs-lookup"><span data-stu-id="143ae-104">This guide will walk you through an end to end example of Transactional Churn prediction in Customer Insights using the data provided below.</span></span> <span data-ttu-id="143ae-105">本指南中使用的所有数据都不是真正的客户数据，而是在 Customer Insights 订阅内在 *演示* 环境中找到的 Contoso 数据集的一部分。</span><span class="sxs-lookup"><span data-stu-id="143ae-105">All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights Subscription.</span></span>
 
-## <a name="scenario"></a><span data-ttu-id="afce8-106">方案</span><span class="sxs-lookup"><span data-stu-id="afce8-106">Scenario</span></span>
+## <a name="scenario"></a><span data-ttu-id="143ae-106">方案</span><span class="sxs-lookup"><span data-stu-id="143ae-106">Scenario</span></span>
 
-<span data-ttu-id="afce8-107">Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 咖啡网站销售。</span><span class="sxs-lookup"><span data-stu-id="afce8-107">Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website.</span></span> <span data-ttu-id="afce8-108">它们的目标是了解通常定期购买其产品的哪些客户在接下来的 60 天内将停止成为活动客户。</span><span class="sxs-lookup"><span data-stu-id="afce8-108">Their goal is to know which customers who typically purchase their products on a regular basis, will stop being active customers in the next 60 days.</span></span> <span data-ttu-id="afce8-109">了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。</span><span class="sxs-lookup"><span data-stu-id="afce8-109">Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.</span></span>
+<span data-ttu-id="143ae-107">Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 咖啡网站销售。</span><span class="sxs-lookup"><span data-stu-id="143ae-107">Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website.</span></span> <span data-ttu-id="143ae-108">它们的目标是了解通常定期购买其产品的哪些客户在接下来的 60 天内将停止成为活动客户。</span><span class="sxs-lookup"><span data-stu-id="143ae-108">Their goal is to know which customers who typically purchase their products on a regular basis, will stop being active customers in the next 60 days.</span></span> <span data-ttu-id="143ae-109">了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。</span><span class="sxs-lookup"><span data-stu-id="143ae-109">Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="afce8-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="afce8-110">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="143ae-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="143ae-110">Prerequisites</span></span>
 
-- <span data-ttu-id="afce8-111">至少具有 Customer Insights 中的[参与者权限](permissions.md)。</span><span class="sxs-lookup"><span data-stu-id="afce8-111">At least [Contributor permissions](permissions.md) in Customer Insights.</span></span>
-- <span data-ttu-id="afce8-112">我们建议您[在新环境中](manage-environments.md)实施以下步骤。</span><span class="sxs-lookup"><span data-stu-id="afce8-112">We recommend that you implement the following steps [in a new environment](manage-environments.md).</span></span>
+- <span data-ttu-id="143ae-111">至少具有 Customer Insights 中的[参与者权限](permissions.md)。</span><span class="sxs-lookup"><span data-stu-id="143ae-111">At least [Contributor permissions](permissions.md) in Customer Insights.</span></span>
+- <span data-ttu-id="143ae-112">我们建议您[在新环境中](manage-environments.md)实施以下步骤。</span><span class="sxs-lookup"><span data-stu-id="143ae-112">We recommend that you implement the following steps [in a new environment](manage-environments.md).</span></span>
 
-## <a name="task-1---ingest-data"></a><span data-ttu-id="afce8-113">任务 1 - 引入数据</span><span class="sxs-lookup"><span data-stu-id="afce8-113">Task 1 - Ingest data</span></span>
+## <a name="task-1---ingest-data"></a><span data-ttu-id="143ae-113">任务 1 - 引入数据</span><span class="sxs-lookup"><span data-stu-id="143ae-113">Task 1 - Ingest data</span></span>
 
-<span data-ttu-id="afce8-114">查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)文章。</span><span class="sxs-lookup"><span data-stu-id="afce8-114">Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically.</span></span> <span data-ttu-id="afce8-115">以下信息假设您大致了解如何引入数据。</span><span class="sxs-lookup"><span data-stu-id="afce8-115">The following information assumes you familiarized with ingesting data in general.</span></span> 
+<span data-ttu-id="143ae-114">查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)文章。</span><span class="sxs-lookup"><span data-stu-id="143ae-114">Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically.</span></span> <span data-ttu-id="143ae-115">以下信息假设您大致了解如何引入数据。</span><span class="sxs-lookup"><span data-stu-id="143ae-115">The following information assumes you familiarized with ingesting data in general.</span></span> 
 
-### <a name="ingest-customer-data-from-ecommerce-platform"></a><span data-ttu-id="afce8-116">从电子商务平台中引入客户数据</span><span class="sxs-lookup"><span data-stu-id="afce8-116">Ingest customer data from eCommerce platform</span></span>
+### <a name="ingest-customer-data-from-ecommerce-platform"></a><span data-ttu-id="143ae-116">从电子商务平台中引入客户数据</span><span class="sxs-lookup"><span data-stu-id="143ae-116">Ingest customer data from eCommerce platform</span></span>
 
-1. <span data-ttu-id="afce8-117">创建名为 **电子商务** 的数据源，选择导入选项，然后选择 **文本/CSV** 连接器。</span><span class="sxs-lookup"><span data-stu-id="afce8-117">Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.</span></span>
+1. <span data-ttu-id="143ae-117">创建名为 **电子商务** 的数据源，选择导入选项，然后选择 **文本/CSV** 连接器。</span><span class="sxs-lookup"><span data-stu-id="143ae-117">Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.</span></span>
 
-1. <span data-ttu-id="afce8-118">输入电子商务联系人的 URL https://aka.ms/ciadclasscontacts。</span><span class="sxs-lookup"><span data-stu-id="afce8-118">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.</span></span>
+1. <span data-ttu-id="143ae-118">输入电子商务联系人的 URL https://aka.ms/ciadclasscontacts。</span><span class="sxs-lookup"><span data-stu-id="143ae-118">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.</span></span>
 
-1. <span data-ttu-id="afce8-119">编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。</span><span class="sxs-lookup"><span data-stu-id="afce8-119">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="143ae-119">编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。</span><span class="sxs-lookup"><span data-stu-id="143ae-119">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="afce8-120">更新下面列出的列的数据类型：</span><span class="sxs-lookup"><span data-stu-id="afce8-120">Update the datatype for the columns listed below:</span></span>
+1. <span data-ttu-id="143ae-120">更新下面列出的列的数据类型：</span><span class="sxs-lookup"><span data-stu-id="143ae-120">Update the datatype for the columns listed below:</span></span>
 
-   - <span data-ttu-id="afce8-121">**DateOfBirth**：日期</span><span class="sxs-lookup"><span data-stu-id="afce8-121">**DateOfBirth**: Date</span></span>
-   - <span data-ttu-id="afce8-122">**CreatedOn**：日期/时间/区域</span><span class="sxs-lookup"><span data-stu-id="afce8-122">**CreatedOn**: Date/Time/Zone</span></span>
+   - <span data-ttu-id="143ae-121">**DateOfBirth**：日期</span><span class="sxs-lookup"><span data-stu-id="143ae-121">**DateOfBirth**: Date</span></span>
+   - <span data-ttu-id="143ae-122">**CreatedOn**：日期/时间/区域</span><span class="sxs-lookup"><span data-stu-id="143ae-122">**CreatedOn**: Date/Time/Zone</span></span>
 
    [!div class="mx-imgBorder"]
-   <span data-ttu-id="afce8-123">![将 DoB 转换为日期](media/ecommerce-dob-date.PNG "将出生日期转换为日期")</span><span class="sxs-lookup"><span data-stu-id="afce8-123">![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")</span></span>
+   <span data-ttu-id="143ae-123">![将 DoB 转换为日期](media/ecommerce-dob-date.PNG "将出生日期转换为日期")</span><span class="sxs-lookup"><span data-stu-id="143ae-123">![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")</span></span>
 
-1. <span data-ttu-id="afce8-124">在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommerceContacts**</span><span class="sxs-lookup"><span data-stu-id="afce8-124">In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**</span></span>
+1. <span data-ttu-id="143ae-124">在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommerceContacts**</span><span class="sxs-lookup"><span data-stu-id="143ae-124">In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**</span></span>
 
-1. <span data-ttu-id="afce8-125">保存数据源。</span><span class="sxs-lookup"><span data-stu-id="afce8-125">Save the data source.</span></span>
+1. <span data-ttu-id="143ae-125">保存数据源。</span><span class="sxs-lookup"><span data-stu-id="143ae-125">Save the data source.</span></span>
 
-### <a name="ingest-online-purchase-data"></a><span data-ttu-id="afce8-126">引入在线购买数据</span><span class="sxs-lookup"><span data-stu-id="afce8-126">Ingest online purchase data</span></span>
+### <a name="ingest-online-purchase-data"></a><span data-ttu-id="143ae-126">引入在线购买数据</span><span class="sxs-lookup"><span data-stu-id="143ae-126">Ingest online purchase data</span></span>
 
-1. <span data-ttu-id="afce8-127">将另一个数据集添加到相同的 **电子商务** 数据源中。</span><span class="sxs-lookup"><span data-stu-id="afce8-127">Add another data set to the same **eCommerce** data source.</span></span> <span data-ttu-id="afce8-128">再次选择 **文本/CSV** 连接器。</span><span class="sxs-lookup"><span data-stu-id="afce8-128">Choose the **Text/CSV** connector again.</span></span>
+1. <span data-ttu-id="143ae-127">将另一个数据集添加到相同的 **电子商务** 数据源中。</span><span class="sxs-lookup"><span data-stu-id="143ae-127">Add another data set to the same **eCommerce** data source.</span></span> <span data-ttu-id="143ae-128">再次选择 **文本/CSV** 连接器。</span><span class="sxs-lookup"><span data-stu-id="143ae-128">Choose the **Text/CSV** connector again.</span></span>
 
-1. <span data-ttu-id="afce8-129">输入 **在线购买** 数据的 URL https://aka.ms/ciadclassonline。</span><span class="sxs-lookup"><span data-stu-id="afce8-129">Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.</span></span>
+1. <span data-ttu-id="143ae-129">输入 **在线购买** 数据的 URL https://aka.ms/ciadclassonline。</span><span class="sxs-lookup"><span data-stu-id="143ae-129">Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.</span></span>
 
-1. <span data-ttu-id="afce8-130">编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。</span><span class="sxs-lookup"><span data-stu-id="afce8-130">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="143ae-130">编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。</span><span class="sxs-lookup"><span data-stu-id="143ae-130">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="afce8-131">更新下面列出的列的数据类型：</span><span class="sxs-lookup"><span data-stu-id="afce8-131">Update the datatype for the columns listed below:</span></span>
+1. <span data-ttu-id="143ae-131">更新下面列出的列的数据类型：</span><span class="sxs-lookup"><span data-stu-id="143ae-131">Update the datatype for the columns listed below:</span></span>
 
-   - <span data-ttu-id="afce8-132">**PurchasedOn**：日期/时间</span><span class="sxs-lookup"><span data-stu-id="afce8-132">**PurchasedOn**: Date/Time</span></span>
-   - <span data-ttu-id="afce8-133">**TotalPrice**：货币</span><span class="sxs-lookup"><span data-stu-id="afce8-133">**TotalPrice**: Currency</span></span>
+   - <span data-ttu-id="143ae-132">**PurchasedOn**：日期/时间</span><span class="sxs-lookup"><span data-stu-id="143ae-132">**PurchasedOn**: Date/Time</span></span>
+   - <span data-ttu-id="143ae-133">**TotalPrice**：货币</span><span class="sxs-lookup"><span data-stu-id="143ae-133">**TotalPrice**: Currency</span></span>
    
-1. <span data-ttu-id="afce8-134">在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommercePurchases**。</span><span class="sxs-lookup"><span data-stu-id="afce8-134">In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.</span></span>
+1. <span data-ttu-id="143ae-134">在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommercePurchases**。</span><span class="sxs-lookup"><span data-stu-id="143ae-134">In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.</span></span>
 
-1. <span data-ttu-id="afce8-135">保存数据源。</span><span class="sxs-lookup"><span data-stu-id="afce8-135">Save the data source.</span></span>
+1. <span data-ttu-id="143ae-135">保存数据源。</span><span class="sxs-lookup"><span data-stu-id="143ae-135">Save the data source.</span></span>
 
-### <a name="ingest-customer-data-from-loyalty-schema"></a><span data-ttu-id="afce8-136">从忠诚度架构中引入客户数据</span><span class="sxs-lookup"><span data-stu-id="afce8-136">Ingest customer data from loyalty schema</span></span>
+### <a name="ingest-customer-data-from-loyalty-schema"></a><span data-ttu-id="143ae-136">从忠诚度架构中引入客户数据</span><span class="sxs-lookup"><span data-stu-id="143ae-136">Ingest customer data from loyalty schema</span></span>
 
-1. <span data-ttu-id="afce8-137">创建名为 **LoyaltyScheme** 的数据源，选择导入选项，然后选择 **文本/CSV** 连接器。</span><span class="sxs-lookup"><span data-stu-id="afce8-137">Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.</span></span>
+1. <span data-ttu-id="143ae-137">创建名为 **LoyaltyScheme** 的数据源，选择导入选项，然后选择 **文本/CSV** 连接器。</span><span class="sxs-lookup"><span data-stu-id="143ae-137">Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.</span></span>
 
-1. <span data-ttu-id="afce8-138">输入电子商务联系人的 URL https://aka.ms/ciadclasscustomerloyalty。</span><span class="sxs-lookup"><span data-stu-id="afce8-138">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.</span></span>
+1. <span data-ttu-id="143ae-138">输入电子商务联系人的 URL https://aka.ms/ciadclasscustomerloyalty。</span><span class="sxs-lookup"><span data-stu-id="143ae-138">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.</span></span>
 
-1. <span data-ttu-id="afce8-139">编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。</span><span class="sxs-lookup"><span data-stu-id="afce8-139">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="143ae-139">编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。</span><span class="sxs-lookup"><span data-stu-id="143ae-139">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="afce8-140">更新下面列出的列的数据类型：</span><span class="sxs-lookup"><span data-stu-id="afce8-140">Update the datatype for the columns listed below:</span></span>
+1. <span data-ttu-id="143ae-140">更新下面列出的列的数据类型：</span><span class="sxs-lookup"><span data-stu-id="143ae-140">Update the datatype for the columns listed below:</span></span>
 
-   - <span data-ttu-id="afce8-141">**DateOfBirth**：日期</span><span class="sxs-lookup"><span data-stu-id="afce8-141">**DateOfBirth**: Date</span></span>
-   - <span data-ttu-id="afce8-142">**RewardsPoints**：整数</span><span class="sxs-lookup"><span data-stu-id="afce8-142">**RewardsPoints**: Whole Number</span></span>
-   - <span data-ttu-id="afce8-143">**CreatedOn**：日期/时间</span><span class="sxs-lookup"><span data-stu-id="afce8-143">**CreatedOn**: Date/Time</span></span>
+   - <span data-ttu-id="143ae-141">**DateOfBirth**：日期</span><span class="sxs-lookup"><span data-stu-id="143ae-141">**DateOfBirth**: Date</span></span>
+   - <span data-ttu-id="143ae-142">**RewardsPoints**：整数</span><span class="sxs-lookup"><span data-stu-id="143ae-142">**RewardsPoints**: Whole Number</span></span>
+   - <span data-ttu-id="143ae-143">**CreatedOn**：日期/时间</span><span class="sxs-lookup"><span data-stu-id="143ae-143">**CreatedOn**: Date/Time</span></span>
 
-1. <span data-ttu-id="afce8-144">在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **loyCustomers**。</span><span class="sxs-lookup"><span data-stu-id="afce8-144">In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.</span></span>
+1. <span data-ttu-id="143ae-144">在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **loyCustomers**。</span><span class="sxs-lookup"><span data-stu-id="143ae-144">In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.</span></span>
 
-1. <span data-ttu-id="afce8-145">保存数据源。</span><span class="sxs-lookup"><span data-stu-id="afce8-145">Save the data source.</span></span>
+1. <span data-ttu-id="143ae-145">保存数据源。</span><span class="sxs-lookup"><span data-stu-id="143ae-145">Save the data source.</span></span>
 
 
-## <a name="task-2---data-unification"></a><span data-ttu-id="afce8-146">任务 2 - 数据统一</span><span class="sxs-lookup"><span data-stu-id="afce8-146">Task 2 - Data unification</span></span>
+## <a name="task-2---data-unification"></a><span data-ttu-id="143ae-146">任务 2 - 数据统一</span><span class="sxs-lookup"><span data-stu-id="143ae-146">Task 2 - Data unification</span></span>
 
-<span data-ttu-id="afce8-147">引入数据后，我们现在将开始 **映射、匹配、合并** 流程以创建统一的客户配置文件。</span><span class="sxs-lookup"><span data-stu-id="afce8-147">After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile.</span></span> <span data-ttu-id="afce8-148">有关详细信息，请参阅[数据统一](data-unification.md)。</span><span class="sxs-lookup"><span data-stu-id="afce8-148">For more information, see [Data unification](data-unification.md).</span></span>
+<span data-ttu-id="143ae-147">引入数据后，我们现在将开始 **映射、匹配、合并** 流程以创建统一的客户配置文件。</span><span class="sxs-lookup"><span data-stu-id="143ae-147">After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile.</span></span> <span data-ttu-id="143ae-148">有关详细信息，请参阅[数据统一](data-unification.md)。</span><span class="sxs-lookup"><span data-stu-id="143ae-148">For more information, see [Data unification](data-unification.md).</span></span>
 
-### <a name="map"></a><span data-ttu-id="afce8-149">映射</span><span class="sxs-lookup"><span data-stu-id="afce8-149">Map</span></span>
+### <a name="map"></a><span data-ttu-id="143ae-149">映射</span><span class="sxs-lookup"><span data-stu-id="143ae-149">Map</span></span>
 
-1. <span data-ttu-id="afce8-150">引入数据后，将联系人从电子商务和忠诚度数据映射到常见数据类型。</span><span class="sxs-lookup"><span data-stu-id="afce8-150">After ingesting the data, map contacts from eCommerce and Loyalty data to common data types.</span></span> <span data-ttu-id="afce8-151">转到 **数据** > **统一** > **映射**。</span><span class="sxs-lookup"><span data-stu-id="afce8-151">Go to **Data** > **Unify** > **Map**.</span></span>
+1. <span data-ttu-id="143ae-150">引入数据后，将联系人从电子商务和忠诚度数据映射到常见数据类型。</span><span class="sxs-lookup"><span data-stu-id="143ae-150">After ingesting the data, map contacts from eCommerce and Loyalty data to common data types.</span></span> <span data-ttu-id="143ae-151">转到 **数据** > **统一** > **映射**。</span><span class="sxs-lookup"><span data-stu-id="143ae-151">Go to **Data** > **Unify** > **Map**.</span></span>
 
-1. <span data-ttu-id="afce8-152">选择表示客户配置文件的实体 – **eCommerceContacts** 和 **loyCustomers**。</span><span class="sxs-lookup"><span data-stu-id="afce8-152">Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.</span></span> 
+1. <span data-ttu-id="143ae-152">选择表示客户配置文件的实体 – **eCommerceContacts** 和 **loyCustomers**。</span><span class="sxs-lookup"><span data-stu-id="143ae-152">Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.</span></span> 
 
    :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="统一电子商务和忠诚度数据源。":::
 
-1. <span data-ttu-id="afce8-154">选择 **ContactId** 作为 **eCommerceContacts** 的主键，选择 **LoyaltyID** 作为 **loyCustomers** 的主键。</span><span class="sxs-lookup"><span data-stu-id="afce8-154">Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.</span></span>
+1. <span data-ttu-id="143ae-154">选择 **ContactId** 作为 **eCommerceContacts** 的主键，选择 **LoyaltyID** 作为 **loyCustomers** 的主键。</span><span class="sxs-lookup"><span data-stu-id="143ae-154">Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.</span></span>
 
    :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="统一 LoyaltyId 作为主键。":::
 
-### <a name="match"></a><span data-ttu-id="afce8-156">匹配项</span><span class="sxs-lookup"><span data-stu-id="afce8-156">Match</span></span>
+### <a name="match"></a><span data-ttu-id="143ae-156">匹配项</span><span class="sxs-lookup"><span data-stu-id="143ae-156">Match</span></span>
 
-1. <span data-ttu-id="afce8-157">转到 **匹配** 选项卡并选择 **设置顺序**。</span><span class="sxs-lookup"><span data-stu-id="afce8-157">Go to the **Match** tab and select **Set Order**.</span></span>
+1. <span data-ttu-id="143ae-157">转到 **匹配** 选项卡并选择 **设置顺序**。</span><span class="sxs-lookup"><span data-stu-id="143ae-157">Go to the **Match** tab and select **Set Order**.</span></span>
 
-1. <span data-ttu-id="afce8-158">在 **主要** 下拉列表中，选择 **eCommerceContacts：电子商务** 作为主要源，并包括所有记录。</span><span class="sxs-lookup"><span data-stu-id="afce8-158">In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.</span></span>
+1. <span data-ttu-id="143ae-158">在 **主要** 下拉列表中，选择 **eCommerceContacts：电子商务** 作为主要源，并包括所有记录。</span><span class="sxs-lookup"><span data-stu-id="143ae-158">In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.</span></span>
 
-1. <span data-ttu-id="afce8-159">在 **实体 2** 下拉列表中，选择 **loyCustomers：LoyaltyScheme**，并包括所有记录。</span><span class="sxs-lookup"><span data-stu-id="afce8-159">In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.</span></span>
+1. <span data-ttu-id="143ae-159">在 **实体 2** 下拉列表中，选择 **loyCustomers：LoyaltyScheme**，并包括所有记录。</span><span class="sxs-lookup"><span data-stu-id="143ae-159">In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.</span></span>
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="统一匹配电子商务和忠诚度。":::
 
-1. <span data-ttu-id="afce8-161">选择 **创建新规则**</span><span class="sxs-lookup"><span data-stu-id="afce8-161">Select **Create a new rule**</span></span>
+1. <span data-ttu-id="143ae-161">选择 **创建新规则**</span><span class="sxs-lookup"><span data-stu-id="143ae-161">Select **Create a new rule**</span></span>
 
-1. <span data-ttu-id="afce8-162">使用 FullName 添加您的第一个条件。</span><span class="sxs-lookup"><span data-stu-id="afce8-162">Add your first condition using FullName.</span></span>
+1. <span data-ttu-id="143ae-162">使用 FullName 添加您的第一个条件。</span><span class="sxs-lookup"><span data-stu-id="143ae-162">Add your first condition using FullName.</span></span>
 
-   * <span data-ttu-id="afce8-163">对于 eCommerceContacts，在下拉列表中选择 **全名**。</span><span class="sxs-lookup"><span data-stu-id="afce8-163">For eCommerceContacts select **FullName** in the drop-down.</span></span>
-   * <span data-ttu-id="afce8-164">对于 loyCustomers，在下拉列表中选择 **全名**。</span><span class="sxs-lookup"><span data-stu-id="afce8-164">For loyCustomers select **FullName** in the drop-down.</span></span>
-   * <span data-ttu-id="afce8-165">选择 **标准化** 下拉列表，然后选择 **类型（电话、名称、地址......）**。</span><span class="sxs-lookup"><span data-stu-id="afce8-165">Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.</span></span>
-   * <span data-ttu-id="afce8-166">设置 **精度级别**：**基本** 和 **值**：**高**。</span><span class="sxs-lookup"><span data-stu-id="afce8-166">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
+   * <span data-ttu-id="143ae-163">对于 eCommerceContacts，在下拉列表中选择 **全名**。</span><span class="sxs-lookup"><span data-stu-id="143ae-163">For eCommerceContacts select **FullName** in the drop-down.</span></span>
+   * <span data-ttu-id="143ae-164">对于 loyCustomers，在下拉列表中选择 **全名**。</span><span class="sxs-lookup"><span data-stu-id="143ae-164">For loyCustomers select **FullName** in the drop-down.</span></span>
+   * <span data-ttu-id="143ae-165">选择 **标准化** 下拉列表，然后选择 **类型（电话、名称、地址......）**。</span><span class="sxs-lookup"><span data-stu-id="143ae-165">Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.</span></span>
+   * <span data-ttu-id="143ae-166">设置 **精度级别**：**基本** 和 **值**：**高**。</span><span class="sxs-lookup"><span data-stu-id="143ae-166">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
 
-1. <span data-ttu-id="afce8-167">为新规则输入名称 **全名、电子邮件**。</span><span class="sxs-lookup"><span data-stu-id="afce8-167">Enter the name **FullName, Email** for the new rule.</span></span>
+1. <span data-ttu-id="143ae-167">为新规则输入名称 **全名、电子邮件**。</span><span class="sxs-lookup"><span data-stu-id="143ae-167">Enter the name **FullName, Email** for the new rule.</span></span>
 
-   * <span data-ttu-id="afce8-168">通过选择 **添加条件** 为电子邮件地址添加第二个条件</span><span class="sxs-lookup"><span data-stu-id="afce8-168">Add a second condition for email address by selecting **Add Condition**</span></span>
-   * <span data-ttu-id="afce8-169">对于实体 eCommerceContacts，在下拉列表中选择 **电子邮件**。</span><span class="sxs-lookup"><span data-stu-id="afce8-169">For entity eCommerceContacts, choose **EMail** in drop-down.</span></span>
-   * <span data-ttu-id="afce8-170">对于实体 loyCustomers，在下拉列表中选择 **电子邮件**。</span><span class="sxs-lookup"><span data-stu-id="afce8-170">For entity loyCustomers, choose **EMail** in the drop-down.</span></span> 
-   * <span data-ttu-id="afce8-171">将“标准化”留空。</span><span class="sxs-lookup"><span data-stu-id="afce8-171">Leave Normalize blank.</span></span> 
-   * <span data-ttu-id="afce8-172">设置 **精度级别**：**基本** 和 **值**：**高**。</span><span class="sxs-lookup"><span data-stu-id="afce8-172">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
+   * <span data-ttu-id="143ae-168">通过选择 **添加条件** 为电子邮件地址添加第二个条件</span><span class="sxs-lookup"><span data-stu-id="143ae-168">Add a second condition for email address by selecting **Add Condition**</span></span>
+   * <span data-ttu-id="143ae-169">对于实体 eCommerceContacts，在下拉列表中选择 **电子邮件**。</span><span class="sxs-lookup"><span data-stu-id="143ae-169">For entity eCommerceContacts, choose **EMail** in drop-down.</span></span>
+   * <span data-ttu-id="143ae-170">对于实体 loyCustomers，在下拉列表中选择 **电子邮件**。</span><span class="sxs-lookup"><span data-stu-id="143ae-170">For entity loyCustomers, choose **EMail** in the drop-down.</span></span> 
+   * <span data-ttu-id="143ae-171">将“标准化”留空。</span><span class="sxs-lookup"><span data-stu-id="143ae-171">Leave Normalize blank.</span></span> 
+   * <span data-ttu-id="143ae-172">设置 **精度级别**：**基本** 和 **值**：**高**。</span><span class="sxs-lookup"><span data-stu-id="143ae-172">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
 
    :::image type="content" source="media/unify-match-rule.PNG" alt-text="统一名称和电子邮件的匹配规则。":::
 
-7. <span data-ttu-id="afce8-174">选择 **保存** 和 **运行**。</span><span class="sxs-lookup"><span data-stu-id="afce8-174">Select **Save** and **Run**.</span></span>
+7. <span data-ttu-id="143ae-174">选择 **保存** 和 **运行**。</span><span class="sxs-lookup"><span data-stu-id="143ae-174">Select **Save** and **Run**.</span></span>
 
-### <a name="merge"></a><span data-ttu-id="afce8-175">合并​​</span><span class="sxs-lookup"><span data-stu-id="afce8-175">Merge</span></span>
+### <a name="merge"></a><span data-ttu-id="143ae-175">合并​​</span><span class="sxs-lookup"><span data-stu-id="143ae-175">Merge</span></span>
 
-1. <span data-ttu-id="afce8-176">转到 **合并** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="afce8-176">Go to the **Merge** tab.</span></span>
+1. <span data-ttu-id="143ae-176">转到 **合并** 选项卡。</span><span class="sxs-lookup"><span data-stu-id="143ae-176">Go to the **Merge** tab.</span></span>
 
-1. <span data-ttu-id="afce8-177">在 **loyCustomers** 实体的 **ContactId** 上，将显示名称更改为 **ContactIdLOYALTY** 以将其与引入的其他 ID 区分开。</span><span class="sxs-lookup"><span data-stu-id="afce8-177">On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.</span></span>
+1. <span data-ttu-id="143ae-177">在 **loyCustomers** 实体的 **ContactId** 上，将显示名称更改为 **ContactIdLOYALTY** 以将其与引入的其他 ID 区分开。</span><span class="sxs-lookup"><span data-stu-id="143ae-177">On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.</span></span>
 
    :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="从忠诚度 ID 中重命名 contactid。":::
 
-1. <span data-ttu-id="afce8-179">选择 **保存** 和 **运行** 以启动合并流程。</span><span class="sxs-lookup"><span data-stu-id="afce8-179">Select **Save** and **Run** to start the Merge Process.</span></span>
+1. <span data-ttu-id="143ae-179">选择 **保存** 和 **运行** 以启动合并流程。</span><span class="sxs-lookup"><span data-stu-id="143ae-179">Select **Save** and **Run** to start the Merge Process.</span></span>
 
 
 
-## <a name="task-3---configure-transaction-churn-prediction"></a><span data-ttu-id="afce8-180">任务 3 - 配置交易流失预测</span><span class="sxs-lookup"><span data-stu-id="afce8-180">Task 3 - Configure transaction churn prediction</span></span>
+## <a name="task-3---configure-transaction-churn-prediction"></a><span data-ttu-id="143ae-180">任务 3 - 配置交易流失预测</span><span class="sxs-lookup"><span data-stu-id="143ae-180">Task 3 - Configure transaction churn prediction</span></span>
 
-<span data-ttu-id="afce8-181">有了统一的客户配置文件，我们现在可以运行订阅流失预测。</span><span class="sxs-lookup"><span data-stu-id="afce8-181">With the unified customer profiles in place, we can now run the subscription churn prediction.</span></span> <span data-ttu-id="afce8-182">有关详细步骤，请参阅[订阅流失预测（预览）](predict-subscription-churn.md)文章。</span><span class="sxs-lookup"><span data-stu-id="afce8-182">For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article.</span></span> 
+<span data-ttu-id="143ae-181">有了统一的客户配置文件，我们现在可以运行订阅流失预测。</span><span class="sxs-lookup"><span data-stu-id="143ae-181">With the unified customer profiles in place, we can now run the subscription churn prediction.</span></span> <span data-ttu-id="143ae-182">有关详细步骤，请参阅[订阅流失预测（预览）](predict-subscription-churn.md)文章。</span><span class="sxs-lookup"><span data-stu-id="143ae-182">For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article.</span></span> 
 
-1. <span data-ttu-id="afce8-183">转到 **智能** > **发现** 并选择使用 **客户流失模型**。</span><span class="sxs-lookup"><span data-stu-id="afce8-183">Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.</span></span>
+1. <span data-ttu-id="143ae-183">转到 **智能** > **发现** 并选择使用 **客户流失模型**。</span><span class="sxs-lookup"><span data-stu-id="143ae-183">Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.</span></span>
 
-1. <span data-ttu-id="afce8-184">选择 **交易** 选项，然后选择 **开始**。</span><span class="sxs-lookup"><span data-stu-id="afce8-184">Select the **Transactional** option and select **Get started**.</span></span>
+1. <span data-ttu-id="143ae-184">选择 **交易** 选项，然后选择 **开始**。</span><span class="sxs-lookup"><span data-stu-id="143ae-184">Select the **Transactional** option and select **Get started**.</span></span>
 
-1. <span data-ttu-id="afce8-185">命名模型 **OOB 电子商务交易流失预测** 和输出实体 **OOBeCommerceChurnPrediction**。</span><span class="sxs-lookup"><span data-stu-id="afce8-185">Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceChurnPrediction**.</span></span>
+1. <span data-ttu-id="143ae-185">命名模型 **OOB 电子商务交易流失预测** 和输出实体 **OOBeCommerceChurnPrediction**。</span><span class="sxs-lookup"><span data-stu-id="143ae-185">Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceChurnPrediction**.</span></span>
 
-1. <span data-ttu-id="afce8-186">定义流失模型的两个条件：</span><span class="sxs-lookup"><span data-stu-id="afce8-186">Define two conditions for the churn model:</span></span>
+1. <span data-ttu-id="143ae-186">定义流失模型的两个条件：</span><span class="sxs-lookup"><span data-stu-id="143ae-186">Define two conditions for the churn model:</span></span>
 
-   * <span data-ttu-id="afce8-187">**预测时间范围**：**至少 60** 天。</span><span class="sxs-lookup"><span data-stu-id="afce8-187">**Prediction window**: **at least 60** days.</span></span> <span data-ttu-id="afce8-188">此设置定义未来您想要预测客户流失的程度。</span><span class="sxs-lookup"><span data-stu-id="afce8-188">This setting defines how far into the future do we want to predict customer churn.</span></span>
+   * <span data-ttu-id="143ae-187">**预测时间范围**：**至少 60** 天。</span><span class="sxs-lookup"><span data-stu-id="143ae-187">**Prediction window**: **at least 60** days.</span></span> <span data-ttu-id="143ae-188">此设置定义未来您想要预测客户流失的程度。</span><span class="sxs-lookup"><span data-stu-id="143ae-188">This setting defines how far into the future do we want to predict customer churn.</span></span>
 
-   * <span data-ttu-id="afce8-189">**流失定义**：**至少 60** 天。</span><span class="sxs-lookup"><span data-stu-id="afce8-189">**Churn definition**: **at least 60** days.</span></span> <span data-ttu-id="afce8-190">视为已流失的客户未进行购买的持续时间。</span><span class="sxs-lookup"><span data-stu-id="afce8-190">The duration without purchase after which a customer is considered churned.</span></span>
+   * <span data-ttu-id="143ae-189">**流失定义**：**至少 60** 天。</span><span class="sxs-lookup"><span data-stu-id="143ae-189">**Churn definition**: **at least 60** days.</span></span> <span data-ttu-id="143ae-190">视为已流失的客户未进行购买的持续时间。</span><span class="sxs-lookup"><span data-stu-id="143ae-190">The duration without purchase after which a customer is considered churned.</span></span>
 
      :::image type="content" source="media/model-levers.PNG" alt-text="选择模型方法预测时间范围和流失定义。":::
 
-1. <span data-ttu-id="afce8-192">选择 **购买历史记录（必需）**，然后针对购买历史记录选择 **添加数据**。</span><span class="sxs-lookup"><span data-stu-id="afce8-192">Select **Purchase History (required)** and select **Add data** for purchase history.</span></span>
+1. <span data-ttu-id="143ae-192">选择 **购买历史记录（必需）**，然后针对购买历史记录选择 **添加数据**。</span><span class="sxs-lookup"><span data-stu-id="143ae-192">Select **Purchase History (required)** and select **Add data** for purchase history.</span></span>
 
-1. <span data-ttu-id="afce8-193">添加 **eCommercePurchases：电子商务** 实体，并将电子商务中的字段映射到模型所需的相应字段。</span><span class="sxs-lookup"><span data-stu-id="afce8-193">Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.</span></span>
+1. <span data-ttu-id="143ae-193">添加 **eCommercePurchases：电子商务** 实体，并将电子商务中的字段映射到模型所需的相应字段。</span><span class="sxs-lookup"><span data-stu-id="143ae-193">Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.</span></span>
 
-1. <span data-ttu-id="afce8-194">使用 **eCommerceContacts：电子商务** 加入 **eCommercePurchases：电子商务** 实体。</span><span class="sxs-lookup"><span data-stu-id="afce8-194">Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.</span></span>
+1. <span data-ttu-id="143ae-194">使用 **eCommerceContacts：电子商务** 加入 **eCommercePurchases：电子商务** 实体。</span><span class="sxs-lookup"><span data-stu-id="143ae-194">Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.</span></span>
 
    :::image type="content" source="media/model-purchase-join.PNG" alt-text="加入电子商务实体。":::
 
-1. <span data-ttu-id="afce8-196">选择 **下一步** 以设置模型计划。</span><span class="sxs-lookup"><span data-stu-id="afce8-196">Select **Next** to set the model schedule.</span></span>
+1. <span data-ttu-id="143ae-196">选择 **下一步** 以设置模型计划。</span><span class="sxs-lookup"><span data-stu-id="143ae-196">Select **Next** to set the model schedule.</span></span>
 
-   <span data-ttu-id="afce8-197">在引入新数据后，需要定期对模型进行定型以学习新模式。</span><span class="sxs-lookup"><span data-stu-id="afce8-197">The model needs to train regularly to learn new patterns when there is new data ingested.</span></span> <span data-ttu-id="afce8-198">对于此示例，请选择 **每月**。</span><span class="sxs-lookup"><span data-stu-id="afce8-198">For this example, select **Monthly**.</span></span>
+   <span data-ttu-id="143ae-197">在引入新数据后，需要定期对模型进行定型以学习新模式。</span><span class="sxs-lookup"><span data-stu-id="143ae-197">The model needs to train regularly to learn new patterns when there is new data ingested.</span></span> <span data-ttu-id="143ae-198">对于此示例，请选择 **每月**。</span><span class="sxs-lookup"><span data-stu-id="143ae-198">For this example, select **Monthly**.</span></span>
 
-1. <span data-ttu-id="afce8-199">在查看所有详细信息后，选择 **保存并运行**。</span><span class="sxs-lookup"><span data-stu-id="afce8-199">After reviewing all the details, select **Save and Run**.</span></span>
+1. <span data-ttu-id="143ae-199">在查看所有详细信息后，选择 **保存并运行**。</span><span class="sxs-lookup"><span data-stu-id="143ae-199">After reviewing all the details, select **Save and Run**.</span></span>
 
-## <a name="task-4---review-model-results-and-explanations"></a><span data-ttu-id="afce8-200">任务 4 - 审阅模型结果和说明</span><span class="sxs-lookup"><span data-stu-id="afce8-200">Task 4 - Review model results and explanations</span></span>
+## <a name="task-4---review-model-results-and-explanations"></a><span data-ttu-id="143ae-200">任务 4 - 审阅模型结果和说明</span><span class="sxs-lookup"><span data-stu-id="143ae-200">Task 4 - Review model results and explanations</span></span>
 
-<span data-ttu-id="afce8-201">让模型完成数据的训练和评分。</span><span class="sxs-lookup"><span data-stu-id="afce8-201">Let the model complete the training and scoring of the data.</span></span> <span data-ttu-id="afce8-202">您现在可以审阅订阅流失模型说明。</span><span class="sxs-lookup"><span data-stu-id="afce8-202">You can now review the subscription churn model explanations.</span></span> <span data-ttu-id="afce8-203">有关详细信息，请参阅[审阅预测状态和结果](predict-subscription-churn.md#review-a-prediction-status-and-results)。</span><span class="sxs-lookup"><span data-stu-id="afce8-203">For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).</span></span>
+<span data-ttu-id="143ae-201">让模型完成数据的训练和评分。</span><span class="sxs-lookup"><span data-stu-id="143ae-201">Let the model complete the training and scoring of the data.</span></span> <span data-ttu-id="143ae-202">您现在可以审阅订阅流失模型说明。</span><span class="sxs-lookup"><span data-stu-id="143ae-202">You can now review the subscription churn model explanations.</span></span> <span data-ttu-id="143ae-203">有关详细信息，请参阅[审阅预测状态和结果](predict-subscription-churn.md#review-a-prediction-status-and-results)。</span><span class="sxs-lookup"><span data-stu-id="143ae-203">For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).</span></span>
 
-## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a><span data-ttu-id="afce8-204">任务 5 - 创建高流失风险客户的客户细分</span><span class="sxs-lookup"><span data-stu-id="afce8-204">Task 5 - Create a segment of high churn-risk customers</span></span>
+## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a><span data-ttu-id="143ae-204">任务 5 - 创建高流失风险客户的客户细分</span><span class="sxs-lookup"><span data-stu-id="143ae-204">Task 5 - Create a segment of high churn-risk customers</span></span>
 
-<span data-ttu-id="afce8-205">运行生产模型将创建一个新实体，您可以在 **数据** > **实体** 中看到该实体。</span><span class="sxs-lookup"><span data-stu-id="afce8-205">Running the production model creates a new entity that you can see in **Data** > **Entities**.</span></span>   
+<span data-ttu-id="143ae-205">运行生产模型将创建一个新实体，您可以在 **数据** > **实体** 中看到该实体。</span><span class="sxs-lookup"><span data-stu-id="143ae-205">Running the production model creates a new entity that you can see in **Data** > **Entities**.</span></span>   
 
-<span data-ttu-id="afce8-206">您可以基于模型创建的实体创建新的客户细分。</span><span class="sxs-lookup"><span data-stu-id="afce8-206">You can create a new segment based on the entity created by the model.</span></span>
+<span data-ttu-id="143ae-206">您可以基于模型创建的实体创建新的客户细分。</span><span class="sxs-lookup"><span data-stu-id="143ae-206">You can create a new segment based on the entity created by the model.</span></span>
 
-1.  <span data-ttu-id="afce8-207">转到 **客户细分**。</span><span class="sxs-lookup"><span data-stu-id="afce8-207">Go to **Segments**.</span></span> <span data-ttu-id="afce8-208">选择 **新建**，然后选择 **创建自** > **智能**。</span><span class="sxs-lookup"><span data-stu-id="afce8-208">Select **New** and choose **Create from** > **Intelligence**.</span></span> 
+1.  <span data-ttu-id="143ae-207">转到 **客户细分**。</span><span class="sxs-lookup"><span data-stu-id="143ae-207">Go to **Segments**.</span></span> <span data-ttu-id="143ae-208">选择 **新建**，然后选择 **创建自** > **智能**。</span><span class="sxs-lookup"><span data-stu-id="143ae-208">Select **New** and choose **Create from** > **Intelligence**.</span></span> 
 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="使用模型输出创建客户细分。":::
 
-1. <span data-ttu-id="afce8-210">选择 **OOBSubscriptionChurnPrediction** 终结点并定义客户细分：</span><span class="sxs-lookup"><span data-stu-id="afce8-210">Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment:</span></span> 
-   - <span data-ttu-id="afce8-211">字段：ChurnScore</span><span class="sxs-lookup"><span data-stu-id="afce8-211">Field: ChurnScore</span></span>
-   - <span data-ttu-id="afce8-212">运算符：大于</span><span class="sxs-lookup"><span data-stu-id="afce8-212">Operator: greater than</span></span>
-   - <span data-ttu-id="afce8-213">值：0.6</span><span class="sxs-lookup"><span data-stu-id="afce8-213">Value: 0.6</span></span>
+1. <span data-ttu-id="143ae-210">选择 **OOBSubscriptionChurnPrediction** 终结点并定义客户细分：</span><span class="sxs-lookup"><span data-stu-id="143ae-210">Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment:</span></span> 
+   - <span data-ttu-id="143ae-211">字段：ChurnScore</span><span class="sxs-lookup"><span data-stu-id="143ae-211">Field: ChurnScore</span></span>
+   - <span data-ttu-id="143ae-212">运算符：大于</span><span class="sxs-lookup"><span data-stu-id="143ae-212">Operator: greater than</span></span>
+   - <span data-ttu-id="143ae-213">值：0.6</span><span class="sxs-lookup"><span data-stu-id="143ae-213">Value: 0.6</span></span>
    
    :::image type="content" source="media/segment-setup-subs.PNG" alt-text="设置订阅流失客户细分。":::
 
-<span data-ttu-id="afce8-215">现在，您已具有将动态更新的客户细分，可用于确定此订阅业务的高流失风险客户。</span><span class="sxs-lookup"><span data-stu-id="afce8-215">You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.</span></span>
+<span data-ttu-id="143ae-215">现在，您已具有将动态更新的客户细分，可用于确定此订阅业务的高流失风险客户。</span><span class="sxs-lookup"><span data-stu-id="143ae-215">You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.</span></span>
 
-<span data-ttu-id="afce8-216">有关详细信息，请参阅[创建和管理客户细分](segments.md)。</span><span class="sxs-lookup"><span data-stu-id="afce8-216">For more information, see [Create and manage segments](segments.md).</span></span>
+<span data-ttu-id="143ae-216">有关详细信息，请参阅[创建和管理客户细分](segments.md)。</span><span class="sxs-lookup"><span data-stu-id="143ae-216">For more information, see [Create and manage segments](segments.md).</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
