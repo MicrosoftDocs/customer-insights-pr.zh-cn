@@ -2,19 +2,19 @@
 title: Power Apps 连接器
 description: 与 Power Apps 和 Power Automate 连接。
 ms.date: 01/19/2021
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268905"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598144"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 连接器（预览版）
 
@@ -22,9 +22,9 @@ ms.locfileid: "5268905"
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>连接 Power Apps 和 Dynamics 365 Customer Insights
 
-Customer Insights 是 [Power Apps 中众多数据源](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources)之一。
+Customer Insights 是 [Power Apps 中众多数据源](/powerapps/maker/canvas-apps/working-with-data-sources)之一。
 
-请参阅 Power Apps 文档了解如何[向应用添加数据连接](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection)。 我们建议您另外回顾一下 [Power Apps 如何使用代理来处理画布应用中的大型数据集](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview)。
+请参阅 Power Apps 文档了解如何[向应用添加数据连接](/powerapps/maker/canvas-apps/add-data-connection)。 我们建议您另外回顾一下 [Power Apps 如何使用代理来处理画布应用中的大型数据集](/powerapps/maker/canvas-apps/delegation-overview)。
 
 ## <a name="available-entities"></a>可用实体
 
@@ -47,11 +47,11 @@ Customer Insights 是 [Power Apps 中众多数据源](https://docs.microsoft.com
 
 - **统一活动** 实体的委派：此实体的委派仅适用于字段 **ActivityId** 和 **CustomerId**。  
 
-- 有关委派的详细信息，请参阅 [Power Apps 可委派函数和操作](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps)。 
+- 有关委派的详细信息，请参阅 [Power Apps 可委派函数和操作](/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps)。 
 
 ## <a name="example-gallery-control"></a>示例库控件
 
-例如，您可以将客户配置文件添加到[库控件](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery)。
+例如，您可以将客户配置文件添加到[库控件](/powerapps/maker/canvas-apps/add-gallery)。
 
 1. 请向正在构建的应用添加一个 **库** 控件。
 

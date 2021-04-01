@@ -1,20 +1,20 @@
 ---
 title: Power Automate 连接器 | Microsoft Docs
-description: 在 Microsoft Power Automate 中从 Dynamics 365 Customer Insights 创建流。
+description: 利用 Dynamics 365 Customer Insights 在 Microsoft Power Automate 中创建流。
 ms.date: 01/20/2021
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268813"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597914"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 连接器（预览版）
 
@@ -34,7 +34,7 @@ ms.locfileid: "5268813"
 [在 Power Automate 中配置触发器](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)。
 
 ## <a name="power-automate-actions"></a>Power Automate 操作
-Power Automate 连接器提供的操作与可用触发器不同。 有关详细信息，请参阅“[Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/)”。
+Power Automate 连接器提供的操作与可用触发器不同。 有关详细信息，请参阅“[Dynamics 365 Customer Insights Connector](/connectors/customerinsights/)”。
 
 ## <a name="create-a-power-automate-flow"></a>创建 Power Automate 流
 
@@ -44,7 +44,7 @@ Power Automate 连接器提供的操作与可用触发器不同。 有关详细�
 
 1. Power Automate 中的 Customer Insights 连接器（预览版）将会打开。 **登录** 到 Power Automate。
 
-1. 选择可用触发器之一，然后向新流中添加更多步骤。 有关详细信息，请参阅[在 Power Automate 中创建云端流](https://docs.microsoft.com/power-automate/get-started-logic-flow)。
+1. 选择可用触发器之一，然后向新流中添加更多步骤。 有关详细信息，请参阅[在 Power Automate 中创建云端流](/power-automate/get-started-logic-flow)。
 
 关于如何使用流的示例： 
 - 如果数据源刷新失败，则将消息发布到 Microsoft Teams 渠道。 

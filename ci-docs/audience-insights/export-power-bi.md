@@ -2,19 +2,19 @@
 title: Power BI 连接器
 description: 了解如何在 Power BI 中使用 Dynamics 365 Customer Insights 连接器。
 ms.date: 09/21/2020
-ms.reviewer: sthe
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477077"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596028"
 ---
 # <a name="connector-for-power-bi-preview"></a>适用于 Power BI 的连接器（预览版）
 
@@ -23,7 +23,7 @@ ms.locfileid: "5477077"
 ## <a name="prerequisites"></a>先决条件
 
 - 您具有统一的客户配置文件。
-- 您的计算机上已安装最新版本的 [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/)。 [了解有关 Power BI Desktop 的更多信息](https://docs.microsoft.com/power-bi/desktop-what-is-desktop)。
+- 您的计算机上安装了最新版本的 [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/)。 [了解有关 Power BI Desktop 的更多信息](/power-bi/desktop-what-is-desktop)。
 
 ## <a name="configure-the-connector-for-power-bi"></a>配置适用于 Power BI 的连接器
 
@@ -47,7 +47,7 @@ ms.locfileid: "5477077"
 
 ## <a name="large-data-sets"></a>大型数据集
 
-Power BI 的 Customer Insights 连接器用于最多包含 100 万个客户配置文件的数据集。 导入更大的数据集可能会运行，但需要花费较长时间。 而且，此过程还可能由于 Power BI 限制而超时。 有关详细信息，请参阅 [Power BI：针对大型数据集的建议](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets)。 
+Power BI 的 Customer Insights 连接器用于最多包含 100 万个客户配置文件的数据集。 导入更大的数据集可能会运行，但需要花费较长时间。 而且，此过程还可能由于 Power BI 限制而超时。 有关详细信息，请参阅 [Power BI：针对大型数据集的建议](/power-bi/admin/service-premium-what-is#large-datasets)。 
 
 ### <a name="work-with-a-subset-of-data"></a>使用数据的子集
 
@@ -70,4 +70,3 @@ Power BI 的 Customer Insights 连接器用于最多包含 100 万个客户配�
 在删除重复的关系后，尝试再次配置 Power BI 连接器。 该环境现在应该可用了。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

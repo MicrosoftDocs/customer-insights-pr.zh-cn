@@ -2,19 +2,19 @@
 title: 搜索和筛选客户配置文件
 description: 快速查找有关统一的客户配置文件的信息和筛选出指定的属性。
 ms.date: 01/19/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: d675738c43cbdb5f9b478d53d6124db38ba3004d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270055"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597132"
 ---
 # <a name="customer-profiles-search--filter-index"></a>客户配置文件：搜索和筛选索引
 

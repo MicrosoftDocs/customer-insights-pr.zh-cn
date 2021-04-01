@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267711"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596488"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>使用访问群体见解的 Azure 服务主体连接到 Azure Data Lake Storage Gen2 帐户
 
@@ -23,7 +23,7 @@ ms.locfileid: "5267711"
 您可以使用服务主体安全地[添加或编辑 Common Data Model 文件夹作为数据源](connect-common-data-model.md)或[创建新环境或更新现有环境](manage-environments.md#create-an-environment-in-an-existing-organization)。
 
 > [!IMPORTANT]
-> - 必须为想要使用服务主体的 Azure Data Lake Gen2 存储帐户[启用分层命名空间 (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace)。
+> - 必须为想要使用服务主体的 Azure Data Lake Gen2 存储帐户[启用分层命名空间 (HNS)](/azure/storage/blobs/data-lake-storage-namespace)。
 > - 您需要 Azure 订阅的管理员权限才能创建服务主体。
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>为访问群体见解创建 Azure 服务主体
@@ -48,7 +48,7 @@ ms.locfileid: "5267711"
 
 ### <a name="create-a-new-service-principal"></a>创建新的服务主体
 
-1. 安装最新版本的 **Azure Active Directory PowerShell for Graph**。 有关详细信息，请参阅[安装 Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)。
+1. 安装最新版本的 **Azure Active Directory PowerShell for Graph**。 有关详细信息，请参阅[安装 Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)。
    - 在您的电脑上，选择键盘上的 Windows 键并搜索 **Windows PowerShell**，然后单击 **以管理员身份运行**。
    
    - 在打开的 PowerShell 窗口中，输入 `Install-Module AzureAD`。

@@ -2,23 +2,23 @@
 title: 通过 Power Query 连接器引入数据
 description: 基于 Power Query 的数据源的连接器。
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267757"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596902"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>连接到 Power Query 数据源
 
-Power Query 提供大量用于插入数据的连接器。 其中大多数连接器都受 Dynamics 365 Customer Insights 支持。 添加基于 Power Query 连接器的数据源通常要执行下一节中概述的步骤。 但是，根据您使用的连接器，需要不同的信息。 有关详细信息，请参阅 [Power Query 连接器参考](https://docs.microsoft.com/power-query/connectors/)中各个连接器的相关文档。
+Power Query 提供大量用于插入数据的连接器。 其中大多数连接器都受 Dynamics 365 Customer Insights 支持。 添加基于 Power Query 连接器的数据源通常要执行下一节中概述的步骤。 但是，根据您使用的连接器，需要不同的信息。 有关详细信息，请参阅 [Power Query 连接器参考](/power-query/connectors/)中各个连接器的相关文档。
 
 ## <a name="create-a-new-data-source"></a>创建新的数据源
 
@@ -44,7 +44,7 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
    > [!div class="mx-imgBorder"]
    > ![编辑查询对话框](media/data-manager-configure-edit-queries.png "编辑查询对话框")
 
-1. 还可以转换数据。 选择要编辑或转换的实体。 使用 Power Query 窗口中的选项应用转换。 每个转换在 **应用的步骤** 下列出。 Power Query 提供了很多预建的转换选项。 有关详细信息，请参阅 [Power Query 转换](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations)。
+1. 还可以转换数据。 选择要编辑或转换的实体。 使用 Power Query 窗口中的选项应用转换。 每个转换在 **应用的步骤** 下列出。 Power Query 提供了很多预建的转换选项。 有关详细信息，请参阅 [Power Query 转换](/power-query/power-query-what-is-power-query#transformations)。
 
 1. 可以通过选择 **编辑查询** 对话框中的 **获取数据** 向数据源添加更多实体。
 
@@ -59,7 +59,7 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 
 ## <a name="available-power-query-data-sources"></a>可用 Power Query 数据源
 
-请参阅 [Power Query 连接器参考](https://docs.microsoft.com/power-query/connectors/)，获取您可以选择用来将数据导入 Customer Insights 的连接器的最新列表。 
+请参阅 [Power Query 连接器参考](/power-query/connectors/)，获取您可以选择用来将数据导入 Customer Insights 的连接器的最新列表。 
 
 **Customer Insights (数据流)** 列中带有复选标记的连接器可用于创建新的基于 Power Query 的数据源。 查看特定连接器的文档，了解有关其先决条件、限制和其他详细信息的详细信息。
 

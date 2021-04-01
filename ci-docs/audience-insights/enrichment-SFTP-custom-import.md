@@ -2,19 +2,19 @@
 title: 通过 SFTP 自定义导入扩充
 description: 有关 SFTP 自定义导入扩充的常规信息。
 ms.date: 11/18/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jdahl
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f25dcc08d96d36507e47af0d7b184003ae095819
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: d9e095ef793cbd25415864f76a541dce68fafe47
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269595"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595844"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>使用自定义数据扩充客户配置文件（预览）
 
@@ -50,7 +50,7 @@ ms.locfileid: "5269595"
 
 ## <a name="defining-field-mappings"></a>正在定义字段映射 
 
-包含要在 SFTP 服务器上导入的文件的目录也必须包含 *model.json* 文件。 此文件定义用于导入数据的架构。 架构必须使用 [Common Data Model](https://docs.microsoft.com/common-data-model/) 才能指定字段映射。 Model.json 文件的一个简单示例如下所示：
+包含要在 SFTP 服务器上导入的文件的目录也必须包含 *model.json* 文件。 此文件定义用于导入数据的架构。 架构必须使用 [Common Data Model](/common-data-model/) 才能指定字段映射。 Model.json 文件的一个简单示例如下所示：
 
 ```
 {

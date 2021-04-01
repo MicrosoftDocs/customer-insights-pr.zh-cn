@@ -2,19 +2,19 @@
 title: 通过 Microsoft Graph 扩充客户配置文件
 description: 使用 Microsoft Graph 中的专用数据和品牌与兴趣相似性扩展客户数据。
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2c95369c778f592bc1460799aca0fa8cff813d68
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: aa46dac4f9c0d27881371877b14a92a6725710da
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269319"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596442"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
 
@@ -33,7 +33,7 @@ ms.locfileid: "5269319"
 
 我们使用来自 Microsoft Graph 的联机搜索数据在（按年龄、性别或位置定义的）各种人口统计细分中查找品牌和兴趣的相似性。 品牌或兴趣的联机搜索量决定人口统计细分与其他细分相比在该品牌或兴趣方面的相似程度。
 
-[详细了解 Microsoft Graph](https://docs.microsoft.com/graph/overview)。
+[详细了解 Microsoft Graph](/graph/overview)。
 
 ## <a name="affinity-level-and-score"></a>相似性级别和分数
 

@@ -1,34 +1,34 @@
 ---
 title: 访问群体见解的支持语言
 description: 了解和配置语言支持。
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 84c4011e61058729a0ed0b7123df8a9227b0f083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268169"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595461"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>访问群体见解功能的支持语言
 
-Dynamics 365 Customer Insights 访问群体见解功能支持多种语言。 本主题列出了可用语言，并提供了语言切换支持，以及有关翻译哪些内容的概述。
+Dynamics 365 Customer Insights 访问群体见解已翻译为多种语言。 以下列表包含可用语言和已翻译内容的相关信息。 您还可以了解如何更改语言设置。 
 
 ## <a name="languages"></a>语言
 
 | 语言名称（英语）|  语言名称（母语） |
 | ------------- | ------------- |
 | 巴斯克语 | euskara |
-| 保加利亚语 | Български |
+| 保加利亚语 | български |
 | 加泰罗尼亚语 | català |
 | 中文(简体中文) | 中文(简体) |
-| 中文 (传统) | 中文(繁體) |
+| 中文(繁体) | 中文(繁體) |
 | 克罗地亚语 | hrvatski |
 | 捷克语 | čeština |
 | 丹麦语 | dansk |
@@ -42,20 +42,20 @@ Dynamics 365 Customer Insights 访问群体见解功能支持多种语言。 本
 | 希腊语 | Ελληνικά |
 | 印地语 | हिंदी |
 | 匈牙利语 | magyar |
-| 印度尼西亚语 | 印度尼西亚语 |
+| 印度尼西亚语 | 印度尼西亚 |
 | 意大利语 | italiano |
 | 日语 | 日本語 |
-| 哈萨克语 | Қазақ |
-| 朝鲜语 | 한국어 |
+| 哈萨克语 | қазақ тілі |
+| 韩语 | 한국어 |
 | 拉脱维亚语 | latviešu |
 | 立陶宛语 | lietuvių |
-| 马来语 | 马来语 |
-| 挪威语(博克马尔语) | norsk (bokmål) |
-| 波兰语 | Polski |
+| 马来语 | Melayu |
+| 挪威语(博克马尔语) | norsk bokmål |
+| 波兰语 | polski |
 | 葡萄牙语(巴西) | português |
 | 葡萄牙语(葡萄牙) | português |
 | 罗马尼亚语 | română |
-| 俄语 | Русский |
+| 俄语 | pусский |
 | 塞尔维亚语(西里尔文) | српски |
 | 塞尔维亚语(拉丁语) | srpski |
 | 斯洛伐克语 | slovenčina |

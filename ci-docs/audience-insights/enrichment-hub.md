@@ -2,19 +2,19 @@
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
 ms.date: 11/02/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 6b73aa93ec1a98f2b8d20d02e88bc6304f887078
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 36e6f7f8fcd64fc2591e913910918b83bf27567b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269457"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597684"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 

@@ -2,19 +2,19 @@
 title: 客户生命周期值 (CLV) 预测
 description: 预测未来活跃客户的潜在收入。
 ms.date: 02/05/2021
-ms.reviewer: wameng
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
-ms.author: mhart
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 363a46c81b5bb737d274998f9a699dc662e38d7c
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 835a9f3371a8c1b1a10d5c6901c03e1df5379d3d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268583"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595785"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>客户生存期值 (CLV) 预测（预览版）
 
@@ -194,11 +194,11 @@ ms.locfileid: "5268583"
   
   - **预测高价值客户的成功率**
 
-  查看使用 AI 模型与基线模型相比在预测高价值客户方面的差别。 例如，84% 的成功率意味着在训练数据内的所有高价值客户中，AI 模型能够准确地捕获 84%。 然后，我们将此成功率与基线模型的成功率进行比较，以报告相对变化。 此值用于为模型分配等级。
+    查看使用 AI 模型与基线模型相比在预测高价值客户方面的差别。 例如，84% 的成功率意味着在训练数据内的所有高价值客户中，AI 模型能够准确地捕获 84%。 然后，我们将此成功率与基线模型的成功率进行比较，以报告相对变化。 此值用于为模型分配等级。
 
   - **错误指标**
     
-  另一个指标允许您查看模型预测未来值出错方面的总体性能。 我们使用总体均方根误差 (RMSE) 指标来评估此误差。 RMSE 是一种衡量模型在预测定量数据方面的误差的标准方法。 将 AI 模型的 RMSE 与基线模型的 RMSE 进行比较，并报告相对差异。
+    另一个指标允许您查看模型预测未来值出错方面的总体性能。 我们使用总体均方根误差 (RMSE) 指标来评估此误差。 RMSE 是一种衡量模型在预测定量数据方面的误差的标准方法。 将 AI 模型的 RMSE 与基线模型的 RMSE 进行比较，并报告相对差异。
 
   AI 模型会根据客户为您的公司带来的价值，对客户的准确排名进行优先排序。 因此，仅使用预测高价值客户的成功率来得出最终模型等级。 RMSE 指标对异常值敏感。 在您的小部分客户购买价值极高的情况下，总体 RMSE 指标可能无法全面反映模型的性能。   
 

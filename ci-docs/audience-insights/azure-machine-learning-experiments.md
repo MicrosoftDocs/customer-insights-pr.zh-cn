@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267895"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597408"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>使用基于 Azure 机器学习的模型
 
@@ -29,9 +29,9 @@ Dynamics 365 Customer Insights 中的统一数据是构建可生成其他业务�
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>设置 Azure 机器学习工作区
 
-1. 有关创建工作区的不同选项，请参阅[创建 Azure 机器学习工作区](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace)。 为了获得最佳性能，请在地理位置距离 Customer Insights 环境最近的 Azure 区域中创建工作区。
+1. 有关创建工作区的不同选项，请参阅[创建 Azure 机器学习工作区](/azure/machine-learning/concept-workspace#-create-a-workspace)。 为了获得最佳性能，请在地理位置距离 Customer Insights 环境最近的 Azure 区域中创建工作区。
 
-1. 通过 [Azure 机器学习工作室](https://ml.azure.com/)访问您的工作区。 可通过多种[交互方式](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction)与您的工作区进行交互。
+1. 通过 [Azure 机器学习工作室](https://ml.azure.com/)访问您的工作区。 可通过多种[交互方式](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction)与您的工作区进行交互。
 
 ## <a name="work-with-azure-machine-learning-designer"></a>使用 Azure 机器学习设计器
 
@@ -39,13 +39,13 @@ Azure 机器学习设计器提供了一个视觉对象画布，您可以在其�
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>使用 Azure 机器学习 SDK
 
-数据科学家和 AI 开发人员使用 [Azure 机器学习 SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) 生成机器学习工作流。 当前，使用 SDK 训练的模型无法与 Customer Insights 直接集成。 若要与 Customer Insights 集成，需要使用该模型的批处理推理管道。
+数据科学家和 AI 开发人员使用 [Azure 机器学习 SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) 生成机器学习工作流。 当前，使用 SDK 训练的模型无法与 Customer Insights 直接集成。 若要与 Customer Insights 集成，需要使用该模型的批处理推理管道。
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>与 Customer Insights 集成的批处理管道要求
 
 ### <a name="dataset-configuration"></a>数据集配置
 
-您需要创建数据集，才能使用从 Customer Insights 到批处理推理管道的实体数据。 这些数据集需要在工作区中进行注册。 当前，我们仅支持采用 .csv 格式的[表格数据集](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset)。 与实体数据对应的数据集需要参数化为管道参数。
+您需要创建数据集，才能使用从 Customer Insights 到批处理推理管道的实体数据。 这些数据集需要在工作区中进行注册。 当前，我们仅支持采用 .csv 格式的[表格数据集](/azure/machine-learning/how-to-create-register-datasets#tabulardataset)。 与实体数据对应的数据集需要参数化为管道参数。
    
 * 设计器中的数据集参数
    
@@ -76,7 +76,7 @@ Azure 机器学习设计器提供了一个视觉对象画布，您可以在其�
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>将管道数据导入到 Customer Insights 中
 
-* 设计器提供[导出数据模块](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data)，允许将管道的输出导出到 Azure 存储。 当前，模块必须使用数据存储类型 **Azure Blob 存储** 并对 **数据存储** 和相对 **路径** 进行参数化。 Customer Insights 在管道执行期间使用产品可访问的数据存储和路径替代这些参数。
+* 设计器提供[导出数据模块](/azure/machine-learning/algorithm-module-reference/export-data)，允许将管道的输出导出到 Azure 存储。 当前，模块必须使用数据存储类型 **Azure Blob 存储** 并对 **数据存储** 和相对 **路径** 进行参数化。 Customer Insights 在管道执行期间使用产品可访问的数据存储和路径替代这些参数。
    > [!div class="mx-imgBorder"]
    > ![导出数据模型配置](media/intelligence-designer-importdata.png "导出数据模型配置")
    

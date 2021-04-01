@@ -1,7 +1,7 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 02/02/2021
+ms.date: 03/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,18 +9,18 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 9183c8af4fb9f9f08ac63d8d0cd37c6868bba310
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 96c0b871eeaaf0976e5c718f37f883f4410977dc
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270421"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598420"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-我们非常激动地发布我们的最新更新！ 本文总结了公开预览功能、正式发布版本的增强和功能更新。 若要查看长期功能计划，请参阅 [Dynamics 365 和 Power Platform 发行计划](https://docs.microsoft.com/dynamics365/release-plans/)。
+我们非常激动地发布我们的最新更新！ 本文总结了公开预览功能、正式发布版本的增强和功能更新。 若要查看长期功能计划，请参阅 [Dynamics 365 和 Power Platform 发行计划](/dynamics365/release-plans/)。
 
 您还可以观看以下视频，以了解有关最近六个月的计划功能的详细信息。
 
@@ -30,6 +30,40 @@ ms.locfileid: "5270421"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="february-2021-updates"></a>2021 年 2 月更新
+
+2021 年 2 月的更新中包括多项功能、性能升级和 Bug 修复。
+
+#### <a name="extensibility"></a>扩展性
+
+- **将客户细分导出到 AdRoll**
+
+  我们已扩展了导出目标以包括 AdRoll。 现在，您可以将 Customer Insights 中的客户细分导出到 AdRoll 访问群体，并使用它们作为广告的基线。 有关详细信息，请参阅[用于 AdRoll 的连接器](export-adroll.md)。
+
+#### <a name="segments"></a>客户细分
+ 
+- **复制客户细分**
+  
+  若要基于现有客户细分创建新客户细分，现在可以复制某个客户细分，并编辑复制的客户细分以进一步优化该客户细分。 
+
+- **向客户细分添加其他属性**
+
+  现在，您可以将属性包括在客户细分输出中，即使这些属性不是客户配置文件的一部分。 例如，在客户细分中包括订阅 ID，即使它是与客户实体具有 M:1 关系的订阅实体的一部分。 只要属性属于与客户实体相关的实体，就可以包括这些属性。  
+
+#### <a name="predictions"></a>预测
+
+- **创建预测产品建议**
+
+  了解客户的购买兴趣是什么是通过个性化和参与提高业务收入和建立客户忠诚度所需的第一步。 如果推荐的产品不符合客户的兴趣，会使客户与您的企业之间产生脱节感，从而最终限制整体潜在收入和客户的体验。 
+
+  现在您可以使用您自己的数据预测客户将来可能会购买的产品。 有关详细信息，请参阅[产品建议预测](predict-product-recommendation.md)。
+
+#### <a name="system-administration"></a>系统管理
+
+- **复制环境支持更多类型的数据源**
+
+  管理员可以将环境配置复制到同一组织的新环境中。 对于使用基于 Common Data Service 数据湖或 Common Data Model 文件夹的数据源的情况，此功能会扩展复制环境功能。
 
 ## <a name="january-2021-updates"></a>2021 年 1 月更新
 

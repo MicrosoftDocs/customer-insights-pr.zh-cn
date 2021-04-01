@@ -2,19 +2,19 @@
 title: 将 Customer Insights 数据导出到 Azure Blob 存储
 description: 了解如何配置与 Azure Blob 存储之间的连接。
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269181"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596166"
 ---
 # <a name="connector-for-azure-blob-storage-preview"></a>Azure Blob 存储的连接器（预览版）
 
@@ -27,8 +27,8 @@ ms.locfileid: "5269181"
 1. 在 **Azure Blob 存储** 下，选择 **设置**。
 
 1. 输入 Azure Blob 存储帐户的 **账户名称**、**帐户密钥** 和 **容器**。
-    - 若要了解有关如何查找 Azure Blob 存储账户名称和帐户密钥的详细信息，请参阅[管理 Azure 门户中的存储帐户设置](https://docs.microsoft.com/azure/storage/common/storage-account-manage)。
-    - 若要了解如何创建容器，请参阅[创建容器](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)。
+    - 若要了解有关如何查找 Azure Blob 存储账户名称和帐户密钥的详细信息，请参阅[管理 Azure 门户中的存储帐户设置](/azure/storage/common/storage-account-manage)。
+    - 若要了解如何创建容器，请参阅[创建容器](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)。
 
 1. 在 **显示名称** 字段中为目标指定易于识别的名称。
 

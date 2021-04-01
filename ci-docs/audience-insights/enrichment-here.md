@@ -2,19 +2,19 @@
 title: 通过第三方扩充 HERE Technologies 扩充
 description: 有关 HERE Technologies 第三方扩充的常规信息。
 ms.date: 12/10/2020
-ms.reviewer: jodahl
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 258e37de9d9685d9ebc30b3c6b8d238d583431b4
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 8e8d6bfea4e0df54682501f60759c24c893444af
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269503"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597730"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>通过 HERE Technologies 扩充客户配置文件（预览）
 

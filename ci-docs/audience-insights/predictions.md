@@ -5,16 +5,16 @@ ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: zacook
+author: zacookmsft
+ms.author: zacook
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 577232c7e901dfd54a195c3e9cfac5d1f0f866e6
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3342328b9eead9bdcb8b41f119a1d0a5823001c8
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268261"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595890"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>使用预测填写部分数据
 
@@ -31,7 +31,7 @@ ms.locfileid: "5268261"
 
 若要让组织可以使用预测功能，必须满足以下先决条件：
 
-1. 您的组织有[在 Common Data Service 中设置](https://docs.microsoft.com/ai-builder/build-model#prerequisites)的实例，它与 Customer Insights 位于同一组织中。
+1. 您的组织有[在 Common Data Service 中设置](/ai-builder/build-model#prerequisites)的实例，它与 Customer Insights 位于同一组织中。
 
 2. 您的环境将附加到 Common Data Service 实例。
 
@@ -120,7 +120,7 @@ ms.locfileid: "5268261"
 
 4. 选择 **在 AI Builder 中自定义**。
 
-5. 在 AI Builder 中更新模型。 [了解有关在 AI Builder 中管理模型的详细信息](https://docs.microsoft.com/ai-builder/manage-model#retrain-and-republish-existing-models)。
+5. 在 AI Builder 中更新模型。 [了解有关在 AI Builder 中管理模型的详细信息](/ai-builder/manage-model#retrain-and-republish-existing-models)。
 
 下次运行预测将使用您已创建的更新后模型。
 

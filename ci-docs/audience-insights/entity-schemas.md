@@ -2,25 +2,25 @@
 title: Common Data Model 中的 Customer Insights 实体架构
 description: 使用 Common Data Model 中的实体。
 ms.date: 04/17/2020
-ms.reviewer: mukeshpo
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269273"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596350"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model 中的实体架构
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-[Common Data Model](https://docs.microsoft.com/common-data-model/) 声明性规范，也是代表跨多种企业和生产力应用程序的常用概念和活动的标准实体的定义。 此模型也将延伸到观察数据和分析数据。 Common Data Model 提供明确定义、模块化和可扩展的业务实体（例如帐户、业务部门、用例、联系人、潜在客户、机会和产品），还提供与供应商、员工和客户之间的交互（例如活动和服务级别协议）。 任何人都可以生成和扩展 Common Data Model 定义以捕获更多特定于业务的观点。
+[Common Data Model](/common-data-model/) 声明性规范，也是代表跨多种企业和生产力应用程序的常用概念和活动的标准实体的定义。 此模型也将延伸到观察数据和分析数据。 Common Data Model 提供明确定义、模块化和可扩展的业务实体（例如帐户、业务部门、用例、联系人、潜在客户、机会和产品），还提供与供应商、员工和客户之间的交互（例如活动和服务级别协议）。 任何人都可以生成和扩展 Common Data Model 定义以捕获更多特定于业务的观点。
 
 此共享数据模型可供应用程序和数据集成者通过提供统一的数据定义来进行协作。 Common Data Model 中包含丰富的元数据系统和标准实体、关系、层次结构、特征等。 其源自 Dynamics 365 应用，具有 260 多个标准实体，并在 GitHub 上开源。 内部和外部合作伙伴构成的大型系统为 Common Data Model 贡献了业界专有的概念。
 
@@ -32,13 +32,13 @@ ms.locfileid: "5269273"
 
 | 实体 | 说明 |
 |---------|---------|
-|[CustomerActivity](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customeractivity) | 用户执行且具有业务的观察价值的活动。 |
-|[CustomerProfile](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) | 执行了业务活动或有潜力参与业务活动的人员或组织。 |
-|[MeasureDefinition](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/measuredefinition) | 无或多个维度划分的 KPI（如月度活跃用户、客户总开支、平均获客成本）的定义 |
-|[细分](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | 定义一组具有共同特征的成员。 |
-|[SegmentMembership](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | 参与给定细分的成员。 |
+|[CustomerActivity](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customeractivity) | 用户执行且具有业务的观察价值的活动。 |
+|[CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) | 执行了业务活动或有潜力参与业务活动的人员或组织。 |
+|[MeasureDefinition](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/measuredefinition) | 无或多个维度划分的 KPI（如月度活跃用户、客户总开支、平均获客成本）的定义 |
+|[细分](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | 定义一组具有共同特征的成员。 |
+|[SegmentMembership](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | 参与给定细分的成员。 |
 
-有关详细信息，请参阅有关 [Common Data Model 中的 Customer Insights 实体架构](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview)的文档。
+有关详细信息，请参阅有关 [Common Data Model 中的 Customer Insights 实体架构](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview)的文档。
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>使用 Common Data Model 实体导航器查看实体
 
