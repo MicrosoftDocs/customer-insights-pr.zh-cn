@@ -1,7 +1,7 @@
 ---
 title: 客户活动
 description: 定义客户活动并在客户时间线中查看它们。
-ms.date: 10/13/2020
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,79 +9,88 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: fbfa9d7e00859cc80c24b98bd2dc806f1fda7803
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0c728fad4ed00d1bf085fed60057211861b3a195
+ms.sourcegitcommit: f0855bd7762b1f0a1d3dd5259e23c95e1b0a6a93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596718"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866396"
 ---
-# <a name="customer-activities"></a><span data-ttu-id="6475f-103">客户活动</span><span class="sxs-lookup"><span data-stu-id="6475f-103">Customer activities</span></span>
+# <a name="customer-activities"></a><span data-ttu-id="3e151-103">客户活动</span><span class="sxs-lookup"><span data-stu-id="3e151-103">Customer activities</span></span>
 
-<span data-ttu-id="6475f-104">在 Dynamics 365 Customer Insights 中合并来自[各种数据源](data-sources.md)的客户活动，以创建按时间顺序列出活动的客户时间线。</span><span class="sxs-lookup"><span data-stu-id="6475f-104">Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a customer timeline that lists the activities in chronological order.</span></span> <span data-ttu-id="6475f-105">您可以通过[客户卡加载项](customer-card-add-in.md)或在 Power BI 仪表板中将时间线包含在 Dynamics 365 中的客户互动应用中。</span><span class="sxs-lookup"><span data-stu-id="6475f-105">You can include the timeline in customer engagement apps in Dynamics 365 via the [Customer Card add-in](customer-card-add-in.md), or in a Power BI dashboard.</span></span>
+<span data-ttu-id="3e151-104">在 Dynamics 365 Customer Insights 中将来自[各种数据源](data-sources.md)的客户活动组合一起，创建一个按时间顺序列出活动的时间线。</span><span class="sxs-lookup"><span data-stu-id="3e151-104">Combine customer activities from [various data sources](data-sources.md) in Dynamics 365 Customer Insights to create a timeline that lists the activities chronologically.</span></span> <span data-ttu-id="3e151-105">将时间线包含在带[客户卡加载项](customer-card-add-in.md)解决方案的 Dynamics 365 应用中，或包含在 Power BI 仪表板中。</span><span class="sxs-lookup"><span data-stu-id="3e151-105">Include the timeline in Dynamics 365 apps with the [Customer Card add-in](customer-card-add-in.md) solution, or in a Power BI dashboard.</span></span>
 
-## <a name="define-an-activity"></a><span data-ttu-id="6475f-106">定义活动</span><span class="sxs-lookup"><span data-stu-id="6475f-106">Define an activity</span></span>
+## <a name="define-an-activity"></a><span data-ttu-id="3e151-106">定义活动</span><span class="sxs-lookup"><span data-stu-id="3e151-106">Define an activity</span></span>
 
-<span data-ttu-id="6475f-107">数据源中包含实体，这些实体的事务数据和活动数据来自多个数据源。</span><span class="sxs-lookup"><span data-stu-id="6475f-107">Your data sources include entities with transactional and activity data from multiple data sources.</span></span> <span data-ttu-id="6475f-108">确定这些实体，并选择要在客户的时间线上查看的活动。</span><span class="sxs-lookup"><span data-stu-id="6475f-108">Identify these entities and select the activities you want to view on the customer's timeline.</span></span> <span data-ttu-id="6475f-109">选择其中包含目标活动的实体。</span><span class="sxs-lookup"><span data-stu-id="6475f-109">Choose the entity that includes your target activity or activities.</span></span>
+<span data-ttu-id="3e151-107">数据源可以包含实体，这些实体的事务数据和活动数据来自多个数据源。</span><span class="sxs-lookup"><span data-stu-id="3e151-107">Your data sources can include entities with transactional and activity data from multiple data sources.</span></span> <span data-ttu-id="3e151-108">确定这些实体，并选择要在客户的时间线上查看的活动。</span><span class="sxs-lookup"><span data-stu-id="3e151-108">Identify these entities and select the activities you want to view on the customer's timeline.</span></span> <span data-ttu-id="3e151-109">选择其中包含目标活动的实体。</span><span class="sxs-lookup"><span data-stu-id="3e151-109">Choose the entity that includes your target activity or activities.</span></span>
 
-1. <span data-ttu-id="6475f-110">在访问群体见解中，转到 **数据** > **活动**。</span><span class="sxs-lookup"><span data-stu-id="6475f-110">In audience insights, go to **Data** > **Activities**.</span></span>
+> [!NOTE]
+> <span data-ttu-id="3e151-110">只能向客户时间线添加至少有一个类型为 **日期** 的属性的实体，并且不能添加无 **日期** 字段的实体。</span><span class="sxs-lookup"><span data-stu-id="3e151-110">An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields.</span></span> <span data-ttu-id="3e151-111">如果未找到此类实体，将禁用 **添加活动** 控件。</span><span class="sxs-lookup"><span data-stu-id="3e151-111">The **Add activity** control is disabled if no such entity is found.</span></span>
 
-1. <span data-ttu-id="6475f-111">选择 **添加活动**。</span><span class="sxs-lookup"><span data-stu-id="6475f-111">Select **Add activity**.</span></span>
+1. <span data-ttu-id="3e151-112">在访问群体见解中，转到 **数据** > **活动**。</span><span class="sxs-lookup"><span data-stu-id="3e151-112">In audience insights, go to **Data** > **Activities**.</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="6475f-112">只能向客户时间线添加至少有一个类型为 **日期** 的属性的实体，并且不能添加无 **日期** 字段的实体。</span><span class="sxs-lookup"><span data-stu-id="6475f-112">An entity must have at least one attribute of type **Date** to be included in a customer timeline and you can't add entities without **Date** fields.</span></span> <span data-ttu-id="6475f-113">如果未找到此类实体，将禁用 **添加活动** 控件。</span><span class="sxs-lookup"><span data-stu-id="6475f-113">The **Add activity** control is disabled if no such entity is found.</span></span>
+1. <span data-ttu-id="3e151-113">选择 **添加活动** 以启动活动设置过程的引导式体验。</span><span class="sxs-lookup"><span data-stu-id="3e151-113">Select **Add activity** to start the guided experience for the activity setup process.</span></span>
 
-1. <span data-ttu-id="6475f-114">在 **添加活动** 窗格中，设置以下字段的值：</span><span class="sxs-lookup"><span data-stu-id="6475f-114">In the **Add activity** pane, set the values for the following fields:</span></span>
+1. <span data-ttu-id="3e151-114">在 **活动数据** 步骤中，为以下字段设置值：</span><span class="sxs-lookup"><span data-stu-id="3e151-114">In the **Activity data** step, set the values for the following fields:</span></span>
 
-   - <span data-ttu-id="6475f-115">**实体**：选择其中包含事务数据或活动数据的实体。</span><span class="sxs-lookup"><span data-stu-id="6475f-115">**Entity**: Select an entity that includes transactional or activity data.</span></span>
-   - <span data-ttu-id="6475f-116">**主键**：选择唯一标识记录的字段。</span><span class="sxs-lookup"><span data-stu-id="6475f-116">**Primary key**: Select the field that uniquely identifies a record.</span></span> <span data-ttu-id="6475f-117">其中不应包含任何重复值、空值或缺少值。</span><span class="sxs-lookup"><span data-stu-id="6475f-117">It shouldn't contain any duplicate values, empty values, or missing values.</span></span>
-   - <span data-ttu-id="6475f-118">**时间戳**：选择表示活动开始时间的字段。</span><span class="sxs-lookup"><span data-stu-id="6475f-118">**Timestamp**: Select the field that represents the start time of your activity.</span></span>
-   - <span data-ttu-id="6475f-119">**事件**：选择充当活动的事件的字段。</span><span class="sxs-lookup"><span data-stu-id="6475f-119">**Event**: Select the field that is the event for the activity.</span></span>
-   - <span data-ttu-id="6475f-120">**Web 地址**：选择字段以表示提供有关此活动的其他信息的 URL。</span><span class="sxs-lookup"><span data-stu-id="6475f-120">**Web address**: Select the field that represents a URL providing additional information about this activity.</span></span> <span data-ttu-id="6475f-121">例如，提供该活动的交易系统。</span><span class="sxs-lookup"><span data-stu-id="6475f-121">For example, the transactional system that sources this activity.</span></span> <span data-ttu-id="6475f-122">此 URL 可以是数据源中的任何字段，也可以使用 Power Query 转换将其构建为新字段。</span><span class="sxs-lookup"><span data-stu-id="6475f-122">This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation.</span></span> <span data-ttu-id="6475f-123">此 URL 数据将存储在“统一活动”实体中，可以通过 API 在下游使用该实体。</span><span class="sxs-lookup"><span data-stu-id="6475f-123">This URL data will be stored in the Unified Activity entity, which can be consumed downstream using APIs.</span></span>
-   - <span data-ttu-id="6475f-124">**详细信息**：（可选）选择为了提供更多详细信息而添加的字段。</span><span class="sxs-lookup"><span data-stu-id="6475f-124">**Details**: Optionally, select the field that is added for additional details.</span></span>
-   - <span data-ttu-id="6475f-125">**图标**：（可选）选择用于表示此活动的图标。</span><span class="sxs-lookup"><span data-stu-id="6475f-125">**Icon**: Optionally, select the icon that represents this activity.</span></span>
-   - <span data-ttu-id="6475f-126">**活动类型**：定义对最贴切地描述活动语义定义的通用数据模型的活动类型引用。</span><span class="sxs-lookup"><span data-stu-id="6475f-126">**Activity Type**: Define the activity type reference to Common Data Model that best describes the semantic definition of the activity.</span></span>
+   - <span data-ttu-id="3e151-115">**活动名称**：为您的活动选择一个名称。</span><span class="sxs-lookup"><span data-stu-id="3e151-115">**Activity name**: Select a name for your activity.</span></span>
+   - <span data-ttu-id="3e151-116">**实体**：选择其中包含事务数据或活动数据的实体。</span><span class="sxs-lookup"><span data-stu-id="3e151-116">**Entity**: Select an entity that includes transactional or activity data.</span></span>
+   - <span data-ttu-id="3e151-117">**主键**：选择唯一标识记录的字段。</span><span class="sxs-lookup"><span data-stu-id="3e151-117">**Primary key**: Select the field that uniquely identifies a record.</span></span> <span data-ttu-id="3e151-118">其中不应包含任何重复值、空值或缺少值。</span><span class="sxs-lookup"><span data-stu-id="3e151-118">It shouldn't contain any duplicate values, empty values, or missing values.</span></span>
 
-1. <span data-ttu-id="6475f-127">在 **设置关系** 部分中，配置详细信息以将活动数据连接到其相应客户。</span><span class="sxs-lookup"><span data-stu-id="6475f-127">In the **Set up relationship** section, configure the details to connect your activity data to its corresponding customer.</span></span>
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="使用名称、实体和主键设置活动数据。":::
 
-    - <span data-ttu-id="6475f-128">**活动实体字段**：在活动实体中选择将用于建立与其他实体之间的关系的字段。</span><span class="sxs-lookup"><span data-stu-id="6475f-128">**Activity entity field**: Select the field in your activity entity that will be used to establish a relationship with another entity.</span></span>
-    - <span data-ttu-id="6475f-129">**客户实体**：选择您的活动实体将与其具有关系的相应源客户实体。</span><span class="sxs-lookup"><span data-stu-id="6475f-129">**Customer entity**: Select the corresponding source customer entity with which your activity entity will be in relationship.</span></span> <span data-ttu-id="6475f-130">只能与数据统一过程中使用的源客户实体关联。</span><span class="sxs-lookup"><span data-stu-id="6475f-130">You can relate to only those source customer entities that are used in the data unification process.</span></span>
-    - <span data-ttu-id="6475f-131">**客户实体字段**：此字段显示映射过程中选择的源客户实体的主键。</span><span class="sxs-lookup"><span data-stu-id="6475f-131">**Customer entity field**: This field shows the primary key of the source customer entity as selected in the map process.</span></span> <span data-ttu-id="6475f-132">源客户实体中的主键字段用于建立与活动实体之间的关系。</span><span class="sxs-lookup"><span data-stu-id="6475f-132">This primary key field in the source customer entity is used to establish a relationship with the activity entity.</span></span>
-    - <span data-ttu-id="6475f-133">**名称**：如果此活动实体与所选源客户实体之间的关系已存在，则关系名称处于只读模式。</span><span class="sxs-lookup"><span data-stu-id="6475f-133">**Name**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode.</span></span> <span data-ttu-id="6475f-134">如果不存在此类关系，则使用此处提供的名称创建新关系。</span><span class="sxs-lookup"><span data-stu-id="6475f-134">If there no such relationship exists, a new relationship will be created with the name provided here.</span></span>
+1. <span data-ttu-id="3e151-120">选择 **下一步** 以继续进行下一步。</span><span class="sxs-lookup"><span data-stu-id="3e151-120">Select **Next** to go to the next step.</span></span>
+
+1. <span data-ttu-id="3e151-121">在 **关系** 步骤中，配置详细信息，将您的活动数据连接到相应的客户。</span><span class="sxs-lookup"><span data-stu-id="3e151-121">In the **Relationship** step, configure the details to connect your activity data to its corresponding customer.</span></span> <span data-ttu-id="3e151-122">此步骤显示实体之间的连接。</span><span class="sxs-lookup"><span data-stu-id="3e151-122">This step visualizes the connection between entities.</span></span>  
+
+   - <span data-ttu-id="3e151-123">**第一**：活动实体中的外键字段，将用于与另一个实体建立关系。</span><span class="sxs-lookup"><span data-stu-id="3e151-123">**First**: Foreign field in your activity entity that will be used to establish a relationship with another entity.</span></span>
+   - <span data-ttu-id="3e151-124">**第二**：将与您的活动实体有关系的相应源客户实体。</span><span class="sxs-lookup"><span data-stu-id="3e151-124">**Second**: Corresponding source customer entity with which your activity entity will be in relationship.</span></span> <span data-ttu-id="3e151-125">您只能与数据统一过程中使用的源客户实体关联。</span><span class="sxs-lookup"><span data-stu-id="3e151-125">You can only relate to source customer entities that are used in the data unification process.</span></span>
+   - <span data-ttu-id="3e151-126">**第三**：如果此活动实体与所选源客户实体之间已经存在关系，则关系名称将处于仅读模式。</span><span class="sxs-lookup"><span data-stu-id="3e151-126">**Third**: If a relationship between this activity entity and the selected source customer entity already exists, the relationship name will be in read-only mode.</span></span> <span data-ttu-id="3e151-127">如果没有这种关系，将用您在此框中提供的名称创建新的关系。</span><span class="sxs-lookup"><span data-stu-id="3e151-127">If there no such relationship exists, a new relationship will be created with the name you provide in this box.</span></span>
+
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="定义实体关系。":::
+
+1. <span data-ttu-id="3e151-129">选择 **下一步** 以继续进行下一步。</span><span class="sxs-lookup"><span data-stu-id="3e151-129">Select **Next** to go to the next step.</span></span> 
+
+1. <span data-ttu-id="3e151-130">在 **活动统一** 步骤中，选择活动事件和活动开始时间。</span><span class="sxs-lookup"><span data-stu-id="3e151-130">In the **Activity unification** step, choose the activity event and the start time of your activity.</span></span> 
+   - <span data-ttu-id="3e151-131">**必填字段**</span><span class="sxs-lookup"><span data-stu-id="3e151-131">**Required fields**</span></span>
+      1. <span data-ttu-id="3e151-132">**事件活动**：本身为该活动的事件的字段</span><span class="sxs-lookup"><span data-stu-id="3e151-132">**Event activity**: Field that is the event for this activity</span></span>
+      2. <span data-ttu-id="3e151-133">**时间戳**：表示活动开始时间的字段。</span><span class="sxs-lookup"><span data-stu-id="3e151-133">**Timestamp**: Field that represents the start time of your activity.</span></span>
+
+   - <span data-ttu-id="3e151-134">**可选字段**</span><span class="sxs-lookup"><span data-stu-id="3e151-134">**Optional fields**</span></span>
+      1. <span data-ttu-id="3e151-135">**其他详细信息**：具有此活动的相关信息的字段。</span><span class="sxs-lookup"><span data-stu-id="3e151-135">**Additional detail**: Field with relevant information for this activity.</span></span>
+      2. <span data-ttu-id="3e151-136">**图标**：最能代表此活动类型的图标。</span><span class="sxs-lookup"><span data-stu-id="3e151-136">**Icon**: Icon that best represents this activity type.</span></span>
+      3. <span data-ttu-id="3e151-137">**网址**：包含此活动相关信息的 URL 的字段。</span><span class="sxs-lookup"><span data-stu-id="3e151-137">**Web address**: Field containing a URL with information about this activity.</span></span> <span data-ttu-id="3e151-138">例如，提供该活动的交易系统。</span><span class="sxs-lookup"><span data-stu-id="3e151-138">For example, the transactional system that sources this activity.</span></span> <span data-ttu-id="3e151-139">此 URL 可以是数据源中的任何字段，也可以使用 Power Query 转换将其构建为新字段。</span><span class="sxs-lookup"><span data-stu-id="3e151-139">This URL can be any field from the data source, or it can be constructed as a new field using a Power Query transformation.</span></span> <span data-ttu-id="3e151-140">URL 数据将存储在 *统一活动* 实体中，可以通过 [API](apis.md) 在下游使用该实体。</span><span class="sxs-lookup"><span data-stu-id="3e151-140">The URL data will be stored in the *Unified Activity* entity, which can be consumed downstream using [APIs](apis.md).</span></span>
    
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="6475f-135">![定义实体关系](media/activities-entities-define.png "定义实体关系")</span><span class="sxs-lookup"><span data-stu-id="6475f-135">![Define the entity relationship](media/activities-entities-define.png "Define the entity relationship")</span></span>
+   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="在统一活动实体中指定客户活动数据。":::
 
-1. <span data-ttu-id="6475f-136">选择 **保存** 以应用您所做的更改。</span><span class="sxs-lookup"><span data-stu-id="6475f-136">Select **Save** to apply your changes.</span></span>
+1. <span data-ttu-id="3e151-142">选择 **下一步** 以移至下一个步骤。</span><span class="sxs-lookup"><span data-stu-id="3e151-142">Select **Next** to move to the next step.</span></span> <span data-ttu-id="3e151-143">您可以选择 **完成并查看**，以立即保存活动并将活动类型设置为 **其他**。</span><span class="sxs-lookup"><span data-stu-id="3e151-143">You can select **Finish and review** to save the activity now with the activity type set to **Other**.</span></span> 
 
-1. <span data-ttu-id="6475f-137">在 **活动** 页中，选择 **运行**。</span><span class="sxs-lookup"><span data-stu-id="6475f-137">On the **Activities** page, select **Run**.</span></span>
+1. <span data-ttu-id="3e151-144">在 **活动类型** 步骤中，选择活动类型，并根据需要选择是否要在语意上映射某些活动类型，以便在 Customer Insights 的其他区域中使用。</span><span class="sxs-lookup"><span data-stu-id="3e151-144">In the **Activity Type** step, choose the activity type and optionally select if you want to semantically map some of the activity types for use in other areas of Customer Insights.</span></span> <span data-ttu-id="3e151-145">目前，在同意映射字段后，可以在语意上映射 *订阅* & *SalesOrderLine* 活动类型。</span><span class="sxs-lookup"><span data-stu-id="3e151-145">Currently, *Subscription* & *SalesOrderLine* activity types can be semantically mapped after agreeing to map the fields.</span></span> <span data-ttu-id="3e151-146">如果活动类型与新活动无关，您可以为自定义活动类型选择 *其他* 或 *新建*。</span><span class="sxs-lookup"><span data-stu-id="3e151-146">If an activity type isn't relevant for the new activity, you can choose *Other* or *Create new* for a custom activity type.</span></span>
+
+1. <span data-ttu-id="3e151-147">选择 **下一步** 以移至下一个步骤。</span><span class="sxs-lookup"><span data-stu-id="3e151-147">Select **Next** to move to the next step.</span></span> 
+
+1. <span data-ttu-id="3e151-148">在 **查看** 步骤中，验证您的选择。</span><span class="sxs-lookup"><span data-stu-id="3e151-148">In the **Review** step, verify your selections.</span></span> <span data-ttu-id="3e151-149">您可以返回到以前的任何步骤，并在必要时更新信息。</span><span class="sxs-lookup"><span data-stu-id="3e151-149">You go back to any of the previous steps and update the information if necessary.</span></span>
+
+   :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="查看活动的指定字段。":::
+   
+1. <span data-ttu-id="3e151-151">选择 **保存活动** 以应用您的更改，并选择 **完成** 以返回到 **数据** > **活动**。</span><span class="sxs-lookup"><span data-stu-id="3e151-151">Select **Save activity** to apply your changes and select **Done** to go back to **Data** > **Activities**.</span></span> <span data-ttu-id="3e151-152">在这里，您可以看到哪些活动设置为在时间线中显示。</span><span class="sxs-lookup"><span data-stu-id="3e151-152">Here you see which activities are set to show in the timeline.</span></span> 
+
+1. <span data-ttu-id="3e151-153">在 **活动** 页面上，选择 **运行** 来处理活动。</span><span class="sxs-lookup"><span data-stu-id="3e151-153">On the **Activities** page, select **Run** to process the activity.</span></span> 
 
 > [!TIP]
-> <span data-ttu-id="6475f-138">对于任务/流程，有[六种类型的状态](system.md#status-types)。</span><span class="sxs-lookup"><span data-stu-id="6475f-138">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="6475f-139">此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。</span><span class="sxs-lookup"><span data-stu-id="6475f-139">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="6475f-140">可以选择流程状态以查看有关整个作业的进度的详细信息。</span><span class="sxs-lookup"><span data-stu-id="6475f-140">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="6475f-141">在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。</span><span class="sxs-lookup"><span data-stu-id="6475f-141">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
+> <span data-ttu-id="3e151-154">对于任务/流程，有[六种类型的状态](system.md#status-types)。</span><span class="sxs-lookup"><span data-stu-id="3e151-154">There are [six types of status](system.md#status-types) for tasks/processes.</span></span> <span data-ttu-id="3e151-155">此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。</span><span class="sxs-lookup"><span data-stu-id="3e151-155">Additionally, most processes [depend on other downstream processes](system.md#refresh-policies).</span></span> <span data-ttu-id="3e151-156">可以选择流程状态以查看有关整个作业的进度的详细信息。</span><span class="sxs-lookup"><span data-stu-id="3e151-156">You can select the status of a process to see details on the progress of the entire job.</span></span> <span data-ttu-id="3e151-157">在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。</span><span class="sxs-lookup"><span data-stu-id="3e151-157">After selecting **See details** for one of the job's tasks, you find additional information: processing time, the last processing date, and all errors and warnings associated with the task.</span></span>
 
-## <a name="edit-an-activity"></a><span data-ttu-id="6475f-142">编辑活动</span><span class="sxs-lookup"><span data-stu-id="6475f-142">Edit an activity</span></span>
 
-1. <span data-ttu-id="6475f-143">在访问群体见解中，转到 **数据** > **活动**。</span><span class="sxs-lookup"><span data-stu-id="6475f-143">In audience insights, go to **Data** > **Activities**.</span></span>
+## <a name="manage-existing-activities"></a><span data-ttu-id="3e151-158">管理现有活动</span><span class="sxs-lookup"><span data-stu-id="3e151-158">Manage existing activities</span></span>
 
-2. <span data-ttu-id="6475f-144">选择要编辑的活动实体，然后选择 **编辑**。</span><span class="sxs-lookup"><span data-stu-id="6475f-144">Select the activity entity you want to edit and select **Edit**.</span></span> <span data-ttu-id="6475f-145">或者将鼠标光标悬停在实体行上方，然后选择 **编辑** 图标。</span><span class="sxs-lookup"><span data-stu-id="6475f-145">Or, you can hover over the entity row and select the **Edit** icon.</span></span>
+<span data-ttu-id="3e151-159">在 **数据** > **活动** 上，您可以查看所有保存的活动并管理它们。</span><span class="sxs-lookup"><span data-stu-id="3e151-159">On **Data** > **Activities**, you can view all your saved activities, and manage them.</span></span> <span data-ttu-id="3e151-160">每个活动都由行表示，其中还包括有关源、实体和活动类型的详细信息。</span><span class="sxs-lookup"><span data-stu-id="3e151-160">Each activity is represented by a row that also includes details about the source, the entity, and the activity type.</span></span>
 
-3. <span data-ttu-id="6475f-146">单击 **编辑** 图标。</span><span class="sxs-lookup"><span data-stu-id="6475f-146">Click on the **Edit** icon.</span></span>
+<span data-ttu-id="3e151-161">当您选择活动时，可以执行以下操作。</span><span class="sxs-lookup"><span data-stu-id="3e151-161">The following actions are available when you select an activity.</span></span> 
 
-4. <span data-ttu-id="6475f-147">在 **编辑活动** 窗格中，更新值，然后选择 **保存**。</span><span class="sxs-lookup"><span data-stu-id="6475f-147">In the **Edit activity** pane, update the values and select **Save**.</span></span>
+- <span data-ttu-id="3e151-162">**编辑**：在审核步骤上打开活动设置。</span><span class="sxs-lookup"><span data-stu-id="3e151-162">**Edit**: Opens the activity setup on the review step.</span></span> <span data-ttu-id="3e151-163">您可以从此步骤更改当前的任何或全部配置。</span><span class="sxs-lookup"><span data-stu-id="3e151-163">You can change any or all of the current configuration from this step.</span></span> <span data-ttu-id="3e151-164">更改配置后，选择 **保存活动**，然后选择 **运行** 来处理更改。</span><span class="sxs-lookup"><span data-stu-id="3e151-164">After changing the configuration, select **Save activity** and then select **Run** to process the changes.</span></span>
 
-5. <span data-ttu-id="6475f-148">在 **活动** 页中，选择 **运行**。</span><span class="sxs-lookup"><span data-stu-id="6475f-148">On the **Activities** page, select **Run**.</span></span>
+- <span data-ttu-id="3e151-165">**重命名**：打开用于输入所选活动的不同名称的对话框。</span><span class="sxs-lookup"><span data-stu-id="3e151-165">**Rename**: Opens a dialog where to enter a different name for the selected activity.</span></span> <span data-ttu-id="3e151-166">选择 **保存** 以应用您所做的更改。</span><span class="sxs-lookup"><span data-stu-id="3e151-166">Select **Save** to apply your changes.</span></span>
 
-## <a name="delete-an-activity"></a><span data-ttu-id="6475f-149">删除活动</span><span class="sxs-lookup"><span data-stu-id="6475f-149">Delete an activity</span></span>
-
-1. <span data-ttu-id="6475f-150">在访问群体见解中，转到 **数据** > **活动**。</span><span class="sxs-lookup"><span data-stu-id="6475f-150">In audience insights, go to **Data** > **Activities**.</span></span>
-
-2. <span data-ttu-id="6475f-151">选择要删除的活动实体，然后选择 **删除**。</span><span class="sxs-lookup"><span data-stu-id="6475f-151">Select the activity entity you want to remove and select **Delete**.</span></span> <span data-ttu-id="6475f-152">或者将鼠标光标悬停在实体行上方，然后选择 **删除** 图标。</span><span class="sxs-lookup"><span data-stu-id="6475f-152">Or, you can hover over the entity row and select the **Delete** icon.</span></span> <span data-ttu-id="6475f-153">也可以选择多个要一次性删除的活动实体。</span><span class="sxs-lookup"><span data-stu-id="6475f-153">Additionally, you can select multiple activity entities to be deleted at once.</span></span>
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="6475f-154">![编辑或删除实体关系](media/activities-entities-edit-delete.png "编辑或删除实体关系")</span><span class="sxs-lookup"><span data-stu-id="6475f-154">![Edit or delete the entity relationship](media/activities-entities-edit-delete.png "Edit or delete the entity relationship")</span></span>
-
-3. <span data-ttu-id="6475f-155">选择 **删除** 图标。</span><span class="sxs-lookup"><span data-stu-id="6475f-155">Select on the **Delete** icon.</span></span>
-
-4. <span data-ttu-id="6475f-156">确认删除。</span><span class="sxs-lookup"><span data-stu-id="6475f-156">Confirm your deletion.</span></span>
-
+- <span data-ttu-id="3e151-167">**删除**：打开对话框以确认删除所选活动。</span><span class="sxs-lookup"><span data-stu-id="3e151-167">**Delete**: Opens a dialog to confirm the deletion of the selected activity.</span></span> <span data-ttu-id="3e151-168">您也可以通过选择活动然后选择删除图标同时删除多个活动。</span><span class="sxs-lookup"><span data-stu-id="3e151-168">You can also delete more than one activity at once by selecting the activities and then selecting the delete icon.</span></span> <span data-ttu-id="3e151-169">选择 **删除** 以确认删除。</span><span class="sxs-lookup"><span data-stu-id="3e151-169">Select **Delete** to confirm the deletion.</span></span>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
