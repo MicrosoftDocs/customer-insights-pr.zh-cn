@@ -9,12 +9,12 @@ author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 14ebff30d3ec7fc52dca6f86136309a3f454fa27
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 9a4cb77bb4c6ef0d88b3f00802f66baab5520a07
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597454"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896408"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>将参与见解中的 Web 数据与访问群体见解集成
 
@@ -46,7 +46,7 @@ ms.locfileid: "5597454"
     - Signal.Action.Name - 指示活动详细信息
     - Signal.User.Id - 用于通过客户 ID 进行映射
     - Signal.View.Uri - 用作网址，当做客户细分或度量的基础
-    - Signal.Export.Id - 用作事件的主键 <!-- system generated, do we need to list?-->
+    - Signal.Export.Id - 用作事件的主键
     - Signal.Timestamp - 用于确定活动的日期和时间
 
 选择筛选器以重点关注对用例重要的事件和页面。 在此示例中，我们将使用“电子邮件促销”操作名称。

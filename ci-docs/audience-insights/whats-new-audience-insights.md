@@ -1,7 +1,7 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 03/08/2021
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 96c0b871eeaaf0976e5c718f37f883f4410977dc
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2159481f9355de738a7b457dcf0849a45c3e08db
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598420"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896224"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
@@ -22,14 +22,51 @@ ms.locfileid: "5598420"
 
 我们非常激动地发布我们的最新更新！ 本文总结了公开预览功能、正式发布版本的增强和功能更新。 若要查看长期功能计划，请参阅 [Dynamics 365 和 Power Platform 发行计划](/dynamics365/release-plans/)。
 
-您还可以观看以下视频，以了解有关最近六个月的计划功能的详细信息。
-
-> [!VIDEO https://www.youtube.com/embed/jQh-7pscH30]
-
 我们将按地区推出更新。 因此，某些地区可能先于其他地区看到功能。 除非另行指定，否则您无需执行任何操作，我们会自动更新应用，无需停机。
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="march-2021-updates"></a>2021 年 3 月更新
+
+2021 年 3 月中的更新包括多项功能、性能升级和错误修复。
+
+### <a name="activities"></a>活动
+
+- **活动向导和语义类型** 我们改进和更新了活动映射体验，以指导和简化活动映射的创建过程。 在这种新体验中，用户将获得引导式体验，以帮助完成流程的每一步。 在活动映射步骤中，除了从许多活动类型中进行选择外，用户还可以选择在语义上将 *订阅* 和/或 *SalesOrderLine* 的数据映射到行业标准架构，这些架构可用于下游消费。    
+  有关详细信息，请参阅[自定义活动](activities.md)。
+
+### <a name="data-ingestion"></a>数据引入
+
+- **使用 Power Platform 数据流和网关连接到本地数据源** 我们很高兴地宣布将使用 Customer Insights 中的网关以及关联的 Power Platform 或 Dataverse 环境来预览 Power Platform 数据流和本地连接。 在具有链接的 Dataverse 环境的 Customer Insights 环境中创建的任何新数据源都将默认为 Power Platform 数据流，此数据流将引入本地数据连接以及一组丰富的连接器和转换功能。
+
+### <a name="extensibility"></a>扩展性
+
+- **在连接和导出中组织的导出** 我们已将 **导出目标** 页面的名称更改为 **连接**，并添加了单独的 **导出** 页面。 在此更新过程中，我们会将现有的导出转换为连接和导出（使用该连接）对。 管理员现在可以在 **连接** 页面上更清晰地了解传出数据。 所有用户角色都有权访问 **导出** 页面，但只有管理员可以选择允许参与者使用共享连接编辑特定的导出。     
+  有关更多信息，请参阅[连接概述](connections.md)和[导出概述](export-destinations.md)。
+
+- **将客户细分导出到 Campaign Monitor** 我们已扩展导出目标，以包括 Campaign Monitor。 现在，您可以将客户细分从 Customer Insights 导出到 Campaign Monitor列表，并将其用作市场营销活动的基线。    
+   有关详细信息，请参阅[将数据导出至 Campaign Monitor](export-campaign-monitor.md)。
+
+- **将客户细分导出到 Constant Contact** 我们已扩展导出目标，以包括 Constant Contact。 现在，您可以将客户细分从 Customer Insights 导出到 Constant Contact 列表，并将其用作市场营销活动的基线。   
+   有关详细信息，请参阅[将数据导出至 Constant Contact](export-constant-contact.md)。
+
+- **将客户细分导出到 RollWorks** 我们已扩展导出目标，以包括 RollWorks。 现在，您可以将客户细分从 Customer Insights 导出到 RollWorks 受众，并将其用作 B2B 广告的基线。    
+   有关详细信息，请参阅[将数据导出至 RollWorks](export-rollworks.md)。
+
+- **将客户细分导出到 Snapchat** 我们已扩展导出目标，以包括 Snapchat。 现在，您可以将客户细分从 Customer Insights 导出到 Snapchat 受众，并将其用作广告的基线。     
+   有关详细信息，请参阅[将数据导出至 Snapchat](export-snapchat.md)。
+
+### <a name="predictions"></a>预测
+
+- **在预测产品建议中使用产品筛选器** 我们已在产品建议模型中添加了使用产品筛选器的功能。 现在，您可以创建仅使用产品子集的预测。    
+   有关更多信息，请参阅[配置产品筛选器](predict-product-recommendation.md#configure-product-filters)。
+
+- **从模型预测创建客户细分** 我们添加了使用预测模型结果创建客户细分的快速方法。 从模型结果页面中，您可以通过选择新的 **创建客户细分** 选项来轻松创建新客户细分。    
+  有关更多信息，请参阅[基于预测模型创建一个客户细分](prediction-based-segment.md)。
+
+- **产品建议的解释** 我们添加了信息，以解释 AI 模型为生成产品建议而了解的关键因素，以及这些因素对产品推荐的影响程度。 此信息已添加到模型结果屏幕。    
+   有关详细信息，请参阅[审阅预测状态和结果](predict-product-recommendation.md#review-a-prediction-status-and-results)。
 
 ## <a name="february-2021-updates"></a>2021 年 2 月更新
 
@@ -107,7 +144,7 @@ ms.locfileid: "5598420"
 
   此外，我们添加了新的配置选项，以更好地控制您希望如何扩充客户配置文件。 
 
-  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft-graph.md)。
+  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)。
 
 - **控制要扩充的配置文件**
 
@@ -309,8 +346,8 @@ Experian 的人口统计数据扩充现在可以预览。 Experian 是消费者�
 
 - **兴趣相似性扩充在更多市场中可用**
 
-  我们正在将兴趣相似性扩充的可用性扩展到美国以外的其他五个市场：加拿大、澳大利亚、英国、法国德国。 通过此扩展，您可以用适用于这些市场更多兴趣来扩充客户数据。 我们还将使用来自 Microsoft Graph 的本地专有数据来扩充您在这些市场中的客户资料。
-  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft-graph.md)
+  我们正在将兴趣相似性扩充的可用性扩展到美国以外的其他五个市场：加拿大、澳大利亚、英国、法国德国。 通过此扩展，您可以用适用于这些市场更多兴趣来扩充客户数据。 我们还将使用 Microsoft 的本地专有数据来扩充位于这些市场中的客户配置文件。
+  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)
 
 
 ## <a name="july-2020-updates"></a>2020 年 7 月更新
@@ -330,8 +367,8 @@ Experian 的人口统计数据扩充现在可以预览。 Experian 是消费者�
 
 - **品牌相似性扩充在更多市场中可用**
 
-  我们正在将品牌相似性扩充的可用性扩展到美国以外的其他五个市场：加拿大、澳大利亚、英国、法国德国。 通过此扩展，您可以利用这些市场的本地品牌来扩充您的客户数据。 我们还将使用来自 Microsoft Graph 的本地专有数据来扩充您在这些市场中的客户资料。
-  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft-graph.md)
+  我们正在将品牌相似性扩充的可用性扩展到美国以外的其他五个市场：加拿大、澳大利亚、英国、法国德国。 通过此扩展，您可以利用这些市场的本地品牌来扩充您的客户数据。 我们还将使用 Microsoft 的本地专有数据来扩充位于这些市场中的客户配置文件。
+  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)
 
 ## <a name="june-2020-updates"></a>2020 年 6 月更新
 
@@ -355,7 +392,7 @@ Experian 的人口统计数据扩充现在可以预览。 Experian 是消费者�
 - **拆分品牌和兴趣相似性扩充**
 
   品牌和兴趣相似性现在可以作为两个独立扩充提供。 拆分的扩充使您可以根据业务要求或需求灵活地单独进行配置和管理。    
-  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft-graph.md)。
+  有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)。
 
 #### <a name="extensibility"></a>扩展性
 

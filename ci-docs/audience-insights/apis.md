@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
-ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
+ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
+ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "5710449"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "5873651"
 ---
 # <a name="work-with-customer-insights-apis"></a>使用 Customer Insights API
 
@@ -78,7 +78,7 @@ HTTP 响应将立即显示在下方。
 
 :::image type="content" source="media/grant-admin-consent.gif" alt-text="一个用于授予管理员同意的动画 GIF。":::
 
-有关 MSAL 的详细信息，请参阅 [Microsoft 身份验证库 (MSAL) 概述](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)。
+有关 MSAL 的详细信息，请参阅 [Microsoft 身份验证库 (MSAL) 概述](/azure/active-directory/develop/msal-overview)。
 
 有关 Azure 中应用注册的详细信息，请参阅[新的 Azure 门户应用注册体验](/azure/active-directory/develop/app-registration-portal-training-guide)。
 

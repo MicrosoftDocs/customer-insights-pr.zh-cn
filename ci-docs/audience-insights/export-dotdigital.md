@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 DotDigital
-description: 了解如何配置与 DotDigital 的连接。
-ms.date: 11/14/2020
+description: 了解如何配置连接和导出到 DotDigital。
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,33 +9,40 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 51a28bdf0de34f0555d8ad7e3d13b2ef8911d417
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 235bcdfa4a7c4c1a382778bd4f66c1a9f5b7beb1
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598006"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759948"
 ---
-# <a name="connector-for-dotdigital-preview"></a>用于 DotDigital 的连接器（预览）
+# <a name="export-segment-lists-to-dotdigital-preview"></a>将客户细分列表导出到 DotDigital（预览版）
 
 将统一客户配置文件的客户细分导出到 DotDigital 通讯簿，并将其用于市场活动、电子邮件市场营销和使用 DotDigital 生成客户细分。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites-for-a-connection"></a>连接的先决条件
 
 -   您具有 [DotDigital 帐户](https://dotdigital.com/)和相应的管理员凭据。
 -   DotDigital 中有现有通讯簿和相应的 ID。 当您选择并打开通讯簿时，可以在 URL 中找到 ID。 有关详细信息，请参阅 [DotDigital 通讯簿](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)。
 -   您在访问群体见解中具有[配置的客户细分](segments.md)。
 -   导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
 
-## <a name="connect-to-dotdigital"></a>连接到 DotDigital
+## <a name="known-limitations"></a>已知限制
 
-1. 转到 **管理员** > **导出目标**。
+- 每次最多可以向 DotDigital 导出 100 万个配置文件。
+- 导出到 DotDigital 仅限于客户细分。
+- 由于对提供者有限制，因此，导出总共包含 100 万个配置文件的客户细分可能最多需要 3 小时。 
+- 可以导出到 DotDigital 的配置文件数与 DotDigital 的合同相关并受其限制。
 
-1. 在 **DotDigital** 下，选择 **设置**。
+## <a name="set-up-connection-to-dotdigital"></a>设置与 DotDigital 的连接
 
-1. 在 **显示名称** 字段中为导出目标指定易于识别的名称。
+1. 转到 **管理员** > **连接**。
 
-   :::image type="content" source="media/DotDigital_config.PNG" alt-text="用于 DotDigital 导出的配置窗格。":::
+1. 选择 **添加连接** 并选择 **DotDigital** 以配置连接。
+
+1. 在 **显示名称** 字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
+
+1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
 1. 输入您的 **DotDigital 用户名和密码**。
 
@@ -47,9 +54,18 @@ ms.locfileid: "5598006"
 
 1. 选择 **将自己添加为导出用户** 并提供您的 Customer Insights 凭据。
 
-1. 选择 **下一步** 配置导出。
+1. 选择 **保存** 以完成连接。 
 
-## <a name="configure-the-connector"></a>配置连接器
+## <a name="configure-an-export"></a>配置导出
+
+如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
+
+1. 转到 **数据** > **导出**。
+
+1. 要创建新导出，请选择 **添加导出**。
+
+1. 在 **导出连接** 字段中，从 DotDigital 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
+
 
 1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对于其他可选字段（例如 **名**、**姓**、**全名**、**性别** 和 **邮政编码**），请重复相同的步骤。
 
@@ -57,16 +73,12 @@ ms.locfileid: "5598006"
 
 1. 选择 **保存**。
 
-## <a name="export-the-data"></a>导出数据
+保存导出不会立即运行导出。
 
-可以[根据需要导出数据](export-destinations.md)。 导出也会在每次[计划刷新](system.md#schedule-tab)时运行。 在 DotDigital 中，您现在可以在 [DotDigital 通讯簿](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)中找到您的客户细分。
+每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
+ 
+在 DotDigital 中，您现在可以在 [DotDigital 通讯簿](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)中找到您的客户细分。
 
-## <a name="known-limitations"></a>已知限制
-
-- 每次最多可以向 DotDigital 导出 100 万个配置文件。
-- 导出到 DotDigital 仅限于客户细分。
-- 由于对提供者有限制，因此，导出总共包含 100 万个配置文件的客户细分可能最多需要 3 小时。 
-- 可以导出到 DotDigital 的配置文件数与 DotDigital 的合同相关并受其限制。
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 

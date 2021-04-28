@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: f120e9e3cf8d40d913c7fa6a81fbf9facd045e3c
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 43fcd37f8dd71e2890334a4cc53d49dae97d63c6
+ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597178"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906845"
 ---
 # <a name="transactional-churn-prediction-preview"></a>交易流失预测（预览）
 
@@ -46,6 +46,14 @@ ms.locfileid: "5597178"
         - **时间戳：** 主键所标识事件的日期和时间。
         - **事件：** 您要使用的事件的名称。 例如，杂货店中称为“UserAction”的字段可能是供客户使用的优惠券。
         - **详细信息：** 有关事件的详细信息。 例如，杂货店中称为“CouponValue”的字段可能是优惠券的货币值。
+- 建议的数据特征：
+    - 足够的历史数据：交易数据至少是所选时间窗口数据的两倍。 最好是两到三年的订阅数据。 
+    - 每个客户多项购买：理想情况下，每个客户至少要进行两次交易。
+    - 客户数量：至少 10 个客户配置文件，最好是超过 1,000 个唯一客户。 该模型将因客户少于 10 个以及历史数据不足而失败。
+    - 数据完整性：在提供的实体的数据字段中，缺失值的不足 20%。
+
+> [!NOTE]
+> 对于客户购买频率较高（每几周一次）的企业，建议选择较短的预测窗口和流失定义。 如果购买频率较低（几个月或一年一次），请选择较长的预测窗口和流失定义。
 
 ## <a name="create-a-transactional-churn-prediction"></a>创建交易流失预测
 
@@ -129,7 +137,9 @@ ms.locfileid: "5597178"
 1. 选择要查看的预测。
    - **预测名称：** 创建时提供的预测的名称。
    - **预测类型：** 用于预测的模型的类型
-   - **输出实体：** 用于存储预测输出的实体的名称。 您可以在 **数据** > **实体** 中查找具有此名称的实体。
+   - **输出实体：** 用于存储预测输出的实体的名称。 您可以在 **数据** > **实体** 中查找具有此名称的实体。    
+     在输出实体中，*ChurnScore* 是预测的流失概率，*IsChurn* 是基于 *ChurnScore* 的二进制标签，阈值为 0.5。 默认阈值可能不适合您的方案。 使用首选阈值[创建新客户细分](segments.md#create-a-new-segment)。
+     并非所有客户都一定是活跃客户。 他们中的一些人可能很长一段时间没有活动，根据你的流失定义被认为是已经流失。 预测已经流失的客户的流失风险是没有用的，因为这些客户不是兴趣的受众。
    - **预测字段：** 仅针对某些类型的预测填充此字段，而不在流失预测中使用它。
    - **状态：** 预测运行的状态。
         - **已排队：** 预测正在等待其他流程运行。

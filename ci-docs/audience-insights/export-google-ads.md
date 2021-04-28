@@ -1,67 +1,35 @@
 ---
 title: 将 Customer Insights 数据导出到 Google Ads
-description: 了解如何配置与 Google Ads 的连接。
-ms.date: 11/18/2020
-ms.reviewer: mhart
+description: 了解如何配置连接和导出到 Google Ads。
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6d9a25af3913e755cccec745c532b35aef3cccf9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f4c094e486577d00d8c0c64e8527829820b335f6
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598236"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759682"
 ---
-# <a name="connector-for-google-ads-preview"></a>用于 Google Ads 的连接器（预览）
+# <a name="export-segments-to-google-ads-preview"></a>向 Google Ads 导出客户细分（预览版）
 
 将统一客户配置文件的客户细分导出到 Google Ads 访问群体列表，并使用它们在 Google Search、Gmail、YouTube 和 Google Display Network 上投放广告。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites-for-connection"></a>连接的先决条件
 
 -   您具有 [Google Ads 帐户](https://ads.google.com/)和相应的管理员凭据。
+-   您有一个[批准的 Google Ads 开发人员标记](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
+-   您符合[客户匹配策略](https://support.google.com/adspolicy/answer/6299717)的要求
+-   您满足[重新市场营销列表大小](https://support.google.com/google-ads/answer/7558048)的要求 
+
 -   Google Ads 中有现有访问群体和相应的 ID。 有关详细信息，请参阅 [Google Ads 访问群体](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)。
 -   您已[配置客户细分](segments.md)
 -   导出的客户细分中的统一客户配置文件包含表示电子邮件地址、名和姓的字段
-
-## <a name="connect-to-google-ads"></a>连接到 Google Ads
-
-1. 转到 **管理员** > **导出目标**。
-
-1. 在 **Google Ads** 下，选择 **设置**。
-
-1. 在 **显示名称** 字段中为导出目标指定易于识别的名称。
-
-1. 输入您的 **[Google Ads 客户 ID](https://support.google.com/google-ads/answer/1704344)**。
-
-1. 输入您的 **[Google Ads 审批的开发人员令牌](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**。
-
-1. 选择 **我同意** 确认 **数据隐私与合规性**。
-
-1. 输入您的 **[Google Ads 访问群体 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)**，然后选择 **连接** 以初始化与 Google Ads 的连接。
-
-1. 选择 **使用 Google Ads 进行身份验证** 并提供您的 Google Ads 凭据。
-
-1. 选择 **将自己添加为导出用户** 并提供您的 Customer Insights 凭据。
-
-   :::image type="content" source="media/export-segments-googleads.PNG" alt-text="导出 Google Ads 连接的屏幕截图":::
-
-1. 选择 **下一步** 配置导出。
-
-## <a name="configure-the-connector"></a>配置连接器
-
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对**名**和 **姓** 字段重复相同的步骤。
-
-1. 选择想要导出的细分。 您总共可以将最多 100 万个客户配置文件导出到 Google Ads 中。
-
-1. 选择 **保存**。
-
-## <a name="export-the-data"></a>导出数据
-
-可以[根据需要导出数据](export-destinations.md)。 导出也会在每次[计划刷新](system.md#schedule-tab)时运行。 在 Google Ads 中，您现在可以在 [Google Ads 访问群体](https://support.google.com/google-ads/answer/7558048?hl=en/)下找到您的客户细分。
 
 ## <a name="known-limitations"></a>已知限制
 
@@ -69,6 +37,48 @@ ms.locfileid: "5598236"
 - 导出到 Google Ads 仅限于客户细分。
 - 由于对提供者有限制，因此，导出总共包含 100 万个配置文件的客户细分可能最多需要 5 分钟。 
 - 在 Google Ads 中匹配可能最多需要 48 个小时。
+
+## <a name="set-up-connection-to-google-ads"></a>设置与 Google Ads 的连接
+
+1. 转到 **管理员** > **连接**。
+
+1. 选择 **添加连接** 并选择 **Google Ads** 以配置连接。
+
+1. 在 **显示名称** 字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
+
+1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
+
+1. 输入您的 **[Google Ads 客户 ID](https://support.google.com/google-ads/answer/1704344)**。
+
+1. 输入您的 **[Google Ads 审批的开发人员令牌](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**。
+
+1. 选择 **我同意** 确认 **数据隐私与合规性**。
+
+1. 选择 **使用 Google Ads 进行身份验证** 并提供您的 Google Ads 凭据。
+
+1. 选择 **将自己添加为导出用户** 并提供您的 Customer Insights 凭据。
+
+1. 选择 **保存** 以完成连接。 
+
+## <a name="configure-an-export"></a>配置导出
+
+如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
+
+1. 转到 **数据** > **导出**。
+
+1. 要创建新导出，请选择 **添加导出**。
+
+1. 在 **导出连接** 字段中，从 Google Ads 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
+
+1. 输入您的 **[Google Ads 访问群体 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)**，然后选择 **连接** 以初始化与 Google Ads 的连接。
+
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对**名**和 **姓** 字段重复相同的步骤。
+
+1. 选择想要导出的细分。 您总共可以将最多 100 万个客户配置文件导出到 Google Ads 中。
+
+保存导出不会立即运行导出。
+
+每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 

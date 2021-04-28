@@ -1,7 +1,7 @@
 ---
 title: 创建和管理环境
 description: 了解如何注册服务以及如何管理环境。
-ms.date: 02/01/2021
+ms.date: 03/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 1c2dfdd2889b5cb6c5285b4d7cc7f52a3d6de4d1
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598282"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887975"
 ---
 # <a name="manage-environments"></a>管理环境
 
@@ -44,6 +44,9 @@ ms.locfileid: "5598282"
 
 创建新环境的方式包含以下两种： 您可以指定一个全新的配置，也可以复制现有环境的一些配置设置。
 
+> [!NOTE]
+> 组织可以为每个 Customer Insights 许可证创建 *两个* 环境。 如果您的组织购买了多个许可证，请[联系我们的支持团队](https://go.microsoft.com/fwlink/?linkid=2079641)，以增加可用环境的数量。 有关容量和加载项容量的更多信息，请下载 [Dynamics 365 许可指南 ](https://go.microsoft.com/fwlink/?LinkId=866544)。
+
 创建环境：
 
 1. 选择应用标题中的 **环境** 选择器。
@@ -55,14 +58,14 @@ ms.locfileid: "5598282"
 
 1. 在 **创建新环境** 对话框中，选择 **新建环境**。
 
-   如果要 [从当前环境复制数据](#additional-considerations-for-copy-configuration-preview)，请选择 **从现有环境复制**。 您将看到组织中可以从中复制数据的所有可用环境的列表。
+   如果要 [从当前环境复制数据](#considerations-for-copy-configuration-preview)，请选择 **从现有环境复制**。 您将看到组织中可以从中复制数据的所有可用环境的列表。
 
 1. 提供以下详细信息：
    - **名称**：此环境的名称。 如果已从现有环境中复制，则此字段已填写，但可以更改。
    - **区域**：要在其中部署和托管该服务的区域。
    - **类型**：选择是要创建生产环境还是沙盒环境。
 
-2. 或者，您可以选择 **高级设置**：
+1. 或者，您可以选择 **高级设置**：
 
    - **保存所有数据到**：指定要存储从 Customer Insights 生成的输出数据的位置。 有两个选项：**Customer Insights 存储**（Customer Insights 团队托管的 Azure Data Lake）和 **Azure Data Lake Storage Gen2**（您自己的 Azure Data Lake Storage）。 默认情况下已选择 Customer Insights 存储选项。
 
@@ -75,20 +78,20 @@ ms.locfileid: "5598282"
 
    - 对于 Azure Data Lake Storage Gen2 选项，在进行身份验证时，您可以在基于资源的选项和基于订阅的选项之间进行选择。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 **容器** 名称不可更改，该名称将为“customerinsights”。
    
-   - 如果您希望使用 [预测](predictions.md)或基于 Microsoft Dataverse 配置与应用程序和解决方案的数据共享，请在 **配置与 Microsoft Dataverse 的数据共享并启用其他功能** 下面提供 Microsoft Dataverse 环境 URL。 选择 **启用数据共享** 以与 Microsoft Dataverse 托管 Data Lake 共享 Customer Insights 输出数据。
+   - 如果您想使用 [预测](predictions.md)，请配置根据 Microsoft Dataverse 与应用程序和解决方案的数据共享，或启用本地数据源的数据引入，在 **配置与 Microsoft Dataverse 的数据共享并启用其他功能** 下面提供 Microsoft Dataverse 环境 URL。 选择 **启用数据共享** 以与 Microsoft Dataverse 托管 Data Lake 共享 Customer Insights 输出数据。
 
      > [!NOTE]
      > - 将所有数据保存到自己的 Azure Data Lake Storage 时，当前不支持与 Microsoft Dataverse 托管 Data Lake 共享数据。
      > - 启用与 Microsoft Dataverse 托管 Data Lake 的数据共享时，当前不支持[预测实体中缺少的值 ](predictions.md)。
 
      > [!div class="mx-imgBorder"]
-     > ![用于启用与 Microsoft Dataverse 的数据共享的配置选项](media/Datasharing-with-DataverseMDL.png)
+     > ![用于启用与 Microsoft Dataverse 的数据共享的配置选项](media/datasharing-with-DataverseMDL.png)
 
    当您运行流程（例如数据引入或客户细分创建）时，将在上述指定的存储帐户中创建相应的文件夹。 数据文件和 model.json 文件将根据您运行的流程创建并添加到相应的子文件夹中。
 
    如果您创建了多个 Customer Insights 环境并选择将这些环境中的输出实体保存在存储帐户中，将为容器中具有 ci_<environmentid> 的每个环境创建单独的文件夹。
 
-### <a name="additional-considerations-for-copy-configuration-preview"></a>复制配置的其他注意事项（预览）
+### <a name="considerations-for-copy-configuration-preview"></a>副本配置的注意事项（预览版）
 
 复制以下配置设置：
 
@@ -136,6 +139,18 @@ ms.locfileid: "5598282"
 4. 如果环境配置为在Azure Data Lake Storage Gen2 中存储数据，则可以更新 **帐户密钥**。 但是，您不能更改 **帐户名称** 或 **容器** 名称。
 
 5. 或者，您可以从基于帐户密钥的连接更新到基于资源或基于订阅的连接。 升级后，您将无法在更新后还原到帐户密钥。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 在更新连接时，无法更改 **容器** 信息。
+
+6. （可选）您可以在 **配置与 Microsoft Dataverse 的数据共享并启用其他功能** 下面提供 Microsoft Dataverse 环境 URL。 这些功能包括基于应用和解决方案与 Microsoft Dataverse 共享数据、本地数据源数据引入或使用[预测](predictions.md)。 选择 **启用数据共享** 以与 Microsoft Dataverse 托管 Data Lake 共享 Customer Insights 输出数据。
+
+   > [!NOTE]
+   > - 将所有数据保存到自己的 Azure Data Lake Storage 时，当前不支持与 Microsoft Dataverse 托管 Data Lake 共享数据。
+   > - 当您启用与 Microsoft Dataverse 托管 Data Lake 的数据共享时，当前不支持[预测实体中缺少的值](predictions.md)。
+
+   启用与 Microsoft Dataverse 共享数据后，将触发数据源和其他流程的完全刷新。 如果流程当前正在运行并且已排队，则您将看不到用于启用与 Microsoft Dataverse 共享数据的选项。 您可以等待这些流程完成或取消它们，以启用数据共享。 
+   
+   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="用于启用与 Microsoft Dataverse 的数据共享的配置选项。":::
+   
+   当您运行流程（例如数据引入或客户细分创建）时，将在上述指定的存储帐户中创建相应的文件夹。 数据文件和 model.json 文件将创建并添加到相应的子文件夹中，具体取决于您运行的流程。
 
 ## <a name="reset-an-existing-environment"></a>重置现有环境
 

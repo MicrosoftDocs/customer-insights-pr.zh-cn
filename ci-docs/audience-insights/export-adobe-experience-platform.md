@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Adobe 体验平台
 description: 了解如何在 Adobe 体验平台中使用访问群体见解客户细分。
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: d1856861562be55c6d1d051050fe965560fa42f8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596258"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760090"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>在 Adobe 体验平台（预览版）中使用 Customer Insights 客户细分。
 
@@ -51,21 +51,36 @@ ms.locfileid: "5596258"
 
 通过确定目标访问群体，我们可以配置从访问群体见解导出到 Azure Blob 存储帐户。
 
-1. 在访问群体见解中，转到 **管理员** > **导出目标**。
+### <a name="configure-a-connection"></a>配置连接
 
-1. 在 **Azure Blob 存储** 磁贴中，选择 **设置**。
+1. 转到 **管理员** > **连接**。
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure Blob 存储的配置磁贴。":::
+1. 选择 **添加连接**，并在 **Azure Blob 存储** 磁贴中选择 **Azure Blob 存储** 或选择 **设置**：
 
-1. 为这个新的导出目的地提供 **显示名称**，然后输入您希望将该客户细分导出到的 Azure Blob 存储帐户的 **帐户名称**、**帐户密钥** 和 **容器**。  
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure Blob 存储的配置磁贴。"::: 以配置连接。
+
+1. 在 **显示名称** 字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
+
+1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
+
+1. 输入要将客户细分导出到的 Azure Blob 存储帐户的 **帐户名称**、**帐户密钥** 和 **容器**。  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="存储帐户配置的屏幕截图。"::: 
+   
+    - 若要了解如何查找 Blob 存储帐户名称和帐户密钥，请参阅[在 Azure 门户中管理存储帐户设置](/azure/storage/common/storage-account-manage)。
+    - 若要了解如何创建容器，请参阅[创建容器](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)。
 
-   - 若要了解有关如何查找 Azure Blob 存储账户名称和帐户密钥的详细信息，请参阅[管理 Azure 门户中的存储帐户设置](/azure/storage/common/storage-account-manage)。
+1. 选择 **保存** 以完成连接。 
 
-   - 若要了解如何创建容器，请参阅[创建容器](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)。
+### <a name="configure-an-export"></a>配置导出
 
-1. 选择 **下一步**。
+如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
+
+1. 转到 **数据** > **导出**。
+
+1. 要创建新导出，请选择 **添加导出**。
+
+1. 在 **导出连接** 字段中，从 Azure Blob 存储部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
 
 1. 选择您要导出的客户细分。 在这个例子中，它是 **ChurnProneCustomers**。
 
@@ -73,11 +88,9 @@ ms.locfileid: "5596258"
 
 1. 选择 **保存**。
 
-保存导出目的地后，您可以在 **管理** > **导出** > **我的导出目的地** 中找到它。
+保存导出目标后，您可以在 **数据** > **导出** 上找到该导出目标。
 
-:::image type="content" source="media/export-destination-azure-blob-storage.png" alt-text="包含导出列表和突出显示的示例客户细分的屏幕截图。":::
-
-现在，您可以[按需导出客户细分](export-destinations.md#export-data-on-demand)。 导出也会在每次[计划刷新](system.md)时运行。
+现在，您可以[按需导出客户细分](export-destinations.md#run-exports-on-demand)。 导出也会在每次[计划刷新](system.md)时运行。
 
 > [!NOTE]
 > 确保导出的客户细分的记录数量在 Adobe Campaign Standard 许可证的允许限度内。

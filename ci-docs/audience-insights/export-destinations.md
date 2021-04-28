@@ -1,7 +1,7 @@
 ---
-title: 导出的目标
-description: 导出数据和管理导出目标。
-ms.date: 07/21/2020
+title: 从 Customer Insights 导出数据
+description: 管理导出以共享数据。
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,102 +9,73 @@ ms.topic: conceptual
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5557442983f8c48cd46387009e0060beb6e764bb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596074"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896132"
 ---
-# <a name="export-destinations-preview-overview"></a>导出目标（预览版）概述
+# <a name="exports-preview-overview"></a>导出(预览版)概述
 
-**导出目标** 页显示您已设置的要将数据导出到的所有位置。 您还可以为导出添加新目标。 此外，它将显示导出当前可用选项。 获取简要概述、说明，并了解使用每个扩展性选项可以做什么。 将统一的配置文件、度量和细分导出到与您的业务相关的受支持的应用。
+**导出** 页面显示所有配置的导出。 导出与各种应用程序共享特定数据。 它们可以包括客户配置文件或实体、架构和映射详细信息。 每个导出都需要[由管理员设置的连接以管理身份验证和访问](connections.md)。
 
-转到 **管理** > **导出目标** 来查找以下扩展性选项：
+> [!NOTE]
+> 在 2021 年 3 月之前，导出自动创建了与相应服务的连接。 导出现在需要[由管理员创建和共享的连接](connections.md)，然后才能创建它们。
 
-- [Adobe Campaign Standard](export-adobe-campaign-standard.md)
-- [Adobe 体验平台](export-adobe-experience-platform.md)
-- [AdRoll](export-adroll.md)
-- [Autopilot](export-autopilot.md)
-- [Azure Blob 存储](export-azure-blob-storage.md)
-- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
-- [Microsoft Teams 的机器人](export-teams-bot.md)
-- [Customer Insights API](apis.md)
-- [DotDigital](export-dotdigital.md)
-- [Dynamics 365 Customer Service（客户卡加载项）](customer-card-add-in.md)
-- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
-- [Dynamics 365 Sales](export-dynamics365-sales.md)
-- [Dynamics 365 销售中心（客户卡加载项）](customer-card-add-in.md)
-- [Facebook 广告管理器](export-facebook.md)
-- [Google Ads](export-google-ads.md)
-- [LiveRamp&reg;](export-liveramp.md)
-- [Mailchimp](export-mailchimp.md)
-- [Marketo](export-marketo.md)
-- [Power Automate](export-power-automate.md)
-- [Power Apps](export-power-apps.md)
-- [Power BI](export-power-bi.md)
-- [SendGrid](export-sendgrid.md)
-- [SFTP](export-sftp.md)
+转到 **数据** > **导出** 以查看导出页面。 所有用户角色都有权查看配置的导出。 使用命令栏中的搜索字段按其名称、连接名称或连接类型查找导出。
 
-## <a name="add-a-new-export-destination"></a>添加新的导出目标
+## <a name="set-up-a-new-export"></a>设置新导出
 
-若要添加导出目标，您需要具有[管理员权限](permissions.md)。 如果导出到 Microsoft 服务，假设两个服务位于同一个组织中。
+要设置或编辑导出，您需要有可用的连接。 连接取决于您的[用户角色](permissions.md)：
+- 管理员可以访问所有连接。 他们还可以在设置导出时创建新的连接。
+- 参与者可以访问特定连接。 他们依靠管理员来配置和共享连接。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
+- 查看者只能查看现有导出，但无法创建它们。
 
-1. 转到 **管理员** > **导出目标**。
+1. 转到 **数据** > **导出**。
 
-1. 切换到 **我的导出目标** 选项卡。
+1. 选择 **添加导出** 以创建新导出目标。
 
-1. 选择 **添加目标** 创建新的导出目标。
+1. 在 **设置导出** 窗格中，选择要使用的连接。 [连接](connections.md)由管理员管理。 
 
-1. 在 **添加目标** 窗格的下拉列表中，选择导出目标的 **类型**。
+1. 提供所需的详细信息并选择 **保存** 以创建导出。
 
-1. 提供必需的详细信息，然后选择 **下一步** 创建导出目标。
-
-也可以在 **发现** 选项卡中的磁贴上选择 **设置**。
-
-## <a name="view-export-destinations"></a>查看导出目标
-
-创建导出目标之后，可以在 **我的导出目标** 选项卡上的表中看到这些目标。此表有三列：
-
-- **显示名称**：创建目标时输入的名称。
-- **类型**：创建目标时设置的导出目标类型。
-- **创建日期**：目标的创建日期。
-
-## <a name="edit-an-export-destination"></a>编辑导出目标
+### <a name="edit-an-export"></a>编辑导出
 
 1. 选择要编辑的导出目标的竖省略号。
 
-   > [!div class="mx-imgBorder"]
-   > ![竖省略号](media/export-destinations-page-ellipsis.png "竖省略号")
-
 1. 从下拉菜单中选择 **编辑**。
 
-1. 更改需要更新的值，然后选择 **保存**。
+1. 更改要更新的值，然后选择 **保存**。
 
-## <a name="export-data-on-demand"></a>根据需要导出数据
+## <a name="view-exports-and-export-details"></a>查看导出和导出详细信息
 
-为导出目标配置连接器之后，将在每次[安排的刷新](system.md#schedule-tab)时运行导出。
+创建导出目标后，它们会列在 **数据** > **导出** 中。 所有用户都可以看到共享的数据及其最新状态。
 
-若要导出数据但不等待安排的刷新，请转到 **管理** > **导出目标** 中的 **我的导出目标** 选项卡。
+1. 转到 **数据** > **导出**。
 
-> [!div class="mx-imgBorder"]
-> ![竖省略号](media/export-destinations-page-ellipsis.png "竖省略号")
+1. 无编辑权限的用户应选择 **查看** 而不是 **编辑**，以查看导出详细信息。
 
-- 选择列表上方的 **导出** 同时运行到所有导出目标的导出。
-- 选择列表项后的省略号 (...)，然后选择 **导出** 选项为单个导出目标运行导出。
+1. 此侧窗格显示此导出的设置。 如果没有编辑权限，您无法更改值。 选择 **关闭** 以返回到出口页面。
 
-## <a name="remove-an-export-destination"></a>删除导出目标
+## <a name="run-exports-on-demand"></a>按需运行导出
 
-若要删除导出目标，请从 **导出目标** 主页开始。
+配置导出后，只要具有工作连接，每次进行[计划的刷新](system.md#schedule-tab)时都将运行导出。
 
-1. 选择要删除的导出目标的竖省略号。
+要在不等待计划刷新的情况下导出数据，请转到 **数据** > **导出**。 您有两种选择：
 
-   > [!div class="mx-imgBorder"]
-   > ![竖省略号](media/export-destinations-page-ellipsis.png "竖省略号")
+- 要运行所有导出，请在命令栏中选择 **全部运行**。 
+- 要运行单个导出，请选择列表项上的椭圆 (...)，然后选择 **运行**。
 
-2. 此下拉菜单中选择 **删除**。
+## <a name="remove-an-export"></a>删除导出
 
-3. 选择确认屏幕中的 **删除** 确认删除。
+1. 转到 **数据** > **导出**。
+
+1. 选择要删除的导出的竖省略号。
+
+1. 此下拉菜单中选择 **删除**。
+
+1. 选择确认屏幕中的 **删除** 确认删除。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

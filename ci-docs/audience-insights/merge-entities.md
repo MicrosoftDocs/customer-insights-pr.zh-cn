@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 737c593353878a5e322488d00de5dc5db5befda9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 4ad06a0baf57e612fc0e0214dfd23d28e7d2b6be
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597822"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896500"
 ---
 # <a name="merge-entities"></a>合并实体
 
@@ -83,7 +83,7 @@ ms.locfileid: "5597822"
 
 ## <a name="next-step"></a>下一步
 
-配置[活动](activities.md)、[扩充](enrichment-microsoft-graph.md)或[关系](relationships.md)，以便加深对客户的了解。
+配置[活动](activities.md)、[扩充](enrichment-hub.md)或[关系](relationships.md)，以便加深对客户的了解。
 
 如果您已配置了活动、扩充或关系，或者如果您定义了细分，系统将自动处理它们以使用最新的客户数据。
 

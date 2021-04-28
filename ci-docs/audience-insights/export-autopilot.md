@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Autopilot
-description: 了解如何配置与 Autopilot 的连接。
-ms.date: 12/08/2020
+description: 了解如何配置连接和导出到 Autopilot。
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,54 +9,22 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d039c4afd84eaad942d214d4e6fb8ef7b1ec72a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e320a48d5b7c35b530e3a38567b226b804879e4e
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596117"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760132"
 ---
-# <a name="connector-for-autopilot-preview"></a>用于 Autopilot 的连接器（预览版）
+# <a name="export-segments-to-autopilot-preview"></a>将细分市场导出到 Autopilot（预览版）
 
 将统一客户配置文件的客户细分导出到 Autopilot，并在 Autopilot 中将其用于电子邮件市场营销。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites-for-a-connection"></a>连接的先决条件
 
 -   您具有 [Autopilot 帐户](https://www.autopilothq.com/)和相应的管理员凭据。
 -   您在访问群体见解中具有[配置的客户细分](segments.md)。
 -   导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
-
-## <a name="connect-to-autopilot"></a>连接到 Autopilot
-
-1. 转到 **管理员** > **导出目标**。
-
-1. 在 **Autopilot** 下，选择 **设置**。
-
-1. 在 **显示名称** 字段中为导出目标指定易于识别的名称。
-
-   :::image type="content" source="media/export-autopilot.PNG" alt-text="Autopilot 连接的配置窗格。":::
-
-1. 输入您的 **Autopilot API 密钥** [Autopilot API 密钥](https://autopilot.docs.apiary.io/#)。
-
-1. 选择 **我同意** 确认 **数据隐私与合规性**。
-
-1. 选择 **连接** 以初始化与 Autopilot 的连接。
-
-1. 选择 **将自己添加为导出用户** 并提供您的 Customer Insights 凭据。
-
-1. 选择 **下一步** 配置导出。
-
-## <a name="configure-the-connector"></a>配置连接器
-
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对于其他可选字段（例如名 **名** 和 **姓**），请重复相同的步骤。
-
-1. 选择想要导出的细分。 我们强烈 **建议不要将总共超过 100'000 个客户配置文件导出** 到 Autopilot。 
-
-1. 选择 **保存**。
-
-## <a name="export-the-data"></a>导出数据
-
-可以[根据需要导出数据](export-destinations.md)。 导出也会在每次[计划刷新](system.md#schedule-tab)时运行。
 
 ## <a name="known-limitations"></a>已知限制
 
@@ -64,6 +32,46 @@ ms.locfileid: "5596117"
 - 导出到 Autopilot 仅限于客户细分。
 - 将多达 100'000 个配置文件导出到 Autopilot 可能需要几个小时才能完成。 
 - 可以导出到 Autopilot 的配置文件数与 Autopilot 的合同相关并受其限制。
+
+## <a name="set-up-connection-to-autopilot"></a>设置与 Autopilot 的连接
+
+1. 转到 **管理员** > **连接**。
+
+1. 选择 **添加连接** 并选择 **Mailchimp** 以配置连接。
+
+1. 在 **显示名称** 字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
+
+1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
+
+3. 输入 [Autopilot API 密钥](https://autopilot.docs.apiary.io/#)。
+
+1. 选择 **我同意** 确认 **数据隐私与合规性**。
+
+1. 选择 **连接** 以初始化与 Autopilot 的连接。
+
+1. 选择 **将自己添加为导出用户** 并提供您的 Customer Insights 凭据。
+
+1. 选择 **保存** 以完成连接。
+
+## <a name="configure-an-export"></a>配置导出
+
+如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
+
+1. 转到 **数据** > **导出**。
+
+1. 要创建新导出，请选择 **添加导出**。
+
+1. 在 **导出连接** 字段中，从 Autopilot 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
+
+3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对于其他可选字段（例如名 **名** 和 **姓**），请重复相同的步骤。
+
+1. 选择想要导出的细分。 我们强烈 **建议不要将总共超过 100'000 个客户配置文件导出** 到 Autopilot。 
+
+1. 选择 **保存**。
+
+保存导出不会立即运行导出。
+
+每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 

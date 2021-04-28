@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: d6a9e7872a488b6d68afce35b547f93cc4a7c652
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 433e6ceda0ec7827bd672cff40f895d7719561df
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596856"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896316"
 ---
 # <a name="customer-profiles"></a>客户配置文件
 
@@ -59,7 +59,7 @@ ms.locfileid: "5596856"
 
 -   **客户配置文件磁贴：** 此磁贴显示统一客户配置文件实体中的不同值。 这些详细信息可以包括电子邮件地址、姓名、市/县等等。 
 
--   **潜在兴趣、潜在品牌：** 显示您是否配置了第一方扩充。 它表示具有与此客户类似的配置文件的客户可能具有的潜在兴趣和品牌相似性。 有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft-graph.md)。
+-   **潜在兴趣、潜在品牌：** 显示您是否配置了第一方扩充。 它表示具有与此客户类似的配置文件的客户可能具有的潜在兴趣和品牌相似性。 有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)。
 
 -   **度量：** 显示您是否配置了一个或多个特定类型的度量：客户属性度量。 它们包括针对各个客户级别的客户的计算 KPI。 有关详细信息，请参阅[定义和管理度量](measures.md)。
 
