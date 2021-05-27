@@ -6,22 +6,19 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c1078ed0ba259a6e9cde3c7ede3570890ae48e67
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896132"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016603"
 ---
 # <a name="exports-preview-overview"></a>导出(预览版)概述
 
 **导出** 页面显示所有配置的导出。 导出与各种应用程序共享特定数据。 它们可以包括客户配置文件或实体、架构和映射详细信息。 每个导出都需要[由管理员设置的连接以管理身份验证和访问](connections.md)。
-
-> [!NOTE]
-> 在 2021 年 3 月之前，导出自动创建了与相应服务的连接。 导出现在需要[由管理员创建和共享的连接](connections.md)，然后才能创建它们。
 
 转到 **数据** > **导出** 以查看导出页面。 所有用户角色都有权查看配置的导出。 使用命令栏中的搜索字段按其名称、连接名称或连接类型查找导出。
 

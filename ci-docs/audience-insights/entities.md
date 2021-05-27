@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 383523bad5105e08e57758838e90a49e805b5f9b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f81128183b6e20e1078ad38c42c771d343909270
+ms.sourcegitcommit: c1841ab91fbef9ead9db0f63fbc669cc3af80c12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596396"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049383"
 ---
 # <a name="entities-in-audience-insights"></a>访问群体见解中的实体
 
@@ -37,12 +37,12 @@ ms.locfileid: "5596396"
 > [!div class="mx-imgBorder"]
 > ![选择实体](media/data-manager-entities-data.png "选择实体")
 
-- **数据** 选项卡默认已选中，并显示一个表，其中列出了有关实体的各记录的详细信息。
+- **数据** 选项卡显示一个表，其中列出了有关实体各个记录的详细信息。
 
 > [!div class="mx-imgBorder"]
 > ![字段表](media/data-manager-entities-fields.PNG "字段表")
 
-- **字段** 选项卡显示一个表，用于查看所选实体的详细信息，如字段名称、数据类型和类型。 **类型** 列显示 Common Data Model 关联的类型，其由系统自动确定，或由用户[手动映射](map-entities.md)。 这些是可能与属性的数据类型不同的语义类型 — 例如，下面的 *电子邮件* 字段的数据类型为 *文本*，但是，其（语义）的 Common Data Model 类型可能未 *电子邮件* 或 *电子邮件地址*。
+- 默认情况下，**属性** 选项卡已被选定，并且会显示一个表，用于查看选定实体的详细信息，例如字段名称、数据类型和类型。 **类型** 列显示 Common Data Model 关联的类型，其由系统自动确定，或由用户[手动映射](map-entities.md)。 这些是可能与属性的数据类型不同的语义类型 — 例如，下面的 *电子邮件* 字段的数据类型为 *文本*，但是，其（语义）的 Common Data Model 类型可能未 *电子邮件* 或 *电子邮件地址*。
 
 > [!NOTE]
 > 这两个表都仅显示您的实体的数据的一个示例。 若要查看完整数据集，请转到 **数据源** 页，选择一个实体，选择 **编辑**，然后按照[数据源](data-sources.md)中的说明使用 Power Query 查看此实体的数据。

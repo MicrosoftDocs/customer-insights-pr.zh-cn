@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759810"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059305"
 ---
 # <a name="export-segments-to-marketo-preview"></a>将细分市场导出到 Marketo（预览版）
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759810"
 
 1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-1. 输入您的 **[Marketo 客户端 ID、客户端密码和 REST 终结点主机名](https://developers.marketo.com/rest-api/authentication/)**。
+1. 输入您的 **[Marketo 客户端 ID、客户端密码和 REST 终结点主机名](https://developers.marketo.com/rest-api/authentication/)**。 REST 终结点主机名是纯主机名，不带 `https://`。 示例：`xyz-abc-123.mktorest.com`。 
 
 1. 选择 **我同意** 确认 **数据隐私与合规性**，然后选择 **连接** 以初始化与 Marketo 的连接。
 
@@ -62,7 +62,7 @@ ms.locfileid: "5759810"
 
 1. 在 **导出连接** 字段中，从 Marketo 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
 
-1. 输入您的 **[Marketo 列表 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. 输入您的 **[Marketo 列表 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**。 列表 ID 是一个纯数值。 例如，如果 Marketo 列表 ID 为 ST12345A7，请删除数字之前和之后的字符，并输入 `12345`。 
 
 1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759810"
 
 保存导出不会立即运行导出。
 
-每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 在 Marketo 中，您现在可以在 [Marketo 列表](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)下找到您的客户细分。
+每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 在 Marketo 中，您现在可以在 [Marketo 列表](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)下找到您的客户细分。
 
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性

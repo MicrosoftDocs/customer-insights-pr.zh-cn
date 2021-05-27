@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ce2477d957a1792e0436a0dfc15a33621b1c89a9
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597914"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976077"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 连接器（预览版）
 
@@ -27,7 +27,7 @@ ms.locfileid: "5597914"
 - 当数据源刷新失败时触发的触发器。 
 - 当数据源刷新成功时触发的触发器。
 - 当客户细分超过阈值时触发的触发器。 此触发器只能在超过阈值时触发。
-- 当业务度量超过阈值时触发的触发器。 此触发器只能在超过阈值时触发。
+- 当业务度量超过阈值时触发的触发器。 仅支持没有维度的业务度量。 此触发器只能在超过阈值时触发。
 - 在完成完全刷新（数据源、客户细分、度量......）时触发。
 - 完成统一过程（映射、匹配、合并）的刷新时触发。
 

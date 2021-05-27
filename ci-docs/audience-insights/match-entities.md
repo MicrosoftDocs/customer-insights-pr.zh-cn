@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2eb84c44aa530346a73ba720106734d705a45f23
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595553"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085611"
 ---
 # <a name="match-entities"></a>匹配实体
 
@@ -103,6 +103,18 @@ ms.locfileid: "5595553"
 
 > [!NOTE]
 > 规则的顺序很重要。 匹配算法会尝试基于您的第一个规则进行匹配，并且仅在第一个规则没有找到匹配项时才会继续应用第二个规则。
+
+### <a name="change-the-entity-order-in-match-rules"></a>在匹配规则中更改实体顺序
+
+您可以对匹配规则的实体重新排序以更改处理它们的顺序。 将会删除因顺序更改而存在冲突的规则。 您必须使用更新的配置重新创建已删除的规则。
+
+1. 转到 **数据** > **统一** > **匹配** 并选择 **编辑**。
+
+1. 在 **编辑规则** 窗格中，选择 **上移/下移** 控件或拖放实体以更改顺序。
+
+   :::image type="content" source="media/reorder-match-rules.png" alt-text="用于更改匹配阶段中处理实体的顺序的选项。":::
+
+1. 选择 **完成** 保存规则。
 
 ## <a name="define-deduplication-on-a-match-entity"></a>对匹配实体定义删除重复
 

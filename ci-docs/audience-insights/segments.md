@@ -1,7 +1,7 @@
 ---
-title: 创建和管理细分
-description: 创建客户细分，以便根据各种属性为客户分组。
-ms.date: 03/02/2021
+title: 访问群体见解中的客户细分
+description: 概述客户细分以及如何创建和管理它们。
+ms.date: 05/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,79 +9,42 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4a6e8a3216a2c0738d60247054afa9fc18412f55
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a7fa6515bd6e79dedfb21aa0f0b8e24b873a6771
+ms.sourcegitcommit: 8341fa964365c185b65bc4b71fc0c695ea127dc0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597040"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "6034001"
 ---
-# <a name="create-and-manage-segments"></a>创建和管理细分
+# <a name="segments-overview"></a>客户细分概述
 
 通过客户细分，您可以基于人口统计、交易或行为属性对客户进行分组。 您可以使用客户细分来确定促销活动、销售活动和客户支持操作的目标，以实现您的业务目标。
 
-可定义客户配置文件实体及其相关实体的复杂筛选器。 每个客户细分在处理之后都会创建一组您可以导出并对其执行操作的客户记录。 某些[服务限制](service-limits.md)适用。
-
-除非另有规定，否则所有客户细分都是 **动态客户细分**，将根据定期计划刷新。
-
-下面的示例演示了细分功能。 我们为过去 90 天至少订购了 500 美元的货物的客户 *和* 已升级的客户服务呼叫中涉及的客户定义了一个细分。
-
-> [!div class="mx-imgBorder"]
-> ![多个组](media/segmentation-group1-2.png "多个组")
+与客户细分定义的筛选器匹配的客户配置文件称为客户细分的 *成员*。 某些[服务限制](service-limits.md)适用。
 
 ## <a name="create-a-new-segment"></a>新建细分
 
-在 **客户细分** 页面上管理客户细分。
+创建新客户细分的方法有多种： 
 
-1. 在访问群体见解中，转到 **客户细分** 页面。
+- 具有客户细分生成器的复杂客户细分：[空白客户细分](segment-builder.md#create-a-new-segment)
+- 具有一个运算符的简单客户细分：[快速客户细分](segment-builder.md#quick-segments)
+- 由 AI 提供支持的相似客户查找方法：[相似客户](find-similar-customer-segments.md)
+- 由 AI 提供支持且基于度量或属性的建议：[为改进度量而建议的客户细分](suggested-segments.md)
+- 基于活动的建议：[基于客户活动的建议客户细分](suggested-segments-activity.md)
 
-1. 选择 **新建** > **空白客户细分**。
+## <a name="get-insights-on-existing-segments"></a>深入了解现有客户细分
 
-1. 在 **新细分** 窗格中，选择细分类型，然后提供 **名称**。
+通过[客户细分见解](segment-insights.md)发现有关现有客户细分的其他信息。 找出两个客户细分的差别或它们的共同点。
 
-   （可选）提供有助于识别细分的显示名称和描述。
+## <a name="find-similar-customers"></a>查找相似客户
 
-1. 选择 **下一步** 转到 **细分生成器**，在此处定义组。 组是一组客户。
-
-1. 选择其中包含要充当细分依据的属性的实体。
-
-1. 选择细分依据属性。 此属性可以采用以下四种值类型之一：数字、字符串、日期或布尔值。
-
-1. 为所选属性选择运算符和值。
-
-   > [!div class="mx-imgBorder"]
-   > ![自定义组筛选器](media/customer-group-numbers.png "客户组筛选器")
-
-   |号码 |定义  |
-   |---------|---------|
-   |1     |Entity          |
-   |2     |属性          |
-   |3    |操作员         |
-   |4    |值         |
-
-8. 如果实体通过[关系](relationships.md)连接到统一客户实体，您需要定义关系路径才能创建有效细分。 添加关系路径中的实体，直到从下拉列表中选择 **客户：CustomerInsights** 实体。 然后为每个条件选择 **所有记录**。
-
-   > [!div class="mx-imgBorder"]
-   > ![细分创建过程中的关系路径](media/segments-multiple-relationships.png "细分创建过程中的关系路径")
-
-1. 默认情况下，客户细分会生成一个输出实体，其中包含与所定义筛选器匹配的客户配置文件的所有属性。 如果细分市场基于 *客户* 实体以外的其他实体，则可以将这些实体中的更多属性添加到输出实体中。 选择 **项目属性** 以选择将附加到输出实体的属性。  
-
-   
-   示例：客户细分基于包含与 *客户* 实体相关的客户活动数据的实体。 该客户细分会查找过去 60 天内致电过服务台的所有客户。 您可以选择将呼叫持续时间和呼叫次数追加到输出实体中的所有匹配客户记录。 在将包含联机帮助文章和常见问题解答的帮助链接的电子邮件发送给经常致电的客户时，这些信息可能非常有用。
-
-1. 选择 **保存** 以保存细分。 将保存您的细分，如果验证了所有要求，将处理该细分。 否则，将把其保存为草稿。
-
-1. 选择 **返回到客户细分** 以返回到 **客户细分** 页。
+借助人工智能查找与所选客户细分的成员相似的客户。 有关详细信息，请参阅[相似客户](find-similar-customer-segments.md)。
 
 ## <a name="manage-existing-segments"></a>管理现有细分
 
-在 **细分** 页上，可以查看和管理所有保存的细分。
+转到 **客户细分** 页，查看并管理所有已保存的客户细分。
 
 每个客户细分都由包含有关客户细分的其他信息的行来表示。
-
-可以通过选择列标题对列中的细分进行排序。
-
-可使用右上角的 **搜索** 框筛选客户细分。
 
 > [!div class="mx-imgBorder"]
 > ![用于管理现有细分的选项](media/segments-selected-segment.png "用于管理现有细分的选项")
@@ -106,71 +69,6 @@ ms.locfileid: "5597040"
 > [!TIP]
 > 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
 
-## <a name="download-and-export-segments"></a>下载和导出细分
-
-可以将细分导出到 CSV 文件或 Dynamics 365 Sales。
-
-### <a name="download-segments-to-a-csv-file"></a>将细分导出到 CSV 文件
-
-1. 在访问群体见解中，转到 **客户细分** 页面。
-
-2. 选择特定细分的磁贴中的省略号。
-
-3. 从操作下拉列表选择 **下载为 CSV**。
-
-### <a name="export-segments-to-dynamics-365-sales"></a>将细分导出到 Dynamics 365 Sales
-
-将细分导出到 Dynamics 365 Sales 之前，管理员需要为 Dynamics 365 Sales [创建导出目标](export-destinations.md)。
-
-1. 在访问群体见解中，转到 **客户细分** 页面。
-
-2. 选择特定细分的磁贴中的省略号。
-
-3. 从操作下拉列表中选择 **添加到**，然后选择要将数据发送到的导出目标。
-
-## <a name="draft-mode-for-segments"></a>细分的草稿模式
-
-如果未满足细分的所有要求，可以将细分保存为草稿，并通过 **细分** 页访问。
-
-将保存为不可用细分，并且有效前不可激活。
-
-## <a name="add-more-conditions-to-a-group"></a>向组添加更多条件
-
-若要向组添加更多条件，可以使用两种逻辑运算符：
-
-- **AND** 运算符：细分过程中必须同时满足两个条件。 如果要为不同实体定义条件，此选项最有用。
-
-- **OR** 运算符：细分过程中需要满足其中一个条件。 如果要为同一个实体定义多个条件，此选项最有用。
-
-   > [!div class="mx-imgBorder"]
-   > ![需要满足其中一个条件时的 OR 运算符](media/segmentation-either-condition.png "需要满足其中一个条件时的 OR 运算符")
-
-现在可以将 **OR** 运算符嵌套到 **AND** 运算符下，反之则不可以。
-
-## <a name="combine-multiple-groups"></a>合并多个组
-
-每个组都会生成一组特定客户。 可以合并这些组以包含您的业务案例所需客户。
-
-1. 在访问群体见解中，转到 **客户细分** 页面并选择客户细分。
-
-2. 选择 **添加组**。
-
-   > [!div class="mx-imgBorder"]
-   > ![客户组添加组](media/customer-group-add-group.png "客户组添加组")
-
-3. 选择以下集运算符之一：**并集**、**相交** 或 **除非**。
-
-   > [!div class="mx-imgBorder"]
-   > ![客户组添加联合](media/customer-group-union.png "客户组添加联合")
-
-   选择一个 set 运算符来定义一个新组。 保存不同的组以确定保留哪些数据：
-
-   - **联合** 用于联合两个组。
-
-   - **相交** 用于重叠两个组。 仅在统一组中保留这两个组 *共有* 的数据。
-
-   - **除外** 用于合并两个组。 仅保留 A 组中与 B 组中的数据 *不共有* 的数据。
-
 ## <a name="view-processing-history-and-segment-members"></a>查看处理历史记录和细分成员
 
 可以通过查看细分的详细信息来查看有关该细分的合并数据。
@@ -191,43 +89,4 @@ ms.locfileid: "5597040"
 >
 >此列表是匹配的细分成员的预览，并显示您的细分的前 100 条记录，以便您快速评估该细分和在需要时查看其定义。 若要查看所有匹配的记录，需要[导出细分](export-destinations.md)。
 
-## <a name="quick-segments"></a>快速细分
-
-除了客户细分生成器之外，还有一种方法可用于创建客户细分。 可通过快速细分使用即时见解构建简单细分（通过一个运算符）。
-
-1. 在 **细分** 页中，选择 **新建** > **快速创建自**。
-
-   - 若要生成基于统一的客户实体的细分，请选择 **配置文件** 选项。
-   - 若要基于您之前在 **度量** 页中创建的度量的每个客户属性类型生成细分，请选择 **度量** 选项。
-   - 选择 **智能** 以根据您使用 **预测** 或 **自定义模型** 功能生成的一个输出实体构建细分。
-
-2. 在 **新快速客户细分** 对话框中，从 **字段** 下拉列表选择属性。
-
-3. 系统将提供一些额外见解，帮助您创建更好的客户细分。
-   - 对于分类字段，我们将显示排名最靠前的 10 类客户的计数。 选择一个 **值**，然后选择 **查看**。
-
-   - 对于数值属性，系统将显示哪个属性值归入每个客户的百分比下。 选择 **运算符** 和 **值**，然后选择 **查看**。
-
-4. 系统将为您提供 **估算的细分大小**。 可以选择要生成已定义的细分，还是先再次访问该细分以获取不同的细分大小。
-
-    > [!div class="mx-imgBorder"]
-    > ![快速细分的名称和估算](media/quick-segment-name.png "快速细分的名称和估算")
-
-5. 为细分提供 **名称**。 （可选）提供 **显示名称**。
-
-6. 选择 **保存** 以创建细分。
-
-7. 处理完细分之后，可以就像创建的其他细分一样查看该细分。
-
-对于以下情况，建议使用细分生成器，而不是推荐的细分功能。
-
-- 当运算符不是 **是** 时对类别字段使用筛选器来创建细分
-- 当运算符不是 **介于**、**大于** 和 **小于** 时对数值字段使用筛选器来创建细分
-- 通过筛选日期类型字段创建细分
-
-## <a name="next-steps"></a>后续步骤
-
-[导出细分](export-destinations.md)和浏览[客户卡](customer-card-add-in.md)和[连接器](export-power-bi.md)以获取客户级见解。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)] 

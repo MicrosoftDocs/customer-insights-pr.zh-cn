@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9a94a32a04f2a8beb661c27271fe96f23d998722
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 402e5ef3515bce0e6f56788781b7bd909738aaa6
+ms.sourcegitcommit: b833e333745d321edeaf96d3ed14458cbce02ff1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887929"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049239"
 ---
 # <a name="define-and-manage-measures"></a>定义和管理度量
 
@@ -34,7 +34,7 @@ ms.locfileid: "5887929"
 
 1. 选择 **编辑名称 **并为该度量提供** 名称**。 
    > [!NOTE]
-   > 如果您的新度量配置只有两个字段（例如，CustomerID 和一个计算），则输出将作为新列添加到系统生成的名为 Customer_Measure 的实体中。 您将可以在统一客户配置文件中查看度量的值。 其他度量将生成自己的实体。
+   > 如果您的新度量配置只有两个字段（例如 CustomerID 和一个计算），则输出将作为新列添加到系统生成的名为 Customer_Measure 的实体中。 您将可以在统一客户配置文件中查看度量的值。 其他度量将生成自己的实体。
 
 1. 在配置区域中，从 **选择函数** 下拉菜单中选择聚合函数。 聚合函数包括： 
    - **Sum**
