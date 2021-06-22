@@ -9,12 +9,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 04c4252aae374cf25c16b71415ee4a89b51b0040
-ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
+ms.openlocfilehash: e2f92a64d01a443bcf3c1605621abe045b93ee5e
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954568"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095499"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>客户生存期值 (CLV) 预测（预览版）
 
@@ -149,7 +149,6 @@ ms.locfileid: "5954568"
 
 1. 选择 **下一步**。
 
-
 ### <a name="review-and-run-the-model-configuration"></a>查看并运行模型配置
 
 1. 在 **查看模型详细信息** 步骤中，验证预测配置。 通过在显示的值下面选择 **编辑**，可以返回到预测配置的任意部分。 您还可以从进度指示器中选择一个配置步骤。
@@ -170,11 +169,10 @@ ms.locfileid: "5954568"
 - **状态**：预测运行的状态。
     - **已排队**：预测正在等待其他流程完成。
     - **刷新**：预测当前正在运行，以创建将流入输出实体的结果。
-    - **失败**：预测运行已失败。 有关更多详细信息，请[查看日志](#troubleshoot-a-failed-prediction)。
+    - **失败**：预测运行已失败。 有关更多详细信息，请[查看日志](manage-predictions.md#troubleshoot-a-failed-prediction)。
     - **已成功**：预测已成功。 选择垂直省略号下面的 **视图**，以查看预测结果。
 - **已编辑**：预测配置的更改日期。
 - **上次刷新**：预测刷新输出实体中的结果的日期。
-
 
 ### <a name="review-prediction-results"></a>查看预测结果
 
@@ -216,28 +214,8 @@ ms.locfileid: "5954568"
 
 - **最具影响力的因素**：基于提供给 AI 模型的输入数据创建 CLV 预测时，会考虑各种因素。 系统针对模型创建的汇总预测计算了每个因素的重要性。 您可以使用这些因素帮助验证预测结果。 这些因素还提供了有关最有影响力的因素的更多见解，这些因素有助于预测所有客户的 CLV。
 
-## <a name="refresh-a-prediction"></a>刷新预测
+## <a name="manage-predictions"></a>管理预测
 
-预测会按照设置中配置的相同[数据刷新计划](system.md#schedule-tab)自动刷新。 您也可以手动刷新它们。
-
-1. 转到 **智能** > **预测**，然后选择 **我的预测** 选项卡。
-2. 选择要刷新的预测旁边的垂直省略号。
-3. 选择 **刷新**。
-
-## <a name="delete-a-prediction"></a>删除预测
-
-删除预测还会删除其输出实体。
-
-1. 转到 **智能** > **预测**，然后选择 **我的预测** 选项卡。
-2. 选择要删除的预测旁边的垂直省略号。
-3. 选择 **删除**。
-
-## <a name="troubleshoot-a-failed-prediction"></a>解决失败的预测
-
-1. 转到 **智能** > **预测**，然后选择 **我的预测** 选项卡。
-2. 选择要查看其错误日志的预测旁边的垂直省略号。
-3. 选择 **日志**。
-4. 查看所有错误。 可能会出现几种类型的错误，这些类型描述了导致错误的原因。 例如，数据不足而无法准确预测的错误通常可通过向访问群体见解加载更多数据来解决。
-
+可以对预测进行优化、排除故障、刷新或删除。 查看输入数据可用性报告，了解如何更快、更可靠地进行预测。 有关详细信息，请参阅[管理预测](manage-predictions.md)。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

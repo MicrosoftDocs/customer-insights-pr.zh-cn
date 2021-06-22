@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a7fa6515bd6e79dedfb21aa0f0b8e24b873a6771
-ms.sourcegitcommit: 8341fa964365c185b65bc4b71fc0c695ea127dc0
+ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
+ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6034001"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111376"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -32,22 +32,13 @@ ms.locfileid: "6034001"
 - 由 AI 提供支持且基于度量或属性的建议：[为改进度量而建议的客户细分](suggested-segments.md)
 - 基于活动的建议：[基于客户活动的建议客户细分](suggested-segments-activity.md)
 
-## <a name="get-insights-on-existing-segments"></a>深入了解现有客户细分
-
-通过[客户细分见解](segment-insights.md)发现有关现有客户细分的其他信息。 找出两个客户细分的差别或它们的共同点。
-
-## <a name="find-similar-customers"></a>查找相似客户
-
-借助人工智能查找与所选客户细分的成员相似的客户。 有关详细信息，请参阅[相似客户](find-similar-customer-segments.md)。
-
 ## <a name="manage-existing-segments"></a>管理现有细分
 
 转到 **客户细分** 页，查看并管理所有已保存的客户细分。
 
 每个客户细分都由包含有关客户细分的其他信息的行来表示。
 
-> [!div class="mx-imgBorder"]
-> ![用于管理现有细分的选项](media/segments-selected-segment.png "用于管理现有细分的选项")
+:::image type="content" source="media/segments-selected-segment.png" alt-text="具有选项下拉列表和可用选项的选定客户细分。":::
 
 选择客户细分时可以使用以下操作：
 
@@ -59,7 +50,7 @@ ms.locfileid: "6034001"
   或者，您可以使用 **激活/停用** 下拉列表中的 **以后计划** 功能指定将来的日期和时间来激活和停用特定客户细分。
 - **重命名** 细分。
 - 以 .CSV 文件格式 **下载** 成员列表。
-- **添加到** 选项将发送客户细分中的客户 ID 列表，以在另一个应用程序中进行处理。
+- **管理导出**，以查看导出相关客户细分并进行管理。 [详细了解导出。](export-destinations.md)
 - **删除** 细分。
 
 ## <a name="refresh-segments"></a>刷新细分
@@ -68,6 +59,24 @@ ms.locfileid: "6034001"
 
 > [!TIP]
 > 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
+
+## <a name="export-segments"></a>导出细分
+
+您可以从客户细分页面或[导出页面](export-destinations.md)导出一个客户细分。 
+
+1. 转到 **细分** 页。
+
+1. 针对要导出的客户细分选择 **显示更多 [...]**。
+
+1. 从操作下拉列表中选择 **管理导出**。
+
+1. **客户细分导出（预览版）** 页面将打开。 您可以查看按包含或不包含当前客户细分的导出分组的所有配置导出。
+
+   1. 要将选定的客户细分添加到导出中，请在列表中选择导出，然后选择 **添加客户细分**。
+
+   1. 要使用选定的客户细分创建新的导出，请选择 **添加导出**。 有关创建导出的更多信息，请参阅[设置新的导出](export-destinations.md#set-up-a-new-export)。
+
+1. 选择 **返回** 以返回客户细分的主页。
 
 ## <a name="view-processing-history-and-segment-members"></a>查看处理历史记录和细分成员
 

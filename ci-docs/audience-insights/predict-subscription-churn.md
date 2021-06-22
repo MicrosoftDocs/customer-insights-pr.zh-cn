@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: b6bf4f715768b18d69be3bea4085acd96933e8da
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 4e7065b61940ef0d7b2a30f96f6225df29e30383
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906891"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095637"
 ---
 # <a name="subscription-churn-prediction-preview"></a>订阅流失预测（预览）
 
@@ -147,30 +147,9 @@ ms.locfileid: "5906891"
        > [!div class="mx-imgBorder"]
        > ![显示影响因素及其在预测流失结果方面的重要性的列表](media/subscription-churn-influentialfactors.PNG "显示影响因素及其在预测流失结果方面的重要性的列表")
 
-## <a name="fix-a-failed-prediction"></a>修复失败的预测
+## <a name="manage-predictions"></a>管理预测
 
-1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
-1. 选择要查看其错误日志的预测并选择 **日志**。
-   > [!div class="mx-imgBorder"]
-   > ![结果菜单栏的视图，其中包括“关闭”、“编辑模型”和“日志”按钮](media/subscription-churn-logsbutton.PNG "结果菜单栏的视图，其中包括“关闭”、“编辑模型”和“日志”按钮")
-1. 查看所有错误。 可能会出现几种类型的错误，这些类型描述了导致错误的原因。 例如，数据不足而无法准确预测的错误通常可通过加载其他数据解决。
-
-## <a name="refresh-a-prediction"></a>刷新预测
-
-预测将按照设置中配置的相同[数据刷新计划](system.md#schedule-tab)自动刷新。
-
-1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
-1. 选择要刷新的预测旁边的垂直省略号。
-1. 选择 **刷新**。
-
-## <a name="delete-a-prediction"></a>删除预测
-
-1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
-1. 选择要删除的预测旁边的垂直省略号。
-1. 选择 **删除**。
-
-> [!NOTE]
-> 删除预测将删除其输出实体。
+可以对预测进行优化、排除故障、刷新或删除。 查看输入数据可用性报告，了解如何更快、更可靠地进行预测。 有关详细信息，请参阅[管理预测](manage-predictions.md)。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

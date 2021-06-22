@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3a9372cc4ffa4fb112a96b1286aee9dc35059a50
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760481"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124262"
 ---
-# <a name="export-segment-lists-to-constant-contact-preview"></a>将客户细分列表导出到 Constant Contact（预览版）
+# <a name="export-segments-to-constant-contact-preview"></a>将客户细分导出到 Constant Contact（预览版）
 
 将统一客户配置文件的客户细分导出到 Constant Contact，并将其用于市场营销活动。 
 

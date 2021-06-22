@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 20072d14b160e54f5ad044adc1de6c079bf790e4
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
+ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595262"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129888"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>产品建议预测（预览版）示例指南
 
@@ -22,7 +22,7 @@ ms.locfileid: "5595262"
 
 ## <a name="scenario"></a>方案
 
-Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 咖啡网站销售。 他们的目标是了解应该向定期客户推荐哪些产品。 通过了解客户更 **有可能购买** 哪些产品，可以将主要精力放在特定项目上来节省市场营销工作。
+Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Contoso Coffee 网站销售这些产品。 他们的目标是了解应该向定期客户推荐哪些产品。 通过了解客户更 **有可能购买** 哪些产品，可以将主要精力放在特定项目上来节省市场营销工作。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -65,7 +65,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 1. 在侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommercePurchases**。
 
-1. 保存数据源。
+1. **保存** 数据源。
 
 
 ### <a name="ingest-customer-data-from-loyalty-schema"></a>从忠诚度架构中引入客户数据
@@ -83,11 +83,11 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 1. 在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **loyCustomers**。
 
-1. 保存数据源。
+1. **保存** 数据源。
 
 ## <a name="task-2---data-unification"></a>任务 2 - 数据统一
 
-引入数据后，我们现在将开始 **映射、匹配、合并** 流程以创建统一的客户配置文件。 有关详细信息，请参阅[数据统一](data-unification.md)。
+在引入数据后，我们现在开始进行数据统一流程，以创建统一的客户配置文件。 有关详细信息，请参阅[数据统一](data-unification.md)。
 
 ### <a name="map"></a>映射
 
@@ -156,7 +156,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
    - **产品数量**：将此值设置为 **5**。 此设置定义要推荐给客户的产品数。
 
-   - **是否建议客户最近购买的产品?**：选择 **是** 以指示您希望将客户以前购买的产品包括在建议中。
+   - **重复预期的购买**：选择 **是** 以表示您希望将客户以前购买过的产品包含在建议中。
 
    - **回看窗口：** 至少选择 **365 天**。 此设置定义模型回溯客户活动的时长以将其用作建议输入。
    

@@ -96,30 +96,40 @@
           href: audience-insights/measures.md
     - name: 预测
       items:
-        - name: 使用价值预测完善数据
-          href: audience-insights/predictions.md
-        - name: 预测订阅流失
-          href: audience-insights/predict-subscription-churn.md
-        - name: 订阅流失预测的示例指南
-          href: audience-insights/sample-guide-predict-subscription-churn.md
-        - name: 预测交易流失
-          href: audience-insights/predict-transactional-churn.md
-        - name: 交易流失预测的示例指南
-          href: audience-insights/sample-guide-predict-transactional-churn.md
-        - name: 预计客户生存期值 (CLV)
-          href: audience-insights/predict-customer-lifetime-value.md
-        - name: 预测产品建议
-          href: audience-insights/predict-product-recommendation.md
-        - name: 产品建议预测示例指南
-          href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: 在 AI 的帮助下预测数据
+          items:
+            - name: 预测模型概述
+              href: audience-insights/predictions-overview.md
+            - name: 预计客户生存期值 (CLV)
+              href: audience-insights/predict-customer-lifetime-value.md
+            - name: 预测产品建议
+              href: audience-insights/predict-product-recommendation.md
+            - name: 预测订阅流失
+              href: audience-insights/predict-subscription-churn.md
+            - name: 预测交易流失
+              href: audience-insights/predict-transactional-churn.md
+            - name: 使用来自 Azure 机器学习的自定义模型
+              href: audience-insights/custom-models.md
+            - name: 完成部分缺失的数据
+              href: audience-insights/predictions.md
+        - name: 示例指南
+          items:
+            - name: CLV 预测示例指南
+              href: audience-insights/sample-guide-predict-clv.md
+            - name: 订阅流失预测的示例指南
+              href: audience-insights/sample-guide-predict-subscription-churn.md
+            - name: 交易流失预测的示例指南
+              href: audience-insights/sample-guide-predict-transactional-churn.md
+            - name: 产品建议预测示例指南
+              href: audience-insights/sample-guide-predict-product-recommendation.md
+            - name: Azure 机器学习试验
+              href: audience-insights/azure-machine-learning-experiments.md
+            - name: Azure 机器学习工作室试验
+              href: audience-insights/machine-learning-studio-experiments.md
+        - name: 管理预测
+          href: audience-insights/manage-predictions.md
         - name: 基于预测创建客户细分
           href: audience-insights/prediction-based-segment.md
-        - name: 实现自定义机器学习模型
-          href: audience-insights/custom-models.md
-        - name: Azure 机器学习试验
-          href: audience-insights/azure-machine-learning-experiments.md
-        - name: Azure 机器学习工作室试验
-          href: audience-insights/machine-learning-studio-experiments.md
     - name: 导出选项
       items:
         - name: 导出
@@ -154,12 +164,18 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: LinkedIn Ads
+              href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: Microsoft Advertising
+              href: audience-insights/export-microsoft-advertising.md
+            - name: Omnisend
+              href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
             - name: SendGrid
@@ -200,6 +216,8 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: 查看 Common Data Model 中的实体架构
           href: audience-insights/entity-schemas.md
+        - name: Dataverse 中的 Customer Insights 数据
+          href: audience-insights/customer-insights-dataverse.md
         - name: 使用 API
           href: audience-insights/apis.md
         - name: API 引用
@@ -240,6 +258,12 @@
           href: engagement-insights/custom-reports.md
         - name: 创建统一的配置文件报表
           href: engagement-insights/profile-reports.md
+        - name: 查看和创建维度
+          href: engagement-insights/dimensions.md
+        - name: 查看和创建指标
+          href: engagement-insights/metrics.md
+        - name: 查看和创建客户细分
+          href: engagement-insights/segments.md
     - name: 历程分析
       items:
         - name: 创建和管理漏斗图报表

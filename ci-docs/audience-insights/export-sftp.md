@@ -9,14 +9,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3663a48955f0b1db8a96e25403e5f8947bc6a220
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 000b44dc8e5cc419132bd17e359fbdd5879caf1b
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976882"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124308"
 ---
-# <a name="export-segment-lists-and-other-data-to-sftp-preview"></a>将客户细分列表和其他数据导出到 SFTP（预览版）
+# <a name="export-segments-and-other-data-to-sftp-preview"></a>将客户细分和其他数据导出到 SFTP（预览版）
 
 将第三方应用程序中的客户数据导出到安全文件传输协议 (SFTP) 位置，以使用这些数据。
 

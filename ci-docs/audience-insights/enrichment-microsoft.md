@@ -1,7 +1,7 @@
 ---
 title: 使用来自 Microsoft 的数据扩充客户配置文件
 description: 使用来自 Microsoft 的专有数据用品牌和兴趣相似性扩充客户配置文件。
-ms.date: 04/09/2021
+ms.date: 06/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: be042dd139607849b795c903fa58da2edb9ff589
-ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
+ms.openlocfilehash: e92360bb886739cfe477ce1d2eb62219228a0292
+ms.sourcegitcommit: d4b4053f6ee8f60f1a214982c4726c9de84615ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6064880"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6245696"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
 
@@ -69,12 +69,10 @@ ms.locfileid: "6064880"
 
 ### <a name="define-your-brands-or-interests"></a>定义您的品牌或兴趣
 
-请选择以下选项之一：
+使用以下一个或两个选项选择最多五个品牌或兴趣：
 
-- **行业**：系统确定与您的行业有关的排名靠前品牌或兴趣，并将其用于扩充您的客户数据。
-- **选择您自己的项目**：从品牌或兴趣列表中选择最多五个与您的组织关系最近的项。
-
-若要添加品牌或兴趣，请在输入区域中输入该品牌或兴趣，以获取基于匹配项的建议。 如果我们未列出您在查找的品牌或兴趣，请使用 **建议** 链接向我们发送反馈。
+- **行业**：从下拉列表中选择您的行业，然后从该行业的热门品牌或兴趣中进行选择。
+- **选择您自己的项目**：输入与组织相关的品牌或兴趣，然后从匹配的建议中进行选择。 如果我们未列出您在查找的品牌或兴趣，请使用 **建议** 链接向我们发送反馈。
 
 ### <a name="review-enrichment-preferences"></a>查看扩充首选项
 

@@ -1,74 +1,110 @@
 ---
 title: 实体和实体路径之间的关系
 description: 创建和管理来自多个数据源的实体之间的关系。
-ms.date: 04/14/2020
+ms.date: 06/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: mukeshpo
-ms.author: mukeshpo
+author: MichelleDevaney
+ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: c25bfcb8e2a8223498dd1a5e8cfb3712a40ab85e
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: d5b9566ec88096fec31d8e164a51598159ec26d4
+ms.sourcegitcommit: ece48f80a7b470fb33cd36e3096b4f1e9190433a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595201"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6171153"
 ---
 # <a name="relationships-between-entities"></a>实体之间的关系
 
-当实体共用可在实体之间引用的通用标识（外键）时，关系可帮助您连接实体和生成数据图。 可通过连接的实体基于多个数据源定义细分和度量。
+当实体共享一个通用标识符（一个外键）时，关系会关联实体并定义您的数据图表。 此外键可从一个实体引用到另一个实体。 通过连接的实体，可基于多个数据源定义客户细分和度量。
 
-关系有两种。 不可编辑系统关系（这是自动创建的），以及用户创建和配置的自定义关系。
+有以下三种类型的关系： 
+- 由系统在数据统一过程中创建的不可编辑的系统关系
+- 通过引入数据源自动创建的不可编辑的继承关系 
+- 由用户创建和配置的可编辑自定义关系
 
-匹配和合并过程中，将基于智能匹配在后台创建系统关系。 这些关系可以帮助将客户配置文件记录与其他相应实体的记录关联。 下图演示当客户实体与更多实体匹配以生成最终客户配置文件实体时，创建三个系统关系。
+## <a name="non-editable-system-relationships"></a>不可编辑的系统关系
 
-> [!div class="mx-imgBorder"]
-> ![关系创建](media/relationships-entities-merge.png "关系创建")
+在数据统一过程中，基于智能匹配自动创建系统关系。 这些关系可以帮助将客户配置文件记录与相应记录关联。 下图说明了基于系统的三个关系的创建。 客户实体与其他实体匹配以生成统一的 *客户* 实体。
 
-- 创建了客户实体与联系人实体之间的 ***CustomerToContact* 关系**。 客户实体获取了键字段 **Contact_contactId**，以便关联到联系人实体键字段 **contactId**。
-- 创建了客户实体与帐户实体之间的 ***CustomerToAccount* 关系**。 客户实体获取了键字段 **Account_accountId**，以便关联到帐户实体键字段 **accountId**。
-- 创建了客户实体与 WebAccount 实体之间的 ***CustomerToWebAccount* 关系**。 客户实体获取了键字段 **WebAccount_webaccountId**，以便关联到 WebAccount 实体键字段 **webaccountId**。
+:::image type="content" source="media/relationships-entities-merge.png" alt-text="具有三个 1-n 关系的客户实体的关系路径图。":::
 
-## <a name="create-a-relationship"></a>创建关系
+- 创建了 *客户* 实体与 *联系人* 实体之间的 ***CustomerToContact* 关系**。 *客户* 实体获取了键字段 **Contact_contactID**，以便关联到 *联系人* 实体键字段 **contactID**。
+- 创建了 *客户* 实体与 *帐户* 实体之间的 ***CustomerToAccount* 关系**。 *客户* 实体获取了键字段 **Account_accountID**，以便关联到 *帐户* 实体键字段 **accountID**。
+- 创建了 *客户* 实体与 *WebAccount* 实体之间的 ***CustomerToWebAccount* 关系**。 *客户* 实体获取了键字段 **WebAccount_webaccountID**，以便关联到 *WebAccount* 实体键字段 **webaccountID**。
 
-自定义关系在 **关系** 页中定义。 每个关系包含一个源实体（该实体中包含外键）和一个目标实体（这是源实体的外键指向的实体）。
+## <a name="non-editable-inherited-relationships"></a>不可编辑的继承关系
+
+在数据引入过程中，系统会检查现有关系的数据源。 如果没有关系，系统会自动创建它们。 这些关系也用于下游流程。
+
+## <a name="create-a-custom-relationship"></a>创建自定义关系
+
+关系包括包含外键的 *源实体* 和源实体的外键所指向的 *目标实体*。 
 
 1. 在访问群体见解中，转到 **数据** > **关系**。
 
 2. 选择 **新建关系**。
 
-3. 在 **添加关系** 窗格中，提供以下信息：
+3. 在 **新建关系** 窗格中，提供以下信息：
 
-   > [!div class="mx-imgBorder"]
-   > ![输入关系详细信息](media/relationships-add.png "输入关系详细信息")
+   :::image type="content" source="media/relationship-add.png" alt-text="包含空输入字段的新关系侧窗格。":::
 
-   - **关系名称**：用于体现关系用途的名称（例如，**AccountWebLogs**）。
+   - **关系名称**：反映关系目的的名称。 示例：CustomerToSupportCase。
    - **说明**：关系的说明。
-   - **源实体**：选择用作关系中的源的实体（例如，WebLog）。
-   - **基数**：选择源实体记录的基数。 例如，“大量”表示多个 Weblog 记录与一个 WebAccount 关联。
-   - **源键字段**：表示源实体中的外键字段。 例如，WebLog 的外键字段为 **accountId**。
-   - **目标实体**：选择用作关系中的目标的实体（例如，WebAccount）。
-   - **目标基数**：选择目标实体记录的基数。 例如，“一个”表示多个 Weblog 记录与一个 WebAccount 关联。
-   - **目标键字段**：此字段表示目标实体的键字段。 例如，WebAccount 的键字段为 **accountId**。
+   - **源实体**：在关系中用作来源的实体。 示例：SupportCase。
+   - **目标实体**：在关系中用作目标的实体。 示例：客户。
+   - **来源基数**：指定来源实体的基数。 基数描述了集中可能的元素的数量。 它始终与目标基数相关。 您可以在 **一个** 和 **多个** 之间做出选择。 仅支持多对一和一对一关系。  
+     - 多对一：多个源记录可能与一个目标记录相关。 示例：单个客户的多个支持案例。
+     - 一对一：单个源记录与一个目标记录相关。 示例：单个客户的一个忠诚度 ID。
 
-> [!NOTE]
-> 仅支持多对一和一对一关系。 可以使用两个多对一关系和一个链接实体（用于连接源实体和目标实体的实体）创建多对多关系。
+     > [!NOTE]
+     > 使用两个多对一关系和一个连接源实体和目标实体的链接实体，可以创建许多到多关系。
 
-## <a name="delete-a-relationship"></a>删除关系
+   - **目标基数**：选择目标实体记录的基数。 
+   - **源键字段**：源实体中的外键字段。 示例：SupportCase 可以使用 CaseID 作为外键字段。
+   - **目标键字段**：目标实体的键字段。 示例客户可以使用 **CustomerID** 键字段。
 
-1. 在访问群体见解中，转到 **数据** > **关系**。
+4. 选择 **保存** 以创建自定义关系。
 
-2. 选中要删除的关系的复选框。
+## <a name="view-relationships"></a>查看视图
 
-3. 选择 **关系** 表顶部的 **删除**。
+“关系”页列出了已创建的所有关系。 每行都表示一种关系，其中还包括有关源实体、目标实体和基数的详细信息。 
 
-4. 确认删除。
+:::image type="content" source="media/relationships-list.png" alt-text="关系页操作栏中的关系和选项列表。":::
+
+此页面为现有和新关系提供了一组选项： 
+- **新关系**：[创建自定义关系](#create-a-custom-relationship)。
+- **可视化工具**：[探索关系可视化工具](#explore-the-relationship-visualizer)，查看现有关系及其基数的网络图表。
+- **筛选依据**：选择列表中要显示的关系类型。
+- **搜索关系**：对关系属性使用基于文本的搜索。
+
+### <a name="explore-the-relationship-visualizer"></a>探索关系可视化工具
+
+关系可视化工具会显示已连接实体及其基数之间的现有关系的网络图表。
+
+要自定义视图，您可以通过将框拖到画布上来更改框的位置。
+
+:::image type="content" source="media/relationship-visualizer.png" alt-text="关系可视化工具网络图的屏幕截图，其中包括相关实体之间的连接。":::
+
+可用选项： 
+- **导出为图像**：将当前视图保存为图像文件。
+- **更改为水平/垂直布局**：更改实体和关系的对齐。
+- **编辑**：更新编辑窗格中自定义关系的属性并保存更改。
+
+## <a name="manage-existing-relationships"></a>管理现有关系 
+
+在“关系”页上，每个关系都由行来表示。 
+
+选择关系并选择以下选项之一： 
+ 
+- **编辑**：更新编辑窗格中自定义关系的属性并保存更改。
+- **删除**：删除自定义关系。
+- **视图**：查看系统创建和继承的关系。 
 
 ## <a name="next-step"></a>下一步
 
-系统关系和自定义关系用于基于多个数据源创建不再分散的细分。 有关详细信息，请参阅[细分](segments.md)。
-
+系统关系和自定义关系用于基于多个数据源[创建不再分散的客户细分](segments.md)。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

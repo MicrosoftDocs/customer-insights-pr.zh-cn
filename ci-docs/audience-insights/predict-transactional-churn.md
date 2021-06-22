@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 43fcd37f8dd71e2890334a4cc53d49dae97d63c6
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: b0e587739f9f4d03942d70a72de4f9378822054d
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906845"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095591"
 ---
 # <a name="transactional-churn-prediction-preview"></a>交易流失预测（预览）
 
@@ -144,7 +144,7 @@ ms.locfileid: "5906845"
    - **状态：** 预测运行的状态。
         - **已排队：** 预测正在等待其他流程运行。
         - **刷新：** 预测当前正在运行，以生成将流入输出实体的结果。
-        - **失败：** 预测运行已失败。 有关更多详细信息，请[查看日志](#troubleshoot-a-failed-prediction)。
+        - **失败：** 预测运行已失败。 有关更多详细信息，请[查看日志](manage-predictions.md#troubleshoot-a-failed-prediction)。
         - **已成功：** 预测已成功。 在垂直省略号下选择 **查看** 以查看预测
    - **已编辑：** 预测配置的更改日期。
    - **上次刷新**：预测刷新输出实体中的结果的日期。
@@ -168,35 +168,9 @@ ms.locfileid: "5906845"
        
     1. **最具影响力的因素：** 创建预测时考虑了许多因素。 每个因素都有针对模型所创建的聚合预测而计算的重要性。 您可以使用这些因素帮助验证预测结果。 或者，您也可以在以后使用该信息[创建客户细分](segments.md)，这些客户细分可能有助于影响客户流失风险。
 
-## <a name="troubleshoot-a-failed-prediction"></a>解决失败的预测
+## <a name="manage-predictions"></a>管理预测
 
-1. 转到 **智能** > **预测**，然后选择 **我的预测** 选项卡。
-
-1. 选择要查看其错误日志的预测旁边的垂直省略号。
-
-1. 选择 **日志**。
-
-1. 查看所有错误。 可能会出现几种类型的错误，这些类型描述了导致错误的原因。 例如，因数据不足而无法准确预测的错误通常通过将其他数据加载到 Customer Insights 中来解决。
-
-## <a name="refresh-a-prediction"></a>刷新预测
-
-预测将按照设置中配置的相同[数据刷新计划](system.md#schedule-tab)自动刷新。 您也可以手动刷新它们。
-
-1. 转到 **智能** > **预测**，然后选择 **我的预测** 选项卡。
-
-1. 选择要刷新的预测旁边的垂直省略号。
-
-1. 选择 **刷新**。
-
-## <a name="delete-a-prediction"></a>删除预测
-
-删除预测还会删除其输出实体。
-
-1. 转到 **智能** > **预测**，然后选择 **我的预测** 选项卡。
-
-1. 选择要删除的预测旁边的垂直省略号。
-
-1. 选择 **删除**。
+可以对预测进行优化、排除故障、刷新或删除。 查看输入数据可用性报告，了解如何更快、更可靠地进行预测。 有关详细信息，请参阅[管理预测](manage-predictions.md)。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e46e31131a2dd5235af8221eafcd2e1d1394f3d4
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 01704f78cfe1f6ceeee19ff825fc65150894d4ed
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906753"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095545"
 ---
 # <a name="product-recommendation-prediction-preview"></a>产品建议预测（预览版）
 
@@ -205,33 +205,9 @@ ms.locfileid: "5906753"
        > [!div class="mx-imgBorder"]
        > ![该列表显示了适用于部分个别客户的高置信度建议](media/product-recommendation-highconfidence.PNG "该列表显示了适用于部分个别客户的高置信度建议")
 
-## <a name="fix-a-failed-prediction"></a>修复失败的预测
+## <a name="manage-predictions"></a>管理预测
 
-1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
-
-1. 选择要查看其错误日志的预测并选择 **日志**。
-
-1. 查看所有错误。 可能会出现几种类型的错误，这些类型描述了导致错误的原因。 例如，通过将更多数据加载到 Customer Insights 中，通常可以解决数据不足以准确进行预测的错误。
-
-## <a name="refresh-a-prediction"></a>刷新预测
-
-预测会按照设置中配置的相同[数据刷新计划](system.md#schedule-tab)自动刷新。
-
-1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
-
-1. 选择要刷新的预测旁边的垂直省略号。
-
-1. 选择 **刷新**。
-
-## <a name="delete-a-prediction"></a>删除预测
-
-删除预测还将删除其输出实体。
-
-1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
-
-1. 选择要删除的预测旁边的垂直省略号。
-
-1. 选择 **删除**。
+可以对预测进行优化、排除故障、刷新或删除。 查看输入数据可用性报告，了解如何更快、更可靠地进行预测。 有关详细信息，请参阅[管理预测](manage-predictions.md)。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

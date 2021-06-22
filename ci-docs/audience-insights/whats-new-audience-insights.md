@@ -1,7 +1,7 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 05/06/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: c66b37d6e4d6ed830238566fbc09934832892b34
-ms.sourcegitcommit: 3f9981df97fa7b1f432a446d3f11936ea4cfbde5
+ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
+ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5988909"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6263240"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
@@ -26,6 +26,37 @@ ms.locfileid: "5988909"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="may-2021-updates"></a>2021 年 5 月更新
+
+2021 年 5 月中的更新包括多项功能、性能升级和错误修复。
+
+### <a name="data-ingestion"></a>数据引入
+
+- **在附加 Azure Data Lake Storage 中的数据时查看或修改元数据或实体定义** 在 Azure Data Lake Storage 中附加 Common Data Model 文件夹中的数据时，现在可以在访问群体见解中查看和编辑元数据或实体定义。 此功能会提供实时反馈、模型验证和错误检查。 它允许您无缝编辑 model.json 和 manifest.json。
+
+### <a name="extensibility"></a>扩展性
+
+- **改进了客户细分导出、自定义计划和重复** 您现在可以在列表中[查看特定客户细分的所有导出](export-destinations.md#view-exports-and-export-details)。 此新视图有助于管理特定客户细分的使用方式，并调整现有导出或创建新导出。    
+  您可以同时为个别导出或多个导出[定义自定义刷新计划](export-destinations.md#schedule-and-run-exports)。 到目前为止，每次系统刷新时都会运行所有导出。    
+  与其从头开始创建新的导出，不如从现有导出开始创建，这样可以节省一些时间。
+
+- **将客户细分导出到 Microsoft Advertising** 我们已扩展导出目的地，以包括 Microsoft Advertising。 使用统一客户配置文件数据在 Microsoft Advertising 上创建客户匹配访问群体，并将这些访问群体用于广告市场活动。 有关更多信息，请参阅[将客户细分导出到 Microsoft Advertising](export-microsoft-advertising.md)。
+
+- **将客户细分导出到 LinkedIn Ads** 我们已扩展导出目标，以包括 LinkedIn Ads，并通过出口统一客户配置文件数据，使您能够通过 LinkedIn 解锁“确定目标联系人”和“确定目标公司”。 有关更多信息，请参阅[将客户细分导出到 LinkedIn Ads](export-linkedin-ads.md)。
+
+
+- **将客户细分导出到 Omnisend** 我们已扩展导出目标，以包括 Omnisend。 使用在访问群体见解中创建的客户细分来生成市场活动，提供电子邮件市场营销材料，并通过 Omnisend 使用特定客户组。 有关更多信息，请参阅[将客户细分导出到 Omnisend](export-omnisend.md)
+
+### <a name="predictions"></a>预测
+
+- **输入数据可用性报表** 输入数据可用性报表提供了现成预测可能会产生的错误和警告的综合视图。 它还就如何提高模型性能提出了建议。    
+  该报表在模型完成训练过程后可用。 无论是否成功完成，系统都将单独为每个模型创建此报表。
+  目前，此功能仅适用于交易流失模型。 有关更多信息，请参阅[输入数据可用性报表](manage-predictions.md#input-data-usability-report)。
+
+### <a name="relationships"></a>关系
+
+- **关系可视化工具** 利用关系可视化工具视图，您可以查看实体与其基数之间的所有现有关系。 现在按组来组织关系：用户创建、系统和继承关系。 您还可以将视图导出为图像。 有关详细信息，请参阅[查看关系](relationships.md#view-relationships)。 
 
 ## <a name="april-2021-updates"></a>2021 年 4 月更新
 
