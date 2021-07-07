@@ -72,7 +72,7 @@
           href: audience-insights/enrichment-here.md
         - name: 通过 Leadspace 扩充
           href: audience-insights/enrichment-leadspace.md
-        - name: 使用 Experian 扩充
+        - name: 通过 Experian 扩充
           href: audience-insights/enrichment-experian.md
         - name: 通过 SFTP 自定义导入扩充
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -136,6 +136,8 @@
           items:
             - name: 导出概述
               href: audience-insights/export-destinations.md
+            - name: 活跃的市场活动
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -144,7 +146,7 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse 分析
+            - name: Azure Synapse Analytics
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -240,8 +246,8 @@
           href: engagement-insights/get-started.md
         - name: 创建工作区
           href: engagement-insights/create-workspace.md
-        - name: 检测网站
-          href: engagement-insights/instrument-website.md
+        - name: 从网站和移动应用捕获事件
+          href: engagement-insights/developer-resources.md
         - name: 概念和术语
           href: engagement-insights/glossary.md
     - name: 事件
@@ -276,6 +282,14 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Web SDK 示例
           href: engagement-insights/websdk-sample.md
+        - name: Android SDK 教程
+          href: engagement-insights/get-started-android.md
+        - name: Android SDK 示例
+          href: engagement-insights/androidsdk-sample.md
+        - name: iOS SDK 教程
+          href: engagement-insights/get-started-ios.md
+        - name: iOS SDK 示例
+          href: engagement-insights/iossdk-sample.md
     - name: 管理
       items:
         - name: 角色和权限
