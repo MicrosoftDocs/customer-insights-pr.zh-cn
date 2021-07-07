@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760090"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305513"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>在 Adobe 体验平台（预览版）中使用 Customer Insights 客户细分。
 
-作为 Dynamics 365 Customer Insights 访问群体见解的用户，您可能创建了多个客户细分，以通过确定目标访问群体来提高市场营销活动效率。 要使用 Adobe 体验平台和应用程序（如 Adobe Campaign Standard）内访问群体见解中的客户细分，您需要执行本文中概述的几个步骤。
+作为 Dynamics 365 Customer Insights 中访问群体见解的用户，您可能创建了客户细分，通过定位相关访问群体使市场营销活动更高效。 要使用 Adobe 体验平台和应用程序（如 Adobe Campaign Standard）内访问群体见解中的客户细分，您需要执行本文中概述的几个步骤。
 
 :::image type="content" source="media/AEP-flow.png" alt-text="本文中概述的步骤的流程图。":::
 
@@ -55,19 +55,19 @@ ms.locfileid: "5760090"
 
 1. 转到 **管理员** > **连接**。
 
-1. 选择 **添加连接**，并在 **Azure Blob 存储** 磁贴中选择 **Azure Blob 存储** 或选择 **设置**：
+1. 选择 **添加连接** 并选择 **Azure Blob 存储**，或在 **Azure Blob 存储** 磁贴中选择 **设置** 以配置连接。
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure Blob 存储的配置磁贴。"::: 以配置连接。
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure Blob 存储的配置磁贴。"::: 
 
 1. 在 **显示名称** 字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
 
 1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-1. 输入要将客户细分导出到的 Azure Blob 存储帐户的 **帐户名称**、**帐户密钥** 和 **容器**。  
+1. 输入要将客户细分导出到的 Blob 存储帐户的 **帐户名称**、**帐户密钥** 和 **容器**。  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="存储帐户配置的屏幕截图。"::: 
    
-    - 若要了解如何查找 Blob 存储帐户名称和帐户密钥，请参阅[在 Azure 门户中管理存储帐户设置](/azure/storage/common/storage-account-manage)。
+    - 若要了解有关如何查找 Blob 存储帐户名称和帐户密钥的详细信息，请参阅[在 Azure 门户中管理存储帐户设置](/azure/storage/common/storage-account-manage)。
     - 若要了解如何创建容器，请参阅[创建容器](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)。
 
 1. 选择 **保存** 以完成连接。 
@@ -80,7 +80,7 @@ ms.locfileid: "5760090"
 
 1. 要创建新导出，请选择 **添加导出**。
 
-1. 在 **导出连接** 字段中，从 Azure Blob 存储部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
+1. 在 **导出连接** 字段中，从 Azure Blob 存储部分选择连接。 如果看不到此部分名称，则没有此类型的连接可用。
 
 1. 选择您要导出的客户细分。 在这个例子中，它是 **ChurnProneCustomers**。
 
@@ -121,9 +121,10 @@ ms.locfileid: "5760090"
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>在 Adobe Campaign Standard 中创建访问群体
 
-为了发送此市场活动的电子邮件，我们将使用 Adobe Campaign Standard。 将数据导入到 Adobe 体验平台后，我们需要使用 Adobe 体验平台中的数据在 Adobe Campaign Standard 中[创建一个访问群体](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission)。
+若要发送此市场活动的电子邮件，我们将使用 Adobe Campaign Standard。 将数据导入到 Adobe 体验平台后，我们需要使用 Adobe 体验平台中的数据在 Adobe Campaign Standard 中[创建一个访问群体](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission)。
 
-了解如何在 Adobe Campaign Standard 中[使用客户细分生成器](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment)，以基于 Adobe 体验平台中的数据定义访问群体。
+
+了解如何在 Adobe Campaign Standard 中[使用客户细分生成器](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html)，以基于 Adobe 体验平台中的数据定义访问群体。
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>使用 Adobe Campaign Standard 创建和发送电子邮件
 

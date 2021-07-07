@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085519"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304685"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -30,15 +30,15 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 
 - [通过许多 Power Query 连接器](connect-power-query.md)
 - [从 Common Data Model 文件夹](connect-common-data-model.md)
-- [从您自己的 Common Data Service 湖](connect-common-data-service-lake.md)
+- [从您自己的 Microsoft Dataverse 湖](connect-common-data-service-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>添加来自本地数据源的数据
 
-根据 Power Platform 数据流支持从受众见解内的本地数据源中引入数据。 通过在设置环境时[提供 Microsoft Dataverse 环境 URL](manage-environments.md#create-an-environment-in-an-existing-organization)，可以在 Customer Insights 中启用数据流。
+基于 Microsoft Power Platform 数据流支持在访问群体见解中引入本地数据源中的数据。 通过在设置环境时[提供 Microsoft Dataverse 环境 URL](manage-environments.md#create-an-environment-in-an-existing-organization)，可以在 Customer Insights 中启用数据流。
 
-将 Dataverse 环境与 Customer Insights 关联后创建的数据源将默认使用 [Power Platform 数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 数据流使用数据网关支持本地连接。 删除并重新创建关联 Dataverse 环境以[使用本地数据网关](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md)之前已存在的数据源。
+将 Dataverse 环境与 Customer Insights 关联后创建的数据源将默认使用 [Power Platform 数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 数据流使用数据网关支持本地连接。 删除并重新创建关联 Dataverse 环境以[使用本地数据网关](/data-integration/gateway/service-gateway-app.md)之前已存在的数据源。
 
-现有 Power BI 或 Power Apps 环境中的数据网关将可见，您可以在 Customer Insights 中重复使用它们。 数据源页面显示了用于转到可以在其中查看和配置本地数据网关的 Power Platform 环境的链接。
+现有 Power BI 或 Power Apps 环境中的数据网关将可见，您可以在 Customer Insights 中重复使用它们。 数据源页面显示用于转到 Microsoft Power Platform 环境的链接，您可以在该环境中查看和配置本地数据网关。
 
 ## <a name="review-ingested-data"></a>查看引入的数据
 
@@ -56,7 +56,7 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 
 在任意数据源的 **状态** 列中选择值以查看更多详细信息。 在 **进度详细信息** 窗格中，展开 **数据源**。 选择 **查看详细信息** 以查看有关刷新状态的详细信息，包括错误详细信息和下游流程更新。
 
-加载数据可能需要花费一些时间。 成功刷新后，可以从 **实体** 页查看引入的数据。 有关详细信息，请参阅[实体](entities.md)。
+加载数据可能需要一些时间。 成功刷新后，可以从 **实体** 页查看引入的数据。 有关详细信息，请参阅[实体](entities.md)。
 
 ## <a name="refresh-a-data-source"></a>刷新数据源
 
@@ -66,9 +66,9 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 
 若要根据需要刷新数据源，请执行以下步骤：
 
-1. 在访问群体见解中，转到 **数据** > **数据源**
+1. 在访问群体见解中，转到 **数据** > **数据源**。
 
-2. 选择要刷新的数据源旁边的垂直省略号，然后从下拉列表中选择 **刷新**。
+2. 选择您要更改刷新的数据源旁边的垂直省略号，然后从下拉列表中选择 **刷新**。
 
 3. 现在，将为数据源触发手动刷新。 刷新数据源将更新数据源中指定的所有实体的实体架构和数据。
 
@@ -78,7 +78,7 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 
 1. 在访问群体见解中，转到 **数据** > **数据源**。
 
-2. 选择要删除的数据源旁边的垂直省略号，然后选择下拉菜单中的 **删除**。
+2. 选择您要删除的数据源旁边的垂直省略号，然后从下拉菜单中选择 **删除**。
 
 3. 确认删除。
 

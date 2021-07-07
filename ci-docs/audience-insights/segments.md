@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
-ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
+ms.openlocfilehash: 336cab8619c0b80b7b8a38035cae99620baf2873
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111376"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306246"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -68,7 +68,7 @@ ms.locfileid: "6111376"
 
 1. 针对要导出的客户细分选择 **显示更多 [...]**。
 
-1. 从操作下拉列表中选择 **管理导出**。
+1. 从操作下拉列表中，选择 **管理导出**。
 
 1. **客户细分导出（预览版）** 页面将打开。 您可以查看按包含或不包含当前客户细分的导出分组的所有配置导出。
 

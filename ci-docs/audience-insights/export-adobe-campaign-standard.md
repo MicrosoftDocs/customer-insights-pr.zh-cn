@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760270"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305375"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>在 Adobe Campaign Standard（预览版）中使用 Customer Insights 客户细分。
 
-作为 Dynamics 365 Customer Insights 访问群体见解的用户，您可能创建了多个客户细分，以通过确定目标访问群体来提高市场营销活动效率。 要使用 Adobe 体验平台和应用程序（如 Adobe Campaign Standard）内访问群体见解中的客户细分，您需要执行本文中概述的几个步骤。
+作为 Dynamics 365 Customer Insights 中访问群体见解的用户，您可能创建了客户细分，通过定位相关访问群体使市场营销活动更高效。 要使用 Adobe 体验平台和应用程序（如 Adobe Campaign Standard）内访问群体见解中的客户细分，您需要执行本文中概述的几个步骤。
 
 :::image type="content" source="media/ACS-flow.png" alt-text="本文中概述的步骤的流程图。":::
 
@@ -54,7 +54,7 @@ ms.locfileid: "5760270"
 
 1. 在受众见解中，转到 **管理员** > **连接**。
 
-1. 选择 **添加连接** 并选择 **Adobe Campaign** 以配置连接，或在 **Adobe Campaign** 磁贴中选择 **设置**
+1. 选择 **添加连接** 并选择 **Adobe Campaign** 以配置连接，或在 **Adobe Campaign** 磁贴中选择 **设置**。
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Adobe Campaign Standard 的配置磁贴。":::
 
@@ -66,7 +66,7 @@ ms.locfileid: "5760270"
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="存储帐户配置的屏幕截图。"::: 
 
-   - 若要了解有关如何查找 Azure Blob 存储账户名称和帐户密钥的详细信息，请参阅[管理 Azure 门户中的存储帐户设置](/azure/storage/common/storage-account-manage)。
+   - 若要了解有关如何查找 Azure Blob 存储帐户名称和帐户密钥的详细信息，请参阅[管理 Azure 门户中的存储帐户设置](/azure/storage/common/storage-account-manage)。
 
    - 若要了解如何创建容器，请参阅[创建容器](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)。
 
@@ -80,7 +80,7 @@ ms.locfileid: "5760270"
 
 1. 要创建新导出，请选择 **添加导出**。
 
-1. 在 **导出连接** 字段中，从 Adobe Campaign 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
+1. 在 **导出连接** 字段中，从 Adobe Campaign 部分选择连接。 如果看不到此部分名称，则没有此类型的连接可用。
 
 1. 选择您要导出的客户细分。 在这个例子中，它是 **ChurnProneCustomers**。
 
@@ -118,7 +118,7 @@ ms.locfileid: "5760270"
 
 要使用 Adobe Campaign Standard 中的客户细分，我们需要扩展 Adobe Campaign Standard 中的配置文件架构，以包括另外两个字段。 了解如何在 Adobe Campaign Standard 中使用新字段[扩展配置文件资源](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing)。
 
-在我们的示例中，这些字段是 *客户细分名称和客户细分日期（可选）。*
+在我们的示例中，这些字段是 *客户细分名称和客户细分日期（可选）*。
 
 我们将使用这些字段来识别 Adobe Campaign Standard 中我们想要针对此活动的配置文件。
 
@@ -128,7 +128,7 @@ ms.locfileid: "5760270"
 
 现在一切都准备好了，我们需要将访问群体见解中准备好的访问群体数据导入到 Adobe Campaign Standard，以创建配置文件。 了解[如何在 Adobe Campaign Standard 中导入配置文件](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences)。
 
-下图中的导入工作流已配置为每 8 小时运行一次，并且会查找导出的访问群体见解客户细分（Azure Blob 存储中的 .csv 文件）。 此工作流按指定的列顺序提取 .csv 文件内容。 此工作流已构建以执行基本错误处理，并确保在 Adobe Campaign Standard 中冻结数据之前每个记录都有一个电子邮件地址。 此工作流还会从文件名中提取客户细分名称，然后再插入到 ACS 配置文件数据中。
+下图中的导入工作流已配置为每八小时运行一次，并查找导出的访问群体见解客户细分（Azure Blob 存储中的 .csv 文件）。 此工作流按指定的列顺序提取 .csv 文件内容。 此工作流已构建以执行基本错误处理，并确保在 Adobe Campaign Standard 中冻结数据之前每个记录都有一个电子邮件地址。 在更新插入 Adobe Campaign Standard 配置文件数据之前，工作流还会从文件名中提取客户细分名称。
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="Adobe Campaign Standard 用户界面中导入工作流的屏幕截图。":::
 

@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085611"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306017"
 ---
 # <a name="match-entities"></a>匹配实体
 
@@ -209,7 +209,7 @@ ms.locfileid: "6085611"
 
 您可以重新配置和细微调整大部分匹配参数。
 
-:::image type="content" source="media/match-rules-management.png" alt-text="包含匹配规则选项的下拉菜单的屏幕截图。":::
+:::image type="content" source="media/match-rules-management.png" alt-text="具有匹配规则选项的下拉菜单的屏幕截图。":::
 
 - 如果定义了多个规则，**更改规则的顺序**。 您可以通过选择 **上移** 和 **下移** 选项或者通过拖放来对匹配规则重新排序。
 
@@ -247,7 +247,7 @@ ms.locfileid: "6085611"
 
 1. 转到 **数据** > **数据源** 并将模板文件作为新实体引入。 引入后，可以将其用于指定匹配配置。
 
-1. 上传文件且实体可用之后，再次选择 **自定义匹配** 选项。 将看到用于指定要包含的实体的选项。 从下拉菜单选择所需实体。
+1. 上传文件且实体可用之后，再次选择 **自定义匹配** 选项。 将看到用于指定要包含的实体的选项。 从下拉菜单中选择所需的实体。
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="用于选择自定义匹配方案替代的对话框的屏幕截图。":::
 

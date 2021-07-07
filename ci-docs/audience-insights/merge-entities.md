@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2cab702509596dd87c0c9b9769d1af8ba8387f9d
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085565"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305614"
 ---
 # <a name="merge-entities"></a>合并实体
 
@@ -34,7 +34,7 @@ ms.locfileid: "6085565"
 
 您可以更改系统处理合并属性以生成统一客户配置文件的方法。 选择 **显示更多** 并选择要更改的内容。
 
-:::image type="content" source="media/manage-merged-attributes.png" alt-text="显示更多下拉菜单中用于管理合并属性的选项。":::
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="显示更多下拉菜单中的选项，用于管理合并的属性。":::
 
 有关详细信息，请参阅以下部分。
 

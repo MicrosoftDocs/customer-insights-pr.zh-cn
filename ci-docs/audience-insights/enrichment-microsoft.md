@@ -9,16 +9,16 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: e92360bb886739cfe477ce1d2eb62219228a0292
-ms.sourcegitcommit: d4b4053f6ee8f60f1a214982c4726c9de84615ef
+ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6245696"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305145"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
 
-使用 Microsoft 的专有数据用品牌和兴趣相似性扩充客户配置文件。 这些相似性基于与您的客户具有相似人口统计信息的人员的数据确定。 这些信息可帮助您根据客户在特定品牌和兴趣方面的相似性更好地了解和细分客户。
+使用 Microsoft 的专有数据用品牌和兴趣相似性扩充客户配置文件。 这些相似性基于使用人口统计信息与客户相似的用户的数据。 这些信息可帮助您根据客户在特定品牌和兴趣方面的相似性更好地了解和细分客户。
 
 在访问群体见解中，转到 **数据** > **扩充** 以[配置和查看扩充](enrichment-hub.md)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "6245696"
 
 ## <a name="affinity-level-and-score"></a>相似性级别和分数
 
-在每个扩充的客户配置文件中，我们将提供两个相关值 - 相似性级别和相似性分数。 这些值有助于确定与其他人口统计客户细分相比，该配置文件的人口统计客户细分中品牌或兴趣的相似性强度。
+在每个扩充的客户配置文件中，我们将提供两个相关值：相似性级别和相似性分数。 这些值有助于确定与其他人口统计客户细分相比，该配置文件的人口统计客户细分中品牌或兴趣的相似性强度。
 
 *相似性级别* 由四个级别组成，并且 *相似性分数* 是根据映射到相似性级别的100 分等级计算的。
 
@@ -53,7 +53,7 @@ ms.locfileid: "6245696"
 
 目前，我们支持以下国家/地区选项：澳大利亚、加拿大（英语）、法国、德国、英国或美国（英语）。
 
-要选择国家/地区，打开 **品牌扩充** 或 **兴趣扩充**，然后选择 **国家/地区** 旁边的 **更改**。 在 **国家/地区设置** 窗格中，选择一个选项，然后选择 **应用**。
+若要选择国家或地区，请打开 **品牌扩充** 或 **兴趣扩充**，然后选择 **国家/地区** 旁边的 **更改**。 在 **国家/地区设置** 窗格中，选择一个选项，然后选择 **应用**。
 
 ### <a name="implications-related-to-country-selection"></a>与国家/地区选择相关的含义
 
@@ -61,7 +61,7 @@ ms.locfileid: "6245696"
 
 - 在[选择行业](#define-your-brands-or-interests)时，您将基于所选国家/地区获得最相关的品牌或兴趣。
 
-- 在[扩充配置文件](#refresh-enrichment)时，我们将扩充获取所选品牌和兴趣数据所针对的所有客户配置文件。 包括未在选定国家/地区中的配置文件。 例如，如果您选择了德国，并且我们有可用于美国中的选定品牌和兴趣的数据，那么我们将扩充位于美国的个人资料。
+- 在[扩充配置文件](#refresh-enrichment)时，我们将扩充为其获取选定品牌和兴趣的数据的所有客户配置文件，包括未在选定国家或地区的配置文件。 例如，如果您选择了德国，并且我们有可用于美国中的选定品牌和兴趣的数据，那么我们将扩充位于美国的个人资料。
 
 ## <a name="configure-enrichment"></a>配置扩充
 
@@ -71,7 +71,7 @@ ms.locfileid: "6245696"
 
 使用以下一个或两个选项选择最多五个品牌或兴趣：
 
-- **行业**：从下拉列表中选择您的行业，然后从该行业的热门品牌或兴趣中进行选择。
+- **行业**：从下拉列表中选择您的行业，然后从该行业的顶部品牌或兴趣中进行选择。
 - **选择您自己的项目**：输入与组织相关的品牌或兴趣，然后从匹配的建议中进行选择。 如果我们未列出您在查找的品牌或兴趣，请使用 **建议** 链接向我们发送反馈。
 
 ### <a name="review-enrichment-preferences"></a>查看扩充首选项
@@ -88,19 +88,19 @@ ms.locfileid: "6245696"
 
 映射来自统一客户实体的字段，以定义希望系统用于扩充客户数据的人口统计客户细分。 映射国家/地区，并至少映射“出生日期”或“性别”属性。 此外，必须至少映射一个市/县（和省/市/自治区）或邮政编码。 选择 **编辑** 以定义字段的映射，然后在完成后选择 **应用**。 选择 **保存** 完成字段映射。
 
-支持下列格式和值，值不区分大小写：
+支持下列格式和值（值不区分大小写）：
 
-- **出生日期**：我们建议在数据引入期间将出生日期转换为日期/时间类型。 或者，可以使用 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式“yyyy-MM-dd”或“yyyy-MM-ddTHH:mm:ssZ”的字符串。
-- **性别**：男、女、未知
-- **邮政编码**：美国的五位数邮政编码，其他地方的标准邮政编码
-- **市/县**：英文的市/县名称
+- **出生日期**：我们建议在数据引入期间将出生日期转换为日期/时间类型。 或者，可以是采用 [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) 格式“yyyy-MM-dd”或“yyyy-MM-ddTHH:mm:ss”的字符串。
+- **性别**：男、女、未知。
+- **邮政编码**：美国五位数的邮政编码，其他国家或地区的标准邮政编码。
+- **市/县**：英文的市/县名称。
 - **州/省**：美国和加拿大的两个字母的缩写。 澳大利亚的两个或三个字母的缩写。 不适用于法国、德国或英国。
 - **国家/地区**：
 
   - US：United States of America、United States、USA、US、America
   - CA：Canada、CA
   - GB：United Kingdom、UK、Great Britain、GB、United Kingdom of Great Britain and Northern Ireland、United Kingdom of Great Britain
-  - AU：Australia、AU、Common Wealth of Australia
+  - AU：澳大利亚、AU、澳大利亚英联邦
   - FR：France、FR、French Republic
   - DE：Germany、German、Deutschland、Allemagne、DE、Federal Republic of Germany、Republic of Germany
 
@@ -113,10 +113,11 @@ ms.locfileid: "6245696"
 ## <a name="refresh-enrichment"></a>刷新扩充
 
 为人口统计数据配置品牌、兴趣和字段映射之后运行扩充。 若要启动此流程，请在品牌或兴趣配置页上选择 **运行**。 此外，还可以让系统在执行计划的刷新期间自动运行扩充。
+
 根据客户数据的大小，可能需要几分钟，扩充才能运行完成。
 
 > [!TIP]
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
+> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 针对一个作业任务选择 **查看详细信息** 后，您将找到其他信息：处理时间、上次处理日期以及与该任务关联的所有错误和警告。
 
 ## <a name="enrichment-results"></a>扩充结果
 
@@ -134,7 +135,7 @@ ms.locfileid: "6245696"
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)、[度量](measures.md)，甚至[导出数据](export-destinations.md)，以便为客户提供个性化的体验。
+基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

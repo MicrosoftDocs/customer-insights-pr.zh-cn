@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dbebc3ee3978ca6ee9d1ad1c15c226479876709f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 67bfa23d56b26ae592efa4d7197713664bb02623
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124354"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304793"
 ---
 # <a name="export-segments-to-adroll-preview"></a>将客户细分导出到 AdRoll（预览版）
 
@@ -28,11 +28,11 @@ ms.locfileid: "6124354"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 对于每个导出，您最多可以将 250'000 个配置文件导出到 AdRoll 中。
+- 一次最多可以将 250,000 个配置文件导出到 AdRoll。
 - 您不能将配置文件少于 100 个的客户细分导出到 AdRoll。 
 - 导出到 AdRoll 仅限于客户细分。
-- 最多将 250'000 个配置文件导出到 AdRoll 可能需要 10 分钟才能完成。 
-- 可以导出到 AdRoll 的配置文件数与 AdRoll 的合同相关并受其限制。
+- 最多将 250,000 个配置文件导出到 AdRoll 可能最多需要 10 分钟才能完成。 
+- 可以导出到 AdRoll 的配置文件数依赖于您与 AdRoll 的合同。
 
 ## <a name="set-up-connection-to-adroll"></a>设置与 AdRoll 的连接
 
@@ -62,19 +62,21 @@ ms.locfileid: "6124354"
 
 1. 要创建新导出，请选择 **添加导出**。
 
-1. 在 **导出连接** 字段中，从 AdRoll 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
+1. 在 **导出连接** 字段中，从 AdRoll 部分选择连接。 如果看不到此部分名称，则没有此类型的连接可用。
 
-1. 输入您的 **AdRoll 广告商 ID**。有关更多信息，请参阅 [AdRoll 广告商配置文件](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)。
+1. 输入您的 **AdRoll 广告厂商 ID**。 有关详细信息，请参阅 [AdRoll 广告厂商配置文件](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)。
 
 3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 需要将客户细分导出到 AdRoll。
 
-1. 选择想要导出的细分。 选择至少包含 100 个成员的客户细分。 不能导出较小的客户细分。 此外，对于每个导出，要导出的客户细分的最大大小为 250'000 个成员。 
+1. 选择想要导出的细分。 选择至少包含 100 个成员的客户细分。 不能导出较小的客户细分。 此外，对于每个导出，要导出的客户细分的最大大小为 250,000 个成员。 
 
 1. 选择 **保存**。
 
 保存导出不会立即运行导出。
 
-每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
+每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 
+
+您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
 
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 433e6ceda0ec7827bd672cff40f895d7719561df
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896316"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304593"
 ---
 # <a name="customer-profiles"></a>客户配置文件
 
@@ -57,13 +57,13 @@ ms.locfileid: "5896316"
 
 客户详细信息包括:
 
--   **客户配置文件磁贴：** 此磁贴显示统一客户配置文件实体中的不同值。 这些详细信息可以包括电子邮件地址、姓名、市/县等等。 
+-   **客户配置文件磁贴**：此磁贴显示统一客户配置文件实体中的不同值。 这些详细信息可以包括电子邮件地址、姓名、市/县等等。 
 
--   **潜在兴趣、潜在品牌：** 显示您是否配置了第一方扩充。 它表示具有与此客户类似的配置文件的客户可能具有的潜在兴趣和品牌相似性。 有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)。
+-   **潜在兴趣、潜在品牌**：显示您是否配置了第一方扩充。 它表示具有与此客户类似的配置文件的客户可能具有的潜在兴趣和品牌相似性。 有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)。
 
--   **度量：** 显示您是否配置了一个或多个特定类型的度量：客户属性度量。 它们包括针对各个客户级别的客户的计算 KPI。 有关详细信息，请参阅[定义和管理度量](measures.md)。
+-   **度量**：显示您是否配置了特定类型的一个或多个度量：客户属性度量。 它们包括针对各个客户级别的客户的计算 KPI。 有关详细信息，请参阅[定义和管理度量](measures.md)。
 
--   **活动时间线：** 显示您是否已配置活动。 时间线视图包含此客户的按时间排序的活动，从最近活动开始。 有关详细信息，请参阅[自定义活动](activities.md)。
+-   **活动时间线**：显示您是否配置了活动。 时间线视图包含此客户的按时间排序的活动，从最近活动开始。 有关详细信息，请参阅[自定义活动](activities.md)。
 
 选择 **返回到客户** 以返回到客户搜索页面。
 

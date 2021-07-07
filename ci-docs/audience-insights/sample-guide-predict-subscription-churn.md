@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 324e5c19778230dd978b2f4e9156a2dd82b3d2bd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: fa460fa5c79bc8a356ec5e90050ec85e05c55be8
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595507"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306292"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>订阅流失预测（预览）示例指南
 
@@ -22,7 +22,7 @@ ms.locfileid: "5595507"
 
 ## <a name="scenario"></a>方案
 
-Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 咖啡网站销售。 他们最近为定期购买咖啡的客户启动了一项订阅业务。 他们的目标是了解哪些订阅客户可能会在接下来的几个月内取消订阅。 了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。
+Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Contoso Coffee 网站销售这些产品。 他们最近为定期购买咖啡的客户启动了一项订阅业务。 他们的目标是了解哪些订阅客户可能会在接下来的几个月内取消订阅。 了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -128,9 +128,9 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 1. 转到 **匹配** 选项卡并选择 **设置顺序**。
 
-1. 在 **主要** 下拉列表中，选择 **eCommerceContacts：电子商务** 作为主要源，并包括所有记录。
+1. 在 **主要** 下拉列表中，选择 **eCommerceContacts : eCommerce** 作为主要源并包括所有记录。
 
-1. 在 **实体 2** 下拉列表中，选择 **loyCustomers：LoyaltyScheme**，并包括所有记录。
+1. 在 **实体 2** 下拉列表中，选择 **loyCustomers : LoyaltyScheme** 并包括所有记录。
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="统一匹配电子商务和忠诚度。":::
 
@@ -138,8 +138,8 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 1. 使用 FullName 添加您的第一个条件。
 
-   * 对于 eCommerceContacts，在下拉列表中选择 **全名**。
-   * 对于 loyCustomers，在下拉列表中选择 **全名**。
+   * 对于 eCommerceContacts，在下拉列表中选择 **FullName**。
+   * 对于 loyCustomers，在下拉列表中选择 **FullName**。
    * 选择 **标准化** 下拉列表，然后选择 **类型（电话、名称、地址......）**。
    * 设置 **精度级别**：**基本** 和 **值**：**高**。
 

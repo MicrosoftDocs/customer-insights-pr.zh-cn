@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 07271d491460764f2c738e760e41c3492f2b6de9
-ms.sourcegitcommit: 27f9dd837304ef9fc00f055a6e900fbf6fce1429
+ms.openlocfilehash: e0ca731f944da9a7eaae7c2dc2d7568b6386089f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965567"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305421"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>使用增强的地址扩充客户配置文件
 
@@ -22,11 +22,11 @@ ms.locfileid: "5965567"
 
 ## <a name="how-we-enhance-addresses"></a>如何增强地址
 
-我们的模型将执行两个步骤来增强地址。 首先，它解析地址以标识其组成部分并使其成为结构化格式。 然后，我们使用人工智能来更正、完善和标准化地址中的值。
+我们的模型将执行两个步骤来增强地址。 首先，它解析地址以标识其组成部分并使其成为结构化格式。 然后，我们使用 AI 来更正、完成和标准化地址中的值。
 
 ### <a name="example"></a>示例
 
-地址信息可能为非标准格式并包含拼写错误。 该模型可以在统一客户配置文件中修复这些问题并创建一致的地址。
+地址信息可能采用非标准格式并且包含拼写错误。 该模型可以在统一客户配置文件中修复这些问题并创建一致的地址。
 
 ```Input
 4567 w main stret californa missouri 54321 us
@@ -50,7 +50,7 @@ ms.locfileid: "5965567"
 2. 验证任意值（如邮政编码或街道名称）是否有效。
 3. 更改它无法识别的值。
 
-该模型使用基于机器学习的技术来增强地址。 尽管我们为模型更改输入值的时间应用了高置信度阈值，但与任何基于 ML 的模型一样，我们不能保证 100% 准确。
+该模型使用基于机器学习的技术来增强地址。 虽然我们在模型更改输入值时应用高置信度阈值，但与基于机器学习的任何模型一样，都不能保证 100% 的准确性。
 
 ## <a name="supported-countries-or-regions"></a>支持的国家或地区
 
@@ -76,7 +76,7 @@ ms.locfileid: "5965567"
 1. 选择在数据集中设置地址格式的方式。 如果数据中的地址使用单个字段，请选择 **单一属性地址**。 如果数据中的地址使用多个数据字段，请选择 **多属性地址**。
 
    > [!NOTE]
-   > 在单一属性和多属性地址中，国家/地区均是必需的。 将不会扩充不包含有效或受支持的国家/地区值的地址
+   > 在单一属性和多属性地址中，国家/地区均是必需的。 将不会扩充不包含有效或受支持的国家/地区值的地址。
 
 1.  映射统一客户实体中的地址字段。
 
@@ -98,6 +98,6 @@ ms.locfileid: "5965567"
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[客户细分](segments.md)、[度量](measures.md)，甚至[导出数据](export-destinations.md)，以便为客户提供个性化的体验。
+基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

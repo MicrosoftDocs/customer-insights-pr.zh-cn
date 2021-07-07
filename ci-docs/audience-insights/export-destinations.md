@@ -9,18 +9,18 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6e7793fa99f8431d9d420529b39e0b5b5dbf6748
-ms.sourcegitcommit: 0689e7ed4265855d1f76745d68af390f8f4af8a0
+ms.openlocfilehash: 28563e3a76535cb0c92bfcda4ef5037430d00cfa
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6253029"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305467"
 ---
 # <a name="exports-preview-overview"></a>导出(预览版)概述
 
 **导出** 页面显示所有配置的导出。 导出与各种应用程序共享特定数据。 它们可以包括客户配置文件或实体、架构和映射详细信息。 每个导出都需要[由管理员设置的连接以管理身份验证和访问](connections.md)。
 
-转到 **数据** > **导出** 以查看导出页面。 所有用户角色都有权查看配置的导出。 使用命令栏中的搜索字段按其名称、连接名称或连接类型查找导出。
+转到 **数据** > **导出** 以查看导出页面。 所有用户角色都可以查看已配置的导出。 使用命令栏中的搜索字段以按名称、连接名称或连接类型查找导出。
 
 ## <a name="set-up-a-new-export"></a>设置新导出
 
@@ -65,7 +65,7 @@ ms.locfileid: "6253029"
 
 1. 转到 **数据** > **导出**。
 
-1. 无编辑权限的用户应选择 **查看** 而不是 **编辑**，以查看导出详细信息。
+1. 没有编辑权限的用户可以选择 **查看**（而不是 **编辑**）来查看导出详细信息。
 
 1. 侧窗格显示了导出的配置。 如果没有编辑权限，您无法更改值。 选择 **关闭** 以返回到出口页面。
 
@@ -73,7 +73,7 @@ ms.locfileid: "6253029"
 
 您配置的每个导出都有一个刷新计划。 在刷新期间，系统会查找要包括在导出中的新数据或已更新数据。 默认情况下，导出在每个[计划系统刷新](system.md#schedule-tab)过程中运行。 您可以自定义刷新计划或将其关闭以手动运行导出。
 
-导出计划取决于您的环境状态。 如果在开始计划导出时将会对[依赖项](system.md#refresh-policies)进行更新，则系统将首先完成依赖项，然后运行导出。 可以在 **刷新时间** 列中查看最后刷新导出的时间。
+导出计划取决于您的环境状态。 如果在应启动计划导出时正在进行有关[依赖项](system.md#refresh-policies)的更新，系统将首先完成更新，然后运行导出。 可以在 **刷新时间** 列中查看最后刷新导出的时间。
 
 ### <a name="schedule-exports"></a>计划导出
 

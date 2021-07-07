@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 106dbc26f95b309821d738e1484b1eaa79dd225b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896086"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304961"
 ---
 # <a name="connections-preview-overview"></a>连接（预览版）概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "5896086"
 
 1. 转到 **连接** 选项卡。
 
-1. 选择 **添加连接** 以创建新连接。 从下拉菜单中选择要创建的连接类型。
+1. 选择 **添加连接** 以创建新连接。 从下拉菜单中选择您要创建的连接类型。
 
 1. 在 **设置连接** 窗格中，提供所需的详细信息。 
    1. 连接的 **显示名称** 和类型描述了连接。 我们建议选择一个名称来解释此连接的用途和目标。
@@ -74,7 +74,9 @@ ms.locfileid: "5896086"
 
 ## <a name="remove-a-connection"></a>删除连接
 
-如果扩充或导出使用了您要删除的连接，您首先需要拆卸或删除它们。 “删除”对话框将引导您完成相关的扩充或导出。 分离的扩充和导出会变得不可用。 通过在[扩充](enrichment-hub.md)或[导出](export-destinations.md)页面上添加另一个连接，您可以重新激活它们。
+如果扩充或导出使用了您要删除的连接，您首先需要拆卸或删除它们。 “删除”对话框将引导您完成相关的扩充或导出。 
+
+分离的扩充和导出会变得不可用。 通过在[扩充](enrichment-hub.md)或[导出](export-destinations.md)页面上添加另一个连接，您可以重新激活它们。
 
 1. 转到 **管理员** > **连接（预览版）**。
 
@@ -89,5 +91,5 @@ ms.locfileid: "5896086"
       - **扩充：** 您可以选择删除或停用导出，以便能够删除连接。 
    1. 连接不再有依赖项后，请返回到 **管理** > **连接** 并尝试再次删除连接。
 
-1. 要确认删除，请选择 **删除**。
+1. 若要确认删除，请选择 **删除**。
 

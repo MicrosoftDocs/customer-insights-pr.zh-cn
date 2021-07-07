@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: a85ee598ec747d0594755314e83a127ce0f2af95
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129888"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306155"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>产品建议预测（预览版）示例指南
 
@@ -105,9 +105,9 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
 
 1. 转到 **匹配** 选项卡并选择 **设置顺序**。
 
-2. 在 **主要** 下拉列表中，选择 **eCommerceContacts：电子商务** 作为主要源，并包括所有记录。
+2. 在 **主要** 下拉列表中，选择 **eCommerceContacts : eCommerce** 作为主要源并包括所有记录。
 
-3. 在 **实体 2** 下拉列表中，选择 **loyCustomers：LoyaltyScheme**，并包括所有记录。
+3. 在 **实体 2** 下拉列表中，选择 **loyCustomers : LoyaltyScheme** 并包括所有记录。
 
    ![统一匹配电子商务和忠诚度。](media/unify-match-order.png)
 
@@ -115,8 +115,8 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
 
 5. 使用 FullName 添加您的第一个条件。
 
-   - 对于 eCommerceContacts，在下拉列表中选择 **全名**。
-   - 对于 loyCustomers，在下拉列表中选择 **全名**。
+   - 对于 eCommerceContacts，在下拉列表中选择 **FullName**。
+   - 对于 loyCustomers，在下拉列表中选择 **FullName**。
    - 选择 **标准化** 下拉列表，然后选择 **类型（电话、名称、地址......）**。
    - 设置 **精度级别**：**基本** 和 **值**：**高**。
 

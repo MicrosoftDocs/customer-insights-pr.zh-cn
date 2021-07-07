@@ -1,5 +1,5 @@
 ---
-title: 通过第三方扩充 HERE Technologies 扩充
+title: 通过第三方扩充 HERE Technologies 进行的扩充
 description: 有关 HERE Technologies 第三方扩充的常规信息。
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896040"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305283"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>通过 HERE Technologies 扩充客户配置文件（预览）
 
@@ -26,7 +26,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 - 您具有有效的 HERE Technologies 订阅。 若要获取订阅，您可以在[此处注册](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic)或直接[与 HERE Technologies 联系](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you)。 [了解有关 HERE Technologies 位置扩充的详细信息。](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- 有一个 HERE [连接](connections.md)可用，*或者* 您有[管理员](permissions.md#administrator)权限和 HERE Technologies API 密钥。
+- HERE [连接](connections.md)可用，*或者* 您具有[管理员](permissions.md#administrator)权限和 HERE Technologies API 密钥。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 
@@ -37,7 +37,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies 磁贴](media/HERE-tile.png "HERE Technologies 磁贴")
 
-1. 从下拉列表选择[连接](connections.md)。 如果没有连接可用，请联系管理员。 如果您是管理员，则可以通过选择 **添加连接** 来创建连接。 从下拉列表中选择 **HERE Technologies**。 
+1. 从下拉列表中选择[连接](connections.md)。 如果没有连接可用，请联系管理员。 如果您是管理员，则可以通过选择 **添加连接** 来创建连接。 从下拉列表中选择 **HERE Technologies**。 
 
 1. 选择 **连接到 HERE Technologies** 以确认选择。
 
@@ -58,7 +58,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 1. 在查看您的选择后选择 **保存扩充**。
 
-## <a name="configure-the-connection-for-here-technologies"></a>为 HERE technologies 配置连接 
+## <a name="configure-the-connection-for-here-technologies"></a>为 HERE Technologies 配置连接 
 
 您必须是管理员才能配置连接。 配置扩充时选择 **添加连接**，*或* 转到 **管理员** > **连接**，然后在 HERE Technologies 磁贴上选择 **设置**。
 
@@ -66,13 +66,13 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 1. 提供有效的 HERE Technologies API 密钥。
 
-1. 进行查看，然后选中 **我同意** 复选框以同意 **数据隐私和合规性**
+1. 通过选择 **我同意**，查看并同意 **数据隐私与合规性**。
 
 1. 选择 **验证** 以验证配置。
 
 1. 完成验证后，选择 **保存**。
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![HERE Technologies 连接配置页面](media/enrichment-HERE-connection.png "HERE Technologies 连接配置页面")
 
 ## <a name="enrichment-results"></a>扩充结果
@@ -85,7 +85,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[客户细分](segments.md)、[度量](measures.md)，甚至[导出数据](export-destinations.md)，以便为客户提供个性化的体验。
+基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 

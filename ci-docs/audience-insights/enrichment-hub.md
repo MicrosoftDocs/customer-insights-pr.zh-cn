@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
-ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
+ms.openlocfilehash: c35e73b366fcd5db2ba5a757295ddda6db30efa0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954476"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305237"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -22,7 +22,8 @@ ms.locfileid: "5954476"
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="扩充中心页面":::
 
-在访问群体见解中，转到 **数据** > **扩充** 以使用扩充选项。    
+在访问群体见解中，转到 **数据** > **扩充** 以使用扩充选项。  
+
 您需要具有参与者或管理员权限才能创建或编辑扩充。 有关详细信息，请参阅[权限](permissions.md)。
 
 在 **发现** 选项卡上，您将看到以下扩充：
@@ -31,7 +32,7 @@ ms.locfileid: "5954476"
 - Microsoft 提供的[兴趣](enrichment-microsoft.md)
 - Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md)
 - Leadspace 提供的[公司数据](enrichment-leadspace.md)
-- Experian 提供的[人口统计数据](enrichment-experian.md)
+- Experian 提供的[人口统计](enrichment-experian.md)
 - HERE Technologies 提供的[位置数据](enrichment-here.md)
 - 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md)
 
@@ -39,7 +40,7 @@ ms.locfileid: "5954476"
 
 ## <a name="manage-existing-enrichments"></a>管理现有扩充
 
-转到 **我的扩充** 查看所有已配置的扩充。 每个扩充表示为一行，其中包含有关扩充的其他信息。
+转到 **我的扩充** 选项卡以查看所有配置的扩充。 每个扩充表示为一行，其中包含有关扩充的其他信息。
 
 选择一个扩充来查看可用选项。 您还可以选择列表项上的椭圆 (...) 以查看选项。
 
@@ -59,6 +60,6 @@ ms.locfileid: "5954476"
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>相同类型的多项扩充
 
-扩充配置期间已指定了要扩充的实体，这允许您仅扩充配置文件子集。 例如，仅针对特定客户细分扩充数据。 您可以配置相同类型的多项扩充并重复使用相同的连接。 某些扩充对可创建的相同类型的扩充数量有限制。 可以在 **扩充** 页面上看到限制和当前使用情况。
+扩充配置期间已指定了要扩充的实体，这允许您仅扩充配置文件子集。 例如，仅为特定客户细分扩充数据。 您可以配置相同类型的多项扩充并重复使用相同的连接。 某些扩充对可创建的相同类型的扩充数量有限制。 可以在 **扩充** 页面上看到限制和当前使用情况。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
