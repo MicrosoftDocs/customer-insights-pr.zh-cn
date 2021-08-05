@@ -9,12 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: 0a017a37777adaaf7de079cf481ec10c70c7adba
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304685"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692424"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -30,13 +31,13 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 
 - [通过许多 Power Query 连接器](connect-power-query.md)
 - [从 Common Data Model 文件夹](connect-common-data-model.md)
-- [从您自己的 Microsoft Dataverse 湖](connect-common-data-service-lake.md)
+- [从您自己的 Microsoft Dataverse 湖](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>添加来自本地数据源的数据
 
-基于 Microsoft Power Platform 数据流支持在访问群体见解中引入本地数据源中的数据。 通过在设置环境时[提供 Microsoft Dataverse 环境 URL](manage-environments.md#create-an-environment-in-an-existing-organization)，可以在 Customer Insights 中启用数据流。
+基于 Microsoft Power Platform 数据流支持在访问群体见解中引入本地数据源中的数据。 通过在设置环境时[提供 Microsoft Dataverse 环境 URL](get-started-paid.md)，可以在 Customer Insights 中启用数据流。
 
-将 Dataverse 环境与 Customer Insights 关联后创建的数据源将默认使用 [Power Platform 数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 数据流使用数据网关支持本地连接。 删除并重新创建关联 Dataverse 环境以[使用本地数据网关](/data-integration/gateway/service-gateway-app.md)之前已存在的数据源。
+将 Dataverse 环境与 Customer Insights 关联后创建的数据源将默认使用 [Power Platform 数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 数据流使用数据网关支持本地连接。 删除并重新创建关联 Dataverse 环境以[使用本地数据网关](/data-integration/gateway/service-gateway-app)之前已存在的数据源。
 
 现有 Power BI 或 Power Apps 环境中的数据网关将可见，您可以在 Customer Insights 中重复使用它们。 数据源页面显示用于转到 Microsoft Power Platform 环境的链接，您可以在该环境中查看和配置本地数据网关。
 
@@ -45,9 +46,9 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 您将看到每个引入的数据源的名称、它的状态以及上次为该源刷新数据的时间。 您可以按每一列对数据源列表进行排序。
 
 > [!div class="mx-imgBorder"]
-> ![已添加数据源](media/configure-data-datasource-added.png "已添加数据源")
+> ![已添加数据源。](media/configure-data-datasource-added.png "已添加数据源")
 
-|状态   |描述  |
+|执行状态  |描述  |
 |---------|---------|
 |成功   |如果 **已刷新** 列中显示时间，则数据源已成功引入。
 |未开始   |数据源尚未引入数据，或仍处于草稿模式。         |

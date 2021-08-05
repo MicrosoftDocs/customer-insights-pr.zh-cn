@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 03f76bcfc7336d8430146e8a26ffa649c6a17db0
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 1af2e4c42dc5890556c90bb3e5ef1aeb0621fda0
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596810"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554148"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>基于 Power Query 的数据源的增量刷新
 
@@ -45,7 +45,7 @@ ms.locfileid: "5596810"
 1. 在 **增量刷新设置** 中，为创建数据源时选择的所有实体配置增量刷新。
 
    > [!div class="mx-imgBorder"]
-   > ![为数据源中的实体配置增量刷新](media/incremental-refresh-settings.png "为数据源中的实体配置增量刷新")
+   > ![配置数据源中的实体以进行增量刷新。](media/incremental-refresh-settings.png "为数据源中的实体配置增量刷新")
 
 1. 选择实体，然后提供以下详细信息：
 

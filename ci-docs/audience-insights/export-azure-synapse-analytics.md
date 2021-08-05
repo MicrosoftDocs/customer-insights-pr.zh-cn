@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977366"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327353"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>将数据导出到 Azure Synapse Analytics（预览版）
 
@@ -74,8 +74,10 @@ Azure Synapse 是一项分析服务，可加缩短跨数据存储和大型数据
 1. 为导出提供一个可识别的 **显示名称** 和一个 **数据库名称**。
 
 1. 选择要导出到 Azure Synapse Analytics 的实体。
+   > [!NOTE]
+   > 不支持基于 [Common Data Model 文件夹](connect-common-data-model.md)的数据源。
 
-1. 选择 **保存**。
+2. 选择 **保存**。
 
 保存导出不会立即运行导出。
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304593"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554607"
 ---
 # <a name="customer-profiles"></a>客户配置文件
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304593"
 客户可以是个人，也可以是组织（预览）。 每个客户或组织配置文件通过磁贴表示。 选择磁贴可查看有关这个具体客户或组织的更多信息。 可使用页面底部的翻页控件查看更多记录。
 
 > [!div class="mx-imgBorder"] 
-> ![B2C 客户配置文件](media/profiles-customers.png "B2C 客户配置文件")
+> ![B2C 客户配置文件。](media/profiles-customers.png "B2C 客户配置文件")
 
 组织（预览）
 > [!div class="mx-imgBorder"] 
-> ![B2B 客户配置文件](media/profile-customers-b2b.png "B2B 客户配置文件")
+> ![B2B 客户配置文件。](media/profile-customers-b2b.png "B2B 客户配置文件")
 
 > [!NOTE]
 > 如果在导航中选择 **客户** 后看不到磁贴，您的管理员需要在 **搜索和筛选索引** 中[定义至少一个可搜索属性](search-filter-index.md)。
@@ -47,7 +47,7 @@ ms.locfileid: "6304593"
 2. 选中要充当客户搜索依据的属性旁边的框。
 
    > [!div class="mx-imgBorder"] 
-   > ![客户配置文件](media/profiles-customers3.png "客户配置文件")
+   > ![客户配置文件。](media/profiles-customers3.png "客户配置文件")
 
 3. 通过在 **客户** 页面上选择 **清除筛选器** 来删除您的筛选器。
 

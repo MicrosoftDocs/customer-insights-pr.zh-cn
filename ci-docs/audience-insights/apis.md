@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304731"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554470"
 ---
 # <a name="work-with-customer-insights-apis"></a>使用 Customer Insights API
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights 提供 API 以基于 Customer Insights 中的数�
  
    启用 API 可为在 API 请求中使用的实例创建主要和辅助订阅密钥。 您可以通过在 **管理员** > **权限** > **API** 上选择 **再生成主要密钥** 或 **再生成辅助密钥** 来再生成密钥。
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="启用 Customer Insights API":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="启用 Customer Insights API。":::
 
 1. 选择 **浏览我们的 API** 以[试用 API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)。
 
@@ -129,7 +129,7 @@ HTTP 响应将立即显示在下方。
  
    或者，在 **NuGet 包管理器控制台** 中运行此命令：`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="将 NuGet 包添加到 Visual Studio 项目":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="将 NuGet 包添加到 Visual Studio 项目。":::
 
 #### <a name="use-the-c-client-library"></a>使用 C# 客户端库
 
@@ -141,7 +141,7 @@ HTTP 响应将立即显示在下方。
 
 1. 将此 `HttpClient` 传递到 `CustomerInsights` 客户端的构造中。
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="httpclient 的示例":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="httpclient 的示例。":::
 
 1. 使用客户端调用“扩展方法”，例如 `GetAllInstancesAsync`。 如果首选访问基础 `Microsoft.Rest.HttpOperationResponse`，请使用“http 消息方法”，例如 `GetAllInstancesWithHttpMessagesAsync`。
 

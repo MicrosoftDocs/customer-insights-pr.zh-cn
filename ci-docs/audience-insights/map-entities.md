@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 36b7f7b2fac9497245cf6759506c53753972f173
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 7fc05aca61d1136f620019ee82dc6937ea39d8e5
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595982"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555112"
 ---
 # <a name="map-entities-and-attributes"></a>映射实体和属性
 
@@ -35,14 +35,14 @@ ms.locfileid: "5595982"
 3. 选择要在 *匹配* 和 *合并* 阶段使用的实体和属性。 您可以通过选择实体级别的 **包括所有字段** 复选框，从实体中单独选择所需的属性，或包含实体中的所有属性。 建议至少选择两个实体，以便利用数据统一过程。
 
    > [!div class="mx-imgBorder"]
-   > ![添加实体示例](media/data-manager-configure-map-add-entities-example.png "添加实体示例")
+   > ![添加实体示例。](media/data-manager-configure-map-add-entities-example.png "添加实体示例")
 
    在此示例中，我们要添加 **eCommerceContacts** 和 **loyCustomers** 实体。 通过选择这些实体，您可以得出有关哪些在线业务客户是忠诚度计划成员的见解。
    
    您可以在所有属性和实体中搜索关键字，来选择要映射的所需属性。
    
      > [!div class="mx-imgBorder"]
-   > ![搜索字段示例](media/data-manager-configure-map-search-fields-example.png "搜索字段示例")
+   > ![搜索字段示例。](media/data-manager-configure-map-search-fields-example.png "搜索字段示例")
 
 4. 选择 **应用** 确认您的选择。
 
@@ -55,7 +55,7 @@ ms.locfileid: "5595982"
 - **属性语义类型**：属性的类别，如电子邮件地址或姓名。 要将 AI 模型用于语义智能预测，节省时间并提高准确性，请将 **智能映射** 设置为 **开**。 智能映射在 **类型** 字段中突出显示基于 AI 的语义建议。 如果将其设置为 **关**，您将看到我们的常规映射建议。 您可以从可用的选项列表中选择任意一种语义类型，来替代建议的选择。
 
 > [!div class="mx-imgBorder"]
-> ![属性类型和语义预测](media/data-manager-configure-map-add-attributes-semantic-prediction.png "属性类型和语义预测")
+> ![属性类型和语义预测。](media/data-manager-configure-map-add-attributes-semantic-prediction.png "属性类型和语义预测")
 
 还可以添加自定义语义类型。 选择属性的类型字段，然后键入自定义语义类型名称。 这样，您还可以更改系统确定的属性类型。
 
@@ -64,7 +64,7 @@ ms.locfileid: "5595982"
 不会自动映射到语义类型的属性在 **在未映射字段中定义数据** 部分进行分组。 选择未映射属性的语义类型字段，或输入您的自定义属性类型名称。
 
 > [!div class="mx-imgBorder"]
-> ![主键和属性类型](media/data-manager-configure-map-add-attributes.png "主键和属性类型")
+> ![主键和属性类型。](media/data-manager-configure-map-add-attributes.png "主键和属性类型")
 
 > [!NOTE]
 > 应将一个字段映射到语义类型 Person. FullName 以填充客户卡中的客户名称。 否则，客户卡将显示为无名称。 
@@ -76,7 +76,7 @@ ms.locfileid: "5595982"
 2. 在 **编辑字段** 窗格中，添加或删除属性和实体。 使用搜索或滚动查找和选择您感兴趣的属性和实体。 如果属性或实体已经匹配，则无法将其删除。
 
    > [!div class="mx-imgBorder"]
-   > ![添加或删除属性](media/configure-data-map-edit.png "添加或删除属性")
+   > ![添加或删除属性。](media/configure-data-map-edit.png "添加或删除属性")
 
 3. 选择 **应用**。
 

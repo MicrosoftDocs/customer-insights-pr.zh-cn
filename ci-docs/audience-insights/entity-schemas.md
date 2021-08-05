@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596350"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692294"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model 中的实体架构
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596350"
 
 此共享数据模型可供应用程序和数据集成者通过提供统一的数据定义来进行协作。 Common Data Model 中包含丰富的元数据系统和标准实体、关系、层次结构、特征等。 其源自 Dynamics 365 应用，具有 260 多个标准实体，并在 GitHub 上开源。 内部和外部合作伙伴构成的大型系统为 Common Data Model 贡献了业界专有的概念。
 
-现在多个系统和平台实施 Common Data Model，包括 Power BI 数据流和 Azure Data Services。 其在 Common Data Service、Dynamics 365、Power Apps、Power BI 和即将推出的 Azure 数据服务中已受支持，并且正在直接为[开放数据方案](https://www.microsoft.com/open-data-initiative)贡献力量。
+现在，多个系统和平台实施了 Common Data Model，包括 Power BI 数据流和 Azure 数据服务。 Microsoft Dataverse、Dynamics 365、Power Apps、Power BI 和即将推出的 Azure 数据服务中已对其提供了支持，直接增长了[开放数据方案](https://www.microsoft.com/open-data-initiative)的价值。
 
 ## <a name="customer-insights-entity-schemas"></a>Customer Insights 实体架构
 
@@ -44,7 +44,7 @@ ms.locfileid: "5596350"
 
 您可以在 [Common Data Model 实体导航器中](https://microsoft.github.io/CDM/)查看实体。 选择 **从 GitHub 加载!** 按钮，然后导航到 **foundationCommon** > **crmCommon** > **解决方案** > **customerInsights**，可在这里找到 Customer Insights 实体及其定义的列表。
 > [!div class="mx-imgBorder"]
-> ![CDM 实体导航器，其中显示了 CustomerActivity 实体](media/CDM-entity-navigator.png "CDM 实体导航器，其中显示了 CustomerActivity 实体")
+> ![CDM 实体导航器，其中显示了 CustomerActivity 实体。](media/CDM-entity-navigator.png "CDM 实体导航器，其中显示了 CustomerActivity 实体")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

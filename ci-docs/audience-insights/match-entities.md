@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: de53927f7ed1f58176a7ba83f89be7c39064947c
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306017"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650307"
 ---
 # <a name="match-entities"></a>匹配实体
 
@@ -138,7 +138,7 @@ ms.locfileid: "6306017"
    - **最不常用**：根据最不常用标识入选记录。 需要日期或数字字段以定义近期性。
  
    > [!div class="mx-imgBorder"]
-   > ![删除重复规则步骤 1](media/match-selfconflation.png "删除重复规则步骤 1")
+   > ![删除重复规则步骤 1。](media/match-selfconflation.png "删除重复规则步骤 1")
  
 1. 在选择实体并设置其合并首选项后，请选择 **添加规则** 以在实体级别定义删除重复规则。
    - **选择字段** 将列出该实体的所有可用字段。 选择要检查重复项的字段。 选择可能为每个客户所特有的字段。 例如，电子邮件地址，或者名称、市/县和电话号码的组合。
@@ -146,7 +146,7 @@ ms.locfileid: "6306017"
    - 通过选择 **添加条件** 来定义其他条件。
  
    > [!div class="mx-imgBorder"]
-   > ![删除重复规则步骤 2](media/match-selfconflation-rules.png "删除重复规则步骤 2")
+   > ![删除重复规则步骤 2。](media/match-selfconflation-rules.png "删除重复规则步骤 2")
 
   您可以为一个实体创建多个删除重复规则。 
 
@@ -179,7 +179,9 @@ ms.locfileid: "6306017"
 您可以在 **实体** 页上查找成功运行的结果，统一客户配置文件实体。 统一客户实体在 **配置文件** 部分中称为 **客户**。 第一次成功运行匹配可创建统一的 *客户* 实体。 所有后续匹配运行都将展开该实体。
 
 > [!TIP]
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
+> 运行匹配流程后，选择流程状态以打开 **任务详细信息** 窗格。 它概述了处理时间、上次处理日期以及与任务相关的所有错误和警告。 选择 **查看详细信息**，以查看哪些实体参与了匹配流程、对其应用了哪些规则，以及是否成功发布了更新。  
+> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。  
+> :::image type="content" source="media/process-detail-path.png" alt-text="从任务状态链接获取流程详细信息的向下钻取路径。":::
 
 ## <a name="review-and-validate-your-matches"></a>预览和验证匹配
 

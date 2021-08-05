@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 987457966fe1fc034d9e3cd2a1ce33902c7a84f4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b377a3500c5d91962e59d46fbc259db5cc8fa7d0
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760316"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555434"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>将细分市场导出到 LiveRamp&reg;（预览版）
 
@@ -56,7 +56,7 @@ ms.locfileid: "5760316"
 
 1. 在 **选择密钥标识符** 字段中，选择要发送到 LiveRamp 以进行身份识别的 **电子邮件**、**姓名和地址** 或 **电话**。
    > [!div class="mx-imgBorder"]
-   > ![具有属性映射的 LiveRamp 连接器](media/export-liveramp-segments.png "具有属性映射的 LiveRamp 连接器")
+   > ![具有属性映射的 LiveRamp 连接器。](media/export-liveramp-segments.png "具有属性映射的 LiveRamp 连接器")
 
 1. 映射所选密钥标识符的统一客户实体中的相应属性。
 

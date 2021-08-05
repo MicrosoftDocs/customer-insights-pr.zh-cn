@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 9331cf8057850e2fbe03622831f388e73056d938
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304639"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555388"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>使用自定义数据扩充客户配置文件（预览）
 
@@ -64,7 +64,7 @@ ms.locfileid: "6304639"
 1. 验证完成后，可以通过选择 **保存** 来保存连接。
 
    > [!div class="mx-imgBorder"]
-   > ![Experian 连接配置页面](media/enrichment-SFTP-connection.png "Experian 连接配置页面")
+   > ![Experian 连接配置页面。](media/enrichment-SFTP-connection.png "Experian 连接配置页面")
 
 
 ## <a name="defining-field-mappings"></a>正在定义字段映射 

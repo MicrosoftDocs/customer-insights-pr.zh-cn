@@ -1,7 +1,7 @@
 ---
 title: Power BI 连接器
 description: 了解如何在 Power BI 中使用 Dynamics 365 Customer Insights 连接器。
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596028"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661091"
 ---
 # <a name="connector-for-power-bi-preview"></a>适用于 Power BI 的连接器（预览版）
 
@@ -39,7 +39,7 @@ ms.locfileid: "5596028"
 
 1. 在 **导航器** 对话框中。 您将看到有权访问的所有环境的列表。 展开环境并打开任何文件夹（实体、度量、客户细分、扩充）。 例如，打开 **实体** 文件夹，查看可导入的所有实体。
 
-   ![Power BI连接器导航器](media/power-bi-navigator.png "Power BI 连接器导航器")
+   ![Power BI 连接器导航器。](media/power-bi-navigator.png "Power BI 连接器导航器")
 
 1. 选中要包含的实体旁边的复选框，然后 **加载**。 可以从多个环境选择多个实体。
 
@@ -68,5 +68,11 @@ Power BI 的 Customer Insights 连接器用于最多包含 100 万个客户配�
 3. 删除标识的任何重复关系。
 
 在删除重复的关系后，尝试再次配置 Power BI 连接器。 该环境现在应该可用了。
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>在 Power BI Desktop 中加载实体时出现日期字段错误
+
+加载包含日期格式（如 MM/DD/YYYYY）的字段的实体时，您可能会因区域设置格式不匹配而遇到错误。 当您的 Power BI Desktop 文件设置为英语（美国）以外的其他区域设置时，会发生这种不匹配，因为访问群体见解中的日期字段以美国格式保存。
+
+Power BI Desktop 文件具有在检索数据时应用的单个区域设置。 正确解释这些日期字段，将 .BPI 文件的区域设置设为英语（美国）。 [了解如何更改 Power BI Desktop 文件的区域设置](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop)。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

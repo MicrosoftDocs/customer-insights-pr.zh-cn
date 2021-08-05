@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305145"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555480"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
 
@@ -27,7 +27,7 @@ ms.locfileid: "6305145"
 若要配置兴趣相似性扩充，请转到 **发现** 选项卡，并选择 **兴趣** 磁贴上的 **扩充我的数据**。
 
    > [!div class="mx-imgBorder"]
-   > ![品牌和兴趣磁贴](media/BrandsInterest-tile-Hub.png "品牌和兴趣磁贴")
+   > ![品牌和兴趣磁贴。](media/BrandsInterest-tile-Hub.png "品牌和兴趣磁贴")
 
 ## <a name="how-we-determine-affinities"></a>我们如何确定相似性
 
@@ -123,7 +123,7 @@ ms.locfileid: "6305145"
 
 运行扩充流程之后，转到 **我的扩充**，以在扩充后的客户配置文件中查看扩充的客户总数和品牌或兴趣明细。
 
-:::image type="content" source="media/my-enrichments.png" alt-text="运行扩充流程后预览结果":::
+:::image type="content" source="media/my-enrichments.png" alt-text="运行扩充流程后预览结果。":::
 
 通过在图表中选择 **查看扩充的数据** 查看扩充的数据。 扩充的品牌数据将进入 **BrandAffinityFromMicrosoft** 实体。 兴趣的数据位于 **InterestAffinityFromMicrosoft** 实体中。 还可以发现 **数据** > **实体** 中的 **扩充** 组内列出了这些实体。
 
@@ -131,7 +131,7 @@ ms.locfileid: "6305145"
 
 也可以在各客户卡中查看品牌和兴趣相似度。 转到 **客户**，然后选择客户配置文件。 在客户卡中，您会找到品牌或兴趣的图表，此图表反映了该客户的人口统计特征中人们具有的品牌或兴趣相似性。
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="包含扩充后数据的客户卡":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="包含扩充后数据的客户卡。":::
 
 ## <a name="next-steps"></a>后续步骤
 

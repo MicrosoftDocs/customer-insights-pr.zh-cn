@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: b0e587739f9f4d03942d70a72de4f9378822054d
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: 28c89693239393d93b7a816535b8c3fffe353935
+ms.sourcegitcommit: e57d51ae3cc233f7b6185c074c66efd9800c02c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095591"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559394"
 ---
 # <a name="transactional-churn-prediction-preview"></a>交易流失预测（预览）
 
@@ -47,7 +47,7 @@ ms.locfileid: "6095591"
         - **事件：** 您要使用的事件的名称。 例如，杂货店中称为“UserAction”的字段可能是供客户使用的优惠券。
         - **详细信息：** 有关事件的详细信息。 例如，杂货店中称为“CouponValue”的字段可能是优惠券的货币值。
 - 建议的数据特征：
-    - 足够的历史数据：交易数据至少是所选时间窗口数据的两倍。 最好是两到三年的订阅数据。 
+    - 足够的历史数据：交易数据至少是所选时间窗口数据的两倍。 最好有两到三年的交易历史记录。 
     - 每个客户多项购买：理想情况下，每个客户至少要进行两次交易。
     - 客户数量：至少 10 个客户配置文件，最好是超过 1,000 个唯一客户。 该模型将因客户少于 10 个以及历史数据不足而失败。
     - 数据完整性：在提供的实体的数据字段中，缺失值的不足 20%。

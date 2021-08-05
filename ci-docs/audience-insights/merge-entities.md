@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 24b523786158ff36c314601846ee25ea64cfabbe
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305614"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650123"
 ---
 # <a name="merge-entities"></a>合并实体
 
@@ -109,7 +109,7 @@ ms.locfileid: "6305614"
 无论您手动合并属性还是让系统合并属性，您始终都可以运行合并。 在 **合并** 页中选择 **运行** 开始执行此过程。
 
 > [!div class="mx-imgBorder"]
-> ![数据合并保存和运行](media/configure-data-merge-save-run.png "数据合并保存和运行")
+> ![数据合并保存和运行。](media/configure-data-merge-save-run.png "数据合并保存和运行")
 
 如果只想查看统一客户实体中反映的输出，请选择 **仅运行合并**。 将按[刷新计划中的定义](system.md#schedule-tab)来刷新下游流程。
 
@@ -118,7 +118,9 @@ ms.locfileid: "6305614"
 若要进行更多更改并重新运行此步骤，可以取消正在进行的合并。 选择 **正在刷新...**，然后选择显示的侧边窗格中的 **取消作业**。
 
 > [!TIP]
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
+> 运行合并流程后，选择流程状态以打开 **任务详细信息** 窗格。 它概述了处理时间、上次处理日期以及与任务相关的所有错误和警告。 选择 **查看详细信息**，以查看哪些实体参与了匹配流程、是否成功进行了冲突解决，以及是否成功发布了更新。  
+> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。  
+> :::image type="content" source="media/process-detail-path.png" alt-text="从任务状态链接获取流程详细信息的向下钻取路径。":::
 
 ## <a name="next-step"></a>下一步
 

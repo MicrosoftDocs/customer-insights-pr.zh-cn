@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305283"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555296"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>通过 HERE Technologies 扩充客户配置文件（预览）
 
@@ -35,7 +35,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 1. 在 HERE Technologies 磁贴上选择 **扩充我的数据**，然后选择 **开始**。
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies 磁贴](media/HERE-tile.png "HERE Technologies 磁贴")
+   > ![HERE Technologies 磁贴。](media/HERE-tile.png "HERE Technologies 磁贴")
 
 1. 从下拉列表中选择[连接](connections.md)。 如果没有连接可用，请联系管理员。 如果您是管理员，则可以通过选择 **添加连接** 来创建连接。 从下拉列表中选择 **HERE Technologies**。 
 
@@ -50,7 +50,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 1. 定义应使用统一配置文件中的哪些字段来查找 HERE Technologies 中的匹配位置数据。 必须为所选的主要和/或辅助地址指定 **街道 1** 和 **邮政编码** 字段。 为了使匹配精度更高，可添加更多字段。
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies 扩充配置页面](media/enrichment-HERE-configuration.png "HERE Technologies 扩充配置页面")
+   > ![HERE Technologies 扩充配置页面。](media/enrichment-HERE-configuration.png "HERE Technologies 扩充配置页面")
 
 1. 选择 **下一步** 以完成字段映射。
 
@@ -73,7 +73,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 1. 完成验证后，选择 **保存**。
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies 连接配置页面](media/enrichment-HERE-connection.png "HERE Technologies 连接配置页面")
+   > ![HERE Technologies 连接配置页面。](media/enrichment-HERE-connection.png "HERE Technologies 连接配置页面")
 
 ## <a name="enrichment-results"></a>扩充结果
 

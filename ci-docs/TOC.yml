@@ -2,20 +2,20 @@
   href: index.yml
 - name: 产品概述
   href: overview.md
+- name: 创建试用版
+  href: audience-insights/get-started-trial.md
 - name: 访问您的环境
   href: 'https://home.ci.ai.dynamics.com/'
-- name: 受众见解
+- name: 访问群体见解
   items:
     - name: 帮助中心
       href: audience-insights/index.yml
     - name: 功能概述
       href: audience-insights/overview.md
-    - name: 免费试用
-      href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: 新增和更新功能
       href: audience-insights/whats-new-audience-insights.md
     - name: 创建新环境
-      href: audience-insights/home.md
+      href: audience-insights/get-started-paid.md
     - name: 了解模块
       items:
         - name: 引入数据
@@ -34,8 +34,8 @@
           href: audience-insights/connect-power-query.md
         - name: 作为数据源添加 Common Data Model 文件夹
           href: audience-insights/connect-common-data-model.md
-        - name: 添加 Common Data Service 托管数据湖
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: 添加 Dataverse 托管数据湖
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: 数据源的增量刷新
           href: audience-insights/incremental-refresh-data-sources.md
         - name: 实时数据引入
@@ -76,11 +76,11 @@
           href: audience-insights/enrichment-experian.md
         - name: 通过 SFTP 自定义导入扩充
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: 客户细分和度量
+    - name: 客户细分
       items:
         - name: 客户细分概述
           href: audience-insights/segments.md
-        - name: 创建细分和客户组
+        - name: 创建客户细分
           href: audience-insights/segment-builder.md
         - name: 基于度量的建议客户细分
           href: audience-insights/suggested-segments.md
@@ -254,6 +254,8 @@
       items:
         - name: 创建和修改事件
           href: engagement-insights/refined-events.md
+        - name: 识别先前经过身份验证的访问者的 Web 事件
+          href: engagement-insights/unknown-to-known.md
         - name: 导出事件
           href: engagement-insights/export-events.md
     - name: 报告
@@ -304,7 +306,9 @@
       items:
         - name: 删除和导出个人数据
           href: engagement-insights/delete-export-personal-data.md
+    - name: 区域可用性
+      href: engagement-insights/regional-availability.md
     - name: 服务限制
       href: engagement-insights/quotas.md
-- name: 联系技术支持
+- name: 联系支持人员
   href: 'https://admin.powerplatform.microsoft.com/support'

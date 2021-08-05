@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597408"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554424"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>使用基于 Azure 机器学习的模型
 
@@ -52,7 +52,7 @@ Azure 机器学习设计器提供了一个视觉对象画布，您可以在其�
      在设计器中，打开 **在数据集中选择列**，然后选择 **设置为管道参数**，可在其中提供参数的名称。
 
      > [!div class="mx-imgBorder"]
-     > ![设计器中的数据集参数化](media/intelligence-designer-dataset-parameters.png "设计器中的数据集参数化")
+     > ![设计器中的数据集参数化。](media/intelligence-designer-dataset-parameters.png "设计器中的数据集参数化")
    
 * SDK 中的数据集参数 (Python)
    
@@ -78,7 +78,7 @@ Azure 机器学习设计器提供了一个视觉对象画布，您可以在其�
 
 * 设计器提供[导出数据模块](/azure/machine-learning/algorithm-module-reference/export-data)，允许将管道的输出导出到 Azure 存储。 当前，模块必须使用数据存储类型 **Azure Blob 存储** 并对 **数据存储** 和相对 **路径** 进行参数化。 Customer Insights 在管道执行期间使用产品可访问的数据存储和路径替代这些参数。
    > [!div class="mx-imgBorder"]
-   > ![导出数据模型配置](media/intelligence-designer-importdata.png "导出数据模型配置")
+   > ![导出数据模型配置。](media/intelligence-designer-importdata.png "导出数据模型配置")
    
 * 在使用代码编写推理输出时，您可以在工作区中将输出上传到 *已注册数据存储* 内的路径。 如果路径和数据存储在管道中进行了参数化，Customer insights 将能够读取和导入推理输出。 当前，支持采用 csv 格式的单个表格输出。 路径必须包含目录和文件名。
 

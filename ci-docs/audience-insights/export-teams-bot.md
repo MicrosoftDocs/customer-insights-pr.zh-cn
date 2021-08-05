@@ -9,19 +9,19 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 03299610fd41a7e142e3c9723fad56ce7f90e083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267941"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554341"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>用于 Dynamics 365 Customer Insights 的 Teams 机器人（预览）
 
 与 Microsoft Teams 连接以使机器人能够在 Teams 渠道中查找统一客户配置文件。
 
 > [!div class="mx-imgBorder"]
-> ![Teams 机器人显示客户记录](media/teams-bot.png "Teams 机器人显示客户记录")
+> ![Teams 机器人显示客户记录。](media/teams-bot.png "Teams 机器人显示客户记录")
 
 ## <a name="prerequisites"></a>先决条件
 

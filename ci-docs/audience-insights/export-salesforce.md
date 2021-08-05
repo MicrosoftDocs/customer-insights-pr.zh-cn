@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Salesforce Marketing Cloud
 description: 了解如何配置连接和导出到 Salesforce Marketing Cloud。
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 8ce243918c2388e931a98df3bbe576ddf692f707
+ms.sourcegitcommit: 4823684a1399fd66ffecfce21735f2bc90a1733c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314582"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660256"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>将客户细分和其他数据导出到 Salesforce Marketing Cloud（预览）
 
@@ -23,11 +23,6 @@ ms.locfileid: "6314582"
 ## <a name="prerequisites-for-connection"></a>连接的先决条件
 
 - SFTP 主机和相应的管理员凭据的可用性。 [如何为 Salesforce Marketing Cloud 设置 SFTP 位置](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## <a name="known-limitations"></a>已知限制
-
-- 导出的运行时间取决于系统性能。 建议将两个 CPU 内核和 1 GB 内存作为服务器的最低配置。 
-- 在使用建议的最低配置时，导出具有最多 1 亿个客户配置文件的实体可能需要 90 分钟。 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>设置与 Salesforce Marketing Cloud 的连接
 

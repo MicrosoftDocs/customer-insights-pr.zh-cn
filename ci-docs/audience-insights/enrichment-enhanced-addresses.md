@@ -1,7 +1,7 @@
 ---
 title: 地址增强扩充
 description: 使用 Microsoft 模型扩充并标准化客户配置文件的地址信息。
-ms.date: 04/21/2021
+ms.date: 07/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: e0ca731f944da9a7eaae7c2dc2d7568b6386089f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 65db6ce05f4d6f7f7b08ada172fec057027dd310
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305421"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692242"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>使用增强的地址扩充客户配置文件
 
@@ -58,6 +58,10 @@ ms.locfileid: "6305421"
 
 - 澳大利亚
 - 加拿大
+- 法国
+- 德国
+- 意大利
+- 日本
 - 英国
 - 美国
 

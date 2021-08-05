@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 4e7065b61940ef0d7b2a30f96f6225df29e30383
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: 9eb0593f93d713124e4113dcb62c588819f5b97b
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095637"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556296"
 ---
 # <a name="subscription-churn-prediction-preview"></a>订阅流失预测（预览）
 
@@ -63,7 +63,7 @@ ms.locfileid: "6095637"
 1. 在访问群体见解中，转到 **智能** > **预测**。
 1. 选择 **订阅流失模型（预览）** 磁贴并选择 **使用此模型**。
    > [!div class="mx-imgBorder"]
-   > ![具有“使用此模型”按钮的订阅流失模型磁贴](media/subscription-churn-usethismodel.PNG "具有“使用此模型”按钮的订阅流失模型磁贴")
+   > ![具有“使用此模型”按钮的订阅流失模型磁贴。](media/subscription-churn-usethismodel.PNG "具有“使用此模型”按钮的订阅流失模型磁贴")
 
 ### <a name="name-model"></a>命名模型
 
@@ -86,11 +86,11 @@ ms.locfileid: "6095637"
     1. 选择与您的主要客户实体相匹配的 **客户实体**。
     1. 输入一个用于描述关系的名称。
        > [!div class="mx-imgBorder"]
-       > ![显示如何创建客户关系的“订阅历史记录”页](media/subscription-churn-subscriptionhistoryrelationship.PNG "显示如何创建客户关系的“订阅历史记录”页")
+       > ![显示如何创建客户关系的“订阅历史记录”页。](media/subscription-churn-subscriptionhistoryrelationship.PNG "显示如何创建客户关系的“订阅历史记录”页")
 1. 选择 **下一步**。
 1. 将语义字段映射到订阅历史记录实体内的属性并选择 **保存**。 有关字段的说明，请查看[先决条件](#prerequisites)。
    > [!div class="mx-imgBorder"]
-   > ![订阅历史记录页面显示了映射到所选订阅历史记录实体中的字段的语义属性](media/subscription-churn-subscriptionhistorymapping.PNG "订阅历史记录页面显示了映射到所选订阅历史记录实体中的字段的语义属性")
+   > ![订阅历史记录页面显示了映射到所选订阅历史记录实体中的字段的语义属性。](media/subscription-churn-subscriptionhistorymapping.PNG "订阅历史记录页面显示了映射到所选订阅历史记录实体中的字段的语义属性")
 1. 针对 **客户活动** 选择 **添加数据**，然后选择提供客户活动信息的实体，如先决条件中所述。
 1. 选择与您要配置的客户活动类型匹配的活动类型。  如果未看到与所需活动类型匹配的选项，请选择 **新建** 并提供名称。
 1. 您需要配置客户活动实体与客户实体之间的关系。
@@ -101,7 +101,7 @@ ms.locfileid: "6095637"
 1. 将语义字段映射到客户活动实体内的属性并选择 **保存**。 有关字段的说明，请查看[先决条件](#prerequisites)。
 1. （可选）如果您有想要包括的任何其他客户活动，请重复上述步骤。
    > [!div class="mx-imgBorder"]
-   > ![定义实体关系](media/subscription-churn-customeractivitiesmapping.PNG "客户活动页面显示了映射到所选客户活动实体中的字段的语义属性")
+   > ![定义实体关系。](media/subscription-churn-customeractivitiesmapping.PNG "客户活动页面显示了映射到所选客户活动实体中的字段的语义属性")
 1. 选择 **下一步**。
 
 ### <a name="set-schedule-and-review-configuration"></a>设置计划与查看配置
@@ -115,7 +115,7 @@ ms.locfileid: "6095637"
 
 1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
    > [!div class="mx-imgBorder"]
-   > ![“我的预测”页面视图](media/subscription-churn-mypredictions.PNG "“我的预测”页面视图")
+   > ![“我的预测”页面视图。](media/subscription-churn-mypredictions.PNG "“我的预测”页面视图")
 1. 选择要查看的预测。
    - **预测名称：** 创建预测时提供的预测名称。
    - **预测类型：** 用于预测的模型类型
@@ -131,7 +131,7 @@ ms.locfileid: "6095637"
    - **上次刷新**：预测刷新输出实体中的结果的日期。
 1. 选择要查看其结果的预测旁边的垂直省略号并选择 **查看**。
    > [!div class="mx-imgBorder"]
-   > ![预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除](media/subscription-churn-verticalellipses.PNG "预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除")
+   > ![预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除。](media/subscription-churn-verticalellipses.PNG "预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除")
 1. 结果页中有三个主要部分的数据：
     1. **训练模型的性能：** A、B 或 C 为可能的分数。 此分数指示预测的性能，并可帮助您做出关于使用输出实体中存储的结果的决策。
         - 根据以下规则确定分数：
@@ -139,13 +139,13 @@ ms.locfileid: "6095637"
             - **B** 模型能够准确预测总预测的至少 50%，以及对流失客户的准确预测百分比最高可超过比历史平均流失率 10%。
             - **C** 模型准确预测不到总预测的 50%，或者对流失客户的准确预测百分比低于历史平均流失率时。
                > [!div class="mx-imgBorder"]
-               > ![模型性能结果视图](media/subscription-churn-modelperformance.PNG "模型性能结果视图")
+               > ![模型性能结果视图。](media/subscription-churn-modelperformance.PNG "模型性能结果视图")
     1. **流失的可能性（客户数量）：** 基于预测的客户流失风险的客户组。 如果您要创建具有高流失风险的客户细分，此数据可以在以后为您提供帮助。 此类客户细分有助于了解客户细分成员资格应在何处截止。
        > [!div class="mx-imgBorder"]
-       > ![显示流失结果（已分成 0-100% 的范围）分布情况的图形](media/subscription-churn-resultdistribution.PNG "显示流失结果（已分成 0-100% 的范围）分布情况的图形")
+       > ![显示流失结果（已分成 0-100% 的范围）分布情况的图形。](media/subscription-churn-resultdistribution.PNG "显示流失结果（已分成 0-100% 的范围）分布情况的图形")
     1. **最具影响力的因素：** 创建预测时考虑了许多因素。 系统针对模型创建的汇总预测计算了每个因素的重要性。 您可以使用这些因素帮助验证预测结果。 或者，您也可以在以后使用该信息[创建客户细分](segments.md)，这些客户细分可能有助于影响客户流失风险。
        > [!div class="mx-imgBorder"]
-       > ![显示影响因素及其在预测流失结果方面的重要性的列表](media/subscription-churn-influentialfactors.PNG "显示影响因素及其在预测流失结果方面的重要性的列表")
+       > ![显示影响因素及其在预测流失结果方面的重要性的列表。](media/subscription-churn-influentialfactors.PNG "显示影响因素及其在预测流失结果方面的重要性的列表")
 
 ## <a name="manage-predictions"></a>管理预测
 

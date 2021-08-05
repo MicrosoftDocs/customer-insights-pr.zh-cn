@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 04/09/2021
+ms.date: 07/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,19 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c35e73b366fcd5db2ba5a757295ddda6db30efa0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: d12c0a9dd65d31f9ae8a9cafeafab2767d57893e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305237"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555250"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
 使用来自 Microsoft 和其他合作伙伴之类的源的数据来扩充您的客户数据。
 
-:::image type="content" source="media/enrichment-hub-page.png" alt-text="扩充中心页面":::
+:::image type="content" source="media/enrichment-hub-page.png" alt-text="扩充中心页面。":::
 
 在访问群体见解中，转到 **数据** > **扩充** 以使用扩充选项。  
 
@@ -42,9 +43,9 @@ ms.locfileid: "6305237"
 
 转到 **我的扩充** 选项卡以查看所有配置的扩充。 每个扩充表示为一行，其中包含有关扩充的其他信息。
 
-选择一个扩充来查看可用选项。 您还可以选择列表项上的椭圆 (...) 以查看选项。
+选择扩充以查看可用选项。 您还可以选择列表项上的椭圆 (...) 以查看选项。 如果您配置了多个扩充，则可以使用搜索框快速找到它。
 
-:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="用于管理扩充列表中的扩充的选项":::
+:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="用于管理扩充列表中的扩充的选项。":::
 
 - **查看** 扩充详细信息以及扩充的客户资料的数量。
 - **编辑** 扩充配置。
@@ -52,7 +53,7 @@ ms.locfileid: "6305237"
 - **停用** 现有扩充以阻止其在每次执行计划刷新时自动刷新。 来自上一次成功刷新的数据将继续可用。 **激活** 停用扩充以重新启动在每次执行计划刷新时自动刷新。
 - **删除** 扩充。
 
-您可以通过在列表中选择扩充来一次运行或停用多个扩充。 查看和编辑选项不能用作批量操作，一次只能对一个扩充执行。
+通过在列表中选择多个扩充来同时运行或停用它们。 查看和编辑选项不可用作批量操作。 它们一次只适用于一个扩充。
 
 ## <a name="enrichments-and-connections"></a>扩充和连接
 

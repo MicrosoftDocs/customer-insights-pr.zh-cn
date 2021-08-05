@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 01704f78cfe1f6ceeee19ff825fc65150894d4ed
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: bcbafa513c2c61b0280c91aa7ed71e211c32c35c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095545"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556113"
 ---
 # <a name="product-recommendation-prediction-preview"></a>产品建议预测（预览版）
 
@@ -64,7 +64,7 @@ ms.locfileid: "6095545"
 
 1. 选择 **产品建议模型（预览版）** 磁贴并选择 **使用此模型**。
    > [!div class="mx-imgBorder"]
-   > ![具有“使用此模型”按钮的“产品建议”模型磁贴](media/product-recommendation-usethismodel.PNG "具有“使用此模型”按钮的“产品建议”模型磁贴")
+   > ![具有“使用此模型”按钮的“产品建议”模型磁贴。](media/product-recommendation-usethismodel.PNG "具有“使用此模型”按钮的“产品建议”模型磁贴")
 
 1. 查看有关模型要求的信息。 如果您具有所需数据，请选择 **入门**。
 
@@ -93,7 +93,7 @@ ms.locfileid: "6095545"
 
 1. 将语义字段映射到购买历史记录实体中的属性，然后选择 **下一步**。 有关字段的说明，请查看[先决条件](#prerequisites)。
    > [!div class="mx-imgBorder"]
-   > ![定义实体关系](media/product-recommendation-purchasehistorymapping.PNG "购买历史记录页面显示了语义属性，这些语义属性已映射到所选购买历史记录实体中的字段")
+   > ![定义实体关系。](media/product-recommendation-purchasehistorymapping.PNG "购买历史记录页面显示了语义属性，这些语义属性已映射到所选购买历史记录实体中的字段")
 
 1. 如果字段未填充，请配置购买历史记录实体与 *客户* 实体之间的关系。
     1. 选择 **购买历史记录实体**。
@@ -101,7 +101,7 @@ ms.locfileid: "6095545"
     1. 选择与您的主要客户实体相匹配的 **客户实体**。
     1. 输入一个用于描述关系的名称。
        > [!div class="mx-imgBorder"]
-       > ![显示创建与客户的关系的购买历史记录页面](media/model-purchase-join.png "显示创建与客户的关系的购买历史记录页面")
+       > ![显示创建与客户的关系的购买历史记录页面。](media/model-purchase-join.png "显示创建与客户的关系的购买历史记录页面")
 
 1. 选择 **保存**。
 
@@ -145,7 +145,7 @@ ms.locfileid: "6095545"
 
 1. 在 **智能** > **预测** 上转到 **我的预测** 选项卡。
    > [!div class="mx-imgBorder"]
-   > ![“我的预测”页面视图](media/product-recommendation-mypredictions.PNG "“我的预测”页面视图")
+   > ![“我的预测”页面视图。](media/product-recommendation-mypredictions.PNG "“我的预测”页面视图")
 
 1. 选择要查看的预测。
    - **预测名称：** 创建预测时提供的预测名称。
@@ -163,7 +163,7 @@ ms.locfileid: "6095545"
 
 1. 选择要查看其结果的预测旁边的垂直省略号并选择 **查看**。
    > [!div class="mx-imgBorder"]
-   > ![预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除](media/product-recommendation-verticalellipses.PNG "预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除")
+   > ![预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除。](media/product-recommendation-verticalellipses.PNG "预测的垂直省略号菜单中的选项视图，包括编辑、刷新、查看、日志和删除")
 
 1. 结果页面中有五个主要数据部分：
     1. **训练模型的性能：** A、B 或 C 为可能的分数。 此分数指示预测的性能，并可帮助您做出关于使用输出实体中存储的结果的决策。
@@ -173,13 +173,13 @@ ms.locfileid: "6095545"
             - **C** 如果“成功 @ K”指标低于基线，则该模型将被视为 **C** 质量。
                
                > [!div class="mx-imgBorder"]
-               > ![模型性能结果视图](media/product-recommendation-modelperformance.PNG "模型性能结果视图")
+               > ![模型性能结果视图。](media/product-recommendation-modelperformance.PNG "模型性能结果视图")
             - **基线**：该模型按照所有客户的购买数量来获取推荐度最高的产品，并使用该模型标识的学习规则为客户创建一组建议。 然后，将预测结果与按购买该产品的客户数量所计算出的前几个产品进行比较。 如果客户的推荐产品中至少有一种产品（在购买量最高的产品中也出现过），则将推荐的产品视为基线的一部分。 如果在总共 100 个客户中有 10 个客户购买了推荐的产品，则基线将是 10%。
             - **成功 @ K：** 使用交易时间段的验证集，为所有客户创建建议，并将其与交易验证集进行比较。 例如，在 12 个月期间，第 12 个月可以保留为数据验证集。 如果模型根据从前 11 个月中了解到的信息，预测您将在第 12 个月内至少购买一件商品，则客户将增加“成功 @ K”指标。
     
     1. **推荐最多的产品(带计数)：** 为客户预测的前 5 种产品。
        > [!div class="mx-imgBorder"]
-       > ![该图显示了推荐度最高的前 5 种产品](media/product-recommendation-topproducts.PNG "该图显示了推荐度最高的前 5 种产品")
+       > ![该图显示了推荐度最高的前 5 种产品。](media/product-recommendation-topproducts.PNG "该图显示了推荐度最高的前 5 种产品")
     
     1. **关键建议因素**：模型使用客户的交易历史记录提供产品建议。 它根据过去的购买活动了解模式，并找到客户与产品之间的相似之处。 然后利用这些相似之处来生成产品建议。
     下列因素会影响模型生成的产品建议。 
@@ -190,20 +190,20 @@ ms.locfileid: "6095545"
         每个产品建议都受上述一个或多个因素影响。 图表中直观显示了每个影响因素起作用的建议的百分比。 在下面的示例中，100% 的建议受过去的交易影响，60% 的建议受客户相似度影响，22% 的建议受产品相似性影响。 将鼠标悬停在图表中的条形图上，即可查看影响因素所占的确切百分比。
 
         > [!div class="mx-imgBorder"]
-        > ![关键建议因素](media/product-recommendation-keyrecommendationfactors.png "模型为生成产品建议所了解的关键建议因素")
+        > ![关键建议因素。](media/product-recommendation-keyrecommendationfactors.png "模型为生成产品建议所了解的关键建议因素")
        
      
    1. **数据统计信息**：概述了模型考虑的交易数、客户数和产品数。 它基于用于了解模式和生成产品建议的输入数据。
 
       > [!div class="mx-imgBorder"]
-      > ![数据统计信息](media/product-recommendation-datastatistics.png "有关模型为了解模式所使用的外发数据的相关数据统计信息")
+      > ![数据统计信息。](media/product-recommendation-datastatistics.png "有关模型为了解模式所使用的外发数据的相关数据统计信息")
 
       本节显示了模型了解模式和生成产品建议所使用的数据点周围的统计信息。 在模型配置中配置的筛选将应用于模型生成的输出。 但是，模型会利用所有可用的数据来了解模式。 因此，如果您在模型配置中使用产品筛选，则本节将显示模型为了解模式所分析的产品总数，该总数可能与符合定义的筛选标准的产品数不同。
 
    1. **高置信度产品建议：** 向您的客户提供的建议示例，模型认为客户可能会购买这些建议的产品。    
       如果添加了产品目录，则产品 ID 将替换为产品名称。 产品名称提供有关预测的更可操作和直观的信息。
        > [!div class="mx-imgBorder"]
-       > ![该列表显示了适用于部分个别客户的高置信度建议](media/product-recommendation-highconfidence.PNG "该列表显示了适用于部分个别客户的高置信度建议")
+       > ![该列表显示了适用于部分个别客户的高置信度建议。](media/product-recommendation-highconfidence.PNG "该列表显示了适用于部分个别客户的高置信度建议")
 
 ## <a name="manage-predictions"></a>管理预测
 

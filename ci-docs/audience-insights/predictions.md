@@ -9,12 +9,12 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3342328b9eead9bdcb8b41f119a1d0a5823001c8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 31b9b1b709540896c1dbc19f974df4ab056a7b8d
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595890"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692516"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>使用预测填写部分数据
 
@@ -31,11 +31,11 @@ ms.locfileid: "5595890"
 
 若要让组织可以使用预测功能，必须满足以下先决条件：
 
-1. 您的组织有[在 Common Data Service 中设置](/ai-builder/build-model#prerequisites)的实例，它与 Customer Insights 位于同一组织中。
+1. 您的组织[在 Microsoft Dataverse 中设置](/ai-builder/build-model#prerequisites)了一个实例，并且它与 Customer Insights 位于同一组织中。
 
-2. 您的环境将附加到 Common Data Service 实例。
+2. 您的访问群体见解环境已附加到您的 Dataverse 实例。
 
-如果您在 [创建新环境](manage-environments.md)，请在 **创建环境** 对话框中配置该环境，然后选择 **高级**。 如果您已经创建了环境，请转到其设置并选择 **高级**。 在任一情况下，在 **使用预测** 部分中，输入您想要将环境附加到的 Common Data Service 实例 URL。
+如果您在 [创建新环境](get-started-paid.md)，请在 **创建环境** 对话框中配置该环境，然后选择 **高级**。 如果您已经创建了环境，请转到其设置并选择 **高级**。 在任一情况下，在 **使用预测** 部分中，输入您想要将环境附加到的 Dataverse 实例 URL。
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>在客户实体中创建预测
 
@@ -47,17 +47,17 @@ ms.locfileid: "5595890"
 
 4. 找到要预测其值的属性名，然后在 **摘要** 列中选择 **概览** 图标。
    > [!div class="mx-imgBorder"]
-   > ![“概览”图标](media/intelligence-overviewicon.png "“概览”图标")
+   > ![“概览”图标。](media/intelligence-overviewicon.png "“概览”图标")
 
 5. 如果属性的缺失值比例较高，请选择 **预测缺失值** 继续进行预测。
    > [!div class="mx-imgBorder"]
-   > ![“概览”状态，并且显示了预测缺失值按钮](media/intelligence-overviewpredictmissingvalues.png "“概览”状态，并且显示了预测缺失值按钮")
+   > ![“概览”状态，并且显示了预测缺失值按钮。](media/intelligence-overviewpredictmissingvalues.png "“概览”状态，并且显示了预测缺失值按钮")
 
 6. 为预测的结果提供 **显示名称** 和 **输出实体名称**。
 
 7. 预填充的选项列表将显示可在何处将值映射到预测的类别。 在此情况下，您的类别选项只能是 0 或 1，因为它们映射到 true/false 或预测的二进制特征。 在“类别”列，请将要在最终预测中归类为“0”的字段值映射到“0”，并将要在最终预测中归类为“1”的项映射到“1”。
    > [!div class="mx-imgBorder"]
-   > ![显示字段值映射到类别的示例](media/intelligence-categorymapping.png "显示字段值映射到类别的示例")
+   > ![显示字段值映射到类别的示例。](media/intelligence-categorymapping.png "显示字段值映射到类别的示例")
 
 8. 选择 **完成**，然后将处理预测。 处理需要一些时间，具体取决于数据的大小和复杂程度。 将根据您创建的预测的 **输出实体名称** 在新实体中提供结果。
 
@@ -77,7 +77,7 @@ ms.locfileid: "5595890"
 
 5. 如果您创建的细分在源字段中的数据不完整，可以选择预测缺失值。
    > [!div class="mx-imgBorder"]
-   > ![“预测”按钮](media/segments-predictoption.png "“预测”按钮")
+   > ![“预测”按钮。](media/segments-predictoption.png "“预测”按钮")
 
 6. 为预测的结果提供 **显示名称** 和 **输出实体名称**。
 
@@ -93,7 +93,7 @@ ms.locfileid: "5595890"
 
 4. 将在预测的视图中看到一些数据点。
    > [!div class="mx-imgBorder"]
-   > ![“预测”页面](media/intelligence-predictionsviewpage.png "“预测”页面")
+   > ![“预测”页面。](media/intelligence-predictionsviewpage.png "“预测”页面")
 
    - **预测值** 显示您在“字段值到类别映射”阶段创建的映射。 这些是您的数据集中已映射到特定类别的值。
    -**主要影响因素** 是数据集内最有可能影响正在映射到特定类别的字段值的预测置信度的因素。
@@ -139,7 +139,7 @@ ms.locfileid: "5595890"
 
 ## <a name="troubleshooting"></a>疑难解答​​
 
-如果因为错误无法完成附加 Common Data Service 流程，可尝试手动完成此流程。 附加流程中可能发生两种已知问题。
+如果因为错误无法完成附加 Dataverse 流程，可尝试手动完成此流程。 附加流程中可能发生两种已知问题。
 
 - 未安装客户卡加载项解决方案。
     1. 按照说明[安装和配置解决方案](customer-card-add-in.md)。

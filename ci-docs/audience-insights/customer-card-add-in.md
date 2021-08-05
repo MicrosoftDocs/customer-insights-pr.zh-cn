@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 88492943ddbf9ae30c64d92b261433b74f34f682
-ms.sourcegitcommit: d74430270f1b754322287c4f045d7febdae35be2
+ms.openlocfilehash: 6a7137730ab8cc43bc93daf647d9d55d02d96cd8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059577"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692194"
 ---
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
 
@@ -25,7 +25,7 @@ ms.locfileid: "6059577"
 ## <a name="prerequisites"></a>先决条件
 
 - 该加载项仅适用于 Dynamics 365 模型驱动应用，例如 Sales 或 Customer Service 版本 9.0 及更高版本。
-- 若要将 Dynamics 365 数据映射到访问群体见解客户配置文件，则需要[使用 Common Data Service 连接器从 Dynamics 365 应用引入](connect-power-query.md)它们。
+- 若要将 Dynamics 365 数据映射到访问群体见解客户配置文件，则需要[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)它们。
 - 必须将此客户卡加载项的所有 Dynamics 365 用户[作为用户添加](permissions.md)到访问群体见解中以便查看数据。
 - 为了能够查询数据，需要使用访问群体见解中[配置的搜索和筛选功能](search-filter-index.md)。
 - 每个加载项控件都依赖于访问群体见解中的特定数据：
@@ -50,7 +50,7 @@ ms.locfileid: "6059577"
 1. 选择 **Dynamics 365 Customer Insights 客户卡加载项（预览版）** 解决方案的 **显示名称** 链接。
 
    > [!div class="mx-imgBorder"]
-   > ![选择显示名称](media/select-display-name.png "选择显示名称")
+   > ![选择显示名称。](media/select-display-name.png "选择显示名称")
 
 1. 选择 **登录**，然后输入用于配置 Customer Insights 的管理员帐户的凭据。
 
@@ -64,7 +64,7 @@ ms.locfileid: "6059577"
    - 若要与帐户进行映射，请在客户实体中选择与帐户实体的 ID 匹配的字段。
 
    > [!div class="mx-imgBorder"]
-   > ![联系人 ID 字段](media/contact-id-field.png "联系人 ID 字段")
+   > ![联系人 ID 字段。](media/contact-id-field.png "联系人 ID 字段")
 
 1. 选择 **保存配置** 保存设置。
 
@@ -83,7 +83,7 @@ ms.locfileid: "6059577"
 1. 选择要向其添加客户卡控件的联系人窗体。
 
     > [!div class="mx-imgBorder"]
-    > ![选择“联系人”窗体](media/contact-active-forms.png "选择“联系人”窗体")
+    > ![选择“联系人”窗体。](media/contact-active-forms.png "选择“联系人”窗体")
 
 1. 若要添加控件，请在窗体编辑器中，将任何字段从 **字段资源管理器** 拖到要显示该控件的位置。
 
@@ -110,7 +110,7 @@ ms.locfileid: "6059577"
 
 1. 在操作栏中选择 **应用解决方案升级**。
 
-   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="在 Dynamics 365 应用的自定义区域中升级解决方案":::
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="在 Dynamics 365 应用的自定义区域中升级解决方案。":::
 
 1. 开始升级过程后，您将看到一个加载指示器，直到升级完成为止。 如果没有较新版本，升级将显示一条错误消息。
 

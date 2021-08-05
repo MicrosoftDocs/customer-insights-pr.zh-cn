@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 82f6f363497f8f1b45fa84acd49bcaed332e60e8
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72ccb2d86c698939d0ff018b4d36203e793df9ae
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305611"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554837"
 ---
 # <a name="custom-machine-learning-models"></a>自定义机器学习模型
 
@@ -42,7 +42,7 @@ ms.locfileid: "6305611"
 1. 在 **名称** 字段中为自定义模型指定易于识别的名称。
 
    > [!div class="mx-imgBorder"]
-   > ![“新建工作流”窗格的屏幕截图](media/new-workflowv2.png "“新建工作流”窗格的屏幕截图")
+   > ![“新建工作流”窗格的屏幕截图。](media/new-workflowv2.png "“新建工作流”窗格的屏幕截图")
 
 1. 在 **包含 Web 服务的租户** 中，选择包含 Web 服务的组织。
 
@@ -59,7 +59,7 @@ ms.locfileid: "6305611"
    > 自定义模型工作流将应用启发式方法，根据字段的名称和数据类型将 Web 服务输入字段映射到实体属性。 如果 Web 服务字段无法映射到实体，将出现错误。
 
    > [!div class="mx-imgBorder"]
-   > ![配置工作流](media/intelligence-screen2-updated.png "配置工作流")
+   > ![配置工作流。](media/intelligence-screen2-updated.png "配置工作流")
 
 1. 在 **模型输出参数** 步骤中，设置以下属性：
    - 机器学习工作室（经典）
@@ -70,12 +70,12 @@ ms.locfileid: "6305611"
       1. 从下拉列表中选择批处理管道的 **输出路径参数名称**。
 
       > [!div class="mx-imgBorder"]
-      > ![模型输出参数窗格](media/intelligence-screen3-outputparameters.png "模型输出参数窗格")
+      > ![模型输出参数窗格。](media/intelligence-screen3-outputparameters.png "模型输出参数窗格")
 
 1. 从 **结果中的客户 ID** 下拉列表中选择标识客户的匹配属性，然后选择 **保存**。
 
    > [!div class="mx-imgBorder"]
-   > ![将结果与客户数据关联窗格](media/intelligence-screen4-relatetocustomer.png "将结果与客户数据关联窗格")
+   > ![将结果与客户数据关联窗格。](media/intelligence-screen4-relatetocustomer.png "将结果与客户数据关联窗格")
 
 1. 您将看到 **已保存工作流** 屏幕，其中包含有关工作流的详细信息。    
    如果您为 Azure 机器学习管道配置了工作流，访问群体见解将附加到包含该管道的工作区。 访问群体见解将在 Azure 工作区上获取 **参与者** 角色。

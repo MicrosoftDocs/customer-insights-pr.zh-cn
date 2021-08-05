@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597132"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554010"
 ---
 # <a name="customer-profiles-search--filter-index"></a>客户配置文件：搜索和筛选索引
 
 统一客户数据的结果是一个客户配置文件实体，用于提供对总客户群的统一认识。 若要快速 [查找有关特定客户或客户群的信息](customer-profiles.md)，可以在 **客户** 页中配置 **搜索** 和 **筛选** 功能。 继续阅读以了解管理员可以如何编辑 **搜索和筛选索引** 页中的属性，用户可使用这些属性进行搜索和筛选。
 
 > [!div class="mx-imgBorder"]
-> ![搜索筛选器](media/search-filter.png "搜索筛选器")
+> ![搜索筛选器。](media/search-filter.png "搜索筛选器")
 
 ## <a name="add-fields-and-specify-attributes"></a>添加字段和指定属性
 

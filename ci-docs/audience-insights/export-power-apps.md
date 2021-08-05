@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598144"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554102"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps 连接器（预览版）
 
@@ -56,12 +56,12 @@ Customer Insights 是 [Power Apps 中众多数据源](/powerapps/maker/canvas-ap
 1. 请向正在构建的应用添加一个 **库** 控件。
 
 > [!div class="mx-imgBorder"]
-> ![添加库元素](media/connector-powerapps9.png "添加库元素")
+> ![添加库元素。](media/connector-powerapps9.png "添加库元素")
 
 1. 选择 **客户** 充当项的数据源。
 
     > [!div class="mx-imgBorder"]
-    > ![选择数据源](media/choose-datasource-powerapps.png "选择数据源")
+    > ![选择数据源。](media/choose-datasource-powerapps.png "选择数据源")
 
 1. 可以更改右侧的数据面板以选择在库中显示客户实体的哪个字段。
 

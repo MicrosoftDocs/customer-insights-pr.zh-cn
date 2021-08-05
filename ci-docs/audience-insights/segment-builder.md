@@ -1,7 +1,7 @@
 ---
 title: 创建和管理细分
 description: 创建客户细分，以便根据各种属性为客户分组。
-ms.date: 05/03/2021
+ms.date: 07/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,14 +9,24 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 550e509a24701fe5fcdeb9d54311872dc954156c
-ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
+ms.openlocfilehash: 4a19661abea42618ef1848110c05d635a925c68f
+ms.sourcegitcommit: c45b094072cbe3fbf61d1e9e7d220e1f29ffebd0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6064926"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "6685451"
 ---
 # <a name="create-and-manage-segments"></a>创建和管理细分
+
+> [!IMPORTANT]
+> 2021 年 9 月，客户细分创建体验将推出多项更改： 
+> - 客户细分生成器的外观将与重新设计的元素和改进的用户流略有不同。
+> - 客户细分生成器中启用了新的日期时间运算符和改进的日期选取器。
+> - 您将能够在客户细分中添加或删除条件和规则。 
+> - 以“或”条件开头的嵌套规则将变得可用。 您在最外层中不再需要“与”条件。
+> - 用于选择属性的侧窗格将始终可用。
+> - 用于选择实体关系路径的选项。
+> 要试用新的客户细分生成器，请将主题为“请求启用新客户细分生成器”的电子邮件发送到 cihelp [at] microsoft.com。 包括您的组织名称和沙盒环境的 ID。
 
 围绕着统一客户实体及其相关实体定义复杂筛选器。 每个客户细分在处理之后都会创建一组您可以导出并对其执行操作的客户记录。 在 **客户细分** 页面上管理客户细分。 
 
@@ -50,14 +60,14 @@ ms.locfileid: "6064926"
 1. 为所选属性选择运算符和值。
 
    > [!div class="mx-imgBorder"]
-   > ![自定义组筛选器](media/customer-group-numbers.png "客户组筛选器")
+   > ![自定义组筛选器。](media/customer-group-numbers.png "客户组筛选器")
 
-   |数量 |定义  |
+   |数 |定义  |
    |---------|---------|
-   |1     |Entity          |
+   |7     |Entity          |
    |2     |属性          |
    |3    |操作员         |
-   |4    |值         |
+   |4    |价值         |
 
    1. 若要向组添加更多条件，可以使用两种逻辑运算符：
 
@@ -66,7 +76,7 @@ ms.locfileid: "6064926"
       - **OR** 运算符：细分过程中需要满足其中一个条件。 如果要为同一个实体定义多个条件，此选项最有用。
 
       > [!div class="mx-imgBorder"]
-      > ![需要满足其中一个条件时的 OR 运算符](media/segmentation-either-condition.png "需要满足其中一个条件时的 OR 运算符")
+      > ![需要满足其中一个条件时的 OR 运算符。](media/segmentation-either-condition.png "需要满足其中一个条件时的 OR 运算符")
 
       现在可以将 **OR** 运算符嵌套到 **AND** 运算符下，反之则不可以。
 
@@ -74,12 +84,12 @@ ms.locfileid: "6064926"
    选择 **添加组**。
 
       > [!div class="mx-imgBorder"]
-      > ![客户组添加组](media/customer-group-add-group.png "客户组添加组")
+      > ![客户组添加组。](media/customer-group-add-group.png "客户组添加组")
 
    1. 选择一个设置的运算符：**并集**、**交集** 或 **排除**。
 
    > [!div class="mx-imgBorder"]
-   > ![客户组添加联合](media/customer-group-union.png "客户组添加联合")
+   > ![客户组添加联合。](media/customer-group-union.png "客户组添加联合")
 
    - **联合** 用于联合两个组。
 
@@ -90,7 +100,7 @@ ms.locfileid: "6064926"
 1. 如果实体通过[关系](relationships.md)连接到统一客户实体，您需要定义关系路径才能创建有效细分。 添加关系路径中的实体，直到从下拉列表中选择 **客户：CustomerInsights** 实体。 然后，针对每个步骤选择 **所有记录**。
 
    > [!div class="mx-imgBorder"]
-   > ![细分创建过程中的关系路径](media/segments-multiple-relationships.png "细分创建过程中的关系路径")
+   > ![客户细分创建过程中的关系路径。](media/segments-multiple-relationships.png "细分创建过程中的关系路径")
 
 1. 默认情况下，客户细分会生成一个输出实体，其中包含与所定义筛选器匹配的客户配置文件的所有属性。 如果细分市场基于 *客户* 实体以外的其他实体，则可以将这些实体中的更多属性添加到输出实体中。 选择 **项目属性** 以选择将附加到输出实体的属性。  
   
@@ -127,7 +137,7 @@ ms.locfileid: "6064926"
 4. 系统将为您提供 **估算的细分大小**。 可以选择要生成已定义的细分，还是先再次访问该细分以获取不同的细分大小。
 
     > [!div class="mx-imgBorder"]
-    > ![快速细分的名称和估算](media/quick-segment-name.png "快速细分的名称和估算")
+    > ![快速客户细分的名称和估算。](media/quick-segment-name.png "快速细分的名称和估算")
 
 5. 为细分提供 **名称**。 （可选）提供 **显示名称**。
 

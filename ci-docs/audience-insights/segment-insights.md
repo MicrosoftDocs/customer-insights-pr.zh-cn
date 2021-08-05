@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306063"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554974"
 ---
 # <a name="segment-insights-preview"></a>客户细分见解（预览）
 
@@ -44,7 +44,7 @@ ms.locfileid: "6306063"
 完成分析后，在 **客户细分** > **见解(预览)** 上查找有关此见解的详细信息。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="客户细分重叠见解详细信息":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="客户细分重叠见解详细信息。":::
 
 选择一个见解查看分析结果：
 
@@ -77,7 +77,7 @@ ms.locfileid: "6306063"
 完成分析后，在 **客户细分** > **见解(预览)** 上查找有关此见解的详细信息。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="客户细分差异项见解详细信息":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="客户细分差异项见解详细信息。":::
 
 选择一个见解查看分析结果。 差异项分析包含两个选项卡。 **属性** 选项卡列出被视为区分点的配置文件属性。 **度量** 选项卡列出区分点。 每个选项卡包含以下详细信息：
 

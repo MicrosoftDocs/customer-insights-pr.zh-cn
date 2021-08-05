@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596488"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692102"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>使用访问群体见解的 Azure 服务主体连接到 Azure Data Lake Storage Gen2 帐户
 
 使用 Azure 服务的自动化工具应始终具有受限权限。 Azure 提供服务主体，而不是让应用程序以完全特权的用户身份登录。 继续阅读以了解如何使用 Azure 服务主体（而不是存储帐户密钥）通过 Azure Data Lake Storage Gen2 帐户连接访问群体见解。 
 
-您可以使用服务主体安全地[添加或编辑 Common Data Model 文件夹作为数据源](connect-common-data-model.md)或[创建新环境或更新现有环境](manage-environments.md#create-an-environment-in-an-existing-organization)。
+您可以使用服务主体安全地[添加或编辑 Common Data Model 文件夹作为数据源](connect-common-data-model.md)或[创建新环境或更新现有环境](get-started-paid.md)。
 
 > [!IMPORTANT]
 > - 必须为想要使用服务主体的 Azure Data Lake Gen2 存储帐户[启用分层命名空间 (HNS)](/azure/storage/blobs/data-lake-storage-namespace)。
@@ -81,7 +81,7 @@ ms.locfileid: "5596488"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>在附加到访问群体见解的存储帐户中输入 Azure 资源 ID 或 Azure 订阅详细信息。
 
-在访问群体见解中附加 Azure Data Lake 存储帐户以[存储输出数据](manage-environments.md)或[将其用作数据源](connect-common-data-service-lake.md)。 通过选择 Azure Data Lake 选项，您可以在基于资源或基于订阅的方法之间进行选择。
+在访问群体见解中附加 Azure Data Lake 存储帐户以[存储输出数据](manage-environments.md)或[将其用作数据源](connect-dataverse-managed-lake.md)。 通过选择 Azure Data Lake 选项，您可以在基于资源或基于订阅的方法之间进行选择。
 
 按照以下步骤提供所选方法的必要信息。
 

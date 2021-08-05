@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596764"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554194"
 ---
 # <a name="similar-customers-preview"></a>相似客户（预览）
 
@@ -50,7 +50,7 @@ ms.locfileid: "5596764"
 处理完相似客户细分后，您会在 **客户细分** 页面上找到列出的新客户细分。
 
 > [!div class="mx-imgBorder"]
-> ![相似客户细分](media/expanded-segment.png "相似客户细分")
+> ![相似客户细分。](media/expanded-segment.png "相似客户细分")
 
 在操作栏中选择 **视图** 打开客户细分详细信息。 此视图包含有关[相似性分数](#about-similarity-scores)之间的结果分布的信息。 您还会在 **客户细分成员预览** 中找到相似性分数值。
 

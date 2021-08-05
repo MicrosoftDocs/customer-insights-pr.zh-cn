@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309809"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555342"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>使用 Experian 中的人口统计信息扩充客户配置文件（预览）
 
@@ -39,7 +39,7 @@ Experian 是消费者和企业信用报告以及市场营销服务领域的全�
 1. 在 Experian 磁贴上选择 **扩充我的数据**。
 
    > [!div class="mx-imgBorder"]
-   > ![Experian 磁贴](media/experian-tile.png "Experian tile")
+   > ![Experian 磁贴。](media/experian-tile.png "Experian tile")
    > 
 
 1. 从下拉列表中选择[连接](connections.md)。 如果没有连接可用，请联系管理员。 如果您是管理员，可以通过选择 **添加连接** 并从下拉列表中选择 Experian 来创建连接。 

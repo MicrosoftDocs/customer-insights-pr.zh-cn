@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 49dad45c951f3c00d77ddd99faec48bfccada8b0
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72f3bd1f32b813fef04dc14618331e3d707b5052
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306109"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556250"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>交易流失预测（预览）示例指南
 
@@ -47,7 +47,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
    - **CreatedOn**：日期/时间/区域
 
    [!div class="mx-imgBorder"]
-   ![将 DoB 转换为日期](media/ecommerce-dob-date.PNG "将出生日期转换为日期")
+   ![将 DoB 转换为日期。](media/ecommerce-dob-date.PNG "将出生日期转换为日期")
 
 1. 在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommerceContacts**
 

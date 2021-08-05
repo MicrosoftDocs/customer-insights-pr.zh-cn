@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 220e01a06711a5d35b8df09e265017a6d8fd0490
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259180"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650031"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>使用 Microsoft Dataverse 中的 Customer Insights 数据
 
@@ -24,11 +24,11 @@ Customer Insights 提供了使输出实体在 [Microsoft Dataverse](/powerapps/m
 
 **具有现有 Dataverse 环境的组织**
 
-当管理员设置访问群体见解时，已经使用 Dataverse 的组织可以[使用他们现有的 Dataverse 环境之一](manage-environments.md#create-an-environment-in-an-existing-organization)。 通过提供 Dataverse 环境 URL，它将附加到其新访问群体见解环境。 为了确保可能的最佳性能，Customer Insights 和 Dataverse 环境必须托管在同一区域。
+当管理员设置访问群体见解时，已经使用 Dataverse 的组织可以[使用他们现有的 Dataverse 环境之一](get-started-paid.md)。 通过提供 Dataverse 环境 URL，它将附加到其新访问群体见解环境。 为了确保可能的最佳性能，Customer Insights 和 Dataverse 环境必须托管在同一区域。
 
 要附加 Dataverse 环境，请在创建访问群体见解环境时扩展 **高级设置**。 提供 **Microsoft Dataverse 环境 URL** 并选择相应复选框以 **启用数据共享**。
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="替换":::
 
 **新建组织**
 

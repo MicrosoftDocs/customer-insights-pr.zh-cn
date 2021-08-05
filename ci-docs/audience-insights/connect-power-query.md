@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305880"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554672"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>连接到 Power Query 数据源
 
@@ -42,7 +42,7 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 1. 利用 **Power Query - 编辑查询** 对话框，您可以查看和优化数据。 系统在您的所选数据源中识别出的实体在左侧窗格中显示。
 
    > [!div class="mx-imgBorder"]
-   > ![编辑查询对话框](media/data-manager-configure-edit-queries.png "编辑查询对话框")
+   > ![编辑查询对话框。](media/data-manager-configure-edit-queries.png "编辑查询对话框")
 
 1. 还可以转换数据。 选择要编辑或转换的实体。 使用 Power Query 窗口中的选项应用转换。 每个转换在 **应用的步骤** 下列出。 Power Query 提供了很多预建的转换选项。 有关详细信息，请参阅 [Power Query 转换](/power-query/power-query-what-is-power-query#transformations)。
 
@@ -75,7 +75,7 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 2. 选择您要更改的数据源旁边的垂直省略号，然后从下拉菜单中选择 **编辑**。
 
    > [!div class="mx-imgBorder"]
-   > ![编辑选项](media/edit-option-data-sources.png "编辑选项")
+   > ![编辑选项。](media/edit-option-data-sources.png "编辑选项")
 
 3. 按照 [创建新数据源](#create-a-new-data-source)一节中所述，在 **Power Query - 编辑查询** 对话框中应用更改和转换。
 

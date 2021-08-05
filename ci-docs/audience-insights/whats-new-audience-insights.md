@@ -1,7 +1,7 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 06/15/2021
+ms.date: 07/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
-ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
+ms.openlocfilehash: 1c54d74c999eb4776074951a129019843017964e
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6263240"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692378"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
@@ -26,6 +26,28 @@ ms.locfileid: "6263240"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="june-2021-updates"></a>2021 年 6 月更新
+
+2021 年 6 月的更新中包括多项功能、性能升级和 Bug 修复。
+
+### <a name="data-ingestion"></a>数据引入
+
+- **改进的数据统一进度更新** 您现在可以在[数据统一过程](data-unification.md)步骤中查看更精细、改进的动态状态更新。 通过此功能，您可以跟踪详细进度，以了解流程，并在任何步骤需要关注时采取措施。
+
+### <a name="extensibility"></a>扩展性
+
+- **将客户细分和其他数据导出到 Salesforce Marketing Cloud** 我们已扩展导出目的地以包括 [Salesforce Marketing Cloud](export-salesforce.md)。 您现在可以通过品牌化 SFTP 导出将客户细分和其他类型的数据导出到 Salesforce Marketing Cloud。 数据导入可以在 Salesforce 中完全自动化，并用于创建更有效的市场营销活动。  
+ 
+- **将客户细分导出到 ActiveCampaign** 我们已扩展导出目的地以包括[可用市场活动](export-active-campaign.md)。 您现在可以导出客户细分，以在 ActiveCampaign 中生成营销活动、运行电子邮件市场营销，以及与特定客户组合作。
+ 
+- **将客户细分导出到 Sendinblue** 我们已扩展导出目的地以包括 [Sendinblue](export-sendinblue.md)。 您现在可以导出客户细分，以通过 Sendinblue 生成营销活动、运行电子邮件市场营销，以及与特定客户组合作。
+ 
+### <a name="ux-updates"></a>UX 更新 
+
+- **新的和增强的客户页面和配置文件详细信息页面** 我们重新设计了客户页面和配置文件详细信息页面，以改善用户体验和提升性能。 这些更改使您可以查看、排序、搜索和筛选客户。 筛选器现在显示在 URL 中，以便与其他用户无缝共享搜索结果。 搜索结果也可以保存为客户细分。    
+  客户配置文件的详细信息页现在按各个子节（例如人口统计数据、ID 和其他配置文件属性）对数据进行分组，以提高可读性。 现在，配置文件详细信息页上的其他节更具交互性。 例如，“活动”节现在允许进行筛选和排序。
+
 
 ## <a name="may-2021-updates"></a>2021 年 5 月更新
 
@@ -170,7 +192,7 @@ ms.locfileid: "6263240"
 
 - **复制环境支持更多类型的数据源**
 
-  管理员可以将环境配置复制到同一组织的新环境中。 对于使用基于 Common Data Service 数据湖或 Common Data Model 文件夹的数据源的情况，此功能会扩展复制环境功能。
+  管理员可以将环境配置复制到同一组织的新环境中。 对于使用基于 Microsoft Dataverse 托管 Data Lake 或 Common Data Model 文件夹的数据源的情况，此功能扩展了复制环境功能。
 
 ## <a name="january-2021-updates"></a>2021 年 1 月更新
 
