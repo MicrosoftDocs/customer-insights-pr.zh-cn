@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 Customer Insights 访问群体见解概述
 description: Dynamics 365 Customer Insights 访问群体见解概述。
-ms.date: 01/18/2021
+ms.date: 08/04/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,16 +10,16 @@ author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 19fc79873d32f268e194c4ebac4cf469a8b9b09f
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: 15cc495359af1faefe32225ae490fd7e7b6b08cc7a411e0a9804da6ec704099c
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539104"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034349"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Dynamics 365 Customer Insights 访问群体见解概述
 
-访问群体见解可帮助您更深入地了解客户。 连接来自各种事务、行为和观察源的数据以建立 360 度的客户视图。 使用这些见解推动以客户为中心的体验和过程。 统一和理解客户数据，并利用数据来获得智能见解和采取行动。
+[访问群体见解是 Dynamics 365 Customer Insights 的一项功能](https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/)，可帮助您加深对客户的了解。 连接来自各种事务、行为和观察源的数据以建立 360 度的客户视图。 使用这些见解推动以客户为中心的体验和过程。 统一和理解客户数据，并利用数据来获得智能见解和采取行动。
 
 ## <a name="main-benefits"></a>主要好处 
 
@@ -34,9 +34,9 @@ ms.locfileid: "6539104"
 
 - **增强业务流程和个性化的客户体验**
 
-  - 在渠道之间推动个性化的参与 — 使用已经注入了市场营销、销售和服务专业人士已经在日常使用的业务应用程序中的自带上下文客户见解和度身定制的客户资料卡助力这些专业人士
-  - 基于可自定义的资料、业务度量和细分自动化以客户为中心的体验和过程。
-  - 启用和扩展以 [Microsoft Power Platform](https://powerplatform.microsoft.com/) 为基础建立的业务线体验。 从 PowerApps 中使用功能强大的低代码方法快速生成具有嵌入式见解的应用程序。  
+  - 推动渠道之间的个性化参与 — 帮助市场营销、销售和服务专业人员。 使用现成的见解和与已在使用的业务应用程序集成的度身定制客户配置文件卡。
+  - 基于可自定义的资料、业务度量和细分自动化体验和过程。
+  - 启用和扩展以 [Microsoft Power Platform](https://powerplatform.microsoft.com/) 为基础建立的业务线体验。 从 Power Apps 中使用功能强大的低代码方法快速生成具有嵌入式见解的应用程序。  
 
 ## <a name="key-audiences"></a>主要访问群体
 
@@ -50,13 +50,18 @@ ms.locfileid: "6539104"
 
 - **业务用户：**
 
-  - 洞察 360 度的客户资料和客户旅程的端到端视图。
+  - 洞察 360 度的客户配置文件和客户旅程。
   - 使用预置包查看 Dynamics 365 业务流程内的 360 度客户数据。
 
 - **业务分析员：**
 
   - 生成可自定义的配置文件，定义度量，创建客户细分，以及从预测性分析中受益，从而获取 360 度的客户视图（特定于组织）。  
-  - 将现成的连接器用于多个 Microsoft 和第三方应用程序或 API，以进一步处理见解。
+  - 将现成连接器用于多个 Microsoft 和第三方应用程序或 API 以处理见解。
 
+## <a name="pricing-and-licensing"></a>定价和授权
+
+Customer Insights 按租户许可，拥有多项功能。 授权的功能包括一组配置文件、日常系统刷新、Power Platform 请求和两种环境。 可购买更多容量和许可证以增加默认配额。 
+- 详细容量和权利：[Dynamics 365 许可指南](https://go.microsoft.com/fwlink/?LinkId=866544)
+- 定价概述 ：[Dynamics 365 定价](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

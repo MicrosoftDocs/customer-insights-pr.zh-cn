@@ -1,7 +1,7 @@
 ---
 title: Common Data Model 中的 Customer Insights 实体架构
 description: 使用 Common Data Model 中的实体。
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
+ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692294"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380732"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model 中的实体架构
 
@@ -42,7 +42,7 @@ ms.locfileid: "6692294"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>使用 Common Data Model 实体导航器查看实体
 
-您可以在 [Common Data Model 实体导航器中](https://microsoft.github.io/CDM/)查看实体。 选择 **从 GitHub 加载!** 按钮，然后导航到 **foundationCommon** > **crmCommon** > **解决方案** > **customerInsights**，可在这里找到 Customer Insights 实体及其定义的列表。
+您可以在 [Common Data Model 实体导航器中](https://microsoft.github.io/CDM/)查看实体。 从“Insights 应用程序”部分选择一个实体，以便获取 Customer Insights 实体的列表及其定义。
 > [!div class="mx-imgBorder"]
 > ![CDM 实体导航器，其中显示了 CustomerActivity 实体。](media/CDM-entity-navigator.png "CDM 实体导航器，其中显示了 CustomerActivity 实体")
 

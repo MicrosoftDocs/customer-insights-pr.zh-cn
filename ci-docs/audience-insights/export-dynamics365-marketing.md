@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Dynamics 365 Marketing
 description: 了解如何配置连接和导出到 Dynamics 365 Marketing。
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692470"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417194"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>在 Dynamics 365 Marketing 中使用客户细分（预览版）
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-使用[客户细分](segments.md)来生成市场活动，并通过 Dynamics 365 Marketing 联系特定客户组。 有关详细信息，请参阅[将来自 Dynamics 365 Customer Insights 的客户细分与 Dynamics 365 Marketing 结合使用](/dynamics365/marketing/customer-insights-segments)
+使用[客户细分](segments.md)来生成市场活动，并通过 Dynamics 365 Marketing 联系特定客户组。 有关详细信息，请参阅[将来自 Dynamics 365 Customer Insights 的客户细分与 Dynamics 365 Marketing 结合使用](/dynamics365/marketing/customer-insights-segments)。
+
+如果要将 Dynamics 365 Marketing 的新功能用于 Dataverse 组织中的实时客户旅程构建，则无需创建到 Dynamics 365 Marketing 的标准导出。 连接 Marketing 和 Customer Insights 之后，可以直接在 Dynamics 365 Marketing 中使用访问群体见解中的联系人和客户细分。 删除现有导出之前，请查看有关[如何连接访问群体见解与 Dynamics 365 Marketing 客户旅程构建](/dynamics365/marketing/real-time-marketing-ci-profile)的文档。
 
 ## <a name="prerequisite-for-a-connection"></a>连接的先决条件
 

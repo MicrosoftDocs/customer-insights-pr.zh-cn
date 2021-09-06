@@ -3,21 +3,21 @@ title: 产品概述
 author: m-hartmann
 description: 获取 Dynamics 365 Customer Insights 及其功能的概述。
 ms.author: mhart
-ms.date: 02/16/2021
+ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 1bc75959229fd2ffef9a5fd5617889888eb72e55
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: 651bd151a77b9d7f44d5fcca15da0f131b9fb3f07ffc89bfac9c0aa6f799e9b1
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539378"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036500"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的产品概述
 
-Dynamics 365 Customer Insights 是 Microsoft 的客户数据平台 (CDP) 的一部分，可帮助您提供个性化的客户体验。 利用该平台的功能，可以深入了解您的客户是谁，以及他们如何通过您的平台互动。 统一跨多种来源的客户数据以获得单一的客户视图。
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) 是 Microsoft 的客户数据平台 (CDP) 的一部分，可帮助您提供个性化的客户体验。 利用该平台的功能，可以深入了解您的客户是谁，以及他们如何通过您的平台互动。 统一跨多种来源的客户数据以获得单一的客户视图。
 
 
 - [访问群体见解](audience-insights/overview.md)可帮助您将业务转换为以客户为中心的组织。 市场营销、销售和服务专业人员具有个性化体验所需的见解。 连接交易、行为和观察来源的数据以创建 360 度客户视图。 使用设计用于提供可采取行动的见解的 CDP，以更快显示结果。 

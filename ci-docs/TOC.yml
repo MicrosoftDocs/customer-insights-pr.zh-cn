@@ -150,7 +150,7 @@
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe 体验平台
+            - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
@@ -166,6 +166,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -310,5 +312,13 @@
       href: engagement-insights/regional-availability.md
     - name: 服务限制
       href: engagement-insights/quotas.md
-- name: 联系支持人员
-  href: 'https://admin.powerplatform.microsoft.com/support'
+- name: 集成访问群体见解与参与见解
+  items:
+    - name: 链接访问群体见解与参与见解
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: 在参与见解报告中使用访问群体见解客户细分
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: 使用人口统计维度拆分行为数据
+      href: engagement-insights/curate-dimensions.md
+- name: 获取支持
+  href: 'https://dynamics.microsoft.com/en-us/support/'

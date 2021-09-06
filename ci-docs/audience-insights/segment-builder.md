@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4a19661abea42618ef1848110c05d635a925c68f
-ms.sourcegitcommit: c45b094072cbe3fbf61d1e9e7d220e1f29ffebd0
+ms.openlocfilehash: e759872643cc7387cf732d73c7a320ae8901e5a9
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "6685451"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377777"
 ---
 # <a name="create-and-manage-segments"></a>创建和管理细分
 
@@ -27,6 +27,23 @@ ms.locfileid: "6685451"
 > - 用于选择属性的侧窗格将始终可用。
 > - 用于选择实体关系路径的选项。
 > 要试用新的客户细分生成器，请将主题为“请求启用新客户细分生成器”的电子邮件发送到 cihelp [at] microsoft.com。 包括您的组织名称和沙盒环境的 ID。
+> :::image type="content" source="media/segment-builder-overview.png" alt-text="客户细分生成器的元素。" lightbox="media/segment-builder-overview.png":::
+>
+> 1 - 使用规则和子规则组织您的客户细分。 每个规则或子规则都由条件构成。 使用逻辑运算符组合条件
+>
+> 2 - 选择应用于规则的实体之间的[关系路径](relationships.md)。 关系路径决定条件中可使用哪些属性。
+>
+> 3 - 管理规则和子规则。 更改规则的位置或删除规则。
+>
+> 4 - 使用子规则添加条件和创建适当的嵌套级别。
+>
+> 5 - 为相连规则应用集运算。
+>
+> 6 - 使用属性窗格添加可用实体属性或基于属性创建条件。 此窗格根据所选关系路径显示所选规则的可用实体和属性的列表。
+>
+> 7 - 基于属性向现有规则和子规则添加条件，或向新规则添加条件。
+>
+> 8 - 创建客户细分时撤消和恢复更改。
 
 围绕着统一客户实体及其相关实体定义复杂筛选器。 每个客户细分在处理之后都会创建一组您可以导出并对其执行操作的客户记录。 在 **客户细分** 页面上管理客户细分。 
 
@@ -147,6 +164,6 @@ ms.locfileid: "6685451"
 
 ## <a name="next-steps"></a>后续步骤
 
-[导出细分](export-destinations.md)和浏览[客户卡](customer-card-add-in.md)和[连接器](export-power-bi.md)以获取客户级见解。
+[导出客户细分](export-destinations.md)和浏览 [Customer Card 集成](customer-card-add-in.md)，以便在其他应用程序中使用客户细分。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

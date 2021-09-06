@@ -4,17 +4,17 @@ metadata:
   author: m-hartmann
   description: 查找相关文章以开始了解帮助内容。
   ms.author: mhart
-  ms.date: 10/29/2020
+  ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: 1446a2bcb24739187a37b2024c9a6070ab008989d722ebf84ef5259ec2ee4d5c
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598445"
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036546"
 title: Dynamics 365 Customer Insights 文档
-summary: 查找有用资源以开始了解有关 Customer Insights 的特性和功能。
+summary: 查找有用的资源以入门和开始了解 Customer Insights 的功能和特性。
 landingContent:
 - title: 了解 Customer Insights
   linkLists:
@@ -23,9 +23,9 @@ landingContent:
     - text: Customer Insights 概述
       url: overview.md
     - text: 发布计划
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: 访问您的环境
-      url: https://home.ci.ai.dynamics.com/
+      url: /dynamics365-release-plan/
+    - text: 发现 CDP
+      url: https://dynamics.microsoft.com/ai/customer-insights/
 - title: 访问群体见解入门
   linkLists:
   - linkListType: get-started

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: d5b9566ec88096fec31d8e164a51598159ec26d4
-ms.sourcegitcommit: ece48f80a7b470fb33cd36e3096b4f1e9190433a
+ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6171153"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035220"
 ---
 # <a name="relationships-between-entities"></a>实体之间的关系
 
@@ -82,7 +82,7 @@ ms.locfileid: "6171153"
 
 ### <a name="explore-the-relationship-visualizer"></a>探索关系可视化工具
 
-关系可视化工具会显示已连接实体及其基数之间的现有关系的网络图表。
+关系可视化工具会显示已连接实体及其基数之间的现有关系的网络图表。 它还可以可视化关系路径。
 
 要自定义视图，您可以通过将框拖到画布上来更改框的位置。
 
@@ -92,6 +92,20 @@ ms.locfileid: "6171153"
 - **导出为图像**：将当前视图保存为图像文件。
 - **更改为水平/垂直布局**：更改实体和关系的对齐。
 - **编辑**：更新编辑窗格中自定义关系的属性并保存更改。
+
+### <a name="relationship-path"></a>关系路径
+
+关系路径描述通过源实体与目标实体之间的关系连接的实体。 其使用场景为：要创建的客户细分或度量中包含的实体是非统一配置文件实体，并且可通过多个选项到达统一配置文件实体。
+
+关系路径通知系统应通过哪些关系访问统一配置文件实体。 不同的关系路径可能产生不同的结果。
+
+例如，实体 *eCommerce_eCommercePurchases* 与统一配置文件 *Customer* 实体之间的关系如下：
+
+- eCommerce_eCommercePurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
+
+关系路径确定在为度量或客户细分创建规则时可以使用哪些实体。 如果选择关系路径最长的选项，产生的结果较少，因为匹配记录需要是所有实体的其中一部分。 在此示例中，一位客户必须已通过 e-commerce(eCommerce_eCommercePurchases) 在销售点 (POS_posPurchases) 购买了货物，并且参加了我们的忠诚度计划 (loyaltyScheme_loyCustomers)。 如果选择第一个选项，可能会获得更多结果，因为客户只需要存在于一个附加实体中。
 
 ## <a name="manage-existing-relationships"></a>管理现有关系 
 
@@ -105,6 +119,6 @@ ms.locfileid: "6171153"
 
 ## <a name="next-step"></a>下一步
 
-系统关系和自定义关系用于基于多个数据源[创建不再分散的客户细分](segments.md)。
+系统和自定义关系用于基于不再孤立的多个数据源[创建客户细分](segments.md)和[度量](measures.md)。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
