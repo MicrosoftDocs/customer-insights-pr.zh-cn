@@ -1,6 +1,6 @@
 ---
-title: 将 Customer Insights 数据导出到 Adobe 体验平台
-description: 了解如何在 Adobe 体验平台中使用访问群体见解客户细分。
+title: 将 Customer Insights 数据导出到 Adobe Experience Platform
+description: 了解如何在 Adobe Experience Platform 中使用访问群体见解客户细分。
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,31 +9,31 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305513"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032106"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>在 Adobe 体验平台（预览版）中使用 Customer Insights 客户细分。
+# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>在 Adobe Experience Platform 中使用 Customer Insights 客户细分（预览版）
 
-作为 Dynamics 365 Customer Insights 中访问群体见解的用户，您可能创建了客户细分，通过定位相关访问群体使市场营销活动更高效。 要使用 Adobe 体验平台和应用程序（如 Adobe Campaign Standard）内访问群体见解中的客户细分，您需要执行本文中概述的几个步骤。
+作为 Dynamics 365 Customer Insights 中访问群体见解的用户，您可能创建了客户细分，通过定位相关访问群体使市场营销活动更高效。 若要在 Adobe Experience Platform 和 Adobe Campaign Standard 之类应用程序中使用来自访问群体见解的客户细分，需要执行本文中概述的一些步骤。
 
 :::image type="content" source="media/AEP-flow.png" alt-text="本文中概述的步骤的流程图。":::
 
 ## <a name="prerequisites"></a>先决条件
 
 -   Dynamics 365 Customer Insights 许可证
--   Adobe 体验平台许可证
+-   Adobe Experience Platform 许可证
 -   Adobe Campaign Standard 许可证
 -   Azure Blob 存储帐户
 
 ## <a name="campaign-overview"></a>市场活动概述
 
-为了更好地了解如何使用 Adobe 体验平台内访问群体见解中的客户细分，我们来看看虚构的示例活动。
+若要更好地了解如何在 Adobe Experience Platform 中使用来自访问群体见解的细分市场，请参阅一个虚拟示例市场活动。
 
-假设贵公司每月为美国客户提供基于订阅的服务。 您希望确定其订阅应在未来八天内续订但尚未续订的客户。 为了留住这些客户，您希望使用 Adobe 体验平台通过电子邮件向他们发送促销优惠。
+假设贵公司每月为美国客户提供基于订阅的服务。 您希望确定其订阅应在未来八天内续订但尚未续订的客户。 若要留住这些客户，请使用 Adobe Experience Platform 通过电子邮件向其发送促销优惠。
 
 在此示例中，我们希望运行一次促销电子邮件活动。 本文不涵盖多次运行活动的用例。
 
@@ -93,7 +93,7 @@ ms.locfileid: "6305513"
 现在，您可以[按需导出客户细分](export-destinations.md#run-exports-on-demand)。 导出也会在每次[计划刷新](system.md)时运行。
 
 > [!NOTE]
-> 确保导出的客户细分的记录数量在 Adobe Campaign Standard 许可证的允许限度内。
+> 确保导出的客户细分中的记录数量在 Adobe Campaign Standard 许可证的允许限制范围之内。
 
 导出的数据存储在上面配置的 Azure Blob 存储容器中。 系统在您的容器中自动创建了以下文件夹路径：
 
@@ -105,29 +105,29 @@ ms.locfileid: "6305513"
 
 示例：Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
-## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>在 Adobe 体验平台中定义体验数据模型 (XDM) 
+## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>在 Adobe Experience Platform 中定义经验数据模型 (XDM)
 
-在 Adobe 体验平台中使用访问群体见解中的导出数据之前，您需要定义“体验数据模型”架构并[配置实时客户配置文件的数据](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)。
+需要先定义经验数据模型架构并[配置实时客户配置文件的数据](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials)，才能在 Adobe Experience Platform 内使用访问群体见解的数据。
 
 了解 [XDM 是什么](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)，并了解[架构组合的基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema)。
 
-## <a name="import-data-into-adobe-experience-platform"></a>将数据导入 Adobe 体验平台
+## <a name="import-data-into-adobe-experience-platform"></a>将数据导入 Adobe Experience Platform。
 
-现在一切都准备好了，我们需要将访问群体见解中准备好的访问群体数据导入到 Adobe 体验平台。
+一切准备就绪，我们需要将准备好的访问群体数据从访问群体见解导入到 Adobe Experience Platform 中。
 
 首先，[创建 Azure Blob 存储源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started)。    
 
-定义源连接后，为云存储批处理连接[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials)，以将访问群体见解中的客户细分输出导入到 Adobe 体验平台中。
+定义源连接之后，请为云存储批处理连接[配置数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials)，以便将访问群体见解的客户细分输出导入到 Adobe Experience Platform 中。
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>在 Adobe Campaign Standard 中创建访问群体
 
-若要发送此市场活动的电子邮件，我们将使用 Adobe Campaign Standard。 将数据导入到 Adobe 体验平台后，我们需要使用 Adobe 体验平台中的数据在 Adobe Campaign Standard 中[创建一个访问群体](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission)。
+若要发送此市场活动的电子邮件，我们将使用 Adobe Campaign Standard。 将数据导入到 Adobe Experience Platform 中之后，我们需要使用 Adobe Experience Platform 中的数据在 Adobe Campaign Standard 中[创建访问群体](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission)。
 
 
-了解如何在 Adobe Campaign Standard 中[使用客户细分生成器](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html)，以基于 Adobe 体验平台中的数据定义访问群体。
+了解如何在  Adobe Campaign Standard 中[使用客户细分生成器](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html)基于 Adobe Experience Platform 中的数据定义访问群体。
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>使用 Adobe Campaign Standard 创建和发送电子邮件
 
 创建电子邮件内容，然后[测试并发送](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages)电子邮件。
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Adobe Campaign Standard 中的包含续订优惠的样本电子邮件。":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Adobe Campaign Standard 中包含续签优惠的示例电子邮件。":::

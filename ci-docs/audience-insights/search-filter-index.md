@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: e53d87c4f633cba09fecbc1c219f0ac2ec6bb5598a7902cbcf7398d26d6d7c6b
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554010"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7029388"
 ---
 # <a name="customer-profiles-search--filter-index"></a>客户配置文件：搜索和筛选索引
 
@@ -60,7 +60,7 @@ ms.locfileid: "6554010"
 
 ## <a name="next-steps"></a>后续步骤
 
-转到 **客户** 页以搜索客户配置文件，或使用索引字段来查看所有客户配置文件的子集。
+检查[统一配置文件](customer-profiles.md)页面以搜索配置文件，或使用索引字段以查看所有统一配置文件的子集。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
