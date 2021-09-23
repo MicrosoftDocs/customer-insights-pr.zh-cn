@@ -10,12 +10,12 @@ author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 15cc495359af1faefe32225ae490fd7e7b6b08cc7a411e0a9804da6ec704099c
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 925cb5c2ccb4279ae5db2eb927a356708d310360
+ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034349"
+ms.lasthandoff: 09/06/2021
+ms.locfileid: "7474046"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Dynamics 365 Customer Insights 访问群体见解概述
 
@@ -57,11 +57,5 @@ ms.locfileid: "7034349"
 
   - 生成可自定义的配置文件，定义度量，创建客户细分，以及从预测性分析中受益，从而获取 360 度的客户视图（特定于组织）。  
   - 将现成连接器用于多个 Microsoft 和第三方应用程序或 API 以处理见解。
-
-## <a name="pricing-and-licensing"></a>定价和授权
-
-Customer Insights 按租户许可，拥有多项功能。 授权的功能包括一组配置文件、日常系统刷新、Power Platform 请求和两种环境。 可购买更多容量和许可证以增加默认配额。 
-- 详细容量和权利：[Dynamics 365 许可指南](https://go.microsoft.com/fwlink/?LinkId=866544)
-- 定价概述 ：[Dynamics 365 定价](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

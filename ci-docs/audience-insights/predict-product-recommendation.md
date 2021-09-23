@@ -1,20 +1,20 @@
 ---
 title: 产品建议预测
 description: 预测客户可能会购买或与其交互的产品。
-ms.date: 03/17/2021
+ms.date: 09/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: zacookmsft
-ms.author: zacook
+author: wmelewong
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 60d511181aa85e3e939eff3e5931f0de7807c01c8f38134ebca5c5604cd53871
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034945"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494528"
 ---
 # <a name="product-recommendation-prediction-preview"></a>产品建议预测（预览版）
 
@@ -89,23 +89,24 @@ ms.locfileid: "7034945"
 
 ### <a name="add-required-data"></a>添加所需数据
 
-1. 针对 **客户交易历史记录** 选择 **添加数据**，然后选择提供交易/购买历史记录信息的实体，如[先决条件](#prerequisites)中所述。
+1. 选择 **添加数据**，然后在包含必需的转换信息或购买历史记录信息的侧窗格中选择活动类型。
 
-1. 将语义字段映射到购买历史记录实体中的属性，然后选择 **下一步**。 有关字段的说明，请查看[先决条件](#prerequisites)。
-   > [!div class="mx-imgBorder"]
-   > ![定义实体关系。](media/product-recommendation-purchasehistorymapping.PNG "购买历史记录页面显示了语义属性，这些语义属性已映射到所选购买历史记录实体中的字段")
+1. 在 **选择活动** 下，从所选活动中选择要重点计算的特定活动。
 
-1. 如果字段未填充，请配置购买历史记录实体与 *客户* 实体之间的关系。
-    1. 选择 **购买历史记录实体**。
-    1. 在购买历史记录实体中选择用于标识客户的 **字段**。 它需要与您的 *客户* 实体的主要客户 ID 相关。
-    1. 选择与您的主要客户实体相匹配的 **客户实体**。
-    1. 输入一个用于描述关系的名称。
-       > [!div class="mx-imgBorder"]
-       > ![显示创建与客户的关系的购买历史记录页面。](media/model-purchase-join.png "显示创建与客户的关系的购买历史记录页面")
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="侧边栏显示在语义类型下选择特定活动。":::
+
+1. 如果您尚未将活动映射到语义类型，请选择 **编辑** 进行映射。 将打开映射语义活动的引导式体验。 将数据映射到所选活动类型中的相关字段。
+
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="页面显示设置活动类型。":::
+
+1. 将活动映射到相应的语义类型后，选择 **下一 步** 以继续 
+ 
+1. 将语义属性映射到运行模型所需的字段。
 
 1. 选择 **保存**。
 
 1. 选择 **下一步**。
+
 
 ### <a name="configure-product-filters"></a>配置产品筛选器
 

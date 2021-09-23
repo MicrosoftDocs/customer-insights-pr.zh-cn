@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 3aa9599fc780098a2f7f31f0210d76ed2ef27ece774dd6212b5cb2a599ad537e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: bf2ec67c9fb99918b87841d3c0b131934e31b58b
+ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033941"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7486109"
 ---
 # <a name="out-of-box-profile-reports"></a>现成的配置文件报表
 
@@ -31,7 +31,7 @@ ms.locfileid: "7033941"
 
 ## <a name="enable-the-customer-profile-report"></a>启用客户配置文件报表
 
-环境管理员必须[创建与访问群体见解的连接](configure-connections.md)。
+环境管理员必须[链接参与见解和访问群体见解 ](integrate-audience-insights-engagement-insights.md)。
 
 指定连接详细信息后，管理员可以向组织中的其他用户授予查看报表的权限。 设置连接的环境管理员会自动具有报表访问权限。 
 

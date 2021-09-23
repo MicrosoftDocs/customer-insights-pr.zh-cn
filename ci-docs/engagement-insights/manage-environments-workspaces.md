@@ -4,17 +4,17 @@ description: 如何创建、重命名和删除工作区和环境。
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 07/01/2021
+ms.date: 09/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: bf310b1a50ba7baac5d11d5f22ff42003fbba516efd7d165c00b59adc958da2e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a5b48db5ae23ea65bf608d67348d493bfdc7678f
+ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034031"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7486024"
 ---
 # <a name="manage-environments-and-workspaces"></a>管理环境和工作区
 
@@ -85,13 +85,11 @@ ms.locfileid: "7034031"
 
 1. 选择 **添加成员** 以授予访问权限并[分派角色](user-roles.md)。 目前，只有 **工作区管理员** 可用。
 
-1. 如果设置 [与访问群体见解的连接](configure-connections.md)，则可以选择 **允许访问配置文件数据**，以允许成员查看基于[用户配置文件](profile-reports.md)的报表。
-
 1. 选择 **添加成员** 以将其添加到您的工作区。
 
 ## <a name="manage-an-environment"></a>管理环境
 
-作为环境管理员，您可以从左侧导航窗格访问环境。 您可以配置环境设置、其他环境管理员、工作区和[与访问群体见解的连接](configure-connections.md)。 选择相关选项卡以在管理中心的不同区域之间移动。
+作为环境管理员，您可以从左侧导航窗格访问环境。 您可以配置环境设置、其他环境管理员和工作区。 选择相关选项卡以在管理中心的不同区域之间移动。
 
 :::image type="content" source="media/New-environment.png" alt-text="环境管理中心。":::
 
@@ -123,8 +121,6 @@ ms.locfileid: "7034031"
 
 1. 选择 **添加成员** 以更新成员并[分派角色](user-roles.md)。 目前，只有 **环境管理员** 可用。
 
-1. 如果设置 [与访问群体见解的连接](configure-connections.md)，则可以选择 **允许访问配置文件数据**，以允许成员查看基于[用户配置文件](profile-reports.md)的报表。
-
 1. 选择 **添加成员** 以将其添加到您的环境。
 
 ### <a name="delete-an-environment"></a>删除环境
@@ -143,7 +139,7 @@ ms.locfileid: "7034031"
 
 通过建立与访问群体见解的连接，您可以基于统一的客户配置文件在参与见解中查看报表。 
 
-有关详细信息，请参阅[配置连接](configure-connections.md)。
+有关详细信息，请参阅[创建参与见解与访问群体见解之间的链接](integrate-audience-insights-engagement-insights.md)。
 
 ## <a name="manage-personal-data"></a>管理个人数据
 

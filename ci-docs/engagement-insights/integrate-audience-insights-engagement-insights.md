@@ -1,19 +1,19 @@
 ---
 title: 创建参与见解与访问群体见解之间的链接
 description: 创建访问群体见解与参与见解之间的活动链接，以便实现数据双向共享。
-ms.date: 07/22/2021
+ms.date: 09/08/2021
 ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 870209a7e19fec464ec41462a02365771bd653bd
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
+ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461002"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487096"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>创建参与见解与访问群体见解之间的链接
 
@@ -26,14 +26,14 @@ ms.locfileid: "7461002"
 ## <a name="prerequisites"></a>先决条件
 
 - 访问群体见解配置文件必须存储在您负责的 Azure Data Lake Storage 帐户中，或存储在 [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;托管数据湖中。 
-
+- 您的访问群体见解环境应该具有关联的 Dataverse 环境。 如果该环境也在为数据存储使用 Dataverse，请确保在访问群体见解中选中 **启用数据共享** 选项。 有关详细信息，请参阅[在访问群体见解中创建和配置付费环境](../audience-insights/get-started-paid.md)。
 - 需要参与见解和访问群体见解环境两者的管理员权限。
-
 - 链接的环境必须位于同一地理区域内。
 
 > [!NOTE]
 > - 如果您的访问群体见解订阅为试用版，即其使用访问群体见解内部管理的数据湖，请联系 [pirequest@microsoft.com](mailto:pirequest@microsoft.com) 获取帮助。 
-> - 如果您的访问群体见解使用您自己的 Azure Data Lake Storage 存储数据，您需要向您的存储帐户添加参与见解 Azure 服务主体。 有关详细信息，请转到[使用适用于访问群体见解的 Azure 服务主体连接到 Azure Data Lake Storage 帐户](../audience-insights/connect-service-principal.md)。 此外，您的访问群体见解环境应该具有关联的 [Dataverse 环境](../audience-insights/get-started-paid.md)。 
+> - 如果您的访问群体见解使用您自己的 Azure Data Lake Storage 存储数据，您需要向您的存储帐户添加参与见解 Azure 服务主体。 有关详细信息，请转到[使用适用于访问群体见解的 Azure 服务主体连接到 Azure Data Lake Storage 帐户](../audience-insights/connect-service-principal.md)。 
+
 
 ## <a name="create-an-environment-link"></a>创建环境链接
 
@@ -75,6 +75,7 @@ ms.locfileid: "7461002"
 
    > [!IMPORTANT]
    > 如果此步骤中不明确添加用户，参与见解中将对用户隐藏数据。
+   > 若要在参与见解中显示访问群体见解客户细分，首先必须[运行合并和下游流程](../audience-insights/merge-entities.md)。 下游流程非常重要，因为它们生成一个唯一的表，用于准备要与参与见解共享的访问群体见解客户细分。 （如果安排了系统刷新，其将自动包括下游流程。）
 
 1. 请检查您的选择，然后选择 **完成**。
 

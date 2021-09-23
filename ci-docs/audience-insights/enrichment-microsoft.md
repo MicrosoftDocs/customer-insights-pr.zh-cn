@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 726edb19a9fd97d80ae357103dc7d48ed38b005131ad44137b47d629a1c60b12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
+ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033850"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466613"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
 
@@ -126,6 +126,8 @@ ms.locfileid: "7033850"
 :::image type="content" source="media/my-enrichments.png" alt-text="运行扩充流程后预览结果。":::
 
 通过在图表中选择 **查看扩充的数据** 查看扩充的数据。 扩充的品牌数据将进入 **BrandAffinityFromMicrosoft** 实体。 兴趣的数据位于 **InterestAffinityFromMicrosoft** 实体中。 还可以发现 **数据** > **实体** 中的 **扩充** 组内列出了这些实体。
+
+您将看到一个图表，其中显示一段时间扩充的一些客户配置文件和扩充后实体的预览。 在预览磁贴中选择 **详细显示** 可查看扩充后的实体。
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>查看客户卡中的扩充数据
 

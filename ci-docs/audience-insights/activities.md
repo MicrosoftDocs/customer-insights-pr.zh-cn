@@ -1,20 +1,20 @@
 ---
 title: 客户活动
-description: 定义客户活动并在客户时间线中查看它们。
-ms.date: 04/07/2021
+description: 定义客户活动，然后在客户配置文件中的时间线内查看这些客户活动。
+ms.date: 09/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 6ebe899d3e3da43c4108678cd2e4f9a986e18ab35e839044becab4619adb0f14
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c5697df8a7d011c70384c8bc5e4773d7fcc25a62
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033620"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494400"
 ---
 # <a name="customer-activities"></a>客户活动
 
@@ -60,12 +60,15 @@ ms.locfileid: "7033620"
       - **其他详细信息**：具有此活动的相关信息的字段。
       - **图标**：最能代表此活动类型的图标。
       - **网址**：包含此活动相关信息的 URL 的字段。 例如，提供该活动的交易系统。 此 URL 可以是数据源中的任何字段，也可以使用 Power Query 转换将其构建为新字段。 URL 数据将存储在 *统一活动* 实体中，可以通过 [API](apis.md) 在下游使用该实体。
-   
-   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="在统一活动实体中指定客户活动数据。":::
+
+   - **显示在时间线中**
+      - 选择是否要在客户配置文件的时间线视图中查看此活动。 若要在时间线中显示此活动，请选择 **是**，若要隐藏此活动，请选择 **否**。
+
+      :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="在统一活动实体中指定客户活动数据。":::
 
 1. 选择 **下一步** 以移至下一个步骤。 您可以选择 **完成并查看**，以立即保存活动并将活动类型设置为 **其他**。 
 
-1. 在 **活动类型** 步骤中，选择活动类型，并根据需要选择是否要在语意上映射某些活动类型，以便在 Customer Insights 的其他区域中使用。 当前，在同意映射字段后，可以在语义上映射 *Subscription* 和 *SalesOrderLine* 活动类型。 如果活动类型与新活动无关，您可以为自定义活动类型选择 *其他* 或 *新建*。
+1. 在 **活动类型** 步骤中，选择活动类型，并根据需要选择是否要在语意上映射某些活动类型，以便在 Customer Insights 的其他区域中使用。 当前，可以在同意映射字段之后在语义上映射 *返回*、*忠诚度*、*销售订单*、*销售订单行* 和 *订阅* 活动类型。 如果活动类型与新活动无关，您可以为自定义活动类型选择 *其他* 或 *新建*。
 
 1. 选择 **下一步** 以移至下一个步骤。 
 

@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 07/01/2021
+ms.date: 08/31/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: a64bbd754d4013d0a6243074ac9f55991547be82b269047a9937b583baf98697
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032517"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7469943"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -29,6 +29,7 @@ ms.locfileid: "7032517"
 
 在 **发现** 选项卡上，您将看到以下扩充：
 
+- Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
 - Microsoft 提供的[品牌](enrichment-microsoft.md)
 - Microsoft 提供的[兴趣](enrichment-microsoft.md)
 - Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md)
@@ -62,5 +63,17 @@ ms.locfileid: "7032517"
 ## <a name="multiple-enrichments-of-the-same-type"></a>相同类型的多项扩充
 
 扩充配置期间已指定了要扩充的实体，这允许您仅扩充配置文件子集。 例如，仅为特定客户细分扩充数据。 您可以配置相同类型的多项扩充并重复使用相同的连接。 某些扩充对可创建的相同类型的扩充数量有限制。 可以在 **扩充** 页面上看到限制和当前使用情况。
+
+## <a name="see-the-progress-of-the-enrichment-process"></a>查看扩充过程的进度
+
+可以找到有关扩充处理的详细信息，包括其在刷新时或刷新完成后的状态和潜在问题。 了解刷新活动涉及哪些进程以及运行这些进程需要的时间。 Experian、Leadspace、HERE Technologies、SFTP Import 和 Azure Maps 支持扩充状态。
+
+查看扩充状态
+
+1. 转到 **数据** > **扩充**。 
+1. 在 **我的扩充** 选项卡中，选择扩充状态打开侧窗格。 
+1. 在 **进度详细信息** 窗格中，展开 **扩充** 部分。 
+1. 在要查看其进度的扩充下，选择 **查看详细信息**。 
+1. 在 **任务详细信息** 窗格中，选择 **显示详细信息** 以查看更新窗口及其状态时涉及的进程。 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

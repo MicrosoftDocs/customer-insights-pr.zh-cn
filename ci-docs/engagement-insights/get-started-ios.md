@@ -4,17 +4,17 @@ description: 了解如何个性化和运行 iOS SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: de8291fc429ae6433301a47bfdf9a3271b1b77294fd58448c7aa6bd0783edc97
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f05929435eeee9cf3f891ab18842c5861e39d5ba
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036862"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494219"
 ---
 # <a name="get-started-with-the-ios-sdk"></a>开始使用 iOS SDK
 
@@ -45,11 +45,36 @@ ms.locfileid: "7036862"
 
 - 如果您没有现有工作区，请选择 **新建工作区**，然后按照步骤创建[新工作区](create-workspace.md)。
 
+- 创建工作区后，请转到 **管理** > **工作区**，然后选择 **安装指南**。
+
 ## <a name="configure-the-sdk"></a>配置 SDK
 
-下载 SDK 后，可以在 Xcode 中使用它以启用和定义事件。
+下载 SDK 后，可以在 Xcode 中使用它以启用和定义事件。 方法有两种
 
-1. 创建工作区后，请转到 **管理** > **工作区**，然后选择 **安装指南**。
+### <a name="option-1-using-cocoapods-recommended"></a>选项 1：使用 CocoaPods（推荐）
+CocoaPods 是 Swift 和 Objective-C Cocoa 项目的依赖项管理器。 使用它可以更轻松地集成适用于 iOS 的参与见解 SDK。 CocoaPods 还可以用于升级到最新的参与见解 SDK 版本。 下面了解如何使用 CocoaPods 将参与见解 SDK 集成到 Xcode 项目中。 
+
+1. 安装 CocoaPods。 
+
+1. 在项目的跟目录中创建一个新文件 Podfile，然后向其添加以下子句。将 YOUR_TARGET_PROJECT_NAME 替换为您的 Xcode 项目名称。 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+上面的 pod 配置中同时包含 SDK 的调试版本和发行版本。 选择最适合您的项目的版本。
+
+1. 执行以下命令安装 pod： `pod install --repo-update `
+
+### <a name="option-2-using-download-link"></a>选项 2：使用下载链接
 
 1. 下载[参与见解 iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip)，然后将 `EIObjC.xcframework` 文件放入 `Frameworks` 文件夹中。
 

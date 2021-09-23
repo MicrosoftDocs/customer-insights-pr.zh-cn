@@ -1,7 +1,7 @@
 ---
 title: 在数据统一中合并实体
 description: 合并实体以创建统一客户配置文件。
-ms.date: 05/10/2021
+ms.date: 09/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6e64154dc58f679d13033fa55a60cd0c306f62f31548b8ce98ea1ed5f423b3e9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b038cd3f5b433fedf918d34bbfaf2261e11c5c17
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034991"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494308"
 ---
 # <a name="merge-entities"></a>合并实体
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034991"
 
 从统一客户配置文件中排除属性。 如果字段用于其他流程（如客户细分中的流程），请从这些流程中删除此字段，然后从客户配置文件中排除此字段。 
 
-1. 选择合并的字段。
+1. 选择一个合并字段。
   
 1. 选择 **显示更多** 并选择 **排除**。
 
@@ -76,17 +76,40 @@ ms.locfileid: "7034991"
 
 在 **合并** 页上，选择 **排除的字段** 以查看所有排除的字段的列表。 此窗格允许您添加回排除的字段。
 
+## <a name="edit-a-merged-field"></a>编辑合并字段
+
+1.  选择一个合并字段。
+
+1.  选择 **显示更多** 并选择 **编辑**。
+
+1.  指定如何使用以下三个选项之一组合或合并字段：
+    - **重要性**：根据为参与字段指定的重要性等级确定获胜者值。 这是默认的合并选项。 选择 **上移/下移** 设置重要性排名。
+    :::image type="content" source="media/importance-merge-option.png" alt-text="合并字段对话框中的重要性选项。"::: 
+    - **最新**：根据最近 recency 指定获胜者值。 合并字段中每个参与实体都需要日期或数值字段，才能定义 recency。
+    :::image type="content" source="media/recency-merge-option.png" alt-text="合并字段对话框中的 recency 选项。":::
+    - **最早**：根据最早 recency 指定获胜者值。 合并字段中每个参与实体都需要日期或数值字段，才能定义 recency。
+
+1.  您可以添加更多字段以参与合并过程。
+
+1.  您可以重命名合并字段。
+
+1. 选择 **完成** 以应用更改。
+
+1. 选择 **保存** 和 **运行** 以处理更改。 
+
 ## <a name="manually-combine-fields"></a>手动合并字段
 
 手动指定合并的属性。 
 
 1. 在 **合并** 页上，选择 **组合字段**。
 
-1. 提供 **名称** 和 **输出字段名称**。
+1. 在 **合并字段的依据** 下拉列表中指定合并获胜者策略。
 
 1. 选择要添加的字段。 选择 **添加字段** 以合并其他字段。
 
-1. 确认排除。
+1. 提供 **名称** 和 **输出字段名称**。
+
+1. 选择 **完成** 以应用更改。
 
 1. 选择 **保存** 和 **运行** 以处理更改。 
 
@@ -103,6 +126,27 @@ ms.locfileid: "7034991"
 1. 确认更改。
 
 1. 选择 **保存** 和 **运行** 以处理更改。
+
+## <a name="configure-customer-id-generation"></a>配置客户 ID 生成 
+
+配置合并字段之后，可以定义如何生成 CustomerId 值，即客户配置文件唯一标识符。 数据统一过程中的合并步骤将生成客户配置文件唯一标识符。 此标识符是 *Customer* 实体中数据统一过程生成的 CustomerId。 
+
+Customer 实体中的 CustomerId 基于非空获胜者主键第一个值的哈希。 这些密钥来自匹配和合并阶段使用的实体，并且受匹配顺序影响。因此，如果匹配顺序中的主实体内主键值改变，生成的 CustomerID 也可能改变。 因此，主键值可能并不是始终代表同一位客户。
+
+配置稳定的客户 Id 可以避免此行为。
+
+**配置唯一客户 ID**
+
+1. 转到 **统一** > **合并**。
+
+1. 在 **合并** 页上，选择 **键** 选项卡。 
+
+1. 将鼠标光标悬停在 **CustomerId** 行上方，然后选择 **配置** 选项。
+   :::image type="content" source="media/customize-stable-id.png" alt-text="用于自定义 ID 生成的控件。":::
+
+1. 最多选择五个字段，这些字段构成唯一客户 ID，并且会更稳定。 与配置不匹配的记录使用系统配置的 ID。  
+
+1. 选择 **完成** 并运行合并过程以应用更改。
 
 ## <a name="run-your-merge"></a>运行合并
 
