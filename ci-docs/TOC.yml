@@ -242,7 +242,7 @@
   items:
     - name: 帮助中心
       href: engagement-insights/index.yml
-    - name: 功能概述
+    - name: 关于参与见解
       href: engagement-insights/overview.md
     - name: 开始
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: 区域可用性
       href: engagement-insights/regional-availability.md
-- name: 集成访问群体见解与参与见解
+- name: 在功能之间共享数据
   items:
     - name: 链接访问群体见解与参与见解
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: DSR 权限和请求
   href: dsr-rights-requests.md
-- name: 获取支持
-  href: 'https://dynamics.microsoft.com/support/'

@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
-ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
+ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487096"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7559007"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>创建参与见解与访问群体见解之间的链接
 
@@ -54,6 +54,9 @@ ms.locfileid: "7487096"
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>启用访问群体见解统一配置文件属性和客户细分
 
 链接环境之后，您可以为链接的环境选择可选功能。 可通过这些功能将访问群体见解的统一配置文件属性和客户细分用于对客户数据进行交互分析。
+
+> [!IMPORTANT]
+> 若要在参与见解中显示访问群体见解客户细分，首先必须[运行合并和下游流程](../audience-insights/merge-entities.md)。 下游流程非常重要，因为它们生成一个唯一的表，用于准备要与参与见解共享的访问群体见解客户细分。 （如果安排了系统刷新，其将自动包括下游流程。）
 
 **在参与见解中分析 Web 数据**
 

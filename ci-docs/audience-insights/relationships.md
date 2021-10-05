@@ -1,20 +1,20 @@
 ---
 title: 实体和实体路径之间的关系
 description: 创建和管理来自多个数据源的实体之间的关系。
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
+ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035220"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7557341"
 ---
 # <a name="relationships-between-entities"></a>实体之间的关系
 
@@ -93,11 +93,11 @@ ms.locfileid: "7035220"
 - **更改为水平/垂直布局**：更改实体和关系的对齐。
 - **编辑**：更新编辑窗格中自定义关系的属性并保存更改。
 
-### <a name="relationship-path"></a>关系路径
+## <a name="relationship-paths"></a>关系路径
 
-关系路径描述通过源实体与目标实体之间的关系连接的实体。 其使用场景为：要创建的客户细分或度量中包含的实体是非统一配置文件实体，并且可通过多个选项到达统一配置文件实体。
+关系路径描述通过源实体和目标实体之间的关系连接的实体。 其使用场景为：要创建的客户细分或度量中包含的实体是非统一配置文件实体，并且可通过多个选项到达统一配置文件实体。 
 
-关系路径通知系统应通过哪些关系访问统一配置文件实体。 不同的关系路径可能产生不同的结果。
+关系路径通知系统通过哪些关系来访问统一配置文件实体。 不同的关系路径可能产生不同的结果。
 
 例如，实体 *eCommerce_eCommercePurchases* 与统一配置文件 *Customer* 实体之间的关系如下：
 
@@ -106,6 +106,42 @@ ms.locfileid: "7035220"
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
 
 关系路径确定在为度量或客户细分创建规则时可以使用哪些实体。 如果选择关系路径最长的选项，产生的结果较少，因为匹配记录需要是所有实体的其中一部分。 在此示例中，一位客户必须已通过 e-commerce(eCommerce_eCommercePurchases) 在销售点 (POS_posPurchases) 购买了货物，并且参加了我们的忠诚度计划 (loyaltyScheme_loyCustomers)。 如果选择第一个选项，可能会获得更多结果，因为客户只需要存在于一个附加实体中。
+
+### <a name="direct-relationship"></a>直接关系
+
+当源实体与目标实体仅通过一种关系相关时，关系被归类为 **直接关系**。
+
+例如，如果名为 *eCommerce_eCommercePurchases* 的活动实体仅通过 *ContactId* 连接到目标实体 *eCommerce_eCommerceContacts*，那么这是直接关系。
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="源实体直接连接到目标实体。":::
+
+#### <a name="multi-path-relationship"></a>多路径关系
+
+**多路径关系** 是一种特殊类型的直接关系，它将源实体连接到多个目标实体。
+
+例如，如果名为 *eCommerce_eCommercePurchases* 的活动实体与 *eCommerce_eCommerceContacts* 和 *loyaltyScheme_loyCustomers* 这两个目标实体相关，那么这是一种多路径关系。
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="源实体通过多跃点关系直接连接到多个目标实体。":::
+
+### <a name="indirect-relationship"></a>间接关系
+
+当源实体在与目标实体相关之前与一个或多个其他实体相关时，关系被归类为 **间接关系**。
+
+#### <a name="multi-hop-relationship"></a>多跃点关系
+
+*多跃点关系* 是一种 *间接关系*，它允许您通过一个或多个其他中间实体将源实体连接到目标实体。
+
+例如，如果名为 *eCommerce_eCommercePurchasesWest* 的活动实体连接到名为 *eCommerce_eCommercePurchasesEast* 的中间实体，然后连接到名为 *eCommerce_eCommerceContacts* 的目标实体，则这是多跃点关系。
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="源实体通过中间实体直接连接到目标实体。":::
+
+### <a name="multi-hop-multi-path-relationship"></a>多跃点、多路径关系
+
+多跃点和多路径关系可一起用于创建 **多跃点、多路径关系**。 此特殊类型将合并 **多跃点** 和 **多路径关系** 功能。 它使您能够在使用中间实体时连接到多个目标实体。
+
+例如，如果名为 *eCommerce_eCommercePurchasesWest* 的活动实体连接到名为 *eCommerce_eCommercePurchasesEast* 的中间实体，然后连接到 *eCommerce_eCommerceContacts* 和 *loyaltyScheme_loyCustomers* 这两个目标实体，则这是多跃点、多路径关系。
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="源实体直接连接到一个目标实体并通过中间实体连接到另一个目标实体。":::
 
 ## <a name="manage-existing-relationships"></a>管理现有关系 
 

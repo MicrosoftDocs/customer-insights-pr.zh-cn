@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Google Ads
 description: 了解如何配置连接和导出到 Google Ads。
-ms.date: 03/03/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,16 +9,19 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5977b3de9fbb0d97c0912e2ada6a313b0ab92498adf9cdbed48191c0e5143567
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031646"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558944"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>向 Google Ads 导出客户细分（预览版）
 
 将统一客户配置文件的客户细分导出到 Google Ads 访问群体列表，并使用它们在 Google Search、Gmail、YouTube 和 Google Display Network 上投放广告。 
+
+> [!IMPORTANT]
+> 目前，仅当您已经拥有批准的 Google Ads 开发人员令牌时，才能创建新连接并将数据导出到 Google Ads。 由于政策发生了变更，我们将很快更新 Google Ads 导出并提供不需要开发人员令牌的导出选项，以确保体验的连续性并简化导出到 Google Ads 的过程。 我们建议不要与 Google Ads 建立更多连接，以便更轻松地切换到新的导出选项。
 
 ## <a name="prerequisites-for-connection"></a>连接的先决条件
 
