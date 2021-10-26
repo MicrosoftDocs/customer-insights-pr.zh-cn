@@ -10,12 +10,12 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466566"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645253"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights 访问群体见解功能入门
 
@@ -23,7 +23,7 @@ ms.locfileid: "7466566"
 
 ## <a name="step-1-create-an-environment"></a>步骤 1：创建环境
 
-首先，必须创建一个工作环境。 如果您的组织已经购买了许可证，请参阅[付费订阅入门](get-started-paid.md)。 若要开始试用访问群体见解，请参阅[设置试用环境](get-started-trial.md)。 
+首先，必须创建一个工作环境。 如果您的组织已经购买了许可证，请参阅[创建环境](create-environment.md)。 若要开始试用访问群体见解，请参阅[设置试用环境](../trial-signup.md)。 
 
 ## <a name="step-2-explore-audience-insights"></a>步骤 2：浏览访问群体见解
 

@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7559007"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645571"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>创建参与见解与访问群体见解之间的链接
 
@@ -26,7 +26,7 @@ ms.locfileid: "7559007"
 ## <a name="prerequisites"></a>先决条件
 
 - 访问群体见解配置文件必须存储在您负责的 Azure Data Lake Storage 帐户中，或存储在 [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;托管数据湖中。 
-- 您的访问群体见解环境应该具有关联的 Dataverse 环境。 如果该环境也在为数据存储使用 Dataverse，请确保在访问群体见解中选中 **启用数据共享** 选项。 有关详细信息，请参阅[在访问群体见解中创建和配置付费环境](../audience-insights/get-started-paid.md)。
+- 您的访问群体见解环境应该具有关联的 Dataverse 环境。 如果该环境也在为数据存储使用 Dataverse，请确保在访问群体见解中选中 **启用数据共享** 选项。 有关详细信息，请参阅[在访问群体见解中创建和配置环境](../audience-insights/create-environment.md)。
 - 需要参与见解和访问群体见解环境两者的管理员权限。
 - 链接的环境必须位于同一地理区域内。
 

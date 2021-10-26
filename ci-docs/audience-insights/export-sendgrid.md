@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 SendGrid
 description: 了解如何配置连接和导出到 SendGrid。
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 03df2ab5fce1da1f4f662e1975533f2b538b47dbdd5cf96aae4f1007163e3729
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036090"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617820"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>将客户细分导出到 SendGrid（预览版）
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036090"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 总共最多可以将 100'000 个配置文件导出到 SendGrid。
+- 总计最多可将 100'000 个客户配置文件导出到 SendGrid。
 - 导出到 SendGrid 仅限于客户细分。
-- 将多达 100'000 个配置文件导出到 SendGrid 可能需要几个小时才能完成。 
-- 可以导出到 SendGrid 的配置文件数与 SendGrid 的合同相关并受其限制。
+- 向 SendGrid 导出最多 100'000 个客户配置文件最长可能需要几个小时完成。 
+- 您可以导出到 SendGrid 的客户配置文件数量取决和受限于您与 SendGrid 的合同。
 
 ## <a name="set-up-connection-to-sendgrid"></a>设置与 SendGrid 的连接
 
@@ -66,7 +66,7 @@ ms.locfileid: "7036090"
 
 1. 输入您的 **[SendGrid 列表 ID](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)**。
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对于其他可选字段（例如 **名**、**姓**、**国家/地区**、**省/自治区/直辖市**、**市/县** 和 **邮政编码**），请重复相同的步骤。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 对于其他可选字段（例如 **名**、**姓**、**国家/地区**、**省/自治区/直辖市**、**市/县** 和 **邮政编码**），请重复相同的步骤。
 
 1. 选择想要导出的细分。 我们强烈 **建议不要将总共超过 100'000 个客户配置文件导出** 到 SendGrid。 
 

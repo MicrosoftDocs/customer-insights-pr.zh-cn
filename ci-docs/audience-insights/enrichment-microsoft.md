@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
-ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
+ms.openlocfilehash: 51b150cbf5d9cfb3a5df42e680bcfa57ec5496cb
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466613"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617866"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
 
@@ -137,7 +137,7 @@ ms.locfileid: "7466613"
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

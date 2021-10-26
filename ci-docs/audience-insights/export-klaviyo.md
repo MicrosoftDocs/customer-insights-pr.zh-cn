@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Klaviyo
 description: 了解如何配置连接和导出到 Klaviyo。
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7c1297fd5381c00c07d6501186c51fe4798773d1
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
+ms.openlocfilehash: 5f7c91afed8eeb1f767f1efc58dceb7782c37bb4
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7385777"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619062"
 ---
 # <a name="export-segment-lists-to-klaviyo-preview"></a>将客户细分列表导出到 Klaviyo（预览版）
 
@@ -28,10 +28,10 @@ ms.locfileid: "7385777"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 每次导出到 Klaviyo 可导出最多 100'000 个配置文件。
+- 每次最多可以将 100'000 个客户配置文件导出到 Klaviyo。
 - 导出到 Klaviyo 仅限于客户细分。
-- 最多将 1 百万个配置文件导出到 Klaviyo 可能最多需要 20 分钟才能完成。 
-- 可以导出到 Klaviyo 的配置文件数依赖于您与 Klaviyo 的合同并受其限制。
+- 向 Klaviyo 导出最多 100 万个客户配置文件最长可能需要 20 分钟完成。 
+- 您可以导出到 Klaviyo 的客户配置文件数量取决和受限于您与 Klaviyo 的合同。
 
 ## <a name="set-up-connection-to-klaviyo"></a>设置与 Klaviyo 的连接
 
@@ -67,7 +67,7 @@ ms.locfileid: "7385777"
 
 1. 输入您的 [**Klaviyo 列表 ID**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID)。     
 
-3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 在将客户细分导出到 Klaviyo 时需要它。
+3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 在将客户细分导出到 Klaviyo 时需要它。
 
 1. 选择 **保存**。
 

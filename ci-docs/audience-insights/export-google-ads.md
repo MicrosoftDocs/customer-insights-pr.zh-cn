@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558944"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617907"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>向 Google Ads 导出客户细分（预览版）
 
@@ -35,9 +35,9 @@ ms.locfileid: "7558944"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 每次最多可以向 Google Ads 导出 100 万个配置文件。
+- 每次导出到 Google Ads 最多可导出 100 万个客户配置文件。
 - 导出到 Google Ads 仅限于客户细分。
-- 由于对提供者有限制，因此，导出总共包含 100 万个配置文件的客户细分可能最多需要 5 分钟。 
+- 由于提供商方面的限制，导出总计包含 100 万个客户配置文件的客户细分最长可能需要 5 分钟时间。 
 - 在 Google Ads 中匹配可能最多需要 48 个小时。
 
 ## <a name="set-up-connection-to-google-ads"></a>设置与 Google Ads 的连接
@@ -74,7 +74,7 @@ ms.locfileid: "7558944"
 
 1. 输入您的 **[Google Ads 访问群体 ID](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)**，然后选择 **连接** 以初始化与 Google Ads 的连接。
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。
 
 1. 选择想要导出的细分。 您总共可以将最多 100 万个客户配置文件导出到 Google Ads 中。
 

@@ -8,18 +8,18 @@ ms.date: 09/28/2021
 ms.service: customer-insights
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: d4ae7a085ba68c482372868e75376b6f769325d7
-ms.sourcegitcommit: ce2c011f06999dba2e886b8804d3439fbf67074d
+ms.openlocfilehash: 82591919b44eaac8a251d7fdb148253d5cac23c3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7564583"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645390"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的区域可用性
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-参与见解是 Dynamics 365 Customer Insights 的一项功能，逐渐引入到了客户可以选择在其中存储数据的更多区域。 管理员可在[创建新的环境](manage-environments-workspaces.md#create-an-environment)时选择区域。 
+参与见解是 Dynamics 365 Customer Insights 的一项功能，逐渐引入到了客户可以选择在其中存储数据的更多区域。 管理员可在[创建新的环境](create-new-environment.md)时选择区域。 
 
 第一次设置参与见解时，可以在运行[引导式首次运行体验](quickstart.md)时选择区域。 以后，每个新环境都允许您选择将用于存储数据的区域。
 

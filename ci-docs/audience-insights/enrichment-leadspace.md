@@ -1,32 +1,32 @@
 ---
 title: 通过第三方扩充 Leadspace 扩充公司配置文件
 description: 有关 Leadspace 第三方扩充的常规信息。
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 34b73b37670ed45e2c31ea164c0788b793bee433829ce21317c83903f3fca1fe
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031692"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617340"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>通过 Leadspace 扩充公司配置文件（预览）
 
-Leadspace 是一家提供 B2B 客户数据平台的数据科学公司。 它使那些具有公司统一客户配置文件的客户能够扩充其数据。 扩充包括更多属性，例如公司规模、位置、行业等。
+Leadspace 是一家提供 B2B 客户数据平台的数据科学公司。 它使具有基于客户的统一客户配置文件的环境能够扩充数据。 使用公司规模、位置或行业等属性扩充 *客户配置文件*。 使用职务、角色或电子邮件验证等属性扩充 *联系人配置文件*。
 
 ## <a name="prerequisites"></a>先决条件
 
 要配置 Leadspace，必须满足以下先决条件：
 
 - 您有一个可用的 Leadspace 许可证。
-- 您具有公司[统一客户配置文件](customer-profiles.md)。
-- 管理员已配置 Leadspace 连接，或者您拥有 [管理员](permissions.md#administrator)权限和“永久密钥”（称为 **Leadspace 令牌**）。 直接联系 [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/)，了解有关其产品的详细信息。
+- 您有基于客户的[统一客户配置文件](customer-profiles.md)。
+- 管理员已配置 Leadspace 连接，或者您拥有 [管理员](permissions.md#administrator)权限和“永久密钥”（称为 **Leadspace 令牌**）。 直接联系 [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/)，了解有关其产品的详细信息。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 
@@ -50,6 +50,10 @@ Leadspace 是一家提供 B2B 客户数据平台的数据科学公司。 它使�
 
 1. 选择 **下一步** 以完成字段映射。
 
+1. 如果您有要扩充的 *联系人配置文件*，请选中此复选框。 访问群体见解将自动映射必需字段。
+
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace 联系人记录扩充。":::
+ 
 1. 提供扩充的名称，并在查看您的选择后选择 **保存扩充**。
 
 
@@ -81,7 +85,8 @@ Leadspace 是一家提供 B2B 客户数据平台的数据科学公司。 它使�
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
+
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 

@@ -1,7 +1,7 @@
 ---
 title: 创建和管理环境
 description: 了解如何注册服务以及如何管理环境。
-ms.date: 07/22/2021
+ms.date: 10/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e3f99f8f151aea5f120084382babd5e46e109545a4f63aafc51c3ecb1400cc33
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034166"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645115"
 ---
 # <a name="manage-environments"></a>管理环境
 
@@ -26,7 +26,7 @@ ms.locfileid: "7034166"
 
 :::image type="content" source="media/home-page-environment-switcher.png" alt-text="用于切换环境的控件的屏幕截图。":::
 
-管理员可以[创建](get-started-paid.md)和管理环境。
+管理员可以[创建](create-environment.md)和管理环境。
 
 ## <a name="edit-an-existing-environment"></a>编辑现有环境
 
@@ -36,23 +36,9 @@ ms.locfileid: "7034166"
 
 2.  选择 **编辑** 图标。
 
-3. 在 **编辑环境** 框中，可以更新环境的 **显示名称**，但不能更改 **区域** 或 **类型**。
+3. 在 **编辑环境** 框中，可以更新环境设置。
 
-4. 如果环境配置为在 Azure Data Lake Storage 中存储数据，您可以更新 **帐户密钥**。 但是，您不能更改 **帐户名称** 或 **容器** 名称。
-
-5. 或者，您可以从基于帐户密钥的连接更新到基于资源或基于订阅的连接。 升级后，您将无法在更新后还原到帐户密钥。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 在更新连接时，无法更改 **容器** 信息。
-
-6. （可选）您可以在 **配置与 Microsoft Dataverse 的数据共享并启用其他功能** 下面提供 Microsoft Dataverse 环境 URL。 这些功能包括基于应用和解决方案与 Microsoft Dataverse 共享数据、本地数据源数据引入或使用[预测](predictions.md)。 选择 **启用数据共享** 以与 Microsoft Dataverse 托管 Data Lake 共享 Customer Insights 输出数据。
-
-   > [!NOTE]
-   > - 将所有数据保存到自己的 Azure Data Lake Storage 时，当前不支持与 Microsoft Dataverse 托管 Data Lake 共享数据。
-   > - 当您允许与 Microsoft Dataverse 托管 Data Lake 共享数据时，当前不支持访问群体见解中的[预测实体中缺少的值](predictions.md)和 PowerBI Embedded 报表（如果在您的环境中已启用）。
-
-   启用与 Microsoft Dataverse 的数据共享后，将开始数据源和其他流程的完全刷新。 如果流程当前正在运行，则您看不到用于启用与 Microsoft Dataverse 共享数据的选项。 请等待这些流程完成或取消它们，以启用数据共享。 
-   
-   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="用于启用与 Microsoft Dataverse 的数据共享的配置选项。":::
-   
-   当您运行流程（例如数据引入或客户细分创建）时，将在上述指定的存储帐户中创建相应的文件夹。 数据文件和 model.json 文件将创建并添加到相应的子文件夹中，具体取决于您运行的流程。
+有关环境设置的详细信息，请参阅[创建新环境](create-environment.md)。
 
 ## <a name="copy-the-environment-configuration"></a>复制环境配置
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
-ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
+ms.openlocfilehash: bd80d0315f4f501b8f8108b99c144082c21e0d4c
+ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7557341"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7622988"
 ---
 # <a name="relationships-between-entities"></a>实体之间的关系
 
@@ -67,6 +67,20 @@ ms.locfileid: "7557341"
    - **目标键字段**：目标实体的键字段。 示例客户可以使用 **CustomerID** 键字段。
 
 4. 选择 **保存** 以创建自定义关系。
+
+## <a name="set-up-account-hierarchies"></a>设置客户层次结构
+
+配置为使用企业客户作为主要目标访问群体的环境可以为相关企业客户配置客户层次结构。 例如，具有独立业务部门的公司。 
+
+组织创建客户层次结构可以更好地管理客户及其相互之间的关系。 访问群体见解功能支持已存在于引入的客户数据中的父子客户层次结构。 例如，Dynamics 365 Sales 中的客户。 这些层次结构可以在访问群体见解中 **关系** 页面的客户层次结构选项卡下配置。
+
+1. 转到 **数据** > **关系**。
+1. 选择 **客户层次结构** 选项卡。
+1. 选择 **新建客户层次结构**。 
+1. 在 **客户层次结构** 窗格中，为层次结构提供名称。 系统会为输出实体创建名称。 您可以更改输出名称实体的名称。
+1. 选择包含客户层次结构的实体。 它通常位于包含客户的同一实体中。
+1. 从所选实体中选择 **客户 ID** 和 **客户父 ID** 
+1. 选择 **保存** 应用设置并完成客户层次结构。
 
 ## <a name="view-relationships"></a>查看视图
 

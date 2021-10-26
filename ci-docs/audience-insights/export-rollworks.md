@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 RollWorks
 description: 了解如何配置连接和导出到 RollWorks。
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d8ce4d867835dcb7cf56c6fffff4e25d1f5c109af0e401fc0eb8b3a7427c1de4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f8f6a79db9cb4bb109c03a464d9f8c7f3b862ad5
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034579"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617433"
 ---
 # <a name="export-segments-to-rollworks-preview"></a>将客户细分导出到 RollWorks（预览版）
 
@@ -28,11 +28,11 @@ ms.locfileid: "7034579"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 对于每次导出，您可以向 RollWorks 导出多达 250'000 个配置文件。
-- 您不能将配置文件少于 100 个的客户细分导出到 RollWorks。 
+- 每次最多可以将 250'000 个客户配置文件导出到 RollWorks。
+- 不能将少于 100 个客户配置文件的客户细分导出到 RollWorks。 
 - 导出到 RollWorks 仅限于客户细分。
-- 向 RollWorks 导出多达 250'000 个配置文件可能最多需要 10 分钟才能完成。 
-- 您可以导出到 RollWorks 的配置文件数量取决于并受限于您的 RollWorks 联系人。
+- 向 RollWorks 导出最多 250'000 个客户配置文件最长可能需要 10 分钟完成。 
+- 您可以导出到 RollWorks 的客户配置文件数量取决和受限于您与 RollWorks 的合同。
 
 ## <a name="set-up-connection-to-rollworks"></a>设置与 RollWorks 的连接
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034579"
 
 1. 输入您的 **RollWorks 广告商 ID** [RollWorks 播发信息](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)。
 
-3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 必须将客户细分导出到 RollWorks。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 必须将客户细分导出到 RollWorks。
 
 1. 选择想要导出的细分。 选择至少包含 100 个成员的客户细分。 不能导出较小的客户细分。 此外，对于每个导出，要导出的客户细分的最大大小为 250'000 个成员。 
 

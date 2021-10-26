@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Marketo
 description: 了解如何配置连接和导出到 Marketo。
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033482"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619154"
 ---
 # <a name="export-segments-to-marketo-preview"></a>将细分市场导出到 Marketo（预览版）
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033482"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 每次最多可以向 Marketo 导出 100 万个配置文件。
+- 每次导出到 Marketo 最多可导出 100 万个客户配置文件。
 - 导出到 Marketo 仅限于客户细分。
-- 导出总共包含 100 万个配置文件的客户细分可能最多需要 3 小时。 
-- 可以导出到 Marketo 的配置文件数与 Marketo 的合同相关并受其限制。
+- 导出总计包含 100 万个客户配置文件的客户细分最长可能需要 3 个小时。 
+- 您可以导出到 Marketo 的客户配置文件数量取决和受限于您与 Marketo 的合同。
 
 ## <a name="set-up-connection-to-marketo"></a>设置与 Marketo 的连接
 
@@ -64,7 +64,7 @@ ms.locfileid: "7033482"
 
 1. 输入您的 **[Marketo 列表 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**。 列表 ID 是一个纯数值。 例如，如果 Marketo 列表 ID 为 ST12345A7，请删除数字之前和之后的字符，并输入 `12345`。 
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 
 
 1. （可选）您可以导出 **名**、**姓**、**市/县**、**省/市/自治区** 和 **国家/地区** 以创建更个性化的电子邮件。 选择 **添加属性** 以映射这些字段。
 

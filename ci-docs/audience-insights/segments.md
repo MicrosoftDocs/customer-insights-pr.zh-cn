@@ -1,7 +1,7 @@
 ---
 title: 访问群体见解中的客户细分
 description: 概述客户细分以及如何创建和管理它们。
-ms.date: 05/03/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f1003b53b17e3ba2c37c0f2d94b89f7e97c2b6f10e28b7bbe93160e4c7f08d54
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036362"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617325"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -26,11 +26,19 @@ ms.locfileid: "7036362"
 
 创建新客户细分的方法有多种： 
 
-- 具有客户细分生成器的复杂客户细分：[空白客户细分](segment-builder.md#create-a-new-segment)
-- 具有一个运算符的简单客户细分：[快速客户细分](segment-builder.md#quick-segments)
-- 由 AI 提供支持的相似客户查找方法：[相似客户](find-similar-customer-segments.md)
-- 由 AI 提供支持且基于度量或属性的建议：[为改进度量而建议的客户细分](suggested-segments.md)
-- 基于活动的建议：[基于客户活动的建议客户细分](suggested-segments-activity.md)
+# <a name="individual-customers-b2c"></a>[个人客户 (B2C)](#tab/b2c)
+
+- 使用客户细分生成器的复杂客户细分：[生成您自己的客户细分](segment-builder.md#create-a-new-segment) 
+- 具有一个运算符的简单客户细分：[快速客户细分](segment-builder.md#quick-segments) 
+- 由 AI 提供支持的相似客户查找方法：[相似客户](find-similar-customer-segments.md) 
+- 由 AI 提供支持且基于度量或属性的建议：[为改进度量而建议的客户细分](suggested-segments.md) 
+- 基于活动的建议：[基于客户活动的建议客户细分](suggested-segments-activity.md) 
+
+# <a name="business-accounts-b2b"></a>[企业客户 (B2B)](#tab/b2b)
+
+- 使用客户细分生成器的复杂客户细分：[生成您自己的客户细分](segment-builder.md#create-a-new-segment)
+
+---
 
 ## <a name="manage-existing-segments"></a>管理现有细分
 
@@ -70,9 +78,9 @@ ms.locfileid: "7036362"
 
 1. 从操作下拉列表中，选择 **管理导出**。
 
-1. **客户细分导出（预览版）** 页面将打开。 您可以查看按包含或不包含当前客户细分的导出分组的所有配置导出。
+1. **客户细分导出（预览版）** 页面将打开。 您可以查看按照是否包含当前客户细分分组的所有配置的导出。
 
-   1. 要将选定的客户细分添加到导出中，请在列表中选择导出，然后选择 **添加客户细分**。
+   1. 要将选定的客户细分添加到导出中，**编辑** 相应的导出来选择相应的客户细分，然后保存。 在面向个人客户的环境中，您可以改为选择列表中的导出，然后选择 **添加客户细分** 来实现相同的结果。
 
    1. 要使用选定的客户细分创建新的导出，请选择 **添加导出**。 有关创建导出的更多信息，请参阅[设置新的导出](export-destinations.md#set-up-a-new-export)。
 

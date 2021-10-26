@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 LinkedIn Ads
 description: 了解如何配置连接和导出到 LinkedIn Ads。
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034212"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618280"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>向 LinkedIn Ads 导出客户细分（预览版）
 
@@ -28,9 +28,9 @@ ms.locfileid: "7034212"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 对于每次导出，您可以向 LinkedIn Ads 导出多达 100K 个配置文件。
+- 每次最多可以将 10 万个客户配置文件导出到 LinkedIn Ads。
 - 导出到 LinkedIn Ads 仅限于客户细分。
-- 向 LinkedIn Ads 导出多达 100K 个配置文件可能最多需要 10 分钟才能完成。 
+- 向 LinkedIn Ads 导出最多 10 万个客户配置文件最长可能需要 10 分钟完成。 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>设置与 LinkedIn Ads 的连接
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034212"
 
 1. 选择是要导出数据以在 LinkedIn 中[确定目标联系人](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting)还是[确定目标公司](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting)。 
 
-1. 在 **数据匹配** 部分，在代表客户电子邮件地址的统一客户配置文件中选择相应字段。 必须将客户细分导出到 LinkedIn Ads。
+1. 在 **数据匹配** 部分，对于联系人定位，至少选择一个表示客户的电子邮件地址、Apple 广告 ID、Google 广告 ID、Google 用户 ID 或名字和姓氏的字段。 如果您选择公司定位，至少选择一个表示公司名称、电子邮件域、LinkedIn 页面 URL、股票代码或网站的字段。 还可以选择其他字段来进一步定义导出。 
 
 1. 选择想要导出的细分。 将使用您选择导出的客户细分的名称自动创建 LinkedIn Campaign Manager 中匹配的访问群体。 每个客户细分将产生一个单独的匹配访问群体。 
 

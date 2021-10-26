@@ -1,7 +1,7 @@
 ---
 title: 客户活动
 description: 定义客户活动，然后在客户配置文件中的时间线内查看这些客户活动。
-ms.date: 09/12/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c5697df8a7d011c70384c8bc5e4773d7fcc25a62
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: c250efcd54ec126c0726b22a971cdedd89760d6b
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494400"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617958"
 ---
 # <a name="customer-activities"></a>客户活动
 
@@ -24,8 +24,7 @@ ms.locfileid: "7494400"
 
 数据源可以包含实体，这些实体的事务数据和活动数据来自多个数据源。 确定这些实体，并选择要在客户的时间线上查看的活动。 选择其中包含目标活动的实体。
 
-> [!NOTE]
-> 只能向客户时间线添加至少有一个类型为 **日期** 的属性的实体，并且不能添加无 **日期** 字段的实体。 如果未找到此类实体，将禁用 **添加活动** 控件。
+只能向客户时间线添加至少有一个类型为 **日期** 的属性的实体，并且不能添加无 **日期** 字段的实体。 如果未找到此类实体，将禁用 **添加活动** 控件。
 
 1. 在访问群体见解中，转到 **数据** > **活动**。
 
@@ -41,13 +40,16 @@ ms.locfileid: "7494400"
 
 1. 选择 **下一步** 以继续进行下一步。
 
-1. 在 **关系** 步骤中，配置详细信息，将您的活动数据连接到相应的客户。 此步骤显示实体之间的连接。  
+1. 在 **关系** 步骤中，配置详细信息以将您的活动数据连接到其相应的客户记录。 此步骤显示实体之间的连接。  
 
    - **第一**：活动实体中的外键字段，将用于与另一个实体建立关系。
    - **第二**：将与您的活动实体有关系的相应源客户实体。 您只能与数据统一过程中使用的源客户实体关联。
    - **第三**：如果此活动实体与所选源客户实体之间已经存在关系，则关系名称将处于仅读模式。 如果不存在此关系，将使用您在此框中提供的名称创建新关系。
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="定义实体关系。":::
+
+   > [!TIP]
+   > 在 B2B 环境中，可在客户实体和其他实体之间选择。 如果选择客户实体，将自动设置关系路径。 对于其他实体，您必须定义到达客户实体前一个或多个中间实体之间的关系路径。
 
 1. 选择 **下一步** 以继续进行下一步。 
 
@@ -95,5 +97,34 @@ ms.locfileid: "7494400"
 - **重命名**：打开一个对话框，您可以在其中为选定活动输入不同的名称。 选择 **保存** 以应用您所做的更改。
 
 - **删除**：打开对话框以确认删除所选活动。 您也可以通过选择活动然后选择删除图标同时删除多个活动。 选择 **删除** 以确认删除。
+
+## <a name="view-activity-timelines-on-customer-profiles"></a>查看客户配置文件上的活动时间线
+
+配置客户活动后，在活动配置中选择 **在活动时间线中显示**，在客户配置文件中查找客户的所有活动。
+
+要打开客户的时间线，转到 **客户**，选择您要查看的客户配置文件。
+
+如果客户参与了您配置的活动，您会在 **活动时间线** 部分找到它。
+
+:::image type="content" source="media/Activity_Timeline1.PNG" alt-text="在客户配置文件中查看配置的活动。":::
+
+在活动时间线中筛选活动的方法有以下几种：
+
+- 您可以选择一个或多个活动图标来细化结果，仅包括所选类型。
+
+  :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="使用图标按类型筛选活动。":::
+
+- 您可以选择 **筛选器** 打开筛选器面板配置时间线筛选器。
+
+   1. 可以按 *活动类型* 和 *日期* 进行筛选
+   1. 选择 **应用** 以在活动时间线中使用筛选器。
+
+   :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="使用筛选器面板配置筛选条件。":::
+
+要删除筛选器，选择应用于时间线的每个筛选器旁边的 **x** 或选择 **清除筛选器**。
+
+
+> [!NOTE]
+> 当您离开客户配置文件时，活动筛选器将被删除。 您必须在每次打开客户配置文件时应用它们。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

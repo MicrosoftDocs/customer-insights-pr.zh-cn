@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Azure Data Lake Storage Gen2
 description: 了解如何配置与 Azure Data Lake Storage Gen2 的连接。
-ms.date: 03/03/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,24 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: c4408e52550b6648e2a001041dc0acdb5063d6a6ef1b8e4bba3321bf25fefcfc
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 934c396559d4c4be8e640917d2265805753eb62d
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031968"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605892"
 ---
-# <a name="set-up-the-connection-to-azure-data-lake-storage-gen2-preview"></a>设置与 Azure Data Lake Storage Gen2 的连接（预览版）
+# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>将客户细分列表和其他数据导出到 Azure Data Lake Storage Gen2（预览）
+
+将您的 Customer Insights 数据存储在 Data Lake Storage Gen2 帐户中，或使用它将您的数据传输到其他应用程序。
+
+## <a name="known-limitations"></a>已知限制
+
+1. 对于 Azure Data Lake Storage Gen2，您可以在为数据湖创建存储帐户时在[标准性能层和高级性能层](/azure/storage/blobs/create-data-lake-storage-account)之间选择。 如果您选择高级性能层，请选择高级块 blob 作为客户类型。 
+
+
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>设置与 Azure Data Lake Storage Gen2 的连接 
+
 
 1. 转到 **管理员** > **连接**。
 

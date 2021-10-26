@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Campaign Monitor
 description: 了解如何配置连接和导出到 Campaign Monitor。
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d2cc3ec944faa1d77ffb44e8abb422d753c5625d0ccef75cbb7efb14cb7c3741
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 063de14c4ffd51b3afd89786606d7b37626695dc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031876"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618970"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>将客户细分导出到 Campaign Monitor（预览版）
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031876"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 对于每次导出，您可以向 Campaign Monitor 导出多达 100 万个配置文件。
+- 一次导出最多可将 100 万个客户配置文件导出到 Campaign Monitor。
 - 导出到 Campaign Monitor 仅限于客户细分。
-- 向 Campaign Monitor 导出多达 100 万个配置文件可能最多需要 20 分钟才能完成。 
-- 您可以导出到 Campaign Monitor 的配置文件数量取决于并受限于您的 Campaign Monitor 联系人。
+- 向 Campaign Monitor 导出最多 100 万个客户配置文件最长可能需要 20 分钟完成。 
+- 您可以导出到 Campaign Monitor 的客户配置文件数量取决和受限于您与 Campaign Monitor 的合同。
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>设置与 Campaign Monitor 的连接
 
@@ -66,7 +66,7 @@ ms.locfileid: "7031876"
 1. 输入 [**Campaign Monitor 列表 ID**](https://www.campaignmonitor.com/api/getting-started/#your-list-id)。    
    首先从 Campaign Monitor 内的 **帐户设置** 中[生成 API 密钥](https://www.campaignmonitor.com/api/getting-started/)以查看 API 列表 ID。  
 
-3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 必须将客户细分导出到 Campaign Monitor。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 必须将客户细分导出到 Campaign Monitor。
 
 1. 选择 **保存**。
 

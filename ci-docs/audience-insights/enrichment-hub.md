@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469943"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617544"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -27,16 +27,26 @@ ms.locfileid: "7469943"
 
 您需要具有参与者或管理员权限才能创建或编辑扩充。 有关详细信息，请参阅[权限](permissions.md)。
 
-在 **发现** 选项卡上，您将看到以下扩充：
+在 **发现** 选项卡上，您将找到所有支持的扩充选项。
 
-- Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
+# <a name="individual-customers-b2c"></a>[个人客户 (B2C)](#tab/b2c)
+
 - Microsoft 提供的[品牌](enrichment-microsoft.md)
 - Microsoft 提供的[兴趣](enrichment-microsoft.md)
-- Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md)
-- Leadspace 提供的[公司数据](enrichment-leadspace.md)
+- Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md) 
 - Experian 提供的[人口统计](enrichment-experian.md)
-- HERE Technologies 提供的[位置数据](enrichment-here.md)
-- 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md)
+- 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
+- Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
+
+# <a name="business-accounts-b2b"></a>[企业客户 (B2B)](#tab/b2b)
+
+- Leadspace 提供的[公司数据](enrichment-leadspace.md)
+- Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md) 
+- HERE Technologies 提供的[位置数据](enrichment-here.md) 
+- 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
+- Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
+
+---
 
 在 **我的扩充** 选项卡上，您可以查看您已配置的扩充并编辑其属性。
 
@@ -58,7 +68,7 @@ ms.locfileid: "7469943"
 
 ## <a name="enrichments-and-connections"></a>扩充和连接
 
-使用管理员用凭据设置并且同意进行数据传输的[连接](connections.md)配置了第三方扩充。 然后，管理员和参与者可以使用这些连接配置扩充。  
+使用管理员用凭据设置并且同意进行数据传输的[连接](connections.md)配置了第三方扩充。 管理员和参与者可以使用这些连接来配置扩充。  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>相同类型的多项扩充
 

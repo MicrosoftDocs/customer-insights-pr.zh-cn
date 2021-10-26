@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 34dc753aa9d2420ef8780d436e14c3c27377e4779eda0f83ca6b5424f2328f22
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4403c6f535f5dc60919be3717073d52640bbe61a
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031416"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619200"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>向 Facebook Ads Manager 导出客户细分列表（预览版）
 
@@ -30,7 +30,7 @@ ms.locfileid: "7031416"
 - 每个导出最多可以将 1000 万个客户配置文件导出到 Facebook Ads Manager。
 - 导出到 Facebook Ads Manager 仅限于客户细分。
 - 在 Facebook 中仅创建或更新 *客户列表* 类型的自定义受众。
-- 导出总共包含 1000 万个配置文件的客户细分可能最多需要 90 分钟才能完成。
+- 导出总计包含 1000 万个客户配置文件的客户细分最长可能需要 90 分钟完成。
 
 ## <a name="set-up-connection-to-facebook-ads-manager"></a>设置与 Facebook Ads Manager 的连接
 

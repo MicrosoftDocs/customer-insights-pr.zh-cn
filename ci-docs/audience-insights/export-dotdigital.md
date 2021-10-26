@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 DotDigital
 description: 了解如何配置连接和导出到 DotDigital。
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f09be0dfa599c1ef7cf0055b7ce1df8784cf447ada64b56bc7543c214f9a5b99
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3e3a79603f9f5746ee176d3d4299a30510c7459e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034625"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618372"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>将客户细分导出到 DotDigital（预览版）
 
@@ -22,17 +22,17 @@ ms.locfileid: "7034625"
 
 ## <a name="prerequisites-for-a-connection"></a>连接的先决条件
 
--   您具有 [DotDigital 帐户](https://dotdigital.com/)和相应的管理员凭据。
+-   您有 [DotDigital 帐户](https://dotdigital.com/)并创建了 [API 用户](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user)。 您需要使用 API 用户凭据创建连接
 -   DotDigital 中有现有通讯簿和相应的 ID。 当您选择并打开通讯簿时，可以在 URL 中找到 ID。 有关详细信息，请参阅 [DotDigital 通讯簿](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)。
 -   您在访问群体见解中具有[配置的客户细分](segments.md)。
 -   导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
 
 ## <a name="known-limitations"></a>已知限制
 
-- 每次最多可以向 DotDigital 导出 100 万个配置文件。
+- 每次导出到 DotDigital 最多可导出 100 万个客户配置文件。
 - 导出到 DotDigital 仅限于客户细分。
-- 由于对提供者有限制，因此，导出总共包含 100 万个配置文件的客户细分可能最多需要 3 小时。 
-- 可以导出到 DotDigital 的配置文件数与 DotDigital 的合同相关并受其限制。
+- 由于提供商方面的限制，导出总计包含 100 万个客户配置文件的客户细分最长可能需要 3 小时的时间。 
+- 您可以导出到 DotDigital 的客户配置文件数量取决和受限于您与 DotDigital 的合同。
 
 ## <a name="set-up-connection-to-dotdigital"></a>设置与 DotDigital 的连接
 
@@ -44,7 +44,7 @@ ms.locfileid: "7034625"
 
 1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-1. 输入您的 **DotDigital 用户名和密码**。
+1. 输入您的 **DotDigital API 用户名和密码**。 
 
 1. 输入您的 **[DotDigital 通讯簿 ID](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**。
 
@@ -67,7 +67,7 @@ ms.locfileid: "7034625"
 1. 在 **导出连接** 字段中，从 DotDigital 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
 
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对于其他可选字段（例如 **名**、**姓**、**全名**、**性别** 和 **邮政编码**），请重复相同的步骤。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 对于其他可选字段（例如 **名**、**姓**、**全名**、**性别** 和 **邮政编码**），请重复相同的步骤。
 
 1. 选择想要导出的细分。 您总共可以将最多 100 万个客户配置文件导出到 DotDigital 中。
 

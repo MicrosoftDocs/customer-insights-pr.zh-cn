@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Azure Blob 存储
 description: 了解如何配置连接和导出到 Blob 存储。
-ms.date: 06/30/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b159f87276581f68e07bb73ffd257080eb3cb56422997b09a613bd7afa4e3980
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d02c09a1869d0099db4861b65ac8ff006914873e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034717"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605827"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>将客户细分列表和其他数据导出到 Azure Blob 存储（预览版）
 
 将您的 Customer Insights 数据存储在 Blob 存储中，或使用它将您的数据传输到其他应用程序。
+
+## <a name="known-limitations"></a>已知限制
+
+1. 对于 Azure Blob 存储，您可以在[标准性能和高级性能层](/azure/storage/blobs/storage-blob-performance-tiers)之间选择。 如果您选择高级性能层，请选择[高级块 blob 作为客户类型](/azure/storage/common/storage-account-overview#types-of-storage-accounts)。
 
 ## <a name="set-up-the-connection-to-blob-storage"></a>设置与 Blob 存储的连接
 

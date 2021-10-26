@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Autopilot
 description: 了解如何配置连接和导出到 Autopilot。
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9ada8a6f4e4546990a1360567b400033050119c4c4c9a3df1af8fcaab75e157
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4cceb64484e8e257a90b8cbaedff4419659bb399
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032014"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618418"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>将细分市场导出到 Autopilot（预览版）
 
@@ -28,10 +28,10 @@ ms.locfileid: "7032014"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 您总共可以将最多 100'000 个客户配置文件导出到 Autopilot 中。
+- 您总计最多可以将 100'000 个客户配置文件导出到 Autopilot。
 - 导出到 Autopilot 仅限于客户细分。
-- 将多达 100'000 个配置文件导出到 Autopilot 可能需要几个小时才能完成。 
-- 可以导出到 Autopilot 的配置文件数与 Autopilot 的合同相关并受其限制。
+- 向 Autopilot 导出最多 100'000 个客户配置文件最长可能需要几个小时完成。 
+- 您可以导出到 Autopilot 的客户配置文件数量取决和受限于您与 Autopilot 的合同。
 
 ## <a name="set-up-connection-to-autopilot"></a>设置与 Autopilot 的连接
 
@@ -43,7 +43,7 @@ ms.locfileid: "7032014"
 
 1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-3. 输入 [Autopilot API 密钥](https://autopilot.docs.apiary.io/#)。
+1. 输入 [Autopilot API 密钥](https://autopilot.docs.apiary.io/#)。
 
 1. 选择 **我同意** 确认 **数据隐私与合规性**。
 
@@ -63,7 +63,7 @@ ms.locfileid: "7032014"
 
 1. 在 **导出连接** 字段中，从 Autopilot 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
 
-3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 对于其他可选字段（例如名 **名** 和 **姓**），请重复相同的步骤。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 对于其他可选字段（例如名 **名** 和 **姓**），请重复相同的步骤。
 
 1. 选择想要导出的细分。 我们强烈 **建议不要将总共超过 100'000 个客户配置文件导出** 到 Autopilot。 
 

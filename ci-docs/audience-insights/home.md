@@ -1,7 +1,7 @@
 ---
 title: 访问群体见解中的主页
 description: 开始浏览主页上的应用。
-ms.date: 08/26/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 55c0313d1dbf7fb6774c058a6784cf02821d9133
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 4ab5497024cb15b103e96b0fc9a2e0739fd4691c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469942"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617683"
 ---
 # <a name="explore-audience-insights"></a>浏览访问群体见解
 
@@ -23,7 +23,7 @@ ms.locfileid: "7469942"
 
 :::image type="content" source="media/home-page.png" alt-text="显示示例见解的主页屏幕截图。":::
 
-1 - 在 Customer Insights 的功能之间切换 2 - 使用左窗格在不同区域之间导航 3 - 了解工作环境和以管理员身份管理环境 4 - 指定 Customer Insights 的个人设置
+1 - 在 Customer Insights 的功能之间切换 2 - 使用左侧窗格在不同区域之间导航并选择主要目标受众 3 - 找出您在哪个环境中工作并以管理员身份管理环境 4 - 指定 Customer Insights 的个人设置
 
 在 **最近客户细分** 下，您将看到基于您定义的人口统计、行为或事务属性的客户组。 [创建客户细分](segments.md)有助于您对客户群进行分组，并更好地确定您的目标业务活动。
 

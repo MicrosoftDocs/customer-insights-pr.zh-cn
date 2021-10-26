@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 应用客户卡加载项
 description: 使用此加载项在 Dynamics 365 应用中显示来自访问群体见解的数据。
-ms.date: 05/18/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0f6c922104df229980b308136a4d764938121b35d6d744f41b1530bdb5515e7f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032977"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643350"
 ---
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-直接在 Dynamics 365 应用中全面了解您的客户。 在支持的 Dynamics 365 应用中安装了客户卡加载项后，您可以选择显示人口统计数据、见解和活动时间线。 该加载项可以从 Customer Insights 检索数据，而不会影响已连接的 Dynamics 365 应用中的数据。 
+直接在 Dynamics 365 应用中全面了解您的客户。 在支持的 Dynamics 365 应用中安装客户卡加载项后，您可以选择显示客户配置文件字段、见解和活动时间线。 该加载项可以从 Customer Insights 检索数据，而不会影响已连接的 Dynamics 365 应用中的数据。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -28,20 +30,19 @@ ms.locfileid: "7032977"
 - 若要将 Dynamics 365 数据映射到访问群体见解客户配置文件，则需要[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)它们。
 - 必须将此客户卡加载项的所有 Dynamics 365 用户[作为用户添加](permissions.md)到访问群体见解中以便查看数据。
 - 为了能够查询数据，需要使用访问群体见解中[配置的搜索和筛选功能](search-filter-index.md)。
-- 每个加载项控件都依赖于访问群体见解中的特定数据：
-  - 度量控件：需要[配置的度量](measures.md)。
-  - 智能控件：需要使用[预测](predictions.md)或[自定义模型](custom-models.md)生成的数据。
-  - 人口统计控件：统一客户配置文件中提供了人口统计字段（例如年龄或性别）。
-  - 扩充控件：需要将可用[扩充](enrichment-hub.md)应用于客户配置文件。
-  - 时间线控件：需要[配置的活动](activities.md)。
+- 每个加载项控件都依赖于访问群体见解中的特定数据。 某些数据和控件仅在特定类型的环境中可用。 加载项配置将通知您控件是否由于所选环境类型而不可用。 详细了解[环境用例](work-with-business-accounts.md)。
+  - **度量值控件**：需要配置的客户属性类型的[度量值](measures.md)。
+  - **智能控件**：需要使用[预测](predictions.md)或[自定义模型](custom-models.md)生成的数据。
+  - **客户详细信息控件**：配置文件的所有字段在统一客户配置文件中提供。
+  - **扩充控件**：需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。
+  - **联系人控件**：需要定义联系人类型的语义实体。
+  - **时间线控件**：需要[配置的活动](activities.md)。
 
 ## <a name="install-the-customer-card-add-in"></a>安装客户卡加载项
 
 客户卡加载项是 Dynamics 365 中的 Customer Engagement 应用的解决方案。 若要安装此解决方案，请转到 AppSource 并搜索 **Dynamics 客户卡**。 选择 [AppSource 中的客户卡加载项](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview)，然后选择 **立即获取**。
 
-您可能需要使用管理员凭据登录来让 Dynamics 365 应用安装解决方案。
-
-将此解决方案安装到环境中可能需要一些时间。
+您可能需要使用管理员凭据登录来让 Dynamics 365 应用安装解决方案。 将此解决方案安装到环境中可能需要一些时间。
 
 ## <a name="configure-the-customer-card-add-in"></a>配置客户卡加载项
 
@@ -50,7 +51,7 @@ ms.locfileid: "7032977"
 1. 选择 **Dynamics 365 Customer Insights 客户卡加载项（预览版）** 解决方案的 **显示名称** 链接。
 
    > [!div class="mx-imgBorder"]
-   > ![选择显示名称。](media/select-display-name.png "选择显示名称")
+   > ![选择显示名称。](media/select-display-name.png "选择显示名称。")
 
 1. 选择 **登录**，然后输入用于配置 Customer Insights 的管理员帐户的凭据。
 
@@ -64,7 +65,7 @@ ms.locfileid: "7032977"
    - 若要与帐户进行映射，请在客户实体中选择与帐户实体的 ID 匹配的字段。
 
    > [!div class="mx-imgBorder"]
-   > ![联系人 ID 字段。](media/contact-id-field.png "联系人 ID 字段")
+   > ![联系人 ID 字段。](media/contact-id-field.png "联系人 ID 字段。")
 
 1. 选择 **保存配置** 保存设置。
 
@@ -73,7 +74,9 @@ ms.locfileid: "7032977"
 1. 将 **Customer Insights 卡定制员** 角色分配给将为整个组织自定义卡片上显示内容的用户。
 
 ## <a name="add-customer-card-controls-to-forms"></a>将客户卡控件添加到窗体
-  
+
+根据您的场景，您可以选择将控件添加到 **联系人** 窗体或 **客户** 窗体。 如果您的受众见解环境面向企业客户，我们建议将这些控件添加到“客户”窗体。 在这种情况下，将以下步骤中的“联系人”替换为“客户”。
+
 1. 若要向联系人窗体添加客户卡控件，请在 Dynamics 365 中转到 **设置** > **自定义**。
 
 1. 选择 **自定义系统**。
@@ -83,7 +86,7 @@ ms.locfileid: "7032977"
 1. 选择要向其添加客户卡控件的联系人窗体。
 
     > [!div class="mx-imgBorder"]
-    > ![选择“联系人”窗体。](media/contact-active-forms.png "选择“联系人”窗体")
+    > ![选择“联系人”窗体。](media/contact-active-forms.png "选择“联系人”窗体。")
 
 1. 若要添加控件，请在窗体编辑器中，将任何字段从 **字段资源管理器** 拖到要显示该控件的位置。
 
@@ -102,7 +105,8 @@ ms.locfileid: "7032977"
 1. 若要自定义自定义控件中显示的内容，请选择右上角的编辑按钮。
 
 ## <a name="upgrade-customer-card-add-in"></a>升级客户卡加载项
-客户卡加载项不会自动升级。 若要升级到最新版本，请在安装了该加载项的 Dynamics 365 应用中按照此过程进行操作。
+
+客户卡加载项不会自动升级。 要升级到最新版本，请在安装了此加载项的 Dynamics 365 应用中执行以下步骤。
 
 1. 在 Dynamics 365 应用中，转到 **设置** > **自定义**，并选择 **解决方案**。
 

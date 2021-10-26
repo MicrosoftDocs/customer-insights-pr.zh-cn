@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 37c5d152a4cc91a90df8db387d25923ed150e238bc6b54c54f7bba59fbd48c82
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3689c7016454ed44e22b4d4ff5a338836a8fe288
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033207"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605938"
 ---
 # <a name="connections-preview-overview"></a>连接（预览版）概述
 
@@ -47,6 +47,7 @@ ms.locfileid: "7033207"
 1. 在 **设置连接** 窗格中，提供所需的详细信息。 
    1. 连接的 **显示名称** 和类型描述了连接。 我们建议选择一个名称来解释此连接的用途和目标。
    1. 确切的字段取决于您连接到的服务。 您可以了解文章中有关目标服务的特定连接类型的详细信息。
+   1. 如果您 [使用自己的密钥保管库](use-azure-key-vault.md)存储密钥，请激活 **使用密钥保管库**，然后从列表中选择密钥。
 
 1. 要创建连接，请选择 **保存**。
 
@@ -93,3 +94,6 @@ ms.locfileid: "7033207"
 
 1. 若要确认删除，请选择 **删除**。
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>使用您自己的密钥保管库管理的密钥设置连接
+
+有些连接需要 API 密钥或密码等密钥。 有些连接支持存储在自己的密钥保管库中的密钥。 详细了解支持的连接以及如何在[您自己的密钥保管库中进行设置以获得访问群体见解](use-azure-key-vault.md)。

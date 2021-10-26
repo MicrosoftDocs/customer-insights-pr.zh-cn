@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
-ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
+ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465194"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606041"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
@@ -26,6 +26,20 @@ ms.locfileid: "7465194"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="september-2021-updates"></a>2021 年 9 月更新
+
+2021 年 9 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="activities"></a>活动
+
+- **活动时间线改进** 我们扩展了客户配置文件中活动时间线的筛选器。 此外，您可以使用新的筛选器窗格按活动类型和日期进行筛选。 日期可以使用不同条件筛选。 有关详细信息，请参阅[查看客户配置文件上的活动时间线](activities.md#view-activity-timelines-on-customer-profiles)。
+
+### <a name="relationships"></a>关系
+
+- **多跃点关系支持** 在配置活动和定义实体之间的关系时使用多跃点关系。 多跃点关系使用中间实体连接两个实体。 配置活动时，您可以使用多跃点关系将活动实体连接到中间实体，然后再连接到客户实体。 您可以将多跃点关系与多路径关系组合。 有关详细信息，请参阅[多跃点关系](relationships.md#multi-hop-relationship)。
+
+- **多路径关系支持** 在配置活动和定义实体之间的关系时使用多路径关系。 多路径关系将源实体与多个实体关联。 配置活动时，您可以使用多路径关系将活动实体连接到多个客户实体。 您可以将多路径关系与多跃点关系组合。 有关详细信息，请参阅[多路径关系](relationships.md#multi-path-relationship)。
 
 ## <a name="august-2021-updates"></a>2021 年 8 月更新
 
@@ -55,7 +69,7 @@ ms.locfileid: "7465194"
 ### <a name="ux-updates"></a>UX 更新 
 
 - **新的和增强的客户页面和配置文件详细信息页面** 我们重新设计了客户页面和配置文件详细信息页面，以改善用户体验和提升性能。 这些更改使您可以查看、排序、搜索和筛选客户。 筛选器现在显示在 URL 中，以便与其他用户无缝共享搜索结果。 搜索结果也可以保存为客户细分。    
-  客户配置文件的详细信息页现在按各个子节（例如人口统计数据、ID 和其他配置文件属性）对数据进行分组，以提高可读性。 现在，配置文件详细信息页上的其他节更具交互性。 例如，“活动”节现在允许进行筛选和排序。
+  客户配置文件的详细信息页现在按各个子节（例如人口统计数据、ID 和其他配置文件属性）对数据进行分组，以提高可读性。 现在，配置文件详细信息页上的其他节更具交互性。 例如，活动部分现在允许进行筛选和排序。
 
 
 ## <a name="may-2021-updates"></a>2021 年 5 月更新

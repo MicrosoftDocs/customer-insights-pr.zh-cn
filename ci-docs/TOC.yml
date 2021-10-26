@@ -2,8 +2,14 @@
   href: index.yml
 - name: 产品概述
   href: overview.md
-- name: 创建试用版
-  href: audience-insights/get-started-trial.md
+- name: 免费试用
+  items:
+    - name: ' 注册免费试用'
+      href: trial-signup.md
+    - name: 试用版常见问题
+      href: trial-FAQ.md
+- name: 使用付费许可证开始
+  href: paid-license.md
 - name: 访问您的环境
   href: 'https://home.ci.ai.dynamics.com/'
 - name: 访问群体见解
@@ -19,9 +25,11 @@
         - name: 快速入门指南
           href: audience-insights/get-started.md
         - name: 创建新环境
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: 浏览访问群体见解
           href: audience-insights/home.md
+    - name: 使用企业客户
+      href: audience-insights/work-with-business-accounts.md
     - name: 了解模块
       items:
         - name: 引入数据
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: 列出客户活动
           href: audience-insights/activities.md
+        - name: 定义语义映射
+          href: audience-insights/semantic-mappings.md
     - name: 数据扩充
       items:
         - name: 扩充客户配置文件
@@ -126,7 +136,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: 订阅流失预测的示例指南
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: 交易流失预测的示例指南
+            - name: 交易流失预测示例指南
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: 产品建议预测示例指南
               href: audience-insights/sample-guide-predict-product-recommendation.md
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: 管理多个环境
           href: audience-insights/manage-environments.md
-        - name: 使用服务主体连接到 ADLS 存储帐户
-          href: audience-insights/connect-service-principal.md
         - name: 支持的语言
           href: audience-insights/supported-languages.md
+        - name: 安全性
+          items:
+            - name: 引入您自己的密钥保管库
+              href: audience-insights/use-azure-key-vault.md
+            - name: 使用服务主体连接到 ADLS 存储帐户
+              href: audience-insights/connect-service-principal.md
     - name: 扩展性
       items:
         - name: 集成参与见解中的 Web 数据
@@ -248,6 +262,8 @@
       items:
         - name: 快速入门指南
           href: engagement-insights/get-started.md
+        - name: 创建环境
+          href: engagement-insights/create-new-environment.md
         - name: 创建工作区
           href: engagement-insights/create-workspace.md
         - name: 从网站和移动应用捕获事件

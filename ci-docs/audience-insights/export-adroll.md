@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 AdRoll
 description: 了解如何配置连接和导出到 AdRoll。
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e48f67ec21bb9b883dd30544ccf4dcfbf487acb1abaf0a0557764bc3d955e41a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9373ea18e77723c988392a5a2959baa66d8eae9
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032060"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617319"
 ---
 # <a name="export-segments-to-adroll-preview"></a>将客户细分导出到 AdRoll（预览版）
 
@@ -28,11 +28,11 @@ ms.locfileid: "7032060"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 一次最多可以将 250,000 个配置文件导出到 AdRoll。
-- 您不能将配置文件少于 100 个的客户细分导出到 AdRoll。 
+- 您一次最多可以将 250,000 个客户配置文件导出到 AdRoll。
+- 不能将少于 100 个客户配置文件的客户细分导出到 AdRoll。 
 - 导出到 AdRoll 仅限于客户细分。
-- 最多将 250,000 个配置文件导出到 AdRoll 可能最多需要 10 分钟才能完成。 
-- 可以导出到 AdRoll 的配置文件数依赖于您与 AdRoll 的合同。
+- 向 AdRoll 导出最多 250,000 个客户配置文件最长可能需要 10 分钟完成。 
+- 您可以导出到 AdRoll 的客户配置文件数量取决于您与 AdRoll 的合同。
 
 ## <a name="set-up-connection-to-adroll"></a>设置与 AdRoll 的连接
 
@@ -66,7 +66,7 @@ ms.locfileid: "7032060"
 
 1. 输入您的 **AdRoll 广告厂商 ID**。 有关详细信息，请参阅 [AdRoll 广告厂商配置文件](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)。
 
-3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 需要将客户细分导出到 AdRoll。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 需要将客户细分导出到 AdRoll。
 
 1. 选择想要导出的细分。 选择至少包含 100 个成员的客户细分。 不能导出较小的客户细分。 此外，对于每个导出，要导出的客户细分的最大大小为 250,000 个成员。 
 

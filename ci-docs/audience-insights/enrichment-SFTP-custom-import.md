@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032701"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618671"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>使用自定义数据扩充客户配置文件（预览）
 
@@ -44,6 +44,8 @@ ms.locfileid: "7032701"
 1.  选择 **下一步**，然后输入您要导入的数据文件的 **路径** 和 **文件名**。
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="输入数据位置时的屏幕截图。":::
+
+1. 选择 **下一步**，然后选择客户数据集。 可以是所有客户配置文件或一个客户细分。
 
 1. 选择 **下一步** 并提供扩充的名称和输出实体的名称。 
 
@@ -123,6 +125,6 @@ ms.locfileid: "7032701"
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)并[导出数据](export-destinations.md)，以向客户提供个性化体验。
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,17 +4,17 @@ description: 如何创建、重命名和删除工作区和环境。
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 09/09/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: a5b48db5ae23ea65bf608d67348d493bfdc7678f
-ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
+ms.openlocfilehash: 279af24358a1d6ea2b4cc75d5496042af73a7cae
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7486024"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645435"
 ---
 # <a name="manage-environments-and-workspaces"></a>管理环境和工作区
 
@@ -22,42 +22,20 @@ ms.locfileid: "7486024"
 
 ## <a name="overview"></a>概述
 
-工作区是您存储和管理事件和报表的空间。 您可以在工作区中实时查看用户活动。 创建工作区时，您可以选择要发送到工作区的数据的类型。 当前，支持 Web 数据和移动应用。
+本主题讨论如何在创建工作区和环境后对其进行管理。 
 
-环境是用于管理工作区和连接的空间。 使用环境的方式取决于组织和用例。 例如，您可以创建：
+- *工作区* 是您存储和管理事件和报表的空间。 您可以在工作区中实时查看用户活动。 创建工作区时，您可以选择要发送到工作区的数据的类型。 当前，支持 Web 数据和移动应用。 有关详细信息，请参阅[创建工作区并添加成员](create-workspace.md)。
 
--   单个环境。
--   用于测试和生产的单独环境。
--   组织中特定团队或部门的单独环境，其中包含与每个访问群体相关的事件。
--   适用于公司的其他全球分支机构的不同环境。
--   与 Customer Insights 访问群体见解功能的连接。
+- *环境* 是用于管理工作区和连接的空间。 有关详细信息，请参阅[创建新环境](create-new-environment.md)。
 
-## <a name="choose-an-environment-and-create-a-workspace"></a>选择环境并创建工作区 
-
-每个工作区都需要在环境中。 您可以创建预先存在的环境，也可以在您创建工作区时创建新环境。 然后您可以选择添加工作区成员并开始收集数据。
-
-**要创建您的第一个工作区，请执行以下操作**
-
-1. 在参与见解中，从工作区切换器中选择 **新建**。 
-
-   :::image type="content" source="media/New-workspace.png" alt-text="Customer Insights 页面工作区选取器。":::
-
-1. 从列表中选择环境或选择 **创建新环境**。
-
-1. 在 **工作区名称** 中输入名称。 
-
-1. 选择要创建的环境类型，具体取决于您是否要度量在网站上或移动应用中发生的情况。 
-
-1. 您可以添加成员，然后从 **角色** 列表中分派其权限级别。 然后选择 **完成** 以创建工作区，或选择 **下一步** 以安装代码。 
-
-1. 安装代码片段以开始接收数据，然后选择 **完成**。 
-
-## <a name="manage-a-workspace"></a>管理工作区
+## <a name="manage-an-existing-workspace"></a>管理现有工作区
 
 您可以在一个环境中同时维护多个工作区。 您的[角色](user-roles.md)决定了您如何在这些工作区中工作。 
 
  - 您必须是环境管理员或工作区管理员才能管理该工作区。
  - 作为工作区管理员，您可以重命名现有工作区或删除它们。 
+
+:::image type="content" source="media/workspace-edit.png" alt-text="工作区管理中心。":::
 
 ### <a name="edit-a-workspace-name"></a>编辑工作区名称
 
@@ -75,7 +53,7 @@ ms.locfileid: "7486024"
 
 1. 选择 **删除工作区**。 
 
-1. 在 **删除工作区** 对话框中，输入 **确认删除**。 
+1. 在 **删除工作区** 对话中，全部大写输入 **CONFIRM DELETE**。 
 
 1. 选择 **删除** 以永久删除工作区。
 
@@ -87,27 +65,11 @@ ms.locfileid: "7486024"
 
 1. 选择 **添加成员** 以将其添加到您的工作区。
 
-## <a name="manage-an-environment"></a>管理环境
+## <a name="manage-an-existing-environment"></a>管理现有环境
 
 作为环境管理员，您可以从左侧导航窗格访问环境。 您可以配置环境设置、其他环境管理员和工作区。 选择相关选项卡以在管理中心的不同区域之间移动。
 
-:::image type="content" source="media/New-environment.png" alt-text="环境管理中心。":::
-
-### <a name="create-an-environment"></a>创建环境
-
-1. 在工作区选取器中，选择 **+ 新建**。
-
-1. 在引导式体验中，打开 **环境** 下拉菜单并选择 **创建新环境**。 
-
-1. 提供 **环境名称**。
-
-   :::image type="content" source="media/create-environment.png" alt-text="引导式体验中用于指定环境详细信息的步骤。":::
-
-1. 选择 **区域** 并选择 **下一步**。 
-
-1. 提供工作区名称并选择要创建的工作区类型。 
-
-1.  或者，添加成员并复制代码片段以完成创建过程。
+:::image type="content" source="media/environment-edit.png" alt-text="环境管理中心。":::
 
 ### <a name="rename-an-environment"></a>重命名环境
 
@@ -131,7 +93,7 @@ ms.locfileid: "7486024"
 
 1. 选择 **删除环境**。 
 
-1. 在 **删除工作区** 对话框中，输入 **确认删除**。 
+1. 在 **删除工作区** 对话中，全部大写输入 **CONFIRM DELETE**。 
 
 1. 选择 **删除** 以永久删除环境。
 
