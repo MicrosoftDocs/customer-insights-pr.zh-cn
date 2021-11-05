@@ -9,16 +9,18 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a54025588945e4db6ab800dca034520b5f08d49b
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035450"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673905"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>将客户细分和其他数据导出到 SFTP（预览版）
 
 将第三方应用程序中的客户数据导出到安全文件传输协议 (SFTP) 位置，以使用这些数据。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>连接的先决条件
 

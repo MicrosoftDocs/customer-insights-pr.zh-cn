@@ -1,7 +1,7 @@
 ---
 title: 由机器学习提供支持的建议客户细分
 description: 让机器学习功能帮助您根据客户属性找到感兴趣的新客户细分。
-ms.date: 02/01/2021
+ms.date: 10/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 manager: shellyha
-ms.openlocfilehash: f743853826cee0427618abccfba27f10016a0f05cc674f5f7da2210366d60305
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 44e46bb650b6f090afcab3bc940d03a304e9c375
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7028349"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673172"
 ---
 # <a name="suggested-segments-preview"></a>建议的客户细分（预览版）
 
@@ -23,7 +23,7 @@ ms.locfileid: "7028349"
 > [!NOTE]
 > 建议的客户细分功能使用自动方式来评估数据，并根据该数据做出预测，因此能够用作概要分析方法，该术语由一般数据保护条例（“GDPR”）定义。 使用此功能处理数据时可能会受到 GDPR 或其他法律或法规的约束。 您有责任确保在使用 Dynamics 365 Customer Insights（包括此功能）时遵守所有适用的法律和法规，包括与隐私、个人数据、生物特征数据、数据保护和通信保密相关的法律。
 
-:::image type="content" source="media/suggested-segments-details.png" alt-text="Customer Insights 中的建议的客户细分页面，其中显示了侧窗格中的建议的详细信息。":::
+:::image type="content" source="media/suggested-segments.png" alt-text="在侧窗格中显示建议详细信息的建议客户细分页面。":::
 
 ## <a name="suggested-segments-to-improve-your-kpis"></a>用于改进 KPI 的建议客户细分
 
@@ -49,7 +49,7 @@ ms.locfileid: "7028349"
 
 如果以 *年收入* 或 *成员期间* 之类的数字属性为主要属性，那么系统会建议与所有客户相比该数字属性的平均值较高或较低的客户细分。
 
-如果以分类属性（例如 *客户满意度*）作为主要属性，则会导致所建议客户细分的属于特定类别的客户百分比与属于同一类别的所有客户的百分更高或更低。 例如，*客户满意度* 被选为主要属性，并且它包含三个类别（*低*‘、*中* 和 *高*）。 对于每个类别，所建议客户细分的属于该类别的客户所占百分比与属于同一类别的所有客户的比例相比将明显更高或更低。 如果 22% 的所有客户的满意度为 *高*，那么，对于该类别，将仅建议 *高* 满意度客户比 22% 明显更高或更低的客户细分。 同样，如果其他类别（*低* 和 *中*）在统计上有意义，则会针对每个这样的类别建议客户细分。
+如果以分类属性（例如 *客户满意度*）作为主要属性，则会导致所建议客户细分的属于特定类别的客户百分比与属于同一类别的所有客户的百分更高或更低。 例如，*客户满意度* 被选为主要属性，并且它包含三个类别（*低*‘、*中* 和 *高*）。 对于每个类别，将建议客户细分，在这些客户细分中，属于该类别的客户所占的比例与同一类别中占所有客户的比例相比更高或更低。 如果 22% 的所有客户具有 *较高* 满意度，则针对该类别只推荐 *较高* 满意度的客户所占比例比 22% 更高或更低的客户细分。 同样，如果其他类别（*低* 和 *中*）在统计上有意义，则会针对每个这样的类别建议客户细分。
 
 > [!NOTE]
 > 当前，我们仅支持最多具有 10 个类别的主要类别属性。 如果您要查看基于具有 10 个以上类别的主要属性的客户细分建议，建议您对某些类别进行分组，以将类别数量减少到 10 个或更少。 此限制仅适用于主要属性。 对于影响类别属性，我们当前最多支持 100 个类别。
@@ -77,7 +77,7 @@ ms.locfileid: "7028349"
 
 AI 模型生成建议后，您将在 **客户细分** > **建议（预览版）** 中找到它们。
  
-选择一个建议的客户细分以查看该建议的详细信息，包括平均值和客户细分成员数量的比较。 您还可以查看 AI 模型为建议所选客户细分而学习的属性值或规则。
+选择建议的客户细分以查看该建议的详细信息。 您还可以查看 AI 模型为建议所选客户细分而学习的属性值或规则。
 
 ## <a name="save-a-suggestion-as-a-segment"></a>将建议另存为客户细分
 

@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-map
-ms.openlocfilehash: 7ee3feea8423f35f32ff471b3ed8eb3447584089
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: 8b84ed1a860e383e4eb3f7499be6d397ba3f1db1
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648151"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673252"
 ---
 # <a name="map-entities-and-attributes"></a>映射实体和属性
 
@@ -96,7 +96,7 @@ ms.locfileid: "7648151"
 
 对于组织（预览），属性类型应该映射到“Organization.Name”
 > [!div class="mx-imgBorder"]
-> ![主键和属性类型 B2B](media/configure-data-map-edit-b2b.png "主键和属性类型 B2B")
+> ![企业到企业主键和属性类型。](media/configure-data-map-edit-b2b.png "企业到企业主键和属性类型")
 
 ## <a name="next-step"></a>下一步
 

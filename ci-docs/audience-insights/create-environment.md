@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 95afd1fedb98a451e4978ee66be2ea98ad7a4a76
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645668"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673380"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>在访问群体见解中创建环境
 
@@ -46,7 +46,7 @@ ms.locfileid: "7645668"
 
 提供以下详细信息：
    - **名称**：此环境的名称。 如果已从现有环境中复制，则此字段已填写，但可以更改。
-   - **选择业务**：选择新环境的主要访问群体。 您可以与个人客户 (B2C) 或[企业客户](work-with-business-accounts.md) (B2B) 合作。
+   - **选择业务**：选择新环境的主要访问群体。 您可以处理单个客户（企业到客户）或[企业客户](work-with-business-accounts.md)（企业到企业）。
    - **类型**：选择是要创建生产环境还是沙盒环境。 沙盒环境不允许进行计划的数据刷新，而是用于预实施和测试。 沙盒环境使用与当前选择的生产环境相同的主要访问群体。
    - **区域**：要在其中部署和托管该服务的区域。
 
@@ -54,7 +54,7 @@ ms.locfileid: "7645668"
 
 在 **数据存储** 步骤中，选择存储来自访问群体见解的数据的位置。
 
-您将有两个选项：**Customer Insights 存储**（由 Customer Insights 团队管理的 Azure Data Lake）和 **Azure Data Lake Storage**（您自己的 Azure Data Lake Storage）。 默认情况下已选择 Customer Insights 存储选项。
+您将有两个选项：**Customer Insights 存储**（由 Customer Insights 团队管理的 Azure 数据湖）和 **Azure Data Lake Storage**（您自己的 Azure Data Lake Storage）。 默认情况下已选择 Customer Insights 存储选项。
 
 :::image type="content" source="media/data-storage-environment.png" alt-text="选择用于存储您的访问群体见解数据的 Azure Data Lake Storage。":::
 
@@ -66,7 +66,7 @@ ms.locfileid: "7645668"
 > - 来自您在创建环境时选择的同一 Azure 区域的 Azure Data Lake Storage 帐户。
 > - 启用了 *分层命名空间* 的 Azure Data Lake Storage 帐户。
 
-对于 Azure Data Lake Storage 选项，您可以在基于资源的选项和基于订阅的选项之间选择以进行身份验证。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 **容器** 名称将是 `customerinsights`，无法更改。
+对于 Azure Data Lake Storage 选项，您可以在基于资源的选项和基于订阅的选项之间选择以进行身份验证。 有关详细信息，请参阅使用 Azure 服务主体[连接到 Azure Data Lake Storage 帐户](connect-service-principal.md)。 **容器** 名称将是 `customerinsights`，无法更改。
 
 当数据引入等系统流程完成时，系统会在您指定的存储帐户内创建相应的文件夹。 将根据流程名称创建数据文件和 *model.json* 文件并将其添加到文件夹中。
 
@@ -76,14 +76,14 @@ ms.locfileid: "7645668"
    
 **Microsoft Dataverse** 步骤让您可以将 Customer Insights 与您的 Dataverse 环境相连接。
 
-要使用[现成的预测模型](predictions-overview.md#out-of-box-models)，请配置与 Dataverse 的数据共享。 或者，您可以启用来自本地数据源的数据引入，提供您的组织管理的 Microsoft Dataverse 环境 URL。 选择 **启用数据共享** 以与 Dataverse 托管 Data Lake 共享 Customer Insights 输出数据。
+要使用[现成的预测模型](predictions-overview.md#out-of-box-models)，请配置与 Dataverse 的数据共享。 或者，您可以启用来自本地数据源的数据引入，提供您的组织管理的 Microsoft Dataverse 环境 URL。 选择 **启用数据共享** 以与 Dataverse 托管数据湖共享 Customer Insights 输出数据。
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="用于启用与 Microsoft Dataverse 的数据共享的配置选项。":::
 
 > [!NOTE]
 > Customer Insights 不支持以下数据共享场景：
-> - 如果您将所有数据保存到自己的 Azure Data Lake Storage，将无法启用与 Microsoft Dataverse 托管 Data Lake 的数据共享。
-> - 如果您启用与 Microsoft Dataverse 托管 Data Lake 的数据共享，将无法[在实体中创建预测值或缺失值](predictions.md)。
+> - 如果您将所有数据保存到自己的 Azure Data Lake Storage，将无法启用与 Dataverse 托管数据湖的数据共享。
+> - 如果您启用与 Dataverse 的数据共享，那么您将无法[在实体中创建预测值或缺失值](predictions.md)。
 
 ### <a name="step-4-finalize-the-settings"></a>步骤 4：完成设置
 
@@ -93,10 +93,10 @@ ms.locfileid: "7645668"
 
 ## <a name="work-with-your-new-environment"></a>使用新环境
 
-查看以下文章以帮助您开始配置 Customer Insights。 
+请查看以下文章来帮助您开始配置 Customer Insights： 
 
 - [添加更多用户和分配权限](permissions.md)。
 - [引入您的数据源](data-sources.md)并通过[数据统一过程](data-unification.md)运行它们，以获得[统一的客户配置文件](customer-profiles.md)。
 - [扩充统一的客户配置文件](enrichment-hub.md)或[运行预测模型](predictions-overview.md)。
-- [创建客户细分](segments.md)为客户分组并[衡量](measures.md)评价 KPI。
+- [创建客户细分](segments.md)以对客户进行分组，创建[度量](measures.md)以评价 KPI。
 - [设置连接](connections.md)和[导出](export-destinations.md)，处理其他应用程序中的数据子集。

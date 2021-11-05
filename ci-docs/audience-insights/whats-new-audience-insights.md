@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606041"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673804"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
@@ -166,7 +166,7 @@ ms.locfileid: "7606041"
 - **将客户细分导出到 Constant Contact** 我们已扩展导出目标，以包括 Constant Contact。 现在，您可以将客户细分从 Customer Insights 导出到 Constant Contact 列表，并将其用作市场营销活动的基线。   
    有关详细信息，请参阅[将数据导出至 Constant Contact](export-constant-contact.md)。
 
-- **将客户细分导出到 RollWorks** 我们已扩展导出目标，以包括 RollWorks。 现在，您可以将客户细分从 Customer Insights 导出到 RollWorks 受众，并将其用作 B2B 广告的基线。    
+- **将客户细分导出到 RollWorks** 我们已扩展导出目标，以包括 RollWorks。 您现在可以将客户细分从 Customer Insights 导出到 RollWorks 访问群体，并将其用作企业对企业广告基准。    
    有关详细信息，请参阅[将数据导出至 RollWorks](export-rollworks.md)。
 
 - **将客户细分导出到 Snapchat** 我们已扩展导出目标，以包括 Snapchat。 现在，您可以将客户细分从 Customer Insights 导出到 Snapchat 受众，并将其用作广告的基线。     

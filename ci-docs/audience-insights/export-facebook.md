@@ -9,16 +9,18 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4403c6f535f5dc60919be3717073d52640bbe61a
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bb74e35799410b92b64e48e065b45efda82490ca
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619200"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672942"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>向 Facebook Ads Manager 导出客户细分列表（预览版）
 
 将统一客户配置文件的细分导出到 Facebook Ads Manager，以在 Facebook 和 Instagram 上创建市场活动。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO1aN]
 
 ## <a name="prerequisites-for-connection"></a>连接的先决条件
 

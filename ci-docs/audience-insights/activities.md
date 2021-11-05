@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c250efcd54ec126c0726b22a971cdedd89760d6b
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617958"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673126"
 ---
 # <a name="customer-activities"></a>客户活动
 
@@ -49,7 +49,7 @@ ms.locfileid: "7617958"
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="定义实体关系。":::
 
    > [!TIP]
-   > 在 B2B 环境中，可在客户实体和其他实体之间选择。 如果选择客户实体，将自动设置关系路径。 对于其他实体，您必须定义到达客户实体前一个或多个中间实体之间的关系路径。
+   > 在企业对企业环境中，可在客户实体和其他实体之间选择。 如果选择客户实体，将自动设置关系路径。 对于其他实体，您必须定义到达客户实体前一个或多个中间实体之间的关系路径。
 
 1. 选择 **下一步** 以继续进行下一步。 
 

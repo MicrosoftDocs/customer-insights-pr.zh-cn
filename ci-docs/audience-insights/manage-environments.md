@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645115"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673722"
 ---
 # <a name="manage-environments"></a>管理环境
 
@@ -67,7 +67,8 @@ ms.locfileid: "7645115"
 
 - 客户配置文件。
 - 数据源凭据。 您必须为每个数据源提供凭据，并手动刷新数据源。
-- Common Data Model 文件夹和 Dataverse 托管的 Data Lake 中的数据源。 您必须使用与源环境中相同的名称手动创建这些数据源。
+
+- Common Data Model 文件夹和 Dataverse 托管数据湖中的数据源。 您必须使用与源环境中相同的名称手动创建这些数据源。
 
 复制环境时，您会看到一条确认消息，显示新环境已创建。 选择 **转到数据源** 查看数据源的列表。
 

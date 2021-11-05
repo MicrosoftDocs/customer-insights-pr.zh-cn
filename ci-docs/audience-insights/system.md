@@ -1,7 +1,7 @@
 ---
 title: 访问群体见解中的系统配置
 description: 了解 Dynamics 365 Customer Insights 访问群体见解功能中的系统设置。
-ms.date: 02/12/2021
+ms.date: 10/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2af8728009b4f1d53ebc2557bab8c79537a0dc5dda54477493ab1ad16f3f9a8a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3ce767939b8fedf676dc569ede47104ecfe930dd
+ms.sourcegitcommit: cd9f9a9d3da71c5420ef5c4c6ead91bc820d17a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035883"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651829"
 ---
 # <a name="system-configuration"></a>系统配置
 
@@ -24,9 +24,9 @@ ms.locfileid: "7035883"
 - [API 使用情况](#api-usage-tab)
 - [关于](#about-tab)
 - [常规](#general-tab)
+- [安全性](#security-tab)
 
-> [!div class="mx-imgBorder"]
-> ![“系统”页面。](media/system-tabs.png "“系统”页面")
+:::image type="content" source="media/system-tabs.png" alt-text="系统页上的设置选项卡。":::
 
 ## <a name="status-tab"></a>“状态”选项卡
 
@@ -84,9 +84,15 @@ ms.locfileid: "7035883"
 
 ## <a name="general-tab"></a>“常规”选项卡
 
-**常规** 选项卡上有两个选项，即 **语言** 和 **国家/地区格式**。
+可以在 **常规** 选项卡上更改语言和国家/地区格式。
 
-应用[支持多种语言](supported-languages.md)。 若要更改首选语言，请从下拉列表中选择 **语言**。
+Customer Insights [支持大量语言](/dynamics365/get-started/availability)。 应用使用您的语言首选项以您的首选语言显示元素，例如菜单、标签文本和系统消息。
+
+未翻译手动输入的所导入数据和信息。
+
+### <a name="update-the-settings"></a>更新设置
+
+若要更改首选语言，请从下拉列表中选择 **语言**。
 
 若要更改日期、时间和数字的首选格式，请使用 **国家/地区格式** 下拉列表。 将在此字段下显示格式预览。 当您选择新语言时，系统将自动推荐选择。
 
@@ -105,6 +111,13 @@ ms.locfileid: "7035883"
 
    使用[实时数据引用](real-time-data-ingestion.md)的操作包含带有双筒望远镜符号的按钮，用于查看实时 API 使用情况。 选择该按钮以打开一个侧窗格，其中包含在当前环境中使用实时 API 的使用情况详细信息。   
    使用 **实时 API 使用情况** 窗格中的 **分组依据** 框，以选择如何最好地呈现实时交互。 您可以按 API 方法、实体限定名称（引入的实体）、创建者（事件来源）、结果（成功或失败）或错误代码对数据进行分组。 数据以历史图表和表格形式提供。
+
+## <a name="security-tab"></a>“安全”选项卡
+
+使用 **安全** 选项卡，可以链接和管理您自己的环境 [Azure Key Vault](/azure/key-vault/general/basic-concepts)。
+专用密钥保管库可用于在组织的合规边界内暂存和使用密钥。 访问群体见解可以使用 Azure 密钥保管库中的密钥[设置与第三方系统的连接](connections.md)。
+
+有关详细信息，请参阅[引入您自己的 Azure Key Vault](use-azure-key-vault.md)。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

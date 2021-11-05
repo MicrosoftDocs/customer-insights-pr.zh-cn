@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618832"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673951"
 ---
 # <a name="predictions-overview"></a>预测概述
 
@@ -25,14 +25,14 @@ Dynamics 365 Customer Insights 提供各种选项，这些选项可以利用 AI 
 
 开始预测数据的最简单方法是使用预定义的模型（通常称为现成模型）。 它们只需某些数据和结构便可快速生成见解。 目前，以下模型可用： 
 
-# <a name="individual-customers-b2c"></a>[个人客户 (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[单个消费者(企业对客户)](#tab/b2c)
 
 - [客户生存期值](predict-customer-lifetime-value.md)：预测客户在与企业交互的整个期间的潜在收入。
 - [产品推荐](predict-product-recommendation.md)：根据购买行为和具有类似购买模式的客户提出一套预测性产品建议。
 - [订阅流失](predict-subscription-churn.md)：预测客户是否存在不再使用贵公司的订阅产品或服务的风险的模型。
 - [交易流失](predict-transactional-churn.md)：预测客户是否会在特定期限内不再购买您的产品或服务。
 
-# <a name="business-accounts-b2b"></a>[企业客户 (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
 - [交易流失](predict-transactional-churn.md)：预测客户是否会在特定期限内不再购买您的产品或服务。
 

@@ -9,16 +9,16 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 685b1683b0c90eab04b130552d2cb23a8ab7a235
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617340"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673219"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>通过 Leadspace 扩充公司配置文件（预览）
 
-Leadspace 是一家提供 B2B 客户数据平台的数据科学公司。 它使具有基于客户的统一客户配置文件的环境能够扩充数据。 使用公司规模、位置或行业等属性扩充 *客户配置文件*。 使用职务、角色或电子邮件验证等属性扩充 *联系人配置文件*。
+Leadspace 是一个提供企业对企业客户数据平台的数据科学公司。 它使具有基于客户的统一客户配置文件的环境能够扩充数据。 使用公司规模、位置或行业等属性扩充 *客户配置文件*。 使用职务、角色或电子邮件验证等属性扩充 *联系人配置文件*。
 
 ## <a name="prerequisites"></a>先决条件
 

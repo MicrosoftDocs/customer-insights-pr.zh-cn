@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617325"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673749"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617325"
 
 创建新客户细分的方法有多种： 
 
-# <a name="individual-customers-b2c"></a>[个人客户 (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[单个消费者(企业对客户)](#tab/b2c)
 
 - 使用客户细分生成器的复杂客户细分：[生成您自己的客户细分](segment-builder.md#create-a-new-segment) 
 - 具有一个运算符的简单客户细分：[快速客户细分](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617325"
 - 由 AI 提供支持且基于度量或属性的建议：[为改进度量而建议的客户细分](suggested-segments.md) 
 - 基于活动的建议：[基于客户活动的建议客户细分](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[企业客户 (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
 - 使用客户细分生成器的复杂客户细分：[生成您自己的客户细分](segment-builder.md#create-a-new-segment)
 

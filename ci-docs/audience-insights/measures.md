@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 39acca78c022bc15ebc15dc80f21fe175da04d4d
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622848"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673359"
 ---
 # <a name="define-and-manage-measures"></a>定义和管理度量
 
@@ -28,7 +28,7 @@ ms.locfileid: "7622848"
 
 本节将从头开始引导您创建新度量。 您可以使用将关系设置为与统一客户配置文件实体连接的数据实体中的数据属性建立度量值。
 
-# <a name="individual-customers-b2c"></a>[个人客户 (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[单个消费者(企业对客户)](#tab/b2c)
 
 1. 在访问群体见解中，转到 **度量**。
 
@@ -92,7 +92,7 @@ ms.locfileid: "7622848"
 
 1. 转到 **度量** 以在列表中查看新创建的度量。
 
-# <a name="business-accounts-b2b"></a>[企业客户 (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
 1. 在访问群体见解中，转到 **度量**。
 
@@ -164,7 +164,7 @@ ms.locfileid: "7622848"
 
 您可以使用常用度量的预定义模板来创建它们。 模板的详细描述和引导式体验可帮助您高效创建度量。 模板建立在 *统一活动* 实体的映射数据的基础上。 因此，在从模板创建量度之前，请确保已配置[客户活动](activities.md)。
 
-# <a name="individual-customers-b2c"></a>[个人客户 (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[单个消费者(企业对客户)](#tab/b2c)
 
 您可以使用常用度量的预定义模板来创建它们。 模板的详细描述和引导式体验可帮助您高效创建度量。 模板建立在 *统一活动* 实体的映射数据的基础上。 因此，在从模板创建量度之前，请确保已配置[客户活动](activities.md)。
 
@@ -212,7 +212,7 @@ ms.locfileid: "7622848"
 
 1. 现在，您可以选择 **运行** 来计算度量结果。 要稍后进行改进，请选择 **保存草稿**。
 
-# <a name="business-accounts-b2b"></a>[企业客户 (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
 此功能只能用于在以个人客户为主要目标访问群体的环境中创建的度量。
 
