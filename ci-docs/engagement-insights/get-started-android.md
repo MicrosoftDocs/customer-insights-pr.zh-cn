@@ -4,17 +4,17 @@ description: 了解如何个性化和运行 Android SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
+ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494264"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655331"
 ---
 # <a name="get-started-with-the-android-sdk"></a>开始使用 Android SDK
 
@@ -42,12 +42,12 @@ ms.locfileid: "7494264"
 
 - 如果您没有现有工作区，请选择 **新建工作区**，然后按照步骤创建[新工作区](create-workspace.md)。
 
-- 创建工作区后，请转到 **管理** > **工作区**，然后选择 **安装指南**。 
+- 创建工作区后，请转到 **管理** > **工作区**，然后选择 **安装指南**。
 
 ## <a name="configure-the-sdk"></a>配置 SDK
 
 下载 SDK 后，可以在 Android Studio 中使用它以启用和定义事件。 方法有两种。
-### <a name="option-1-using-jitpack-recommended"></a>选项 1：使用 JitPack（推荐）
+### <a name="option-1-use-jitpack-recommended"></a>选项 1：使用 JitPack（推荐）
 1. 将 JitPack 存储库添加到根 `build.gradle`：
     ```gradle
     allprojects {
@@ -61,12 +61,12 @@ ms.locfileid: "7494264"
 1. 添加依赖项：
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### <a name="option-2-using-download-link"></a>选项 2：使用下载链接
+### <a name="option-2-use-download-link"></a>选项 2：使用下载链接
 1. 下载[参与见解 Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip)，然后将 `eiandroidsdk-debug.aar` 文件放入 `libs` 文件夹中。
 
 1. 打开项目级别 `build.gradle` 文件并添加以下片段：
@@ -83,22 +83,23 @@ ms.locfileid: "7494264"
     }
     ```
 
-1. 在 `manifests` 文件夹中 `AndroidManifest.xml` 文件内添加网络和 Internet 的权限。 
+## <a name="enable-auto-instrumentation"></a>启用自动检测
+
+1. 在 `manifests` 文件夹中 `AndroidManifest.xml` 文件内添加网络和 Internet 的权限。
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
-    
-1. 通过  `AndroidManifest.xml`文件设置参与见解 SDK 配置。 
 
-## <a name="enable-auto-instrumentation"></a>启用自动检测
+1. 通过  `AndroidManifest.xml`文件设置参与见解 SDK 配置。
+
 1. 从 **安装指南** 中复制 XML 片段。 `Your-Ingestion-Key` 应自动填充。
 
    > [!NOTE]
    > 无需替换 `${applicationId}` 部分。 它将自动填充。
-   
+
 
    ```xml
    <application>
@@ -116,20 +117,24 @@ ms.locfileid: "7494264"
    </application>
    ```
 
-1. 通过将上面的 `autoCapture` 字段设置为 `true` 或 `false`，启用或禁用 `View` 事件的自动捕获。 现在需要手动添加 `Action` 事件。
+1. 通过将上面的 `autoCapture` 字段设置为 `true` 或 `false`，启用或禁用 `View` 事件的自动捕获。 
 
-1. （可选）其他配置包括设置终结点收集器 URL。 可以在 `AndroidManifest.xml` 中的引入密钥元数据下添加它们：
-    ```xml
+   >[!NOTE]
+   >需要手动添加 `Action` 事件。
+
+1. （可选）其他配置包括设置终结点收集器 URL。 可以在 `AndroidManifest.xml` 中的引入密钥元数据下添加它们。
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## <a name="implement-custom-events"></a>实现自定义事件
 
 初始化 SDK 后，您可以在 `MainActivity` 环境中处理事件及其属性。
 
-    
+
 Java：
 ```java
 Analytics analytics = new Analytics();
@@ -141,7 +146,7 @@ var analytics = Analytics()
 ```
 
 ### <a name="set-property-for-all-events-optional"></a>设置所有事件的属性（可选）
-    
+
 Java：
 ```java
 analytics.setProperty("year", 2021);

@@ -84,6 +84,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: 增强的地址
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: 扩充公司数据
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: 使用 Azure Maps 扩充
           href: audience-insights/enrichment-azure-maps.md
         - name: 通过 HERE Technologies 扩充
@@ -250,6 +252,40 @@
           href: audience-insights/apis.md
         - name: API 引用
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: 同意管理（预览版）
+  items:
+    - name: 帮助中心
+      href: consent-management/index.yml
+    - name: 功能概述
+      href: consent-management/overview.md
+    - name: 开始
+      items:
+        - name: 开始
+          href: consent-management/get-started.md
+        - name: 概念和术语
+          href: consent-management/glossary.md
+    - name: 导入同意数据
+      items:
+        - name: 导入同意数据
+          href: consent-management/import-consent-data.md
+        - name: 设置同意数据并应用同意首选项
+          href: consent-management/set-consent-rules.md
+    - name: 管理同意数据
+      items:
+        - name: 在访问群体见解中启用同意规则
+          href: audience-insights/activate-consent.md
+        - name: 管理访问群体见解客户细分中的默认同意规则
+          href: audience-insights/change-default-consent-rules.md
+    - name: 管理设置和用户
+      items:
+        - name: 配置系统设置
+          href: consent-management/system-settings.md
+        - name: 管理用户和权限
+          href: consent-management/manage-users.md
+    - name: 使用同意数据
+      items:
+        - name: 使用同意数据创建预测
+          href: consent-management/predictions-consent-data.md
 - name: 参与见解(预览版)
   items:
     - name: 帮助中心

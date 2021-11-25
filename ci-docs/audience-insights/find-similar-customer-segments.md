@@ -9,16 +9,18 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ee4d24ae0ae39c689956f70efe46c4226876484e6da6282dc874cec37bd287e2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7c447609bd54de0780dd14aae9f05c7c24b8cce5
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034517"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799672"
 ---
 # <a name="similar-customers-preview"></a>相似客户（预览）
 
 此功能使您可以使用人工智能在客户群中查找相似客户。 您需要至少创建一个客户细分才能使用此功能。 扩展现有客户细分的条件可帮助查找与该客户细分相似的客户。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
 > *查找相似客户* 使用自动方法评估数据并基于该数据作出预测，因此如一般数据保护条例 (“GDPR”) 所定义的术语，能够用作探查方法。 客户在使用此功能处理数据时，应该遵守 GDPR 或其他法律或法规。 您有责任确保在使用 Dynamics 365 Customer Insights（包括预测）时遵守所有适用的法律和法规，包括与隐私、个人数据、生物特征数据、数据保护和通信保密相关的法律。

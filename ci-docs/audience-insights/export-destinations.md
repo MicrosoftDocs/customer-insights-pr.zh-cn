@@ -1,7 +1,7 @@
 ---
 title: 从 Customer Insights 导出数据
 description: 管理导出以共享数据。
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673312"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732124"
 ---
 # <a name="exports-preview-overview"></a>导出(预览版)概述
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673312"
 
 您配置的每个导出都有一个刷新计划。 在刷新期间，系统会查找要包括在导出中的新数据或已更新数据。 默认情况下，导出在每个[计划系统刷新](system.md#schedule-tab)过程中运行。 您可以自定义刷新计划或将其关闭以手动运行导出。
 
-导出计划取决于您的环境状态。 如果在应启动计划导出时正在进行有关[依赖项](system.md#refresh-policies)的更新，系统将首先完成更新，然后运行导出。 可以在 **刷新时间** 列中查看最后刷新导出的时间。
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+导出计划取决于您的环境状态。 如果在应启动计划导出时正在进行有关[依赖项](system.md#refresh-processes)的更新，系统将首先完成更新，然后运行导出。 可以在 **刷新时间** 列中查看最后刷新导出的时间。
 
 ### <a name="schedule-exports"></a>计划导出
 

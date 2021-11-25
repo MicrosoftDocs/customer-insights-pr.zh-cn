@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 816f948331a06794c15000eb779f93cc7fdda202
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 1f8922703af506974c8b5b24086b61f05a83609d
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645299"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673371"
 ---
 # <a name="create-a-new-workspace-and-add-members"></a>创建新工作区并添加成员
 
@@ -26,9 +26,9 @@ ms.locfileid: "7645299"
 
 ## <a name="create-a-new-workspace"></a>创建新工作区
 
-创建工作区的过程包括设置 *环境* 以组织您的工作区。 环境是可包含一个或多个工作区的空间。 您可以利用环境来管理您的工作区以及与 Customer Insights 和访问群体见解功能的连接。
+创建工作区的过程包括设置 *环境* 以组织您的工作区。 环境是可包含一个或多个工作区的空间。 您可以使用环境来管理您的工作区以及访问群体见解功能连接。
 
-1. 从工作区切换器中选择 **新建**。
+1. 从工作区切换器中选择 **+ 新建**。
 
    :::image type="content" source="media/new-workspace.png" alt-text="包含导航窗格标注和说明的 Customer Insights 页面。":::
 

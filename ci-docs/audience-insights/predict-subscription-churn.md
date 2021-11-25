@@ -9,16 +9,18 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 409dfce02c41d7c52295409912880b9224469908805e199066faeb2b7a4f1f9d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9397729d2f79d079b4dea2ee92d0823b6d987e4
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035312"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799718"
 ---
 # <a name="subscription-churn-prediction-preview"></a>订阅流失预测（预览）
 
 订阅流失预测功能有助于预测客户是否存在不再使用贵公司的订阅产品或服务的风险。 您可以在 **智能** > **预测** 页上创建新的订阅流失预测。 选择 **我的预测** 以查看您已创建的其他预测。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
 > [!TIP]
 > 请试用使用示例数据的订阅流失预测的教程：[订阅流失预测示例指南](sample-guide-predict-subscription-churn.md)。

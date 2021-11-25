@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643350"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7792017"
 ---
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
 
@@ -34,7 +34,7 @@ ms.locfileid: "7643350"
   - **度量值控件**：需要配置的客户属性类型的[度量值](measures.md)。
   - **智能控件**：需要使用[预测](predictions.md)或[自定义模型](custom-models.md)生成的数据。
   - **客户详细信息控件**：配置文件的所有字段在统一客户配置文件中提供。
-  - **扩充控件**：需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。
+  - **扩充控件**：需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。 该卡加载项支持这些扩充：Microsoft 提供的[品牌](enrichment-microsoft.md)和 Microsoft 提供的[兴趣](enrichment-microsoft.md)。
   - **联系人控件**：需要定义联系人类型的语义实体。
   - **时间线控件**：需要[配置的活动](activities.md)。
 

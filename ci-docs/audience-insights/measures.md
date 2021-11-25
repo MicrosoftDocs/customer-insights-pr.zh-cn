@@ -1,7 +1,7 @@
 ---
 title: 创建和管理度量
 description: 定义度量以分析和反映业务绩效。
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673359"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732715"
 ---
 # <a name="define-and-manage-measures"></a>定义和管理度量
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673359"
 - **删除** 度量。
 - **激活** 或 **停用**。 停用的度量在[计划刷新](system.md#schedule-tab)期间不会刷新。
 
-> [!TIP]
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 针对一个作业任务选择 **查看详细信息** 后，您将找到其他信息：处理时间、上次处理日期以及与该任务关联的所有错误和警告。
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>下一步
 

@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
+ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7672988"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7770106"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -42,6 +42,7 @@ ms.locfileid: "7672988"
 
 - Leadspace 提供的[公司数据](enrichment-leadspace.md)
 - Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md) 
+- Microsoft 提供的[增强型公司数据](enrichment-enhanced-company-data.md)
 - HERE Technologies 提供的[位置数据](enrichment-here.md) 
 - 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
 - Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)

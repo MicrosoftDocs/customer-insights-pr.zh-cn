@@ -1,7 +1,7 @@
 ---
 title: 在数据统一中合并实体
 description: 合并实体以创建统一客户配置文件。
-ms.date: 10/10/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-merge
-ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648243"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732761"
 ---
 # <a name="merge-entities"></a>合并实体
 
@@ -187,10 +187,9 @@ Customer 实体中的 CustomerId 基于非空获胜者主键第一个值的哈�
 
 若要进行更多更改并重新运行此步骤，可以取消正在进行的合并。 选择 **正在刷新...**，然后选择显示的侧边窗格中的 **取消作业**。
 
-> [!TIP]
-> 运行合并流程后，选择流程状态以打开 **任务详细信息** 窗格。 它概述了处理时间、上次处理日期以及与任务相关的所有错误和警告。 选择 **查看详细信息**，以查看哪些实体参与了匹配流程、是否成功进行了冲突解决，以及是否成功发布了更新。  
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。  
-> :::image type="content" source="media/process-detail-path.png" alt-text="从任务状态链接获取流程详细信息的向下钻取路径。":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="从任务状态链接获取流程详细信息的向下钻取路径。":::
 
 ## <a name="next-step"></a>下一步
 

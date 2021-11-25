@@ -1,7 +1,7 @@
 ---
 title: 使用数据源引入数据
 description: 了解如何从各个数据源导入数据。
-ms.date: 04/12/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645344"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732116"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -48,14 +48,7 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 > [!div class="mx-imgBorder"]
 > ![已添加数据源。](media/configure-data-datasource-added.png "已添加数据源")
 
-|执行状态  |描述  |
-|---------|---------|
-|成功   |如果 **已刷新** 列中显示时间，则数据源已成功引入。
-|未开始   |数据源尚未引入数据，或仍处于草稿模式。         |
-|正在刷新    |正在引入数据。 可以通过选择 **操作** 列中的 **停止刷新** 来取消此操作。 停止刷新数据源将把数据源恢复为上次的刷新状态。       |
-|已失败     |数据引入出错。         |
-
-在任意数据源的 **状态** 列中选择值以查看更多详细信息。 在 **进度详细信息** 窗格中，展开 **数据源**。 选择 **查看详细信息** 以查看有关刷新状态的详细信息，包括错误详细信息和下游流程更新。
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 加载数据可能需要一些时间。 成功刷新后，可以从 **实体** 页查看引入的数据。 有关详细信息，请参阅[实体](entities.md)。
 

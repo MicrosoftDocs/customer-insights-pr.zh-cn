@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 279af24358a1d6ea2b4cc75d5496042af73a7cae
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 09cb3ddf0f8b4507b7eae6668ea3dad08cfcea29
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645435"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673778"
 ---
 # <a name="manage-environments-and-workspaces"></a>管理环境和工作区
 
@@ -24,7 +24,7 @@ ms.locfileid: "7645435"
 
 本主题讨论如何在创建工作区和环境后对其进行管理。 
 
-- *工作区* 是您存储和管理事件和报表的空间。 您可以在工作区中实时查看用户活动。 创建工作区时，您可以选择要发送到工作区的数据的类型。 当前，支持 Web 数据和移动应用。 有关详细信息，请参阅[创建工作区并添加成员](create-workspace.md)。
+- *工作区* 是您存储和管理事件和报表的空间。 您可以在工作区中实时查看用户活动。 创建工作区时，您可以选择要发送到工作区的数据的类型。 当前，支持 Web 数据和移动应用。 有关详细信息，请参阅[创建新工作区并添加成员](create-workspace.md)。
 
 - *环境* 是用于管理工作区和连接的空间。 有关详细信息，请参阅[创建新环境](create-new-environment.md)。
 
@@ -71,19 +71,11 @@ ms.locfileid: "7645435"
 
 :::image type="content" source="media/environment-edit.png" alt-text="环境管理中心。":::
 
-### <a name="rename-an-environment"></a>重命名环境
+### <a name="edit-an-environment-name"></a>编辑环境名称
 
 1. 转到 **管理员** > **环境**，然后选择 **设置**。
 
 1. 更新 **环境名称** 并选择 **保存** 以应用所做的更改。
-
-### <a name="manage-environment-members"></a>管理环境成员
-
-1. 转到 **管理员** > **环境**，然后选择 **成员**。
-
-1. 选择 **添加成员** 以更新成员并[分派角色](user-roles.md)。 目前，只有 **环境管理员** 可用。
-
-1. 选择 **添加成员** 以将其添加到您的环境。
 
 ### <a name="delete-an-environment"></a>删除环境
 
@@ -97,6 +89,14 @@ ms.locfileid: "7645435"
 
 1. 选择 **删除** 以永久删除环境。
 
+### <a name="manage-environment-members"></a>管理环境成员
+
+1. 转到 **管理员** > **环境**，然后选择 **成员**。
+
+1. 选择 **添加成员** 以更新成员并[分派角色](user-roles.md)。 目前，只有 **环境管理员** 可用。
+
+1. 选择 **添加成员** 以将其添加到您的环境。
+
 ## <a name="manage-connections"></a>管理连接
 
 通过建立与访问群体见解的连接，您可以基于统一的客户配置文件在参与见解中查看报表。 
@@ -107,7 +107,6 @@ ms.locfileid: "7645435"
 
 为了保护客户的个人数据，您可以删除或导出最终用户身份信息。
 
-有关详细信息，请参阅[删除和导出包含个人信息的事件数据](delete-export-personal-data.md)。
-
+有关详细信息，请参阅[删除和导出包含个人信息的事件数据](../dsr-rights-requests.md#deleting-and-exporting-event-data-containing-end-user-identifiable-information)。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

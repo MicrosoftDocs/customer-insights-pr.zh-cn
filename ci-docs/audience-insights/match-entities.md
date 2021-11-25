@@ -1,7 +1,7 @@
 ---
 title: 匹配数据统一的实体
 description: 匹配实体以合并数据集，创建统一客户配置文件。
-ms.date: 02/23/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-match
-ms.openlocfilehash: 67e17495fa6da1cfac7ee4ee165e798364f6cb27
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: cabeddbc9d485108d166e6355175a01721b75a55
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648197"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732623"
 ---
 # <a name="match-entities"></a>匹配实体
 
@@ -180,10 +180,7 @@ ms.locfileid: "7648197"
 
 您可以在 **实体** 页上查找成功运行的结果，统一客户配置文件实体。 统一客户实体在 **配置文件** 部分中称为 **客户**。 第一次成功运行匹配可创建统一的 *客户* 实体。 所有后续匹配运行都将展开该实体。
 
-> [!TIP]
-> 运行匹配流程后，选择流程状态以打开 **任务详细信息** 窗格。 它概述了处理时间、上次处理日期以及与任务相关的所有错误和警告。 选择 **查看详细信息**，以查看哪些实体参与了匹配流程、对其应用了哪些规则，以及是否成功发布了更新。  
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。  
-> :::image type="content" source="media/process-detail-path.png" alt-text="从任务状态链接获取流程详细信息的向下钻取路径。":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="review-and-validate-your-matches"></a>预览和验证匹配
 

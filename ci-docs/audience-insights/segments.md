@@ -1,7 +1,7 @@
 ---
 title: 访问群体见解中的客户细分
 description: 概述客户细分以及如何创建和管理它们。
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 56978c984a91e85e86956e7eac1d59609c349b6a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673749"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732577"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -65,8 +65,7 @@ ms.locfileid: "7673749"
 
 您可以通过选择 **客户细分** 页上的 **全部刷新** 来同时刷新所有客户细分；也可以选择一个或多个客户细分，然后从选项中选择 **刷新** 来刷新它们。 也可以在 **管理** > **系统** > **计划** 中配置定期刷新。
 
-> [!TIP]
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="export-segments"></a>导出细分
 
@@ -105,5 +104,6 @@ ms.locfileid: "7673749"
 > 此列表中显示的字段基于细分的实体属性。
 >
 >此列表是匹配的细分成员的预览，并显示您的细分的前 100 条记录，以便您快速评估该细分和在需要时查看其定义。 若要查看所有匹配的记录，需要[导出细分](export-destinations.md)。
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 8404515a20529c00708d84813f3a022ad98c45362a2f1e68d7aa890d085071a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033574"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732253"
 ---
 # <a name="work-with-customer-insights-apis"></a>使用 Customer Insights API
 
@@ -135,7 +135,7 @@ HTTP 响应将立即显示在下方。
 
 1. 使用 [Microsoft 身份验证库 (MSAL)](/azure/active-directory/develop/msal-overview) 以使用现有的 [Azure 应用注册](#create-a-new-app-registration-in-the-azure-portal)获取 `AccessToken`。
 
-1. 在成功进行身份验证并获取令牌后，从您的 [Customer Insights 环境](#get-started-trying-the-customer-insights-apis)中构建新的客户端或使用现有的 `HttpClient`，其中其他 **DefaultRequestHeaders "Authorization"** 设置为 **Bearer <access token>** 和 **Ocp-Apim-Subscription-Key** 设置为 **subscription key**。   
+1. 成功验证并获取令牌后，构建一个新的或使用现有的 `HttpClient`，并将其他 **DefaultRequestHeaders 授权** 设置为 **持有者访问令牌**，将 **Ocp-Apim-Subscription-Key** 设置为 [Customer Insights 环境中的 **订阅密钥**](#get-started-trying-the-customer-insights-apis)。   
  
    根据需要重置 **授权** 标头。 例如，当令牌到期时。
 

@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483647"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7791971"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Customer Insights 功能中的服务限额
 
@@ -26,7 +26,7 @@ ms.locfileid: "7483647"
 
 | 地区  | 限额  | 备注 |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| 客户细分和度量 | 100 个客户细分或度量。 | 组合的活动[客户细分](audience-insights/segments.md)和[度量](audience-insights/measures.md)的总数不能超过 100。  |
+| 客户细分、度量和预测 | 300  | 组合后的[客户细分](audience-insights/segments.md)、[度量](audience-insights/measures.md)和[预测](audience-insights/predictions.md)的总数不能超过 300。  |
 | 关系 | 实体路径中关系的 20 个深度级别。 | 使用生成器界面创建[客户细分](audience-insights/segments.md)或[度量](audience-insights/measures.md)时，实体路径在起始实体和目标实体之间最多可以有 20 个关系跃点。  |
 
 

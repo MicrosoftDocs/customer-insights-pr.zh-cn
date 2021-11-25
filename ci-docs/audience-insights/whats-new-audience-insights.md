@@ -1,7 +1,7 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 08/31/2021
+ms.date: 11/04/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
+ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673804"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753106"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
@@ -26,6 +26,41 @@ ms.locfileid: "7673804"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="october-2021-updates"></a>2021 年 10 月更新
+
+2021 年 10 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="b-to-b"></a>企业对企业
+
+从 2021 年 10 月开始，您可以在 Customer Insights 中与业务客户及其相关联系人合作。 以前，该应用主要针对单个消费者量身定制。 为了支持企业对企业方案以及新环境类型，更新了若干个功能区域。 有关支持的企业对企业功能的概述，请参阅[与访问群体见解中的业务客户合作](work-with-business-accounts.md)。
+
+以下各节着重介绍了为支持业务客户和个人消费者而调整的一些关键方面。
+
+#### <a name="export-segments-based-on-business-accounts"></a>根据业务客户导出客户细分
+
+访问群体见解中的所有客户细分导出都可以在业务客户环境中使用。 大部分客户细分导出需要额外的配置以及在基础客户细分中[投射的联系信息](segment-builder.md#create-a-new-segment)才能对业务客户有效。 有关更多信息，请参阅[导出客户细分](export-destinations.md#export-segments)。
+
+#### <a name="use-the-linkedin-ads-export-with-business-accounts"></a>对业务客户使用 LinkedIn Ads 导出
+
+LinkedIn Ads 导出现在可用于在业务客户环境中确定目标联系人和公司。 选择公司定位作为 LinkedIn 导出的主要重点时，您可以导出基于业务客户构建的客户细分，而无需投射联系人信息。 有关详细信息，请转到关于 [LinkedIn Ads 导出](export-linkedin-ads.md)以及[联系人定位](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting)与[公司定位](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting)之间的区别的文档。 
+
+#### <a name="create-measures-based-on-business-accounts-and-their-hierarchy"></a>根据业务客户及其层次结构创建度量
+
+通过度量生成器，您可以围绕着业务客户创建度量，还可以选择使用层次结构信息。 层次结构信息用于跨客户及其所有相关子客户汇总度量计算。 例如，您可以为按层次结构标识的每个业务客户组创建收入总计等度量。 有关详细信息，请参阅[定义和管理度量](measures.md)。
+
+#### <a name="create-segments-based-on-business-accounts-and-their-hierarchy"></a>根据业务客户及其层次结构创建客户细分
+
+利用客户细分生成器，您可以创建业务客户的客户细分，这些客户细分可以有选择性包括某个客户细分中每个客户的联系人信息。 如果为您设置了客户层次结构，则您可以在客户细分创建过程中使用客户层次结构信息。 有关详细信息，请参阅[创建新客户细分](segment-builder.md#create-a-new-segment)。
+
+#### <a name="retain-your-business-accounts-with-deep-insights-to-their-churn-tendency"></a>通过深入了解业务客户的流失趋势来留住业务客户
+
+现在，客户流失预测模型也支持业务客户。 您不仅可以评估客户的流失风险，而且还可以评估客户与他们从您那里购买的产品或服务类别的组合的流失风险。 此添加的功能可帮助您了解客户是更有可能停止向您购买一般商品，还是仅停止购买特定类别的商品或服务。 为了进一步帮助您使用此 AI 模型，此功能还列出了客户可能流失的原因。 有关详细信息，请参阅[事务流失预测（预览版）](predict-transactional-churn.md)。
+
+#### <a name="see-contacts-of-a-business-account-in-customer-view"></a>在“客户”视图中查看业务客户的联系人
+
+如果将业务客户映射到相关客户，则 Customer Insights 应用会在客户详细信息视图中显示这些相关联系人。 有关详细信息，请参阅[客户配置文件](customer-profiles.md)。
+
 
 ## <a name="september-2021-updates"></a>2021 年 9 月更新
 

@@ -1,7 +1,7 @@
 ---
 title: 创建和管理环境
 description: 了解如何注册服务以及如何管理环境。
-ms.date: 10/14/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673722"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799626"
 ---
 # <a name="manage-environments"></a>管理环境
 
@@ -39,6 +39,19 @@ ms.locfileid: "7673722"
 3. 在 **编辑环境** 框中，可以更新环境设置。
 
 有关环境设置的详细信息，请参阅[创建新环境](create-environment.md)。
+
+## <a name="connect-to-microsoft-dataverse"></a>连接到 Microsoft Dataverse
+   
+**Microsoft Dataverse** 步骤让您可以将 Customer Insights 与您的 Dataverse 环境相连接。
+
+要使用[现成的预测模型](predictions-overview.md#out-of-box-models)，请配置与 Dataverse 的数据共享。 或者，您可以启用来自本地数据源的数据引入，提供您的组织管理的 Microsoft Dataverse 环境 URL。 选择 **启用数据共享** 以与 Dataverse 托管数据湖共享 Customer Insights 输出数据。
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="用于启用与 Microsoft Dataverse 的数据共享的配置选项。":::
+
+> [!NOTE]
+> Customer Insights 不支持以下数据共享场景：
+> - 如果您将所有数据保存到自己的 Azure Data Lake Storage，将无法启用与 Dataverse 托管数据湖的数据共享。
+> - 如果您启用与 Dataverse 的数据共享，那么您将无法[在实体中创建预测值或缺失值](predictions.md)。
 
 ## <a name="copy-the-environment-configuration"></a>复制环境配置
 
