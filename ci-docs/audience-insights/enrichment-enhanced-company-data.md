@@ -1,7 +1,7 @@
 ---
 title: 公司数据增强
 description: 使用 Microsoft 的模型扩充并规范公司数据。
-ms.date: 11/05/2021
+ms.date: 11/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 9bfb96d47de4ec98325e644c60752fc7cab2706c
-ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
+ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7770159"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813908"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>使用增强的公司数据扩充公司配置文件
 
@@ -51,7 +51,8 @@ Microsft
 
 1.  确认公司的标识。 我们不验证输入的内容是否为现有组织，也不验证公司是否使用输出作为其标准名称。
 2.  全局性全面涵盖公司。 Microsoft 的已编译公司数据具有全局涵盖范围，但主要在澳大利亚、加拿大、英国以及美国提供这些数据。
-3.  保证数据的准确性或新鲜度。 由于业务信息经常变化，因此我们无法保证所提供的增强型公司数据始终准确或最新。
+3.  全局实现公司地址标准化。 我们当前支持在这些国家或地区中实现地址标准化：澳大利亚、加拿大、法国、德国、意大利、日本、英国和美国。
+4.  保证数据的准确性或新鲜度。 由于业务信息经常变化，因此我们无法保证所提供的增强型公司数据始终准确或最新。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 
