@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 867a6541734746f75a35faaa8d3861e0479d6114
+ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618280"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866877"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>向 LinkedIn Ads 导出客户细分（预览版）
 
@@ -28,6 +28,7 @@ ms.locfileid: "7618280"
 
 ## <a name="known-limitations"></a>已知限制
 
+- Customer Insights 中的客户细分需要包含至少 300 个唯一配置文件。 
 - 每次最多可以将 10 万个客户配置文件导出到 LinkedIn Ads。
 - 导出到 LinkedIn Ads 仅限于客户细分。
 - 向 LinkedIn Ads 导出最多 10 万个客户配置文件最长可能需要 10 分钟完成。 
