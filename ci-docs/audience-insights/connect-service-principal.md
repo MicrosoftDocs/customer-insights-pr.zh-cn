@@ -1,7 +1,7 @@
 ---
 title: 使用服务主体连接到 Azure Data Lake Storage 帐户
 description: 使用 Azure 服务主体连接到您自己的数据湖。
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645161"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900232"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>使用 Azure 服务主体连接到 Azure Data Lake Storage 帐户
 
-使用 Azure 服务的自动化工具应始终具有受限权限。 Azure 提供服务主体，而不是让应用程序以完全特权的用户身份登录。 阅读以了解如何使用 Azure 服务主体而不是存储帐户密钥将 Dynamics 365 Customer Insights 与 Azure Data Lake Storage 帐户相连。 
+本文讨论如何使用 Azure 服务主体（而不是存储帐户密钥）连接 Dynamics 365 Customer Insights 与 Azure Data Lake Storage 帐户。 
 
-您可以使用服务主体安全地[将 Common Data Service 文件夹作为数据源添加或编辑](connect-common-data-model.md)，或[创建或更新环境](create-environment.md)。
+使用 Azure 服务的自动化工具应始终具有受限权限。 Azure 提供服务主体，而不是让应用程序以完全特权的用户身份登录。 您可以使用服务主体安全地[以数据源形式添加或编辑 Common Data Model 文件夹](connect-common-data-model.md)或者[创建或更新环境](create-environment.md)。
 
 > [!IMPORTANT]
 > - 将使用此服务主体的 Data Lake Storage 帐户必须已[启用分层命名空间](/azure/storage/blobs/data-lake-storage-namespace)。
-> - 您需要 Azure 订阅的管理员权限才能创建服务主体。
+> - 需要 Azure 订阅的管理员权限才能创建服务主体。
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>为 Customer Insights 创建一个 Azure 服务主体
 
-为访问群体见解或参与见解创建新的服务主体之前，请检查组织中是否已有服务主体，
+在为 Customer Insights 创建新服务主体之前，请检查组织中是否已存在服务主体。
 
 ### <a name="look-for-an-existing-service-principal"></a>查找现有服务主体
 

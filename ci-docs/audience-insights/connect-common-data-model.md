@@ -1,7 +1,7 @@
 ---
 title: 将 Common Data Model 数据连接到 Azure Data Lake 帐户
 description: 使用 Azure Data Lake Storage 处理 Common Data Model 数据。
-ms.date: 05/29/2020
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 93871f8029053d4ed4a116d3af3550b7684ee11ea8633e937138245e193a44e6
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033115"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900186"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>使用 Azure Data Lake 帐户连接到 Common Data Model 文件夹
 
@@ -30,7 +30,7 @@ ms.locfileid: "7033115"
 
 - 您想要从中连接和引入数据的 Azure Data Lake 必须位于 Dynamics 365 Customer Insights 环境所在的同一 Azure 区域中。 不支持从不同的 Azure 区域中的 Data Lake 连接到 Common Data Model 文件夹。 若要了解环境的 Azure 区域，请在访问群体见解中转到 **管理员** > **系统** > **关于**。
 
-- 联机服务中存储的数据可以存储在与在 Dynamics 365 Customer Insights 中处理或存储数据不同的位置。导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心。](https://www.microsoft.com/trust-center)
+- 联机服务中存储的数据可以存储在与在 Dynamics 365 Customer Insights 中处理或存储数据不同的位置。导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心](https://www.microsoft.com/trust-center)。
 
 ## <a name="connect-to-a-common-data-model-folder"></a>连接到 Common Data Model 文件夹
 
@@ -38,12 +38,11 @@ ms.locfileid: "7033115"
 
 1. 选择 **添加数据源**。
 
-1. 选择 **连接到 Common Data Model 文件夹**，输入数据源的 **名称**，然后选择 **下一步**。 命名准则： 
-   - 以字母开头。
-   - 只能使用字母和数字。 不允许使用特殊字符和空格。
-   - 使用 3 至 64 个字符。
+1. 选择 **Azure Data Lake Storage**，输入数据源的 **名称**，然后选择 **下一步**。
 
-1. 您可以在使用基于资源的选项进行身份验证和基于订阅的选项进行身份验证之间进行选择。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 输入 **容器** 信息并选择 **下一步**。
+   - 遇到提示时，选择与行业相关的其中一个示例数据集，然后选择 **下一步**。 
+
+1. 您可以在使用基于资源的选项进行身份验证和基于订阅的选项进行身份验证之间进行选择。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 输入 **服务器地址**，选择 **登录**，然后选择 **下一步**。
    > [!div class="mx-imgBorder"]
    > ![用于输入 Azure Data Lake 的新连接详细信息的对话框。](media/enter-new-storage-details.png)
    > [!NOTE]
@@ -56,7 +55,7 @@ ms.locfileid: "7033115"
    > [!NOTE]
    > 与环境中其他数据源相关联的任何 model.json 或 manifest.json 文件都不会显示在列表中。
 
-1. 您将获得所选 model.json 或 manifest.json 文件中可用实体的列表。 您可以查看并从可用实体列表中进行选择，然后选择 **保存**。 将从新的数据源中引入所有选定实体。
+1. 您将在所选 model.json 或 manifest.json 文件中看到可用实体的列表。 查看并从可用实体列表中进行选择，然后选择 **保存**。 将从新的数据源中引入所有选定实体。
    > [!div class="mx-imgBorder"]
    > ![其中显示了 model.json 文件中的实体列表的对话框。](media/review-entities.png)
 

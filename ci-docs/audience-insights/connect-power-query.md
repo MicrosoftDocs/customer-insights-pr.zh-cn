@@ -1,7 +1,7 @@
 ---
-title: 通过 Power Query 连接器引入数据
+title: 通过 Power Query 连接器引入数据（视频）
 description: 基于 Power Query 的数据源的连接器。
-ms.date: 11/01/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,18 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 5d54d33c235e646644e8874e5b0c28898dcff11a
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 38c447d80a25feca087ca9f110278b8401423018
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732207"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903829"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>连接到 Power Query 数据源
 
-Power Query 提供大量用于插入数据的连接器。 其中大多数连接器都受 Dynamics 365 Customer Insights 支持。 添加基于 Power Query 连接器的数据源通常要执行下一节中概述的步骤。 但是，根据您使用的连接器，需要不同的信息。 有关详细信息，请参阅 [Power Query 连接器参考](/power-query/connectors/)中各个连接器的相关文档。
+Power Query 提供大量用于插入数据的连接器。 其中大多数连接器都受 Dynamics 365 Customer Insights 支持。 
+
+基于 Power Query 连接器添加数据源通常将执行本节概述的步骤。 但是，根据您使用的连接器，需要不同的信息。 若要了解更多信息，请参阅 [Power Query 连接器参考](/power-query/connectors/)中有关单个连接器的文档。
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
@@ -28,14 +30,11 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 
 1. 选择 **添加数据源**。
 
-1. 选择 **导入数据** 方法，然后选择 **下一步**。
+1. 选择 **Microsoft Power Query**，然后选择 **下一步**。
 
-1. 为数据源提供 **名称**，然后选择 **下一步** 创建数据源。 名称准则： 
-   - 以字母开头。
-   - 只能使用字母和数字。 不允许使用特殊字符和空格。
-   - 使用 3 至 64 个字符。
+1. 为数据源提供 **名称**，然后选择 **下一步** 创建数据源。
 
-1. 选择一个[可用连接器](#available-power-query-data-sources), 在本例中，我们选择 **文本/CSV** 连接器。
+1. 选择一个[可用连接器](#available-power-query-data-sources), 在本示例中，我们选择 **文本/CSV** 连接器。
 
 1. 在所选连接器的 **连接设置** 中输入所需详细信息，然后选择 **下一步** 查看数据预览。
 
@@ -50,7 +49,7 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 
 1. 可以通过选择 **编辑查询** 对话框中的 **获取数据** 向数据源添加更多实体。
 
-   强烈建议进行以下转换：
+   建议您使用以下转换：
 
    - 如果您从 CSV 文件引入数据，第一行通常包含标题。 转到 **转换表**，选择 **使用标题作为第一行**。
    - 确保正确设置了数据类型。
@@ -61,7 +60,7 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 
 ## <a name="available-power-query-data-sources"></a>可用 Power Query 数据源
 
-请参阅 [Power Query 连接器参考](/power-query/connectors/)，获取您可以选择用来将数据导入 Customer Insights 的连接器的最新列表。 
+有关可用于将数据导入到 Customer Insights 的连接器列表，请参阅 [Power Query 连接器参考](/power-query/connectors/)。 
 
 **Customer Insights (数据流)** 列中带有复选标记的连接器可用于创建新的基于 Power Query 的数据源。 查看特定连接器的文档，了解有关其先决条件、限制和其他详细信息的详细信息。
 
@@ -70,7 +69,7 @@ Power Query 提供大量用于插入数据的连接器。 其中大多数连接�
 > [!NOTE]
 > 可能不能对其中一个应用的进程（如 *细分*、*匹配* 或 *合并*）正在使用的数据源进行更改。 
 >
-> 可以使用 **设置** 页跟踪每个活动进程的进度。 进程完成后，可以回到 **数据源** 页进行更改。
+> 在 **设置** 页中，您可以跟踪每个活动进程的进度。 进程完成后，可以回到 **数据源** 页进行更改。
 
 1. 在访问群体见解中，转到 **数据** > **数据源**。
 

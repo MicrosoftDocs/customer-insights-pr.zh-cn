@@ -1,7 +1,7 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 11/04/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
-ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
+ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753106"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884251"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
@@ -26,6 +26,18 @@ ms.locfileid: "7753106"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="november-2021-updates"></a>2021 年 11 月更新
+
+2021 年 11 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="segment-membership-now-available-in-dataverse"></a>现在，客户细分成员身份在  Dataverse 中可用
+
+现在，可以在 Dataverse 以及客户配置文件和见解中提供客户配置文件的客户细分成员身份信息。 Dynamics 365 操作应用和模型驱动应用可以使用此数据查找给定客户的细分市场成员身份详细信息。
+
+### <a name="activities-support-contact-level-details-for-business-accounts"></a>活动支持企业客户的联系人级别详细信息
+
+您现在可以配置、显示和筛选企业客户活动时间线上的联系人活动，以更好地了解哪些客户联系人参与了特定活动。
 
 ## <a name="october-2021-updates"></a>2021 年 10 月更新
 

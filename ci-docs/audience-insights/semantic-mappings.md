@@ -1,7 +1,7 @@
 ---
 title: 语义映射（预览）
 description: 语义映射概述以及如何使用它们。
-ms.date: 11/01/2021
+ms.date: 12/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 08b257b97704b219bb3277042516e00deb886a49
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731932"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881819"
 ---
-# <a name="semantic-mappings"></a>语义映射
+# <a name="semantic-mappings-preview"></a>语义映射（预览）
 
 语义映射使您可以将非活动数据映射到预定义架构。 这些架构可帮助访问群体见解更好地了解您的数据属性。 语义映射和提供的数据在访问群体见解中实现了新的见解和特征。 要将您的活动数据映射到架构，请查看[活动](activities.md)文档。
 
@@ -91,5 +91,40 @@ ms.locfileid: "7731932"
 
 - **删除**：打开一个对话以确认删除选定的语义映射。 您还可以通过选择语义映射和删除图标一次删除多个语义映射。 选择 **删除** 以确认删除。
 
+## <a name="use-a-contactprofile-semantic-entity-mapping-to-create-contact-level-activities"></a>使用 ContactProfile 语义实体映射创建联系人级别的活动
+
+创建 *ContactProfile* 语义实体映射后，可以捕获联系人的活动。 它使您能够在活动时间线中查看由联系人负责每个活动的客户。 大多数步骤都采用典型活动映射配置。
+
+   > [!NOTE]
+   > 若要使联系人级别的活动正常工作，活动数据中每个记录都必须具有 **AccountID** 和 **ContactID** 属性。
+
+1. [定义 *ContactProfile* 语义实体映射。](#define-a-contactprofile-semantic-entity-mapping) 并运行语义映射。
+
+1. 在访问群体见解中，转到 **数据** > **活动**。
+
+1. 选择 **添加活动** 以创建新活动。
+
+1. 命名活动，选择源活动实体，并选择活动实体的主键。
+
+1. 在 **关系** 步骤中，使用您的联系人数据作为中间实体，在您的活动源数据与客户之间创建间接关系。 有关详细信息，请参阅[直接和间接关系路径](relationships.md#relationship-paths)。
+   - 名为 *购买* 的活动的示例关系：
+      - 属性 **ContactID** 上的 **采购来源活动数据** > **联系人数据**
+      - 属性 **AccountID** 上的 **联系人属性** > **客户数据**
+
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="所建立关系示例。":::
+
+1. 建立关系后，选择 **下一步** 并完成您的活动映射配置。 有关创建活动的详细步骤，请参阅[定义活动](activities.md)。
+
+1. 运行活动映射。
+
+1. 现在，您的联系人级别的活动将在客户时间线上可见。
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="配置联系人活动后的最终结果":::
+
+### <a name="contact-level-activity-timeline-filtering"></a>联系人级别的活动时间线筛选
+
+配置联系人级别的活动映射并运行此映射后，将更新您的客户的活动时间线。 这包括他们所执行活动的 ID 或名称，具体取决于您的 *ContactProfile* 配置。 可以按时间线中的联系人筛选活动，以查看您感兴趣的特定联系人。 此外，您还可以通过选择 **未映射到联系人的活动** 来查看未分配给特定联系人的所有活动。
+
+   :::image type="content" source="media/Contact_Activities3.png" alt-text="适用于联系人级别的活动的筛选选项。":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 使用 AI 查找相似客户
+title: 使用 AI 寻找类似客户（视频）
 description: 使用人工智能查找相似的客户细分。
 ms.date: 06/25/2020
 ms.service: customer-insights
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7c447609bd54de0780dd14aae9f05c7c24b8cce5
-ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.openlocfilehash: 7999c4964773c3b5c49537027a2ed67f0ad57ec5
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7799672"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903878"
 ---
 # <a name="similar-customers-preview"></a>相似客户（预览）
 

@@ -1,7 +1,7 @@
 ---
 title: 在 Customer Insights 中创建环境
 description: 使用 Dynamics 365 Customer Insights 的许可订阅创建环境的步骤。
-ms.date: 10/14/2021
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673380"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892327"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>在访问群体见解中创建环境
 
@@ -77,6 +77,9 @@ ms.locfileid: "7673380"
 **Microsoft Dataverse** 步骤让您可以将 Customer Insights 与您的 Dataverse 环境相连接。
 
 要使用[现成的预测模型](predictions-overview.md#out-of-box-models)，请配置与 Dataverse 的数据共享。 或者，您可以启用来自本地数据源的数据引入，提供您的组织管理的 Microsoft Dataverse 环境 URL。 选择 **启用数据共享** 以与 Dataverse 托管数据湖共享 Customer Insights 输出数据。
+
+> [!IMPORTANT]
+> Customer Insights 和 Dataverse 必须在同一区域才能启用数据共享。
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="用于启用与 Microsoft Dataverse 的数据共享的配置选项。":::
 

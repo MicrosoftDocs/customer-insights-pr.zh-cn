@@ -1,7 +1,7 @@
 ---
 title: Azure 机器学习试验
 description: 在 Dynamics 365 Customer Insights 中使用基于 Azure 机器学习的模型。
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033161"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881727"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>使用基于 Azure 机器学习的模型
 
-Dynamics 365 Customer Insights 中的统一数据是构建可生成其他业务见解的机器学习模型的来源。 Customer Insights 与机器学习工作室（经典）和 Azure 机器学习集成以使用您自己的自定义模型。 有关基于机器学习工作室（经典）生成的试验示例，请参考[机器学习工作室（经典）试验](machine-learning-studio-experiments.md)。 
+Dynamics 365 Customer Insights 中的统一数据是构建可生成其他业务见解的机器学习模型的来源。 Customer Insights 与 Azure 机器学习集成，使用您自己的自定义模型。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights 中的统一数据是构建可生成其他业务�
 
 ## <a name="work-with-azure-machine-learning-designer"></a>使用 Azure 机器学习设计器
 
-Azure 机器学习设计器提供了一个视觉对象画布，您可以在其中拖放数据集和模块，这类似于机器学习工作室（经典）。 如果进行了相应配置，从设计器创建的批处理管道可以集成到 Customer Insights 中。 
+Azure 机器学习设计器提供了一个可视区域，可在其中拖放数据集和模块。 如果进行了相应配置，从设计器创建的批处理管道可以集成到 Customer Insights 中。 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>使用 Azure 机器学习 SDK
 

@@ -1,7 +1,7 @@
 ---
 title: 自定义机器学习模型 | Microsoft Docs
 description: 在 Dynamics 365 Customer Insights 中使用来自 Azure 机器学习的自定义模型。
-ms.date: 03/22/2021
+ms.date: 12/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,20 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 187995cdf4d92a0609f8abb4c792e698ad4342cdb1f578744136add1bfcf3a53
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032931"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881773"
 ---
 # <a name="custom-machine-learning-models"></a>自定义机器学习模型
+
+> [!NOTE]
+> 对机器学习工作室（经典）的支持将于 2024 年 8 月 31 日结束。 我们建议您在该日期之前过渡到 [Azure 机器学习](/azure/machine-learning/overview-what-is-azure-machine-learning)。
+>
+> 自 2021 年 12 月 1 日起，您将无法创建新的机器学习工作室（经典）资源。 截止到 2024 年 8 月 31 日，您可以继续使用现有机器学习工作室（经典）资源。 有关详细信息，请参阅[迁移到 Azure 机器学习](/azure/machine-learning/migrate-overview)。
+
 
 **智能** > **自定义模型** 允许您基于 Azure 机器学习模型管理工作流。 工作流帮助您选择要从中生成见解的数据，并将结果映射到统一客户数据。 有关生成自定义 ML 模型的详细信息，请参阅[使用基于 Azure 机器学习的模型](azure-machine-learning-experiments.md)。
 
@@ -26,7 +32,7 @@ ms.locfileid: "7032931"
 
 ## <a name="prerequisites"></a>先决条件
 
-- 当前，此功能支持通过[机器学习工作室（经典）](https://studio.azureml.net)和 [Azure 机器学习批处理管道](/azure/machine-learning/concept-ml-pipelines)发布的 Web 服务。
+- 此功能支持通过 [Azure 机器学习批处理管道](/azure/machine-learning/concept-ml-pipelines)发布的 Web 服务。
 
 - 您需要与 Azure Studio 实例关联的 Azure Data Lake Gen2 存储帐户才能使用此功能。 有关详细信息，请参阅[创建 Azure Data Lake Storage Gen2 存储帐户](/azure/storage/blobs/data-lake-storage-quickstart-create-account)。
 
@@ -48,11 +54,10 @@ ms.locfileid: "7032931"
 
 1. 如果您的 Azure 机器学习订阅与 Customer Insights 在不同的租户中，请为所选组织选择使用您的凭据 **登录**。
 
-1. 选择与您的 Web 服务相关联的 **工作区**。 其中列出了两个部分，一个用于 Azure 机器学习 v1（机器学习工作室（经典）），另一个用于 Azure 机器学习 v2（Azure 机器学习）。 如果您不确定哪个工作区适合您的机器学习工作室（经典）Web 服务，请选择 **任意**。
+1. 选择与您的 Web 服务相关联的 **工作区**。 
 
-1. 在 **包含您的模型的 Web 服务** 下拉菜单中选择机器学习工作室（经典）Web 服务或 Azure 机器学习管道。 然后选择 **下一步**。
-   - 了解有关[在机器学习工作室（经典）中发布 Web 服务](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)的详细信息
-   - 了解有关[使用设计器在 Azure 机器学习中发布管道](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)或使用 [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 进行发布的详细信息。 您的管道必须在[管道终结点](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)下发布。
+1. 在 **包含您的模型的 Web 服务** 下拉列表中选择 Azure 机器学习管道。 然后选择 **下一步**。    
+   了解有关[使用设计器在 Azure 机器学习中发布管道](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer)或使用 [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) 进行发布的详细信息。 您的管道必须在[管道终结点](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run)下发布。
 
 1. 对于每个 **Web 服务输入**，从访问群体见解中选择匹配的 **实体**，然后选择 **下一步**。
    > [!NOTE]
@@ -62,9 +67,6 @@ ms.locfileid: "7032931"
    > ![配置工作流。](media/intelligence-screen2-updated.png "配置工作流")
 
 1. 在 **模型输出参数** 步骤中，设置以下属性：
-   - 机器学习工作室（经典）
-      1. 输入您希望 Web 服务输出结果流入的输出 **实体名称**。
-   - Azure 机器学习
       1. 输入您希望管道输出结果流入的输出 **实体名称**。
       1. 从下拉列表中选择批处理管道的 **输出数据存储参数名称**。
       1. 从下拉列表中选择批处理管道的 **输出路径参数名称**。
@@ -93,9 +95,6 @@ ms.locfileid: "7032931"
 1. 对于每个 **Web 服务输入**，您可以从访问群体见解中更新匹配的 **实体**。 然后选择 **下一步**。
 
 1. 在 **模型输出参数** 步骤中，设置以下属性：
-   - 机器学习工作室（经典）
-      1. 输入您希望 Web 服务输出结果流入的输出 **实体名称**。
-   - Azure 机器学习
       1. 输入您希望管道输出结果流入的输出 **实体名称**。
       1. 选择测试管道的 **输出数据存储参数名称**。
       1. 选择测试管道的 **输出路径参数名称**。

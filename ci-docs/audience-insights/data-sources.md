@@ -1,7 +1,7 @@
 ---
 title: 使用数据源引入数据
 description: 了解如何从各个数据源导入数据。
-ms.date: 11/01/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6846c73cb156aaa049e2656c8e327bcba1f73abc
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732116"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900325"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -25,19 +25,22 @@ Dynamics 365 Customer Insights 中的访问群体见解功能可连接到各种�
 
 ## <a name="add-a-data-source"></a>添加数据源
 
-请参阅有关如何添加数据源的详细文章，如何添加具体取决于您选择的选项。
+请参阅详细文章以了解如何根据选择的选项添加数据源。
 
-您可以通过以下三种主要方式添加数据源：
+您可以添加以下数据源：
 
-- [通过许多 Power Query 连接器](connect-power-query.md)
-- [从 Common Data Model 文件夹](connect-common-data-model.md)
-- [从您自己的 Microsoft Dataverse 湖](connect-dataverse-managed-lake.md)
+- [Power Query 连接器](connect-power-query.md)
+- [Common Data Model](connect-common-data-model.md)
+- [Microsoft Dataverse 湖](connect-dataverse-managed-lake.md)
+
+> [!NOTE]
+> 如果您使用的是试用版，则导入方法部分包含 **Customer Insights 数据库** 选项。 选择此选项可选择适用于各个行业的示例数据集。 有关详细信息，请参阅 [Dynamics 365 Customer Insights 试用版](../trial-signup.md)。
 
 ## <a name="add-data-from-on-premises-data-sources"></a>添加来自本地数据源的数据
 
-基于 Microsoft Power Platform 数据流支持在访问群体见解中引入本地数据源中的数据。 通过在设置环境时[提供 Microsoft Dataverse 环境 URL](create-environment.md)，可以在 Customer Insights 中启用数据流。
+基于 Microsoft Power Platform 数据流支持在访问群体见解中引入本地数据源中的数据。 通过在设置环境时[提供 Microsoft Dataverse 环境 URL](create-environment.md)，您可以在 Customer Insights 中启用数据流。
 
-将 Dataverse 环境与 Customer Insights 关联后创建的数据源将默认使用 [Power Platform 数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 数据流使用数据网关支持本地连接。 删除并重新创建关联 Dataverse 环境以[使用本地数据网关](/data-integration/gateway/service-gateway-app)之前已存在的数据源。
+将 Dataverse 环境与 Customer Insights 关联后创建的数据源默认使用 [Power Platform 数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 数据流使用数据网关支持本地连接。 您可以删除和重新创建[使用本地数据网关](/data-integration/gateway/service-gateway-app)关联 Dataverse 环境之前就存在的数据源。
 
 现有 Power BI 或 Power Apps 环境中的数据网关将可见，您可以在 Customer Insights 中重复使用它们。 数据源页面显示用于转到 Microsoft Power Platform 环境的链接，您可以在该环境中查看和配置本地数据网关。
 

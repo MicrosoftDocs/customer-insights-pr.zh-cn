@@ -1,20 +1,20 @@
 ---
-title: Dynamics 365 应用客户卡加载项
+title: Dynamics 365 应用的客户卡加载项（视频）
 description: 使用此加载项在 Dynamics 365 应用中显示来自访问群体见解的数据。
-ms.date: 09/30/2021
+ms.date: 12/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7792017"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903976"
 ---
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
 
@@ -34,7 +34,7 @@ ms.locfileid: "7792017"
   - **度量值控件**：需要配置的客户属性类型的[度量值](measures.md)。
   - **智能控件**：需要使用[预测](predictions.md)或[自定义模型](custom-models.md)生成的数据。
   - **客户详细信息控件**：配置文件的所有字段在统一客户配置文件中提供。
-  - **扩充控件**：需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。 该卡加载项支持这些扩充：Microsoft 提供的[品牌](enrichment-microsoft.md)和 Microsoft 提供的[兴趣](enrichment-microsoft.md)。
+  - **扩充控件**：需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。 该卡加载项支持以下扩充：Microsoft 提供的[品牌](enrichment-microsoft.md)、Microsoft 提供的[兴趣](enrichment-microsoft.md)以及 Microsoft 提供的 [Office 参与数据](enrichment-office.md)。
   - **联系人控件**：需要定义联系人类型的语义实体。
   - **时间线控件**：需要[配置的活动](activities.md)。
 

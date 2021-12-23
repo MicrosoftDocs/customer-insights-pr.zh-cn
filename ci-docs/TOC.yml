@@ -84,7 +84,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: 增强的地址
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: 扩充公司数据
+        - name: 增强的公司数据
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: 使用 Azure Maps 扩充
           href: audience-insights/enrichment-azure-maps.md
@@ -94,6 +94,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: 通过 Experian 扩充
           href: audience-insights/enrichment-experian.md
+        - name: 使用 Office 365 数据进行扩充
+          href: audience-insights/enrichment-office.md
         - name: 通过 SFTP 自定义导入扩充
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: 客户细分
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Azure 机器学习试验
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Azure 机器学习工作室试验
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: 管理预测
           href: audience-insights/manage-predictions.md
         - name: 基于预测创建客户细分
@@ -240,6 +240,8 @@
               href: audience-insights/use-azure-key-vault.md
             - name: 使用服务主体连接到 ADLS 存储帐户
               href: audience-insights/connect-service-principal.md
+            - name: 导出诊断日志
+              href: audience-insights/diagnostics.md
     - name: 扩展性
       items:
         - name: 集成参与见解中的 Web 数据

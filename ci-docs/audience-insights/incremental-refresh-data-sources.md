@@ -1,7 +1,7 @@
 ---
 title: 基于 Power Query 的数据源的增量刷新
 description: 刷新基于 Power Query 的大型数据源的新数据和更新数据。
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377823"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900244"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>基于 Power Query 的数据源的增量刷新
+
+本文讨论如何基于 Power Query 为数据源配置增量刷新。
 
 对数据源进行增量刷新具有以下优点：
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377823"
 
 1. [创建新的基于 Power Query 的数据源](connect-power-query.md)。
 
-1. 为该数据源提供名称。
+1. 为该数据源提供 **名称**。
 
-1. 选择支持增量刷新的数据源，如 Azure SQL 数据库。
+1. 选择支持增量刷新的数据源，如 [Azure SQL 数据库](/power-query/connectors/azuresqldatabase)。
 
 1. 选择要引入的实体或表。
 
