@@ -1,7 +1,7 @@
 ---
-title: 交易流失预测（视频）
+title: 交易流失预测（包含视频）
 description: 预测客户是否存在不再购买您的产品或服务的风险。
-ms.date: 10/20/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: ad87e0fd848168d1a18f28f2ac5c507bb01e1f28
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 602a86a67006925faac00add8e089d28f7071c14
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904061"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967736"
 ---
 # <a name="transaction-churn-prediction-preview"></a>交易流失预测（预览）
 
@@ -103,10 +103,10 @@ ms.locfileid: "7904061"
 
 1. 选择 **客户流失模型（预览）** 磁贴并选择 **使用此模型**。
 
-1. 在 **客户流失模型** 窗格中，选择 **交易**，然后选择 **开始**。
+1. 在 **客户流失模型（预览）** 窗格中，选择 **交易**，然后选择 **开始**。
 
 :::image type="content" source="media/select-transaction-churn.PNG" alt-text="在客户流失模型窗格中选择了交易选项的屏幕截图。":::
-
+ 
 ### <a name="name-model"></a>命名模型
 
 1. 为模型提供一个名称，以区别于其他模型。
@@ -117,11 +117,11 @@ ms.locfileid: "7904061"
 
 ### <a name="define-customer-churn"></a>定义客户流失
 
-1. 在 **确定在接下来的时间可能流失的客户** 字段中设置预测流失的时间段。 例如，预测客户在接下来的 90 天内流失的风险，以调整您的市场营销保留工作。 预测更长时间段或更短时间段的风险流失会更难解决流失风险配置文件中的因素，但这取决于您的特定业务需求。
+1. 设置 **预测窗口**。 例如，预测客户在接下来的 90 天内流失的风险，以调整您的市场营销保留工作。 预测更长时间段或更短时间段的风险流失会更难解决流失风险配置文件中的因素，但这取决于您的特定业务需求。
    >[!TIP]
-   > 您可以随时选择 **保存并关闭** 以将预测保存为草稿。 您可以在 **我的预测** 选项卡中查找草稿预测以继续操作。
+   > 您可以随时选择 **保存草稿**，将预测保存为草稿。 您可以在 **我的预测** 选项卡中查找草稿预测以继续操作。
 
-1. 在 **客户在以下时间段内未进行购买而流失：** 字段中输入天数以定义流失。 例如，如果客户在最近 30 天内未进行购买，针对您的业务，可能会将他们视为已流失。 
+1. 在 **流失定义** 字段中输入定义流失的天数。 例如，如果客户在最近 30 天内未进行购买，针对您的业务，可能会将他们视为已流失。 
 
 1. 选择 **下一步** 继续操作。
 
@@ -129,19 +129,16 @@ ms.locfileid: "7904061"
 
 1. 选择 **添加数据**，然后在包含必需的转换信息或购买历史记录信息的侧窗格中选择活动类型。
 
-1. 在 **选择活动** 下，从所选活动中选择要重点计算的特定活动。
+1. 在 **选择活动** 下，从所选活动类型中选择您希望计算重点执行的特定活动。
 
-   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="侧边栏显示在语义类型下选择特定活动。":::
+   :::image type="content" source="media/transaction-churn-select-activity.PNG" alt-text="侧边栏显示在语义类型下选择特定活动。":::
 
-1. 如果您尚未将活动映射到语义类型，请选择 **编辑** 进行映射。 将打开映射语义活动的引导式体验。 将数据映射到所选活动类型中的相关字段。
+   如果您尚未将活动映射到语义类型，请选择 **编辑** 进行映射。 将打开映射语义活动的引导式体验。 将数据映射到所选活动类型中的相关字段。
 
-   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="页面显示设置活动类型。":::
+1. 将语义属性映射到运行模型所需的字段。 如果以下字段未填充，请配置购买历史记录实体与 *客户* 实体之间的关系。 选择 **保存**。
 
-1. 将活动映射到相应的语义类型后，选择 **下一 步** 以继续
+1. 在 **添加所需数据** 步骤中，如果您不想添加更多活动，选择 **下一步** 继续。
 
-1. 将语义属性映射到运行模型所需的字段。 如果以下字段未填充，请配置购买历史记录实体与 *客户* 实体之间的关系。
-
-1. 选择 **下一步**。
 
 # <a name="individual-consumers-b-to-c"></a>[单个消费者(企业对客户)](#tab/b2c)
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
-ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
+ms.openlocfilehash: 2c673c432f308efa289625a159de608d07f8d2b3
+ms.sourcegitcommit: f988114ac7a288ccadf2db35b02dbef5cacea4d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417194"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7975113"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>在 Dynamics 365 Marketing 中使用客户细分（预览版）
 
@@ -45,7 +45,7 @@ ms.locfileid: "7417194"
 
 1. 在 **服务器管理员帐户** 部分中，选择 **登录**，然后选择 Dynamics 365 Marketing 帐户。
 
-1. 将客户 ID 字段映射到 Dynamics 365 联系人 ID。
+1. 将客户实体中的联系人 ID 字段映射到 Dynamics 365 联系人 ID。
 
 1. 选择 **保存** 以完成连接。 
 

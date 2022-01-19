@@ -1,21 +1,20 @@
 ---
 title: 有关支持的预测方案的概述
 description: Dynamics 365 Customer Insights 应用程序涵盖的预测方案和选项。
-ms.date: 09/06/2021
+ms.date: 12/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: get-started
+ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 5972d5b191ded7db14e2ebe9a4a26570a8ea60ba
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673951"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7978002"
 ---
 # <a name="predictions-overview"></a>预测概述
 
@@ -31,6 +30,7 @@ Dynamics 365 Customer Insights 提供各种选项，这些选项可以利用 AI 
 - [产品推荐](predict-product-recommendation.md)：根据购买行为和具有类似购买模式的客户提出一套预测性产品建议。
 - [订阅流失](predict-subscription-churn.md)：预测客户是否存在不再使用贵公司的订阅产品或服务的风险的模型。
 - [交易流失](predict-transactional-churn.md)：预测客户是否会在特定期限内不再购买您的产品或服务。
+- [情绪分析](sentiment-analysis.md)：分析客户反馈的情绪并确定经常提及的各个业务方面。
 
 # <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 

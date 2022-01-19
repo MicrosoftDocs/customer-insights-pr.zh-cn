@@ -1,7 +1,7 @@
 ---
-title: Dynamics 365 应用的客户卡加载项（视频）
+title: Dynamics 365 应用的客户卡加载项（包含视频）
 description: 使用此加载项在 Dynamics 365 应用中显示来自访问群体见解的数据。
-ms.date: 12/07/2021
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
+ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903976"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945416"
 ---
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
 
@@ -27,12 +27,12 @@ ms.locfileid: "7903976"
 ## <a name="prerequisites"></a>先决条件
 
 - 该加载项仅适用于 Dynamics 365 模型驱动应用，例如 Sales 或 Customer Service 版本 9.0 及更高版本。
-- 若要将 Dynamics 365 数据映射到访问群体见解客户配置文件，则需要[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)它们。
+- 要将 Dynamics 365 数据映射到访问群体见解客户配置文件，建议[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)。 如果您使用不同的方法来引入 Dynamics 365 联系人（或客户），您需要确保 `contactid`（或 `accountid`）字段[在数据统一过程的映射步骤中设置为该数据源的主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。 
 - 必须将此客户卡加载项的所有 Dynamics 365 用户[作为用户添加](permissions.md)到访问群体见解中以便查看数据。
 - 为了能够查询数据，需要使用访问群体见解中[配置的搜索和筛选功能](search-filter-index.md)。
 - 每个加载项控件都依赖于访问群体见解中的特定数据。 某些数据和控件仅在特定类型的环境中可用。 加载项配置将通知您控件是否由于所选环境类型而不可用。 详细了解[环境用例](work-with-business-accounts.md)。
   - **度量值控件**：需要配置的客户属性类型的[度量值](measures.md)。
-  - **智能控件**：需要使用[预测](predictions.md)或[自定义模型](custom-models.md)生成的数据。
+  - **Intelligence 控件**：需要使用[预测或自定义模型](predictions-overview.md)生成的数据。
   - **客户详细信息控件**：配置文件的所有字段在统一客户配置文件中提供。
   - **扩充控件**：需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。 该卡加载项支持以下扩充：Microsoft 提供的[品牌](enrichment-microsoft.md)、Microsoft 提供的[兴趣](enrichment-microsoft.md)以及 Microsoft 提供的 [Office 参与数据](enrichment-office.md)。
   - **联系人控件**：需要定义联系人类型的语义实体。

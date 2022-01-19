@@ -5,21 +5,21 @@ description: 熟悉 Dynamics 365 Customer Insights 中的首次运行体验，�
 ms.author: mhart
 ms.date: 10/05/2021
 ms.service: customer-insights
-ms.topic: overview
+ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 9f96a70d0cc316e8793921fedb0cc3fa4751c827
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: e17b66217415c0b554a449f0d992deec7e2d96e7
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673425"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977634"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>购买 Customer Insights 后开始使用
 
 本文说明在您的组织购买订阅后如何在 Dynamics 365 Customer Insights 中迈出第一步。 如果您想购买 Customer Insights，那么 [Dynamics 365 Customer Insights 网站](https://dynamics.microsoft.com/ai/customer-insights/)上会列出我们的联系方式。 
 
-购买 Customer Insights 订阅许可证后，Microsoft 365 租户的全局管理员会收到一封电子邮件，此电子邮件邀请他们创建环境。 
+购买 Customer Insights 的订阅许可证后，Microsoft 365 租户的全局管理员会收到一封电子邮件，邀请他们创建环境。 
 
 Customer Insights 按租户许可，拥有多项功能。 您可以购买更多容量和许可证来增加默认配额。 
 - [定价概述](https://dynamics.microsoft.com/ai/customer-insights/pricing/)

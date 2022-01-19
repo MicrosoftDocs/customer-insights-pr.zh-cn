@@ -1,5 +1,5 @@
 ---
-title: 订阅流失预测（视频）
+title: 订阅流失预测（包含视频）
 description: 预测客户是否存在不再使用贵公司的订阅产品或服务的风险。
 ms.date: 08/19/2020
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 1ef2ff642731ee1ba0a142433745fc5a5b398c88
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903938"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967690"
 ---
 # <a name="subscription-churn-prediction-preview"></a>订阅流失预测（预览）
 
@@ -77,7 +77,7 @@ ms.locfileid: "7903938"
 1. 输入导致您的企业认为客户将处于流失状态的 **自订阅结束以来的天数**。 这段时间通常与报价或其他试图防止失去客户的市场营销工作等业务活动相关。
 1. 输入 **预测将来以预测客户流失的天数** 来设置一个预测客户流失的窗口。 例如，预测您的客户在未来 90 天内流失的风险，以与您的市场营销保留工作保持一致。 根据您的特定业务要求，预测更长或更短时间的流失风险可能会使您难以解决流失风险配置文件中的因素。 选择 **下一步** 继续操作
    >[!TIP]
-   > 您可以随时选择 **保存并关闭** 以将预测保存为草稿。 您可以在 **我的预测** 选项卡中查找草稿预测以继续操作。
+   > 您可以随时选择 **保存草稿**，将预测保存为草稿。 您可以在 **我的预测** 选项卡中查找草稿预测以继续操作。
 
 ### <a name="add-required-data"></a>添加所需数据
 
