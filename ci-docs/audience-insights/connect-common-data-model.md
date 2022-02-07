@@ -1,7 +1,7 @@
 ---
 title: 将 Common Data Model 数据连接到 Azure Data Lake 帐户
 description: 使用 Azure Data Lake Storage 处理 Common Data Model 数据。
-ms.date: 12/06/2021
+ms.date: 01/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,13 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900186"
 ---
+
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>使用 Azure Data Lake 帐户连接到 Common Data Model 文件夹
 
 本文提供有关如何使用 Azure Data Lake Storage Gen2 帐户从 Common Data Model 文件夹中引入数据的信息。
@@ -25,6 +20,8 @@ ms.locfileid: "7900186"
 - Azure Data Lake 中的数据需要遵守 Common Data Model 标准。 目前不支持其他格式。
 
 - 数据引入将以独占方式支持 Azure Data Lake *Gen2* 存储帐户。 您不能使用 Azure Data Lake Gen1 存储帐户来引入数据。
+
+- 为 Azure Data Lake Storage 帐户[启用了分层命名空间](/azure/storage/blobs/data-lake-storage-namespace)。
 
 - 若要使用 Azure 服务主体进行身份验证，请确保已在您的租户中配置它。 有关详细信息，请参阅[使用 Azure 服务主体将访问群体见解连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。
 

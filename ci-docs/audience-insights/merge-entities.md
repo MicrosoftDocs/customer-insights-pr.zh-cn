@@ -1,7 +1,7 @@
 ---
 title: 在数据统一中合并实体
 description: 合并实体以创建统一客户配置文件。
-ms.date: 11/01/2021
+ms.date: 01/28/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -10,14 +10,9 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-- ci-merge
-ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732761"
+  - ci-merge
 ---
+
 # <a name="merge-entities"></a>合并实体
 
 合并阶段是数据统一过程中的最后一个阶段。 其目的是协调冲突数据。 冲突数据的示例包括，在两个数据集中找到的一个客户名称在每个数据集中显示时稍微不同（“Grant Marshall”与“Grant Marshal”），或一个电话号码的格式不同（617-803-091X 与 617803091X）。 将逐个属性完成这些冲突数据点的合并。
@@ -99,11 +94,13 @@ ms.locfileid: "7732761"
 
 1. 选择 **保存** 和 **运行** 以处理更改。 
 
-## <a name="manually-combine-fields"></a>手动合并字段
+## <a name="combine-fields-manually"></a>手动合并字段
 
-手动指定合并的属性。 
+手动指定合并的属性。
 
-1. 在 **合并** 页上，选择 **组合字段**。
+1. 在 **合并** 页上，选择 **合并**。
+
+1. 选择 **字段** 选项。
 
 1. 在 **合并字段的依据** 下拉列表中指定合并获胜者策略。
 
@@ -114,6 +111,26 @@ ms.locfileid: "7732761"
 1. 选择 **完成** 以应用更改。
 
 1. 选择 **保存** 和 **运行** 以处理更改。 
+
+## <a name="combine-a-group-of-fields"></a>合并字段组
+
+将一组字段视为单个单位。 例如，我们的记录包含字段“地址 1”、“地址 2”、“市/县”、“省/市/自治区”和“邮政编码”时。 我们不希望合并到其他记录的“地址 2”中，并认为这会让我们的数据更完整
+
+1. 在 **合并** 页上，选择 **合并**。
+
+1. 选择 **字段组** 选项。
+
+1. 在 **组排名依据** 下拉列表中指定合并获胜者策略。
+
+1. 选择 **添加** 并选择是否要向字段添加更多字段或其他组。
+
+1. 为每个合并字段提供 **名称** 和 **输出名称**。
+
+1. 为字段组提供 **名称**。 
+
+1. 选择 **完成** 以应用更改。
+
+1. 选择 **保存** 和 **运行** 以处理更改。
 
 ## <a name="change-the-order-of-fields"></a>更改字段的顺序
 

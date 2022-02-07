@@ -1,7 +1,7 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 12/02/2021
+ms.date: 01/27/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,16 +9,11 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884251"
 ---
+
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的访问群体见解功能中的新增功能
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 我们非常激动地发布我们的最新更新！ 本文总结了公开预览功能、正式发布版本的增强和功能更新。 若要查看长期功能计划，请参阅 [Dynamics 365 和 Power Platform 发行计划](/dynamics365/release-plans/)。
 
@@ -26,6 +21,50 @@ ms.locfileid: "7884251"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+
+## <a name="december-2021-updates"></a>2021 年 12 月更新
+
+2021 年 12 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="forward-customer-insights-logs-to-azure-monitor"></a>将 Customer Insights 日志转发到 Azure Monitor
+
+Customer Insights 提供与 Azure Monitor 的直接集成。 此功能包括审核事件和操作事件。 利用 Azure Monitor 资源日志，可以监视日志并将其发送到 Azure 存储、Azure 日志分析，或将它们流式传输至 Azure 事件中心。
+
+有关详细信息，请参阅[使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）](diagnostics.md)。
+
+### <a name="enrich-customer-profiles-with-engagement-data"></a>使用参与数据扩充客户配置文件
+
+使用来自 Microsoft Office 365 的数据，通过 Office 365 应用使用参与见解来扩充您的客户帐户配置文件。 参与数据由电子邮件和在客户级别聚合的会议活动组成。 例如，企业客户的电子邮件数或与该客户进行的会议数。 不会共享有关单个用户的数据。 此扩充可在以下地区使用：英国、欧洲、北美。
+
+有关详细信息，请参阅[使用参与数据扩充客户配置文件（预览版）](enrichment-office.md)
+
+### <a name="advanced-data-unification-features"></a>高级数据统一功能
+
+#### <a name="enable-conflict-resolution-policies-at-the-individual-attribute-level"></a>在单个属性级别启用冲突解决策略
+
+对实体内的客户记录进行重复数据删除时，您可能不希望必须选择完整记录作为获胜者。 现在，我们将允许您基于每个属性的规则合并各个记录中的最佳字段。 例如，您可以选择保留来自不同记录的最新电子邮件和最完整地址。 
+
+现在，您可以在对单个实体中的记录进行重复数据删除和合并时，为各个属性定义单独的合并规则。 以前，我们只允许您选择一个合并规则（根据新近数据完整性保留记录），并且在记录级别将该规则应用于所有属性。 当您在记录 A 中找到想要保留的一些数据，在记录 B 中找到其他优质数据时，这并不理想。
+
+有关详细信息，请参阅[在匹配实体上定义删除重复](match-entities.md#define-deduplication-on-a-match-entity)。
+
+#### <a name="custom-rules-for-matching"></a>要匹配的自定义规则
+
+有时，您需要指定常规规则的例外以不匹配记录。 当多个人共享足够的信息以便系统将他们作为一个人进行匹配时，可能会发生这种情况。 例如，姓氏相同、居住在同一个城市并且出生日期相同的双胞胎。
+
+例外确保可以在统一规则中解决不正确的数据统一。 您可以添加多个规则例外。
+
+有关详细信息，请参阅[添加规则例外](match-entities.md#add-exceptions-to-a-rule)。
+
+#### <a name="provide-additional-conflict-resolution-policies-and-enable-grouping-of-attributes"></a>提供其他冲突解决策略并启用属性分组
+
+此功能使您能够将一组字段视为单个单位。 例如，我们的记录包含字段“地址 1”、“地址 2”、“市/县”、“省/市/自治区”和“邮政编码”时。 我们不希望合并到其他记录的“地址 2”中，并认为这会让我们的数据更完整。
+
+现在您可以合并一组相关字段，然后对组应用单个合并策略。 
+
+有关详细信息，请参阅[合并字段组](merge-entities.md#combine-a-group-of-fields)。
+
 
 ## <a name="november-2021-updates"></a>2021 年 11 月更新
 
