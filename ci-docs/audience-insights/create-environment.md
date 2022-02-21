@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892327"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088091"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>在访问群体见解中创建环境
 
@@ -28,7 +28,7 @@ ms.locfileid: "7892327"
 
 ## <a name="create-a-new-environment"></a>创建新环境
 
-购买 Customer Insights 订阅许可证后，Microsoft 365 租户的全局管理员会收到一封电子邮件，此电子邮件邀请他们创建环境。 转到 [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) 以开始使用。 
+购买 Customer Insights 的订阅许可证后，Microsoft 365 租户的全局管理员会收到一封电子邮件，邀请他们创建环境。 转到 [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) 以开始使用。 
 
 引导式体验帮助您完成所需步骤来收集新环境必需的所有信息。 您需要访问群体见解中的[管理员权限](permissions.md)来创建或管理环境。
 
@@ -64,7 +64,7 @@ ms.locfileid: "7892327"
 > Customer Insights 当前支持以下各项：
 > - 从存储在 Microsoft Dataverse 管理的 Data Lake 中的 Power BI 数据流引入的实体。  
 > - 来自您在创建环境时选择的同一 Azure 区域的 Azure Data Lake Storage 帐户。
-> - 启用了 *分层命名空间* 的 Azure Data Lake Storage 帐户。
+> - 本身为 Gen2 并且启用了 *分层命名空间* 的 Azure Data Lake Storage 帐户。 Azure Data Lake Gen1 存储帐户不受支持。
 
 对于 Azure Data Lake Storage 选项，您可以在基于资源的选项和基于订阅的选项之间选择以进行身份验证。 有关详细信息，请参阅使用 Azure 服务主体[连接到 Azure Data Lake Storage 帐户](connect-service-principal.md)。 **容器** 名称将是 `customerinsights`，无法更改。
 

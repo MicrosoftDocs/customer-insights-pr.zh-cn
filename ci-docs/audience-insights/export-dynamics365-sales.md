@@ -9,13 +9,23 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
+ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090912"
 ---
-
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>在 Dynamics 365 Sales 中使用客户细分（预览版）
 
 
 
 使用您的客户数据通过 Dynamics 365 Sales 创建市场营销列表、跟进工作流以及发出促销。
+
+## <a name="known-limitations"></a>已知限制
+
+- 只能为每个客户细分中的 100'000 成员导出到 Dynamics 365 Sales。
+- 将客户细分导出至 Dynamics 365 Sales 最多可能需要 3 个小时才能完成。 
 
 ## <a name="prerequisite-for-connection"></a>连接的先决条件
 

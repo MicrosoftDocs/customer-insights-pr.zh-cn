@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732253"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100129"
 ---
 # <a name="work-with-customer-insights-apis"></a>使用 Customer Insights API
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights 提供 API 以基于 Customer Insights 中的数�
  
    启用 API 可为在 API 请求中使用的实例创建主要和辅助订阅密钥。 您可以通过在 **管理员** > **权限** > **API** 上选择 **再生成主要密钥** 或 **再生成辅助密钥** 来再生成密钥。
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="启用 Customer Insights API。":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. 选择 **浏览我们的 API** 以[试用 API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)。
 
@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights 提供 API 以基于 Customer Insights 中的数�
 
 HTTP 响应将立即显示在下方。
 
-   :::image type="content" source="media/try-apis.gif" alt-text="如何测试 API。":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>在 Azure 门户中创建新的应用注册
 
@@ -65,7 +65,7 @@ HTTP 响应将立即显示在下方。
 
 1. 在您的新应用注册上，转到 **API 权限**。
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="如何在应用注册中设置 API 权限。":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. 选择 **添加权限**，然后在侧窗格中选择 **Customer Insights**。
 
@@ -77,7 +77,7 @@ HTTP 响应将立即显示在下方。
 
 您可以结合使用此应用注册的应用程序/客户端 ID 与 Microsoft 身份验证库 (MSAL)，获取持有者令牌以发送您的 API 请求。
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="如何授权管理员同意。":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 有关 MSAL 的详细信息，请参阅 [Microsoft 身份验证库 (MSAL) 概述](/azure/active-directory/develop/msal-overview)。
 
@@ -103,7 +103,7 @@ HTTP 响应将立即显示在下方。
 
 1. 选择 **对其授予管理员同意** 以完成应用注册。
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="如何授权管理员同意。":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. 总之，我们必须在 Customer Insights 中添加应用注册的名称作为用户。  
    
@@ -129,7 +129,7 @@ HTTP 响应将立即显示在下方。
  
    或者，在 **NuGet 包管理器控制台** 中运行此命令：`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="将 NuGet 包添加到 Visual Studio 项目。":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>使用 C# 客户端库
 
@@ -141,7 +141,7 @@ HTTP 响应将立即显示在下方。
 
 1. 将此 `HttpClient` 传递到 `CustomerInsights` 客户端的构造中。
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="httpclient 的示例。":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. 使用客户端调用“扩展方法”，例如 `GetAllInstancesAsync`。 如果首选访问基础 `Microsoft.Rest.HttpOperationResponse`，请使用“http 消息方法”，例如 `GetAllInstancesWithHttpMessagesAsync`。
 

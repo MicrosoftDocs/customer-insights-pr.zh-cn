@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900232"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088107"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>使用 Azure 服务主体连接到 Azure Data Lake Storage 帐户
 
@@ -23,7 +23,7 @@ ms.locfileid: "7900232"
 使用 Azure 服务的自动化工具应始终具有受限权限。 Azure 提供服务主体，而不是让应用程序以完全特权的用户身份登录。 您可以使用服务主体安全地[以数据源形式添加或编辑 Common Data Model 文件夹](connect-common-data-model.md)或者[创建或更新环境](create-environment.md)。
 
 > [!IMPORTANT]
-> - 将使用此服务主体的 Data Lake Storage 帐户必须已[启用分层命名空间](/azure/storage/blobs/data-lake-storage-namespace)。
+> - 将使用服务主体的 Data Lake Storage 帐户必须是 Gen2 并且[启用了分层命名空间](/azure/storage/blobs/data-lake-storage-namespace)。 Azure Data Lake Gen1 存储帐户不受支持。
 > - 需要 Azure 订阅的管理员权限才能创建服务主体。
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>为 Customer Insights 创建一个 Azure 服务主体

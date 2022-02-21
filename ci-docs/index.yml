@@ -4,15 +4,15 @@ metadata:
   author: m-hartmann
   description: 查找相关文章以开始了解帮助内容。
   ms.author: mhart
-  ms.date: 07/30/2021
+  ms.date: 03/02/2022
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e6a658f43b382934ee9b9b55c54fc1dff3f4df72
-  ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
+  ms.openlocfilehash: e154b37f57bb2765f48a9f6b38f86dffcb05f403
+  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/17/2021
-  ms.locfileid: "7498586"
+  ms.lasthandoff: 02/10/2022
+  ms.locfileid: "8107188"
 title: Dynamics 365 Customer Insights 文档
 summary: 查找有用的资源以入门和开始了解 Customer Insights 的功能和特性。
 landingContent:
@@ -23,9 +23,13 @@ landingContent:
     - text: Customer Insights 概述
       url: overview.md
     - text: 发布计划
-      url: /dynamics365-release-plan/
+      url: /dynamics365/release-plans/
     - text: 发现 CDP
       url: https://dynamics.microsoft.com/ai/customer-insights/
+  - linkListType: learn
+    links:
+    - text: Customer Insights 学习路径
+      url: /learn/paths/build-customer-insights/
 - title: Customer Insights 入门
   linkLists:
   - linkListType: get-started
@@ -34,8 +38,26 @@ landingContent:
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
     - text: 访问群体见解中的新增功能
       url: audience-insights/whats-new-audience-insights.md
-    - text: 参与见解中的新增功能
-      url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
+    - text: 快速入门指南
+      url: audience-insights/get-started.md
+  - linkListType: learn
+    links:
+    - text: 开始
+      url: /learn/modules/get-started-customer-data-platform/
+- title: 管理访问群体见解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 配置系统
+      url: audience-insights/system.md
+    - text: 定义用户权限
+      url: audience-insights/permissions.md
+    - text: 管理多个环境
+      url: audience-insights/manage-environments.md
+  - linkListType: learn
+    links:
+    - text: 管理 Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: 获取联系
   linkLists:
   - linkListType: overview
@@ -66,16 +88,6 @@ landingContent:
       url: audience-insights/customer-card-add-in.md
     - text: Power BI 连接器
       url: audience-insights/export-power-bi.md
-- title: 管理访问群体见解
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 配置系统
-      url: audience-insights/system.md
-    - text: 定义用户权限
-      url: audience-insights/permissions.md
-    - text: 管理多个环境
-      url: audience-insights/manage-environments.md
 - title: 关于参与见解（预览）
   linkLists:
   - linkListType: overview

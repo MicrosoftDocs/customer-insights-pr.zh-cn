@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 应用的客户卡加载项（包含视频）
 description: 使用此加载项在 Dynamics 365 应用中显示来自访问群体见解的数据。
-ms.date: 12/22/2021
+ms.date: 02/02/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
+ms.openlocfilehash: ce6c8fab84fd4c5dfc9f78b91dde3483a1d358c1
+ms.sourcegitcommit: 11308ed275b4b25a35576eccfcae9dda9e2c2784
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8085196"
 ---
-
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
 
 
@@ -113,5 +118,26 @@ manager: shellyha
 
 1. 开始升级过程后，您将看到一个加载指示器，直到升级完成为止。 如果没有较新版本，升级将显示一条错误消息。
 
+## <a name="troubleshooting"></a>故障排除
+
+### <a name="controls-from-customer-card-add-in-dont-find-data"></a>来自客户卡加载项的控件找不到数据
+
+**问题：**
+
+即使使用正确配置的 ID 字段，控件也无法找到任何客户的数据。  
+
+**解决：**
+
+1. 请确保您按照[配置客户卡加载项](#configure-the-customer-card-add-in)说明配置了卡加载项 
+
+1. 查看数据引入配置。 编辑包含联系人 ID GUID 的 Dynamics 365 系统的数据源。 如果联系人 ID GUID 在 Power Query 编辑器中显示为大写字符，请尝试以下操作： 
+    1. 编辑数据源以在 Power Query 编辑器中打开数据源。
+    1. 选择联系人 ID 列。
+    1. 选择标题栏中的 **转换** 以查看可用操作。
+    1. 选择 **小写**。 验证表中的 GUID 现在是否为小写。
+    1. 保存数据源。
+    1. 运行数据引入、统一和下游流程以将更改传播到 GUID。 
+
+完成完全刷新后，客户卡加载项控件应显示预期数据。 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
