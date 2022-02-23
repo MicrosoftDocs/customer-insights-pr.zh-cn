@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-merge
+- ci-merge
+ms.openlocfilehash: eb08ab38d23bf22a17896b63c93e6821431b002a
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046552"
 ---
-
 # <a name="merge-entities"></a>合并实体
 
 合并阶段是数据统一过程中的最后一个阶段。 其目的是协调冲突数据。 冲突数据的示例包括，在两个数据集中找到的一个客户名称在每个数据集中显示时稍微不同（“Grant Marshall”与“Grant Marshal”），或一个电话号码的格式不同（617-803-091X 与 617803091X）。 将逐个属性完成这些冲突数据点的合并。

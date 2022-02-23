@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: 693e2f410a77cbf2e87ff0132ce963aab7e8e3e4
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010881"
 ---
-
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>使用增强的公司数据扩充公司配置文件
 
 使用 Microsoft 的模型和已编译的公司数据更正、补充和标准化您的公司配置文件。 我们将使用 [Common Data Model 格式](/common-data-model/schema/core/applicationcommon/account)，以确保获得更好的准确性和见解。
