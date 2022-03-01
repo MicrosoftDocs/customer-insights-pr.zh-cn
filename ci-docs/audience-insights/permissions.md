@@ -1,20 +1,20 @@
 ---
 title: 管理用户权限
 description: 了解权限和用户角色。
-ms.date: 03/25/2021
-ms.reviewer: mhart
+ms.date: 10/27/2020
+ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 430ad902a5a75552243bc4a094361a749364383717278f687dd6e8ef33749c6f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7de78c0ef71ec5b83870d396de36a7dcabbd14e5
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7028303"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689209"
 ---
 # <a name="user-permissions"></a>用户权限
 
@@ -31,7 +31,7 @@ ms.locfileid: "7028303"
 - 查看和浏览 **扩充** 页面。
 - 使用 **实体** 页浏览和导出实体。
 - 使用 **系统** 页查看系统进程的状态。
-- 在 **导出** 页中查看导出。
+- 从 **客户细分** 页面中导出客户细分。
 - 安装和使用 **Power BI Customer Insights** 仪表板。
 
 ## <a name="contributor"></a>参与者
@@ -43,7 +43,6 @@ ms.locfileid: "7028303"
 - 使用 **客户细分** 页面创建客户细分。
 - 使用 **度量** 页创建度量。
 - 通过 **扩充** 页面管理配置和扩充客户配置文件（仅适用于第一方扩充）。
-- 根据与参与者共享的连接来管理和创建导出。 [详细了解管理员如何允许参与者使用导出连接](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
 ## <a name="administrator"></a>管理员
 
@@ -51,9 +50,8 @@ ms.locfileid: "7028303"
 - 更改 **系统** 页面上的设置（包括工作语言），并刷新系统流程的计划。
 - 使用 **权限** 页面查看和添加权限。
 - 使用 **搜索和筛选** 索引页面（通过 **客户** 页面访问）设置客户页面的搜索和筛选定义。
-- 在 **连接** 页上管理连接并允许其他用户角色使用连接。
+- 使用 **导出目标** 页定义 Dynamics 365 Sales 客户细分目标。
 - 通过 **扩充** 页面管理配置和扩充客户配置文件（适用于所有扩充）。
-- 在 **导出** 页上管理和创建导出。
 - 安装和使用 **客户卡加载项**。
 - 添加和使用 **Power Apps 连接器**。
 - [启用 Customer Insights API 的使用](apis.md)。
@@ -76,6 +74,3 @@ ms.locfileid: "7028303"
 - 角色在 **角色** 列下指定。
 - 选择任意列标题可按该列的值对结果进行排序。
 - 使用页面顶部的 **搜索** 字段查找特定用户。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

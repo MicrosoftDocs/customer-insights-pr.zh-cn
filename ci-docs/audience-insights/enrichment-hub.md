@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 02/07/2022
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
-ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "8098778"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672988"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -37,17 +37,14 @@ ms.locfileid: "8098778"
 - Experian 提供的[人口统计](enrichment-experian.md)
 - 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
 - Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
-- HERE Technologies 提供的[位置数据](enrichment-here.md) 
 
 # <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
 - Leadspace 提供的[公司数据](enrichment-leadspace.md)
 - Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md) 
-- Microsoft 提供的[增强型公司数据](enrichment-enhanced-company-data.md)
 - HERE Technologies 提供的[位置数据](enrichment-here.md) 
 - 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
 - Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
-- Microsoft 提供的[帐户参与数据](enrichment-office.md)
 
 ---
 

@@ -4,17 +4,17 @@ description: 如何创建、编辑和删除指标。
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 10/01/2021
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 79600a14bc7e98dfd066270f19c353fd007e1341
-ms.sourcegitcommit: 565637f49cbdd05a82f42784f594c19cac299140
+ms.openlocfilehash: 97189168e0f5586aad8be8089a1f9e27893c2115c7e805ddaab1efc00e11b860
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623711"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034258"
 ---
 # <a name="view-and-create-metrics"></a>查看和创建指标
 
@@ -38,24 +38,21 @@ ms.locfileid: "7623711"
 1. 在左侧导航窗格中，转到 **数据**。 
 1. 选择 **指标** 选项卡以查看工作区中所有指标的列表。 
    > [!NOTE]
-   > 系统生成的指标是只读指标。 您无法编辑或删除它们。 只能创建和编辑自定义指标。
+   > 系统生成的指标是只读指标。 您不能更改或删除它们。 只能创建和编辑自定义指标。
 
 ## <a name="create-a-metric"></a>创建指标
 
 环境和工作区管理员可以创建指标。 创建指标之前，必须将事件属性发送到工作区。 您可以基于基本事件所发送的事件属性来创建指标，或使用 Web SDK [发送自定义事件属性](advanced-SDK-implementation.md)。
 
 1. 转到 **数据** > **指标**。
-1. 选择 **新建指标** 打开 **资源库** 和 **新建无标题指标** 对话。
+1. 选择 **新建指标**。
 
    :::image type="content" source="media/new-metric.png" alt-text="向事件中添加指标。":::
 
-1. 在 **新建无标题指标** 对话中，选择 **格式** 下拉列表，然后选择 **整数** 或 **双精度** 数据类型。 “整数”是指一个整数。 对于“双精度”，可以选择一个小数位和三个小数位。
-
-   :::image type="content" source="media/create-new-metric.png" alt-text="创建新指标。":::
-   
-5. 在 **资源库** 窗格中，查找指标所基于的事件属性。
-6. 选择属性旁边的 **加号 (+)** 以在公式中使用它。 您只能基于一个属性来创建公式。 
-7. 选择以下聚合函数之一。 
+1. 对于格式，请选择 **整数** 或 **双精度** 数据类型。 “整数”是指一个整数。 对于“双精度”，您可以选择一到三位小数。
+1. 在 **资源库** 窗格中，查找指标所基于的事件属性。
+1. 选择属性旁边的 **加号 (+)** 以在公式中使用它。 您只能基于一个属性来创建公式。 
+1. 选择以下聚合函数之一。 
 
    - 总和：所有值的算术总和 
    - 平均值：所有值的平均值
@@ -71,16 +68,12 @@ ms.locfileid: "7623711"
 
 ## <a name="edit-a-metric"></a>编辑指标
 
-只能编辑自定义指标。
-
 1. 转到 **数据** > **指标**。
 1. 在列表中选择指标。
 1. 更改指标的定义
 1. 选择 **保存**。
 
 ## <a name="change-the-name-of-a-metric"></a>更改指标的名称
-
-只能更改自定义指标的名称。
 
 1. 转到 **数据** > **指标**。
 1. 针对指标选择 **更多 [...]**，然后选择 **编辑名称**。
@@ -89,15 +82,11 @@ ms.locfileid: "7623711"
 
 ## <a name="delete-a-metric"></a>删除指标
 
-只能删除自定义指标。
-
 1. 转到 **数据** > **指标**。
 1. 针对指标选择 **更多 [...]**，然后选择 **删除**。
 
    :::image type="content" source="media/delete-metric.png" alt-text="从事件中删除指标。":::
 
 1. 选择 **删除** 以确认删除。
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

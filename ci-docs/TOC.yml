@@ -2,30 +2,8 @@
   href: index.yml
 - name: 产品概述
   href: overview.md
-- name: 学习目录
-  items:
-    - name: 开始
-      href: /learn/modules/get-started-customer-data-platform/
-    - name: 引入数据
-      href: /learn/modules/ingest-data-customer-insights/
-    - name: 创建统一的客户配置文件
-      href: /learn/modules/unified-customer-profile/
-    - name: 使用访问群体见解
-      href: /learn/modules/working-with-customer-insights/
-    - name: 扩充数据并进行预测
-      href: /learn/modules/enrich-data/
-    - name: 管理外部连接
-      href: /learn/modules/configure-third-party-connections/
-    - name: 管理 Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
-- name: 免费试用
-  items:
-    - name: ' 注册免费试用'
-      href: trial-signup.md
-    - name: 试用版常见问题
-      href: trial-FAQ.md
-- name: 使用付费许可证开始
-  href: paid-license.md
+- name: 创建试用版
+  href: audience-insights/get-started-trial.md
 - name: 访问您的环境
   href: 'https://home.ci.ai.dynamics.com/'
 - name: 访问群体见解
@@ -41,11 +19,19 @@
         - name: 快速入门指南
           href: audience-insights/get-started.md
         - name: 创建新环境
-          href: audience-insights/create-environment.md
+          href: audience-insights/get-started-paid.md
         - name: 浏览访问群体见解
           href: audience-insights/home.md
-    - name: 使用企业客户
-      href: audience-insights/work-with-business-accounts.md
+    - name: 了解模块
+      items:
+        - name: 引入数据
+          href: /learn/modules/ingest-data-customer-insights/
+        - name: 创建统一的客户配置文件
+          href: /learn/modules/unified-customer-profile/
+        - name: 使用应用
+          href: /learn/modules/working-with-customer-insights/
+        - name: 扩充数据和预测
+          href: /learn/modules/enrich-data/
     - name: 数据源
       items:
         - name: 数据源概述
@@ -80,18 +66,14 @@
           href: audience-insights/relationships.md
         - name: 列出客户活动
           href: audience-insights/activities.md
-        - name: 定义语义映射
-          href: audience-insights/semantic-mappings.md
     - name: 数据扩充
       items:
         - name: 扩充客户配置文件
           href: audience-insights/enrichment-hub.md
-        - name: 品牌和兴趣
+        - name: 品牌和兴趣相关性
           href: audience-insights/enrichment-microsoft.md
         - name: 增强的地址
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: 增强的公司数据
-          href: audience-insights/enrichment-enhanced-company-data.md
         - name: 使用 Azure Maps 扩充
           href: audience-insights/enrichment-azure-maps.md
         - name: 通过 HERE Technologies 扩充
@@ -100,8 +82,6 @@
           href: audience-insights/enrichment-leadspace.md
         - name: 通过 Experian 扩充
           href: audience-insights/enrichment-experian.md
-        - name: 使用 Office 365 数据进行扩充
-          href: audience-insights/enrichment-office.md
         - name: 通过 SFTP 自定义导入扩充
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: 客户细分
@@ -136,8 +116,6 @@
               href: audience-insights/predict-subscription-churn.md
             - name: 预测交易流失
               href: audience-insights/predict-transactional-churn.md
-            - name: 分析客户反馈中的情绪
-              href: audience-insights/sentiment-analysis.md
             - name: 使用来自 Azure 机器学习的自定义模型
               href: audience-insights/custom-models.md
             - name: 完成部分缺失的数据
@@ -148,12 +126,14 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: 订阅流失预测的示例指南
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: 交易流失预测示例指南
+            - name: 交易流失预测的示例指南
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: 产品建议预测示例指南
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Azure 机器学习试验
               href: audience-insights/azure-machine-learning-experiments.md
+            - name: Azure 机器学习工作室试验
+              href: audience-insights/machine-learning-studio-experiments.md
         - name: 管理预测
           href: audience-insights/manage-predictions.md
         - name: 基于预测创建客户细分
@@ -170,7 +150,7 @@
               href: audience-insights/export-adroll.md
             - name: Autopilot
               href: audience-insights/export-autopilot.md
-            - name: Azure Blob Storage
+            - name: Azure Blob 存储
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
@@ -242,14 +222,10 @@
           href: audience-insights/connections.md
         - name: 管理多个环境
           href: audience-insights/manage-environments.md
-        - name: 安全性
-          items:
-            - name: 引入您自己的密钥保管库
-              href: audience-insights/use-azure-key-vault.md
-            - name: 使用服务主体连接到 ADLS 存储帐户
-              href: audience-insights/connect-service-principal.md
-            - name: 导出诊断日志
-              href: audience-insights/diagnostics.md
+        - name: 使用服务主体连接到 ADLS 存储帐户
+          href: audience-insights/connect-service-principal.md
+        - name: 支持的语言
+          href: audience-insights/supported-languages.md
     - name: 扩展性
       items:
         - name: 集成参与见解中的 Web 数据
@@ -262,40 +238,6 @@
           href: audience-insights/apis.md
         - name: API 引用
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: 同意管理（预览版）
-  items:
-    - name: 帮助中心
-      href: consent-management/index.yml
-    - name: 功能概述
-      href: consent-management/overview.md
-    - name: 开始
-      items:
-        - name: 开始
-          href: consent-management/get-started.md
-        - name: 概念和术语
-          href: consent-management/glossary.md
-    - name: 导入同意数据
-      items:
-        - name: 导入同意数据
-          href: consent-management/import-consent-data.md
-        - name: 设置同意数据并应用同意首选项
-          href: consent-management/set-consent-rules.md
-    - name: 管理同意数据
-      items:
-        - name: 在访问群体见解中启用同意规则
-          href: audience-insights/activate-consent.md
-        - name: 管理访问群体见解客户细分中的默认同意规则
-          href: audience-insights/change-default-consent-rules.md
-    - name: 管理设置和用户
-      items:
-        - name: 配置系统设置
-          href: consent-management/system-settings.md
-        - name: 管理用户和权限
-          href: consent-management/manage-users.md
-    - name: 使用同意数据
-      items:
-        - name: 使用同意数据创建预测
-          href: consent-management/predictions-consent-data.md
 - name: 参与见解(预览版)
   items:
     - name: 帮助中心
@@ -306,8 +248,6 @@
       items:
         - name: 快速入门指南
           href: engagement-insights/get-started.md
-        - name: 创建环境
-          href: engagement-insights/create-new-environment.md
         - name: 创建工作区
           href: engagement-insights/create-workspace.md
         - name: 从网站和移动应用捕获事件
@@ -378,5 +318,3 @@
   href: service-limits.md
 - name: DSR 权限和请求
   href: dsr-rights-requests.md
-- name: 获取支持
-  href: /power-platform/admin/get-help-support

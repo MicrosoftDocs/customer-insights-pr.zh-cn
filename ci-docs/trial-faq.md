@@ -3,18 +3,18 @@ title: 试用常见问题 - Dynamics 365 Customer Insights
 description: 与 Customer Insights 试用设置和管理相关的常见问题的解决方法。 了解如何解决特定于平台和应用的问题。
 author: m-hartmann
 ms.author: mhart
-ms.date: 02/10/2022
+ms.date: 09/30/2021
 ms.topic: get-started
 ms.service: customer-insights
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: f63ed39ba8c710d0c0149e0944efaafe27e7b9bb
-ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
+ms.openlocfilehash: 2837ae13b4150310193a2d09d59aed66b4a69c69
+ms.sourcegitcommit: e6020c178a61beb0ee31a031c11ded914d10d995
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8115957"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7642850"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights 试用常见问题
 
@@ -43,7 +43,7 @@ ms.locfileid: "8115957"
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>如何将更多用户添加到试用中？
 
-若要添加用户，请使用试用管理员帐户登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。 按照[管理中心指南](/microsoft-365/admin/add-users/add-users)添加用户，数量不能超过试用许可证限制。 如果您添加的用户已经有 Microsoft 365 帐户，请在试用组织中为他们分派相应的安全角色。有关详细信息，请参阅[为用户分派安全角色](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user)。
+若要添加用户，请使用试用管理员帐户转到 [Microsoft 365 管理中心](https://admin.microsoft.com)。 按照[管理中心指南](/microsoft-365/admin/add-users/add-users)添加用户，数量不能超过试用许可证限制。 如果您添加的用户已经有 Microsoft 365 帐户，请在试用组织中为他们分派相应的安全角色。有关详细信息，请参阅[为用户分派安全角色](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user)。
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>我可以将多少用户添加到我的试用环境中？
 
@@ -63,7 +63,7 @@ ms.locfileid: "8115957"
 
 通常，我们建议在升级到 Customer Insights 的付费版本时使用您自己的数据重新开始。 
 
-或者，如果您仅使用访问群体见解，可以在购买 Customer Insights 后从试用环境复制数据。 您必须是 Customer Insights 试用版的管理员和 Microsoft 365 租户的全局管理员，或者是您组织中的 Dynamics 365 管理员，才能将设置从试用环境迁移到付费环境。 
+或者，如果您仅使用访问群体见解，可以在购买 Customer Insights 后从试用环境复制数据。 您必须是 Customer Insights 试用版的管理员和 Microsoft 365 租户的全局管理员，或者您组织中的 Dynamics 365 管理员，才能将设置从试用环境迁移到付费环境。 
 
 首次登录 Customer Insights 的付费实例后，系统会要求您创建一个新环境。 在此过程中，您可以选择从现有环境复制配置并迁移大部分设置。 如果您拥有上述权限，试用环境将显示在此列表中。 有关详细信息，请参阅[复制环境配置](audience-insights/manage-environments.md#copy-the-environment-configuration)。
 
@@ -82,9 +82,8 @@ ms.locfileid: "8115957"
 
 Customer Insights 功能的大多数功能在试用中都可用。
 
-以下功能 **不可用**： 
+以下功能不可用： 
 - 不能创建使用您自己的 Azure Data Lake Storage 帐户的新环境。
-- 您无法删除试用环境。 
 
 ### <a name="how-long-does-the-trial-last"></a>试用持续多长时间？
 

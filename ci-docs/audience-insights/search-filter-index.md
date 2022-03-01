@@ -1,7 +1,7 @@
 ---
 title: 搜索和筛选客户配置文件
 description: 快速查找有关统一的客户配置文件的信息和筛选出指定的属性。
-ms.date: 11/01/2021
+ms.date: 01/19/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,20 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e17d745974958b73683f1f9406c5ae95f2cbcb3c
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732023"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7469944"
 ---
 # <a name="customer-profiles-search--filter-index"></a>客户配置文件：搜索和筛选索引
 
 统一客户数据的结果是一个客户配置文件实体，用于提供对总客户群的统一认识。 若要快速 [查找有关特定客户或客户群的信息](customer-profiles.md)，可以在 **客户** 页中配置 **搜索** 和 **筛选** 功能。 继续阅读以了解管理员可以如何编辑 **搜索和筛选索引** 页中的属性，用户可使用这些属性进行搜索和筛选。
 
-   :::image type="content" source="media/search-filter.png" alt-text="搜索筛选器":::
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!div class="mx-imgBorder"]
+> ![搜索筛选器。](media/search-filter.png "搜索筛选器")
 
 ## <a name="add-fields-and-specify-attributes"></a>添加字段和指定属性
 

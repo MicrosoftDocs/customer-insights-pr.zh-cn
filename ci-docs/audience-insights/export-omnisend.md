@@ -1,7 +1,7 @@
 ---
 title: 将 Customer Insights 数据导出到 Omnisend
 description: 了解如何配置连接和导出到 Omnisend。
-ms.date: 10/08/2021
+ms.date: 05/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5496efa075fa3474c579366d143ea55e86ec3995
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 8bd692819fa8451ded5e74191ee717f81f87425d
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619017"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124460"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>将客户细分导出到 Omnisend（预览版）
 
@@ -28,9 +28,9 @@ ms.locfileid: "7619017"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 一次导出最多可将 100 万个客户配置文件导出到 Omnisend，最多可能需要 4 小时完成。
+- 对于每次导出，您可以向 Omnisend 导出多达 100 万个配置文件，最多可能需要 4 个小时才能完成。
 - 导出到 Omnisend 仅限于客户细分。
-- 您可以导出到 Omnisend 的客户配置文件数量取决于您与 Omnisend 的合同。
+- 您可以导出到 Omnisend 的配置文件数量取决于您与 Omnisend 之间的合同。
 
 ## <a name="set-up-connection-to-omnisend"></a>设置与 Omnisend 的连接
 
@@ -62,7 +62,7 @@ ms.locfileid: "7619017"
 
 1. 在 **导出连接** 字段中，从 Omnisend 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 必须将客户细分导出到 Omnisend。 （可选）您可以导出名、姓、地址、国家/地区、省/市/自治区、市/县和邮政编码以创建更个性化的电子邮件。 选择 **添加属性** 以映射这些字段。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 必须将客户细分导出到 Omnisend。 （可选）您可以导出名、姓、地址、国家/地区、省/市/自治区、市/县和邮政编码以创建更个性化的电子邮件。 选择 **添加属性** 以映射这些字段。
 
 1. 选择 **保存**。
 

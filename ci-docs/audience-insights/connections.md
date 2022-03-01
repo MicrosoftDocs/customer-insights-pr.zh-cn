@@ -5,16 +5,16 @@ ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: e78e18b75ee9797b5fc76486615992e301e4c650
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977726"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304961"
 ---
 # <a name="connections-preview-overview"></a>连接（预览版）概述
 
@@ -47,7 +47,6 @@ ms.locfileid: "7977726"
 1. 在 **设置连接** 窗格中，提供所需的详细信息。 
    1. 连接的 **显示名称** 和类型描述了连接。 我们建议选择一个名称来解释此连接的用途和目标。
    1. 确切的字段取决于您连接到的服务。 您可以了解文章中有关目标服务的特定连接类型的详细信息。
-   1. 如果您 [使用自己的密钥保管库](use-azure-key-vault.md)存储密钥，请激活 **使用密钥保管库**，然后从列表中选择密钥。
 
 1. 要创建连接，请选择 **保存**。
 
@@ -94,6 +93,3 @@ ms.locfileid: "7977726"
 
 1. 若要确认删除，请选择 **删除**。
 
-## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>使用您自己的密钥保管库管理的密钥设置连接
-
-有些连接需要 API 密钥或密码等密钥。 有些连接支持存储在自己的密钥保管库中的密钥。 详细了解支持的连接以及如何在[您自己的密钥保管库中进行设置以获得访问群体见解](use-azure-key-vault.md)。

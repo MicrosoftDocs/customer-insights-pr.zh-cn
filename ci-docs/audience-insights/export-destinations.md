@@ -1,141 +1,97 @@
 ---
-title: 从 Customer Insights 导出数据
-description: 管理导出以共享数据。
-ms.date: 11/01/2021
-ms.reviewer: mhart
+title: 导出的目标
+description: 导出数据和管理导出目标。
+ms.date: 07/21/2020
+ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
-author: pkieffer
-ms.author: philk
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 05485fc7def3d699d5179bcaa005ceb57024f840
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 9032d99357db86e66588eda544211a5f8eb2f23b
+ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977956"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4643852"
 ---
-# <a name="exports-preview-overview"></a>导出(预览版)概述
+# <a name="export-destinations-preview"></a>导出的目标(预览)
 
-**导出** 页面显示所有配置的导出。 导出与各种应用程序共享特定数据。 可能包括客户配置文件、实体、架构和映射详细信息。 每个导出都需要[由管理员设置的连接以管理身份验证和访问](connections.md)。
+**导出目标** 页显示您已设置的要将数据导出到的所有位置。 您还可以为导出添加新目标。 此外，它将显示导出当前可用选项。 获取简要概述、说明，并了解使用每个扩展性选项可以做什么。 将统一的配置文件、度量和细分导出到与您的业务相关的受支持的应用。
 
-转到 **数据** > **导出** 以查看导出页面。 所有用户角色都可以查看已配置的导出。 使用命令栏中的搜索字段以按名称、连接名称或连接类型查找导出。
+转到 **管理** > **导出目标** 来查找以下扩展性选项：
 
-## <a name="export-types"></a>导出类型
+- [Dynamics 365 客户卡加载项](customer-card-add-in.md)
+- [Facebook 广告管理器连接器](export-facebook.md)
+- [Power Automate 连接器](export-power-automate.md)
+- [Power Apps 连接器](export-power-apps.md)
+- [Power BI 连接器](export-power-bi.md)
+- [DotDigital](export-dotdigital.md)
+- [Dynamics 365 Sales](export-dynamics365-sales.md)
+- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
+- [Azure Blob 存储](export-azure-blob-storage.md)
+- [LiveRamp&reg; 连接器](export-liveramp.md)
+- [Microsoft Teams 的机器人](export-teams-bot.md)
+- [Mailchimp](export-mailchimp.md)
+- [Customer Insights API](apis.md)
 
-有两种主要导出类型：  
+## <a name="add-a-new-export-destination"></a>添加新的导出目标
 
-- **数据传出导出** 让您可以导出访问群体见解中可用的任何类型的实体。 您选择导出的实体将与所有数据字段、元数据、架构和映射详细信息一起导出。 
-- **客户细分导出** 让您可以导出访问群体见解中的客户细分实体。 客户细分表示客户配置文件的列表。 配置导出时，您可以根据要将数据导出到的目标系统来选择已包含的数据字段。 
+若要添加导出目标，您需要具有[管理员权限](permissions.md)。 如果导出到 Microsoft 服务，假设两个服务位于同一个组织中。
 
-### <a name="export-segments"></a>导出细分
+1. 转到 **管理员** > **导出目标**。
 
-**导出企业客户（企业对企业）或个人客户（企业对客户）环境中的客户细分**  
-大多数导出选项同时支持这两种环境类型。 将客户细分导出到不同目标系统有特定的要求。 一般来说，客户细分成员，即客户配置文件，包含联系信息。 虽然这通常是基于个人客户（企业对客户）建立的客户细分的情况，但基于企业客户（企业对企业）的客户细分却不一定如此。 
+1. 切换到 **我的导出目标** 选项卡。
 
-**企业客户（企业对企业）的客户细分导出环境**  
-- 企业客户环境上下文中的客户细分基于 *客户* 实体建立。 要按原样导出客户细分，目标系统需要支持纯客户细分。 当您在定义导出的过程中选择 **公司** 选项时，[LinkedIn](export-linkedin-ads.md) 就是这种情况。
-- 所有其他目标系统都需要来自联系人实体的字段。 为确保客户细分可以从相关联系人检索数据，您的客户细分定义需要投射联系人实体的属性。 详细了解如何[配置客户细分和投射属性](segment-builder.md)。
+1. 选择 **添加目标** 创建新的导出目标。
 
-**个人客户（企业对客户）环境中的客户细分导出**  
-- 个人客户环境上下文中的客户细分基于 *统一客户配置文件* 实体建立。 满足目标系统要求的每个客户细分（例如，电子邮件地址）都可以导出。
+1. 在 **添加目标** 窗格的下拉列表中，选择导出目标的 **类型**。
 
-**客户细分导出限制**  
-- 第三方目标系统可能会限制您可以导出的客户配置文件的数量。 
-- 对于个人客户，当您选择要导出的客户细分时，您将看到客户细分成员的实际数量。 如果客户细分太大，您会收到警告。 
-- 对于企业客户，您将看到客户细分中的客户数量；但是，可以投射的联系人数量不会显示。 在某些情况下，这可能导致导出的客户细分实际包含比目标系统接受的更多的客户配置文件。 超出目标系统结果限制时将跳过导出。 
+1. 提供必需的详细信息，然后选择 **下一步** 创建导出目标。
 
-## <a name="set-up-a-new-export"></a>设置新导出  
-要设置或编辑导出，您需要有可用的连接。 连接取决于您的[用户角色](permissions.md)：
-- **管理员** 可以访问所有连接。 他们还可以在设置导出时创建新的连接。
-- **参与者** 可以访问特定连接。 他们依靠管理员来配置和共享连接。 导出列表会在 **您的权限** 列中向参与者显示他们是可以编辑导出还是只能查看导出。 有关详细信息，请转到[允许参与者使用连接导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
-- **查看者** 只能查看现有导出—不能创建导出。
+也可以在 **发现** 选项卡中的磁贴上选择 **设置**。
 
-### <a name="define-a-new-export"></a>定义新导出
+## <a name="view-export-destinations"></a>查看导出目标
 
-1. 转到 **数据** > **导出**。
+创建导出目标之后，可以在 **我的导出目标** 选项卡上的表中看到这些目标。此表有三列：
 
-1. 选择 **添加导出** 以创建新导出。
+- **显示名称**：创建目标时输入的名称。
+- **类型**：创建目标时设置的导出目标类型。
+- **创建日期**：目标的创建日期。
 
-1. 在 **设置导出** 窗格中，选择要使用的连接。 [连接](connections.md)由管理员管理。 
+## <a name="edit-an-export-destination"></a>编辑导出目标
 
-1. 提供所需的详细信息并选择 **保存** 以创建导出。
+1. 选择要编辑的导出目标的竖省略号。
 
-### <a name="define-a-new-export-based-on-an-existing-export"></a>基于现有导出定义新导出
+   > [!div class="mx-imgBorder"]
+   > ![竖省略号](media/export-destinations-page-ellipsis.png "竖省略号")
 
-1. 转到 **数据** > **导出**。
+1. 从下拉菜单中选择 **编辑**。
 
-1. 在导出列表中，选择要重复的导出。
+1. 更改需要更新的值，然后选择 **保存**。
 
-1. 在命令栏中选择 **创建重复项**，以打开包含所选导出详细信息的 **设置导出** 窗格。
+## <a name="export-data-on-demand"></a>根据需要导出数据
 
-1. 查看并调整导出，并选择 **保存** 以创建新导出。
+为导出目标配置连接器之后，将在每次[安排的刷新](system.md#schedule-tab)时运行导出。
 
-### <a name="edit-an-export"></a>编辑导出
+若要导出数据但不等待安排的刷新，请转到 **管理** > **导出目标** 中的 **我的导出目标** 选项卡。
 
-1. 转到 **数据** > **导出**。
+> [!div class="mx-imgBorder"]
+> ![竖省略号](media/export-destinations-page-ellipsis.png "竖省略号")
 
-1. 在导出列表中，选择要编辑的导出。
+- 选择列表上方的 **导出** 同时运行到所有导出目标的导出。
+- 选择列表项后的省略号 (...)，然后选择 **导出** 选项为单个导出目标运行导出。
 
-1. 在命令栏中选择 **编辑**。
+## <a name="remove-an-export-destination"></a>删除导出目标
 
-1. 更改要更新的值，然后选择 **保存**。
+若要删除导出目标，请从 **导出目标** 主页开始。
 
-## <a name="view-exports-and-export-details"></a>查看导出和导出详细信息
+1. 选择要删除的导出目标的竖省略号。
 
-创建导出目标后，它们会列在 **数据** > **导出** 中。 所有用户都可以看到共享的数据及其最新状态。
+   > [!div class="mx-imgBorder"]
+   > ![竖省略号](media/export-destinations-page-ellipsis.png "竖省略号")
 
-1. 转到 **数据** > **导出**。
+2. 此下拉菜单中选择 **删除**。
 
-1. 没有编辑权限的用户可以选择 **查看**（而不是 **编辑**）来查看导出详细信息。
-
-1. 侧窗格显示了导出的配置。 如果没有编辑权限，您无法更改值。 选择 **关闭** 以返回到出口页面。
-
-## <a name="schedule-and-run-exports"></a>计划并运行导出
-
-您配置的每个导出都有一个刷新计划。 在刷新期间，系统会查找要包括在导出中的新数据或已更新数据。 默认情况下，导出在每个[计划系统刷新](system.md#schedule-tab)过程中运行。 您可以自定义刷新计划或将其关闭以手动运行导出。
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
-
-导出计划取决于您的环境状态。 如果在应启动计划导出时正在进行有关[依赖项](system.md#refresh-processes)的更新，系统将首先完成更新，然后运行导出。 可以在 **刷新时间** 列中查看最后刷新导出的时间。
-
-### <a name="schedule-exports"></a>计划导出
-
-您可以同时定义个别导出或多个导出的自定义刷新计划。 当前定义的计划列在导出列表的 **计划** 列中。 更改计划的权限与[编辑和定义导出](export-destinations.md#set-up-a-new-export)的权限相同。 
-
-1. 转到 **数据** > **导出**。
-
-1. 选择要计划的导出。
-
-1. 在命令栏中选择 **计划**。
-
-1. 在 **计划导出** 窗格中，将 **计划运行时间** 设置为 **打开**，以自动运行导出。 将其设置为 **关闭** 可以手动刷新它。
-
-1. 对于自动刷新的导出，请选择 **定期** 值并指定其详细信息。 定义的时间适用于所有定期实例。 这是导出应该开始刷新的时间。
-
-1. 通过选择 **保存** 来应用并激活您所做的更改。
-
-在编辑多个导出的计划时，需要在 **保留或替代计划** 下面进行选择：
-- **保留单个计划**：为选定导出保留先前定义的计划，并仅禁用或启用它们。
-- **为所有选定的导出定义新计划**：替代选定导出的现有计划。
-
-### <a name="run-exports-on-demand"></a>按需运行导出
-
-要在不等待计划刷新的情况下导出数据，请转到 **数据** > **导出**。
-
-- 要运行所有导出，请在命令栏中选择 **全部运行**。 此操作将只运行具有活动计划的导出。
-- 要运行单个导出，请在列表中选择该导出，然后在命令栏中选择 **运行**。 这是没有活动计划时运行导出的方式。 
-
-## <a name="remove-an-export"></a>删除导出
-
-1. 转到 **数据** > **导出**。
-
-1. 选择要删除的导出。
-
-1. 在命令栏中选择 **删除**。
-
-1. 选择确认屏幕中的 **删除** 确认删除。
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. 选择确认屏幕中的 **删除** 确认删除。
