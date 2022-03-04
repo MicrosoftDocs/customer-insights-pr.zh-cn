@@ -1,24 +1,23 @@
 ---
 title: Common Data Model 中的 Customer Insights 实体架构
 description: 使用 Common Data Model 中的实体。
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: f0af2a6d8a90ff01ea9d4eeb29f34113261fd0d4
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692294"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230990"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model 中的实体架构
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [Common Data Model](/common-data-model/) 声明性规范，也是代表跨多种企业和生产力应用程序的常用概念和活动的标准实体的定义。 此模型也将延伸到观察数据和分析数据。 Common Data Model 提供明确定义、模块化和可扩展的业务实体（例如帐户、业务部门、用例、联系人、潜在客户、机会和产品），还提供与供应商、员工和客户之间的交互（例如活动和服务级别协议）。 任何人都可以生成和扩展 Common Data Model 定义以捕获更多特定于业务的观点。
 
@@ -42,7 +41,7 @@ ms.locfileid: "6692294"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>使用 Common Data Model 实体导航器查看实体
 
-您可以在 [Common Data Model 实体导航器中](https://microsoft.github.io/CDM/)查看实体。 选择 **从 GitHub 加载!** 按钮，然后导航到 **foundationCommon** > **crmCommon** > **解决方案** > **customerInsights**，可在这里找到 Customer Insights 实体及其定义的列表。
+您可以在 [Common Data Model 实体导航器中](https://microsoft.github.io/CDM/)查看实体。 从“Insights 应用程序”部分选择一个实体，以便获取 Customer Insights 实体的列表及其定义。
 > [!div class="mx-imgBorder"]
 > ![CDM 实体导航器，其中显示了 CustomerActivity 实体。](media/CDM-entity-navigator.png "CDM 实体导航器，其中显示了 CustomerActivity 实体")
 

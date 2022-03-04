@@ -4,17 +4,16 @@ description: 如何使用漏斗图报表了解访问群体做出决策的方式�
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 09/17/2021
-ms.service: customer-insights
+ms.date: 09/21/2021
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 901e7ec50037d66c7c5ceb635d1c6cda6cfff83b
-ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
+ms.openlocfilehash: 7bb961c5ba8d42f704eefe0dcb22e561367f3efb
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "7498631"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226249"
 ---
 # <a name="create-and-manage-funnel-reports"></a>创建和管理漏斗图报表
 
@@ -163,13 +162,23 @@ ms.locfileid: "7498631"
 
 参与见解现在为客户提供漏斗图见解。 漏斗图见解用于深度了解有关漏斗图报表中的步骤的客户行为。 新建并保存漏斗图报表时，将为您的报表自动生成漏斗图见解。 
 
+:::image type="content" source="media/funnel-insights.png" alt-text="漏斗图见解。":::
+
+> [!NOTE]
+> 只能为 **不** 包含自定义维度的漏斗图步骤生成漏斗图见解。 要针对漏斗图中的所有步骤生成漏斗图见解，请使用参与见解的现成维度来创建漏斗图步骤。 
+
 可以同时在主级别和步骤级别查看以下类别的漏斗图见解： 
 
- - 转化率 
+ - 转化率
+ -    结账和购买之间的转换率是 22%。
  - 转换时间 
+ -    购物车和结账之间的平均转换时间是 23 分钟。 
  - 完成时间 
+ -    客户完成漏斗图所需的平均时间是 47 分钟。 
 
 可使用这些见解深入探索客户行为和更好地了解漏斗图报表的退出点和转换。 
+
+若要跨不同步骤比较见解，请选择见解卡中的 **查看步骤明细** 或 **与其他步骤比较**。 这些将显示一个条形图，用于比较漏斗图每个步骤的指标。 
 
 漏斗图见解每隔 24 小时或在您 **保存** 漏斗图报表时重新计算一次。 
 

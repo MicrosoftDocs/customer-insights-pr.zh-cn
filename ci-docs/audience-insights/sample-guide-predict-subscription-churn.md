@@ -3,26 +3,28 @@ title: 订阅流失预测示例指南
 description: 使用本示例指南试用现成的订阅流失预测模型。
 ms.date: 11/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: fa460fa5c79bc8a356ec5e90050ec85e05c55be8
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+searchScope:
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 5de57155b47b74efa4c5ef2fe63a3c87505644be
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306292"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355602"
 ---
-# <a name="subscription-churn-prediction-preview-sample-guide"></a>订阅流失预测（预览）示例指南
+# <a name="subscription-churn-prediction-sample-guide"></a>订阅流失预测示例指南
 
 我们将向您演示使用下面提供的示例数据的订阅流失预测的端到端示例。 
 
 ## <a name="scenario"></a>方案
 
-Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Contoso Coffee 网站销售这些产品。 他们最近为定期购买咖啡的客户启动了一项订阅业务。 他们的目标是了解哪些订阅客户可能会在接下来的几个月内取消订阅。 了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。
+Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 咖啡网站销售。 他们最近为定期购买咖啡的客户启动了一项订阅业务。 他们的目标是了解哪些订阅客户可能会在接下来的几个月内取消订阅。 了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -31,7 +33,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
 
 ## <a name="task-1---ingest-data"></a>任务 1 - 引入数据
 
-查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)文章。 以下信息假设您大致了解如何引入数据。 
+专门查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>从电子商务平台中引入客户数据
 
@@ -168,7 +170,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>任务 3 - 配置订阅流失预测
 
-有了统一的客户配置文件，我们现在可以运行订阅流失预测。 有关详细步骤，请参阅[订阅流失预测（预览）](predict-subscription-churn.md)文章。 
+有了统一的客户配置文件，我们现在可以运行订阅流失预测。 有关详细步骤，请参阅[订阅流失预测](predict-subscription-churn.md)文章。 
 
 1. 转到 **智能** > **发现** 并选择使用 **客户流失模型**。
 

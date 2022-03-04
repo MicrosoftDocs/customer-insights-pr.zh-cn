@@ -1,20 +1,19 @@
 ---
 title: 将 Customer Insights 数据导出到 Snapchat
 description: 了解如何配置连接和导出到 Snapchat。
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6565ab81599abcc0f94465e1153f08e0bc119839
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 7eac3307b3f82b6c5ebc3d66d6563ae50696ed65
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124032"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227237"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>将客户细分导出到 Snapchat（预览版）
 
@@ -29,7 +28,7 @@ ms.locfileid: "6124032"
 ## <a name="known-limitations"></a>已知限制
 
 - 导出到 Snapchat 仅限于客户细分。
-- 向 Snapchat 导出多达 100 万个配置文件可能最多需要 15 分钟才能完成。 
+- 向 Snapchat 导出最多 100 万个客户配置文件最长可能需要 15 分钟完成。 
 
 ## <a name="set-up-connection-to-snapchat"></a>设置与 Snapchat 的连接
 
@@ -63,7 +62,7 @@ ms.locfileid: "6124032"
 
 1. 输入 [**Snapchat 受众 ID**](https://businesshelp.snapchat.com/s/article/custom-audiences)。
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 必须将客户细分导出到 Snapchat。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 必须将客户细分导出到 Snapchat。
 
 1. 选择想要导出的细分。 
 

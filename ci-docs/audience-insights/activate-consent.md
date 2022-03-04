@@ -2,19 +2,18 @@
 title: 激活客户细分同意规则
 description: 按照这些步骤在访问群体见解中链接同意数据和激活同意检查。 管理员还可以禁用同意检查。
 ms.date: 11/12/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 552cb0739c4d17266dd028638df067f3384b738a
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
+ms.openlocfilehash: 4b55c82229b1a6189c0dd67d145386344286df8a
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884063"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227482"
 ---
 # <a name="activate-consent-rules"></a>激活同意规则
 

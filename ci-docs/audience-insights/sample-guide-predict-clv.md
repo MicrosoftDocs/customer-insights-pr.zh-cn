@@ -3,26 +3,25 @@ title: 客户生存期值预测示例指南
 description: 使用此示例指南试用客户生存期值模型。
 ms.date: 05/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: c130e5f699f7eb921b69a20bc6d4ba9eab5b2779
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306338"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354820"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>客户生存期值 (CLV) 预测示例指南
 
 本指南将使用示例数据逐步向您解释 Customer Insights 中的客户生存期值 (CLV) 预测端到端示例。
 
-## <a name="scenario"></a>方案
+## <a name="scenario"></a>场景
 
-Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Contoso 咖啡网站销售产品。 公司希望了解客户在未来 12 个月内可以产生的价值（收入）。 了解客户在未来 12 个月的预期价值将有助于他们将营销工作转向高价值客户。
+Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Contoso Coffee 网站销售产品。 公司希望了解客户在未来 12 个月内可以产生的价值（收入）。 了解客户在未来 12 个月的预期价值将有助于他们将营销工作转向高价值客户。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -31,7 +30,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Cont
 
 ## <a name="task-1---ingest-data"></a>任务 1 - 引入数据
 
-查看关于[数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。
+查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>从电子商务平台中引入客户数据
 
@@ -164,7 +163,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Cont
 
 ## <a name="task-3---configure-customer-lifetime-value-prediction"></a>任务 3 - 配置客户生存期值预测
 
-部署了统一客户配置文件后，我们现在可以运行客户生存期值预测。 有关详细信息步骤，请参阅[客户生存期值预测（预览版）](predict-customer-lifetime-value.md)。
+部署了统一客户配置文件后，我们现在可以运行客户生存期值预测。 有关详细步骤，请参阅[客户生存期值预测](predict-customer-lifetime-value.md)。
 
 1. 转到 **智能**  > **预测** 并选择 **客户生存期值模型**。
 

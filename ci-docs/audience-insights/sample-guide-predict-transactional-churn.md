@@ -3,26 +3,25 @@ title: 交易流失预测示例指南
 description: 使用本示例指南试用现成的交易流失预测模型。
 ms.date: 11/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 19befa17524aba4543f0d8a5f5f7d6f5a88b2322f1264b88fa0b31641610592a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 93841358d110bd16c7b7f8beb079bed704b22260
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7029434"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354590"
 ---
-# <a name="transactional-churn-prediction-preview-sample-guide"></a>交易流失预测（预览）示例指南
+# <a name="transactional-churn-prediction-sample-guide"></a>交易流失预测示例指南
 
-本指南将向您演示使用下面提供的数据的 Customer Insights 中交易流失预测的端到端示例。 本指南中使用的所有数据不是真正的客户数据，而是在 Customer Insights 订阅内的 *演示* 环境中找到的 Contoso 数据集的一部分。
+本指南将向您演示使用下面提供的数据的 Customer Insights 中交易流失预测的端到端示例。 本指南中使用的所有数据都不是真正的客户数据，而是在 Customer Insights 订阅内在 *演示* 环境中找到的 Contoso 数据集的一部分。
 
 ## <a name="scenario"></a>方案
 
-Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Contoso Coffee 网站销售这些产品。 它们的目标是了解通常定期购买其产品的哪些客户在接下来的 60 天内将停止成为活动客户。 了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。
+Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 咖啡网站销售。 它们的目标是了解通常定期购买其产品的哪些客户在接下来的 60 天内将停止成为活动客户。 了解哪些客户 **可能会流失** 有助于他们将市场营销工作集中在留住这些客户上。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -31,7 +30,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
 
 ## <a name="task-1---ingest-data"></a>任务 1 - 引入数据
 
-查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)文章。 以下信息假设您大致了解如何引入数据。 
+专门查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>从电子商务平台中引入客户数据
 
@@ -149,7 +148,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>任务 3 - 配置交易流失预测
 
-有了统一的客户配置文件，我们现在可以运行订阅流失预测。 有关详细步骤，请参阅[订阅流失预测（预览）](predict-subscription-churn.md)文章。 
+有了统一的客户配置文件，我们现在可以运行订阅流失预测。 有关详细步骤，请参阅[订阅流失预测](predict-subscription-churn.md)文章。 
 
 1. 转到 **智能** > **发现** 并选择使用 **客户流失模型**。
 

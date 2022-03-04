@@ -3,20 +3,19 @@ title: 订阅流失预测（包含视频）
 description: 预测客户是否存在不再使用贵公司的订阅产品或服务的风险。
 ms.date: 08/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
-ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.openlocfilehash: b61e87ad833dd7a8e51c6619945a9e216d85f221
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967690"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354682"
 ---
-# <a name="subscription-churn-prediction-preview"></a>订阅流失预测（预览）
+# <a name="subscription-churn-prediction"></a>订阅流失预测
 
 订阅流失预测功能有助于预测客户是否存在不再使用贵公司的订阅产品或服务的风险。 您可以在 **智能** > **预测** 页上创建新的订阅流失预测。 选择 **我的预测** 以查看您已创建的其他预测。
 
@@ -63,7 +62,7 @@ ms.locfileid: "7967690"
 ## <a name="create-a-subscription-churn-prediction"></a>创建订阅流失预测
 
 1. 在访问群体见解中，转到 **智能** > **预测**。
-1. 选择 **订阅流失模型（预览）** 磁贴并选择 **使用此模型**。
+1. 选择 **订阅流失模型** 磁贴并选择 **使用此模型**。
    > [!div class="mx-imgBorder"]
    > ![具有“使用此模型”按钮的订阅流失模型磁贴。](media/subscription-churn-usethismodel.PNG "具有“使用此模型”按钮的订阅流失模型磁贴")
 

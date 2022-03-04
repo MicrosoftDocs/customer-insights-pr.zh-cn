@@ -5,16 +5,15 @@ author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
 ms.date: 11/05/2020
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: eebe51d343f6afbed52a66c52ab6a60eb5cd410367fb2e4409eb8679f357c91e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 6690b016be4ad26faa797e5f87aba60caa48ddff
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033896"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232930"
 ---
 # <a name="first-run-experience"></a>首次运行体验
 
@@ -26,7 +25,7 @@ ms.locfileid: "7033896"
 
 您必须拥有一个可用的 Microsoft Azure Active Directory 用户帐户。 
 
-1. 打开[参与见解](https://pi.dynamics.com/)网站。 
+1. 打开[参与见解](https://home.ci.ai.dynamics.com/app/engagement-insights)网站。 
 
 1. 使用你的学校或工作帐户登录。
 

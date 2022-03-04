@@ -3,21 +3,20 @@ title: 创建统一客户视图
 description: 使用您的数据完成数据统一过程，创建单一的客户配置文件主数据集。
 ms.date: 10/18/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.custom: intro-internal
 searchScope:
-- ci-unify
-ms.openlocfilehash: 694bfd0e407975af64ca0971a73fe4c3f5ba5a23
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+- ci-map
+- customerInsights
+ms.openlocfilehash: 2012d32494ccd4639cbffbb81d4f6eac1258e23b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648060"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353808"
 ---
 # <a name="data-unification-overview"></a>数据统一概述
 

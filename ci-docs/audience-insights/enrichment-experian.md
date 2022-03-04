@@ -3,18 +3,17 @@ title: 通过第三方扩充 Experian 进行的扩充
 description: 有关 Experian 第三方扩充的常规信息。
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: fabc3cc9faf4e11f46c396782b561ef61cd0f6d5
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618510"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229953"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>使用 Experian 中的人口统计信息扩充客户配置文件（预览）
 

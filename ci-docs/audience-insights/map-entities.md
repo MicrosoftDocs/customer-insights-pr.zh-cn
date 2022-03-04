@@ -1,20 +1,23 @@
 ---
-title: 映射数据统一的实体
-description: 映射数据以创建统一客户配置文件。
-ms.date: 09/25/2020
-ms.service: customer-insights
+title: 为数据统一映射实体和属性
+description: 选择实体、属性、主键和语义类型来将数据映射到统一客户配置文件。
+ms.date: 10/18/2020
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+ms.topic: tutorial
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e98c7717f7707d43a9fd1fc6f6b0e9c49e4e7ee0
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+searchScope:
+- ci-map
+- ci-match
+- customerInsights
+ms.openlocfilehash: 81f1e97dfbecd9292c50529ca21da8dab9295b5d
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405217"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354947"
 ---
 # <a name="map-entities-and-attributes"></a>映射实体和属性
 
@@ -35,14 +38,14 @@ ms.locfileid: "4405217"
 3. 选择要在 *匹配* 和 *合并* 阶段使用的实体和属性。 您可以通过选择实体级别的 **包括所有字段** 复选框，从实体中单独选择所需的属性，或包含实体中的所有属性。 建议至少选择两个实体，以便利用数据统一过程。
 
    > [!div class="mx-imgBorder"]
-   > ![添加实体示例](media/data-manager-configure-map-add-entities-example.png "添加实体示例")
+   > ![添加实体示例。](media/data-manager-configure-map-add-entities-example.png "添加实体示例")
 
    在此示例中，我们要添加 **eCommerceContacts** 和 **loyCustomers** 实体。 通过选择这些实体，您可以得出有关哪些在线业务客户是忠诚度计划成员的见解。
    
    您可以在所有属性和实体中搜索关键字，来选择要映射的所需属性。
    
      > [!div class="mx-imgBorder"]
-   > ![搜索字段示例](media/data-manager-configure-map-search-fields-example.png "搜索字段示例")
+   > ![搜索字段示例。](media/data-manager-configure-map-search-fields-example.png "搜索字段示例")
 
 4. 选择 **应用** 确认您的选择。
 
@@ -55,7 +58,7 @@ ms.locfileid: "4405217"
 - **属性语义类型**：属性的类别，如电子邮件地址或姓名。 要将 AI 模型用于语义智能预测，节省时间并提高准确性，请将 **智能映射** 设置为 **开**。 智能映射在 **类型** 字段中突出显示基于 AI 的语义建议。 如果将其设置为 **关**，您将看到我们的常规映射建议。 您可以从可用的选项列表中选择任意一种语义类型，来替代建议的选择。
 
 > [!div class="mx-imgBorder"]
-> ![属性类型和语义预测](media/data-manager-configure-map-add-attributes-semantic-prediction.png "属性类型和语义预测")
+> ![属性类型和语义预测。](media/data-manager-configure-map-add-attributes-semantic-prediction.png "属性类型和语义预测")
 
 还可以添加自定义语义类型。 选择属性的类型字段，然后键入自定义语义类型名称。 这样，您还可以更改系统确定的属性类型。
 
@@ -64,7 +67,7 @@ ms.locfileid: "4405217"
 不会自动映射到语义类型的属性在 **在未映射字段中定义数据** 部分进行分组。 选择未映射属性的语义类型字段，或输入您的自定义属性类型名称。
 
 > [!div class="mx-imgBorder"]
-> ![主键和属性类型](media/data-manager-configure-map-add-attributes.png "主键和属性类型")
+> ![主键和属性类型。](media/data-manager-configure-map-add-attributes.png "主键和属性类型")
 
 > [!NOTE]
 > 应将一个字段映射到语义类型 Person. FullName 以填充客户卡中的客户名称。 否则，客户卡将显示为无名称。 
@@ -76,7 +79,7 @@ ms.locfileid: "4405217"
 2. 在 **编辑字段** 窗格中，添加或删除属性和实体。 使用搜索或滚动查找和选择您感兴趣的属性和实体。 如果属性或实体已经匹配，则无法将其删除。
 
    > [!div class="mx-imgBorder"]
-   > ![添加或删除属性](media/configure-data-map-edit.png "添加或删除属性")
+   > ![添加或删除属性。](media/configure-data-map-edit.png "添加或删除属性")
 
 3. 选择 **应用**。
 
@@ -94,7 +97,7 @@ ms.locfileid: "4405217"
 
 对于组织（预览），属性类型应该映射到“Organization.Name”
 > [!div class="mx-imgBorder"]
-> ![主键和属性类型 B2B](media/configure-data-map-edit-b2b.png "主键和属性类型 B2B")
+> ![企业到企业主键和属性类型。](media/configure-data-map-edit-b2b.png "企业到企业主键和属性类型")
 
 ## <a name="next-step"></a>下一步
 
@@ -102,3 +105,6 @@ ms.locfileid: "4405217"
 
 > [!TIP]
 > 观看以下视频：[入门：创建统一的客户配置文件](https://youtu.be/oBfGEhucAxs)。
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

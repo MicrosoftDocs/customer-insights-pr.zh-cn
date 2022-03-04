@@ -3,20 +3,24 @@ title: 客户生命周期值 (CLV) 预测
 description: 预测未来活跃客户的潜在收入。
 ms.date: 02/05/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 740d6a5a749e156414b0e80193334051b7f2632fe4d1f4291d74b99250f35bc2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 07790604b06f21095a9220a6f57727cac80789c5
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035358"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355778"
 ---
-# <a name="customer-lifetime-value-clv-prediction-preview"></a>客户生存期值 (CLV) 预测（预览版）
+# <a name="customer-lifetime-value-clv-prediction"></a>客户生命周期值 (CLV) 预测
 
 预测单个活跃客户将在定义的未来时间段内为您的公司带来的潜在价值（收入）。 此功能可帮助您实现各种目标： 
 - 识别高价值客户并处理此见解
@@ -65,7 +69,7 @@ ms.locfileid: "7035358"
     - 数据完整性：在输入数据内的必填字段中，缺失值的不足 20%   
 
 > [!NOTE]
-> - 该模型需要客户的交易历史记录。 当前只能配置一个交易历史记录实体。 如果有多个购买/交易实体，您可以在数据引入之前在 Power Query 中合并它们。
+> - 该模型需要客户的交易历史记录。 当前只能配置一个交易历史记录实体。 如果有多个购买/交易实体，您可以在数据引入之前将它们合并到 Power Query 中。
 > - 但是，对于其他客户活动数据（可选），您可以根据需要添加任意多个客户活动实体以供模型考虑。
 
 ## <a name="create-a-customer-lifetime-value-prediction"></a>创建客户生存期值预测
@@ -74,7 +78,7 @@ ms.locfileid: "7035358"
 
 1. 选择 **客户生存期值** 磁贴并选择 **使用模型**。 
 
-1. 在 **客户生存期值（预览版）** 窗格中，选择 **入门**。
+1. 在 **客户生存期值** 窗格中，选择 **开始**。
 
 1. 用于与其他模型或实体区分开来的 **为此模型命名** 和 **输出实体名称**。
 

@@ -1,37 +1,44 @@
 ---
 title: 使用来自 Microsoft 的数据扩充客户配置文件
-description: 使用来自 Microsoft 的专有数据用品牌和兴趣相似性扩充客户配置文件。
-ms.date: 06/14/2021
+description: 使用 Microsoft 的专有数据通过相似性和配额来扩充您的客户数据。
+ms.date: 11/11/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+searchScope:
+- ci-enrichments
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: 77972475c9a448186cee3b1b62eeda7b1996edfc
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305145"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355282"
 ---
-# <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>使用品牌和兴趣相似性扩充客户配置文件（预览版）
+# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>通过相似性和配额扩充客户配置文件（预览版）
 
-使用 Microsoft 的专有数据用品牌和兴趣相似性扩充客户配置文件。 这些相似性基于使用人口统计信息与客户相似的用户的数据。 这些信息可帮助您根据客户在特定品牌和兴趣方面的相似性更好地了解和细分客户。
+使用 Microsoft 的专有数据通过品牌相似性、兴趣相似性和配额 (SoV) 来扩充您的客户数据。 这些相似性和 SoV 基于人口统计信息与客户相似的用户的数据。 此信息可帮助您针对特定品牌和兴趣根据客户的相似性或 SoV 更好地了解和细分客户。
 
 在访问群体见解中，转到 **数据** > **扩充** 以[配置和查看扩充](enrichment-hub.md)。
 
-若要配置品牌相似性扩充，请转到 **发现** 选项卡，并选择 **品牌** 磁贴上的 **扩充我的数据**。
+要配置品牌相似性和 SoV 扩充，请转到 **发现** 选项卡，并在 **品牌** 磁贴上选择 **扩充我的数据**。
 
-若要配置兴趣相似性扩充，请转到 **发现** 选项卡，并选择 **兴趣** 磁贴上的 **扩充我的数据**。
+要配置兴趣相似性和 SoV 扩充，请转到 **发现** 选项卡，并在 **兴趣** 磁贴上选择 **扩充我的数据**。
 
    > [!div class="mx-imgBorder"]
-   > ![品牌和兴趣磁贴](media/BrandsInterest-tile-Hub.png "品牌和兴趣磁贴")
+   > ![品牌和兴趣磁贴。](media/BrandsInterest-tile-Hub.png "品牌和兴趣磁贴")
 
-## <a name="how-we-determine-affinities"></a>我们如何确定相似性
+## <a name="how-we-determine-affinities-and-sov"></a>如何确定相似性和 SoV
 
-我们使用 Microsoft 的在线搜索数据来查找不同人口统计细分市场（按年龄、性别或位置定义）的品牌和兴趣相似性。 品牌或兴趣的联机搜索量决定人口统计细分与其他细分相比在该品牌或兴趣方面的相似程度。
+我们使用 Microsoft 的联机搜索数据在各个人口统计客户细分（按年龄、性别或位置定义）中查找品牌和兴趣的相似性和 SoV。 品牌或兴趣的联机搜索量构成了确定相似性或 SoV 的基准。 但是，每项内容都提供了一个用于了解客户的不同视角。
+
+- 相似性是跨人口统计客户细分的一项比较。 您可以使用此信息来确定与其他客户细分相比，给定品牌或兴趣相似性最高的人口统计客户细分。
+
+- 配额是在您选择的品牌或兴趣之间进行的一项比较。 您可以使用此信息来确定与您选择的其他品牌或兴趣相比，给定人口统计客户细分的哪个品牌或兴趣具有最高配额。
 
 ## <a name="affinity-level-and-score"></a>相似性级别和分数
 
@@ -48,6 +55,10 @@ ms.locfileid: "6305145"
 |低     | 1-34        |
 
 取决于想要用于测量相似性的粒度，您可以使用相似性级别或分数。 相似性分数使您可以更精确地进行控制。
+
+## <a name="share-of-voice-sov"></a>配额 (SoV)
+
+我们用 100 分量表计算 SoV。 每个已扩充客户配置文件的所有品牌或兴趣的总 SoV 加起来为 100。 与相似性不同，SoV 与您选择的品牌和兴趣相关。 例如，如果所选品牌是 ('Microsoft', 'GitHub') 与 ('Microsoft', 'LinkedIn')，则“Microsoft”的 SoV 值可能不同。
 
 ## <a name="supported-countriesregions"></a>支持的国家/地区
 
@@ -82,7 +93,7 @@ ms.locfileid: "6305145"
 
 ### <a name="select-entity-to-enrich"></a>选择要扩充的实体
 
-选择 **扩充的实体**，然后选择您希望利用 Microsoft 提供的公司数据扩充的数据集。 您可以选择客户实体以扩充所有客户配置文件，也可以选择客户细分实体以仅扩充该客户细分中包含的客户配置文件。
+选择 **已扩充实体**，然后选择要通过 Microsoft 的数据扩充的数据集。 您可以选择客户实体以扩充所有客户配置文件，也可以选择客户细分实体以仅扩充该客户细分中包含的客户配置文件。
 
 ### <a name="map-your-fields"></a>映射字段
 
@@ -116,26 +127,25 @@ ms.locfileid: "6305145"
 
 根据客户数据的大小，可能需要几分钟，扩充才能运行完成。
 
-> [!TIP]
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 针对一个作业任务选择 **查看详细信息** 后，您将找到其他信息：处理时间、上次处理日期以及与该任务关联的所有错误和警告。
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="enrichment-results"></a>扩充结果
 
 运行扩充流程之后，转到 **我的扩充**，以在扩充后的客户配置文件中查看扩充的客户总数和品牌或兴趣明细。
 
-:::image type="content" source="media/my-enrichments.png" alt-text="运行扩充流程后预览结果":::
+:::image type="content" source="media/my-enrichments.png" alt-text="运行扩充流程后预览结果。":::
 
-通过在图表中选择 **查看扩充的数据** 查看扩充的数据。 扩充的品牌数据将进入 **BrandAffinityFromMicrosoft** 实体。 兴趣的数据位于 **InterestAffinityFromMicrosoft** 实体中。 还可以发现 **数据** > **实体** 中的 **扩充** 组内列出了这些实体。
+您将找到一个图表，其中包含一段时间的已扩充客户配置文件数和已扩充实体的预览。 选择 **相似性级别** 或 **配额** 图表中的 **查看更多**，以查看已扩充数据。 扩充的品牌数据会进入 **BrandAffinityFromMicrosoft** 和 **BrandShareOfVoiceFromMicrosoft** 实体。 兴趣数据位于 **InterestAffinityFromMicrosoft** 和 **InterestShareOfVoiceFromMicrosoft** 实体中。 还可以发现 **数据** > **实体** 中的 **扩充** 组内列出了这些实体。
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>查看客户卡中的扩充数据
 
-也可以在各客户卡中查看品牌和兴趣相似度。 转到 **客户**，然后选择客户配置文件。 在客户卡中，您会找到品牌或兴趣的图表，此图表反映了该客户的人口统计特征中人们具有的品牌或兴趣相似性。
+还可以在单个客户卡上查看品牌和兴趣 SoV。 转到 **客户**，然后选择客户配置文件。 在客户卡中，您将根据该客户人口统计配置文件中的用户查找品牌或兴趣 SoV 图表。
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="包含扩充后数据的客户卡":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="包含扩充后数据的客户卡。":::
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

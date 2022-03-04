@@ -1,32 +1,37 @@
 ---
 title: 访问群体见解中的客户细分
 description: 概述客户细分以及如何创建和管理它们。
-ms.date: 09/30/2021
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+searchScope:
+- ci-customers-page
+- ci-enrichment-details
+- ci-segments
+- ci-segment-details
+- customerInsights
+ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617325"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355972"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
 通过客户细分，您可以基于人口统计、交易或行为属性对客户进行分组。 您可以使用客户细分来确定促销活动、销售活动和客户支持操作的目标，以实现您的业务目标。
 
-与客户细分定义的筛选器匹配的客户配置文件称为客户细分的 *成员*。 某些[服务限制](service-limits.md)适用。
+与客户细分定义的筛选器匹配的客户配置文件称为客户细分的 *成员*。 某些[服务限制](/dynamics365/customer-insights/service-limits)适用。
 
 ## <a name="create-a-new-segment"></a>新建细分
 
 创建新客户细分的方法有多种： 
 
-# <a name="individual-customers-b2c"></a>[个人客户 (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[单个消费者(企业对客户)](#tab/b2c)
 
 - 使用客户细分生成器的复杂客户细分：[生成您自己的客户细分](segment-builder.md#create-a-new-segment) 
 - 具有一个运算符的简单客户细分：[快速客户细分](segment-builder.md#quick-segments) 
@@ -34,7 +39,7 @@ ms.locfileid: "7617325"
 - 由 AI 提供支持且基于度量或属性的建议：[为改进度量而建议的客户细分](suggested-segments.md) 
 - 基于活动的建议：[基于客户活动的建议客户细分](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[企业客户 (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
 - 使用客户细分生成器的复杂客户细分：[生成您自己的客户细分](segment-builder.md#create-a-new-segment)
 
@@ -65,8 +70,7 @@ ms.locfileid: "7617325"
 
 您可以通过选择 **客户细分** 页上的 **全部刷新** 来同时刷新所有客户细分；也可以选择一个或多个客户细分，然后从选项中选择 **刷新** 来刷新它们。 也可以在 **管理** > **系统** > **计划** 中配置定期刷新。
 
-> [!TIP]
-> 对于任务/流程，有[六种类型的状态](system.md#status-types)。 此外，大多数流程[取决于其他下游流程](system.md#refresh-policies)。 可以选择流程状态以查看有关整个作业的进度的详细信息。 在选择一个作业任务的 **查看详细信息** 后，您会发现其他信息：处理时间、上次处理日期以及与该任务相关的所有错误和警告。
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="export-segments"></a>导出细分
 
@@ -106,4 +110,5 @@ ms.locfileid: "7617325"
 >
 >此列表是匹配的细分成员的预览，并显示您的细分的前 100 条记录，以便您快速评估该细分和在需要时查看其定义。 若要查看所有匹配的记录，需要[导出细分](export-destinations.md)。
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

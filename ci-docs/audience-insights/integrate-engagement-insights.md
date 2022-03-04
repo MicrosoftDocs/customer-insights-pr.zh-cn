@@ -2,21 +2,23 @@
 title: 将参与见解中的 Web 数据与访问群体见解集成
 description: 将参与见解中有关客户的 Web 信息引入到访问群体见解中。
 ms.date: 06/24/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2789a7d1379e0cf56511b272a763c904d8a3d347058ea9e029aaff0f723a028
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 037e264658bc354618cff56a89645ef7552aeb13
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033758"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350534"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>将参与见解中的 Web 数据与访问群体见解集成
+
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../engagement-insights/includes/cc-beta-prerelease-disclaimer.md)]
 
 客户通常使用网站在线进行日常交易。 Dynamics 365 Customer Insights 中的参与见解（预览）功能是用于将 Web 数据作为源集成的有用解决方案。 除了查看交易、人口统计或行为数据，我们还可以在统一客户配置文件中查看 Web 上的活动。 我们可以使用这些配置文件获得访问群体激活的其他见解，例如客户细分、度量或预测。
 

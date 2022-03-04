@@ -1,20 +1,19 @@
 ---
 title: 将 Customer Insights 数据导出到 Microsoft Advertising
 description: 了解如何配置连接和导出到 Microsoft Advertising。
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 8f009ed0258ded424340061e5320dd7df68c199f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124459"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226880"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>将客户细分导出到 Microsoft Advertising（预览版）
 
@@ -29,9 +28,9 @@ ms.locfileid: "6124459"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 对于每次导出，您可以向 Microsoft Advertising 导出多达 500 K 个配置文件。
+- 每次最多可以将 500'000 个客户配置文件导出到 Microsoft Advertising。
 - 导出到 Microsoft Advertising 仅限于客户细分。
-- 向 Microsoft Advertising 导出多达 500 K 个配置文件可能最多需要 10 分钟才能完成。 
+- 向 Microsoft Advertising 导出最多 500'000 个客户配置文件最长可能需要 10 分钟完成。 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>设置与 Microsoft Advertising 的连接（预览版）
@@ -68,7 +67,7 @@ ms.locfileid: "6124459"
 
 1. 输入您的 **Microsoft Advertising 客户 ID 和帐户 ID**。 当您登录 Microsoft Advertising 时，您可以在 URL 的参数中查找客户 ID (`cid`) 和帐户 ID (`aid`)。
 
-1. 在 **数据匹配** 部分内的 **电子邮件** 字段中，在具有客户电子邮件地址的统一客户配置文件中选择相应字段。 必须将客户细分导出到 Microsoft Advertising。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择包含客户电子邮件地址的字段。 必须将客户细分导出到 Microsoft Advertising。
 
 1. 选择 **保存**。
 

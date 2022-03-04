@@ -1,20 +1,32 @@
 ---
 title: 实体和实体路径之间的关系
 description: 创建和管理来自多个数据源的实体之间的关系。
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: d5b9566ec88096fec31d8e164a51598159ec26d4
-ms.sourcegitcommit: ece48f80a7b470fb33cd36e3096b4f1e9190433a
+searchScope:
+- ci-semantic-mapping
+- ci-entities
+- ci-relationships
+- ci-activities
+- ci-activities-wizard
+- ci-measures
+- ci-segments
+- ci-segment-builder
+- ci-measure-builder
+- ci-measure-template
+- ci-permissions
+- customerInsights
+ms.openlocfilehash: db8822aa9e89afb9dc16428af6ca202de789ba1c
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6171153"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355694"
 ---
 # <a name="relationships-between-entities"></a>实体之间的关系
 
@@ -68,6 +80,20 @@ ms.locfileid: "6171153"
 
 4. 选择 **保存** 以创建自定义关系。
 
+## <a name="set-up-account-hierarchies"></a>设置客户层次结构
+
+配置为使用企业客户作为主要目标访问群体的环境可以为相关企业客户配置客户层次结构。 例如，具有独立业务部门的公司。 
+
+组织创建客户层次结构可以更好地管理客户及其相互之间的关系。 访问群体见解功能支持已存在于引入的客户数据中的父子客户层次结构。 例如，Dynamics 365 Sales 中的客户。 这些层次结构可以在访问群体见解中 **关系** 页面的客户层次结构选项卡下配置。
+
+1. 转到 **数据** > **关系**。
+1. 选择 **客户层次结构** 选项卡。
+1. 选择 **新建客户层次结构**。 
+1. 在 **客户层次结构** 窗格中，为层次结构提供名称。 系统会为输出实体创建名称。 您可以更改输出名称实体的名称。
+1. 选择包含客户层次结构的实体。 它通常位于包含客户的同一实体中。
+1. 从所选实体中选择 **客户 ID** 和 **客户父 ID** 
+1. 选择 **保存** 应用设置并完成客户层次结构。
+
 ## <a name="view-relationships"></a>查看视图
 
 “关系”页列出了已创建的所有关系。 每行都表示一种关系，其中还包括有关源实体、目标实体和基数的详细信息。 
@@ -82,7 +108,7 @@ ms.locfileid: "6171153"
 
 ### <a name="explore-the-relationship-visualizer"></a>探索关系可视化工具
 
-关系可视化工具会显示已连接实体及其基数之间的现有关系的网络图表。
+关系可视化工具会显示已连接实体及其基数之间的现有关系的网络图表。 它还可以可视化关系路径。
 
 要自定义视图，您可以通过将框拖到画布上来更改框的位置。
 
@@ -92,6 +118,56 @@ ms.locfileid: "6171153"
 - **导出为图像**：将当前视图保存为图像文件。
 - **更改为水平/垂直布局**：更改实体和关系的对齐。
 - **编辑**：更新编辑窗格中自定义关系的属性并保存更改。
+
+## <a name="relationship-paths"></a>关系路径
+
+关系路径描述通过源实体和目标实体之间的关系连接的实体。 其使用场景为：要创建的客户细分或度量中包含的实体是非统一配置文件实体，并且可通过多个选项到达统一配置文件实体。 
+
+关系路径通知系统通过哪些关系来访问统一配置文件实体。 不同的关系路径可能产生不同的结果。
+
+例如，实体 *eCommerce_eCommercePurchases* 与统一配置文件 *Customer* 实体之间的关系如下：
+
+- eCommerce_eCommercePurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
+
+关系路径确定在为度量或客户细分创建规则时可以使用哪些实体。 如果选择关系路径最长的选项，产生的结果较少，因为匹配记录需要是所有实体的其中一部分。 在此示例中，一位客户必须已通过 e-commerce(eCommerce_eCommercePurchases) 在销售点 (POS_posPurchases) 购买了货物，并且参加了我们的忠诚度计划 (loyaltyScheme_loyCustomers)。 如果选择第一个选项，可能会获得更多结果，因为客户只需要存在于一个附加实体中。
+
+### <a name="direct-relationship"></a>直接关系
+
+当源实体与目标实体仅通过一种关系相关时，关系被归类为 **直接关系**。
+
+例如，如果名为 *eCommerce_eCommercePurchases* 的活动实体仅通过 *ContactId* 连接到目标实体 *eCommerce_eCommerceContacts*，那么这是直接关系。
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="源实体直接连接到目标实体。":::
+
+#### <a name="multi-path-relationship"></a>多路径关系
+
+**多路径关系** 是一种特殊类型的直接关系，它将源实体连接到多个目标实体。
+
+例如，如果名为 *eCommerce_eCommercePurchases* 的活动实体与 *eCommerce_eCommerceContacts* 和 *loyaltyScheme_loyCustomers* 这两个目标实体相关，那么这是一种多路径关系。
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="源实体通过多跃点关系直接连接到多个目标实体。":::
+
+### <a name="indirect-relationship"></a>间接关系
+
+当源实体在与目标实体相关之前与一个或多个其他实体相关时，关系被归类为 **间接关系**。
+
+#### <a name="multi-hop-relationship"></a>多跃点关系
+
+*多跃点关系* 是一种 *间接关系*，它允许您通过一个或多个其他中间实体将源实体连接到目标实体。
+
+例如，如果名为 *eCommerce_eCommercePurchasesWest* 的活动实体连接到名为 *eCommerce_eCommercePurchasesEast* 的中间实体，然后连接到名为 *eCommerce_eCommerceContacts* 的目标实体，则这是多跃点关系。
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="源实体通过中间实体直接连接到目标实体。":::
+
+### <a name="multi-hop-multi-path-relationship"></a>多跃点、多路径关系
+
+多跃点和多路径关系可一起用于创建 **多跃点、多路径关系**。 此特殊类型将合并 **多跃点** 和 **多路径关系** 功能。 它使您能够在使用中间实体时连接到多个目标实体。
+
+例如，如果名为 *eCommerce_eCommercePurchasesWest* 的活动实体连接到名为 *eCommerce_eCommercePurchasesEast* 的中间实体，然后连接到 *eCommerce_eCommerceContacts* 和 *loyaltyScheme_loyCustomers* 这两个目标实体，则这是多跃点、多路径关系。
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="源实体直接连接到一个目标实体并通过中间实体连接到另一个目标实体。":::
 
 ## <a name="manage-existing-relationships"></a>管理现有关系 
 
@@ -105,6 +181,6 @@ ms.locfileid: "6171153"
 
 ## <a name="next-step"></a>下一步
 
-系统关系和自定义关系用于基于多个数据源[创建不再分散的客户细分](segments.md)。
+系统和自定义关系用于基于不再孤立的多个数据源[创建客户细分](segments.md)和[度量](measures.md)。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

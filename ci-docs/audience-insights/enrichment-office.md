@@ -3,18 +3,17 @@ title: 使用来自 Microsoft Office 365 的数据扩充客户配置文件
 description: 使用来自 Microsoft Office 的专有数据用参与数据扩充您的客户配置文件。
 ms.date: 12/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a30e09b5ed491c8d36019b5f0d35e0a2f7a0199c
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
+ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7889745"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228463"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>使用参与数据扩充客户配置文件（预览版）
 

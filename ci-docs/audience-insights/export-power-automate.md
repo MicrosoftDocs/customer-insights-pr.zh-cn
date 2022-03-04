@@ -1,20 +1,19 @@
 ---
 title: Power Automate 连接器 | Microsoft Docs
-description: 在 Microsoft Power Automate 中从 Dynamics 365 Customer Insights 创建流。
-ms.date: 08/03/2020
-ms.service: customer-insights
+description: 利用 Dynamics 365 Customer Insights 在 Microsoft Power Automate 中创建流。
+ms.date: 06/24/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+ms.topic: how-to
+author: pkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ffe92414365b0b777691a4a2d585100e4fbea591
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405180"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226703"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 连接器（预览版）
 
@@ -22,28 +21,35 @@ ms.locfileid: "4405180"
 
 ## <a name="power-automate-triggers"></a>Power Automate 触发器
 
-您可以使用允许创建流以自动执行重复性任务（如通知或更高级的操作）的多种触发器。 
+使用触发器创建云端流并自动执行重复任务，例如发出通知或执行更高级的操作。 
 
 - 当数据源刷新失败时触发的触发器。 
 - 当数据源刷新成功时触发的触发器。
 - 当客户细分超过阈值时触发的触发器。 此触发器只能在超过阈值时触发。
-- 当业务度量超过阈值时触发的触发器。 此触发器只能在超过阈值时触发。
+- 当业务度量超过阈值时触发的触发器。 仅支持没有维度的业务度量。 此触发器只能在超过阈值时触发。
 - 在完成完全刷新（数据源、客户细分、度量......）时触发。
 - 完成统一过程（映射、匹配、合并）的刷新时触发。
 
-[在 Power Automate 中配置触发器](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)。
+[在 Power Automate 中配置触发器。](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
 ## <a name="power-automate-actions"></a>Power Automate 操作
-Power Automate 连接器提供的操作与可用触发器不同。 有关详细信息，请参阅“[Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/)”。
 
-## <a name="create-a-power-automate-flow-in-audience-insights"></a>在访问群体见解中创建 Power Automate 流
+Power Automate 连接器提供的操作与可用触发器不同。 有关详细信息，请参阅“[Dynamics 365 Customer Insights Connector](/connectors/customerinsights/)”。
 
-1. 在访问群体见解中，转到 **管理员** > **系统**。
+## <a name="create-a-power-automate-flow"></a>创建 Power Automate 流
 
-1. 在 **系统** 页面上，选择 **状态** 选项卡。
+1. 在访问群体见解中，转到 **管理员** > **导出目标**。
 
-1. 在 **数据源** 部分中，选择 **流**，然后从下拉列表中选择 **创建流**。
-   > [!div class="mx-imgBorder"]
-   > ![Power Automate 连接器显示“创建流”操作](media/power-automate-connector-create-flow.png "Power Automate 连接器显示“创建流”操作")
+1. 在 **Power Automate** 磁贴中，选择 **设置**。
 
-1. 在 Power Automate 中，选择一个可用触发器创建首选流。 如果要创建第一个流，您需要首先通过 Power Automate 连接器的身份验证。
+1. Power Automate 中的 Customer Insights 连接器（预览版）将会打开。 **登录** 到 Power Automate。
+
+1. 选择可用触发器之一，然后向新流中添加更多步骤。 有关详细信息，请参阅[在 Power Automate 中创建云端流](/power-automate/get-started-logic-flow)。
+
+如何使用流的示例： 
+- 如果数据源刷新失败，则将消息发布到 Microsoft Teams 渠道。 
+- 超过客户细分阈值时，向数据所有者发送电子邮件。
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

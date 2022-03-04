@@ -1,30 +1,35 @@
 ---
 title: 在 Microsoft Dataverse 中连接到表
 description: 从 Microsoft Dataverse 托管数据湖导入数据。
-ms.date: 07/23/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+searchScope:
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692563"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354130"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>连接到 Microsoft Dataverse 托管数据湖中的数据
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-本文提供有关 Dataverse 用户如何才能快速连接到 Dataverse 托管湖中的分析实体的信息。 您必须是 Dataverse 组织的管理员才能继续和查看托管湖中提供的实体列表。
+
+本文提供了有关 Dataverse 用户如何在 Microsoft Dataverse 托管湖中快速连接到分析实体的信息。 
+
+> [!NOTE]
+> 您必须是 Dataverse 组织的管理员才能继续查看托管湖中可用的实体列表。
 
 ## <a name="important-considerations"></a>重要考虑因素
 
-可以将联机服务（如 Azure Data Lake Storage）中存储的数据存储到 Dynamics 365 Customer Insights 中处理或存储数据之外的位置。导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心。](https://www.microsoft.com/trust-center)
+可以将联机服务（如 Azure Data Lake Storage）中存储的数据存储到 Dynamics 365 Customer Insights 中处理或存储数据之外的位置。导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心](https://www.microsoft.com/trust-center)。
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>连接到 Dataverse 托管湖
 
@@ -32,12 +37,9 @@ ms.locfileid: "6692563"
 
 2. 选择 **添加数据源**。
 
-3. 选择 **连接到 Microsoft Dataverse 托管湖**，并选择 **下一步**。
+3. 选择 **Microsoft Dataverse**，然后选择 **下一步**。
 
-4. 输入数据源的 **名称**，然后选择 **下一步**。 命名准则： 
-   - 以字母开头。
-   - 只能使用字母和数字。 不允许使用特殊字符和空格。
-   - 使用 3 至 64 个字符。
+4. 输入数据源的 **名称**，然后选择 **下一步**。 
 
 5. 为 Dataverse 组织提供 **服务器地址**，然后选择 **登录**。
 

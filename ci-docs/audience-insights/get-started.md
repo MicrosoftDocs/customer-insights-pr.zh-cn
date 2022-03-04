@@ -5,17 +5,19 @@ ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
 ms.date: 08/31/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: 2776b2292560f9ea61a06d2b1b7bc7811d35c860
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645253"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353702"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights 访问群体见解功能入门
 
@@ -37,7 +39,7 @@ ms.locfileid: "7645253"
 
 统一配置文件是获取数据的见解和采取操作的基础。 从各个源中引入数据并运行数据统一过程以合并统一配置文件。 指定引入的实体之间的关系以使用扩充功能向配置文件添加信息。 
 
-1. 通过从多个选项创建数据源来引入数据。 在 [Power Query 连接器](connect-power-query.md)、[Common Data Model 文件夹](connect-common-data-model.md)或 [Microsoft Dataverse](connect-common-data-service-lake.md) 之间选择。 
+1. 通过从多个选项创建数据源来引入数据。 在 [Power Query 连接器](connect-power-query.md)、[Common Data Model 文件夹](connect-common-data-model.md)或 [Microsoft Dataverse](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake) 之间进行选择。 
 
 1. 通过完成[映射](map-entities.md)、[匹配](match-entities.md)和[合并](merge-entities.md)阶段运行[数据统一流程](data-unification.md)。
 

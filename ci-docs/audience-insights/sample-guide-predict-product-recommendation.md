@@ -3,26 +3,29 @@ title: 产品建议预测示例指南
 description: 使用本示例指南试用产品建议预测模型。
 ms.date: 02/10/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: b219935dfbd9f7acc1104d83e2ca281801a1a4251ae4c19fc03d4b1ce46f4613
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 8ba54cfd466049c8df99c15f34626ab1914234f1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035174"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354636"
 ---
-# <a name="product-recommendation-prediction-preview-sample-guide"></a>产品建议预测（预览版）示例指南
+# <a name="product-recommendation-prediction-sample-guide"></a>产品建议预测示例指南
 
 我们将向您演示使用下面提供的示例数据的产品建议预测的端到端示例。
 
 ## <a name="scenario"></a>方案
 
-Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Contoso Coffee 网站销售这些产品。 他们的目标是了解应该向定期客户推荐哪些产品。 通过了解客户更 **有可能购买** 哪些产品，可以将主要精力放在特定项目上来节省市场营销工作。
+Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 咖啡网站销售。 他们的目标是了解应该向定期客户推荐哪些产品。 通过了解客户更 **有可能购买** 哪些产品，可以将主要精力放在特定项目上来节省市场营销工作。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -31,7 +34,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司，他们通过 Conto
 
 ## <a name="task-1---ingest-data"></a>任务 1 - 引入数据
 
-查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)文章。 以下信息假设您大致了解如何引入数据。
+专门查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>从电子商务平台中引入客户数据
 

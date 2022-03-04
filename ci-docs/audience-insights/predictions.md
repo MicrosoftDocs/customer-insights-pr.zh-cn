@@ -1,24 +1,28 @@
 ---
 title: 使用预测填写部分数据
 description: 使用预测填写不完整的客户数据。
-ms.date: 05/05/2020
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-predictions
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 9634523f61e27a0ed183186a788ab0cef3c0491b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645023"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353992"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>使用预测填写部分数据
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>通过预测完成部分数据（已弃用）
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> **2021 年 11 月 5 日** 将 **弃用** 此功能。 当前实施在删除功能之前将会继续正常工作，但是，无法根据以下说明创建新集成。
 
 可通过预测轻松创建预测值，用于增强对客户的了解。 在 **智能** > **预测** 页面上，您可以选择 **我的预测** 以查看您在访问群体见解的其他部分中配置的预测，并允许您进一步自定义它们。
 
@@ -60,6 +64,8 @@ ms.locfileid: "7645023"
    > ![显示字段值映射到类别的示例。](media/intelligence-categorymapping.png "显示字段值映射到类别的示例")
 
 8. 选择 **完成**，然后将处理预测。 处理需要一些时间，具体取决于数据的大小和复杂程度。 将根据您创建的预测的 **输出实体名称** 在新实体中提供结果。
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>创建细分时创建预测
 
@@ -110,7 +116,7 @@ ms.locfileid: "7645023"
 
 ## <a name="edit-a-prediction"></a>编辑预测
 
-创建预测之后，可以在 AI Builder 中自定义模型以提高模型的效率。  
+创建预测后，您可以在 AI Builder 中自定义模型以提高模型的有效性。  
 
 1. 在访问群体见解中，转到 **智能** > **预测** > **我的预测**。
 
@@ -120,12 +126,12 @@ ms.locfileid: "7645023"
 
 4. 选择 **在 AI Builder 中自定义**。
 
-5. 在 AI Builder 中更新模型。 [了解有关在 AI Builder 中管理模型的详细信息](/ai-builder/manage-model#retrain-and-republish-existing-models)。
+5. 在 AI Builder 中更新您的模型。 [了解有关在 AI Builder 中管理模型的详细信息](/ai-builder/manage-model#retrain-and-republish-existing-models)。
 
 下次运行预测将使用您已创建的更新后模型。
 
 > [!NOTE]
-> 在 AI Builder 中创建的新模型不会显示在访问群体见解中，除非已从上面列出的体验中创建该模型。
+> 在 AI Builder 中创建的新模型将不会显示在访问群体见解中，除非该模型是根据上面列出的体验创建的。
 
 ## <a name="remove-a-prediction"></a>删除预测
 

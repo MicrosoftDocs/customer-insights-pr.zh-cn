@@ -3,18 +3,20 @@ title: 自定义机器学习模型 | Microsoft Docs
 description: 在 Dynamics 365 Customer Insights 中使用来自 Azure 机器学习的自定义模型。
 ms.date: 12/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+searchScope:
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 460b68e1e65b3033af0a03d1bcc27e718c79d7aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881773"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355040"
 ---
 # <a name="custom-machine-learning-models"></a>自定义机器学习模型
 
@@ -40,6 +42,8 @@ ms.locfileid: "7881773"
 
    > [!NOTE]
    > 数据是在 Customer Insights 实例和工作流中的所选 Azure Web 服务或管道之间传输的。 将数据传输至 Azure 服务时，请确保服务已配置为按照所需的方式和位置处理数据，以符合组织数据的任何法律或法规要求。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>添加新工作流
 

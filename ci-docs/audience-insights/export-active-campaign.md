@@ -1,20 +1,19 @@
 ---
 title: 将 Customer Insights 数据导出到 ActiveCampaign
 description: 了解如何配置连接和导出到 ActiveCampaign。
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 089b9b0d76437e695f797f941ed384734d8f772e
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314584"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227798"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>将客户细分导出到 ActiveCampaign（预览）
 
@@ -28,9 +27,9 @@ ms.locfileid: "6314584"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 每个导出最多可以将 100 万个配置文件导出到 ActiveCampaign，且可能需要最多 90 分钟才能完成。
+- 一次导出最多可将 100 万个客户配置文件导出到 ActiveCampaign，最多可能需要 90 分钟完成。
 - 导出到 ActiveCampaign 仅限于客户细分。
-- 可以导出到 ActiveCampaign 的配置文件数取决于您与 ActiveCampaign 的合同。
+- 您可以导出到 ActiveCampaign 的客户配置文件数量取决于您与 ActiveCampaign 的合同。
 
 ## <a name="set-up-connection-to-activecampaign"></a>设置与 ActiveCampaign 的连接
 
@@ -64,7 +63,7 @@ ms.locfileid: "6314584"
 
 1. 输入您的 [**ActiveCampaign 列表 ID**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign)。    
 
-3. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 在将客户细分导出到 ActiveCampaign 时需要它。 您也可以选择导出名、姓和电话号码来创建更个性化的电子邮件。 选择添加属性以映射这些字段。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 在将客户细分导出到 ActiveCampaign 时需要它。 您也可以选择导出名、姓和电话号码来创建更个性化的电子邮件。 选择添加属性以映射这些字段。
 
 1. 选择 **保存**。
 

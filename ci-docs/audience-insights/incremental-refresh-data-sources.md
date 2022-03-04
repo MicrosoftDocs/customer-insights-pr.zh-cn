@@ -1,24 +1,26 @@
 ---
 title: 基于 Power Query 的数据源的增量刷新
-description: 刷新基于 Power Query 的大型数据源的新数据和更新数据。
+description: 刷新基于 Power Query 的大型数据源的新数据和已更新数据。
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-system-schedule
+- customerInsights
+ms.openlocfilehash: 62632efda3c0c7e53fcdd8864b053ba93e2918bc
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900244"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353670"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>基于 Power Query 的数据源的增量刷新
 
-本文讨论如何基于 Power Query 为数据源配置增量刷新。
+本文讨论如何为基于 Power Query 的数据源配置增量刷新。
 
 对数据源进行增量刷新具有以下优点：
 
@@ -28,9 +30,9 @@ ms.locfileid: "7900244"
 
 ## <a name="configure-incremental-refresh"></a>配置增量刷新
 
-访问群体见解允许对通过支持增量引入的 Power Query 导入的数据源进行增量刷新。 例如，具有日期和时间字段的 Azure SQL 数据库，这些字段指示数据记录的上次更新时间。
+访问群体见解允许对通过 Power Query 导入且支持增量引入的数据源进行增量刷新。 例如，具有日期和时间字段的 Azure SQL 数据库，这些字段指示数据记录的上次更新时间。
 
-1. [创建新的基于 Power Query 的数据源](connect-power-query.md)。
+1. [创建基于 Power Query 的新数据源](connect-power-query.md)。
 
 1. 为该数据源提供 **名称**。
 

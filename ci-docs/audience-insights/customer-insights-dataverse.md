@@ -1,20 +1,22 @@
 ---
 title: Microsoft Dataverse 中的 Customer Insights 数据
 description: 使用 Customer Insights 实体作为 Microsoft Dataverse 中的表。
-ms.date: 10/14/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645207"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355418"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>使用 Microsoft Dataverse 中的 Customer Insights 数据
 
@@ -45,6 +47,7 @@ Customer Insights 提供了使输出实体在 [Microsoft Dataverse](/powerapps/m
 - [CustomerMeasure](#customermeasure)
 - [扩充](#enrichment)
 - [预测](#prediction)
+- [客户细分成员身份](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -121,3 +124,16 @@ AlternateKey 表包含参与统一流程的实体的键。
 | 值               | JSON 字符串 | 模型产生的属性列表 |
 | msdynci_predictionid | GUID        | 通过 msdynci_identifier 产生的确定性 GUID | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>客户细分成员身份
+
+此表包含客户配置文件的客户细分成员身份信息。
+
+| Column        | 类型​​ | Description                        |
+|--------------------|--------------|-----------------------------|
+| CustomerId        | String       | 客户配置文件 ID        |
+| SegmentProvider      | String       | 发布客户细分的应用。 默认：访问群体见解         |
+| SegmentMembershipType | String       | 此客户细分成员身份记录的客户类型。 支持多种类型，例如顾客、联系人或客户。 默认：客户  |
+| 客户细分       | JSON 字符串  | 客户配置文件所属的独特客户细分的列表      |
+| msdynci_identifier  | String   | 客户细分成员身份记录的唯一标识符。 `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | 从 `msdynci_identifier` 中生成的确定 GUID          |

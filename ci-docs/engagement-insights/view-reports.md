@@ -4,17 +4,16 @@ description: 使用可用的报表查看您网站上的实时活动。
 author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
-ms.date: 06/18/2021
-ms.service: customer-insights
+ms.date: 10/01/2021
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: cb6d9ab75b95a5f677d2267f5412a55327930987b2fc3a1a21958633a8116bd2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 03b0b4bab0d5d9c2ae641c85aac8174ec1668d45
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036637"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229729"
 ---
 # <a name="view-reports"></a>查看报表
 
@@ -92,12 +91,18 @@ ms.locfileid: "7036637"
 
 - **位置** 显示有关按国家、地区和市/县列出的应用用户的信息。
 
-## <a name="filter-by-time-or-value"></a>按时间或值筛选
+## <a name="filter-by-time-or-date-range"></a>按时间或日期范围筛选
 
-您可以在 Web 或移动报表中选择期限或值以重点关注某个值或时间段。 
+您可以在 Web 或移动报表中选择期限或日期范围来关注某个值或时间段。 
 
-- 若要选择期限，请从报表的下拉列表中选择 **更多 [...]**。 对实时使用情况报表禁用了时间范围选择；实时使用情况报表的时间范围为“现在”。
+- 要选择期限，在报表视图的右上角，从报表的下拉列表中选择一个值。 您还可以选择 **固定日期范围**。 
 
-- 在大多数报表中，选择图表或列表中的值来筛选所选值的报表。
+  :::image type="content" source="media/filter-by-time.png" alt-text="按时间或日期范围筛选。":::   
+
+- 对于大多数报表，在图表或列表中选择一个值来筛选报表。
+
+> [!NOTE]
+> 对实时使用情况报表禁用了时间范围选择；实时使用情况报表的时间范围为“现在”。
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

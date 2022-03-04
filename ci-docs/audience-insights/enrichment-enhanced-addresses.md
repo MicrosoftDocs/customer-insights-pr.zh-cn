@@ -1,20 +1,25 @@
 ---
 title: 地址增强扩充（包含视频）
 description: 使用 Microsoft 模型扩充并标准化客户配置文件的地址信息。
-ms.date: 12/16/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: afb1a6b4805702697889bb91ca36a96a714cba3d
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
+searchScope:
+- ci-data-sources-enrichment
+- ci-data-sources-enrichment-details
+- ci-enrichments
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934912"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353625"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>使用增强的地址扩充客户配置文件
 
@@ -100,17 +105,17 @@ ms.locfileid: "7934912"
 
 扩充流程完成后，您可以在 **我的扩充** 下查看新扩充的客户配置文件数据。 此外，您还会看到上次更新的时间和扩充的配置文件的数量。
 
-您可以选择 **查看扩充的数据** 来访问每个扩充的配置文件的详细视图。
+您可以在 **扩充的客户预览** 磁贴中查看已扩充数据的示例。 选择 **详细查看** 并选择 **数据** 选项卡，以访问每个已扩充配置文件的详细视图。
 
 ### <a name="overview-card"></a>概览卡
 
 概览卡显示有关扩充覆盖范围的详细信息。 
 
-* **处理和更改的客户**：成功扩充的客户资料的数量。
+* **处理和更改的地址**：成功扩充的带地址的客户配置文件数量。
 
-* **已处理但未更改的客户**：已认可但未更改的客户资料的数量。 通常发生在输入数据有效且无法通过扩充改进时。
+* **已处理但未更改的地址**：已确认但未更改的带地址的客户配置文件数量。 通常发生在输入数据有效且无法通过扩充改进时。
 
-* **未处理也未更改的客户**：未被认可的资料数量。 通常是指无效或扩充不支持的输入数据。
+* **未处理且未更改的地址**：未确认的带地址的客户配置文件数量。 通常是指无效或扩充不支持的输入数据。
 
 ## <a name="next-steps"></a>后续步骤
 
