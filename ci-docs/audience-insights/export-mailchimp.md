@@ -3,17 +3,18 @@ title: 将 Customer Insights 数据导出到 Mailchimp
 description: 了解如何配置连接和导出到 Mailchimp。
 ms.date: 10/08/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f7a33f2eddb6b625ddb8663b97103de75beab44c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 94a9fead56ce8c40b35d4eb41ebdc0d672798dce
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226835"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618602"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>将客户细分导出到 Mailchimp（预览版）
 

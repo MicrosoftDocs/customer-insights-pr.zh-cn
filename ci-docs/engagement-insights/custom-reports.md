@@ -5,15 +5,16 @@ author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
 ms.date: 10/01/2021
+ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: e8cdfc07b67b78febc1d50b3b1fd44ab94448e64
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 3fa801bfc8b0aee65c21b90de2423a3d5d5e4e26
+ms.sourcegitcommit: d9965f4bfc09391698a34042f6b44367e53819e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232137"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7582864"
 ---
 # <a name="create-and-edit-custom-reports"></a>创建和编辑自定义报表
 
@@ -52,7 +53,7 @@ ms.locfileid: "8232137"
 
 您可以在自定义报表中选择期限或日期范围来关注某个值或时间段。
 
-要选择期限，在报表视图的右上角，从报表的下拉列表中选择一个值。 您还可以选择 *固定日期范围*。
+要选择期限，在报表视图的右上角，从报表的下拉列表中选择一个值。 您还可以选择**固定日期范围*。
 
 :::image type="content" source="media/filter-time-date-range.png" alt-text="按时间或日期范围筛选。":::
 

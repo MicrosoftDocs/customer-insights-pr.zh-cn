@@ -2,17 +2,18 @@
 title: 使用人口统计维度拆分行为数据（策划的维度）
 description: 使用统一配置文件策划的维度启用访问群体见解客户配置文件属性。
 ms.date: 07/27/2021
+ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 95395e09bc0ba5ba93138957c62105f31c709e91
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
+ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232956"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "7461092"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>使用人口统计维度拆分行为数据
 
@@ -28,7 +29,7 @@ ms.locfileid: "8232956"
 - 一个参与见解环境，您已在其中将客户配置文件数据链接到了一个在其中创建了客户细分和客户配置文件的访问群体见解环境。 更多信息：[创建参与见解与访问群体见解之间的链接](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> 创建访问群体见解环境与参与见解环境之间的链接之后，您可能只需要特定于客户配置文件属性的数据，这在参与见解中充当维度时可能非常有用。 有关详细信息，请转到[启用访问群体见解统一配置文件属性和客户细分](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments)。
+> 创建访问群体见解环境与参与见解环境之间的链接之后，您可能只需要特定于客户配置文件属性的数据，这在参与见解中充当维度时可能非常有用。 有关详细信息，请转到[启用访问群体见解统一配置文件属性和客户细分](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments)。<!--note from editor: Suggested. -->
 
 ## <a name="create-a-new-custom-report"></a>创建新的自定义报表
 

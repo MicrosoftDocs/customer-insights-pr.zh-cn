@@ -1,19 +1,20 @@
 ---
 title: 将 Customer Insights 数据导出到 Azure Synapse Analytics
-description: 了解如何配置与 Azure Synapse Analytics 的连接。
-ms.date: 01/05/2022
+description: 了解如何配置到 Azure Synapse Analytics 的连接。
+ms.date: 04/12/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: f206043298bdbf8a84b0ef37b47a43290653beba7d3d0e8b807ec74513614aa8
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231301"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031922"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>将数据导出到 Azure Synapse Analytics（预览版）
 
@@ -48,11 +49,9 @@ Azure Synapse 是一项分析服务，可加缩短跨数据存储和大型数据
 
 ### <a name="configure-a-connection"></a>配置连接
 
-要创建连接，Customer Insights 中的服务主体和用户帐户需要对 Synapse Analytics 工作区所在的 *资源组* 具有 **读者** 权限。 此外，Synapse Analytics 工作区中的服务主体和用户需要 **Synapse 管理员** 权限。 
-
 1. 转到 **管理员** > **连接**。
 
-1. 选择 **添加连接** 并选择 **Azure Synapse Analytics**，或者在 **Azure Synapse Analytics** 磁贴上选择 **设置** 以配置连接。
+1. 选择 **添加连接** 并选择 **Azure Synapse Analytics**，或在 **Azure Synapse Analytics** 磁贴中选择 **设置**，以配置连接。
 
 1. 在显示名称字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
 
@@ -64,7 +63,7 @@ Azure Synapse 是一项分析服务，可加缩短跨数据存储和大型数据
 
 ### <a name="configure-an-export"></a>配置导出
 
-如果您有权访问此类类型的连接，则可以配置此导出。 要使用共享连接配置导出，您需要在 Customer Insights 中至少具有 **参与者** 权限。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
+如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
 
 1. 转到 **数据** > **导出**。
 
@@ -83,8 +82,6 @@ Azure Synapse 是一项分析服务，可加缩短跨数据存储和大型数据
 保存导出不会立即运行导出。
 
 每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。
-
-要查询导出到 Synapse Analytics 的数据，您需要具有对导出工作区上的目标存储的 **存储 Blob 数据读者** 访问权限。 
 
 ### <a name="update-an-export"></a>更新导出
 

@@ -1,19 +1,20 @@
 ---
 title: Microsoft Teams 的机器人
 description: 使用机器人帮助在 Microsoft Teams 中查找统一客户配置文件。
-ms.date: 10/08/2021
+ms.date: 04/21/2020
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 9bf401124b0ffb21b046954056141e7703386d4911f89f34ffc0fcb84bf0f4be
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232091"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032471"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>用于 Dynamics 365 Customer Insights 的 Teams 机器人（预览）
 
@@ -30,10 +31,7 @@ ms.locfileid: "8232091"
 - 完成了[统一流程](data-unification.md)。
 - 向[搜索和筛选索引](search-filter-index.md)添加了字段。
 - Customer Insights 和 Teams 属于同一个组织。
-- 您的环境将主要目标受众设置为个人客户。 不支持企业客户。
 
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>配置机器人
 
 1. 在访问群体见解中，转到 **管理员** > **导出目标**。

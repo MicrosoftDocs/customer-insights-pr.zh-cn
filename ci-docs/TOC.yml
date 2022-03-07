@@ -56,8 +56,6 @@
           href: audience-insights/connect-common-data-model.md
         - name: 添加 Dataverse 托管数据湖
           href: audience-insights/connect-dataverse-managed-lake.md
-        - name: 添加 Azure Synapse Analytics
-          href: audience-insights/connect-synapse.md
         - name: 数据源的增量刷新
           href: audience-insights/incremental-refresh-data-sources.md
         - name: 实时数据引入
@@ -122,12 +120,8 @@
           href: audience-insights/find-similar-customer-segments.md
     - name: 度量
       items:
-        - name: 度量概述
+        - name: 定义度量和 KPI
           href: audience-insights/measures.md
-        - name: 新建度量
-          href: audience-insights/measure-builder.md
-        - name: 使用度量模板
-          href: audience-insights/measure-templates.md
     - name: 预测
       items:
         - name: 在 AI 的帮助下预测数据
@@ -258,6 +252,8 @@
               href: audience-insights/diagnostics.md
     - name: 扩展性
       items:
+        - name: 集成参与见解中的 Web 数据
+          href: audience-insights/integrate-engagement-insights.md
         - name: 查看 Common Data Model 中的实体架构
           href: audience-insights/entity-schemas.md
         - name: Dataverse 中的 Customer Insights 数据
@@ -301,7 +297,83 @@
         - name: 使用同意数据创建预测
           href: consent-management/predictions-consent-data.md
 - name: 参与见解(预览版)
-  href: engagement-insights/overview.md
+  items:
+    - name: 帮助中心
+      href: engagement-insights/index.yml
+    - name: 关于参与见解
+      href: engagement-insights/overview.md
+    - name: 开始
+      items:
+        - name: 快速入门指南
+          href: engagement-insights/get-started.md
+        - name: 创建环境
+          href: engagement-insights/create-new-environment.md
+        - name: 创建工作区
+          href: engagement-insights/create-workspace.md
+        - name: 从网站和移动应用捕获事件
+          href: engagement-insights/developer-resources.md
+        - name: 概念和术语
+          href: engagement-insights/glossary.md
+    - name: 事件
+      items:
+        - name: 创建和修改事件
+          href: engagement-insights/refined-events.md
+        - name: 识别先前经过身份验证的访问者的 Web 事件
+          href: engagement-insights/unknown-to-known.md
+        - name: 导出事件
+          href: engagement-insights/export-events.md
+    - name: 报告
+      items:
+        - name: 查看报表
+          href: engagement-insights/view-reports.md
+        - name: 创建自定义报表
+          href: engagement-insights/custom-reports.md
+        - name: 创建统一的配置文件报表
+          href: engagement-insights/profile-reports.md
+        - name: 查看和创建维度
+          href: engagement-insights/dimensions.md
+        - name: 查看和创建指标
+          href: engagement-insights/metrics.md
+        - name: 查看和创建客户细分
+          href: engagement-insights/segments.md
+    - name: 历程分析
+      items:
+        - name: 创建和管理漏斗图报表
+          href: engagement-insights/funnel-reports.md
+    - name: 开发人员资源
+      items:
+        - name: 开发人员资源概述
+          href: engagement-insights/developer-resources.md
+        - name: Web SDK 教程
+          href: engagement-insights/advanced-SDK-implementation.md
+        - name: Web SDK 示例
+          href: engagement-insights/websdk-sample.md
+        - name: Android SDK 教程
+          href: engagement-insights/get-started-android.md
+        - name: Android SDK 示例
+          href: engagement-insights/androidsdk-sample.md
+        - name: iOS SDK 教程
+          href: engagement-insights/get-started-ios.md
+        - name: iOS SDK 示例
+          href: engagement-insights/iossdk-sample.md
+    - name: 管理
+      items:
+        - name: 角色和权限
+          href: engagement-insights/user-roles.md
+        - name: 管理环境和工作区
+          href: engagement-insights/manage-environments-workspaces.md
+        - name: 管理 Cookie 和用户同意
+          href: engagement-insights/user-consent-storage.md
+    - name: 区域可用性
+      href: engagement-insights/regional-availability.md
+- name: 在功能之间共享数据
+  items:
+    - name: 链接访问群体见解与参与见解
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: 在参与见解报告中使用访问群体见解客户细分
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: 使用人口统计维度拆分行为数据
+      href: engagement-insights/curate-dimensions.md
 - name: 服务限制
   href: service-limits.md
 - name: DSR 权限和请求

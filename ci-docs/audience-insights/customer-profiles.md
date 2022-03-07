@@ -1,76 +1,75 @@
 ---
 title: 查看客户配置文件
 description: 获取统一客户数据的组合视图。
-ms.date: 09/30/2021
+ms.date: 12/01/2020
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-searchScope:
-- ci-customers-page
-- ci-customer-card
-- ci-activities
-- ci-activities-wizard
-- customerInsights
-ms.openlocfilehash: 3a17716508a14020c56640c7d68f300a9d721af4
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354870"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554607"
 ---
 # <a name="customer-profiles"></a>客户配置文件
 
-**客户** 页显示统一客户配置文件的组合视图。 [创建统一客户实体](data-unification.md)后，客户配置文件即可用。 通过此页面，您可以搜索客户并定义该搜索的索引。
+**客户** 页面显示客户的组合视图，基于从[所有数据源](data-sources.md)收集的配置文件数据。 [创建统一的客户实体](data-unification.md)之后，客户配置文件可用。 确保完成数据统一过程以获得更丰富的客户视图。 还可以通过此页面搜索客户。
 
-客户可以是个人或组织。 每个客户配置文件由一个磁贴表示。 使用分页控件可以获取更多记录。 此卡显示 **搜索和筛选索引** 中定义的 *客户* 实体中的字段。 选择磁贴可以在名为[客户详细信息页](customer-profiles.md#customer-details-page)的专用页面中查看所选客户的数据。
+客户可以是个人，也可以是组织（预览）。 每个客户或组织配置文件通过磁贴表示。 选择磁贴可查看有关这个具体客户或组织的更多信息。 可使用页面底部的翻页控件查看更多记录。
 
 > [!div class="mx-imgBorder"] 
-> ![显示结果磁贴的客户页面](media/customers-page-result-tiles-B2C.png "显示结果磁贴的客户页面")
+> ![B2C 客户配置文件。](media/profiles-customers.png "B2C 客户配置文件")
+
+组织（预览）
+> [!div class="mx-imgBorder"] 
+> ![B2B 客户配置文件。](media/profile-customers-b2b.png "B2B 客户配置文件")
 
 > [!NOTE]
-> 如果您在导航中选择 **客户** 时看不到磁贴，您的管理员需要在 **搜索和筛选索引** 中[定义至少一个可搜索属性](search-filter-index.md)。
+> 如果在导航中选择 **客户** 后看不到磁贴，您的管理员需要在 **搜索和筛选索引** 中[定义至少一个可搜索属性](search-filter-index.md)。
 
 ## <a name="search-for-customers"></a>搜索客户
 
-通过在搜索框中输入名称或其他某个属性搜索客户。 搜索仅在数据统一流程中创建的 _客户_ 实体内有效。
+通过在搜索框中输入名称或其他某个属性搜索客户。 只有在数据统一过程中创建的客户配置文件实体内才支持搜索。
 
-作为管理员，您可以使用 **搜索和筛选索引** 页配置可搜索属性。 有关详细信息，请转到[管理搜索和筛选索引](search-filter-index.md)。
+作为管理员，您可以使用 **搜索和筛选索引** 页配置可搜索属性。 有关详细信息，请参阅[管理搜索和筛选索引](search-filter-index.md)。
 
 ## <a name="filter-customers"></a>筛选客户
 
-您可以按 _客户_ 实体字段筛选客户。 与搜索类似，您的管理员首先需要使用 **搜索和筛选索引** 将字段定义为可搜索。
+可以按客户配置文件实体字段搜索客户。 与搜索类似，您的管理员首先需要使用 **搜索和筛选索引** 将字段定义为可搜索。
 
-1. 在 **客户** 页上选择 **显示筛选器**。
+1. 在 **客户** 页面上选择 **筛选器**。
 
-1. 选中要充当客户搜索依据的属性旁边的框。
+2. 选中要充当客户搜索依据的属性旁边的框。
 
-1. 通过在 **客户** 页面上选择 **清除筛选器** 来删除您的筛选器。
+   > [!div class="mx-imgBorder"] 
+   > ![客户配置文件。](media/profiles-customers3.png "客户配置文件")
 
-## <a name="customer-details-page"></a>客户详细信息页面
+3. 通过在 **客户** 页面上选择 **清除筛选器** 来删除您的筛选器。
 
-选择任何客户磁贴以打开 **客户详细信息页面**。 此视图包含所选客户的统一信息。 客户详细信息包括以下内容：
+##  <a name="customer-details-page"></a>客户详细信息页面
 
-**客户配置文件磁贴**：此磁贴显示统一 _客户_ 实体的不同值。 如果字段没有所选客户配置文件的值，该字段将不会显示。 磁贴分为几个部分：  
-  - 第一个部分显示一组预定义的字段，后跟属于搜索和筛选索引的所有字段。 如果配置文件包含此类字段，所有与地址相关的字段将合并为一行。 
-  - **此客户的联系人**：在企业客户的环境中，您将作为第二部分看到该客户的所有其他相关联系人。 每个联系人都显示有他们的字段。 空字段会被隐藏。
-  - **其他字段**：显示选定客户的其余字段（除 ID 之外）。 
-  - **ID**：列出其相应实体名称下的所有 ID。 字段按它们的语义标识为 ID，它们也照此分类。
+选择任何客户磁贴以打开 **客户详细信息页面**。 此视图包含所选客户的统一信息。
 
-**活动时间线**：如果您配置了活动，将显示数据。 时间线视图包含所选客户按时间顺序排序的活动，从最近的活动开始。 有关详细信息，请转到[客户活动](activities.md)。
+客户详细信息包括:
 
-**见解**：  
-  - **度量**：如果您配置了一个或多个客户属性衡量的度量值，将显示。 它们包括针对各个客户级别的客户的计算 KPI。 有关详细信息，请转到[定义和管理度量值](measures.md)。
+-   **客户配置文件磁贴**：此磁贴显示统一客户配置文件实体中的不同值。 这些详细信息可以包括电子邮件地址、姓名、市/县等等。 
 
-  - **潜在兴趣、潜在品牌**：如果您配置了品牌或兴趣相似性扩充，将显示。 它表示基于与所选客户配置文件相似的其他客户的品牌的潜在兴趣和相似性。 有关详细信息，请转到[使用品牌和兴趣相似性扩充客户配置文件](enrichment-microsoft.md)。
+-   **潜在兴趣、潜在品牌**：显示您是否配置了第一方扩充。 它表示具有与此客户类似的配置文件的客户可能具有的潜在兴趣和品牌相似性。 有关详细信息，请参阅[利用品牌和兴趣相似性扩充客户资料](enrichment-microsoft.md)。
 
-要返回客户搜索页，选择 **返回客户**。
+-   **度量**：显示您是否配置了特定类型的一个或多个度量：客户属性度量。 它们包括针对各个客户级别的客户的计算 KPI。 有关详细信息，请参阅[定义和管理度量](measures.md)。
+
+-   **活动时间线**：显示您是否配置了活动。 时间线视图包含此客户的按时间排序的活动，从最近活动开始。 有关详细信息，请参阅[自定义活动](activities.md)。
+
+选择 **返回到客户** 以返回到客户搜索页面。
 
 ## <a name="next-steps"></a>后续步骤
 
-[添加更多数据源](data-sources.md)、[扩充统一配置文件](enrichment-hub.md)或[创建客户细分](segments.md)以在其他应用程序中使用统一的客户配置文件。
+[添加更多数据源](data-sources.md)或[创建客户细分](segments.md)。
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

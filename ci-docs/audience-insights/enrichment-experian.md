@@ -3,17 +3,18 @@ title: 通过第三方扩充 Experian 进行的扩充
 description: 有关 Experian 第三方扩充的常规信息。
 ms.date: 04/09/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
+ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229953"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309809"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>使用 Experian 中的人口统计信息扩充客户配置文件（预览）
 
@@ -38,7 +39,7 @@ Experian 是消费者和企业信用报告以及市场营销服务领域的全�
 1. 在 Experian 磁贴上选择 **扩充我的数据**。
 
    > [!div class="mx-imgBorder"]
-   > ![Experian 磁贴。](media/experian-tile.png "Experian tile")
+   > ![Experian 磁贴](media/experian-tile.png "Experian tile")
    > 
 
 1. 从下拉列表中选择[连接](connections.md)。 如果没有连接可用，请联系管理员。 如果您是管理员，可以通过选择 **添加连接** 并从下拉列表中选择 Experian 来创建连接。 
@@ -90,7 +91,7 @@ Experian 是消费者和企业信用报告以及市场营销服务领域的全�
 
 ## <a name="next-steps"></a>后续步骤
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 

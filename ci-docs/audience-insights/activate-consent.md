@@ -1,19 +1,20 @@
 ---
 title: 激活客户细分同意规则
 description: 按照这些步骤在访问群体见解中链接同意数据和激活同意检查。 管理员还可以禁用同意检查。
-ms.date: 11/12/2021
+ms.date: 11/03/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4b55c82229b1a6189c0dd67d145386344286df8a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 45899738d39bd5caa433e123f9fe59020e831998
+ms.sourcegitcommit: 79b09498d1328e5551fb8684c44af1fb149f9881
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8227482"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790766"
 ---
 # <a name="activate-consent-rules"></a>激活同意规则
 
@@ -48,6 +49,3 @@ ms.locfileid: "8227482"
 1. 选择 **同意(预览版)** 选项卡。
 
 1. 在 **启用同意检查** 部分，将切换开关设置为 **关**。
-
-> [!TIP]
-> 若要停止使用同意管理功能，请参阅[同意中心中的系统设置（预览版）](../consent-management/system-settings.md)。

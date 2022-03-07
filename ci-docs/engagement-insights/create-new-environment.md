@@ -5,15 +5,16 @@ author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 10/04/2021
+ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 1f82ff588c2ffbe82c3ee7df2498ac2cca2bad31
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 5e301b4ff0a7586fb143b154b773791b3bd645b7
+ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225412"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7648106"
 ---
 # <a name="create-a-new-environment"></a>创建新环境 
 
@@ -45,7 +46,7 @@ ms.locfileid: "8225412"
 
 1. 选择 **显示高级设置** 启用或禁用这些可选设置：
 
-   - 将 **未知到已知** 切换到“启用”，将 Web 事件与先前通过身份验证的用户关联。 有关详细信息，请参阅[识别以前通过身份验证的访问者的 Web 事件](unknown-to-known.md)。
+   - 将 **未知到已知** 切换到“启用”，将 Web 事件与先前通过身份验证的用户关联。 有关详细信息，请参阅[识别以前通过身份验证的访问者的 Web 事件](unknown-to-known.md)
    - 将 **筛选机器人流量** 切换到“启用”，删除此工作区中机器人的 Web 流量。 
 
 1. 完成后选择 **完成**。 

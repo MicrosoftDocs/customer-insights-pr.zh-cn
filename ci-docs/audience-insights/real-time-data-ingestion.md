@@ -2,21 +2,19 @@
 title: 实时数据引入和限制
 description: 有关访问群体见解中的实时功能的常规信息。
 ms.date: 10/27/2020
-ms.reviewer: mhart
+ms.reviewer: nikeller
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-searchScope:
-- ci-system-api-usage
-- customerInsights
-ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355464"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270269"
 ---
 # <a name="real-time-data-ingestion-preview"></a>实时数据引入（预览版）
 
@@ -56,7 +54,7 @@ ms.locfileid: "8355464"
 
 可通过两种方法连接到实时 API：
 
-- [间接](#connect-via-the-dynamics-365-customer-insights-connector)，即使用 [Dynamics 365 Customer Insights 连接器](/connectors/customerinsights/)
+- [间接](#connect-via-the-dynamics-365-customer-insights-connector)，即使用 [Dynamics 365 Customer Insights 连接器](https://docs.microsoft.com/connectors/customerinsights/)
 - [直接 ](#connect-directly-to-the-real-time-api)，即使用代码
 
 这两种方法都需要满足以下先决条件：
@@ -68,13 +66,13 @@ ms.locfileid: "8355464"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>通过 Dynamics 365 Customer Insights 连接器连接
 
-此实时 API 可以从专用 Power Platform 连接器（[Dynamics 365 Customer Insights 连接器](/connectors/customerinsights/)）引入数据，无需编写和部署任何代码。    
-此连接器可以执行与 API 执行的相同实时操作。 需要高级连接器的有效许可证。 有关详细信息，请参阅 [Power Apps 和 Power Automate 许可常见问题解答](/power-platform/admin/powerapps-flow-licensing-faq)。
+此实时 API 可以从专用 Power Platform 连接器（[Dynamics 365 Customer Insights 连接器](https://docs.microsoft.com/connectors/customerinsights/)）引入数据，无需编写和部署任何代码。    
+此连接器可以执行与 API 执行的相同实时操作。 需要高级连接器的有效许可证。 有关详细信息，请参阅 [Power Apps 和 Power Automate 许可常见问题解答](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq)。
 
-- Power Platform [Power Apps 和/或 Power Automate](/connectors/)
-- Azure [逻辑应用](/azure/connectors/apis-list)
+- Power Platform [Power Apps 和/或 Power Automate](https://docs.microsoft.com/connectors/)
+- Azure [逻辑应用](https://docs.microsoft.com/azure/connectors/apis-list)
 
-有关创建流的详细信息，请参阅 [Power Automate 文档](/power-automate/)。
+有关创建流的详细信息，请参阅 [Power Automate 文档](https://docs.microsoft.com/power-automate/)。
 
 ## <a name="connect-directly-to-the-real-time-api"></a>直接连接到实时 API
 
