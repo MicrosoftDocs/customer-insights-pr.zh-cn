@@ -1,56 +1,76 @@
 ---
 title: 通过 SFTP 自定义导入扩充
 description: 有关 SFTP 自定义导入扩充的常规信息。
-ms.date: 11/18/2020
-ms.reviewer: kishorem
-ms.service: customer-insights
+ms.date: 04/09/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: jdahl
-ms.author: mhart
+ms.topic: how-to
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 59f7f05ca0825ba147e9e93f10fa3508ec3a16dd
-ms.sourcegitcommit: ff824bbbd31fd666ab0da682bf48ea31580d242c
+ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "4568411"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229616"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>使用自定义数据扩充客户配置文件（预览）
 
-通过安全文件传输协议 (SFTP) 自定义导入，您可以导入不需要完成数据统一流程的数据。 这是一种灵活、安全和方便的数据引入方式。 SFTP 自定义导入可与 [SFTP 导出](export-sftp.md)结合使用，后者允许您导出扩充所需的客户配置文件数据。 然后可以处理和扩充该数据，SFTP 自定义导入可用于将扩充的数据重新导入到 Dynamics 365 Customer Insights 的访问群体见解功能。
+通过安全文件传输协议 (SFTP) 自定义导入，您可以导入不需要完成数据统一流程的数据。 这是一种灵活、安全和方便的数据引入方式。 SFTP 自定义导入可与 [SFTP 导出](export-sftp.md)结合使用，后者允许您导出扩充所需的客户配置文件数据。 然后，可以处理和扩充数据，SFTP 自定义导入可用于将扩充的数据引入回 Dynamics 365 Customer Insights 的访问群体见解功能。
 
 ## <a name="prerequisites"></a>先决条件
 
 若要配置 SFTP 自定义导入，必须满足以下先决条件：
 
-- 您具有要从中导入数据的 SFTP 位置的用户凭据（用户名和密码）。
-- 您具有 STFP 主机的 URL 和端口号（通常为 22）。
-- 您具有要在 SFTP 主机上导入的文件的文件名和位置。
-- 存在一个 *model.json* 文件，用于指定要导入的数据的架构。 此文件必须与要导入的文件位于同一目录中。
-- 您具有[管理员](permissions.md#administrator)权限。
+- 您将具有要在 SFTP 主机上导入的文件的文件名和位置（路径）。
+- 有一个 *model.json* 文件，用于为要导入的数据指定 [Common Data Model 架构](/common-data-model/)。 此文件必须与要导入的文件位于同一目录中。
+- 管理员已配置 SFTP 连接，*或者* 您拥有[管理员](permissions.md#administrator)权限。 对于要从中导入数据的 SFTP 位置，您将需要用户凭据、URL 和端口号。
 
-## <a name="configuration"></a>配置
+
+## <a name="configure-the-import"></a>配置导入
 
 1. 转到 **数据** > **扩充**，选择 **发现** 选项卡。
 
-1. 在 **SFTP 自定义导入磁贴** 上，选择 **扩充我的数据**。
+1. 在 **SFTP 自定义导入磁贴** 上，选择 **扩充我的数据**，然后选择 **开始**。
+
+   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP 自定义导入磁贴。":::
+
+1. 从下拉列表中选择[连接](connections.md)。 如果没有连接可用，请联系管理员。 如果您是管理员，可以通过选择 **添加连接** 并从下拉列表中选择 **SFTP 自定义导入** 来创建连接。
+
+1. 选择 **连接到自定义导入** 以确认选择的连接。
+
+1.  选择 **下一步**，然后输入您要导入的数据文件的 **路径** 和 **文件名**。
+
+    :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="输入数据位置时的屏幕截图。":::
+
+1. 选择 **下一步**，然后选择客户数据集。 可以是所有客户配置文件或一个客户细分。
+
+1. 选择 **下一步** 并提供扩充的名称和输出实体的名称。 
+
+1. 在查看您的选择后选择 **保存扩充**。
+
+## <a name="configure-the-connection-for-sftp-custom-import"></a>配置 SFTP 自定义导入的连接 
+
+您必须是管理员才能配置连接。 配置扩充时选择 **添加连接**，*或* 转到 **管理员** > **连接**，然后在自定义导入磁贴上选择 **设置**。
+
+1. 在 **显示名称** 框中输入连接的名称。
+
+1. 输入要导入的数据所在的 SFTP 服务器的有效用户名、密码和主机 URL。
+
+1. 进行查看，然后选中 **我同意** 复选框以同意 **数据隐私和合规性**。
+
+1. 选择 **验证** 以验证配置。
+
+1. 验证完成后，可以通过选择 **保存** 来保存连接。
 
    > [!div class="mx-imgBorder"]
-   > ![SFTP 自定义导入磁贴](media/SFTP_Custom_Import_tile.png "SFTP 自定义导入磁贴")
+   > ![Experian 连接配置页面。](media/enrichment-SFTP-connection.png "Experian 连接配置页面")
 
-1. 选择 **入门**，并提供 SFTP 服务器的凭据和地址。 例如，sftp://mysftpserver.com:22。
-
-1. 如果文件未在根文件夹中，输入包含数据的文件的名称以及该文件在 SFTP 服务器上的路径。
-
-1. 通过选择 **连接到自定义导入** 确认所有输入。
-
-   > [!div class="mx-imgBorder"]
-   > ![SFTP 自定义导入配置弹出项目](media/SFTP_Custom_Import_Configuration_flyout.png "SFTP 自定义导入配置弹出项目")
 
 ## <a name="defining-field-mappings"></a>正在定义字段映射 
 
-包含要在 SFTP 服务器上导入的文件的目录也必须包含 *model.json* 文件。 此文件定义用于导入数据的架构。 架构必须使用 [Common Data Model](https://docs.microsoft.com/common-data-model/) 才能指定字段映射。 Model.json 文件的一个简单示例如下所示：
+包含要在 SFTP 服务器上导入的文件的目录也必须包含 *model.json* 文件。 此文件定义用于导入数据的架构。 架构必须使用 [Common Data Model](/common-data-model/) 指定字段映射。 Model.json 文件的一个简单示例如下所示：
 
 ```
 {
@@ -104,6 +124,6 @@ ms.locfileid: "4568411"
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)、[度量](measures.md)和[导出数据](export-destinations.md)以为客户提供个性化的体验。
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
-
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

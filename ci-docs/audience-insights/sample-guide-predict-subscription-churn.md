@@ -3,20 +3,22 @@ title: 订阅流失预测示例指南
 description: 使用本示例指南试用现成的订阅流失预测模型。
 ms.date: 11/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 324e5c19778230dd978b2f4e9156a2dd82b3d2bd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+searchScope:
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 5de57155b47b74efa4c5ef2fe63a3c87505644be
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595507"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355602"
 ---
-# <a name="subscription-churn-prediction-preview-sample-guide"></a>订阅流失预测（预览）示例指南
+# <a name="subscription-churn-prediction-sample-guide"></a>订阅流失预测示例指南
 
 我们将向您演示使用下面提供的示例数据的订阅流失预测的端到端示例。 
 
@@ -31,7 +33,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 ## <a name="task-1---ingest-data"></a>任务 1 - 引入数据
 
-查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)文章。 以下信息假设您大致了解如何引入数据。 
+专门查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>从电子商务平台中引入客户数据
 
@@ -128,9 +130,9 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 1. 转到 **匹配** 选项卡并选择 **设置顺序**。
 
-1. 在 **主要** 下拉列表中，选择 **eCommerceContacts：电子商务** 作为主要源，并包括所有记录。
+1. 在 **主要** 下拉列表中，选择 **eCommerceContacts : eCommerce** 作为主要源并包括所有记录。
 
-1. 在 **实体 2** 下拉列表中，选择 **loyCustomers：LoyaltyScheme**，并包括所有记录。
+1. 在 **实体 2** 下拉列表中，选择 **loyCustomers : LoyaltyScheme** 并包括所有记录。
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="统一匹配电子商务和忠诚度。":::
 
@@ -138,8 +140,8 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 1. 使用 FullName 添加您的第一个条件。
 
-   * 对于 eCommerceContacts，在下拉列表中选择 **全名**。
-   * 对于 loyCustomers，在下拉列表中选择 **全名**。
+   * 对于 eCommerceContacts，在下拉列表中选择 **FullName**。
+   * 对于 loyCustomers，在下拉列表中选择 **FullName**。
    * 选择 **标准化** 下拉列表，然后选择 **类型（电话、名称、地址......）**。
    * 设置 **精度级别**：**基本** 和 **值**：**高**。
 
@@ -168,7 +170,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>任务 3 - 配置订阅流失预测
 
-有了统一的客户配置文件，我们现在可以运行订阅流失预测。 有关详细步骤，请参阅[订阅流失预测（预览）](predict-subscription-churn.md)文章。 
+有了统一的客户配置文件，我们现在可以运行订阅流失预测。 有关详细步骤，请参阅[订阅流失预测](predict-subscription-churn.md)文章。 
 
 1. 转到 **智能** > **发现** 并选择使用 **客户流失模型**。
 

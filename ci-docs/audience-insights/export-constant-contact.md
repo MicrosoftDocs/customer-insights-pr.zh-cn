@@ -1,20 +1,19 @@
 ---
 title: 将 Customer Insights 数据导出到 Constant Contact
 description: 了解如何配置连接和导出到 Constant Contact。
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 8841945814397ffa70c56638a8bed25499c1a06f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031830"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226392"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>将客户细分导出到 Constant Contact（预览版）
 
@@ -28,10 +27,10 @@ ms.locfileid: "7031830"
 
 ## <a name="known-limitations"></a>已知限制
 
-- 对于每次导出，您可以向 Constant Contact 导出多达 100 万个配置文件。
+- 一次导出最多可将 100 万个客户配置文件导出到 Constant Contact。
 - 导出到 Constant Contact 仅限于客户细分。
-- 向 Constant Contact 导出多达 100 万个配置文件可能最多需要 1 小时才能完成。 
-- 您可以导出到 Constant Contact 的配置文件数量取决于并受限于您的 Constant Contact 联系人。
+- 向 Constant Contact 导出最多 100 万个客户配置文件最长可能需要 1 小时完成。 
+- 您可以导出到 Constant Contact 的客户配置文件数量取决和受限于您与 Constant Contact 的合同。
 
 ## <a name="set-up-connection-to-constant-contact"></a>设置与 Constant Contact 的连接
 
@@ -65,7 +64,7 @@ ms.locfileid: "7031830"
 
 1. 输入 [**Constant Contact 列表 ID**](https://app.constantcontact.com/pages/contacts/ui#lists)。 在 Constant Contact 中打开列表以查找 URL 中的列表 ID。
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择统一客户配置文件中表示客户电子邮件地址的字段。 必须将客户细分导出到 Constant Contact。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 必须将客户细分导出到 Constant Contact。
 
 1. 或者，您可以导出名和姓作为其他字段，以创建更多个性化的电子邮件。 选择 **添加属性** 以映射这些字段。
 

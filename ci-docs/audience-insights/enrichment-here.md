@@ -3,18 +3,17 @@ title: 通过第三方扩充 HERE Technologies 进行的扩充
 description: 有关 HERE Technologies 第三方扩充的常规信息。
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 1b46e8913c6d288b93cdf32e195b5e9387916e70
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555296"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230371"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>通过 HERE Technologies 扩充客户配置文件（预览）
 
@@ -85,7 +84,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 

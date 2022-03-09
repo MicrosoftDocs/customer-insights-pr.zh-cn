@@ -3,18 +3,17 @@ title: Power BI 连接器
 description: 了解如何在 Power BI 中使用 Dynamics 365 Customer Insights 连接器。
 ms.date: 07/23/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: a0ca431dbea839fe271cf3a512cd3a5dde6d920d396056e91b33bcf7ed84272a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035496"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8225504"
 ---
 # <a name="connector-for-power-bi-preview"></a>适用于 Power BI 的连接器（预览版）
 

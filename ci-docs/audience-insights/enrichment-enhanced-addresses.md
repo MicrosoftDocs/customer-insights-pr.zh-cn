@@ -1,20 +1,25 @@
 ---
-title: 地址增强扩充
+title: 地址增强扩充（包含视频）
 description: 使用 Microsoft 模型扩充并标准化客户配置文件的地址信息。
-ms.date: 07/25/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: fb3fee72b3420c636d549b600c468c574ee33a662bfafd096247dfddf40150bd
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-data-sources-enrichment
+- ci-data-sources-enrichment-details
+- ci-enrichments
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032655"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353625"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>使用增强的地址扩充客户配置文件
 
@@ -23,6 +28,8 @@ ms.locfileid: "7032655"
 ## <a name="how-we-enhance-addresses"></a>如何增强地址
 
 我们的模型将执行两个步骤来增强地址。 首先，它解析地址以标识其组成部分并使其成为结构化格式。 然后，我们使用 AI 来更正、完成和标准化地址中的值。
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNewo]
 
 ### <a name="example"></a>示例
 
@@ -98,10 +105,20 @@ ms.locfileid: "7032655"
 
 扩充流程完成后，您可以在 **我的扩充** 下查看新扩充的客户配置文件数据。 此外，您还会看到上次更新的时间和扩充的配置文件的数量。
 
-您可以选择 **查看扩充的数据** 来访问每个扩充的配置文件的详细视图。
+您可以在 **扩充的客户预览** 磁贴中查看已扩充数据的示例。 选择 **详细查看** 并选择 **数据** 选项卡，以访问每个已扩充配置文件的详细视图。
+
+### <a name="overview-card"></a>概览卡
+
+概览卡显示有关扩充覆盖范围的详细信息。 
+
+* **处理和更改的地址**：成功扩充的带地址的客户配置文件数量。
+
+* **已处理但未更改的地址**：已确认但未更改的带地址的客户配置文件数量。 通常发生在输入数据有效且无法通过扩充改进时。
+
+* **未处理且未更改的地址**：未确认的带地址的客户配置文件数量。 通常是指无效或扩充不支持的输入数据。
 
 ## <a name="next-steps"></a>后续步骤
 
-基于扩充的客户数据构建。 创建[细分](segments.md)和[度量](measures.md)，甚至[导出数据](export-destinations.md)，以向客户提供个性化体验。
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

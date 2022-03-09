@@ -1,22 +1,21 @@
 ---
 title: 产品建议预测
 description: 预测客户可能会购买或与其交互的产品。
-ms.date: 09/13/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: b9a9c7eb4ee3f2f0510a609757a36e5d5796a2f7
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494528"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355740"
 ---
-# <a name="product-recommendation-prediction-preview"></a>产品建议预测（预览版）
+# <a name="product-recommendation-prediction"></a>产品建议预测
 
 产品建议模型可创建多组预测产品建议。 建议基于先前的购买行为以及具有类似购买模式的客户。 您可以在 **智能** > **预测** 页上创建新的产品建议预测。 选择 **我的预测** 以查看您已创建的其他预测。
 
@@ -54,7 +53,7 @@ ms.locfileid: "7494528"
 
 > [!NOTE]
 > - 该模型需要客户的交易历史记录。 交易的定义非常灵活。 介绍用户与产品交互的任何数据都可以用作输入。 例如，购买产品、上课或参加活动。
-> - 当前只能配置一个交易历史记录实体。 如果有多个购买实体，请在数据引入之前在 Power Query 中合并它们。
+> - 当前只能配置一个交易历史记录实体。 如果有多个购买实体，应在数据引入之前将它们合并到 Power Query 中。
 > - 如果订单和订单详细信息是不同的实体，则先加入它们，然后再在模型中使用。 该模型仅不适用于实体中的订单 ID 或收货 ID。
 
 
@@ -62,7 +61,7 @@ ms.locfileid: "7494528"
 
 1. 在 Customer Insights 中，转到 **智能** > **预测**。
 
-1. 选择 **产品建议模型（预览版）** 磁贴并选择 **使用此模型**。
+1. 选择 **产品建议模型** 磁贴并选择 **使用此模型**。
    > [!div class="mx-imgBorder"]
    > ![具有“使用此模型”按钮的“产品建议”模型磁贴。](media/product-recommendation-usethismodel.PNG "具有“使用此模型”按钮的“产品建议”模型磁贴")
 
@@ -79,11 +78,11 @@ ms.locfileid: "7494528"
 1. 设置要推荐给客户的 **产品数量**。 此值取决于您的交付方法填充数据的方式。 如果可以推荐三个产品，请相应地设置此值。
    
    >[!TIP]
-   > 您可以随时选择 **保存并关闭** 以将预测保存为草稿。 您将在 **我的预测** 选项卡中找到草稿预测。
+   > 您可以随时选择 **保存草稿**，将预测保存为草稿。 您将在 **我的预测** 选项卡中找到草稿预测。
 
-1. 选择是否想要 **建议客户最近购买的产品**。
+1. 选择是否要在 **重复预期的购买** 字段中包含客户最近购买的产品。
 
-1. 如果您选择了 *不* 推荐最近购买的产品，请设置 **回看窗口**。 此设置指定模型在再次向用户推荐产品之前考虑的期限。 例如，指示客户每两年购买一次便携式计算机。 此窗口将查看最近两年的购买历史记录，如果找到一个项目，将会从建议中筛选该项目。
+1. 设置 **回看窗口**。 此设置指定模型在再次向用户推荐产品之前考虑的期限。 例如，指示客户每两年购买一次便携式计算机。 此窗口将查看最近两年的购买历史记录，如果找到一个项目，将会从建议中筛选该项目。
 
 1. 选择 **下一个**
 

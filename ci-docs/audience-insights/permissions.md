@@ -3,18 +3,21 @@ title: 管理用户权限
 description: 了解权限和用户角色。
 ms.date: 03/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 430ad902a5a75552243bc4a094361a749364383717278f687dd6e8ef33749c6f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-permissions
+- ci-system-security
+- customerInsights
+ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7028303"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355926"
 ---
 # <a name="user-permissions"></a>用户权限
 
