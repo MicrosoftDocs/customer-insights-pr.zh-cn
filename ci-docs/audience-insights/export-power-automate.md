@@ -8,16 +8,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: dd90ef4576246b49d4a9c74005196ee9813a6744
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226703"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455896"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 连接器（预览版）
 
 促使特定事件在数据更改时自动发生，并直接在 [Power Automate](https://flow.microsoft.com/) 中管理更复杂的流。
+
+## <a name="known-limitations"></a>已知限制
+
+- 每 60 秒最多可以进行 100 次调用。 您可以使用 $skip 参数多次调用 API 终结点。 [了解有关 $skip 参数的详细信息](/connectors/customerinsights/#get-items-from-an-entity)。
 
 ## <a name="power-automate-triggers"></a>Power Automate 触发器
 

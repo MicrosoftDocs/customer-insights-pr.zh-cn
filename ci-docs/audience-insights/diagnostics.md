@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 2e0801c2b6af591e48a7df485a8523903c07617c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354361"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376405"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
 
@@ -37,7 +37,7 @@ Customer Insights 将发送以下事件日志：
 要在 Customer Insights 中配置诊断，必须满足以下先决条件：
 
 - 您有有效的 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)。
-- 您在 Customer Insights 中具有[管理员](permissions.md#administrator)权限。
+- 您在 Customer Insights 中具有[管理员](permissions.md#admin)权限。
 - 您在 Azure 上的目标资源上拥有 **参与者** 和 **用户访问管理员** 角色。 该资源可以是 Azure 存储帐户、Azure 事件中心或 Azure Log Analytics 工作区。 有关详细信息，请参阅[使用 Azure 门户添加或删除 Azure 角色分配](/azure/role-based-access-control/role-assignments-portal)。
 - 满足 Azure 存储、Azure 事件中心或 Azure 日志分析的[目标要求](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)。
 - 您在资源所属的资源组中至少具有 **读者** 角色。
@@ -132,7 +132,7 @@ API 事件和工作流事件虽然不同，但它们具有通用的结构和详�
 | `resultSignature` | String    | 可选          | 事件的结果状态。 如果该操作对应于一个 REST API 调用，则它是 HTTP 状态代码。        | `200`             |
 | `durationMs`      | Long      | 可选          | 操作的持续时间（以毫秒为单位）。     | `133`     |
 | `callerIpAddress` | String    | 可选          | 调用方 IP 地址（如果操作对应于来自公开可用的 IP 地址的 API 调用）。                                                 | `144.318.99.233`         |
-| `identity`        | String    | 可选          | 描述执行该操作的用户或应用程序的标识的 JSON 对象。       | 请参阅[标识](#identity-schema)部分。     |  |
+| `identity`        | String    | 可选          | 描述执行该操作的用户或应用程序的标识的 JSON 对象。       | 请参阅[标识](#identity-schema)部分。     |  
 | `properties`      | String    | 可选          | 具有更多特定事件类别属性的 JSON 对象。      | 请参阅[属性](#api-properties-schema)部分。    |
 | `level`           | String    | 需要          | 事件的严重性级别。    | `Informational`、`Warning`、`Error` 或 `Critical`。           |
 | `uri`             | String    | 可选          | 绝对请求 URI。    |               |
@@ -239,7 +239,7 @@ API 事件和工作流事件虽然不同，但它们具有通用的结构和详�
 | `properties.startTimestamp`                  | 是      | 是  | UTC 时间戳`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.endTimestamp`                    | 是      | 是  | UTC 时间戳`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | 是      | 是  | UTC 时间戳`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | 是      | 是  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  |
+| `properties.instanceId`                      | 是      | 是  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | No       | 是  | - 对于 OperationType = `Export`，此标识符是导出配置的 guid。 <br> - 对于 OperationType = `Enrichment`，它是扩充的 guid <br> - 对于 OperationType `Measures` 和 `Segmentation`，此标识符是实体名称。 |
 | `properties.friendlyName`                    | No       | 是  | 处理的导出或实体的用户友好名称。                                                                                                                                                                                           |
 | `properties.error`                           | No       | 是  | 可选。 包含更多详细信息的错误消息。                                                                                                                                                                                                                  |

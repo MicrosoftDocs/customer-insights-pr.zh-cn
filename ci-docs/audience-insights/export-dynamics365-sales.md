@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 4c1b5eaa3568b5c73013024d2da7e65276142f72
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355005"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455819"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>在 Dynamics 365 Sales 中使用客户细分（预览版）
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355005"
 
 ## <a name="prerequisite-for-connection"></a>连接的先决条件
 
-1. Dynamics 365 Sales 中必须先存在联系人记录，然后才能从 Customer Insights 中将客户细分导出到 Sales。 详细了解如何[在 Dynamics 365 Sales 中使用 Microsoft Dataverse](connect-power-query.md)引入联系人。
+1. Dynamics 365 Sales 中必须先存在联系人记录，然后才能从 Customer Insights 中将客户细分导出到 Sales。 详细了解如何[使用 Microsoft Dataverse 从 Dynamics 365 Sales](connect-dataverse-managed-lake.md) 中引入联系人。
 
    > [!NOTE]
    > 如果将客户细分从受众见解导出到 Sales，则将不会在 Sales 实例中创建新的联系人记录。 Sales 中的联系人记录必须引入到受众见解中，并用作数据源。 在导出客户细分之前，还需要将它们包含在统一客户实体中，以将客户 ID 映射到联系人 ID。

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229953"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376681"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>使用 Experian 中的人口统计信息扩充客户配置文件（预览）
 
@@ -25,7 +25,7 @@ Experian 是消费者和企业信用报告以及市场营销服务领域的全�
 
 - 拥有有效的 Experian 订阅。 若要获取订阅，请直接[与 Experian 联系](https://www.experian.com/marketing-services/contact)。 [了解有关 Experian 数据扩充的详细信息](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage)。
 
-- 管理员已配置 Experian 连接，*或者* 您拥有[管理员](permissions.md#administrator)权限。 还需要为 Experian 为您创建的启用 SSH 的安全传输 (ST) 帐户的用户 ID、参与方 ID 和型号。
+- 管理员已配置 Experian 连接，*或者* 您拥有[管理员](permissions.md#admin)权限。 还需要为 Experian 为您创建的启用 SSH 的安全传输 (ST) 帐户的用户 ID、参与方 ID 和型号。
 
 ## <a name="supported-countriesregions"></a>支持的国家/地区
 

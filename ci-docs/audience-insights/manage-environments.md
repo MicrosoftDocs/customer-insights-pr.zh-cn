@@ -1,7 +1,7 @@
 ---
 title: 创建和管理环境
 description: 了解如何注册服务以及如何管理环境。
-ms.date: 12/06/2021
+ms.date: 02/09/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: d9e0ee726dbbfcf330022c4d95747551d3114e7e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 4f4e5a8415f6c2128b0480edf67f317124eeeba9
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354268"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376865"
 ---
 # <a name="manage-environments"></a>管理环境
-
-
 
 ## <a name="switch-environments"></a>切换环境
 
@@ -98,9 +96,29 @@ ms.locfileid: "8354268"
 
 当数据统一完成时，再转到 **度量** 和 **细分** 进行刷新。
 
+## <a name="change-the-owner-of-an-environment"></a>更改环境负责人
+
+虽然多个用户可以在 Customer Insights 中具有管理员权限，但只有一个用户是环境的负责人。 默认情况下，最初将由管理员创建环境。 作为环境的管理员，您可以将所有权分配给具有管理员权限的其他用户。
+
+1. 选择应用标题中的 **环境** 选择器。
+
+1. 选择 **编辑** 图标。
+
+1. 在 **编辑环境** 框中，转到 **基本信息** 步骤。
+
+1. 在 **更改环境负责人** 字段中，选择新的环境负责人。  
+
+1. 选择 **查看并完成**，然后选择 **更新** 应用更改。 
+
+## <a name="claim-ownership-of-an-environment"></a>认领环境的所有权
+
+如果环境的负责人离开组织或其用户帐户被删除，环境将没有负责人。 具有管理员权限的用户可以认领所有权，成为新负责人。 他们可以继续负责环境或[将所有权更改为其他管理员](#change-the-owner-of-an-environment)。 
+
+要认领所有权，选择在原始负责人离开组织时显示在 Customer Insights 中每个页面顶部的 **获取所有权** 按钮。
+
 ## <a name="reset-an-existing-environment"></a>重置现有环境
 
-作为管理员，如果您想要删除所有配置并删除引入的数据，可以将环境重置为空状态。
+作为环境的负责人，如果您想要删除所有配置并删除引入的数据，可以将环境重置为空状态。
 
 1.  选择应用标题中的 **环境** 选择器。 
 
@@ -112,7 +130,7 @@ ms.locfileid: "8354268"
 
 ## <a name="delete-an-existing-environment"></a>删除现有环境
 
-作为管理员，您可以删除您管理的环境。
+作为环境的负责人，您可以删除您管理的环境。
 
 1.  选择应用标题中的 **环境** 选择器。
 

@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 02/07/2022
+ms.date: 02/18/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355372"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372691"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -42,6 +42,7 @@ ms.locfileid: "8355372"
 - 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
 - Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
 - HERE Technologies 提供的[位置数据](enrichment-here.md) 
+- LiveRamp AbiliTec 提供的[标识](enrichment-liveramp.md)
 
 # <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
@@ -80,6 +81,10 @@ ms.locfileid: "8355372"
 ## <a name="multiple-enrichments-of-the-same-type"></a>相同类型的多项扩充
 
 扩充配置期间已指定了要扩充的实体，这允许您仅扩充配置文件子集。 例如，仅为特定客户细分扩充数据。 您可以配置相同类型的多项扩充并重复使用相同的连接。 某些扩充对可创建的相同类型的扩充数量有限制。 可以在 **扩充** 页面上看到限制和当前使用情况。
+
+## <a name="enrich-data-sources-before-unification"></a>在统一之前扩充数据源
+
+您可以在数据统一之前扩充您的客户数据，以帮助提高数据匹配的质量。 有关详细信息，请参阅[数据源扩充](data-sources-enrichment.md)。
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>查看扩充过程的进度
 

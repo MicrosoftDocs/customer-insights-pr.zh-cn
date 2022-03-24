@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 0db0c984f6bf9f7ded0704b6fa0caf39c7dace3a
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230623"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376773"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>通过 Leadspace 扩充公司配置文件（预览）
 
@@ -25,7 +25,7 @@ Leadspace 是一个提供企业对企业客户数据平台的数据科学公司�
 
 - 您有一个可用的 Leadspace 许可证。
 - 您有基于客户的[统一客户配置文件](customer-profiles.md)。
-- 管理员已配置 Leadspace 连接，或者您拥有 [管理员](permissions.md#administrator)权限和“永久密钥”（称为 **Leadspace 令牌**）。 直接联系 [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/)，了解有关其产品的详细信息。
+- 管理员已配置 Leadspace 连接，或者您拥有 [管理员](permissions.md#admin)权限和“永久密钥”（称为 **Leadspace 令牌**）。 直接联系 [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/)，了解有关其产品的详细信息。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 

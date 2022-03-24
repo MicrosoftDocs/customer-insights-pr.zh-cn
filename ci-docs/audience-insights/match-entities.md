@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-map
 - customerInsights
-ms.openlocfilehash: 49729a13d26885c30039f9fa426eaee92c172424
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: ab4ab0dba1bd91b1893cd4b16b8d51381d5b6ef8
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355142"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376911"
 ---
 # <a name="match-entities"></a>匹配实体
 
@@ -180,7 +180,19 @@ ms.locfileid: "8355142"
   - Deduplication_WinnerId：此字段包含标识的组或群集中的获胜者 ID。 如果 Deduplication_WinnerId 与记录的主键值相同，则这意味着该记录是入选记录。
 - 用于定义删除重复规则的字段。
 - “规则”和“分数”字段，分别用于表示所应用的删除重复规则以及匹配算法返回的分数。
-   
+ 
+## <a name="include-enriched-entities-preview"></a>包括扩充的实体（预览）
+
+如果您在数据源级别扩充了实体，请在运行匹配过程之前选择它们。 扩充的实体可以改进您的统一结果。 有关详细信息，请参阅[数据源扩充](data-sources-enrichment.md)。 
+
+扩充的实体包含原始数据源字段和扩充的字段。 因此，如果您选择使用扩充的实体，现有配置不会受到影响。 但是，您可能需要更新匹配规则以改用扩充的字段。
+
+1. 转到 **数据** > **统一** > **匹配**，在页面顶部选择 **使用已扩充实体**。
+
+1. 从 **使用已扩充实体** 窗格中，选择一个或多个扩充的实体。
+
+1. 选择 **完成**。 无论在何处使用源实体（如匹配顺序或规则），它都会自动更改为扩充的实体。
+  
 ## <a name="run-the-match-process"></a>运行匹配流程
 
 利用配置的匹配规则（包括跨实体匹配和删除重复规则），您可以运行匹配流程。 

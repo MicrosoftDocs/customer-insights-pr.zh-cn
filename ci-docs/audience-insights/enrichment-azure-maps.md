@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: cb1c0778a398ef6d338ce6cf9e199eae0c344a5c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 2cc44f7b453d2aca328c397b14787c8a02c5e490
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226438"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376635"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>使用 Azure Maps（预览版）扩充客户配置文件
 
@@ -25,7 +25,7 @@ Azure Maps 提供以位置为中心的数据和服务，通过内置位置智能
 
 - 拥有有效的 Azure Maps 订阅。 要获取订阅，您可以[注册或获取免费版](https://azure.microsoft.com/services/azure-maps/)。
 
-- 有 Azure Maps [连接](connections.md)，*或者* 拥有[管理员](permissions.md#administrator)权限和有效的 Azure Maps API 密钥。
+- 有 Azure Maps [连接](connections.md)，*或者* 拥有[管理员](permissions.md#admin)权限和有效的 Azure Maps API 密钥。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 

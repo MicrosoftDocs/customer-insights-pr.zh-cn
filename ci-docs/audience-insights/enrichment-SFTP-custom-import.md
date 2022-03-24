@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 042558af801a1d1fc365939d9aa42c09b98b2679
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229616"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376543"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>使用自定义数据扩充客户配置文件（预览）
 
@@ -25,7 +25,7 @@ ms.locfileid: "8229616"
 
 - 您将具有要在 SFTP 主机上导入的文件的文件名和位置（路径）。
 - 有一个 *model.json* 文件，用于为要导入的数据指定 [Common Data Model 架构](/common-data-model/)。 此文件必须与要导入的文件位于同一目录中。
-- 管理员已配置 SFTP 连接，*或者* 您拥有[管理员](permissions.md#administrator)权限。 对于要从中导入数据的 SFTP 位置，您将需要用户凭据、URL 和端口号。
+- 管理员已配置 SFTP 连接，*或者* 您拥有[管理员](permissions.md#admin)权限。 对于要从中导入数据的 SFTP 位置，您将需要用户凭据、URL 和端口号。
 
 
 ## <a name="configure-the-import"></a>配置导入

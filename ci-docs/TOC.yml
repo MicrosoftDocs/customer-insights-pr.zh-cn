@@ -58,6 +58,8 @@
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: 添加 Azure Synapse Analytics
           href: audience-insights/connect-synapse.md
+        - name: 数据源扩充
+          href: audience-insights/data-sources-enrichment.md
         - name: 数据源的增量刷新
           href: audience-insights/incremental-refresh-data-sources.md
         - name: 实时数据引入
@@ -100,6 +102,8 @@
           href: audience-insights/enrichment-here.md
         - name: 通过 Leadspace 扩充
           href: audience-insights/enrichment-leadspace.md
+        - name: 使用 LiveRamp 扩充
+          href: audience-insights/enrichment-liveramp.md
         - name: 通过 Experian 扩充
           href: audience-insights/enrichment-experian.md
         - name: 使用 Office 365 数据进行扩充

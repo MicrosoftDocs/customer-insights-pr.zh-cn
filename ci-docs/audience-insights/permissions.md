@@ -1,7 +1,7 @@
 ---
 title: 管理用户权限
 description: 了解权限和用户角色。
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355926"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376727"
 ---
 # <a name="user-permissions"></a>用户权限
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355926"
 - 通过 **扩充** 页面管理配置和扩充客户配置文件（仅适用于第一方扩充）。
 - 根据与参与者共享的连接来管理和创建导出。 [详细了解管理员如何允许参与者使用导出连接](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-## <a name="administrator"></a>管理员
+## <a name="admin"></a>管理员
 
 - 参与者的所有可用权限。
 - 更改 **系统** 页面上的设置（包括工作语言），并刷新系统流程的计划。
@@ -60,6 +60,12 @@ ms.locfileid: "8355926"
 - 安装和使用 **客户卡加载项**。
 - 添加和使用 **Power Apps 连接器**。
 - [启用 Customer Insights API 的使用](apis.md)。
+- [将环境所有权分配](manage-environments.md#change-the-owner-of-an-environment)给其他管理员。
+
+## <a name="admin-owner"></a>管理员（负责人）
+
+- 管理员将具有所有权限。
+- [重置和删除](manage-environments.md#reset-an-existing-environment)环境。
 
 ## <a name="assign-roles-and-permissions"></a>分派角色和权限
 

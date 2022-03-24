@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 47239bd7f0c89742cf9c673bb2ebe4c41d853233
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228463"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376819"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>使用参与数据扩充客户配置文件（预览版）
 
@@ -28,7 +28,7 @@ ms.locfileid: "8228463"
 - 您必须有可用的 Office 365 云许可证。
 - 您有基于[企业客户](work-with-business-accounts.md)的[统一客户配置文件](customer-profiles.md)。
 - 必须为您的 Customer Insights 环境[附加 Microsoft Dataverse 组织](create-environment.md#step-3-connect-to-microsoft-dataverse)。
-- 您具有[管理员](permissions.md#administrator)权限。
+- 您具有[管理员](permissions.md#admin)权限。
 - 您已经得到或可以获得 Office 365 租户管理员的同意，以使用 Office 365 数据在 Dynamics 365 应用程序中提供 **组织见解**。
 
 ## <a name="configure-the-enrichment"></a>配置扩充

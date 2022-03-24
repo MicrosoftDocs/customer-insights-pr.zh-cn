@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355880"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376497"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>引入您自己的 Azure 密钥保管库（预览）
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355880"
 
 - 您有有效的 Azure 订阅。
 
-- 您在访问群体见解中具有[管理员](permissions.md#administrator)角色。 详细了解[访问群体见解中的用户权限](permissions.md#assign-roles-and-permissions)。
+- 您在访问群体见解中具有[管理员](permissions.md#admin)角色。 详细了解[访问群体见解中的用户权限](permissions.md#assign-roles-and-permissions)。
 
 - 您对密钥保管库或密钥保管库所属的资源组具有[参与者](/azure/role-based-access-control/built-in-roles#contributor)和[用户访问管理员](/azure/role-based-access-control/built-in-roles#user-access-administrator)角色。 有关详细信息，请转到[使用 Azure 门户添加或删除 Azure 角色分配](/azure/role-based-access-control/role-assignments-portal)。 如果您没有密钥保管库的用户访问管理员角色，则必须单独为 Dynamics 365 Customer Insights 的 Azure 服务主体设置基于角色的访问控制权限。 请按照步骤为应链接的密钥保管库[使用 Azure 服务主体](connect-service-principal.md)。
 

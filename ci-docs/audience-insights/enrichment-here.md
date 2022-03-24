@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 1b46e8913c6d288b93cdf32e195b5e9387916e70
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 1cbbad9bfe559bcb15b23894fc7475507aae8add
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230371"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376269"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>通过 HERE Technologies 扩充客户配置文件（预览）
 
@@ -25,7 +25,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 - 您具有有效的 HERE Technologies 订阅。 若要获取订阅，您可以在[此处注册](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic)或直接[与 HERE Technologies 联系](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you)。 [了解有关 HERE Technologies 位置扩充的详细信息。](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- HERE [连接](connections.md)可用，*或者* 您具有[管理员](permissions.md#administrator)权限和 HERE Technologies API 密钥。
+- HERE [连接](connections.md)可用，*或者* 您具有[管理员](permissions.md#admin)权限和 HERE Technologies API 密钥。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 
