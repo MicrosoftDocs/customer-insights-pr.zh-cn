@@ -8,13 +8,8 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec286bb6a90fb4d18e89caf9166aa659b29d668e
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231968"
 ---
+
 # <a name="export-segments-to-marketo-preview"></a>将细分市场导出到 Marketo（预览版）
 
 导出统一客户配置文件的客户细分以生成市场活动，提供电子邮件市场营销，并通过 Marketo 使用特定客户组。
@@ -63,7 +58,7 @@ ms.locfileid: "8231968"
 
 1. 输入您的 **[Marketo 列表 ID](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**。 列表 ID 是一个纯数值。 例如，如果 Marketo 列表 ID 为 ST12345A7，请删除数字之前和之后的字符，并输入 `12345`。 
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 
+1. 在 **数据匹配** 部分，选择至少一个代表客户的电子邮件地址或客户的 Marketo ID 的字段。 
 
 1. （可选）您可以导出 **名**、**姓**、**市/县**、**省/市/自治区** 和 **国家/地区** 以创建更个性化的电子邮件。 选择 **添加属性** 以映射这些字段。
 

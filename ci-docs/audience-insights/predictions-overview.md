@@ -1,20 +1,15 @@
 ---
 title: 有关支持的预测方案的概述
 description: Dynamics 365 Customer Insights 应用程序涵盖的预测方案和选项。
-ms.date: 12/21/2021
+ms.date: 03/24/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: c692785c7d81ab660ba2e07411e986c67c1a5d0a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228233"
 ---
+
 # <a name="predictions-overview"></a>预测概述
 
 Dynamics 365 Customer Insights 提供各种选项，这些选项可以利用 AI 和机器学习来预测数据。 
@@ -36,6 +31,11 @@ Dynamics 365 Customer Insights 提供各种选项，这些选项可以利用 AI 
 - [交易流失](predict-transactional-churn.md)：预测客户是否会在特定期限内不再购买您的产品或服务。
 
 ---
+
+> [!TIP]
+> 我们建议您定期使用更新的数据刷新现成可用的模型，以确保它们准确地通知您的业务用例。 当系统引入新的或更新的数据源时，数据会临时刷新。 但是，模型在这种情况下只会重新评分，然后继续使用现有的训练数据。
+> 
+> 您可以通过在配置体验中设置模型重新训练计划来配置 **更新计划**。 模型将按此计划重新训练和重新评分，您可以随时更改。
 
 
 ## <a name="azure-machine-learning-integration"></a>Azure 机器学习集成

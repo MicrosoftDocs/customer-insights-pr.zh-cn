@@ -24,8 +24,6 @@
       href: trial-signup.md
     - name: 试用版常见问题
       href: trial-FAQ.md
-- name: 使用付费许可证开始
-  href: paid-license.md
 - name: 访问您的环境
   href: 'https://home.ci.ai.dynamics.com/'
 - name: 访问群体见解
@@ -40,12 +38,14 @@
       items:
         - name: 快速入门指南
           href: audience-insights/get-started.md
+        - name: 使用付费许可证开始
+          href: paid-license.md
         - name: 创建新环境
           href: audience-insights/create-environment.md
         - name: 浏览访问群体见解
           href: audience-insights/home.md
-    - name: 使用企业客户
-      href: audience-insights/work-with-business-accounts.md
+        - name: 使用企业客户
+          href: audience-insights/work-with-business-accounts.md
     - name: 数据源
       items:
         - name: 数据源概述
@@ -64,8 +64,6 @@
           href: audience-insights/incremental-refresh-data-sources.md
         - name: 实时数据引入
           href: audience-insights/real-time-data-ingestion.md
-        - name: 了解实体和数据集
-          href: audience-insights/entities.md
     - name: 数据统一
       items:
         - name: 数据统一概述
@@ -76,16 +74,6 @@
           href: audience-insights/match-entities.md
         - name: 合并实体
           href: audience-insights/merge-entities.md
-        - name: 查看统一的客户配置文件
-          href: audience-insights/customer-profiles.md
-        - name: 筛选统一的客户配置文件
-          href: audience-insights/search-filter-index.md
-        - name: 构建关系和连接的实体
-          href: audience-insights/relationships.md
-        - name: 列出客户活动
-          href: audience-insights/activities.md
-        - name: 定义语义映射
-          href: audience-insights/semantic-mappings.md
     - name: 数据扩充
       items:
         - name: 扩充客户配置文件
@@ -110,7 +98,15 @@
           href: audience-insights/enrichment-office.md
         - name: 通过 SFTP 自定义导入扩充
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: 客户细分
+    - name: 统一的配置文件
+      items:
+        - name: 查看统一的客户配置文件
+          href: audience-insights/customer-profiles.md
+        - name: 筛选统一的客户配置文件
+          href: audience-insights/search-filter-index.md
+        - name: 定义客户活动
+          href: audience-insights/activities.md
+    - name: Segments
       items:
         - name: 客户细分概述
           href: audience-insights/segments.md
@@ -190,6 +186,8 @@
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
+            - name: Braze
+              href: audience-insights/export-braze.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
             - name: Constant Contact
@@ -204,6 +202,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Iterable
+              href: audience-insights/export-iterable.md
             - name: Klaviyo
               href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
@@ -242,6 +242,18 @@
               href: audience-insights/export-power-automate.md
             - name: Power BI
               href: audience-insights/export-power-bi.md
+    - name: 实体
+      items:
+        - name: 了解实体
+          href: audience-insights/entities.md
+        - name: 查看 Common Data Model 中的实体架构
+          href: audience-insights/entity-schemas.md
+        - name: Dataverse 中的 Customer Insights 数据
+          href: audience-insights/customer-insights-dataverse.md
+        - name: 构建关系和连接的实体
+          href: audience-insights/relationships.md
+        - name: 定义语义映射
+          href: audience-insights/semantic-mappings.md
     - name: 管理
       items:
         - name: 设置系统配置
@@ -252,15 +264,17 @@
           href: audience-insights/connections.md
         - name: 管理多个环境
           href: audience-insights/manage-environments.md
-        - name: 安全性
-          items:
-            - name: 引入您自己的密钥保管库
-              href: audience-insights/use-azure-key-vault.md
-            - name: 使用服务主体连接到 ADLS 存储帐户
-              href: audience-insights/connect-service-principal.md
-            - name: 导出诊断日志
-              href: audience-insights/diagnostics.md
-    - name: 扩展性
+        - name: 引入您自己的密钥保管库
+          href: audience-insights/use-azure-key-vault.md
+        - name: 使用服务主体连接到存储帐户
+          href: audience-insights/connect-service-principal.md
+        - name: 导出诊断日志
+          href: audience-insights/diagnostics.md
+        - name: 服务限制
+          href: service-limits.md
+        - name: DSR 权限和请求
+          href: dsr-rights-requests.md
+    - name: API
       items:
         - name: 查看 Common Data Model 中的实体架构
           href: audience-insights/entity-schemas.md
@@ -306,9 +320,5 @@
           href: consent-management/predictions-consent-data.md
 - name: 参与见解(预览版)
   href: engagement-insights/overview.md
-- name: 服务限制
-  href: service-limits.md
-- name: DSR 权限和请求
-  href: dsr-rights-requests.md
 - name: 获取支持
   href: /power-platform/admin/get-help-support

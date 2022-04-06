@@ -1,7 +1,7 @@
 ---
 title: 访问群体见解中的客户细分
 description: 概述客户细分以及如何创建和管理它们。
-ms.date: 11/01/2021
+ms.date: 03/30/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -9,18 +9,13 @@ ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-- ci-customers-page
-- ci-enrichment-details
-- ci-segments
-- ci-segment-details
-- customerInsights
-ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355972"
+  - ci-customers-page
+  - ci-enrichment-details
+  - ci-segments
+  - ci-segment-details
+  - customerInsights
 ---
+
 # <a name="segments-overview"></a>客户细分概述
 
 通过客户细分，您可以基于人口统计、交易或行为属性对客户进行分组。 您可以使用客户细分来确定促销活动、销售活动和客户支持操作的目标，以实现您的业务目标。
@@ -68,7 +63,9 @@ ms.locfileid: "8355972"
 
 ## <a name="refresh-segments"></a>刷新细分
 
-您可以通过选择 **客户细分** 页上的 **全部刷新** 来同时刷新所有客户细分；也可以选择一个或多个客户细分，然后从选项中选择 **刷新** 来刷新它们。 也可以在 **管理** > **系统** > **计划** 中配置定期刷新。
+您可以通过选择 **客户细分** 页上的 **全部刷新** 来同时刷新所有客户细分；也可以选择一个或多个客户细分，然后从选项中选择 **刷新** 来刷新它们。 也可以在 **管理** > **系统** > **计划** 中配置定期刷新。 配置定期刷新时，将应用以下规则：
+- 所有类型为 **动态** 或 **扩展** 的客户细分都将按照设定的节奏自动刷新。 刷新完成后，**状态** 会指示刷新客户细分时是否存在任何问题。 **上次刷新时间** 显示上次成功刷新的时间戳。 如果发生错误，选择错误可以查看发生的情况的详细信息。
+- **静态** 类型的客户细分 *不会* 自动刷新。 **上次刷新时间** 显示上次手动运行或刷新静态客户细分的时间戳。
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 

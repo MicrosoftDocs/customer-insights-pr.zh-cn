@@ -9,15 +9,10 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-- ci-system-diagnostic
-- customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376405"
+  - ci-system-diagnostic
+  - customerInsights
 ---
+
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
 
 Dynamics 365 Customer Insights 提供与 Azure Monitor 的直接集成。 利用 Azure Monitor 资源日志，可以监视日志并将其发送到 [Azure 存储](https://azure.microsoft.com/services/storage/)、[Azure 日志分析](/azure/azure-monitor/logs/log-analytics-overview)，或将它们流式传输至 [Azure 事件中心](https://azure.microsoft.com/services/event-hubs/)。
@@ -230,7 +225,7 @@ API 事件和工作流事件虽然不同，但它们具有通用的结构和详�
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | 是      | 是  | 始终为 `WorkflowEvent`，将事件标记为工作流事件。                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | 是      | 是  | 工作流运行的标识符。 工作流执行中的所有工作流和任务事件都具有相同的 `workflowJobId`。                                                                                                                                   |
-| `properties.operationType`                   | 是      | 是  | 操作标识符，请参阅[操作类型].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | 是      | 是  | 操作标识符，请参阅[操作类型](#operation-types)。                                                                                                                                                                               |
 | `properties.tasksCount`                      | 是      | No   | 仅工作流。 工作流触发的任务数。                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | 是      | No   | 可选。 仅工作流事件。 触发工作流的 Azure Active Directory [用户的 objectId](/azure/marketplace/find-tenant-object-id#find-user-object-id)，另请参阅 `properties.workflowSubmissionKind`。                                   |
 | `properties.workflowType`                    | 是      | No   | `full` 或 `incremental` 刷新。                                                                                                                                                                                                                            |

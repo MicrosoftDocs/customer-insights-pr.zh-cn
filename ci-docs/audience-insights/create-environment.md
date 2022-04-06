@@ -1,24 +1,19 @@
 ---
 title: 在 Customer Insights 中创建环境
 description: 使用 Dynamics 365 Customer Insights 的许可订阅创建环境的步骤。
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-- ci-home
-- customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354084"
+  - ci-home
+  - customerInsights
 ---
+
 # <a name="create-an-environment-in-audience-insights"></a>在访问群体见解中创建环境
 
 本文介绍在您的组织购买 Dynamics 365 Customer Insights 订阅后如何创建新环境。 
@@ -83,14 +78,16 @@ ms.locfileid: "8354084"
 通过连接到 Dataverse 环境，您还可以[使用 Power Platform 数据流和网关从本地数据源中引入数据](data-sources.md#add-data-from-on-premises-data-sources)。 您还可以通过连接到 Dataverse 环境来使用[现成的预测模型](predictions-overview.md?tabs=b2c#out-of-box-models)。
 
 > [!IMPORTANT]
-> Customer Insights 和 Dataverse 必须在同一区域才能启用数据共享。
+> 1. Customer Insights 和 Dataverse 必须在同一区域才能启用数据共享。
+> 1. 您必须在 Dataverse 环境中具有全局管理员角色。 验证此 [Dataverse 环境是否关联](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment)到某些安全组，并确保您已被添加到这些安全组。
+> 1. 现有 Customer Insights 环境中没有与该 Dataverse 环境关联的环境。 了解如何[删除与 Dataverse 环境的现有连接](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment)。
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="为净新实例自动启用了与 Microsoft Dataverse 的数据共享。":::
 
-> [!NOTE]
-> Customer Insights 不支持以下数据共享场景：
-> - 如果您将所有数据保存到自己的 Azure Data Lake Storage，将无法启用与 Dataverse 托管数据湖的数据共享。
-> - 如果您启用与 Dataverse 的数据共享，那么您将无法[在实体中创建预测值或缺失值](predictions.md)。
+有关从您自己的 Azure Data Lake Storage 与 Microsoft Dataverse 共享数据的详细信息，请参阅[连接到 Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse)。
+
+Customer Insights 不支持以下数据共享场景：
+- 如果您启用与 Dataverse 的数据共享，那么您将无法[在实体中创建预测值或缺失值](predictions.md)。
 
 ### <a name="step-4-finalize-the-settings"></a>步骤 4：完成设置
 

@@ -1,5 +1,5 @@
 ---
-title: 实时数据引入和限制
+title: 实时数据引入（预览）
 description: 有关访问群体见解中的实时功能的常规信息。
 ms.date: 10/27/2020
 ms.reviewer: mhart
@@ -9,15 +9,10 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-- ci-system-api-usage
-- customerInsights
-ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355464"
+  - ci-system-api-usage
+  - customerInsights
 ---
+
 # <a name="real-time-data-ingestion-preview"></a>实时数据引入（预览版）
 
 近实时功能让您可以在数秒内查看客户与您的产品或服务进行的最近交互。

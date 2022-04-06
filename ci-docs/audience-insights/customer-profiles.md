@@ -9,23 +9,20 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-- ci-customers-page
-- ci-customer-card
-- ci-activities
-- ci-activities-wizard
-- customerInsights
-ms.openlocfilehash: 3a17716508a14020c56640c7d68f300a9d721af4
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354870"
+  - ci-customers-page
+  - ci-customer-card
+  - ci-activities
+  - ci-activities-wizard
+  - customerInsights
 ---
+
 # <a name="customer-profiles"></a>客户配置文件
 
 **客户** 页显示统一客户配置文件的组合视图。 [创建统一客户实体](data-unification.md)后，客户配置文件即可用。 通过此页面，您可以搜索客户并定义该搜索的索引。
 
-客户可以是个人或组织。 每个客户配置文件由一个磁贴表示。 使用分页控件可以获取更多记录。 此卡显示 **搜索和筛选索引** 中定义的 *客户* 实体中的字段。 选择磁贴可以在名为[客户详细信息页](customer-profiles.md#customer-details-page)的专用页面中查看所选客户的数据。
+客户可以是个人或组织。 每个客户配置文件由一个磁贴表示。 使用分页控件可以获取更多记录。 此卡显示 **搜索和筛选索引** 中定义的 *客户* 实体中的字段。 每个卡中字段的顺序由系统选择。
+
+选择磁贴可以在名为[客户详细信息页](customer-profiles.md#customer-details-page)的专用页面中查看所选客户的数据。
 
 > [!div class="mx-imgBorder"] 
 > ![显示结果磁贴的客户页面](media/customers-page-result-tiles-B2C.png "显示结果磁贴的客户页面")

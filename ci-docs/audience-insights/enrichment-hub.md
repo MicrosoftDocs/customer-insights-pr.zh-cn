@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 02/18/2022
+ms.date: 03/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,17 +10,12 @@ ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-- ci-enrichments
-- ci-enrichment-details
-- ci-enrichment-wizard
-- customerInsights
-ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372691"
+  - ci-enrichments
+  - ci-enrichment-details
+  - ci-enrichment-wizard
+  - customerInsights
 ---
+
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
 使用来自 Microsoft 和其他合作伙伴之类的源的数据来扩充您的客户数据。
@@ -97,5 +92,19 @@ ms.locfileid: "8372691"
 1. 在 **进度详细信息** 窗格中，展开 **扩充** 部分。 
 1. 在要查看其进度的扩充下，选择 **查看详细信息**。 
 1. 在 **任务详细信息** 窗格中，选择 **显示详细信息** 以查看更新窗口及其状态时涉及的进程。 
+
+## <a name="enrichment-results"></a>扩充结果
+
+完成扩充运行后，您可以查看扩充结果。
+
+1. 转到 **数据** > **扩充**。 
+1. 选择您想要了解相关信息的扩充项。
+
+所有扩充都显示基本信息，如已扩充配置文件的数量、生成的扩充实体的预览以及随着时间的推移完成扩充的配置文件的数量。 如果显示，**按字段扩充的客户数** 可帮助深入了解每个扩充的字段的覆盖范围。
+
+:::image type="content" source="media/enrichments-results.png" alt-text="扩充结果页面。":::
+
+一些扩充还显示特定于扩充类型的信息。 有关详细信息，请参阅相关扩充的文档。
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
