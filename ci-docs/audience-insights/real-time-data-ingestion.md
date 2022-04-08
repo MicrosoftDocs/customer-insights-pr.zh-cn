@@ -9,10 +9,15 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-  - ci-system-api-usage
-  - customerInsights
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: 138704445d52df3336af6af60420f0bd0ee0c639
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464015"
 ---
-
 # <a name="real-time-data-ingestion-preview"></a>实时数据引入（预览版）
 
 近实时功能让您可以在数秒内查看客户与您的产品或服务进行的最近交互。
