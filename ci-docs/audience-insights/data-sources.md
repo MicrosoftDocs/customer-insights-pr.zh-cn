@@ -9,11 +9,16 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-data-sources
-  - ci-create-data-source
-  - customerInsights
+- ci-data-sources
+- ci-create-data-source
+- customerInsights
+ms.openlocfilehash: 9cf97c3e30d7501ba1f188a0e25a1a103299aa7f
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464038"
 ---
-
 # <a name="data-sources-overview"></a>数据源概述
 
 

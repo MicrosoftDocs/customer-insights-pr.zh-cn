@@ -8,8 +8,13 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
+ms.openlocfilehash: 7a85237f7aff564d6b540b2c11553a52f875fac4
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523783"
 ---
-
 # <a name="export-segments-to-google-ads-preview"></a>向 Google Ads 导出客户细分（预览版）
 
 将统一客户配置文件的客户细分导出到 Google Ads 访问群体列表，并使用它们在 Google Search、Gmail、YouTube 和 Google Display Network 上投放广告。 

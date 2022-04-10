@@ -9,13 +9,18 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-  - ci-customers-page
-  - ci-customer-card
-  - ci-activities
-  - ci-activities-wizard
-  - customerInsights
+- ci-customers-page
+- ci-customer-card
+- ci-activities
+- ci-activities-wizard
+- customerInsights
+ms.openlocfilehash: 074d84eff65d52b083fff6c161282d4fafa1af85
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523711"
 ---
-
 # <a name="customer-profiles"></a>客户配置文件
 
 **客户** 页显示统一客户配置文件的组合视图。 [创建统一客户实体](data-unification.md)后，客户配置文件即可用。 通过此页面，您可以搜索客户并定义该搜索的索引。

@@ -9,10 +9,15 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-  - ci-system-diagnostic
-  - customerInsights
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523657"
 ---
-
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
 
 Dynamics 365 Customer Insights 提供与 Azure Monitor 的直接集成。 利用 Azure Monitor 资源日志，可以监视日志并将其发送到 [Azure 存储](https://azure.microsoft.com/services/storage/)、[Azure 日志分析](/azure/azure-monitor/logs/log-analytics-overview)，或将它们流式传输至 [Azure 事件中心](https://azure.microsoft.com/services/event-hubs/)。

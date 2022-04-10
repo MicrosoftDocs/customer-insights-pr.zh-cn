@@ -10,12 +10,17 @@ ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-  - ci-enrichments
-  - ci-enrichment-details
-  - ci-enrichment-wizard
-  - customerInsights
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: 510a20306e793a5ba522a6ac0d9c7194f03472d2
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491947"
 ---
-
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
 使用来自 Microsoft 和其他合作伙伴之类的源的数据来扩充您的客户数据。

@@ -8,8 +8,13 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487504"
 ---
-
 # <a name="export-segments-to-marketo-preview"></a>将细分市场导出到 Marketo（预览版）
 
 导出统一客户配置文件的客户细分以生成市场活动，提供电子邮件市场营销，并通过 Marketo 使用特定客户组。

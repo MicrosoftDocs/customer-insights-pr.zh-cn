@@ -10,10 +10,15 @@ ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-  - ci-home
-  - customerInsights
+- ci-home
+- customerInsights
+ms.openlocfilehash: a538237322615f69f0a5cb43d394275bf79af00b
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491902"
 ---
-
 # <a name="create-an-environment-in-audience-insights"></a>在访问群体见解中创建环境
 
 本文介绍在您的组织购买 Dynamics 365 Customer Insights 订阅后如何创建新环境。 

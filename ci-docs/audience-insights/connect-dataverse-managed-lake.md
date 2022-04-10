@@ -9,10 +9,15 @@ ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
 searchScope:
-  - ci-dataverse
-  - customerInsights
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464055"
 ---
-
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>连接到 Microsoft Dataverse 托管数据湖中的数据
 
 本文提供了有关 Dataverse 用户如何在 Microsoft Dataverse 托管湖中快速连接到分析实体的信息。 
