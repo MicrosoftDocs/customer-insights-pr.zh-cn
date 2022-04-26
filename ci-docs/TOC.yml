@@ -44,6 +44,8 @@
           href: audience-insights/create-environment.md
         - name: 浏览访问群体见解
           href: audience-insights/home.md
+        - name: 使用标记和列
+          href: audience-insights/work-with-tags-columns.md
         - name: 使用企业客户
           href: audience-insights/work-with-business-accounts.md
     - name: 数据源

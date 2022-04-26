@@ -6,12 +6,12 @@ ms.author: mhart
 ms.date: 07/30/2021
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 82b335388002158885fa55b61562db6c8370dc9d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350166"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560422"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的产品概述
 
@@ -19,7 +19,7 @@ ms.locfileid: "8350166"
 
 [访问群体见解](audience-insights/overview.md)可帮助您将业务转换为以客户为中心的组织。 市场营销、销售和服务专业人员具有个性化体验所需的见解。 连接交易、行为和观察来源的数据以创建 360 度客户视图。 使用设计用于提供可采取行动的见解的 CDP，以更快显示结果。 
 
-[参与见解](engagement-insights/overview.md) 是 Customer Insights 中的一项预览功能，专注于收集 Web 和移动事件以获取更多见解。此预览已于 2022 年 2 月 15 日结束。
+[参与见解](engagement-insights/overview.md)是 Customer Insights 中的一项预览功能，专注于收集 Web 和移动事件以获取更多见解。 此预览已于 2022 年 2 月 15 日结束。
  
 ## <a name="choose-a-capability"></a>选择功能
 

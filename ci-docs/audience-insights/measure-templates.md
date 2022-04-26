@@ -1,22 +1,22 @@
 ---
 title: 通过模板创建度量
 description: 使用常见用例的模板定义度量。
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: 0fe846691825b93732cbbe6d1c942a79e4a3934f
-ms.sourcegitcommit: cf6a0ed44915908a44c70889a2dd199a9d0d4798
+ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2022
-ms.locfileid: "8359892"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529390"
 ---
 # <a name="use-a-template-to-build-a-measure"></a>使用模板生成量度
 
@@ -51,7 +51,9 @@ ms.locfileid: "8359892"
 
 1. 查看所需数据，如果所有数据都到位，请选择 **开始**。
 
-1. 在 **编辑名称** 窗格中，为您的度量和输出实体设置名称。 
+1. 选择“度量名称”旁边的 **编辑详细信息**。 为度量提供名称。 或者，也可以向度量添加[标记](work-with-tags-columns.md#manage-tags)。
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="“编辑详细信息”对话框。":::
 
 1. 选择 **完成**。
 

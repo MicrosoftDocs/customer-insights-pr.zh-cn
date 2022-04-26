@@ -6,7 +6,7 @@ ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-customers-page
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 340a7b7326f5b4a8cbde8683b8d41cb53dc557b0
-ms.sourcegitcommit: 0bd5f53e4e7e37359afd087ee16b779a6b3a9183
+ms.openlocfilehash: 68e71df3853470af47228c7365f25db3a71d15b0
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "8508555"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529528"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -51,20 +51,26 @@ ms.locfileid: "8508555"
 
 每个客户细分都由包含有关客户细分的其他信息的行来表示。
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="具有选项下拉列表和可用选项的选定客户细分。":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="具有选项下拉列表和可用选项的选定客户细分。" lightbox="media/segments-selected-segment.png":::
 
-选择客户细分时可以使用以下操作：
+当您选择某个客户细分时，可以使用以下操作：
 
 - **查看** 细分详细信息，包括细分成员的成员计数趋势预览。
+- 以 .CSV 文件格式 **下载** 成员列表。
 - **编辑** 细分以更改其属性。
 - **创建客户细分的重复项**。 您可以选择立即编辑其属性或只是保存重复项。
 - **刷新** 细分以包括最新数据。
-- **激活** 或 **停用** 细分。 客户细分具有两种可能的状态 - 活动或停用。 这些状态在编辑客户细分时很有用。 对于停用的客户细分，存在客户细分定义，但不包含任何客户。 激活客户细分时，其状态将从“停用”变为“活动”，然后开始查找匹配客户细分定义的客户。 如果配置了 [计划刷新](system.md#schedule-tab)，停用客户细分会将 **状态** 列为 **已跳过**，指示还没有尝试刷新。 激活停用客户细分后，它将刷新，并包括在计划刷新中。
+- **激活** 或 **停用** 细分。 对于停用的客户细分，存在客户细分定义，但不包含任何客户。 可用客户细分会寻找与客户细分定义匹配的客户。 如果配置了 [计划刷新](system.md#schedule-tab)，停用客户细分会将 **状态** 列为 **已跳过**，指示还没有尝试刷新。 激活停用客户细分后，它将刷新，并包括在计划刷新中。
   或者，您可以使用 **激活/停用** 下拉列表中的 **以后计划** 功能指定将来的日期和时间来激活和停用特定客户细分。
+- 从客户细分中 **[查找类似的客户](find-similar-customer-segments.md)**。
 - **重命名** 细分。
+- 用于针对客户细分 [管理标记](work-with-tags-columns.md#manage-tags)的 **标记**。
 - 以 .CSV 文件格式 **下载** 成员列表。
 - **管理导出**，以查看导出相关客户细分并进行管理。 [详细了解导出。](export-destinations.md)
 - **删除** 细分。
+- 用于 [自定义显示的列](work-with-tags-columns.md#customize-columns)的 **列**。
+- 用于 [按标记筛选](work-with-tags-columns.md#filter-on-tags)的 **筛选器**。
+- 用于按客户细分名称进行搜索的 **搜索名称**。
 
 ## <a name="refresh-segments"></a>刷新细分
 

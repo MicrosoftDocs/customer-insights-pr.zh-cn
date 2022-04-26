@@ -1,23 +1,23 @@
 ---
 title: 使用 AI 寻找类似客户（包含视频）
 description: 使用人工智能查找相似的客户细分。
-ms.date: 06/25/2020
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-segment-builder
 - ci-segment-insights
 - customerInsights
-ms.openlocfilehash: 5626b980ad8802aae9657052e3ca51a70c49baf9
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 851ea2c3388de603c1beef4a58e359aa989c9c46
+ms.sourcegitcommit: e129a1fa8b020b6bfb6efc3c53fa9d89e1614ad1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355234"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "8561514"
 ---
 # <a name="similar-customers-preview"></a>相似客户（预览）
 
@@ -36,6 +36,8 @@ ms.locfileid: "8355234"
 
 1. 查看新客户细分的建议名称，并在必要时进行更改。
 
+1. 或者，也可以向新客户细分添加[标记](work-with-tags-columns.md#manage-tags)。
+
 1. 查看定义新客户细分的字段。 这些字段定义系统尝试查找与您的源客户细分相似的客户所基于的基础。 默认情况下，系统会选择推荐的字段。
   可能会大大降低模型性能的字段会被自动排除：
   
@@ -44,9 +46,9 @@ ms.locfileid: "8355234"
 
 1. 选择是要在新客户细分中包括 **所有客户** 还是仅包括 **特定现有客户细分** 中的客户。
 
-1. 通过选中 **排除源客户细分中的所有人** 复选框，排除源客户细分中的客户。
-
 1. 默认情况下，系统建议输出中仅包含目标访问群体人数的 20%。 根据需要编辑此阈值。 增加阈值会降低精度。
+
+1. 通过选中 **包括来源客户细分中的成员以及具有相似属性的客户** 复选框，来包括来源客户细分中的客户。
 
 1. 选择页面底部的 **运行** 启动二元分类任务（一种机器学习方法），此任务将分析数据集。
 
@@ -67,7 +69,7 @@ ms.locfileid: "8355234"
 
 要刷新相似客户细分，请在 **客户细分** 页面上将其选中，然后在操作栏中选择 **刷新**。
 
-编辑相似客户细分将重新处理数据。 先前创建的客户细分将使用刷新的数据更新。    
+编辑相似客户细分将重新处理数据。 先前创建的客户细分将使用刷新的数据更新。
 要编辑相似客户细分，请在 **客户细分** 页面上将其选中，然后在操作栏中选择 **编辑**。 应用更改并选择 **运行** 开始处理。
 
 ## <a name="delete-a-similar-segment"></a>删除相似客户细分
@@ -84,6 +86,5 @@ ms.locfileid: "8355234"
 - 0.85 – 1 之间的相似性分数是系统分类为 *非常相似* 的客户
 
 模型输出中不包括相似性分数低于 0.4 的客户。 系统认为它们与源客户细分的相似度不够。
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

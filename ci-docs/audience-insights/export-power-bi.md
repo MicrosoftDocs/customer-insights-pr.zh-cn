@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225504"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552045"
 ---
 # <a name="connector-for-power-bi-preview"></a>适用于 Power BI 的连接器（预览版）
 
@@ -72,6 +72,6 @@ Power BI 的 Customer Insights 连接器用于最多包含 100 万个客户配�
 
 加载包含日期格式（如 MM/DD/YYYYY）的字段的实体时，您可能会因区域设置格式不匹配而遇到错误。 当您的 Power BI Desktop 文件设置为英语（美国）以外的其他区域设置时，会发生这种不匹配，因为访问群体见解中的日期字段以美国格式保存。
 
-Power BI Desktop 文件具有在检索数据时应用的单个区域设置。 正确解释这些日期字段，将 .BPI 文件的区域设置设为英语（美国）。 [了解如何更改 Power BI Desktop 文件的区域设置](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop)。
+Power BI Desktop 文件具有在检索数据时应用的单个区域设置。 正确解释这些日期字段，将 .BPI 文件的区域设置设为英语（美国）。 [了解如何更改 Power BI Desktop 文件的区域设置](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop)。
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

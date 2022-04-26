@@ -1,37 +1,36 @@
 ---
 title: 使用客户细分生成器创建客户细分
 description: 创建客户细分，以便根据各种属性为客户分组。
-ms.date: 10/18/2021
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-segments
 - ci-segment-builder
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 6fa6f0738bf7fba94b2fb84a70ea17483aae8dac
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 1a28289ecb740ab6cdfa603b2cd66376e7e8b576
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354544"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529574"
 ---
 # <a name="create-segments"></a>创建客户细分
 
-围绕着统一客户实体及其相关实体定义复杂筛选器。 每个客户细分在处理之后都会创建一组您可以导出并对其执行操作的客户记录。 在 **客户细分** 页面上管理客户细分。 可以使用客户细分生成器[创建新客户细分](#create-a-new-segment)，或从此应用其他区域[创建快速客户细分](#quick-segments)。 
+围绕着统一客户实体及其相关实体定义复杂筛选器。 每个客户细分在处理之后都会创建一组您可以导出并对其执行操作的客户记录。 在 **客户细分** 页面上管理客户细分。 可以使用客户细分生成器[创建新客户细分](#create-a-new-segment)，或从此应用其他区域[创建快速客户细分](#quick-segments)。
 
 > [!TIP]
-> - 快速客户细分仅在 **个人客户** 环境中受支持。    
-> - 基于 **个人客户** 的客户细分自动包含客户细分成员的可用联系信息。 在 **企业客户** 环境中，客户细分基于客户（公司或子公司）。 要在客户细分中包含联系信息，请使用客户细分生成器中的 **项目属性** 功能。
->    - 确保联系人数据源[在语义上映射到 ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) 实体。
+> - 快速客户细分仅在 **个人客户** 环境中受支持。
+> - 基于 **个人客户** 的客户细分自动包含客户细分成员的可用联系信息。 在 **企业客户** 环境中，客户细分基于客户（公司或子公司）。 要在客户细分中包含联系信息，请使用客户细分生成器中的 **项目属性** 功能。 确保联系人数据源[在语义上映射到 ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) 实体。
 
 ## <a name="segment-builder"></a>客户细分生成器
 
-下图演示客户细分生成器的各个方面。 其中显示的一个客户细分将生成一组客户。 客户在特定期限内订购商品并获得奖励积分或花费一定金额。 
+下图演示客户细分生成器的各个方面。 其中显示的一个客户细分将生成一组客户。 客户在特定期限内订购商品并获得奖励积分或花费一定金额。
 
 :::image type="content" source="media/segment-builder-overview.png" alt-text="客户细分生成器的元素。" lightbox="media/segment-builder-overview.png":::
 
@@ -65,11 +64,11 @@ ms.locfileid: "8354544"
 
 1. 在客户细分生成器页上，您可以定义或编写规则。 规则由定义一组客户的一个或多个条件组成。
 
-1. 在 **Rule1** 部分中，选择要充当客户筛选规则的实体属性。 可通过两种方法选择属性。 
+1. 在 **规则 1** 部分，选择筛选客户所要依据的实体的属性。 可通过两种方法选择属性。
    - 在 **添加到规则** 窗格中查看可用实体和属性的列表，然后选择要添加的属性旁边的 **+** 图标。 选择要将属性添加到现有规则中，还是将其用于创建新规则。
    - 在规则部分中键入属性的名称，以查看匹配的建议。
 
-1. 选择运算符以指定条件的匹配值。 属性可以具有四种数据类型之一作为值：数值、字符串、日期或布尔值。 根据属性的数据类型，可以使用不同的运算符来指定条件。 对于使用企业客户的客户细分，可以使用两个特殊运算符来包括引入客户之间的潜在层次结构。 使用 *child of* 和 *parent of* 运算符来包含相关客户。 
+1. 选择运算符以指定条件的匹配值。 属性可以具有四种数据类型之一作为值：数值、字符串、日期或布尔值。 根据属性的数据类型，可以使用不同的运算符来指定条件。 对于使用企业客户的客户细分，可以使用两个特殊运算符来包括引入客户之间的潜在层次结构。 使用 *child of* 和 *parent of* 运算符来包含相关客户。
 
 1. 选择 **添加添加** 向规则添加更多条件。 若要在当前规则下创建规则，请选择 **添加子规则**。
 
@@ -77,7 +76,7 @@ ms.locfileid: "8354544"
 
    :::image type="content" source="media/relationship-path.png" alt-text="根据映射到统一客户实体的实体创建规则时的潜在关系路径。":::
 
-   例如，屏幕截图中的 *eCommerce_eCommercePurchases* 实体有四个用于映射到 *Customer* 实体的选项： 
+   例如，屏幕截图中的 *eCommerce_eCommercePurchases* 实体有四个用于映射到 *Customer* 实体的选项：
    - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > Customer
    - eCommerce_eCommercePurchases > Customer
    - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
@@ -101,11 +100,11 @@ ms.locfileid: "8354544"
       - **相交** 用于重叠两个组。 只有这两个组所 *共有* 的数据才会保留在统一组中。
       - **除外** 用于合并两个组。 只保留组 A 中有但在组 B 中 *不常见* 的数据。
 
-1. 默认情况下，细分市场会生成包含与所定义筛选器匹配的客户配置文件所有属性的输出实体。 如果细分市场基于 *客户* 实体以外的其他实体，则可以将这些实体中的更多属性添加到输出实体中。 选择 **项目属性** 以选择将附加到输出实体的属性。 
+1. 默认情况下，细分市场会生成包含与所定义筛选器匹配的客户配置文件所有属性的输出实体。 如果细分市场基于 *客户* 实体以外的其他实体，则可以将这些实体中的更多属性添加到输出实体中。 选择 **项目属性** 以选择将附加到输出实体的属性。
 
    > [!IMPORTANT]
    > 对于基于企业客户的客户细分，*ContactProfile* 实体中每个客户的一个或多个联系人的详细信息需要包含在客户细分中，以允许该客户细分被激活或导出到需要联系信息的目标。 有关 *ContactProfile* 实体有关详细信息，请参阅[语义映射](semantic-mappings.md)。
-   > 基于具有预计联系人属性的业务客户的客户细分示例输出如下所示： 
+   > 基于具有预计联系人属性的业务客户的客户细分示例输出如下所示：
    >
    > |ID  |客户名称  |收入  |联系人姓名  | 联系人角色|
    > |---------|---------|---------|---------|---|
@@ -117,14 +116,16 @@ ms.locfileid: "8354544"
 
    > [!NOTE]
    > - **项目属性** 仅适用于与 customer 实体具有一对多关系的实体。 例如，一个客户可以具有多个订阅。
-   > - 如果您要投射的属性与关系定义的 *Customer* 实体相距不止一个跃点，则应在您正在构建的客户细分查询的每个规则中使用该属性。 
-   > - 如果您要投射的属性距离 *Customer* 实体仅一个跃点，该属性则不需要出现在您正在构建的客户细分查询的每个规则中。 
+   > - 如果您要投射的属性与关系定义的 *Customer* 实体相距不止一个跃点，则应在您正在构建的客户细分查询的每个规则中使用该属性。
+   > - 如果您要投射的属性距离 *Customer* 实体仅一个跃点，该属性则不需要出现在您正在构建的客户细分查询的每个规则中。
    > - 在使用设置的运算符时，会将 **预测属性** 考虑在内。
 
-1. 保存并运行客户细分之前，请选择客户细分名称旁边的 **编辑详细信息**。 为客户细分提供名称，然后更新为客户细分建议的 **输出实体名称**。 您还可以向客户细分添加说明。
+1. 选择“无标题的客户细分”旁边的 **编辑详细信息**。 为客户细分提供名称，然后更新为客户细分建议的 **输出实体名称**。 （可选）向客户细分中添加说明和[标记](work-with-tags-columns.md#manage-tags)。
+
+   :::image type="content" source="media/segments_edit_details.png" alt-text="“编辑详细信息”对话框。":::
 
 1. 选择 **运行** 保存客户细分，激活它，然后根据所有规则和条件开始处理客户细分。 否则，它将被保存为停用客户细分。
-   
+
 1. 选择 **返回到客户细分** 以返回到 **客户细分** 页。
 
 1. 默认情况下，该客户细分被创建为动态客户细分。 这意味着在系统刷新期间将刷新该客户细分。 若要 [停止自动刷新](segments.md#manage-existing-segments)，请选择客户细分，然后选择 **设为静态** 选项。 可以随时[手动刷新](segments.md#refresh-segments)静态客户细分。
@@ -132,7 +133,7 @@ ms.locfileid: "8354544"
 > [!TIP]
 > - 在为条件设置运算符时，客户细分生成器不会建议实体中的有效值。 您可以转到 **数据** > **实体**，然后下载实体数据以查看哪些值可用。
 > - 基于日期的条件让您可以在固定日期与浮动日期范围之间切换。
-> - 如果您的客户细分有多个规则，您正在编辑的规则旁边会显示一条垂直的蓝线。 
+> - 如果您的客户细分有多个规则，您正在编辑的规则旁边会显示一条垂直的蓝线。
 > - 可以将规则和条件移动到客户细分定义中的其他位置。 选择规则或条件旁边的 [...]，然后选择其移动方法和目标位置。
 > - 命令栏中的 **撤消** 和 **恢复** 控件可让您回滚更改。
 
@@ -153,10 +154,9 @@ ms.locfileid: "8354544"
 
 4. 系统将为您提供 **估算的细分大小**。 可以选择要生成已定义的细分，还是先再次访问该细分以获取不同的细分大小。
 
-    > [!div class="mx-imgBorder"]
-    > ![快速客户细分的名称和估算。](media/quick-segment-name.png "快速细分的名称和估算")
+   :::image type="content" source="media/quick-segment-name.png" alt-text="快速客户细分的名称和估算。":::
 
-5. 为细分提供 **名称**。 （可选）提供 **显示名称**。
+5. 为客户细分提供 **名称** 和 **输出实体名称**。 （可选）添加[标记](work-with-tags-columns.md#manage-tags)。
 
 6. 选择 **保存** 以创建细分。
 
