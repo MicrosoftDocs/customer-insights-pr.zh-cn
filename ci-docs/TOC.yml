@@ -2,6 +2,8 @@
   href: index.yml
 - name: 产品概述
   href: overview.md
+- name: 新增和更新功能
+  href: whats-new-customer-insights.md
 - name: 学习目录
   items:
     - name: 开始
@@ -10,7 +12,7 @@
       href: /learn/modules/ingest-data-customer-insights/
     - name: 创建统一的客户配置文件
       href: /learn/modules/unified-customer-profile/
-    - name: 使用访问群体见解
+    - name: 使用 Customer Insights
       href: /learn/modules/working-with-customer-insights/
     - name: 扩充数据并进行预测
       href: /learn/modules/enrich-data/
@@ -26,266 +28,260 @@
       href: trial-FAQ.md
 - name: 访问您的环境
   href: 'https://home.ci.ai.dynamics.com/'
-- name: 访问群体见解
+- name: 开始
   items:
-    - name: 帮助中心
-      href: audience-insights/index.yml
-    - name: 功能概述
-      href: audience-insights/overview.md
-    - name: 新增和更新功能
-      href: audience-insights/whats-new-audience-insights.md
-    - name: 开始
+    - name: 快速入门指南
+      href: get-started.md
+    - name: 使用付费许可证开始
+      href: paid-license.md
+    - name: 创建新环境
+      href: create-environment.md
+    - name: 浏览 Customer Insights
+      href: home.md
+    - name: 使用标记和列
+      href: work-with-tags-columns.md
+    - name: 使用企业客户
+      href: work-with-business-accounts.md
+    - name: 与 Dynamics 365 Marketing 集成
+      href: marketing-get-started.md
+- name: 数据源
+  items:
+    - name: 数据源概述
+      href: data-sources.md
+    - name: 通过 Power Query 连接器添加数据源
+      href: connect-power-query.md
+    - name: 作为数据源添加 Common Data Model 文件夹
+      href: connect-common-data-model.md
+    - name: 添加 Dataverse 托管数据湖
+      href: connect-dataverse-managed-lake.md
+    - name: 添加 Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: 数据源扩充
+      href: data-sources-enrichment.md
+    - name: 数据源的增量刷新
+      href: incremental-refresh-data-sources.md
+    - name: 实时数据引入
+      href: real-time-data-ingestion.md
+- name: 数据统一
+  items:
+    - name: 数据统一概述
+      href: data-unification.md
+    - name: 映射实体和属性
+      href: map-entities.md
+    - name: 匹配实体
+      href: match-entities.md
+    - name: 合并实体
+      href: merge-entities.md
+- name: 数据扩充
+  items:
+    - name: 扩充客户配置文件
+      href: enrichment-hub.md
+    - name: 品牌和兴趣
+      href: enrichment-microsoft.md
+    - name: 增强的地址
+      href: enrichment-enhanced-addresses.md
+    - name: 增强的公司数据
+      href: enrichment-enhanced-company-data.md
+    - name: 使用 Azure Maps 扩充
+      href: enrichment-azure-maps.md
+    - name: 使用 Dun & Bradstreet 扩充
+      href: enrichment-dnb.md
+    - name: 通过 HERE Technologies 扩充
+      href: enrichment-here.md
+    - name: 通过 Leadspace 扩充
+      href: enrichment-leadspace.md
+    - name: 使用 LiveRamp 扩充
+      href: enrichment-liveramp.md
+    - name: 通过 Experian 扩充
+      href: enrichment-experian.md
+    - name: 使用 Office 365 数据进行扩充
+      href: enrichment-office.md
+    - name: 通过 SFTP 自定义导入扩充
+      href: enrichment-SFTP-custom-import.md
+- name: 统一的配置文件
+  items:
+    - name: 查看统一的客户配置文件
+      href: customer-profiles.md
+    - name: 筛选统一的客户配置文件
+      href: search-filter-index.md
+    - name: 定义客户活动
+      href: activities.md
+- name: Segments
+  items:
+    - name: 客户细分概述
+      href: segments.md
+    - name: 创建客户细分
+      href: segment-builder.md
+    - name: 基于度量的建议客户细分
+      href: suggested-segments.md
+    - name: 基于活动的建议客户细分
+      href: suggested-segments-activity.md
+    - name: 获取有关客户细分的见解
+      href: segment-insights.md
+    - name: 查找相似客户
+      href: find-similar-customer-segments.md
+- name: 度量
+  items:
+    - name: 度量概述
+      href: measures.md
+    - name: 新建度量
+      href: measure-builder.md
+    - name: 使用度量模板
+      href: measure-templates.md
+- name: 预测
+  items:
+    - name: 在 AI 的帮助下预测数据
       items:
-        - name: 快速入门指南
-          href: audience-insights/get-started.md
-        - name: 使用付费许可证开始
-          href: paid-license.md
-        - name: 创建新环境
-          href: audience-insights/create-environment.md
-        - name: 浏览访问群体见解
-          href: audience-insights/home.md
-        - name: 使用标记和列
-          href: audience-insights/work-with-tags-columns.md
-        - name: 使用企业客户
-          href: audience-insights/work-with-business-accounts.md
-    - name: 数据源
+        - name: 预测模型概述
+          href: predictions-overview.md
+        - name: 预计客户生存期值 (CLV)
+          href: predict-customer-lifetime-value.md
+        - name: 预测产品建议
+          href: predict-product-recommendation.md
+        - name: 预测订阅流失
+          href: predict-subscription-churn.md
+        - name: 预测交易流失
+          href: predict-transactional-churn.md
+        - name: 分析客户反馈中的情绪
+          href: sentiment-analysis.md
+        - name: 使用来自 Azure 机器学习的自定义模型
+          href: custom-models.md
+        - name: 完成部分缺失的数据
+          href: predictions.md
+    - name: 示例指南
       items:
-        - name: 数据源概述
-          href: audience-insights/data-sources.md
-        - name: 通过 Power Query 连接器添加数据源
-          href: audience-insights/connect-power-query.md
-        - name: 作为数据源添加 Common Data Model 文件夹
-          href: audience-insights/connect-common-data-model.md
-        - name: 添加 Dataverse 托管数据湖
-          href: audience-insights/connect-dataverse-managed-lake.md
-        - name: 添加 Azure Synapse Analytics
-          href: audience-insights/connect-synapse.md
-        - name: 数据源扩充
-          href: audience-insights/data-sources-enrichment.md
-        - name: 数据源的增量刷新
-          href: audience-insights/incremental-refresh-data-sources.md
-        - name: 实时数据引入
-          href: audience-insights/real-time-data-ingestion.md
-    - name: 数据统一
+        - name: CLV 预测示例指南
+          href: sample-guide-predict-clv.md
+        - name: 订阅流失预测的示例指南
+          href: sample-guide-predict-subscription-churn.md
+        - name: 交易流失预测示例指南
+          href: sample-guide-predict-transactional-churn.md
+        - name: 产品建议预测示例指南
+          href: sample-guide-predict-product-recommendation.md
+        - name: Azure 机器学习试验
+          href: azure-machine-learning-experiments.md
+    - name: 管理预测
+      href: manage-predictions.md
+    - name: 基于预测创建客户细分
+      href: prediction-based-segment.md
+- name: 导出选项
+  items:
+    - name: 导出
       items:
-        - name: 数据统一概述
-          href: audience-insights/data-unification.md
-        - name: 映射实体和属性
-          href: audience-insights/map-entities.md
-        - name: 匹配实体
-          href: audience-insights/match-entities.md
-        - name: 合并实体
-          href: audience-insights/merge-entities.md
-    - name: 数据扩充
+        - name: 导出概述
+          href: export-destinations.md
+        - name: 活跃的市场活动
+          href: export-active-campaign.md
+        - name: AdRoll
+          href: export-adroll.md
+        - name: Autopilot
+          href: export-autopilot.md
+        - name: Azure Blob Storage
+          href: export-azure-blob-storage.md
+        - name: Azure Data Lake Storage Gen2
+          href: export-azure-data-lake-storage-gen2.md
+        - name: Azure Synapse Analytics
+          href: export-azure-synapse-analytics.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
+        - name: Braze
+          href: export-braze.md
+        - name: Campaign Monitor
+          href: export-campaign-monitor.md
+        - name: Constant Contact
+          href: export-constant-contact.md
+        - name: DotDigital
+          href: export-dotdigital.md
+        - name: Dynamics 365 Marketing
+          href: export-dynamics365-marketing.md
+        - name: Dynamics 365 Sales
+          href: export-dynamics365-sales.md
+        - name: Facebook Ads Manager
+          href: export-facebook.md
+        - name: Google Ads
+          href: export-google-ads.md
+        - name: Iterable
+          href: export-iterable.md
+        - name: Klaviyo
+          href: export-klaviyo.md
+        - name: LinkedIn Ads
+          href: export-linkedin-ads.md
+        - name: LiveRamp
+          href: export-liveramp.md
+        - name: Mailchimp
+          href: export-mailchimp.md
+        - name: Marketo
+          href: export-marketo.md
+        - name: Microsoft Advertising
+          href: export-microsoft-advertising.md
+        - name: Omnisend
+          href: export-omnisend.md
+        - name: RollWorks
+          href: export-rollworks.md
+        - name: Salesforce Marketing Cloud
+          href: export-salesforce.md
+        - name: SendGrid
+          href: export-sendgrid.md
+        - name: SendInBlue
+          href: export-sendinblue.md
+        - name: Snapchat
+          href: export-snapchat.md
+        - name: SFTP
+          href: export-sftp.md
+    - name: 其他用途
       items:
-        - name: 扩充客户配置文件
-          href: audience-insights/enrichment-hub.md
-        - name: 品牌和兴趣
-          href: audience-insights/enrichment-microsoft.md
-        - name: 增强的地址
-          href: audience-insights/enrichment-enhanced-addresses.md
-        - name: 增强的公司数据
-          href: audience-insights/enrichment-enhanced-company-data.md
-        - name: 使用 Azure Maps 扩充
-          href: audience-insights/enrichment-azure-maps.md
-        - name: 通过 HERE Technologies 扩充
-          href: audience-insights/enrichment-here.md
-        - name: 通过 Leadspace 扩充
-          href: audience-insights/enrichment-leadspace.md
-        - name: 使用 LiveRamp 扩充
-          href: audience-insights/enrichment-liveramp.md
-        - name: 通过 Experian 扩充
-          href: audience-insights/enrichment-experian.md
-        - name: 使用 Office 365 数据进行扩充
-          href: audience-insights/enrichment-office.md
-        - name: 通过 SFTP 自定义导入扩充
-          href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: 统一的配置文件
-      items:
-        - name: 查看统一的客户配置文件
-          href: audience-insights/customer-profiles.md
-        - name: 筛选统一的客户配置文件
-          href: audience-insights/search-filter-index.md
-        - name: 定义客户活动
-          href: audience-insights/activities.md
-    - name: Segments
-      items:
-        - name: 客户细分概述
-          href: audience-insights/segments.md
-        - name: 创建客户细分
-          href: audience-insights/segment-builder.md
-        - name: 基于度量的建议客户细分
-          href: audience-insights/suggested-segments.md
-        - name: 基于活动的建议客户细分
-          href: audience-insights/suggested-segments-activity.md
-        - name: 获取有关客户细分的见解
-          href: audience-insights/segment-insights.md
-        - name: 查找相似客户
-          href: audience-insights/find-similar-customer-segments.md
-    - name: 度量
-      items:
-        - name: 度量概述
-          href: audience-insights/measures.md
-        - name: 新建度量
-          href: audience-insights/measure-builder.md
-        - name: 使用度量模板
-          href: audience-insights/measure-templates.md
-    - name: 预测
-      items:
-        - name: 在 AI 的帮助下预测数据
-          items:
-            - name: 预测模型概述
-              href: audience-insights/predictions-overview.md
-            - name: 预计客户生存期值 (CLV)
-              href: audience-insights/predict-customer-lifetime-value.md
-            - name: 预测产品建议
-              href: audience-insights/predict-product-recommendation.md
-            - name: 预测订阅流失
-              href: audience-insights/predict-subscription-churn.md
-            - name: 预测交易流失
-              href: audience-insights/predict-transactional-churn.md
-            - name: 分析客户反馈中的情绪
-              href: audience-insights/sentiment-analysis.md
-            - name: 使用来自 Azure 机器学习的自定义模型
-              href: audience-insights/custom-models.md
-            - name: 完成部分缺失的数据
-              href: audience-insights/predictions.md
-        - name: 示例指南
-          items:
-            - name: CLV 预测示例指南
-              href: audience-insights/sample-guide-predict-clv.md
-            - name: 订阅流失预测的示例指南
-              href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: 交易流失预测示例指南
-              href: audience-insights/sample-guide-predict-transactional-churn.md
-            - name: 产品建议预测示例指南
-              href: audience-insights/sample-guide-predict-product-recommendation.md
-            - name: Azure 机器学习试验
-              href: audience-insights/azure-machine-learning-experiments.md
-        - name: 管理预测
-          href: audience-insights/manage-predictions.md
-        - name: 基于预测创建客户细分
-          href: audience-insights/prediction-based-segment.md
-    - name: 导出选项
-      items:
-        - name: 导出
-          items:
-            - name: 导出概述
-              href: audience-insights/export-destinations.md
-            - name: 活跃的市场活动
-              href: audience-insights/export-active-campaign.md
-            - name: AdRoll
-              href: audience-insights/export-adroll.md
-            - name: Autopilot
-              href: audience-insights/export-autopilot.md
-            - name: Azure Blob Storage
-              href: audience-insights/export-azure-blob-storage.md
-            - name: Azure Data Lake Storage Gen2
-              href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
-              href: audience-insights/export-azure-synapse-analytics.md
-            - name: Adobe Campaign Standard
-              href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe Experience Platform
-              href: audience-insights/export-adobe-experience-platform.md
-            - name: Braze
-              href: audience-insights/export-braze.md
-            - name: Campaign Monitor
-              href: audience-insights/export-campaign-monitor.md
-            - name: Constant Contact
-              href: audience-insights/export-constant-contact.md
-            - name: DotDigital
-              href: audience-insights/export-dotdigital.md
-            - name: Dynamics 365 Marketing
-              href: audience-insights/export-dynamics365-marketing.md
-            - name: Dynamics 365 Sales
-              href: audience-insights/export-dynamics365-sales.md
-            - name: Facebook Ads Manager
-              href: audience-insights/export-facebook.md
-            - name: Google Ads
-              href: audience-insights/export-google-ads.md
-            - name: Iterable
-              href: audience-insights/export-iterable.md
-            - name: Klaviyo
-              href: audience-insights/export-klaviyo.md
-            - name: LinkedIn Ads
-              href: audience-insights/export-linkedin-ads.md
-            - name: LiveRamp
-              href: audience-insights/export-liveramp.md
-            - name: Mailchimp
-              href: audience-insights/export-mailchimp.md
-            - name: Marketo
-              href: audience-insights/export-marketo.md
-            - name: Microsoft Advertising
-              href: audience-insights/export-microsoft-advertising.md
-            - name: Omnisend
-              href: audience-insights/export-omnisend.md
-            - name: RollWorks
-              href: audience-insights/export-rollworks.md
-            - name: Salesforce Marketing Cloud
-              href: audience-insights/export-salesforce.md
-            - name: SendGrid
-              href: audience-insights/export-sendgrid.md
-            - name: SendInBlue
-              href: audience-insights/export-sendinblue.md
-            - name: Snapchat
-              href: audience-insights/export-snapchat.md
-            - name: SFTP
-              href: audience-insights/export-sftp.md
-        - name: 其他用途
-          items:
-            - name: Dynamics 365 客户卡加载项
-              href: audience-insights/customer-card-add-in.md
-            - name: Microsoft Teams（机器人）
-              href: audience-insights/export-teams-bot.md
-            - name: Power Apps
-              href: audience-insights/export-power-apps.md
-            - name: Power Automate
-              href: audience-insights/export-power-automate.md
-            - name: Power BI
-              href: audience-insights/export-power-bi.md
-    - name: 实体
-      items:
-        - name: 了解实体
-          href: audience-insights/entities.md
-        - name: 查看 Common Data Model 中的实体架构
-          href: audience-insights/entity-schemas.md
-        - name: Dataverse 中的 Customer Insights 数据
-          href: audience-insights/customer-insights-dataverse.md
-        - name: 构建关系和连接的实体
-          href: audience-insights/relationships.md
-        - name: 定义语义映射
-          href: audience-insights/semantic-mappings.md
-    - name: 管理
-      items:
-        - name: 设置系统配置
-          href: audience-insights/system.md
-        - name: 分派用户权限
-          href: audience-insights/permissions.md
-        - name: 连接概述
-          href: audience-insights/connections.md
-        - name: 管理多个环境
-          href: audience-insights/manage-environments.md
-        - name: 引入您自己的密钥保管库
-          href: audience-insights/use-azure-key-vault.md
-        - name: 使用服务主体连接到存储帐户
-          href: audience-insights/connect-service-principal.md
-        - name: 导出诊断日志
-          href: audience-insights/diagnostics.md
-        - name: 服务限制
-          href: service-limits.md
-        - name: DSR 权限和请求
-          href: dsr-rights-requests.md
-    - name: API
-      items:
-        - name: 查看 Common Data Model 中的实体架构
-          href: audience-insights/entity-schemas.md
-        - name: Dataverse 中的 Customer Insights 数据
-          href: audience-insights/customer-insights-dataverse.md
-        - name: 使用 API
-          href: audience-insights/apis.md
-        - name: API 引用
-          href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+        - name: Dynamics 365 客户卡加载项
+          href: customer-card-add-in.md
+        - name: Microsoft Teams（机器人）
+          href: export-teams-bot.md
+        - name: Power Apps
+          href: export-power-apps.md
+        - name: Power Automate
+          href: export-power-automate.md
+        - name: Power BI
+          href: export-power-bi.md
+- name: 实体
+  items:
+    - name: 了解实体
+      href: entities.md
+    - name: 查看 Common Data Model 中的实体架构
+      href: entity-schemas.md
+    - name: Dataverse 中的 Customer Insights 数据
+      href: customer-insights-dataverse.md
+    - name: 构建关系和连接的实体
+      href: relationships.md
+    - name: 定义语义映射
+      href: semantic-mappings.md
+- name: 管理
+  items:
+    - name: 设置系统配置
+      href: system.md
+    - name: 配置安全性设置
+      href: security-overview.md
+    - name: 分派用户权限
+      href: permissions.md
+    - name: 连接概述
+      href: connections.md
+    - name: 管理多个环境
+      href: manage-environments.md
+    - name: 引入您自己的密钥保管库
+      href: use-azure-key-vault.md
+    - name: 使用服务主体连接到存储帐户
+      href: connect-service-principal.md
+    - name: 导出诊断日志
+      href: diagnostics.md
+    - name: 服务限制
+      href: service-limits.md
+    - name: DSR 权限和请求
+      href: dsr-rights-requests.md
+- name: API
+  items:
+    - name: 使用 API
+      href: apis.md
+    - name: API 引用
+      href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
 - name: 同意管理（预览版）
   items:
     - name: 帮助中心
@@ -306,10 +302,10 @@
           href: consent-management/set-consent-rules.md
     - name: 管理同意数据
       items:
-        - name: 在访问群体见解中启用同意规则
-          href: audience-insights/activate-consent.md
-        - name: 管理访问群体见解客户细分中的默认同意规则
-          href: audience-insights/change-default-consent-rules.md
+        - name: 启用 Customer Insights 中的同意规则
+          href: activate-consent.md
+        - name: 管理 Customer Insights 客户细分中的默认同意规则
+          href: change-default-consent-rules.md
     - name: 管理设置和用户
       items:
         - name: 配置系统设置
@@ -320,7 +316,5 @@
       items:
         - name: 使用同意数据创建预测
           href: consent-management/predictions-consent-data.md
-- name: 参与见解(预览版)
-  href: engagement-insights/overview.md
 - name: 获取支持
   href: /power-platform/admin/get-help-support

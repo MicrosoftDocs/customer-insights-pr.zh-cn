@@ -1,39 +1,41 @@
 ---
-title: 产品概述
+title: Dynamics 365 Customer Insights 产品概述
 author: m-hartmann
-description: 获取 Dynamics 365 Customer Insights 及其功能的概述。
+description: 简要概述 Dynamics 365 Customer Insights 及其主要功能。
 ms.author: mhart
-ms.date: 07/30/2021
+ms.date: 04/12/2022
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
-ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
+ms.openlocfilehash: 4d5b4ec61614877c26468ffe8d07f2448b43bac6
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "8560422"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641889"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的产品概述
 
-[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) 是 Microsoft 的客户数据平台 (CDP) 的一部分，可帮助您提供个性化的客户体验。 利用该平台的功能，可以深入了解您的客户是谁，以及他们如何通过您的平台互动。 统一跨多种来源的客户数据以获得单一的客户视图。
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) 是 Microsoft 的客户数据平台 (CDP)，可帮助提供个性化的客户体验。 应用程序提供了客户的整体视图，以及无与伦比的见解获得速度。 通过实时统一客户数据与运营和物联网数据，获得最全面的客户视图。 使用第一方和第三方数据源扩充客户配置文件。 
 
-[访问群体见解](audience-insights/overview.md)可帮助您将业务转换为以客户为中心的组织。 市场营销、销售和服务专业人员具有个性化体验所需的见解。 连接交易、行为和观察来源的数据以创建 360 度客户视图。 使用设计用于提供可采取行动的见解的 CDP，以更快显示结果。 
-
-[参与见解](engagement-insights/overview.md)是 Customer Insights 中的一项预览功能，专注于收集 Web 和移动事件以获取更多见解。 此预览已于 2022 年 2 月 15 日结束。
+Customer Insights 通过授权市场营销、销售和服务专业人员大规模定制 1:1 交互，帮助您将公司转变为以客户为中心的组织。 与 Microsoft 和第三方应用程序的即用型集成可用于激活实时见解以推动有意义的行动。
  
-## <a name="choose-a-capability"></a>选择功能
+连接来自交易、行为和人口统计数据源的数据，以创建 360 度客户视图。 通过预构建的 AI 模型获得现成的见解，或使用无限规模的高级分析解决方案快速构建、测试和部署自定义 AI/ML 模型。
 
-:::image type="content" source="engagement-insights/media/choose_focus.png" alt-text="可让您导航到访问群体见解或参与见解的 Customer Insights 页面。":::
-
-若要选择功能，请执行以下操作
-
-1. 在导航窗格中，选择 **所有应用 **以打开** 选择焦点** 窗口。
-1. 选择 **立即前往** 以导航到选择的功能。
+保持对客户数据的完全控制，以确保进行最高级别的数据治理并且符合基于 Microsoft Azure 构建的自助式企业级 CDP。 通过内置的隐私、安全和治理以及同意管理工具，支持通用数据保护条例 (GDPR) 和其他立法要求和行业标准。
 
 ## <a name="pricing-and-licensing"></a>定价和授权
+Customer Insights 按租户许可，包括企业对消费者 (B2C) 和企业对企业 (B2B) 功能。 您可以使用附加许可证购买额外容量，以增加配置文件和帐户的数量。
 
-Customer Insights 按租户许可，拥有多项功能。 可购买更多容量和许可证以增加默认配额。 
 - [定价概述](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - 功能和权利：[Dynamics 365 许可指南](https://go.microsoft.com/fwlink/?LinkId=866544)
+- [Microsoft 批量许可网站](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)
+
+## <a name="try-customer-insights-and-get-started"></a>试用 Customer Insights 并开始使用
+
+立即开始[免费试用 Customer Insights](https://signup.microsoft.com/create-account/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https:%2F%2Fhome.ci.ai.dynamics.com%2Fstart%2Ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d)，以使用您自己的客户数据测试应用程序。 [了解如何快速访问和了解应用程序的许多关键功能](trial-signup.md)。 
+
+浏览[特色学习资源](https://dynamics.microsoft.com/ai/customer-insights/resources/)，包括分析师报告、按需网络研讨会和客户案例。
+
+了解如何通过我们的[入门指南](get-started.md)更好地了解客户。
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

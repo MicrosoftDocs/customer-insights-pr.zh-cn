@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
-ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.openlocfilehash: 8fcc1c97be87afe942aa3b5e23d1eb68008aa873
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455987"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641843"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>购买 Customer Insights 后开始使用
 
@@ -34,9 +34,8 @@ Customer Insights 按租户许可，拥有多项功能。 您可以购买更多�
 
 1. 转到 [Customer Insights 应用 URL](https://home.ci.ai.dynamics.com)。
 1. 使用你的学校或工作帐户登录。 
-1. 同意服务条款并为您的 Customer Insights 实例设置内容首选项。
-1. 选择要关注的功能，直到您到达所选功能的起始页面。
+1. 同意服务条款并为您的 Customer Insights 环境设置内容首选项。
 
 ## <a name="create-your-own-environment"></a>创建自己的环境
 
-首次登录后，您将看到一个包含示例数据的环境。 您可以使用该数据探索功能，熟悉应用。 若要使用您自己的数据，您必须[创建环境](/dynamics365/customer-insights/audience-insights/create-environment)。
+首次登录后，您将看到一个包含示例数据的环境。 您可以使用该数据探索功能，熟悉应用。 若要使用您自己的数据，您必须[创建环境](create-environment.md)。

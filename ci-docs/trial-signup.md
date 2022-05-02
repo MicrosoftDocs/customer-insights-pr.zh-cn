@@ -3,17 +3,17 @@ title: 注册免费试用 - Dynamics 365 Customer Insights
 description: 了解如何快速注册和开始免费试用 Customer Insights。 探索应用，查找其他学习资源。
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/30/2021
+ms.date: 04/12/2022
 ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: 2f27dd4fd9df679696d72f2eccde262de3e4afc4
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350212"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641705"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>注册 Dynamics 365 Customer Insights 免费试用
 
@@ -21,7 +21,7 @@ Customer Insights 提供 30 天免费试用。 快速注册后，您将可以访
 
 **若要注册试用**：
 
-1. 转到 [试用概览页](https://dynamics.microsoft.com/get-started/?appname=customerinsights)，选择 **立即注册**。
+1. 转到 [试用概览页](https://dynamics.microsoft.com/ai/customer-insights/)，选择 **免费试用 Customer Insights**。
 1. 按照屏幕上的指导输入[与您的 Microsoft 帐户关联的电子邮件](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa)和您的联系人信息。
 1. 进行选择，选择您要关注的功能，直到您到达所选功能的起始页面。
 
@@ -31,12 +31,12 @@ Customer Insights 提供 30 天免费试用。 快速注册后，您将可以访
 
 试用环境包括与付费版本相同的功能。 以下链接将指导您了解一些关键功能。
 
-- [访问群体见解快速入门。](audience-insights/get-started.md)
-- [添加更多用户和分配权限。](audience-insights/permissions.md)
-- [引入您的数据源](audience-insights/data-sources.md)并通过[数据统一过程](audience-insights/data-unification.md)运行它们，以获得[统一的客户配置文件](audience-insights/customer-profiles.md)。
-- [扩充统一的客户配置文件](audience-insights/enrichment-hub.md)或[运行预测模型](audience-insights/predictions-overview.md)。
-- 创建[客户细分](audience-insights/segments.md)来分组客户和评价 KPI 的[度量](audience-insights/measures.md)。
-- 设置[连接](audience-insights/connections.md)和[导出](audience-insights/export-destinations.md)，以处理其他应用程序中的数据子集。
+- [Customer Insights 入门。](get-started.md)
+- [添加更多用户和分配权限。](permissions.md)
+- [引入您的数据源](data-sources.md)并通过[数据统一过程](data-unification.md)运行它们，以获得[统一的客户配置文件](customer-profiles.md)。
+- [扩充统一的客户配置文件](enrichment-hub.md)或[运行预测模型](predictions-overview.md)。
+- 创建[客户细分](segments.md)来分组客户和评价 KPI 的[度量](measures.md)。
+- 设置[连接](connections.md)和[导出](export-destinations.md)，以处理其他应用程序中的数据子集。
 
 ## <a name="additional-resources"></a>其他资源
 

@@ -6,12 +6,12 @@ metadata:
   ms.author: mhart
   ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
-  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+  ms.openlocfilehash: e3a9f6d5f4d23ca3e85fa3f69272a0162ca7bd2d
+  ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/25/2022
-  ms.locfileid: "8350443"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "8641645"
 title: Dynamics 365 Customer Insights 文档
 summary: 查找有用的资源以入门和开始了解 Customer Insights 的功能和特性。
 landingContent:
@@ -23,8 +23,8 @@ landingContent:
       url: overview.md
     - text: 发布计划
       url: /dynamics365/release-plans/
-    - text: 发现 CDP
-      url: https://dynamics.microsoft.com/ai/customer-insights/
+    - text: 新增和更新功能
+      url: whats-new-customer-insights.md
   - linkListType: learn
     links:
     - text: Customer Insights 学习路径
@@ -35,24 +35,94 @@ landingContent:
     links:
     - text: 注册试用版
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: 访问群体见解中的新增功能
-      url: audience-insights/whats-new-audience-insights.md
-    - text: 快速入门指南
-      url: audience-insights/get-started.md
+    - text: 开始使用试用版
+      url: trial-signup.md
+    - text: Customer Insights 入门
+      url: get-started.md
   - linkListType: learn
     links:
     - text: 开始
       url: /learn/modules/get-started-customer-data-platform/
+- title: 统一数据
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 数据源概述
+      url: data-sources.md
+    - text: 统一概述
+      url: data-unification.md
+    - text: 了解实体
+      url: entities.md
+  - linkListType: learn
+    links:
+    - text: 创建统一的配置文件
+      url: /learn/modules/unified-customer-profile/
+- title: 获取见解
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 扩充客户配置文件
+      url: enrichment-hub.md
+    - text: 配置关系
+      url: relationships.md
+    - text: 通过预测来填写数据
+      url: predictions.md
+  - linkListType: learn
+    links:
+    - text: 扩充和预测数据
+      url: /learn/modules/enrich-data/
+- title: 基于您的数据生成
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 创建客户细分
+      url: segments.md
+    - text: 创建度量
+      url: measures.md
+    - text: 定义客户活动
+      url: activities.md
+  - linkListType: learn
+    links:
+    - text: 使用应用
+      url: /learn/modules/working-with-customer-insights/
+- title: 导出数据
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 设置导出目标
+      url: export-destinations.md
+    - text: Dynamics 365 应用中的客户卡
+      url: customer-card-add-in.md
+    - text: Power BI 连接器
+      url: export-power-bi.md
+  - linkListType: learn
+    links:
+    - text: 管理外部连接
+      url: /learn/modules/configure-third-party-connections/
+- title: 管理应用程序
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 配置系统
+      url: system.md
+    - text: 定义用户权限
+      url: permissions.md
+    - text: 管理多个环境
+      url: manage-environments.md
+  - linkListType: learn
+    links:
+    - text: 管理 Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: 管理 Customer Insights
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 配置系统
-      url: audience-insights/system.md
+      url: system.md
     - text: 定义用户权限
-      url: audience-insights/permissions.md
+      url: permissions.md
     - text: 管理多个环境
-      url: audience-insights/manage-environments.md
+      url: manage-environments.md
   - linkListType: learn
     links:
     - text: 管理 Customer Insights
