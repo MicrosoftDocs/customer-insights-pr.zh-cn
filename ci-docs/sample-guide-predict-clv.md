@@ -1,19 +1,19 @@
 ---
 title: 客户生存期值预测示例指南
 description: 使用此示例指南试用客户生存期值模型。
-ms.date: 05/25/2021
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 9f8d1d0f0757d8003ad3859fab75362f3988cd00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 351946c734f5a1054eb3769b2d9cced3bed48e15
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645875"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740800"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>客户生存期值 (CLV) 预测示例指南
 
@@ -102,64 +102,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Cont
 
 ## <a name="task-2---data-unification"></a>任务 2 - 数据统一
 
-在引入数据后，我们现在开始进行数据统一流程，以创建统一的客户配置文件。 有关详细信息，请参阅[数据统一](data-unification.md)。
-
-### <a name="map"></a>映射
-
-1. 引入数据后，将联系人从电子商务和忠诚度数据映射到常见数据类型。 转到 **数据** > **统一** > **映射**。
-
-1. 选择表示客户配置文件的实体 – **eCommerceContacts** 和 **loyCustomers**。 然后选择 **应用**。
-
-   ![统一电子商务和忠诚度数据源。](media/unify-ecommerce-loyalty.png)
-
-1. 选择 **ContactId** 作为 **eCommerceContacts** 的主键，选择 **LoyaltyID** 作为 **loyCustomers** 的主键。
-
-   ![统一 LoyaltyId 作为主键。](media/unify-loyaltyid.png)
-
-1. 选择 **保存**。
-
-### <a name="match"></a>匹配项
-
-1. 转到 **匹配** 选项卡并选择 **设置顺序**。
-
-1. 在 **主要** 下拉列表中，选择 **eCommerceContacts : eCommerce** 作为主要源并包括所有记录。
-
-1. 在 **实体 2** 下拉列表中，选择 **loyCustomers : LoyaltyScheme** 并包括所有记录。
-
-   ![统一匹配电子商务和忠诚度。](media/unify-match-order.png)
-
-1. 选择 **添加规则**
-
-1. 使用 FullName 添加您的第一个条件。
-
-   - 对于 eCommerceContacts，在下拉列表中选择 **FullName**。
-   - 对于 loyCustomers，在下拉列表中选择 **FullName**。
-   - 选择 **标准化** 下拉菜单，然后选择 **类型（电话、姓名、地址...）**。
-   - 设置 **精度级别**：**基本** 和 **值**：**高**。
-
-1. 为新规则输入名称 **全名、电子邮件**。
-
-   - 通过选择 **添加条件** 为电子邮件地址添加第二个条件
-   - 对于实体 eCommerceContacts，在下拉列表中选择 **电子邮件**。
-   - 对于实体 loyCustomers，在下拉列表中选择 **电子邮件**。
-   - 将“标准化”留空。
-   - 设置 **精度级别**：**基本** 和 **值**：**高**。
-
-   ![统一名称和电子邮件的匹配规则。](media/unify-match-rule.png)
-
-1. 选择 **完成**。
-
-1. 选择 **保存** 和 **运行**。
-
-### <a name="merge"></a>合并​​
-
-1. 转到 **合并** 选项卡。
-
-1. 在 **loyCustomers** 实体的 **ContactId** 上，将显示名称更改为 **ContactIdLOYALTY** 以将其与引入的其他 ID 区分开。
-
-   ![从忠诚度 ID 中重命名 contactid。](media/unify-merge-contactid.png)
-
-1. 选择 **保存** 和 **运行合并和下游流程**。
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-customer-lifetime-value-prediction"></a>任务 3 - 配置客户生存期值预测
 

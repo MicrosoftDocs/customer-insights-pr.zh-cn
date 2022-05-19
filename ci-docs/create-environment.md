@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645596"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712891"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>在 Customer Insights 中创建环境
 
@@ -63,8 +63,7 @@ ms.locfileid: "8645596"
 将数据保存到 Azure Data Lake Storage，即表示您同意将数据传输并存储到该 Azure 存储帐户的适当地理位置。 此位置可能与 Dynamics 365 Customer Insights 中的数据存储位置不同。 在 [Microsoft 信任中心](https://www.microsoft.com/trust-center)了解更多信息。
 
 > [!NOTE]
-> Customer Insights 当前支持以下各项：
-> - 从存储在 Microsoft Dataverse 管理的 Data Lake 中的 Power BI 数据流引入的实体。  
+> Customer Insights 当前支持以下各项：  
 > - 来自您在创建环境时选择的同一 Azure 区域的 Azure Data Lake Storage 帐户。
 > - 本身为 Gen2 并且启用了 *分层命名空间* 的 Azure Data Lake Storage 帐户。 Azure Data Lake Gen1 存储帐户不受支持。
 
@@ -80,7 +79,7 @@ ms.locfileid: "8645596"
 
 提供您自己的 Microsoft Dataverse 环境，以便与基于 Dataverse 的业务应用程序（例如 Dynamics 365 Marketing 或 Power Apps 中的模型驱动应用程序）共享数据（配置文件和见解）。 如果您没有自己的 Dataverse 环境，请将此字段留空，我们将设置一个环境。
 
-通过连接到 Dataverse 环境，您还可以[使用 Power Platform 数据流和网关从本地数据源中引入数据](data-sources.md#add-data-from-on-premises-data-sources)。 您还可以通过连接到 Dataverse 环境来使用[现成的预测模型](predictions-overview.md?tabs=b2c#out-of-box-models)。
+通过连接到 Dataverse 环境，您还可以[使用 Power Platform 数据流和网关从本地数据源中引入数据](data-sources.md#add-data-from-on-premises-data-sources)。
 
 > [!IMPORTANT]
 > 1. Customer Insights 和 Dataverse 必须在同一区域才能启用数据共享。

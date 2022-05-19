@@ -1,23 +1,22 @@
 ---
 title: 激活客户细分同意规则
 description: 按照这些步骤在 Dynamics 365 Customer Insights 中链接同意数据和激活同意检查。 管理员还可以禁用同意检查。
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645598"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755159"
 ---
 # <a name="activate-consent-rules"></a>激活同意规则
 
-[同意中心（预览版）](consent-management/overview.md)可帮助您协调来自不同来源的同意数据。 使用统一 *同意* 实体应用默认同意检查。 在将同意数据导入同意中心并配置数据规则后，*同意* 实体会自动同步到 Dynamics 365 Customer Insights。
+[同意中心（预览版）](consent-management/overview.md)可帮助您协调来自不同来源的同意数据。 使用统一 *同意* 实体应用默认同意检查。 在导入同意数据并配置映射规则后，*同意* 实体会自动同步到 Dynamics 365 Customer Insights。
 
 ## <a name="enable-consent-checks"></a>启用同意检查
 

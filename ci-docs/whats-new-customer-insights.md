@@ -1,19 +1,19 @@
 ---
 title: 新功能和未来的功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 04/05/2022
+ms.date: 05/03/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 25c6e2897d836854408871b2c74afa16ecba7435
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
+ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645914"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8700926"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 中的新增功能
 
@@ -24,6 +24,28 @@ ms.locfileid: "8645914"
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
 
+
+## <a name="april-2022-updates"></a>2022 年 4 月更新
+
+2022 年 4 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet 扩充（预览版）
+
+Dun & Bradstreet 为企业提供商业数据、分析和见解。 它使那些具有公司统一客户配置文件的客户能够扩充其数据。 扩充包括 DUNS 编号、公司规模、位置、行业等属性。
+
+有关详细信息，请参阅[通过 Dun & Bradstreet 扩充公司配置文件（预览版）](enrichment-dnb.md)。
+
+### <a name="define-the-measure-type-when-creating-a-new-measure"></a>在创建新度量时定义度量类型
+
+现在您可以区分各个配置文件的度量和整个业务中的度量。 虽然业务度量显示在 Customer Insights 的主页上，但客户度量显示在详细的客户视图中。
+
+有关详细信息，请参阅[使用度量生成器从头开始创建度量](measure-builder.md)。
+
+### <a name="consolidation-of-customer-insights-documentation"></a>Customer Insights 文档整合
+
+我们重新审视了我们的文档文章，并删除了参与见解和访问群体见解功能的提及内容。 将来，当我们撰写应用程序的核心功能相关内容时，我们将始终引用产品名称 Customer Insights。 此更改还导致目录、URL 结构和底层文档存储库中的文件路径的重大重组。 您的所有书签或现有链接继续有效并且会重定向到更新的 URL。
+
+如果您想让我们知道您对更改的看法或发现某些内容未按预期工作，请[针对此页面提交反馈](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**)来告诉我们。
 
 ## <a name="march-2022-updates"></a>2022 年 3 月更新
 

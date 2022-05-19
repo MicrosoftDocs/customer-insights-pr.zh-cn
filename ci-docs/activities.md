@@ -17,16 +17,16 @@ searchScope:
 - ci-measures
 - ci-segment-suggestions
 - customerInsight
-ms.openlocfilehash: 29b5d3f5848d36abd8e941136a6330dbb7730016
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6c0a1bc5d9a42806b458142804199c733ff530ec
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645632"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755487"
 ---
 # <a name="customer-activities"></a>客户活动
 
-在 Dynamics 365 Customer Insights 中将来自[各种数据源](data-sources.md)的客户活动组合一起，创建一个按时间顺序列出活动的时间线。 将时间线包含在带[客户卡加载项](customer-card-add-in.md)解决方案的 Dynamics 365 应用中，或包含在 Power BI 仪表板中。
+在 Dynamics 365 Customer Insights 中合并来自[不同数据源](data-sources.md)的客户活动。 创建按时间顺序列出活动的时间线。 将时间线与[客户卡加载项](customer-card-add-in.md)解决方案一起包括在 Dynamics 365 应用中。
 
 ## <a name="define-an-activity"></a>定义活动
 
@@ -78,7 +78,7 @@ ms.locfileid: "8645632"
 
 1. 选择 **下一步** 以移至下一个步骤。 您可以选择 **完成并查看**，以立即保存活动并将活动类型设置为 **其他**。 
 
-1. 在 **活动类型** 步骤中，选择活动类型，并根据需要选择是否要在语意上映射某些活动类型，以便在 Customer Insights 的其他区域中使用。 当前，可以在同意映射字段之后在语义上映射 *返回*、*忠诚度*、*销售订单*、*销售订单行* 和 *订阅* 活动类型。 如果活动类型与新活动无关，您可以为自定义活动类型选择 *其他* 或 *新建*。
+1. 在 **活动类型** 步骤中，选择活动类型，并根据需要选择是否要在语意上映射某些活动类型，以便在 Customer Insights 的其他区域中使用。 当前，在同意映射字段后，*反馈*、*忠诚度*、*SalesOrder*、*SalesOrderLine* 和 *订阅* 活动类型支持语义。 如果活动类型与新活动无关，您可以为自定义活动类型选择 *其他* 或 *新建*。
 
 1. 选择 **下一步** 以移至下一个步骤。 
 
@@ -110,7 +110,7 @@ ms.locfileid: "8645632"
 
 要打开客户的时间线，转到 **客户**，选择您要查看的客户配置文件。
 
-如果客户参与了您配置的活动，您会在 **活动时间线** 部分找到它。
+如果客户参与了配置的活动，您会在 **活动时间线** 部分找到它。
 
 :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="在客户配置文件中查看配置的活动。":::
 

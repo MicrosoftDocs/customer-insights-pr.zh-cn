@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645878"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740708"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>通过预测完成部分数据（已弃用）
 
@@ -37,7 +37,7 @@ ms.locfileid: "8645878"
 
 1. 您的组织[在 Microsoft Dataverse 中设置](/ai-builder/build-model#prerequisites)了一个实例，并且它与 Customer Insights 位于同一组织中。
 
-2. 您的访问群体见解环境已附加到您的 Dataverse 实例。
+2. 将您的 Customer Insights 环境附加到您的 Dataverse 实例。
 
 有关详细信息，请参阅[创建新环境](create-environment.md)。
 

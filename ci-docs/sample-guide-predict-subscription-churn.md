@@ -1,8 +1,8 @@
 ---
 title: 订阅流失预测示例指南
 description: 使用本示例指南试用现成的订阅流失预测模型。
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645869"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741400"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>订阅流失预测示例指南
 
@@ -112,61 +112,7 @@ Contoso 是一家生产优质咖啡和咖啡机的公司，它们通过 Contoso 
 
 ## <a name="task-2---data-unification"></a>任务 2 - 数据统一
 
-引入数据后，我们现在将开始 **映射、匹配、合并** 流程以创建统一的客户配置文件。 有关详细信息，请参阅[数据统一](data-unification.md)。
-
-### <a name="map"></a>映射
-
-1. 引入数据后，将联系人从电子商务和忠诚度数据映射到常见数据类型。 转到 **数据** > **统一** > **映射**。
-
-1. 选择表示客户配置文件的实体 – **eCommerceContacts** 和 **loyCustomers**。 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="统一电子商务和忠诚度数据源。":::
-
-1. 选择 **ContactId** 作为 **eCommerceContacts** 的主键，选择 **LoyaltyID** 作为 **loyCustomers** 的主键。
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="统一 LoyaltyId 作为主键。":::
-
-### <a name="match"></a>匹配项
-
-1. 转到 **匹配** 选项卡并选择 **设置顺序**。
-
-1. 在 **主要** 下拉列表中，选择 **eCommerceContacts : eCommerce** 作为主要源并包括所有记录。
-
-1. 在 **实体 2** 下拉列表中，选择 **loyCustomers : LoyaltyScheme** 并包括所有记录。
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="统一匹配电子商务和忠诚度。":::
-
-1. 选择 **创建新规则**
-
-1. 使用 FullName 添加您的第一个条件。
-
-   * 对于 eCommerceContacts，在下拉列表中选择 **FullName**。
-   * 对于 loyCustomers，在下拉列表中选择 **FullName**。
-   * 选择 **标准化** 下拉列表，然后选择 **类型（电话、名称、地址......）**。
-   * 设置 **精度级别**：**基本** 和 **值**：**高**。
-
-1. 为新规则输入名称 **全名、电子邮件**。
-
-   * 通过选择 **添加条件** 为电子邮件地址添加第二个条件
-   * 对于实体 eCommerceContacts，在下拉列表中选择 **电子邮件**。
-   * 对于实体 loyCustomers，在下拉列表中选择 **电子邮件**。 
-   * 将“标准化”留空。 
-   * 设置 **精度级别**：**基本** 和 **值**：**高**。
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="统一名称和电子邮件的匹配规则。":::
-
-7. 选择 **保存** 和 **运行**。
-
-### <a name="merge"></a>合并​​
-
-1. 转到 **合并** 选项卡。
-
-1. 在 **loyCustomers** 实体的 **ContactId** 上，将显示名称更改为 **ContactIdLOYALTY** 以将其与引入的其他 ID 区分开。
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="从忠诚度 ID 中重命名 contactid。":::
-
-1. 选择 **保存** 和 **运行** 以启动合并流程。
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>任务 3 - 配置订阅流失预测
 

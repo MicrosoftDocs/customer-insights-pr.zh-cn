@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645824"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757375"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>将客户细分列表和其他数据导出到 Azure Blob 存储（预览版）
 
@@ -44,7 +44,7 @@ ms.locfileid: "8645824"
 如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
 
 > [!IMPORTANT]
-> 如果为 Azure Blob 存储帐户开启了软删除设置，则导出将失败。 关闭软删除以将数据导出到 Blob。 有关详细信息，请参阅[启用 Blob 软删除](/azure/storage/blobs/soft-delete-blob-enable.md)
+> 如果为 Azure Blob 存储帐户开启了软删除设置，则导出将失败。 关闭软删除以将数据导出到 Blob。 有关详细信息，请参阅[启用 Blob 软删除](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. 转到 **数据** > **导出**。
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 409792bc3f12fca451ef038e3300758bdf9ecf3b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d22c4c785695b23a257a89f1ffa519fdc18b443e
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645905"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741168"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate 连接器（预览版）
 
@@ -25,14 +25,14 @@ ms.locfileid: "8645905"
 
 ## <a name="power-automate-triggers"></a>Power Automate 触发器
 
-使用触发器创建云端流并自动执行重复任务，例如发出通知或执行更高级的操作。 
+使用触发器创建云端流并自动执行重复任务，例如发出通知或执行更高级的操作。
 
-- 当数据源刷新失败时触发的触发器。 
+- 当数据源刷新失败时触发的触发器。
 - 当数据源刷新成功时触发的触发器。
 - 当客户细分超过阈值时触发的触发器。 此触发器只能在超过阈值时触发。
 - 当业务度量超过阈值时触发的触发器。 仅支持没有维度的业务度量。 此触发器只能在超过阈值时触发。
 - 在完成完全刷新（数据源、客户细分、度量......）时触发。
-- 完成统一过程（映射、匹配、合并）的刷新时触发。
+- 完成统一过程的刷新时触发。
 
 [在 Power Automate 中配置触发器。](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 

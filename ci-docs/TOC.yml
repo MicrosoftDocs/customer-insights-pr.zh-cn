@@ -66,12 +66,18 @@
   items:
     - name: 数据统一概述
       href: data-unification.md
-    - name: 映射实体和属性
+    - name: 选择源字段
       href: map-entities.md
-    - name: 匹配实体
+    - name: 删除重复记录
+      href: remove-duplicates.md
+    - name: 匹配条件
       href: match-entities.md
-    - name: 合并实体
+    - name: 统一客户字段
       href: merge-entities.md
+    - name: 查看数据统一
+      href: review-unification.md
+    - name: 更新统一设置
+      href: data-unification-update.md
 - name: 数据扩充
   items:
     - name: 扩充客户配置文件
@@ -282,6 +288,8 @@
       href: apis.md
     - name: API 引用
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: OData 示例查询
+      href: odata-examples.md
 - name: 同意管理（预览版）
   items:
     - name: 帮助中心

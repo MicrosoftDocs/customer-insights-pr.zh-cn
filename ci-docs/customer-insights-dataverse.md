@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 85995cbd7f797810bfb6ecdc8a24d56542f0b5a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1e629cd218b104b115f74f59a53a14e9d60fcc8a
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645594"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741354"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>使用 Microsoft Dataverse 中的 Customer Insights 数据
 
@@ -54,7 +54,7 @@ Customer Insights 中的某些输出实体作为表在 Dataverse 中可用。 �
 
 ### <a name="customerprofile"></a>CustomerProfile
 
-此表包含来自 Customer Insights 的统一客户配置文件。 统一客户配置文件的架构取决于合并过程中使用的实体和属性。 客户配置文件架构通常包含来自 [CustomerProfile Common Data Model 定义](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)的属性子集。
+此表包含来自 Customer Insights 的统一客户配置文件。 统一的客户配置文件的架构取决于数据统一过程中使用的实体和属性。 客户配置文件架构通常包含来自 [CustomerProfile Common Data Model 定义](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)的属性子集。
 
 ### <a name="alternatekey"></a>AlternateKey
 

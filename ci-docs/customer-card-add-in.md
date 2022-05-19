@@ -13,16 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 2dfa6c643cbe9a8531a085d8ce01b0f64776476f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645595"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755625"
 ---
 # <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
-
-
 
 直接在 Dynamics 365 应用中全面了解您的客户。 在支持的 Dynamics 365 应用中安装客户卡加载项后，您可以选择显示客户配置文件字段、见解和活动时间线。 该加载项可以从 Customer Insights 检索数据，而不会影响已连接的 Dynamics 365 应用中的数据。
 
@@ -31,7 +29,7 @@ ms.locfileid: "8645595"
 ## <a name="prerequisites"></a>先决条件
 
 - 该加载项仅适用于 Dynamics 365 模型驱动应用，例如 Sales 或 Customer Service 版本 9.0 及更高版本。
-- 要将 Dynamics 365 数据映射到 Customer Insights 客户配置文件，建议[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)。 如果您使用不同的方法来引入 Dynamics 365 联系人（或客户），您需要确保 `contactid`（或 `accountid`）字段[在数据统一过程的映射步骤中设置为该数据源的主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。 
+- 要将 Dynamics 365 数据映射到 Customer Insights 客户配置文件，建议[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)。 如果您使用不同的方法来引入 Dynamics 365 联系人（或客户），您需要确保 `contactid`（或 `accountid`）字段[在数据统一过程的映射步骤中设置为该数据源的主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。
 - 客户卡加载项的所有 Dynamics 365 用户都必须在 Customer Insights 中[添加为用户](permissions.md)才能查看数据。
 - 需要使用 Customer Insights 中[配置的搜索和筛选功能](search-filter-index.md)才能查找数据。
 - 每个加载项控件都依赖于 Customer Insights 中的特定数据。 某些数据和控件仅在特定类型的环境中可用。 加载项配置将通知您控件是否由于所选环境类型而不可用。 详细了解[环境用例](work-with-business-accounts.md)。
@@ -132,16 +130,16 @@ ms.locfileid: "8645595"
 
 **解决：**
 
-1. 请确保您按照[配置客户卡加载项](#configure-the-customer-card-add-in)说明配置了卡加载项 
+1. 请确保您按照[配置客户卡加载项](#configure-the-customer-card-add-in)说明配置了卡加载项
 
-1. 查看数据引入配置。 编辑包含联系人 ID GUID 的 Dynamics 365 系统的数据源。 如果联系人 ID GUID 在 Power Query 编辑器中显示为大写字符，请尝试以下操作： 
+1. 查看数据引入配置。 编辑包含联系人 ID GUID 的 Dynamics 365 系统的数据源。 如果联系人 ID GUID 在 Power Query 编辑器中显示为大写字符，请尝试以下步骤：
     1. 编辑数据源以在 Power Query 编辑器中打开数据源。
     1. 选择联系人 ID 列。
     1. 选择标题栏中的 **转换** 以查看可用操作。
     1. 选择 **小写**。 验证表中的 GUID 现在是否为小写。
     1. 保存数据源。
-    1. 运行数据引入、统一和下游流程以将更改传播到 GUID。 
+    1. 运行数据引入、统一和下游流程以将更改传播到 GUID。
 
-完成完全刷新后，客户卡加载项控件应显示预期数据。 
+在系统完成完全刷新后，客户卡加载项控件应显示预期数据。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

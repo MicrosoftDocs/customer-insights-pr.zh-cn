@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645803"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757421"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model 中的实体架构
 
@@ -23,7 +23,7 @@ ms.locfileid: "8645803"
 
 此共享数据模型可供应用程序和数据集成者通过提供统一的数据定义来进行协作。 Common Data Model 中包含丰富的元数据系统和标准实体、关系、层次结构、特征等。 其源自 Dynamics 365 应用，具有 260 多个标准实体，并在 GitHub 上开源。 内部和外部合作伙伴构成的大型系统为 Common Data Model 贡献了业界专有的概念。
 
-现在，多个系统和平台实施了 Common Data Model，包括 Power BI 数据流和 Azure 数据服务。 Microsoft Dataverse、Dynamics 365、Power Apps、Power BI 和即将推出的 Azure 数据服务中已对其提供了支持，直接增长了[开放数据方案](https://www.microsoft.com/open-data-initiative)的价值。
+现在，多个系统和平台实施了 Common Data Model，包括 Power BI 数据流和 Azure 数据服务。 Microsoft Dataverse、Dynamics 365、Power Apps、Power BI 和即将推出的 Azure 数据服务中已对其提供了支持，直接增长了[开放数据方案](https://dynamics.microsoft.com/en-us/open-data-initiative/)的价值。
 
 ## <a name="customer-insights-entity-schemas"></a>Customer Insights 实体架构
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 6a1c3791076a7dda4531664ca88632f7f1b914e3
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6d43dc2ca82c034fbd396d92637e7aea8179df77
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645587"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755343"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>使用 Azure Maps（预览版）扩充客户配置文件
 
@@ -51,7 +51,7 @@ Azure Maps 提供以位置为中心的数据和服务，通过内置位置智能
 
 1. 选择 **下一步** 以完成字段映射。
 
-1. 评估是否要修改 **高级设置**。 这是为了尽量灵活地处理高级用例，但是大多数情况下，默认值就足够了：
+1. 评估是否要修改 **高级设置**。 提供这些设置是为了为处理高级用例提供最大的灵活性，但在大多数情况下默认值就足够了：
    - **地质类型**：默认行为是，即使扩充不完整，也会返回最匹配的地址。 若要仅获取完整地址 &mdash; 例如，包含住宅编号的地址 &mdash; 请清除除 **点地址** 之外的所有复选框。 
    - **语言：** 默认情况下，将使用已确定地址所属区域的语言返回地址。 若要应用标准化地址语言，请从下拉菜单中选择该语言。 例如，选择 **英语** 将返回 **Copenhagen, Denmark**，而不是返回 **København, Danmark**。
 
@@ -89,7 +89,7 @@ Azure Maps 提供以位置为中心的数据和服务，通过内置位置智能
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 
-当启用 Dynamics 365 Customer Insights 将数据传输到 Azure Maps 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括可能敏感的数据（例如个人数据）。 Microsoft 将根据您的指示传输此类数据，但您负责确保 Azure Maps 满足您可能承担的任何隐私或安全责任。 有关详细信息，请转到 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
+当启用 Dynamics 365 Customer Insights 将数据传输到 Azure Maps 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括可能敏感的数据（例如个人数据）。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 Azure Maps 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请转到 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
 您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

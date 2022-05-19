@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: bcc50c6fa8f8e2a66ef6164bfa9022e068c0e374
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1fe8d6e8098831ecc8ff28e571340c56a654de6d
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645592"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739197"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -35,9 +35,6 @@ Dynamics 365 Customer Insights 连接到来自一组广泛来源的数据。 连
 - [从 Common Data Model 文件夹](connect-common-data-model.md)
 - [从您自己的 Microsoft Dataverse 湖](connect-dataverse-managed-lake.md)
 - [从 Azure Synapse Analytics 数据库](connect-synapse.md)
-
-> [!NOTE]
-> 如果您使用的是试用版，则导入方法部分包含 **Customer Insights 数据库** 选项。 选择此选项可选择适用于各个行业的示例数据集。 有关详细信息，请参阅 [Dynamics 365 Customer Insights 试用版](trial-signup.md)。
 
 ## <a name="add-data-from-on-premises-data-sources"></a>添加来自本地数据源的数据
 

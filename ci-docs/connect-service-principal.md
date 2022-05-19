@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 1dd99edc327bd41b0442b390f2e4f8664269f553
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 776eee79c25edbd40ed119510a314f5126933c3e
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645797"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739151"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>使用 Azure 服务主体连接到 Azure Data Lake Storage 帐户
 
@@ -40,7 +40,7 @@ ms.locfileid: "8645797"
 
 3. 在 **管理** 下，选择 **企业应用程序**。
 
-4. 使用名称 `Dynamics 365 AI for Customer Insights` 搜索 Microsoft 应用程序 ID `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff`。
+4. 为 **应用程序 ID 的开头为** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` 添加筛选器，或搜索名称 `Dynamics 365 AI for Customer Insights`。
 
 5. 如果找到匹配记录，则表示已存在该服务主体。 
    

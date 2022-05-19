@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645589"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755251"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
 
@@ -27,8 +27,8 @@ Customer Insights 将发送以下事件日志：
 - **审核事件**
   - **APIEvent** - 启用通过 Dynamics 365 Customer Insights UI 完成的更改跟踪。
 - **操作事件**
-  - **WorkflowEvent** - 此工作流允许设置[数据源](data-sources.md)、[统一](data-unification.md)和[扩充](enrichment-hub.md)数据，并最终将数据[导出](export-destinations.md)到其他系统。 所有这些步骤都可以单独完成（例如，触发单个导出）或协调完成（例如，刷新来自触发统一过程的数据源的数据，此统一过程将引入其他扩充，并且在完成后会将数据导出到另一个系统）。 有关更多详细信息，请参阅 [WorkflowEvent 架构](#workflow-event-schema)。
-  - **APIEvent** - 到 Dynamics 365 Customer Insights 的所有客户实例 API 调用。 有关更多详细信息，请参阅 [APIEvent 架构](#api-event-schema)。
+  - **WorkflowEvent** - 此工作流允许您设置[数据源](data-sources.md)、[统一](data-unification.md)和[扩充](enrichment-hub.md)数据，并最终将数据[导出](export-destinations.md)到其他系统。 所有这些步骤都可以单独完成（例如，触发单个导出）。 还可以协调运行这些步骤（例如，从触发统一过程的数据源刷新数据，这将引入扩充并在完成后将数据导出到另一个系统）。 有关详细信息，请参阅 [WorkflowEvent 架构](#workflow-event-schema)。
+  - **APIEvent** - 到 Dynamics 365 Customer Insights 的所有客户实例 API 调用。 有关详细信息，请参阅 [APIEvent 架构](#api-event-schema)。
 
 ## <a name="set-up-the-diagnostic-settings"></a>设置诊断设置
 
@@ -182,7 +182,7 @@ API 事件和工作流事件虽然不同，但它们具有通用的结构和详�
 
 ### <a name="workflow-event-schema"></a>工作流事件架构
 
-工作流包含多个步骤。 [引入数据源](data-sources.md)、[统一](data-unification.md)、[扩充](enrichment-hub.md)和[导出](export-destinations.md)数据。 通过以下过程，所有这些步骤都可以单独完成或协调完成。 
+工作流包含多个步骤。 [引入数据源](data-sources.md)、[统一](data-unification.md)、[扩充](enrichment-hub.md)和[导出](export-destinations.md)数据。 通过以下过程，所有这些步骤都可以单独完成或协调完成。
 
 #### <a name="operation-types"></a>操作类型
 
@@ -215,7 +215,7 @@ API 事件和工作流事件虽然不同，但它们具有通用的结构和详�
 | `time`          | 时间戳 | 需要          | 事件的时间戳 (UTC)。                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | String    | 需要          | 发出事件的实例的 ResourceId。                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | 需要          | 此事件表示的操作的名称。 `{OperationType}.[WorkFlow|Task][Started|Completed]`。 请参阅供参考的[操作类型 ](#operation-types)。 | `Segmentation.WorkflowStarted`，<br> `Segmentation.TaskStarted`， <br> `Segmentation.TaskCompleted`， <br> `Segmentation.WorkflowCompleted`                                 |
-| `category`      | String    | 需要          | 事件的日志类别。 对于工作流事件，始终为 `Operational`                                                                                           | `Operational`                                                                                                                                                            | 
+| `category`      | String    | 需要          | 事件的日志类别。 对于工作流事件，始终为 `Operational`                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | 需要          | 事件的状态。 `Running`、`Skipped`、`Successful`、`Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Long      | 可选          | 操作的持续时间（以毫秒为单位）。                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | 可选          | 具有更多特定事件类别属性的 JSON 对象。                                                                                        | 请参阅[工作流属性](#workflow-properties-schema)子部分                                                                                                       |
