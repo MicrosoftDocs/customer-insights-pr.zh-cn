@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 57ef46416db0a11cde9f9d7650a0b502a01bf0ab
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740708"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800639"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>通过预测完成部分数据（已弃用）
 
@@ -95,7 +95,7 @@ ms.locfileid: "8740708"
 
 2. 选择要查看的预测。
 
-3. 选择 **操作** 列中的省略号，然后选择 **查看**。
+3. 在 **操作** 列中选择竖省略号 (&vellip;)，然后选择 **查看**。
 
 4. 将在预测的视图中看到一些数据点。
    > [!div class="mx-imgBorder"]
@@ -122,7 +122,7 @@ ms.locfileid: "8740708"
 
 2. 选择要编辑的预测。
 
-3. 选择 **操作** 列中的省略号，然后选择 **查看**。
+3. 在 **操作** 列中选择竖省略号 (&vellip;)，然后选择 **查看**。
 
 4. 选择 **在 AI Builder 中自定义**。
 
@@ -139,7 +139,7 @@ ms.locfileid: "8740708"
 
 2. 选择要删除的预测。
 
-3. 选择 **操作** 列中的省略号，然后选择 **删除**。
+3. 在 **操作** 列中选择竖省略号 (&vellip;)，然后选择 **删除**。
 
 4. 确认删除。
 
@@ -153,7 +153,7 @@ ms.locfileid: "8740708"
 - 未授予应用权限。
     1. 转至 [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)。
     1. 选择 **环境**。
-    1. 选择要向其添加权限的环境旁边的省略号，然后选择 **设置**。
+    1. 选择要向其中添加权限的环境旁边的竖省略号 (&vellip;)，然后选择 **设置**。
     1. 展开 **用户 + 权限**，然后选择 **用户**。
     1. 选择 **+ 新建**，然后选择 **用户**。
     1. 选择 **应用程序用户**（如果尚未选择），然后输入以下信息：

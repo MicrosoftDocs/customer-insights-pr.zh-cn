@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 50258365c3134c588aa79ec72c66d0de329e0ff1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 4db97ec02eb96662d30a8536ea42372f81f318d2
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645800"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800133"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>连接到 Power Query 数据源
 
@@ -76,7 +76,7 @@ Power Query 提供一组广泛的连接器来引入数据。 其中大多数连�
 
 1. 转到 **数据** > **数据源**。
 
-2. 选择您要更改的数据源旁边的垂直省略号，然后从下拉菜单中选择 **编辑**。
+2. 选择您要更改的数据源旁边的竖省略号 (&vellip;)，然后从下拉菜单中选择 **编辑**。
 
    > [!div class="mx-imgBorder"]
    > ![编辑选项。](media/edit-option-data-sources.png "编辑选项")

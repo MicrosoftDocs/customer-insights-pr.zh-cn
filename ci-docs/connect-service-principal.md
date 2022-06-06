@@ -1,7 +1,7 @@
 ---
 title: 使用服务主体连接到 Azure Data Lake Storage 帐户
 description: 使用 Azure 服务主体连接到您自己的数据湖。
-ms.date: 04/26/2022
+ms.date: 05/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,22 +11,23 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 776eee79c25edbd40ed119510a314f5126933c3e
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: b18d1f42b9510ebf23f0666322819865d132173b
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8739151"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833370"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>使用 Azure 服务主体连接到 Azure Data Lake Storage 帐户
 
-本文讨论如何使用 Azure 服务主体（而不是存储帐户密钥）连接 Dynamics 365 Customer Insights 与 Azure Data Lake Storage 帐户。 
+本文讨论如何使用 Azure 服务主体（而不是存储帐户密钥）连接 Dynamics 365 Customer Insights 与 Azure Data Lake Storage 帐户。
 
 使用 Azure 服务的自动化工具应始终具有受限权限。 Azure 提供服务主体，而不是让应用程序以完全特权的用户身份登录。 您可以使用服务主体安全地[以数据源形式添加或编辑 Common Data Model 文件夹](connect-common-data-model.md)或者[创建或更新环境](create-environment.md)。
 
 > [!IMPORTANT]
+>
 > - 将使用服务主体的 Data Lake Storage 帐户必须是 Gen2 并且[启用了分层命名空间](/azure/storage/blobs/data-lake-storage-namespace)。 Azure Data Lake Gen1 存储帐户不受支持。
-> - 需要 Azure 订阅的管理员权限才能创建服务主体。
+> - 需要 Azure 租户的管理员权限才能创建服务主体。
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>为 Customer Insights 创建一个 Azure 服务主体
 
@@ -38,29 +39,15 @@ ms.locfileid: "8739151"
 
 2. 在 **Azure 服务** 中，选择 **Azure Active Directory**。
 
-3. 在 **管理** 下，选择 **企业应用程序**。
+3. 在 **管理** 下面，选择 **Microsoft 应用程序**。
 
 4. 为 **应用程序 ID 的开头为** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` 添加筛选器，或搜索名称 `Dynamics 365 AI for Customer Insights`。
 
-5. 如果找到匹配记录，则表示已存在该服务主体。 
-   
+5. 如果找到匹配记录，则表示已存在该服务主体。
+
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="屏幕截图显示一个现有服务主体。":::
-   
-6. 如果没有返回结果，请创建新的服务主体。
 
-### <a name="create-a-new-service-principal"></a>创建新的服务主体
-
-1. 安装 Azure Active Directory PowerShell for Graph 的最新版本。 有关详细信息，请转到[安装 Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)。
-
-   1. 在 PC 中，选择键盘上的 Windows 键，搜索 **Windows PowerShell**，然后选择 **以管理员身份运行**。
-   
-   1. 在打开的 PowerShell 窗口中，输入 `Install-Module AzureAD`。
-
-2. 使用 Azure AD PowerShell 模块为 Customer Insights 创建服务主体。
-
-   1. 在 PowerShell 窗口中，输入 `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`。 将 *您的 [目录 ID]* 替换为要在其中创建服务主体的 Azure 订阅的实际目录 ID。 环境名称参数 `AzureEnvironmentName` 是可选参数。
-  
-   1. 输入 `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`。 此命令针对所选 Azure 订阅上创建Customer Insights 服务主体。 
+6. 如果未返回任何结果，那么您可以[创建一个新的服务主体](#create-a-new-service-principal)。 大多数情况下，服务主体已经存在，只需授予服务主体访问存储帐户的权限即可。
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>向服务主体授予访问存储帐户的权限
 
@@ -77,9 +64,9 @@ ms.locfileid: "8739151"
 1. 在 **添加角色分配** 窗格中，设置以下属性：
    - 角色：**存储 Blob 数据参与者**
    - 向以下项分配访问权限：**用户、组或服务主体**
-   - 选择成员：**Dynamics 365 AI for Customer Insights**（您在此过程中前面创建的[服务主体](#create-a-new-service-principal)）
+   - 选择成员：**Dynamics 365 AI for Customer Insights**（您在此过程中前面查找的[服务主体](#create-a-new-service-principal)）
 
-1.  选择 **查看 + 分配**。
+1. 选择 **查看 + 分配**。
 
 传播更改最多可能需要 15 分钟。
 
@@ -91,7 +78,7 @@ ms.locfileid: "8739151"
 
 1. 转到 [Azure 管理门户](https://portal.azure.com)，登录到您的订阅并打开存储帐户。
 
-1. 在左窗格中，转到 **设置** > **属性**。
+1. 在左侧窗格中，转到 **设置** > **终结点**。
 
 1. 复制存储帐户资源 ID 值。
 
@@ -115,5 +102,18 @@ ms.locfileid: "8739151"
 
 1. 继续执行 Customer Insights 中的剩余步骤以附加存储帐户。
 
+### <a name="create-a-new-service-principal"></a>创建新的服务主体
+
+1. 安装 Azure Active Directory PowerShell for Graph 的最新版本。 有关详细信息，请转到[安装 Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)。
+
+   1. 在 PC 上，按键盘上的 Windows 键，搜索 **Windows PowerShell** 并选择 **以管理员身份运行**。
+
+   1. 在打开的 PowerShell 窗口中，输入 `Install-Module AzureAD`。
+
+2. 使用 Azure AD PowerShell 模块为 Customer Insights 创建服务主体。
+
+   1. 在 PowerShell 窗口中，输入 `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`。 将 *您的 [目录 ID]* 替换为要在其中创建服务主体的 Azure 订阅的实际目录 ID。 环境名称参数 `AzureEnvironmentName` 是可选参数。
+  
+   1. 输入 `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`。 此命令针对所选 Azure 订阅上创建Customer Insights 服务主体。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

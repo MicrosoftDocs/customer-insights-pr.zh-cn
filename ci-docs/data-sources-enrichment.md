@@ -1,19 +1,19 @@
 ---
 title: 数据源扩充
 description: 在经过数据统一流程之前扩充数据源。
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755675"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800270"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>数据源扩充（预览）
 
@@ -27,7 +27,7 @@ ms.locfileid: "8755675"
 
 1. 转到 **数据** > **数据源**。
 
-1. 选择要扩充的数据源旁边的垂直省略号，然后选择 **扩充**。
+1. 选择要扩充的数据源旁边的竖省略号 (&vellip;)，然后选择 **扩充**。
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="数据源扩充页面。":::
 
@@ -41,11 +41,12 @@ ms.locfileid: "8755675"
 
 - [增强的地址](enrichment-enhanced-addresses.md)
 - [增强的公司数据](enrichment-enhanced-company-data.md)
+- [LiveRamp 中的标识数据](enrichment-liveramp.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>管理现有数据源扩充
 
 转到 **我的扩充** 选项卡以查看所有配置的扩充。
 
-选择扩充以查看可用选项。 您还可以选择列表项上的椭圆 (...) 以查看选项。 如果您配置了多个扩充，则可以使用搜索框快速找到它。
+选择扩充以查看可用选项。 您也可以选择列表项上的竖省略号 (&vellip;) 来查看选项。 如果您配置了多个扩充，则可以使用搜索框快速找到它。
 
 您可以查看、编辑、运行或删除数据源扩充。 有关详细信息，请参阅[管理现有扩充](enrichment-hub.md)。

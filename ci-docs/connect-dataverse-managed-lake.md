@@ -11,12 +11,12 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: e8a294a4bad1581539b5905160cddcd625699d90
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645597"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800155"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>连接到 Microsoft Dataverse 托管数据湖中的数据
 
@@ -62,7 +62,7 @@ ms.locfileid: "8645597"
 
 1. 转到 **数据** > **数据源**。
 
-2. 选择要更新的数据源旁边的省略号。
+2. 在要更新的数据源旁边，选择竖省略号 (&vellip;)。
 
 3. 从列表中选择 **编辑** 选项。
 

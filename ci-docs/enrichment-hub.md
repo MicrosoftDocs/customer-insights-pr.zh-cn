@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 5c14e6c96d2f907ba161331b6f92277191cbdbef
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: abc1b6af80e8854ee3bc930453634ef67376c4af
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653512"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800594"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -63,7 +63,7 @@ ms.locfileid: "8653512"
 
 转到 **我的扩充** 选项卡以查看所有配置的扩充。 每个扩充表示为一行，其中包含有关扩充的其他信息。
 
-选择扩充以查看可用选项。 您还可以选择列表项上的椭圆 (...) 以查看选项。 如果您配置了多个扩充，则可以使用搜索框快速找到它。
+选择扩充以查看可用选项。 您也可以选择列表项上的竖省略号 (&vellip;) 来查看选项。 如果您配置了多个扩充，则可以使用搜索框快速找到它。
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="用于管理扩充列表中的扩充的选项。":::
 

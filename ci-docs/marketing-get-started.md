@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 45c59465771e4ad25ed36d5da1568e67b94cf994
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653703"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833297"
 ---
 # <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>在 Dynamics 365 Marketing 中使用统一客户配置文件
 
@@ -23,7 +23,6 @@ ms.locfileid: "8653703"
 - 电子邮件、短信和推送通知中的动态内容（如个性化令牌）基于诸如忠诚度状态、订阅续订日期、父帐户之类的度量，或您在统一的 Customer Insights 配置文件中捕获的任何其他度量。
 - 将 Marketing 中的数据加载到 Customer Insights 中，并将其与来自其他源的客户数据合并。
 - 应用 Customer Insights 数据清理、扩充和模糊匹配工具。
-
 
 ## <a name="use-rich-customer-profiles-in-real-time-marketing"></a>在实时市场营销中使用丰富的客户配置文件
 
@@ -41,4 +40,4 @@ ms.locfileid: "8653703"
 
 如果您想要将 Customer Insights 数据与 Marketing 结合使用，则不只限于选择云存储。 如果您已经设置了自己的 Azure Data Lake Storage，您可以连接 Customer Insights，然后与 Marketing 应用共享数据，就像使用基于云的设置一样。
 
-了解详细信息：[启用从您自己的 Azure Data Lake Storage 与 Dataverse 共享数据](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
+了解详细信息：[启用从您自己的 Azure Data Lake Storage 与 Dataverse 共享数据](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)

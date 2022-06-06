@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-measure-builder
 - customerInsights
-ms.openlocfilehash: 6370df0287362a5512a837cdb588f5d20ef03d3b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d003d054145343cc2feeefeeee413810df43185a
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645922"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800315"
 ---
 # <a name="use-measure-builder-to-create-measures-from-scratch"></a>使用度量生成器从头开始创建度量
 
@@ -88,7 +88,7 @@ ms.locfileid: "8645922"
 
 1. 若要为度量添加更多计算，请选择 **新建计算**。 只能在同一实体路径上使用实体进行新计算。 更多计算将在度量输出实体中显示为新列。
 
-1. 在计算中选择 **...** 以从度量中 **复制**、**重命名** 或 **删除** 计算。
+1. 选择计算上的竖省略号 (&vellip;) 以 **复制**、**重命名** 或 **删除** 度量中的计算。
 
 1. 在 **预览** 区域中，您将看到度量输出实体的数据架构，包括筛选器和维度。 预览会动态响应配置中的更改。
 
@@ -158,7 +158,7 @@ ms.locfileid: "8645922"
    1. 选择 **关系路径**，然后选择应用于识别度量值的实体路径。 如果只有一个指向 *客户* 实体的路径，则不会显示此控件。
    1. 选择 **完成** 以应用您的选择。
 
-1. 在计算中选择 **...** 以从度量中 **复制**、**重命名** 或 **删除** 计算。
+1. 选择计算上的竖省略号 (&vellip;) 以 **复制**、**重命名** 或 **删除** 度量中的计算。
 
 1. 在 **预览** 区域中，您将看到度量输出实体的数据架构，包括筛选器和维度。 预览会动态响应配置中的更改。
 

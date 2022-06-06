@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 04ae4ffd303a47add15044f313c96a23e5efcd76
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0d23a74b5ca68162ee21307705b1f781a7eb97e
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645911"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800548"
 ---
 # <a name="work-with-tags-and-columns"></a>使用标记和列
 
@@ -37,7 +37,7 @@ ms.locfileid: "8645911"
 
 1. 选择您要管理其标记的项。
 
-1. 选择 **显示更多 (...)** 和 **标记**。
+1. 选择竖省略号 (&vellip;)，然后选择 **标记**。
 
    :::image type="content" source="media/segments_list_tag.png" alt-text="具有选项下拉列表和可用选项的选定客户细分。"lightbox="media/segments_list_tag.png":::
 

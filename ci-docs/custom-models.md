@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: f392c5cc5ac88a971565f0ccaf309ce89ce12660
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a44d1f2c00c90de3ed5a9425e3a197e109cb28e0
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645613"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800409"
 ---
 # <a name="custom-machine-learning-models"></a>自定义机器学习模型
 
@@ -92,7 +92,7 @@ ms.locfileid: "8645613"
 
 ## <a name="edit-a-workflow"></a>编辑工作流
 
-1. 在 **自定义模型** 页中，选择之前创建的工作流旁边 **操作** 列内的垂直省略号，然后选择 **编辑**。
+1. 在 **自定义模型** 页中，选择之前创建的工作流旁边 **操作** 列内的竖省略号 (&vellip;)，然后选择 **编辑**。
 
 1. 您可以在 **显示名称** 字段中更新工作流的可识别名称，但不能更改已配置的 Web 服务或管道。 选择 **下一步**。
 
@@ -108,7 +108,7 @@ ms.locfileid: "8645613"
 
 ## <a name="run-a-workflow"></a>运行工作流
 
-1. 在 **自定义模型** 页中，选择之前创建的工作流旁边 **操作** 列内的垂直省略号。
+1. 在 **自定义模型** 页中，选择之前创建的工作流旁边 **操作** 列内的竖省略号 (&vellip;)。
 
 1. 选择 **运行**。
 
@@ -116,7 +116,7 @@ ms.locfileid: "8645613"
 
 ## <a name="delete-a-workflow"></a>删除工作流
 
-1. 在 **自定义模型** 页中，选择之前创建的工作流旁边 **操作** 列内的垂直省略号。
+1. 在 **自定义模型** 页中，选择之前创建的工作流旁边 **操作** 列内的竖省略号 (&vellip;)。
 
 1. 选择 **删除**，然后确认删除。
 

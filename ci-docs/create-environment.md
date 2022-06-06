@@ -1,110 +1,137 @@
 ---
-title: 在 Customer Insights 中创建环境
-description: 使用 Dynamics 365 Customer Insights 的许可订阅创建环境的步骤。
-ms.date: 04/25/2022
+title: 如何 - 创建一个新环境
+description: 用于为 Dynamics 365 Customer Insights 创建环境的步骤。
+ms.date: 05/31/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: adkuppa
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
-ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
+ms.openlocfilehash: 795eaa3598257f5188070f6ea02d04e4423b66eb
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712891"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833547"
 ---
-# <a name="create-an-environment-in-customer-insights"></a>在 Customer Insights 中创建环境
+# <a name="how-to-create-a-new-environment"></a>如何：创建一个新环境
 
-本文介绍在您的组织购买 Dynamics 365 Customer Insights 订阅后如何创建新环境。 
+[购买 Dynamics 365 Customer Insights 的订阅许可证](paid-license.md)后，Microsoft 365 租户的全局管理员会收到一封电子邮件，邀请他们创建环境。 转到 [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) 以开始使用。 在此方案中，您可以直接转至[步骤 1：提供基本信息](#step-1-provide-basic-information)。
 
-组织可以为每个 Customer Insights 许可证创建多个环境。 如果您的组织购买多个许可证，请[联系我们的支持团队](https://go.microsoft.com/fwlink/?linkid=2079641)增加可用环境的数量。 有关产能和附加产能的详细信息，请参阅 [Dynamics 365 许可指南](https://go.microsoft.com/fwlink/?LinkId=866544)。
+创建第一个环境后，Microsoft 365 租户的全局管理员可以[将用户组织中的用户添加为管理员](permissions.md)。 以后，这些管理员可以管理用户和环境。 如果您的组织购买多个 Customer Insights 许可证，请[联系我们的支持团队](https://go.microsoft.com/fwlink/?linkid=2079641)增加可用环境的数量。 有关产能和附加产能的详细信息，请参阅 [Dynamics 365 许可指南](https://go.microsoft.com/fwlink/?LinkId=866544)。
 
-> [!NOTE]
+> [!TIP]
 > 如果您要试用此服务，请参阅[设置试用环境](trial-signup.md)。
 
-## <a name="create-a-new-environment"></a>创建新环境
+## <a name="prerequisites"></a>先决条件
 
-购买 Customer Insights 的订阅许可证后，Microsoft 365 租户的全局管理员会收到一封电子邮件，邀请他们创建环境。 转到 [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) 以开始使用。 
+您需要 Customer Insights 中的[管理员权限](permissions.md)来创建或管理环境。
 
-引导式体验帮助您完成所需步骤来收集新环境必需的所有信息。 您需要 Customer Insights 中的[管理员权限](permissions.md)来创建或管理环境。
+## <a name="start-the-environment-creation-process"></a>启动环境创建过程
 
 1. 打开环境选择器，并选择 **+ 新建**。
   
    :::image type="content" source="media/environment-picker.png" alt-text="选择环境选取器。":::
 
-1. 请按照以下各节中概括的引导式体验操作。
+1. 按照以下部分中概述的指导经验，提供新环境所需的所有信息。 如果以前配置了环境，则还可以[复制该配置](#copy-the-environment-configuration)。
 
-### <a name="step-1-provide-environment-information"></a>步骤 1：提供环境信息
+## <a name="step-1-provide-basic-information"></a>步骤 1：提供基本信息
 
-在 **基本信息** 步骤中，选择是从头创建环境还是[复制其他环境的数据](manage-environments.md#copy-the-environment-configuration)。
+在 **基本信息** 步骤中，选择是从头创建环境还是[复制其他环境的数据](#copy-the-environment-configuration)。
 
    :::image type="content" source="media/environment-settings-dialog.png" alt-text="用于创建新 Customer Insights 环境的对话框。":::
 
 提供以下详细信息：
-   - **名称**：此环境的名称。 如果已从现有环境中复制，则此字段已填写，但可以更改。
-   - **选择业务**：选择新环境的主要访问群体。 您可以处理单个客户（企业到客户）或[企业客户](work-with-business-accounts.md)（企业到企业）。
-   - **类型**：选择是要创建生产环境还是沙盒环境。 沙盒环境不允许进行计划的数据刷新，而是用于预实施和测试。 沙盒环境使用与当前选择的生产环境相同的主要访问群体。
-   - **区域**：要在其中部署和托管该服务的区域。
 
-### <a name="step-2-configure-data-storage"></a>步骤 2：配置数据存储
+- **名称**：此环境的名称。 如果已从现有环境中复制，则此字段已填写，但可以更改。
+- **选择业务**：选择新环境的主要访问群体。 您可以处理单个客户（企业到客户）或[企业客户](work-with-business-accounts.md)（企业到企业）。 如果您的组织主要与个人开展业务，例如零售商或咖啡店，请选择个人消费者。 如果您的主要访问群体是其他公司，例如汽车制造商或造纸公司，请选择企业客户。
+- **类型**：选择是要创建生产环境还是沙盒环境。 沙盒环境不允许进行计划的数据刷新，而是用于预实施和测试。 沙盒环境使用与当前选择的生产环境相同的主要访问群体。
+- **区域**：要在其中部署和托管该服务的区域。 要[使用您自己的 Azure Data Lake Storage 帐户](own-data-lake-storage.md)或[连接到现有 Microsoft Dataverse 组织](customer-insights-dataverse.md)，Customer Insights 环境必须在同一区域。
+
+## <a name="step-2-configure-data-storage"></a>步骤 2：配置数据存储
 
 在 **数据存储** 步骤中，选择存储 Customer Insights 数据的位置。
 
-您将有两个选项：**Customer Insights 存储**（由 Customer Insights 团队管理的 Azure 数据湖）和 **Azure Data Lake Storage**（您自己的 Azure Data Lake Storage）。 默认情况下已选择 Customer Insights 存储选项。
+有两个选项可供您选择：
 
-:::image type="content" source="media/data-storage-environment.png" alt-text="选择 Azure Data Lake Storage 以存储数据。":::
+- **Customer Insights 存储**：数据存储由 Customer Insights 团队管理。 这是默认选项，除非有关于将数据存储在您自己的存储帐户中的特定要求，否则我们建议使用此选项。
+- **Azure Data Lake Storage**：指定您自己的 Azure Data Lake Storage 帐户以存储数据，以便可以完全控制数据的存储位置。 有关详细信息，请参阅[使用您自己的 Azure Data Lake Storage 帐户](own-data-lake-storage.md)。
 
-将数据保存到 Azure Data Lake Storage，即表示您同意将数据传输并存储到该 Azure 存储帐户的适当地理位置。 此位置可能与 Dynamics 365 Customer Insights 中的数据存储位置不同。 在 [Microsoft 信任中心](https://www.microsoft.com/trust-center)了解更多信息。
+:::image type="content" source="media/data-storage-environment.png" alt-text="选择用于存储您的数据的首选选项。":::
 
-> [!NOTE]
-> Customer Insights 当前支持以下各项：  
-> - 来自您在创建环境时选择的同一 Azure 区域的 Azure Data Lake Storage 帐户。
-> - 本身为 Gen2 并且启用了 *分层命名空间* 的 Azure Data Lake Storage 帐户。 Azure Data Lake Gen1 存储帐户不受支持。
+## <a name="step-3-connect-to-microsoft-dataverse"></a>步骤 3：连接到 Microsoft Dataverse
 
-对于 Azure Data Lake Storage 选项，您可以在基于资源的选项和基于订阅的选项之间选择以进行身份验证。 有关详细信息，请参阅使用 Azure 服务主体[连接到 Azure Data Lake Storage 帐户](connect-service-principal.md)。 存储帐户上必须存在名为 `customerinsights` 的容器。
+**Microsoft Dataverse** 步骤让您可以将 Customer Insights 与您的 Dataverse 环境相连接。 与 Dataverse 共享数据，以便与基于 Dataverse 的业务应用程序（例如 Dynamics 365 Marketing 或 Power Apps 中的模型驱动应用程序）一起使用数据。
 
-当数据引入等系统流程完成时，系统会在您指定的存储帐户内创建相应的文件夹。 将根据流程名称创建数据文件和 *model.json* 文件并将其添加到文件夹中。
+如果您没有自己的 Dataverse 环境，请将此字段留空，我们将为您创建一个环境。
 
-如果您创建多个 Customer Insights 环境并选择将这些环境中的输出实体保存到您的存储帐户，Customer Insights 将为容器中具有 `ci_environmentID` 的每个环境创建单独的文件夹。
+有关详细信息，请参阅[在 Microsoft Dataverse 中使用 Customer Insights 数据](customer-insights-dataverse.md)。
 
-### <a name="step-3-connect-to-microsoft-dataverse"></a>步骤 3：连接到 Microsoft Dataverse
-   
-**Microsoft Dataverse** 步骤让您可以将 Customer Insights 与您的 Dataverse 环境相连接。
-
-提供您自己的 Microsoft Dataverse 环境，以便与基于 Dataverse 的业务应用程序（例如 Dynamics 365 Marketing 或 Power Apps 中的模型驱动应用程序）共享数据（配置文件和见解）。 如果您没有自己的 Dataverse 环境，请将此字段留空，我们将设置一个环境。
-
-通过连接到 Dataverse 环境，您还可以[使用 Power Platform 数据流和网关从本地数据源中引入数据](data-sources.md#add-data-from-on-premises-data-sources)。
-
-> [!IMPORTANT]
-> 1. Customer Insights 和 Dataverse 必须在同一区域才能启用数据共享。
-> 1. 您必须在 Dataverse 环境中具有全局管理员角色。 验证此 [Dataverse 环境是否关联](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment)到某些安全组，并确保您已被添加到这些安全组。
-> 1. 现有 Customer Insights 环境中没有与该 Dataverse 环境关联的环境。 了解如何[删除与 Dataverse 环境的现有连接](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment)。
-
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="为净新实例自动启用了与 Microsoft Dataverse 的数据共享。":::
-
-有关从您自己的 Azure Data Lake Storage 与 Microsoft Dataverse 共享数据的详细信息，请参阅[连接到 Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse)。
-
-Customer Insights 不支持以下数据共享场景：
-- 如果您启用与 Dataverse 的数据共享，那么您将无法[在实体中创建预测值或缺失值](predictions.md)。
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="为净新环境自动启用了与 Microsoft Dataverse 的数据共享。":::
 
 ### <a name="step-4-finalize-the-settings"></a>步骤 4：完成设置
 
-在 **检查** 步骤中，查看所有指定的设置。 当全部设置看上去都已经完成后，选择 **创建** 设置环境。 
+在 **检查** 步骤中，查看所有指定的设置。 当全部设置看上去都已经完成后，选择 **创建** 设置环境。
 
-您可以在以后更改大部分设置。 有关详细信息，请参阅[管理环境](manage-environments.md)。
+您可以在以后更改某些设置。 有关详细信息，请参阅[管理环境](manage-environments.md)。
 
 ## <a name="work-with-your-new-environment"></a>使用新环境
 
-请查看以下文章来帮助您开始配置 Customer Insights： 
+请查看以下文章来帮助您开始配置 Customer Insights：
 
 - [添加更多用户和分配权限](permissions.md)。
 - [引入您的数据源](data-sources.md)并通过[数据统一过程](data-unification.md)运行它们，以获得[统一的客户配置文件](customer-profiles.md)。
 - [扩充统一的客户配置文件](enrichment-hub.md)或[运行预测模型](predictions-overview.md)。
 - [创建客户细分](segments.md)以对客户进行分组，创建[度量](measures.md)以评价 KPI。
 - [设置连接](connections.md)和[导出](export-destinations.md)，处理其他应用程序中的数据子集。
+
+## <a name="copy-the-environment-configuration"></a>复制环境配置
+
+作为管理员，您可以选择在创建新环境时从现有环境中复制配置。
+
+:::image type="content" source="media/environment-settings-dialog.png" alt-text="环境设置中的设置选项的屏幕截图。":::
+
+您将看到组织中可以从中复制数据的所有可用环境的列表。
+
+复制以下配置设置：
+
+- 通过 Power Query 导入的数据源
+- 数据统一配置
+- Segments
+- 度量
+- 关系
+- 活动
+- 搜索和筛选索引
+- 导出
+- 刷新计划
+- 扩充
+- 预测模型
+- 角色分配
+
+## <a name="set-up-a-copied-environment"></a>设置复制的环境
+
+复制环境配置时，必须执行一些额外步骤来确认凭据：
+
+- 客户配置文件。 首先，验证和引入您的数据源并运行数据统一以重新创建客户配置文件。
+- 数据源凭据。 您必须为每个数据源提供凭据以手动验证和刷新数据源。
+- Common Data Model 文件夹和 Dataverse 中的数据源。 您必须使用源环境中相同的名称手动创建这些数据源。
+- 用于导出和扩充的连接机密。 您必须重新验证连接，然后重新激活扩充和导出。
+
+创建复制的环境后，将显示确认消息。 选择 **转到数据源** 查看数据源的列表。
+
+所有数据源都将显示 **需要凭据** 状态。 编辑数据源并输入凭据来刷新。
+
+:::image type="content" source="media/data-sources-copied.png" alt-text="已复制并需要验证的数据源列表。":::
+
+刷新数据源后，请转到 **数据** > **统一**。 在这里，您将找到源环境中的设置。 根据需要进行编辑，或选择 **运行** 启动数据统一流程，创建统一的客户实体。
+
+当数据统一完成时，再转到 **度量** 和 **细分** 进行刷新。
+
+在重新激活导出和扩充功能之前，请转到 **管理** > **连接** 重新验证新环境中的连接。
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 9eb06a1190fe4e8012ecd3d6742b8b3f5f4d6349
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
+ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653466"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763568"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>引入您自己的 Azure 密钥保管库（预览）
 
@@ -89,9 +89,9 @@ ms.locfileid: "8653466"
 
 | Type        | 权限          |
 | ----------- | -------------------- |
-| 项         | [获取密钥](/rest/api/keyvault/get-keys)、[获取密钥](/rest/api/keyvault/get-key)                                 |
-| 机密      | [获取密钥](/rest/api/keyvault/get-secrets)、[获取密钥](/rest/api/keyvault/get-secret)                     |
-| 证书 | [获取证书](/rest/api/keyvault/get-certificates)、[获取证书](/rest/api/keyvault/get-certificate) |
+| 项         | [获取密钥](/rest/api/keyvault/keys/get-keys/get-keys)、[获取密钥](/rest/api/keyvault/keys/get-key/get-key)                                 |
+| 机密      | [获取密钥](/rest/api/keyvault/secrets/get-secrets/get-secrets)、[获取密钥](/rest/api/keyvault/secrets/get-secret/get-secret)                     |
+| 证书 | [获取证书](/rest/api/keyvault/certificates/get-certificates/get-certificates)、[获取证书](/rest/api/keyvault/certificates/get-certificate/get-certificate) |
 
 前面的值是在执行期间列出和读取的最小值。
 

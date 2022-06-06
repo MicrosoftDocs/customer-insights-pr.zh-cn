@@ -1,7 +1,7 @@
 ---
 title: 将 Common Data Model 数据连接到 Azure Data Lake 帐户
 description: 使用 Azure Data Lake Storage 处理 Common Data Model 数据。
-ms.date: 01/25/2022
+ms.date: 05/24/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -13,12 +13,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: eeb6b9d97be5f9c0b9f6cbd6dbc6985559a1cd9d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 2e8564950a3269180a85f80fb736d2dcbd1b03b6
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645641"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833345"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>使用 Azure Data Lake 帐户连接到 Common Data Model 文件夹
 
@@ -46,16 +46,16 @@ ms.locfileid: "8645641"
 
 1. 选择 **Azure Data Lake Storage**，输入数据源的 **名称**，然后选择 **下一步**。
 
-   - 遇到提示时，选择与行业相关的其中一个示例数据集，然后选择 **下一步**。 
+   - 遇到提示时，选择与行业相关的其中一个示例数据集，然后选择 **下一步**。
 
 1. 您可以在使用基于资源的选项进行身份验证和基于订阅的选项进行身份验证之间进行选择。 有关详细信息，请参阅[使用 Azure 服务主体连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。 输入 **服务器地址**，选择 **登录**，然后选择 **下一步**。
    > [!div class="mx-imgBorder"]
    > ![用于输入 Azure Data Lake 的新连接详细信息的对话框。](media/enter-new-storage-details.png)
    > [!NOTE]
-   > 您需要具有下列角色之一才能连接到上面所引用的容器或存储帐户，以及创建数据源：
-   >  - 存储 Blob 数据读取器
-   >  - 存储 Blob 数据负责人
-   >  - 存储 Blob 数据参与者
+   > 您需要在存储帐户的容器上具有以下角色之一，并创建数据源：
+   >
+   >  - 存储 Blob 数据读取器足以从存储帐户读取数据并将数据引入 Customer Insights。 
+   >  - 如果您要直接在 Customer Insights 中编辑清单文件，则必须是存储 Blob 数据参与者或负责人。
 
 1. 在 **选择 Common Data Model 文件夹** 对话框中，选择要从中导入数据的 model.json 或 manifest.json 文件，然后选择 **下一步**。
    > [!NOTE]
@@ -65,11 +65,11 @@ ms.locfileid: "8645641"
    > [!div class="mx-imgBorder"]
    > ![其中显示了 model.json 文件中的实体列表的对话框。](media/review-entities.png)
 
-8. 指示想要哪些数据实体启用数据分析，然后选择 **保存**。 数据分析可启用分析和其他功能。 您可以选择整个实体（选择实体中的所有属性），也可以选择所选的某些属性。 默认情况下，不会为数据分析启用任何实体。
+1. 指示想要哪些数据实体启用数据分析，然后选择 **保存**。 数据分析可启用分析和其他功能。 您可以选择整个实体（选择实体中的所有属性），也可以选择所选的某些属性。 默认情况下，不会为数据分析启用任何实体。
    > [!div class="mx-imgBorder"]
    > ![显示数据分析的对话框。](media/dataprofiling-entities.png)
 
-9. 保存所作选择后，**数据源** 页面将打开。 现在，您应该会看到作为数据源的 Common Data Model 文件夹连接。
+1. 保存所作选择后，**数据源** 页面将打开。 现在，您应该会看到作为数据源的 Common Data Model 文件夹连接。
 
 > [!NOTE]
 > Model.json 或 manifest.json 文件只能与同一环境中的一个数据源相关联。 但是，相同的 model.json 或 manifest.json 文件可用于多个环境中的数据源。
@@ -80,7 +80,7 @@ ms.locfileid: "8645641"
 
 1. 转到 **数据** > **数据源**。
 
-2. 选择要更新的数据源旁边的省略号。
+2. 在要更新的数据源旁边，选择竖省略号 (&vellip;)。
 
 3. 从列表中选择 **编辑** 选项。
 
@@ -93,13 +93,6 @@ ms.locfileid: "8645641"
 
    > ![用于输入 Azure Data Lake 到现有存储帐户的连接详细信息的对话框。](media/enter-existing-storage-details.png)
 
-   > [!NOTE]
-   > 您需要具有下列角色之一才能连接到上面所引用的容器或存储帐户，以及创建数据源：
-   >  - 存储 Blob 数据读取器
-   >  - 存储 Blob 数据负责人
-   >  - 存储 Blob 数据参与者
-
-
 6. （可选）从容器中选择另一个具有不同实体集的 model.json 或 manifest.json 文件。
 
 7. 或者，您可以选择要引入的其他实体。 如果没有任何依赖项，还可以删除任何已选定的实体。
@@ -107,7 +100,6 @@ ms.locfileid: "8645641"
    > [!IMPORTANT]
    > 如果现有 model.json 或 manifest.json 文件以及实体集上存在依赖项，则会看到错误消息，并且无法选择其他 model.json 或 manifest.json 文件。 在更改 model.json 或 manifest.json 文件或使用想要避免删除依赖项的 model.json 或 manifest.json 文件创建新数据源之前，请删除这些依赖项。
 
-8. 或者，您可以选择其他属性或实体以启用数据分析或禁用所选项。   
-
+8. 或者，您可以选择其他属性或实体以启用数据分析或禁用所选项。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

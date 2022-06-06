@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 1fe8d6e8098831ecc8ff28e571340c56a654de6d
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: 355d52eabde90e0764817cf479821264ebb2e5eb
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8739197"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800455"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -76,7 +76,7 @@ Dynamics 365 Customer Insights 连接到来自一组广泛来源的数据。 连
 
 1. 转到 **数据** > **数据源**。
 
-2. 选择您要更改刷新的数据源旁边的垂直省略号，然后从下拉列表中选择 **刷新**。
+2. 选择您要更改刷新的数据源旁边的竖省略号 (&vellip;)，然后从下拉列表中选择 **刷新**。
 
 3. 现在，将为数据源触发手动刷新。 刷新数据源将更新数据源中指定的所有实体的实体架构和数据。
 
@@ -86,7 +86,7 @@ Dynamics 365 Customer Insights 连接到来自一组广泛来源的数据。 连
 
 1. 转到 **数据** > **数据源**。
 
-2. 选择您要删除的数据源旁边的垂直省略号，然后从下拉菜单中选择 **删除**。
+2. 选择您要删除的数据源旁边的竖省略号 (&vellip;)，然后从下拉菜单中选择 **删除**。
 
 3. 确认删除。
 

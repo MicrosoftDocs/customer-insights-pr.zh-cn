@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641797"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833757"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights 试用常见问题
 
@@ -62,9 +62,9 @@ ms.locfileid: "8641797"
 
 通常，我们建议在升级到 Customer Insights 的付费版本时使用您自己的数据重新开始。 
 
-或者，如果您仅使用 Customer Insights，可以在购买 Customer Insights 后从试用环境复制数据。 您必须是 Customer Insights 试用版的管理员和 Microsoft 365 租户的全局管理员，或者是您组织中的 Dynamics 365 管理员，才能将设置从试用环境迁移到付费环境。 
+或者，如果您仅使用 Customer Insights，可以在购买 Customer Insights 后从试用环境复制数据。 您必须是 Customer Insights 试用版的管理员和 Microsoft 365 租户的全局管理员，或者是您组织中的 Dynamics 365 管理员，才能将设置从试用环境迁移到付费环境。
 
-首次登录 Customer Insights 的付费实例后，系统会要求您创建一个新环境。 在此过程中，您可以选择从现有环境复制配置并迁移大部分设置。 如果您拥有上述权限，试用环境将显示在此列表中。 有关详细信息，请参阅[复制环境配置](manage-environments.md#copy-the-environment-configuration)。
+首次登录 Customer Insights 的付费实例后，系统会要求您创建一个新环境。 在此过程中，您可以选择从现有环境复制配置并迁移大部分设置。 如果您拥有上述权限，试用环境将显示在此列表中。 有关详细信息，请参阅[复制环境配置](create-environment.md#copy-the-environment-configuration)。
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>试用限制和配额是多少？
 
@@ -81,9 +81,10 @@ ms.locfileid: "8641797"
 
 Customer Insights 功能的大多数功能在试用中都可用。
 
-以下功能 **不可用**： 
+以下功能 **不可用**：
+
 - 不能创建使用您自己的 Azure Data Lake Storage 帐户的新环境。
-- 您无法删除试用环境。 
+- 您无法删除试用环境。
 
 ### <a name="how-long-does-the-trial-last"></a>试用持续多长时间？
 

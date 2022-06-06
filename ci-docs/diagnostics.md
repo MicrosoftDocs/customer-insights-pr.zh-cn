@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
+ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755251"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807570"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
 
@@ -38,7 +38,7 @@ Customer Insights 将发送以下事件日志：
 
 - 您有有效的 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)。
 - 您在 Customer Insights 中具有[管理员](permissions.md#admin)权限。
-- 您在 Azure 上的目标资源上拥有 **参与者** 和 **用户访问管理员** 角色。 该资源可以是 Azure 存储帐户、Azure 事件中心或 Azure Log Analytics 工作区。 有关详细信息，请参阅[使用 Azure 门户添加或删除 Azure 角色分配](/azure/role-based-access-control/role-assignments-portal)。
+- 您在 Azure 上的目标资源上拥有 **参与者** 和 **用户访问管理员** 角色。 该资源可以是 Azure Data Lake Storage 存储帐户、Azure 事件中心或 Azure Log Analytics 工作区。 有关详细信息，请参阅[使用 Azure 门户添加或删除 Azure 角色分配](/azure/role-based-access-control/role-assignments-portal)。 在 Customer Insights 中配置诊断设置时需要此权限，成功设置后可以更改此权限。
 - 满足 Azure 存储、Azure 事件中心或 Azure 日志分析的[目标要求](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)。
 - 您在资源所属的资源组中至少具有 **读者** 角色。
 

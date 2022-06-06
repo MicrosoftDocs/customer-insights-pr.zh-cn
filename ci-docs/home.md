@@ -11,26 +11,26 @@ manager: shellyha
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: cdeb48df2172785ed8adad0f21943974ec39d14d
-ms.sourcegitcommit: 94de4dacdb8a7f4bc0f5914e7398622e70b81ff3
+ms.openlocfilehash: 621977068dc49b55f50f00e9762a4a5952d7b453
+ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743402"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8768339"
 ---
 # <a name="explore-customer-insights"></a>浏览 Customer Insights
 
 您可以在以下 URL 上访问 [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/)：[https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/)。
 
-**主页** 页面显示或指导您完成关键功能的配置过程，并提供客户细分、度量和扩充数据的概述。
+**主页** 页面指导您完成关键功能的配置过程，并提供客户细分、度量和扩充数据的概述。
 
 :::image type="content" source="media/home-page.png" alt-text="显示示例见解的主页屏幕截图。":::
 
 ## <a name="left-side-pane"></a>左侧窗格
 
-使用左侧窗格在不同区域 Customer Insights 之间导航。 
+使用左侧窗格在 Customer Insights 的不同区域之间导航。
 
-如果您与企业客户和个人消费者合作，您可以选择您的主要访问群体来相应地设置您的重点。 
+如果您与企业客户和个人消费者合作，您可以选择您的主要访问群体来相应地设置您的重点。
 
 ## <a name="application-header"></a>应用程序标题
 
@@ -38,7 +38,7 @@ ms.locfileid: "8743402"
 
 此笑脸图标是 **反馈** 控件。 选择它可告诉我们您的 Customer Insights 体验。 我们正在积极听取您的反馈，并提前感谢您让我们知道您喜欢什么以及我们可以如何改进。
 
-**设置** 控件（由齿轮图标表示）可让您收集 Customer Insights 的会话详细信息并配置 Microsoft 365 配置文件的全局设置。 
+**设置** 控件（由齿轮图标表示）可让您收集 Customer Insights 的会话详细信息并配置 Microsoft 365 配置文件的全局设置。
 
 以问号图标显示的 **帮助** 选项将提供上下文帮助链接和其他有用的资源。
 
@@ -46,7 +46,7 @@ ms.locfileid: "8743402"
 
 ## <a name="getting-started-with-customer-insights-section"></a>Customer Insights 入门部分
 
-此部分包含可帮助您完成 Customer Insights 环境设置过程的卡片。 
+此部分包含可帮助您完成 Customer Insights 环境设置过程的卡片。
 
 1. **添加数据** 卡可以帮助您导入数据。 Customer Insights 支持[一些用于引入客户数据的选项](data-sources.md)。 选择 **添加数据源** 以开始操作。
 1. 在初始数据导入成功完成后，您可以使用 **统一数据** 卡片协调来自不同来源的数据，然后创建[统一的客户配置文件](data-unification.md)。 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 5b39452d7a4612242739e8000e57217954c71289
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641505"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808535"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR 下的数据使用者权限 (DSR) 请求
 
@@ -41,7 +41,7 @@ Customer Insights 管理员可以按照以下步骤删除数据源中删除的�
 1. 登录到 Dynamics 365 Customer Insights。
 2. 转到 **数据** > **数据源**
 3. 对于包含已删除客户数据的列表中的每个数据源：
-   1. 选择 (...)，然后选择 **刷新**。
+   1. 选择竖省略号 (&vellip;)，然后选择 **刷新**。
    2. 在 **状态** 下检查数据源的状态。 选中标记表示刷新成功。 警告三角形表示已出错。 如果显示警告三角形，请与 D365CI@microsoft.com 联系。
 
 > [!div class="mx-imgBorder"]
@@ -52,7 +52,7 @@ Customer Insights 管理员可以按照以下步骤删除数据源中删除的�
 Customer Insights 管理员可以执行以下步骤删除 Customer Insights 用户数据：
 
 1. 登录到 Dynamics 365 Customer Insights。
-2. 转到 **管理** > **权限**。
+2. 转到 **管理** > **安全** > **权限**。
 3. 选中要删除的用户的复选框。
 4. 选择 **删除**。
 

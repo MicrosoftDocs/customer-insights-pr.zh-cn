@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 1a19d83930d667bdca5301dcc5a3ffa5db6a7bdc
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741122"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833528"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 入门
 
@@ -25,21 +25,21 @@ Customer Insights 可帮助您更好地了解客户。 连接来自各种事务�
 
 ## <a name="step-1-create-an-environment"></a>步骤 1：创建环境
 
-首先，必须创建一个工作环境。 如果您的组织已经购买了许可证，请参阅[创建环境](create-environment.md)。 若要开始试用 Customer Insights，请参阅[设置试用环境](trial-signup.md)。
+首先，创造一个工作环境。 如果您的组织已经购买了许可证，请参阅[创建环境](create-environment.md)。 若要开始试用 Customer Insights，请参阅[设置试用环境](trial-signup.md)。
 
 ## <a name="step-2-explore-customer-insights"></a>步骤 2：浏览 Customer Insights
 
-首次登录到 Customer Insights 时，您可以配置设置并浏览该产品。
+首次登录到 Customer Insights 时，配置设置并浏览该产品。
 
 1. 使用 Microsoft Azure Active Directory (AAD) 用户帐户[登录到 Customer Insights](https://home.ci.ai.dynamics.com)。
 
-1. [更改环境](manage-environments.md#switch-environments)以查看演示数据并[了解 Customer Insights](home.md)。
+1. 更改环境以查看演示数据并[了解 Customer Insights](home.md)。
 
 ## <a name="step-3-ingest-unify-and-set-up-relationships-for-your-data"></a>步骤 3：引入、统一和设置数据的关系
 
-统一配置文件是获取数据的见解和采取操作的基础。 从各个源中引入数据并运行数据统一过程以合并统一配置文件。 指定引入的实体之间的关系以使用扩充功能向配置文件添加信息。
+统一配置文件是获取数据的见解和采取操作的基础。 从各个源中引入数据并运行数据统一过程以合并统一配置文件。 指定所引入实体之间的关系并使用扩充功能将信息添加到配置文件。
 
-1. 通过从多个选项创建数据源来引入数据。 在 [Power Query 连接器](connect-power-query.md)、[Common Data Model 文件夹](connect-common-data-model.md)或 [Microsoft Dataverse](connect-dataverse-managed-lake.md) 之间进行选择。 
+1. 通过从多个选项创建数据源来引入数据。 在 [Power Query 连接器](connect-power-query.md)、[Common Data Model 文件夹](connect-common-data-model.md)或 [Microsoft Dataverse](connect-dataverse-managed-lake.md) 之间进行选择。
 
 1. 通过标识[源字段](map-entities.md)、删除[重复项](remove-duplicates.md)、[匹配条件](match-entities.md)和[统一字段](merge-entities.md)来运行[数据统一流程](data-unification.md)。
 
@@ -47,7 +47,7 @@ Customer Insights 可帮助您更好地了解客户。 连接来自各种事务�
 
 ## <a name="step-4-enhance-unified-profiles-with-predictions-activities-and-measures"></a>步骤 4：通过预测、活动和度量增强统一配置文件
 
-设置统一配置文件后，可以增强您的数据并进一步增加其提供的信息。
+通过设置统一的配置文件，增强您的数据并进一步增加它们提供的信息。
 
 1. 在不断扩大的扩充提供商库中进行选择以[扩充客户数据](enrichment-hub.md)。
 
@@ -59,7 +59,7 @@ Customer Insights 可帮助您更好地了解客户。 连接来自各种事务�
 
 ## <a name="step-5-create-segments-and-activate-data-through-various-export-options"></a>步骤 5：通过各种导出选项创建客户细分和激活数据
 
-现在您的数据完整，并且包含有关客户的各种信息，您可以寻找方法处理这些数据。
+现在，您的数据是完整的并且包含有关您的客户的大量信息，请寻找对这些数据采取操作的方法。
 
 1. [创建客户细分](segments.md)（即客户数据的子集），以确保操作与目标客户有关。
 

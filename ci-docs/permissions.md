@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 74c7ff7cda8431c04dd34713becefa7e346331b4
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 8022563f8994400b88389c20d7d661d9ea82bab1
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740892"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833711"
 ---
 # <a name="user-permissions"></a>用户权限
 
@@ -65,11 +65,11 @@ ms.locfileid: "8740892"
 ## <a name="admin-owner"></a>管理员（负责人）
 
 - 管理员将具有所有权限。
-- [重置和删除](manage-environments.md#reset-an-existing-environment)环境。
+- [重置和删除](manage-environments.md#reset-an-existing-environment-preview)环境。
 
 ## <a name="assign-roles-and-permissions"></a>分派角色和权限
 
-1. 转到 **管理** > **安全** > **用户***。
+1. 转到 **管理** > **安全** > **用户**。
 
 1. 选择 **添加用户** 以打开 **添加/编辑权限** 窗格。
 

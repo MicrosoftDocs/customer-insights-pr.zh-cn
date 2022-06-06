@@ -13,12 +13,12 @@ searchScope:
 - ci-segment-builder
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: c8e9e4976ade36c1c3c4f688a667b329bfde6e3e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e1a9cd0e3c0347285026d937ca7d951a602e7160
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645863"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800085"
 ---
 # <a name="create-segments"></a>创建客户细分
 
@@ -134,8 +134,9 @@ ms.locfileid: "8645863"
 > - 在为条件设置运算符时，客户细分生成器不会建议实体中的有效值。 您可以转到 **数据** > **实体**，然后下载实体数据以查看哪些值可用。
 > - 基于日期的条件让您可以在固定日期与浮动日期范围之间切换。
 > - 如果您的客户细分有多个规则，您正在编辑的规则旁边会显示一条垂直的蓝线。
-> - 可以将规则和条件移动到客户细分定义中的其他位置。 选择规则或条件旁边的 [...]，然后选择其移动方法和目标位置。
+> - 可以将规则和条件移动到客户细分定义中的其他位置。 选择规则或条件旁边的竖省略号 (&vellip;)，并选择其移动方法和位置。
 > - 命令栏中的 **撤消** 和 **恢复** 控件可让您回滚更改。
+> - 创建客户细分后，某些客户细分允许您[跟踪客户细分的使用情况](segments.md#track-usage-of-a-segment)。
 
 ## <a name="quick-segments"></a>快速细分
 
