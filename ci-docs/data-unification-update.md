@@ -1,7 +1,7 @@
 ---
 title: 更新统一设置
 description: 更新统一设置中的重复规则、匹配规则或统一字段。
-ms.date: 05/04/2022
+ms.date: 06/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: be399da9b98d8803d7d1a90f44a40e0d638a8d47
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 590a2996cf8b2b1c6def59b78583169ec1910b59
+ms.sourcegitcommit: 760fbac397c738407c7dea59297d54cae19b6f57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755579"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844029"
 ---
 # <a name="update-the-unification-settings"></a>更新统一设置
 
@@ -43,8 +43,9 @@ ms.locfileid: "8755579"
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="“数据统一”页面的屏幕截图，其中突出显示了“统一”选项。":::
 
-   - 要更新统一的客户配置文件（包含或不包含依赖项），请参阅[运行客户配置文件更新](#run-updates-to-the-unified-customer-profile)。
-   - 要在不更新统一配置文件的情况下评估匹配条件的质量，请参阅[运行匹配条件](#run-matching-conditions)。 不会针对单个实体显示 **仅运行匹配条件** 选项。
+   - [运行匹配条件](#run-matching-conditions)来快速评估匹配条件（删除重复项和匹配规则）的质量，而无需更新统一配置文件。 不会针对单个实体显示 **仅运行匹配条件** 选项。
+   - [统一客户配置文件](#run-updates-to-the-unified-customer-profile)来运行匹配条件并更新 Unified customer profile 实体，而不影响依赖项（如扩充、客户细分或度量）。 相关流程不会运行，而是将按[刷新计划中的定义](system.md#schedule-tab)进行刷新。
+   - [统一客户配置文件和依赖项](#run-updates-to-the-unified-customer-profile)来运行匹配条件并更新 Unified customer profile 实体和所有依赖项（如扩充、客户细分或度量）。 所有流程都将自动重新运行。
 
 ## <a name="edit-source-fields"></a>编辑源字段
 
@@ -135,11 +136,13 @@ ms.locfileid: "8755579"
 
 ## <a name="run-matching-conditions"></a>运行匹配条件
 
+运行匹配条件仅运行删除重复项和匹配规则，并更新 *Deduplication_* 和 *ConflationMatchPair* 实体。
+
 1. 从 **数据** > **统一** 页中，选择 **仅运行匹配条件**。
 
-   **重复记录** 和 **匹配条件** 磁贴显示 **已排队** 或 **正在刷新**。
+   **重复记录** 和 **匹配条件** 磁贴显示 **已排队** 或 **正在刷新** 状态。
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 1. 匹配过程完成时，选择 **匹配条件** 磁贴上的 **编辑**。
 
@@ -153,10 +156,12 @@ ms.locfileid: "8755579"
 
 1. 从 **数据** > **统一** 页中，选择：
 
-   - **统一客户配置文件**：在不影响依赖项（如扩充、客户细分或度量）的情况下更新统一的客户配置文件实体。 相关流程不会运行，而是将按[刷新计划中的定义](system.md#schedule-tab)进行刷新。
+   - **统一客户配置文件**：运行匹配条件并更新 Unified customer profile 实体，而不影响依赖项（如扩充、客户细分或度量）。 相关流程不会运行，而是将按[刷新计划中的定义](system.md#schedule-tab)进行刷新。
 
-   - **统一客户配置文件和依赖项**：更新统一配置文件及其所有依赖项。 所有流程都将自动重新运行。 所有下游流程完成后，客户配置文件会反映更新的数据。
+   - **统一客户配置文件和依赖项**：运行匹配条件并更新统一配置文件和所有依赖项。 所有流程都将自动重新运行。 所有下游流程完成后，客户配置文件会反映更新的数据。
 
-   **重复记录**、**匹配条件** 和 **统一客户字段** 磁贴将显示 **已排队** 或 **正在刷新**。
+   **重复记录**、**匹配条件** 和 **统一客户字段** 磁贴将显示 **已排队** 或 **正在刷新** 状态。
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
+
+成功运行的结果显示在 **统一** 页面中，其中显示了统一的客户配置文件的数量。

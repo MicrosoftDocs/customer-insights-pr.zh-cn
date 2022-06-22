@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645625"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947219"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>将客户细分列表和其他数据导出到 Azure Data Lake Storage Gen2（预览）
 
@@ -21,11 +21,9 @@ ms.locfileid: "8645625"
 
 ## <a name="known-limitations"></a>已知限制
 
-1. 对于 Azure Data Lake Storage Gen2，您可以在为数据湖创建存储帐户时在[标准性能层和高级性能层](/azure/storage/blobs/create-data-lake-storage-account)之间选择。 如果您选择高级性能层，请选择高级块 blob 作为客户类型。 
+1. 对于 Azure Data Lake Storage Gen2，您可以在为数据湖创建存储帐户时在[标准性能层和高级性能层](/azure/storage/blobs/create-data-lake-storage-account)之间选择。 如果您选择高级性能层，请选择高级块 blob 作为客户类型。
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>设置与 Azure Data Lake Storage Gen2 的连接 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>设置与 Azure Data Lake Storage Gen2 的连接
 
 1. 转到 **管理员** > **连接**。
 
@@ -39,7 +37,7 @@ ms.locfileid: "8645625"
     - 若要了解如何创建与 Azure Data Lake Storage Gen2 配合使用的存储帐户，请参阅[创建存储帐户](/azure/storage/blobs/create-data-lake-storage-account)。 
     - 若要了解 Azure Data Lake Gen2 存储帐户名称和帐户密钥，请参阅[在 Azure 门户中管理存储帐户设置](/azure/storage/common/storage-account-manage)。
 
-1. 选择 **保存** 以完成连接。 
+1. 选择 **保存** 以完成连接。
 
 ## <a name="configure-an-export"></a>配置导出
 
@@ -57,8 +55,12 @@ ms.locfileid: "8645625"
 
 保存导出不会立即运行导出。
 
-每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
+每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。
+您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。
 
-导出的数据存储在您配置的 Azure Data Lake Gen 2 存储容器中。 
+导出的数据存储在您配置的 Azure Data Lake Gen 2 存储容器中。
+
+> [!TIP]
+> 导出包含大量数据的实体可能会导致每次导出在同一文件夹中生成多个 CSV 文件。 出于性能原因拆分导出以最大程度地减少导出完成所需的时间。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

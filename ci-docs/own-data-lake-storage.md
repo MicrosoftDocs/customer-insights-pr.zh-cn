@@ -3,17 +3,17 @@ title: 使用自己的 Azure Data Lake Storage Gen2 帐户
 author: mukeshpo
 description: 了解使用自己的 Azure Data Lake Storage 帐户存储 Customer Insights 数据的要求。
 ms.author: mukeshpo
-ms.date: 05/30/2022
+ms.date: 06/08/2022
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 9fcd7645e34bf310ac3a1b98a0dd9a60598b19dc
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833914"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011922"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>使用自己的 Azure Data Lake Storage Gen2 帐户
 
@@ -37,6 +37,7 @@ Customer Insights 中的管理员可以在此过程中[创建环境](create-envi
 1. 选择如何 **连接您的存储**。 您可以在基于资源的选项和基于订阅的选项之间进行选择以进行身份验证。 有关详细信息，请参阅[使用 Azure 服务主体连接到 Azure Data Lake Storage 帐户](connect-service-principal.md)。
    - 对于 **Azure 订阅**，请选择包含 `customerinsights` 容器的 **订阅**、**资源组** 和 **存储帐户**。
    - 对于 **帐户密钥**，请提供 Data Lake Storage 帐户的 **帐户名称** 和 **帐户密钥**。 使用此身份验证方法意味着在您的组织轮换密钥时您会收到通知。 在轮换密钥时，您必须用新密钥[更新环境配置](manage-environments.md#edit-an-existing-environment)。
+1. 在您想要使用 Azure 专用链接连接到存储帐户并通过两步过程[创建与专用链接的连接](security-overview.md#private-links-tab)时选择。
 
 当数据引入等系统流程完成时，系统会在存储帐户内创建相应的文件夹。 将根据流程名称创建数据文件和 *model.json* 文件并将其添加到文件夹中。
 

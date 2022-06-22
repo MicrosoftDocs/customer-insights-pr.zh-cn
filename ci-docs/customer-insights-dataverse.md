@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833665"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011509"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>使用 Microsoft Dataverse 中的 Customer Insights 数据
 
 Customer Insights 提供了使输出实体可用作 [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro) 的选项。 这种集成通过低代码/无代码方法实现了轻松的数据共享和自定义开发。 [输出实体](#output-entities)可用作 Dataverse 环境中的表。 您可以基于 Dataverse 表将数据用于任何其他应用程序。 这些表支持通过 Power Automate 执行自动工作流或使用 Power Apps 生成应用等方案。
 
-通过连接到 Dataverse 环境，您还可以[使用 Power Platform 数据流和网关从本地数据源中引入数据](data-sources.md#add-data-from-on-premises-data-sources)。
+通过连接到 Dataverse 环境，您还可以[使用 Power Platform 数据流和网关从本地数据源中引入数据](connect-power-query.md#add-data-from-on-premises-data-sources)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -57,7 +57,7 @@ Customer Insights 提供了使输出实体可用作 [Microsoft Dataverse](/power
 将 Dataverse 与您自己的 Azure Data Lake Storage 帐户一起使用时有两个限制：
 
 - Dataverse 组织和 Azure Data Lake Storage 帐户之间存在一对一的映射。 Dataverse 组织连接到存储帐户后，就无法连接到另一个存储帐户。 此限制可防止 Dataverse 不填充多个存储帐户。
-- 如果需要设置 Azure 专用链接来访问您的 Azure Data Lake 存储帐户，则数据共享将不起作用，因为它位于防火墙后面。 Dataverse 当前不支持通过专用链接连接到专用终结点。
+- 如果需要设置 Azure 专用链接来访问您的 Azure Data Lake Storage 帐户，则数据共享将不起作用，因为它位于防火墙后面。 Dataverse 当前不支持通过专用链接连接到专用终结点。
 
 ### <a name="set-up-powershell"></a>设置 PowerShell
 

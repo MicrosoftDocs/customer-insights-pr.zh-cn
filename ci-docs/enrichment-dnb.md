@@ -1,7 +1,7 @@
 ---
 title: 通过 Dun & Bradstreet 扩充公司配置文件
 description: 有关 Dun & Bradstreet 第三方扩充的一般信息。
-ms.date: 04/26/2022
+ms.date: 06/10/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c738c2657d4cda213342629156ddc8104366bd8a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
+ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755389"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8953880"
 ---
 # <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>通过 Dun & Bradstreet 扩充公司配置文件（预览版）
 
@@ -22,16 +22,14 @@ Dun & Bradstreet 为企业提供商业数据、分析和见解。 它使那些�
 
 ## <a name="prerequisites"></a>先决条件
 
-要配置 Dun & Bradstreet 扩充，必须满足以下先决条件：
+- 有效的 [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) 许可证。
+- 适用于公司的 [Unified customer profile](customer-profiles.md)。
+- 设置了一个 Dun & Bradstreet [项目](#set-up-your-dun--bradstreet-project)。
+- Dun & Bradstreet [连接](connections.md)已由管理员[配置](#configure-a-connection-for-dun--bradstreet)。
 
-- 您必须有可用的 [Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights) 许可证。
-- 您具有公司[统一客户配置文件](customer-profiles.md)。
-- Dun & Bradstreet [连接](connections.md)由管理员配置。 如果您拥有[管理员](permissions.md#admin)权限和 Dun & Bradstreet Connect 的凭据，则可以创建它。
-
-## <a name="setting-up-your-dun--bradstreet-project"></a>设置您的 Dun & Bradstreet 项目
+## <a name="set-up-your-dun--bradstreet-project"></a>设置您的 Dun & Bradstreet 项目
 
 作为 Dun & Bradstreet 的许可用户，您可以在 [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights) 中设置项目。
-
 
 1. 登录到 [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights)。 若要检索凭据，请[还原密码](https://sso.dnb.com/signin/forgot-password?lead_source=microsoft_audienceinsights)。
 
@@ -47,66 +45,69 @@ Dun & Bradstreet 为企业提供商业数据、分析和见解。 它使那些�
 
    :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="在 Dun & Bradstreet 项目中选择 s3 信息的屏幕截图。":::
 
-## <a name="configure-the-enrichment"></a>配置扩充
-
-1. 转到 **数据** > **扩充**。
-
-1. 在 Dun & Bradstreet 磁贴上选择 **扩充我的数据**，然后选择 **开始使用**。
-
-   :::image type="content" source="media/enrichment-dnb-tile.png" alt-text="Dun & Bradstreet 磁稍的屏幕截图。":::
-
-1. 从下拉列表中选择[连接](connections.md)。 如果没有连接可用，请联系管理员。 如果您是管理员，则可以创建连接。 选择 **添加连接** 并选择 **Dun & Bradstreet**。
-
-1. 选择 **连接到 Dun & Bradstreet** 以确认连接。
-
-1. 选择 **下一步**，然后选择您要使用 Dun & Bradstreet 中的公司数据扩充的 **客户数据集**。 您可以选择 **客户** 实体以扩充所有客户配置文件，也可以选择客户细分实体以仅扩充该客户细分中包含的统一的客户配置文件。
-
-1. 选择 **下一步**，并确定统一配置文件中的哪些字段用于查找来自 Dun & Bradstreet 的匹配公司数据。 必须填写 **DUNS 编码** 或 **公司的名称** 和 **国家/地区** 字段。 国家/地区字段支持[二或三字母的国家代码](https://www.iso.org/iso-3166-country-codes.html)、英文国家/地区名称、母语国家/地区名称、电话前缀。 一些常见国家/地区变体包括：
-
-- US：United States of America、United States、USA、America。
-- CA：Canada。
-- GB：United Kingdom、UK、Great Britain、GB、United Kingdom of Great Britain and Northern Ireland、United Kingdom of Great Britain。
-- AU：Australia、Commonwealth of Australia。
-- FR：France、French Republic。
-- DE：Germany、German、Deutschland、Allemagne、Federal Republic of Germany、Republic of Germany。
-
-   :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet 字段映射窗格。":::
-
-1. 选择 **下一步** 以完成字段映射。
-
-1. 提供扩充的名称，并在查看您的选择后选择 **保存扩充**。
-
 ## <a name="configure-a-connection-for-dun--bradstreet"></a>配置 Dun & Bradstreet 连接
 
-您必须是管理员才能配置连接。 配置扩充时选择 **添加连接**，*或* 转到 **管理** > **连接**，在 Dun & Bradstreet 磁贴上选择 **设置**。
+您必须是 Customer Insights 中的[管理员](permissions.md#admin)，并具有 Dun & Bradstreet Connect 的凭据。
 
-1. 选择 **开始**。
+1. 配置扩充时选择 **添加连接**，或转到 **管理员** > **连接**，在 Dun & Bradstreet 磁贴上选择 **设置**。
 
-1. 在 **显示名称** 框中输入连接的名称。
+1. 为连接输入名称。
 
-1. 提供有效的 Dun & Bradstreet 凭据和 Dun & Bradstreet 项目详细信息 *区域、放置文件夹路径和放置文件夹名称*。 您可以从 Dun & Bradstreet 项目中[获取此信息](#setting-up-your-dun--bradstreet-project)。
+1. 提供有效的 Dun & Bradstreet 凭据和 Dun & Bradstreet 项目详细信息 *区域、放置文件夹路径和放置文件夹名称*。 您可以从 Dun & Bradstreet 项目中[获取此信息](#set-up-your-dun--bradstreet-project)。
 
-1. 通过选择 **我同意**，查看并同意 **数据隐私与合规性**。
+1. 通过选择 **我同意**，查看并同意[数据隐私与合规性](#data-privacy-and-compliance)。
 
-1. 选择 **验证** 以验证配置。
-
-1. 完成验证后，选择 **保存**。
+1. 选择 **验证** 验证配置，然后选择 **保存**。
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet 连接配置页面。":::
 
+### <a name="data-privacy-and-compliance"></a>数据隐私与合规性
+
+当您启用 Dynamics 365 Customer Insights 将数据传输到 Dun & Bradstreet 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 Dun & Bradstreet 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
+您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
+
+## <a name="supported-countries-or-regions"></a>支持的国家或地区
+
+我们目前支持以下国家/地区选项：加拿大（英语）或美国（英语）。
+
+## <a name="configure-the-enrichment"></a>配置扩充
+
+1. 转到 **数据** > **扩充**，选择 **发现** 选项卡。
+
+1. 在 Dun & Bradstreet 磁贴的 **公司数据** 上选择 **扩充我的数据**。
+
+   :::image type="content" source="media/enrichment-dnb-tile.png" alt-text="Dun & Bradstreet 磁稍的屏幕截图。":::
+
+1. 查看概览，然后选择 **下一步**。
+
+1. 选择连接并确认。 如果连接不可用，请联系管理员。
+
+1. 选择 **下一步**。
+
+1. 选择 **客户数据集**，然后选择您想要使用来自 Dun & Bradstreet 的公司数据扩充的资料或客户细分。 *客户* 实体扩充您的所有客户资料，而客户细分仅扩充该客户细分中包含的客户资料。
+
+1. 定义统一资料中的哪些字段类型用于匹配 Dun & Bradstreet 的公司数据。 至少需要 **名称和地址**、**电话** 或 **电子邮件** 中的一个字段。
+
+1. 选择 **下一个**
+
+1. 将您的字段映射到 Dun & Bradstreet 的公司数据。 必须填写 **DUNS 编码** 或 **公司的名称** 和 **国家/地区** 字段。
+
+      :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet 字段映射窗格。":::
+
+1. 选择 **下一步** 以完成字段映射。
+
+1. 为扩充提供 **名称**，并提供 **输出实体名称**。
+
+1. 在查看您的选择后选择 **保存扩充**。
+
+1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
+
 ## <a name="enrichment-results"></a>扩充结果
 
-刷新扩充后，您可以在[我的扩充](enrichment-hub.md)下查看新扩充的公司数据。 您可以查找上次更新的时间和扩充的配置文件的数量。
-
-您可以选择 **查看扩充的数据** 来访问每个扩充的配置文件的详细视图。
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ## <a name="next-steps"></a>后续步骤
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
-## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当您启用 Dynamics 365 Customer Insights 将数据传输到 Dun & Bradstreet 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 Dun & Bradstreet 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
-您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

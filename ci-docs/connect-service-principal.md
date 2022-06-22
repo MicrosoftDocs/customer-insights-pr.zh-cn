@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: b18d1f42b9510ebf23f0666322819865d132173b
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 36ad957f59b23df6ee83d9d90898ef03ddfd320a
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833370"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011830"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>使用 Azure 服务主体连接到 Azure Data Lake Storage 帐户
 
@@ -51,7 +51,13 @@ ms.locfileid: "8833370"
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>向服务主体授予访问存储帐户的权限
 
-转到 Azure 门户，为要在 Customer Insights 中使用的存储帐户的服务主体授予权限。
+转到 Azure 门户，为要在 Customer Insights 中使用的存储帐户的服务主体授予权限。 必须将以下角色之一分配给存储帐户或容器：
+
+|凭据|要求|
+|----------|------------|
+|当前登录用户|**角色**：存储 Blob 数据读者、存储 Blob 参与者或存储 Blob 负责人。<br>**级别**：可以授予存储帐户或容器权限。</br>|
+|Customer Insights 服务主体 -<br>使用 Azure Data Lake Storage 作为数据源</br>|选项 1<ul><li>**角色**：存储 Blob 数据读者、存储 Blob 数据参与者或存储 Blob 数据负责人。</li><li>**级别**：应该授予存储帐户权限。</li></ul>选项 2 *（不共享对存储帐户的服务主体访问权限）*<ul><li>**角色 1**：存储 Blob 数据读者、存储 Blob 数据参与者或存储 Blob 数据负责人。</li><li>**级别**：应该授予容器权限。</li><li>**角色 2**：存储 Blob 数据代理。</li><li>**级别**：应该授予存储帐户权限。</li></ul>|
+|Customer Insights 服务主体 - <br>使用 Azure Data Lake Storage 作为输出或目标</br>|选项 1<ul><li>**角色**：存储 Blob 数据参与者或存储 Blob 负责人。</li><li>**级别**：应该授予存储帐户权限。</li></ul>选项 2 *（不共享对存储帐户的服务主体访问权限）*<ul><li>**角色**：存储 Blob 数据参与者或存储 Blob 负责人。</li><li>**级别**：应该授予容器权限。</li><li>**角色 2**：存储 Blob 代理。</li><li>**级别**：应该授予存储帐户权限。</li></ul>|
 
 1. 转到 [Azure 管理门户](https://portal.azure.com)，然后登录到您的组织。
 
@@ -62,7 +68,7 @@ ms.locfileid: "8833370"
    :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="屏幕截图显示添加角色分配时的 Azure 门户。":::
 
 1. 在 **添加角色分配** 窗格中，设置以下属性：
-   - 角色：**存储 Blob 数据参与者**
+   - 角色：存储 Blob 数据读者、存储 Blob 数据参与者或存储 Blob 数据负责人（基于上面列出的凭据）。
    - 向以下项分配访问权限：**用户、组或服务主体**
    - 选择成员：**Dynamics 365 AI for Customer Insights**（您在此过程中前面查找的[服务主体](#create-a-new-service-principal)）
 

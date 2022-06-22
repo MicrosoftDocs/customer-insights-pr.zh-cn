@@ -6,22 +6,22 @@ ms.author: mhart
 ms.date: 04/12/2022
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 4d5b4ec61614877c26468ffe8d07f2448b43bac6
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 820d295a95e1536be1ffcbebc5ca153c10ad60ea
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641889"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947081"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 的产品概述
 
 [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) 是 Microsoft 的客户数据平台 (CDP)，可帮助提供个性化的客户体验。 应用程序提供了客户的整体视图，以及无与伦比的见解获得速度。 通过实时统一客户数据与运营和物联网数据，获得最全面的客户视图。 使用第一方和第三方数据源扩充客户配置文件。 
 
 Customer Insights 通过授权市场营销、销售和服务专业人员大规模定制 1:1 交互，帮助您将公司转变为以客户为中心的组织。 与 Microsoft 和第三方应用程序的即用型集成可用于激活实时见解以推动有意义的行动。
- 
+
 连接来自交易、行为和人口统计数据源的数据，以创建 360 度客户视图。 通过预构建的 AI 模型获得现成的见解，或使用无限规模的高级分析解决方案快速构建、测试和部署自定义 AI/ML 模型。
 
-保持对客户数据的完全控制，以确保进行最高级别的数据治理并且符合基于 Microsoft Azure 构建的自助式企业级 CDP。 通过内置的隐私、安全和治理以及同意管理工具，支持通用数据保护条例 (GDPR) 和其他立法要求和行业标准。
+保持对客户数据的完全控制，以确保进行最高级别的数据治理并且符合基于 Microsoft Azure 构建的自助式企业级 CDP。 通过内置的隐私、安全和治理工具支持一般数据保护条例 (GDPR) 和其他法律要求与行业标准。
 
 ## <a name="pricing-and-licensing"></a>定价和授权
 Customer Insights 按租户许可，包括企业对消费者 (B2C) 和企业对企业 (B2B) 功能。 您可以使用附加许可证购买额外容量，以增加配置文件和帐户的数量。

@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833757"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011876"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights 试用常见问题
 
@@ -66,9 +66,9 @@ ms.locfileid: "8833757"
 
 首次登录 Customer Insights 的付费实例后，系统会要求您创建一个新环境。 在此过程中，您可以选择从现有环境复制配置并迁移大部分设置。 如果您拥有上述权限，试用环境将显示在此列表中。 有关详细信息，请参阅[复制环境配置](create-environment.md#copy-the-environment-configuration)。
 
-### <a name="what-are-the-trial-limits-and-quotas"></a>试用限制和配额是多少？
+### <a name="what-are-the-trial-limits-and-quotas"></a>试用限制有哪些，限额是多少？
 
-- 在 Customer Insights 试用期间，您不能使用自己的 Azure Data Lake Storage 帐户存储输出数据。 但是，您可以通过 Data Lake 存储帐户来引入数据。
+- 在 Customer Insights 试用期间，您不能使用自己的 Azure Data Lake Storage 帐户存储输出数据。 但是，您可以通过 Data Lake Storage 帐户来引入数据。
 - 您可以在 Dataverse 环境中存储最多 3 GB 的数据，在您开始试用 Customer Insights 时会自动预配该环境。
 
 ## <a name="customer-insights-specific-questions"></a>Customer Insights 特定问题

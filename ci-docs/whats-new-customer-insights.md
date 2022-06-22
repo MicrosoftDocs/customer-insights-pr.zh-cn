@@ -1,19 +1,19 @@
 ---
-title: 新功能和未来的功能
+title: 新增和更新功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 05/03/2022
+ms.date: 06/02/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: d06f8be114f558d7adadf2913107c5fd69686875
+ms.sourcegitcommit: 9dd767051014e06d8d9f2f616e248573f24df4cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833619"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8843336"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 中的新增功能
 
@@ -24,6 +24,37 @@ ms.locfileid: "8833619"
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
 
+## <a name="may-2022-updates"></a>2022 年 5 月更新
+
+2022 年 5 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="updated-data-unification-experience"></a>更新了数据统一体验
+
+ 数据统一允许您将以前分散的数据源统一到单个主数据集中，从而提供该数据的统一视图。 可以对单个实体或多个实体统一数据。 首先，您[选择实体和源字段](map-entities.md)，[删除重复记录](remove-duplicates.md)，指定[匹配条件](match-entities.md)规则，并定义[要包含在 Unified customer profile 中的字段](merge-entities.md)。
+
+有关详细信息，请参阅[数据统一概述](data-unification.md)。
+
+### <a name="refreshed-home-page-in-customer-insights"></a>更新了 Customer Insights 中的主页
+
+**主页** 指导您完成关键功能的配置过程，并提供客户细分、度量和扩充数据的概览。 我们更新了此体验，以一目了然地提供更多相关信息。
+
+有关详细信息，请参阅[探索 Customer Insights](home.md)。
+
+### <a name="track-usage-of-a-segment"></a>跟踪客户细分的使用情况
+
+您现在可以在应用中[跟踪客户细分的使用情况](segments.md#track-usage-of-a-segment)，这些信息基于与 Customer Insights 连接的 Dataverse 组织。 对于 [Dynamics 365 Marketing 的客户旅程中使用的 Customer Insights 客户细分](/dynamics365/marketing/real-time-marketing-ci-profile)，系统会通知您该客户细分的使用情况。
+
+### <a name="export-to-criteo"></a>导出到 Criteo
+
+Criteo 是一个帮助用户管理数字广告的在线平台。 您现在可以导出 Unified customer profile 的客户细分，以生成市场活动、提供电子邮件市场营销，并将特定客户组与 Criteo 配合使用。
+
+有关详细信息，请参阅[将客户细分导出到 Criteo（预览）](export-criteo.md)。
+
+### <a name="refined-documentation-structure-for-environment-creation"></a>优化了环境创建使用的文档结构
+
+我们重新访问了与 Customer Insights 中的环境创建和管理相关的帮助文档。 这些文章现在在目录中被分组在环境节点下。 重组后的文章为设置环境的不同方式提供了更多指导，并具有更清晰的结构。 如果您有反馈意见，请通过帮助文章末尾的控件告诉我们。
+
+有关详细信息，请参阅[操作方法：创建新环境](create-environment.md)。
 
 ## <a name="april-2022-updates"></a>2022 年 4 月更新
 

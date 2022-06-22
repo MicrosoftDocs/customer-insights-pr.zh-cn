@@ -1,7 +1,7 @@
 ---
 title: 扩充统一的客户配置文件
 description: 使用功能扩充您的客户数据。
-ms.date: 03/29/2022
+ms.date: 06/10/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: abc1b6af80e8854ee3bc930453634ef67376c4af
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: 3bbe8b829a6698da55d84709dbab6c36aa76792a
+ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800594"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954030"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>扩充客户配置文件（预览）
 
@@ -35,29 +35,29 @@ ms.locfileid: "8800594"
 
 # <a name="individual-consumers-b-to-c"></a>[单个消费者(企业对客户)](#tab/b2c)
 
+- LiveRamp AbiliTec 提供的 [AbiliTec 标识](enrichment-liveramp.md)
 - Microsoft 提供的[品牌](enrichment-microsoft.md)
-- Microsoft 提供的[兴趣](enrichment-microsoft.md)
-- Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md) 
 - Experian 提供的[人口统计](enrichment-experian.md)
-- 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
-- Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
-- HERE Technologies 提供的[位置数据](enrichment-here.md) 
-- LiveRamp AbiliTec 提供的[标识](enrichment-liveramp.md)
+- Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md)
+- Microsoft 提供的[兴趣](enrichment-microsoft.md)
+- Microsoft Azure Maps 提供的[位置数据](enrichment-azure-maps.md)
+- HERE Technologies 提供的[位置数据](enrichment-here.md)
+- 通过安全文件传输协议 (SFTP) 提供的 [SFTP 自定义数据](enrichment-SFTP-custom-import.md)
 
 # <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
-- Leadspace 提供的[公司数据](enrichment-leadspace.md)
-- Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md) 
-- Microsoft 提供的[增强型公司数据](enrichment-enhanced-company-data.md)
-- HERE Technologies 提供的[位置数据](enrichment-here.md) 
-- 通过安全文件传输协议 (SFTP) [自定义数据](enrichment-SFTP-custom-import.md) 
-- Microsoft 提供的 [Azure Maps](enrichment-azure-maps.md)
-- Dun & Bradstreet 提供的[公司数据](enrichment-dnb.md)
 - Microsoft 提供的[帐户参与数据](enrichment-office.md)
+- Dun & Bradstreet 提供的[公司数据](enrichment-dnb.md)
+- Leadspace 提供的[公司数据](enrichment-leadspace.md)
+- Microsoft 提供的[增强地址](enrichment-enhanced-addresses.md)
+- Microsoft 提供的[增强型公司数据](enrichment-enhanced-company-data.md)
+- Microsoft Azure Maps 提供的[位置数据](enrichment-azure-maps.md)
+- HERE Technologies 提供的[位置数据](enrichment-here.md)
+- 通过安全文件传输协议 (SFTP) 提供的 [SFTP 自定义数据](enrichment-SFTP-custom-import.md)
 
 ---
 
-在 **我的扩充** 选项卡上，您可以查看您已配置的扩充并编辑其属性。
+在 **我的扩充** 选项卡上，您可以查看您已配置的扩充并编辑其属性。 您还可以从扩充项创建[客户细分](segments.md)或[度量](measures.md)。
 
 ## <a name="manage-existing-enrichments"></a>管理现有扩充
 
@@ -81,36 +81,45 @@ ms.locfileid: "8800594"
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>相同类型的多项扩充
 
-扩充配置期间已指定了要扩充的实体，这允许您仅扩充配置文件子集。 例如，仅为特定客户细分扩充数据。 您可以配置相同类型的多项扩充并重复使用相同的连接。 某些扩充对可创建的相同类型的扩充数量有限制。 可以在 **扩充** 页面上看到限制和当前使用情况。
+扩充配置期间已指定了要扩充的实体，这允许您仅扩充配置文件子集。 例如，仅为特定客户细分扩充数据。 您可以配置相同类型的多项扩充并重复使用相同的连接。 某些扩充对可创建的相同类型的扩充数量有限制。 限制和当前使用情况可以在 **扩充** 页面 **发现** 选项卡上的每个磁贴上看到。
 
 ## <a name="enrich-data-sources-before-unification"></a>在统一之前扩充数据源
 
 您可以在数据统一之前扩充您的客户数据，以帮助提高数据匹配的质量。 有关详细信息，请参阅[数据源扩充](data-sources-enrichment.md)。
 
-## <a name="see-the-progress-of-the-enrichment-process"></a>查看扩充过程的进度
+## <a name="run-or-refresh-enrichments"></a>运行或刷新扩充
+
+1. 要开始扩充过程，选择 **运行**。 或者，让系统在[计划刷新](system.md#schedule-tab)过程中自动运行扩充。 处理时间取决于客户数据的大小。
+
+1. （可选）[查看扩充过程的进度](#see-the-progress-of-the-enrichment-process)。
+
+1. 扩充过程完成后，转到 **我的扩充** 查看新扩充的客户资料数据、上次更新的时间和扩充资料的数量。
+
+1. 选择扩充查看[扩充结果](#enrichment-results)。
+
+### <a name="see-the-progress-of-the-enrichment-process"></a>查看扩充过程的进度
 
 可以找到有关扩充处理的详细信息，包括其在刷新时或刷新完成后的状态和潜在问题。 了解刷新活动涉及哪些进程以及运行这些进程需要的时间。 Experian、Leadspace、HERE Technologies、SFTP Import 和 Azure Maps 支持扩充状态。
 
-查看扩充状态
-
-1. 转到 **数据** > **扩充**。 
-1. 在 **我的扩充** 选项卡中，选择扩充状态打开侧窗格。 
-1. 在 **进度详细信息** 窗格中，展开 **扩充** 部分。 
-1. 在要查看其进度的扩充下，选择 **查看详细信息**。 
-1. 在 **任务详细信息** 窗格中，选择 **显示详细信息** 以查看更新窗口及其状态时涉及的进程。 
+1. 转到 **数据** > **扩充**。
+1. 在 **我的扩充** 选项卡中，选择扩充的状态打开侧窗格。
+1. 在 **进度详细信息** 窗格中，展开 **扩充** 部分。
+1. 在要查看其进度的扩充下，选择 **查看详细信息**。
+1. 在 **任务详细信息** 窗格中，选择 **显示详细信息** 以查看更新窗口及其状态时涉及的进程。
 
 ## <a name="enrichment-results"></a>扩充结果
 
-完成扩充运行后，您可以查看扩充结果。
+完成扩充运行后，查看扩充结果。
 
-1. 转到 **数据** > **扩充**。 
-1. 选择您想要了解相关信息的扩充项。
+1. 转到 **数据** > **扩充**。
+1. 在 **我的扩充** 选项卡中，选择您需要其信息的扩充。
 
-所有扩充都显示基本信息，如已扩充配置文件的数量、生成的扩充实体的预览以及随着时间的推移完成扩充的配置文件的数量。 如果显示，**按字段扩充的客户数** 可帮助深入了解每个扩充的字段的覆盖范围。
+所有扩充都显示基本信息，如已扩充资料的数量以及随着时间的推移完成扩充的资料的数量。 **扩充的客户预览** 磁贴显示生成的扩充实体的示例。 要查看详细视图，选择 **查看更多**，然后选择 **数据** 选项卡。
 
 :::image type="content" source="media/enrichments-results.png" alt-text="扩充结果页面。":::
 
-一些扩充还显示特定于扩充类型的信息。 有关详细信息，请参阅相关扩充的文档。
+如果显示，**按字段扩充的客户数** 可帮助深入了解每个扩充的字段的覆盖范围。
 
+一些扩充还显示特定于扩充类型的信息。 有关详细信息，请参阅相关文档。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

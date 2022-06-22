@@ -1,19 +1,19 @@
 ---
 title: GDPR 下的数据使用者权限 (DSR) 请求 | Microsoft Docs
 description: 响应 Dynamics 365 Customer Insights 的数据使用者请求。
-ms.date: 08/11/2021
+ms.date: 05/23/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: c71305ab835b0f4f75adcce716e795959f898e47
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808535"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947357"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>GDPR 下的数据使用者权限 (DSR) 请求
 
@@ -77,11 +77,5 @@ Customer Insights 管理员可以执行以下步骤删除 Customer Insights 用�
 1. 向 D365CI@microsoft.com 发送电子邮件，并在请求中指定用户的电子邮件地址。 Customer Insights 团队将向注册的租户管理员电子邮件地址发送电子邮件，请求确认导出数据。
 2. 认可确认以导出所请求用户的数据。
 3. 通过租户管理员电子邮件地址接收导出的数据。
-
-## <a name="consent-management-preview"></a>同意管理（预览版）
-
-同意管理功能不直接收集用户数据。 它仅导入和处理用户在其他应用程序中所提供的同意数据。
-
-若要删除有关特定用户的同意数据，请在引入到同意管理功能的数据源中将其删除。 刷新数据源后，删除的数据也将在同意中心删除。 在[刷新](system.md#refresh-processes)之后，使用同意实体的应用程序也将删除源中已删除的数据。 建议在响应数据主题请求后快速刷新数据源，以从所有其他进程和应用程序中删除用户数据。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

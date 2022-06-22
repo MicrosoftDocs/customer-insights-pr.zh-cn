@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800270"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011462"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>数据源扩充（预览）
 
@@ -29,9 +29,11 @@ ms.locfileid: "8800270"
 
 1. 选择要扩充的数据源旁边的竖省略号 (&vellip;)，然后选择 **扩充**。
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="数据源扩充页面。":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="突出显示&quot;扩充&quot;的数据源页面":::
 
    **发现** 选项卡显示[支持的数据源扩充选项](#supported-data-source-enrichments)。
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="数据源扩充页面。":::
 
 1. 选择 **扩充我的数据** 配置数据源扩充。 将自动填充输出实体名称。
 

@@ -1,19 +1,19 @@
 ---
 title: 将 Customer Insights 数据导出到 Snapchat
 description: 了解如何配置连接和导出到 Snapchat。
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645884"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947265"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>将客户细分导出到 Snapchat（预览版）
 
@@ -21,7 +21,8 @@ ms.locfileid: "8645884"
 
 ## <a name="prerequisites-for-a-connection"></a>连接的先决条件
 
--   您有一个 [Snapchat 业务帐户](https://business.snapchat.com/)、一个 [Snapchat 广告帐户](https://ads.snapchat.com/)以及相应的管理员凭据。
+-   您有一个 [Snapchat 业务帐户](https://business.snapchat.com/)、一个 [Snapchat 广告帐户](https://ads.snapchat.com/)以及相应的管理员凭据。 您必须至少是组织帐户的成员和特定广告帐户的数据管理员。 
+-   您在 SAM（快速受众匹配）类型的 Snapchat 受众管理器中至少有一个受众。 
 -   您在 Customer Insights 中具有[配置的客户细分](segments.md)。
 -   导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
 
@@ -60,7 +61,7 @@ ms.locfileid: "8645884"
 
 1. 在 **导出连接** 字段中，从 Snapchat 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
 
-1. 输入 [**Snapchat 受众 ID**](https://businesshelp.snapchat.com/s/article/custom-audiences)。
+1. 输入 [**Snapchat 客户细分/受众 ID**](https://businesshelp.snapchat.com/s/article/custom-audiences)。 受众的 ID 可以在 Snapchat 受众管理器中选择受众后在 URL 中找到。 
 
 1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 必须将客户细分导出到 Snapchat。
 

@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833528"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011968"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 入门
 
@@ -39,7 +39,7 @@ Customer Insights 可帮助您更好地了解客户。 连接来自各种事务�
 
 统一配置文件是获取数据的见解和采取操作的基础。 从各个源中引入数据并运行数据统一过程以合并统一配置文件。 指定所引入实体之间的关系并使用扩充功能将信息添加到配置文件。
 
-1. 通过从多个选项创建数据源来引入数据。 在 [Power Query 连接器](connect-power-query.md)、[Common Data Model 文件夹](connect-common-data-model.md)或 [Microsoft Dataverse](connect-dataverse-managed-lake.md) 之间进行选择。
+1. 通过从多个选项创建数据源来引入数据。 在 [Azure Data Lake Storage（包括 Common Data Model）](connect-common-data-model.md)、[Azure Synapse Analytics](connect-synapse.md)、[Microsoft Dataverse](connect-dataverse-managed-lake.md) 或 [Power Query 连接器](connect-power-query.md)之间进行选择。
 
 1. 通过标识[源字段](map-entities.md)、删除[重复项](remove-duplicates.md)、[匹配条件](match-entities.md)和[统一字段](merge-entities.md)来运行[数据统一流程](data-unification.md)。
 

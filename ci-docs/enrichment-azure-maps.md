@@ -1,95 +1,95 @@
 ---
 title: 使用 Azure Maps 中的位置数据扩充客户配置文件
 description: 有关 Azure Maps 第一方扩充的常规信息。
-ms.date: 08/31/2021
+ms.date: 06/10/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 6d43dc2ca82c034fbd396d92637e7aea8179df77
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
+ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755343"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8953617"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>使用 Azure Maps（预览版）扩充客户配置文件
 
-Azure Maps 提供以位置为中心的数据和服务，通过内置位置智能提供基于地理空间数据的体验。 Azure Maps 数据扩充服务可以提高有关客户位置的信息的精度。 其为 Dynamics 365 Customer Insights 提供地址标准化和经纬度提取之类功能。
+Azure Maps 提供以位置为中心的数据和服务，以提供基于具有内置位置智能的地理空间数据的体验。 Azure Maps 数据扩充服务可以提高有关客户位置的信息的精度。 其为 Dynamics 365 Customer Insights 提供地址标准化和经纬度提取之类功能。
 
 ## <a name="prerequisites"></a>先决条件
 
-若要配置 Azure Maps 数据扩充，必须满足以下先决条件：
+- 有效的 Azure Maps 订阅。 要获取订阅，[注册或获取免费试用版](https://azure.microsoft.com/services/azure-maps/)。
 
-- 拥有有效的 Azure Maps 订阅。 要获取订阅，您可以[注册或获取免费版](https://azure.microsoft.com/services/azure-maps/)。
-
-- 有 Azure Maps [连接](connections.md)，*或者* 拥有[管理员](permissions.md#admin)权限和有效的 Azure Maps API 密钥。
-
-## <a name="configure-the-enrichment"></a>配置扩充
-
-1. 转到 **数据** > **扩充**。 
-
-1. 在 **位置** 磁贴中，选择 **扩充我的数据**。
-
-   :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps 磁贴。":::
-
-1. 从下拉列表中选择[连接](connections.md)。 如果没有可用的 Azure Maps 连接，请联系管理员。 如果您是管理员，您可以[为 Azure Maps 配置连接](#configure-the-connection-for-azure-maps)。 
-
-1. 选择 **下一步** 确认选择。
-
-1. 选择要使用 Azure Maps 中的位置数据扩充的 **客户数据集**。 可以选择 **Customer** 实体以扩充所有统一客户配置文件，也可以选择一个客户细分实体以仅扩充该客户细分中包含的客户配置文件。
-
-    :::image type="content" source="media/enrichment-azure-maps-configuration-customer-data-set.png" alt-text="选择客户数据集时的屏幕截图。":::
-
-1. 选择是否将字段映射到主地址/或辅助地址。 可以为这两种地址指定字段映射，并分别扩充这两种地址的配置文件 &mdash; 流入，对于家庭地址和业务地址。 选择 **下一步**。
-
-1. 定义应该使用统一配置文件中的哪些字段来查找 Azure Maps 中的匹配位置数据。 所选主地址或辅助地址需要 **街道 1** 和 **邮政编码** 字段。 若要提高匹配准确性，可以添加更多字段。
-
-   :::image type="content" source="media/enrichment-azure-maps-configuration.png" alt-text="Azure Maps 扩充配置页。":::
-
-1. 选择 **下一步** 以完成字段映射。
-
-1. 评估是否要修改 **高级设置**。 提供这些设置是为了为处理高级用例提供最大的灵活性，但在大多数情况下默认值就足够了：
-   - **地质类型**：默认行为是，即使扩充不完整，也会返回最匹配的地址。 若要仅获取完整地址 &mdash; 例如，包含住宅编号的地址 &mdash; 请清除除 **点地址** 之外的所有复选框。 
-   - **语言：** 默认情况下，将使用已确定地址所属区域的语言返回地址。 若要应用标准化地址语言，请从下拉菜单中选择该语言。 例如，选择 **英语** 将返回 **Copenhagen, Denmark**，而不是返回 **København, Danmark**。
-
-1. 提供扩充的名称。
-
-1. 检查选择，然后选择 **保存扩充**。
+- Azure Maps [连接](connections.md)由管理员[配置](#configure-the-connection-for-azure-maps)。
 
 ## <a name="configure-the-connection-for-azure-maps"></a>为 Azure Maps 配置连接
 
-您需要成为 Customer Insights 中的管理员才能配置连接。 当配置扩充时选择 **添加连接**，或者转到 **管理** > **连接**，然后在 Azure Maps 磁贴上选择 **设置**。
+您必须是 Customer Insights 中的[管理员](permissions.md#admin)，并且具有有效的 Azure Maps API 密钥。
 
-1. 在 **显示名称** 框中，输入连接的名称。
+1. 当配置扩充时选择 **添加连接**，或者转到 **管理** > **连接**，然后在 Azure Maps 磁贴上选择 **设置**。
 
-1. 提供有效的 Azure Maps API 密钥。
+   :::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps 连接配置页。":::
 
-1. 进行查看，然后选中 **我同意** 复选框以同意 **数据隐私和合规性**
+1. 为连接输入名称并输入有效的 Azure Maps API 密钥。
 
-1. 选择 **验证** 以验证配置。
+1. 通过选择 **我同意**，查看并同意[数据隐私与合规性](#data-privacy-and-compliance)。
 
-1. 完成验证后，选择 **保存**。
+1. 选择 **验证** 验证配置，然后选择 **保存**。
 
-:::image type="content" source="media/enrichment-azure-maps-connection.png" alt-text="Azure Maps 连接配置页。":::
+### <a name="data-privacy-and-compliance"></a>数据隐私与合规性
+
+当启用 Dynamics 365 Customer Insights 将数据传输到 Azure Maps 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括可能敏感的数据（例如个人数据）。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 Azure Maps 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请转到 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
+您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
+
+## <a name="configure-the-enrichment"></a>配置扩充
+
+1. 转到 **数据** > **扩充**，选择 **发现** 选项卡。
+
+1. 在 Microsoft Azure Maps 磁贴的 **位置** 上选择 **扩充我的数据**。
+
+   :::image type="content" source="media/azure-maps-tile.png" alt-text="Azure Maps 磁贴。":::
+
+1. 查看概览，然后选择 **下一步**。
+
+1. 选择连接。 如果没有连接可用，请联系管理员。
+
+1. 选择 **下一步**。
+
+1. 选择 **客户数据集**，然后选择您想要使用来自 Microsoft 的数据扩充的资料或客户细分。 *客户* 实体扩充您的所有客户资料，而客户细分仅扩充该客户细分中包含的客户资料。
+
+1. 定义统一资料中用于匹配的字段类型：主要和/或辅助地址。 您可以为两个地址指定字段映射，并分别扩充这两个地址的配置文件。 例如，家庭地址和公司地址。 选择 **下一步**。
+
+1. 将字段映射到 Azure Maps 中的位置数据。 必须为所选的主要和/或辅助地址指定 **街道 1** 和 **邮政编码** 字段。 要获得更高的匹配准确度，请添加更多字段。
+
+   :::image type="content" source="media/enrichment-azure-maps-attributes.png" alt-text="Azure Maps 属性映射。":::
+
+1. 选择 **下一步** 以完成字段映射。
+
+1. 查看 **高级设置**，它为处理高级用例提供了最大的灵活性。 但是，通常不需要更改以下默认值。
+
+   - **地址类型**：最佳地址匹配返回，即使不完整。 若要仅获取完整地址 &mdash; 例如，包含住宅编号的地址 &mdash; 请清除除 **点地址** 之外的所有复选框。
+   - **语言**：地址基于地址区域使用的语言返回。 若要应用标准化地址语言，请从下拉菜单中选择该语言。 例如，选择 **英语** 将返回 **Copenhagen, Denmark** 而不是 **København, Danmark**。
+   - **最大结果数**：每个地址的结果数。
+
+1. 选择 **下一步**。
+
+1. 为扩充提供 **名称**，并提供 **输出实体名称**。
+
+1. 在查看您的选择后选择 **保存扩充**。
+
+1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
 ## <a name="enrichment-results"></a>扩充结果
 
-要开始扩充过程，请从命令栏中选择 **运行**。 您还可以让系统在[计划刷新](system.md#schedule-tab)过程中自动运行扩充。 处理时间取决于客户数据的大小和 API 响应时间。
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-完成扩充过程后，可以在 **我的扩充** 下查看新扩充的客户配置文件数据 。 此外，您还会看到上次更新的时间和扩充的配置文件的数量。
-
-您可以选择 **查看扩充的数据** 来访问每个扩充的配置文件的详细视图。
+**按字段扩充的客户数** 可帮助深入了解每个扩充的字段的覆盖范围。
 
 ## <a name="next-steps"></a>后续步骤
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
-## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当启用 Dynamics 365 Customer Insights 将数据传输到 Azure Maps 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括可能敏感的数据（例如个人数据）。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 Azure Maps 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请转到 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
-您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

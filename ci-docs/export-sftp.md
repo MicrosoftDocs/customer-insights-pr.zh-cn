@@ -1,19 +1,19 @@
 ---
 title: 将 Customer Insights 数据导出到 SFTP 主机（包含视频）
 description: 了解如何配置连接和导出到 SFTP 位置。
-ms.date: 03/03/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5170ec4ca35ad2a94f02e9d696c44a32da888120
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645621"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947173"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>将客户细分和其他数据导出到 SFTP（预览版）
 
@@ -28,8 +28,8 @@ ms.locfileid: "8645621"
 ## <a name="known-limitations"></a>已知限制
 
 - 防火墙后的 SFTP 目标当前不受支持。 
-- 导出的运行时间取决于系统性能。 建议将两个 CPU 内核和 1 GB 内存作为服务器的最低配置。 
-- 在使用建议的两个 CPU 内核和 1 GB 内存这种最低配置时，导出具有多达 1 亿个客户配置文件的实体可能需要 90 分钟。 
+- 导出的运行时间取决于系统性能。 建议将两个 CPU 内核和 1 GB 内存作为服务器的最低配置。
+- 在使用建议的两个 CPU 内核和 1 GB 内存这种最低配置时，导出具有多达 1 亿个客户配置文件的实体可能需要 90 分钟。
 
 ## <a name="set-up-connection-to-sftp"></a>设置与 SFTP 的连接
 
@@ -64,13 +64,17 @@ ms.locfileid: "8645621"
 1. 选择要导出的实体，如客户细分。
 
    > [!NOTE]
-   > 导出后，每个选定实体最多将拆分成五个输出文件。 
+   > 导出后，每个选定实体最多将拆分成五个输出文件。
 
 1. 选择 **保存**。
 
 保存导出不会立即运行导出。
 
-每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
+每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。
+您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。
+
+> [!TIP]
+> 导出包含大量数据的实体可能会导致每次导出在同一文件夹中生成多个 CSV 文件。 出于性能原因拆分导出以最大程度地减少导出完成所需的时间。
 
 ## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
 
