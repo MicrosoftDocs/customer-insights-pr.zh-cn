@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 Facebook 广告管理器（包含视频）
+title: 将客户细分导出到 Facebook 广告管理器（预览版）（包含视频）
 description: 了解如何配置连接和导出到 Facebook Ads Manager。
 ms.date: 04/15/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f610ab1af83bfd512ec1861e7dc76ebb2eecfcbb
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 782abd7d69166b9c81ac25c4d7e191bdeb03a887
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645926"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080945"
 ---
-# <a name="export-segments-list-to-facebook-ads-manager-preview"></a>向 Facebook Ads Manager 导出客户细分列表（预览版）
+# <a name="export-segments-to-facebook-ads-manager-preview"></a>将客户细分导出到 Facebook 广告管理器（预览版）
 
 将统一客户配置文件的细分导出到 Facebook Ads Manager，以在 Facebook 和 Instagram 上创建市场活动。
 

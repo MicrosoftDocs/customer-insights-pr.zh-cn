@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f6bcdfc45a49c36f22d6ebc6e919f43b27f899d8
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645600"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051672"
 ---
-# <a name="use-a-template-to-build-a-measure"></a>使用模板生成量度
+# <a name="create-measures-from-templates"></a>通过模板创建度量
 
 您可以使用常用[度量](measures.md)的预定义模板来创建常用度量。 模板的详细描述和引导式体验可帮助您高效创建度量。 模板建立在 *统一活动* 实体的映射数据的基础上。 因此，在从模板创建量度之前，请确保已配置[客户活动](activities.md)。
 

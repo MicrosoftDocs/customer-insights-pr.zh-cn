@@ -1,5 +1,5 @@
 ---
-title: 使用来自 Microsoft Office 365 的数据扩充客户配置文件
+title: 使用来自 Microsoft Office 365 的数据扩充客户配置文件（预览版）
 description: 使用来自 Microsoft Office 的专有数据用参与数据扩充您的客户配置文件。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954122"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055663"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>使用参与数据扩充客户配置文件（预览版）
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>使用来自 Microsoft Office 365 的数据扩充客户配置文件（预览版）
 
 使用来自 Microsoft Office 365 的数据，通过 Office 365 应用使用参与见解来扩充您的客户帐户配置文件。 参与数据由电子邮件和在客户级别聚合的会议活动组成。 例如，企业客户的电子邮件数或与该客户进行的会议数。 没有提供可用的单个用户相关数据。
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954122"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] 这是 *Office* 实体。 *Office_UserEntity* 包含在扩充配置期间选择的电子邮件地址的 Active Directory ID。
 

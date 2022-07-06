@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 Sendinblue
+title: 将客户细分导出到 Sendinblue（预览）
 description: 了解如何配置连接和导出到 Sendinblue。
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e6d63e0017caa50379426cd5f9b663571b568de7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9f6550b5c57866702631b4c294bb059279461bd6
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645624"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080956"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>将客户细分导出到 Sendinblue（预览）
 

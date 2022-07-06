@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 应用的客户卡加载项（包含视频）
+title: Dynamics 365 应用的客户卡加载项（预览版）（包含视频）
 description: 使用此加载项在 Dynamics 365 应用中显示来自 Customer Insights 的客户配置文件数据。
 ms.date: 02/02/2022
 ms.reviewer: mhart
@@ -13,14 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755625"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080778"
 ---
-# <a name="customer-card-add-in-preview"></a>客户卡加载项（预览版）
+# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 应用的客户卡加载项（预览版）
 
 直接在 Dynamics 365 应用中全面了解您的客户。 在支持的 Dynamics 365 应用中安装客户卡加载项后，您可以选择显示客户配置文件字段、见解和活动时间线。 该加载项可以从 Customer Insights 检索数据，而不会影响已连接的 Dynamics 365 应用中的数据。
 

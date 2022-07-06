@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 SFTP 主机（包含视频）
+title: 将数据导出到 SFTP 主机（预览版）（包含视频）
 description: 了解如何配置连接和导出到 SFTP 位置。
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 67789a87cf0ff1b0d9933f2c0adde37762c83476
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947173"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080921"
 ---
-# <a name="export-segments-and-other-data-to-sftp-preview"></a>将客户细分和其他数据导出到 SFTP（预览版）
+# <a name="export-data-to-sftp-preview"></a>将数据导出到 SFTP（预览版）
 
 将第三方应用程序中的客户数据导出到安全文件传输协议 (SFTP) 位置，以使用这些数据。
 

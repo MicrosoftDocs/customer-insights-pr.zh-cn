@@ -1,5 +1,5 @@
 ---
-title: 通过 SFTP 自定义导入扩充
+title: 使用 SFTP 自定义导入扩充客户配置文件（预览版）
 description: 有关 SFTP 自定义导入扩充的常规信息。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953708"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080791"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>使用自定义数据扩充客户配置文件（预览）
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>使用 SFTP 自定义导入扩充客户配置文件（预览版）
 
 通过安全文件传输协议 (SFTP) 自定义导入，您可以导入不需要完成数据统一流程的数据。 这是一种灵活、安全和方便的数据引入方式。 SFTP 自定义导入可与 [SFTP 导出](export-sftp.md)结合使用，后者允许您导出扩充所需的客户配置文件数据。 然后可以处理和扩充数据，并且可以使用 SFTP 自定义导入将扩充的数据引入到 Dynamics 365 Customer Insights 中。
 
@@ -120,7 +120,7 @@ ms.locfileid: "8953708"
 
 1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

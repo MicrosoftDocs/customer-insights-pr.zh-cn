@@ -1,5 +1,5 @@
 ---
-title: 使用来自 Microsoft 的品牌和兴趣数据扩充客户资料
+title: 使用来自 Microsoft 的品牌和兴趣数据扩充客户资料（预览版）
 description: 使用 Microsoft 的专有数据通过相似性和配额来扩充您的客户数据。
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -12,14 +12,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 61262980cafdcd130430e200e466ce7da6cc4d07
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: e1827adca10a3b193c02a20c4abccacf73194a77
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953754"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080912"
 ---
-# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>通过相似性和配额扩充客户配置文件（预览版）
+# <a name="enrich-customer-profiles-with-brands-and-interests-data-from-microsoft-preview"></a>使用来自 Microsoft 的品牌和兴趣数据扩充客户资料（预览版）
 
 使用 Microsoft 的专有数据通过品牌相似性、兴趣相似性和配额 (SoV) 来扩充您的客户数据。 这些相似性和 SoV 基于人口统计信息与客户相似的用户的数据。 此信息可帮助您针对特定品牌和兴趣根据客户的相似性或 SoV 更好地了解和细分客户。
 
@@ -104,7 +104,7 @@ ms.locfileid: "8953754"
 
    在扩充配置文件时，我们将扩充为其获取选定品牌和兴趣的数据的所有客户配置文件，包括未在选定国家或地区的配置文件。 例如，如果您选择了德国，并且我们有可用于美国中的选定品牌和兴趣的数据，那么我们将扩充位于美国的个人资料。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

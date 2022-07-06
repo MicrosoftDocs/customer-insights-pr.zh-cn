@@ -13,16 +13,16 @@ searchScope:
 - ci-create-prediction
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: 3e1b1ce00eeda1cead9ba05beae65b6903d0b9cf
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ea7acd1ddbb0eb8d66fb82018637a85b6ffb369b
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645934"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055203"
 ---
 # <a name="customer-lifetime-value-clv-prediction"></a>客户生命周期值 (CLV) 预测
 
-预测单个活跃客户将在定义的未来时间段内为您的公司带来的潜在价值（收入）。 此功能可帮助您实现各种目标： 
+预测单个活跃客户将在定义的未来时间段内为您的公司带来的潜在价值（收入）。 此功能可帮助您实现各种目标：
 - 识别高价值客户并处理此见解
 - 根据潜在客户价值创建战略客户细分，以通过有针对性的销售、市场营销和支持工作开展个性化市场活动
 - 通过关注增加客户价值的功能来指导产品开发

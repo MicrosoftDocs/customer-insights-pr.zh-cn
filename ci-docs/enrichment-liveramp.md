@@ -1,5 +1,5 @@
 ---
-title: LiveRamp 标识数据扩充
+title: 使用 LiveRamp 的标识数据扩充客户资料（预览）
 description: 使用 LiveRamp 数据扩充客户资料。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: e8a130865267b57c89157b44be3d4bba3dc2fb4e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953984"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080781"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>使用 LiveRamp 的标识数据扩充客户资料（预览）
 
@@ -79,7 +79,7 @@ LiveRamp 提供确定性的离线标识解析和客户数据整合。 您可以�
 
 1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 地址增强扩充（包含视频）
+title: 使用增强型地址更新客户配置文件（包含视频）
 description: 使用 Microsoft 模型扩充并标准化客户配置文件的地址信息。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -14,14 +14,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: f6279b9bb721d99d66f73e8dc839a92f1ad90140
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 01f1c917c75e932cc69f4c7251e57524fc859dce
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953800"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080775"
 ---
-# <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>使用增强的地址扩充客户配置文件
+# <a name="enrich-customer-profiles-with-enhanced-addresses"></a>使用增强型地址更新客户配置文件
 
 数据中的地址可能无结构、不完整或不正确。 使用 Microsoft 的模型按 [Common Data Model 格式](/common-data-model/schema/core/applicationcommon/address)标准化并扩充您的地址，以获得更佳的准确性和见解。
 
@@ -101,7 +101,7 @@ ms.locfileid: "8953800"
 
 1. 在查看您的选择后选择 **保存扩充**。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

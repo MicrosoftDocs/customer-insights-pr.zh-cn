@@ -1,5 +1,5 @@
 ---
-title: 了解和管理度量
+title: 度量概述
 description: 了解度量如何帮助分析和反映您的业务绩效。
 ms.date: 03/24/2022
 ms.subservice: audience-insights
@@ -14,12 +14,12 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: 84a3a10a2517258c1f895800882b9c67391ec3de
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 880c06bffcfa269151d96cb4c597eed4832fc61b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645637"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080960"
 ---
 # <a name="measures-overview"></a>度量概述
 

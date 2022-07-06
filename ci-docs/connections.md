@@ -1,6 +1,6 @@
 ---
-title: 连接到 Customer Insights 中的其他服务。
-description: 与其他服务共享数据。
+title: 连接（预览版）概述
+description: 连接到 Customer Insights 中的其他服务。
 ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: a8b4b8a9bdcf7cf43c47a67d547405dd20dad60d
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800361"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080776"
 ---
 # <a name="connections-preview-overview"></a>连接（预览版）概述
 

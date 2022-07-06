@@ -1,5 +1,5 @@
 ---
-title: 客户反馈的情绪分析
+title: 分析客户反馈中的情绪（预览版）
 description: 了解如何在 Dynamics 365 Customer Insights 中对客户反馈使用情绪分析模型。
 ms.date: 12/23/2021
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: e51225bbfcd445180b12661cba12256c3f042045
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af1afd3eff8a795a9e199b1c1d411b79dc2841b4
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645854"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055525"
 ---
-# <a name="analyze-sentiment-in-customer-feedback-preview"></a>分析客户反馈中的情绪（预览）
+# <a name="analyze-sentiment-in-customer-feedback-preview"></a>分析客户反馈中的情绪（预览版）
 
 如今，客户期望高质量的产品、服务和体验。 特别是提供反馈的客户。 对于组织而言，在不降低准确性和增加劳动力成本的情况下分析不断增加的数据量是非常具有挑战性的。 Dynamics 365 Customer Insights 为客户反馈提供情绪分析模型，让组织能够以更低的成本更准确地分析数据。
 

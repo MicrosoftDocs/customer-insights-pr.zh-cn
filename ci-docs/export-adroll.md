@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 AdRoll
+title: 将客户细分导出到 AdRoll（预览版）
 description: 了解如何配置连接和导出到 AdRoll。
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645609"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080930"
 ---
 # <a name="export-segments-to-adroll-preview"></a>将客户细分导出到 AdRoll（预览版）
 
@@ -21,9 +21,9 @@ ms.locfileid: "8645609"
 
 ## <a name="prerequisites-for-a-connection"></a>连接的先决条件
 
--   您具有 [AdRoll 帐户](https://www.adroll.com/)和相应的管理员凭据。
--   您在 Customer Insights 中具有[配置的客户细分](segments.md)。
--   导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
+- 您具有 [AdRoll 帐户](https://www.adroll.com/)和相应的管理员凭据。
+- 您在 Customer Insights 中具有[配置的客户细分](segments.md)。
+- 导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
 
 ## <a name="known-limitations"></a>已知限制
 

@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft Dataverse 中连接到表
+title: 连接到 Microsoft Dataverse 托管数据湖中的数据
 description: 从 Microsoft Dataverse 托管数据湖导入数据。
-ms.date: 03/18/2022
+ms.date: 05/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: c470956b0453ac2558ed85acdeebba120a0ca55d
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 9ae0b964d8d39835715b7ddadc712e2338b855af
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011692"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080779"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>连接到 Microsoft Dataverse 托管数据湖中的数据
 

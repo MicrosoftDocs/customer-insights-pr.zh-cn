@@ -21,14 +21,14 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: a7b10d985d5cba64b25595a3d7c101d6cb5c62a5
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645930"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080894"
 ---
-# <a name="relationships-between-entities"></a>实体之间的关系
+# <a name="relationships-between-entities-and-entity-paths"></a>实体和实体路径之间的关系
 
 当实体共享一个通用标识符（一个外键）时，关系会关联实体并定义您的数据图表。 此外键可从一个实体引用到另一个实体。 通过连接的实体，可基于多个数据源定义客户细分和度量。
 

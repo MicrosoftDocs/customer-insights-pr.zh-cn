@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 ActiveCampaign
+title: 将客户细分导出到 ActiveCampaign
 description: 了解如何配置连接和导出到 ActiveCampaign。
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5d15b9bf7383d06070ac92d7a729fc6e6e00c9d7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645818"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054697"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>将客户细分导出到 ActiveCampaign（预览）
 
@@ -21,9 +21,9 @@ ms.locfileid: "8645818"
 
 ## <a name="prerequisites"></a>先决条件
 
--   您具有 [ActiveCampaign 帐户](https://www.activecampaign.com/)和相应的管理员凭据。
--   您在 Customer Insights 中具有[配置的客户细分](segments.md)。
--   已导出客户细分中的统一客户配置文件包含带有电子邮件地址的字段。
+- 您具有 [ActiveCampaign 帐户](https://www.activecampaign.com/)和相应的管理员凭据。
+- 您在 Customer Insights 中具有[配置的客户细分](segments.md)。
+- 已导出客户细分中的统一客户配置文件包含带有电子邮件地址的字段。
 
 ## <a name="known-limitations"></a>已知限制
 

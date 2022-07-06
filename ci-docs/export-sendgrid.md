@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 SendGrid
+title: 将客户细分导出到 SendGrid（预览版）
 description: 了解如何配置连接和导出到 SendGrid。
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 38dd782fdf06d5970e79e6deb6e8fc94252da585
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 669f0fb48b095f6a9faeebf257ee9df3d1c580c7
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645902"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080952"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>将客户细分导出到 SendGrid（预览版）
 

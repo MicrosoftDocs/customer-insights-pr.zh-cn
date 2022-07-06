@@ -1,5 +1,5 @@
 ---
-title: 通过第三方扩充 Leadspace 扩充公司配置文件
+title: 通过 Leadspace 扩充公司配置文件（预览版）
 description: 有关 Leadspace 第三方扩充的常规信息。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954168"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080795"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>通过 Leadspace 扩充公司配置文件（预览）
+# <a name="enrich-company-profiles-with-leadspace-preview"></a>通过 Leadspace 扩充公司配置文件（预览版）
 
 Leadspace 是一个提供企业对企业客户数据平台的数据科学公司。 它使具有基于客户的统一客户配置文件的环境能够扩充数据。 使用公司规模、位置或行业等属性扩充 *客户配置文件*。 使用职务、角色或电子邮件验证等属性扩充 *联系人配置文件*。
 
@@ -82,7 +82,7 @@ Leadspace 是一个提供企业对企业客户数据平台的数据科学公司�
 
 1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 从 Azure Synapse Analytics 引入数据
+title: 连接 Azure Synapse 数据源（预览版）
 description: 将 Azure Synapse 中的数据库用作 Dynamics 365 Customer Insights 中的数据源。
 ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011416"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052688"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>连接 Azure Synapse Analytics 数据源（预览版）
 
@@ -59,7 +59,7 @@ Azure Synapse Analytics 是一项企业分析服务，可加快跨数据仓库�
 
 1. 选择到 Azure Synapse Analytics 的[可用连接](connections.md)或创建一个新连接。
 
-1. 从所选 Azure Synapse Analytics 连接中连接的工作区中选择一个 **数据库**，然后选择 **下一步**。
+1. 从所选 Azure Synapse Analytics 连接中连接的工作区中选择一个 **数据库**，然后选择 **下一步**。 当前，我们仅支持数据库类型 *湖数据库*。
 
 1. 选择要从连接的数据库中引入的实体，然后选择 **下一步**。
 

@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 Adobe Experience Platform
+title: 将客户细分导出到 Adobe Experience Platform（预览版）
 description: 了解如何在 Adobe Experience Platform 中使用 Customer Insights 客户细分。
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 42a4e0c6bce67a63b449a541299620ef2f4a3259
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645917"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052500"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>在 Adobe Experience Platform 中使用 Customer Insights 客户细分（预览版）
+# <a name="export-segments-to-adobe-experience-platform-preview"></a>将客户细分导出到 Adobe Experience Platform（预览版）
 
 作为 Dynamics 365 Customer Insights 用户，您可能已经创建了客户细分，以通过定位相关访问群体来提高市场营销活动的效率。 要在 Adobe Experience Platform 和 Adobe Campaign Standard 等应用程序中使用 Customer Insights 中的客户细分，您需要遵循本文中概述的几个步骤。
 

@@ -1,5 +1,5 @@
 ---
-title: 公司数据增强
+title: 使用增强的公司数据扩充公司配置文件
 description: 使用 Microsoft 的模型扩充并规范公司数据。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 4247d59806468907d93fc7848231ec5a2985580e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 131ef3d1e123628779609ddec368cfef8f4d607e
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953938"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054237"
 ---
-# <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>使用增强的公司数据扩充公司配置文件
+# <a name="enrich-company-profiles-with-enhanced-company-data"></a>使用增强的公司数据扩充公司配置文件
 
 使用 Microsoft 的模型和已编译的公司数据更正、补充和标准化您的公司配置文件。 我们将使用 [Common Data Model 格式](/common-data-model/schema/core/applicationcommon/account)，以确保获得更好的准确性和见解。
 
@@ -84,7 +84,7 @@ Microsft
 
 1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

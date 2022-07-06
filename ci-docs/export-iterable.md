@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 Iterable
+title: 将客户细分导出到 Iterable（预览版）
 description: 了解如何配置连接并导出到 Iterable。
 ms.date: 03/29/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 714a1323521be7d2f29ccaacd7799b2174e2937d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 98d5aeab6b0e932d291213053d509ec72da82e47
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645949"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052224"
 ---
-# <a name="export-segment-lists-to-iterable-preview"></a>将客户细分列表导出到 Iterable（预览）
+# <a name="export-segments-to-iterable-preview"></a>将客户细分导出到 Iterable（预览版）
 
 将 Unified customer profile 的客户细分导出到 Iterable，然后将其用于市场营销活动。
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 Azure Maps 中的位置数据扩充客户配置文件
+title: 使用 Azure Maps 中的位置数据扩充客户配置文件（预览版）
 description: 有关 Azure Maps 第一方扩充的常规信息。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953617"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052596"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>使用 Azure Maps（预览版）扩充客户配置文件
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>使用 Azure Maps 中的位置数据扩充客户配置文件（预览版）
 
 Azure Maps 提供以位置为中心的数据和服务，以提供基于具有内置位置智能的地理空间数据的体验。 Azure Maps 数据扩充服务可以提高有关客户位置的信息的精度。 其为 Dynamics 365 Customer Insights 提供地址标准化和经纬度提取之类功能。
 
@@ -82,7 +82,7 @@ Azure Maps 提供以位置为中心的数据和服务，以提供基于具有内
 
 1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

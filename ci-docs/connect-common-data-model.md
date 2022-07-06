@@ -1,5 +1,5 @@
 ---
-title: 将 Common Data Model 数据连接到 Azure Data Lake 帐户
+title: 使用 Azure Data Lake 帐户连接到 Common Data Model 文件夹
 description: 使用 Azure Data Lake Storage 处理 Common Data Model 数据。
 ms.date: 05/30/2022
 ms.topic: how-to
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: 2ab7ec77252be33f1203959c2a596ddec20425f2
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011546"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080786"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>在 Azure Data Lake Storage 中连接到数据
 
@@ -79,7 +79,7 @@ ms.locfileid: "9011546"
 
 1. 选择要包括的实体。
 
-   :::image type="content" source="media/ADLS_required.png" alt-text="主键显示&quot;必需&quot;的对话框":::
+   :::image type="content" source="media/ADLS_required.png" alt-text="主键显示“必需”的对话框":::
 
    > [!TIP]
    > 要在 JSON 编辑界面中编辑实体，选择 **显示更多** > **编辑架构文件**。 进行更改，然后选择 **保存**。
@@ -136,7 +136,7 @@ ms.locfileid: "9011546"
 
 1. 添加所有实体后，选择 **包括** 在数据源引入中包括实体。
 
-   :::image type="content" source="media/ADLS_required.png" alt-text="主键显示&quot;必需&quot;的对话框":::
+   :::image type="content" source="media/ADLS_required.png" alt-text="主键显示“必需”的对话框":::
 
 1. 对于需要增量引入的选定实体，**增量刷新** 下会显示 **必需**。 对于每个实体，请参阅[为 Azure Data Lake 数据源配置增量刷新](incremental-refresh-data-sources.md)。
 

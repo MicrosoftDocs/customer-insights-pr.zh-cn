@@ -1,5 +1,5 @@
 ---
-title: 通过第三方扩充 HERE Technologies 进行的扩充
+title: 使用 HERE Technologies 扩充客户配置文件（预览版）
 description: 有关 HERE Technologies 第三方扩充的常规信息。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 171ead92427924083a13e2a3d52e7a7da417c801
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953662"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052040"
 ---
-# <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>通过 HERE Technologies 扩充客户配置文件（预览）
+# <a name="enrich-customer-profiles-with-here-technologies-preview"></a>使用 HERE Technologies 扩充客户配置文件（预览版）
 
 HERE Technologies 是一家位置平台公司，可提供以位置为中心的数据和服务。 HERE Technologies 的数据扩充服务可提高客户位置信息的精确度。 它提供地址标准化、纬度和经度提取等。
 
@@ -72,7 +72,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

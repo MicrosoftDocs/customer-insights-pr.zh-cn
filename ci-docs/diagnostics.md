@@ -1,5 +1,5 @@
 ---
-title: 使用 Azure Monitor 审核 Dynamics 365 Customer Insights
+title: 使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
 description: 了解如何将日志发送到 Microsoft Azure Monitor。
 ms.date: 12/14/2021
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
-ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
+ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "8807570"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052642"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
 

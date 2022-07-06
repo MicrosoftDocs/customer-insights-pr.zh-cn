@@ -1,5 +1,5 @@
 ---
-title: 通过 Dun & Bradstreet 扩充公司配置文件
+title: 通过 Dun & Bradstreet 扩充公司配置文件（预览版）
 description: 有关 Dun & Bradstreet 第三方扩充的一般信息。
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953880"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080891"
 ---
-# <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>通过 Dun & Bradstreet 扩充公司配置文件（预览版）
+# <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>通过 Dun & Bradstreet 扩充公司配置文件（预览版）
 
 Dun & Bradstreet 为企业提供商业数据、分析和见解。 它使那些具有公司统一客户配置文件的客户能够扩充其数据。 扩充包括 DUNS 编号、公司规模、位置、行业等属性。
 
@@ -102,7 +102,7 @@ Dun & Bradstreet 为企业提供商业数据、分析和见解。 它使那些�
 
 1. 选择 **运行** 启动扩充过程或关闭返回到 **扩充** 页面。
 
-## <a name="enrichment-results"></a>扩充结果
+## <a name="view-enrichment-results"></a>查看扩充结果
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 Campaign Monitor
+title: 将客户细分导出到 Campaign Monitor（预览版）
 description: 了解如何配置连接和导出到 Campaign Monitor。
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b351e491ee830b6360d4efe33d32a726c2e553ba
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ea7431d4df5143724b5ecf2a2d747ed164fe2c29
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645601"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080937"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>将客户细分导出到 Campaign Monitor（预览版）
 

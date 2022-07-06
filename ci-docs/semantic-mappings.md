@@ -1,5 +1,5 @@
 ---
-title: 语义映射（预览）
+title: 语义映射(预览版)
 description: 语义映射概述以及如何使用它们。
 ms.date: 12/01/2021
 ms.subservice: audience-insights
@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-semantic-mapping
 - customerInsights
-ms.openlocfilehash: a60855f6d5616ca9b958752836d1071ae3433db0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b3a0643ab71c98ce212f4e4581a584d8382c67eb
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645857"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080961"
 ---
-# <a name="semantic-mappings-preview"></a>语义映射（预览）
+# <a name="semantic-mappings-preview"></a>语义映射(预览版)
 
 语义映射使您可以将非活动数据映射到预定义架构。 这些架构可帮助 Customer Insights 更好地了解您的数据属性。 语义映射和提供的数据在 Customer Insights 中实现了新的见解和特征。 要将您的活动数据映射到架构，请查看[活动](activities.md)文档。
 

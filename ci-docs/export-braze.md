@@ -1,34 +1,35 @@
 ---
-title: 将 Customer Insights 数据导出到 Braze
+title: 将客户细分导出到 Braze（预览版）
 description: 了解如何配置连接并导出到 Braze。
-ms.date: 03/29/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bfc9b34506dc3385b5edf12b31e74d05f2d20655
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 314a61f82c4040a8dbd6dff1dd5d92e20464f82a
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645604"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080909"
 ---
-# <a name="export-segment-lists-to-braze-preview"></a>将客户细分列表导出到 Braze（预览）
+# <a name="export-segments-to-braze-preview"></a>将客户细分导出到 Braze（预览版）
 
 将 Unified customer profile 的客户细分导出到 Braze，然后将其用于市场营销活动。
 
 ## <a name="prerequisites"></a>先决条件
 
--   您有 [Braze 帐户](https://www.braze.com/)和相应的管理员凭据。
--   您在 Customer Insights 中具有[配置的客户细分](segments.md)。
--   导出的客户细分中的 Unified customer profile 包含一个表示电子邮件地址和 Braze 客户 ID 的字段。 
+- [Braze 帐户](https://www.braze.com/)和相应的管理员凭据。
+- [Braze 中的现有客户细分](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment/)。
+- Customer Insights 中[配置的客户细分](segments.md)。
+- 导出的客户细分中的 Unified customer profile 包含一个表示电子邮件地址和 Braze 客户 ID 的字段。
 
 ## <a name="known-limitations"></a>已知限制
 
 - 导出到 Braze 仅限于客户细分。
-- 向 Braze 导出最多 100 万个客户配置文件最长可能需要 40 分钟完成。 
+- 向 Braze 导出最多 100 万个客户配置文件最长可能需要 40 分钟完成。
 - 您可以导出到 Braze 的客户配置文件数量取决和受限于您与 Braze 的合同。
 
 ## <a name="set-up-connection-to-braze"></a>设置与 Braze 的连接
@@ -41,7 +42,7 @@ ms.locfileid: "8645604"
 
 1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-1. 提供您的 [Braze API 密钥](https://www.braze.com/docs/api/basics/)继续登录。 
+1. 提供您的 [Braze API 密钥](https://www.braze.com/docs/api/basics/)继续登录。
 
 1. 选择 **我同意** 确认 **数据隐私与合规性**。
 
@@ -59,9 +60,13 @@ ms.locfileid: "8645604"
 
 1. 要创建新导出，请选择 **添加导出**。
 
-1. 在 **导出连接** 字段中，从 Braze 部分选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。  
+1. 在 **导出连接** 字段中，从 Braze 部分选择连接。 如果您没有看到此部分，则表示您没有可用的此类连接。  
 
-3. 在 **数据匹配** 部分，在 **电子邮件** 字段中，选择代表客户电子邮件地址的字段，在“客户 ID”字段中，选择代表客户的 Braze ID 的字段。 需要将客户细分导出到 Braze。 Braze 中的客户细分将使用与 Dynamics 365 Customer Insights 中的客户细分相同的名称创建。 您可以选择其他的可选字段来匹配数据。 
+1. 为您的导出添加一个 **显示名称**。
+
+1. 在 **Braze 客户细分 API 标识符** 字段中添加要导出到的 Braze 客户细分的 API 标识符。 您可以在 Braze 平台上的客户细分详细信息中找到标识符。
+
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 在 **客户 ID** 字段中，选择代表客户的 Braze ID 的字段。 需要将客户细分导出到 Braze。 可以选择性地选择更多字段。
 
 1. 选择 **保存**。
 

@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 Criteo
+title: 将客户细分导出到 Criteo（预览版）
 description: 了解如何配置连接并导出到 Criteo。
 ms.date: 05/27/2022
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 854f5f0c53f053fc5d742d69a045db1926fec00c
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: ace9056d200a3179e442132004324a01f0d247b6
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808760"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080924"
 ---
 # <a name="export-segments-to-criteo-preview"></a>将客户细分导出到 Criteo（预览版）
 

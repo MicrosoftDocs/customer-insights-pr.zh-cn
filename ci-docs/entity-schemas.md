@@ -1,5 +1,5 @@
 ---
-title: Common Data Model 中的 Customer Insights 实体架构
+title: Common Data Model 中的实体架构
 description: 使用 Common Data Model 中的实体。
 ms.date: 08/13/2021
 ms.reviewer: mhart
@@ -8,16 +8,14 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757421"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054743"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Common Data Model 中的实体架构
-
-
 
 [Common Data Model](/common-data-model/) 声明性规范，也是代表跨多种企业和生产力应用程序的常用概念和活动的标准实体的定义。 此模型也将延伸到观察数据和分析数据。 Common Data Model 提供明确定义、模块化和可扩展的业务实体（例如帐户、业务部门、用例、联系人、潜在客户、机会和产品），还提供与供应商、员工和客户之间的交互（例如活动和服务级别协议）。 任何人都可以生成和扩展 Common Data Model 定义以捕获更多特定于业务的观点。
 

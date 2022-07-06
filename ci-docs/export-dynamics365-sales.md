@@ -1,5 +1,5 @@
 ---
-title: 将 Customer Insights 数据导出到 Dynamics 365 Sales
+title: 将客户细分导出到 Dynamics 365 Sales（预览版）
 description: 了解如何配置连接和导出到 Dynamics 365 Sales。
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: 987690283090ec83ca75f50bf8f3cd8da9295887
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8e756313ca037dca41cb25587229808f0c584c9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645640"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080798"
 ---
-# <a name="use-segments-in-dynamics-365-sales-preview"></a>在 Dynamics 365 Sales 中使用客户细分（预览版）
-
-
+# <a name="export-segments-to-dynamics-365-sales-preview"></a>将客户细分导出到 Dynamics 365 Sales（预览版）
 
 使用您的客户数据通过 Dynamics 365 Sales 创建市场营销列表、跟进工作流以及发出促销。
 

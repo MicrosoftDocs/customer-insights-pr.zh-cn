@@ -1,5 +1,5 @@
 ---
-title: 基于活动的建议客户细分。
+title: 根据活动建议的客户细分（预览版）
 description: 让机器学习功能根据客户活动帮助您查找新客户细分和感兴趣的客户细分。
 ms.date: 05/11/2021
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-segment-suggestions
 - customerInsights
-ms.openlocfilehash: 85c3cef3a8d531b31b64a7e5decbdc122c4383fc
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e98aea3b3f3a2c4788346deab1b7ad7d1167110d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645851"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054329"
 ---
 # <a name="suggested-segments-based-on-activity-data-preview"></a>基于活动数据的建议客户细分（预览版）
 
