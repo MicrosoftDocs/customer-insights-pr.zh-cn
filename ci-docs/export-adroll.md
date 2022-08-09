@@ -1,53 +1,53 @@
 ---
 title: 将客户细分导出到 AdRoll（预览版）
 description: 了解如何配置连接和导出到 AdRoll。
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8110eab199920ab8fc2ea15678139faf264a242a
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080930"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195739"
 ---
 # <a name="export-segments-to-adroll-preview"></a>将客户细分导出到 AdRoll（预览版）
 
-将统一客户配置文件的客户细分导出到 AdRoll 中，并使用它们投放广告。 
+将统一客户配置文件的客户细分导出到 AdRoll 中，并使用它们投放广告。
 
-## <a name="prerequisites-for-a-connection"></a>连接的先决条件
+## <a name="prerequisites"></a>先决条件
 
-- 您具有 [AdRoll 帐户](https://www.adroll.com/)和相应的管理员凭据。
-- 您在 Customer Insights 中具有[配置的客户细分](segments.md)。
+- [AdRoll 帐户](https://www.adroll.com/)和相应的管理员凭据。
+- [AdRoll 广告厂商 ID](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)。
+- Customer Insights 中[配置的客户细分](segments.md)。
 - 导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
 
 ## <a name="known-limitations"></a>已知限制
 
-- 您一次最多可以将 250,000 个客户配置文件导出到 AdRoll。
-- 不能将少于 100 个客户配置文件的客户细分导出到 AdRoll。 
-- 导出到 AdRoll 仅限于客户细分。
-- 向 AdRoll 导出最多 250,000 个客户配置文件最长可能需要 10 分钟完成。 
-- 您可以导出到 AdRoll 的客户配置文件数量取决于您与 AdRoll 的合同。
+- 每次导出最多向 AdRoll 导出 250,000 个客户配置文件，最长可能需要 10 分钟完成。 您可以导出到 AdRoll 的客户配置文件数量取决于您与 AdRoll 的合同。
+- 仅客户细分。 一个客户细分必须至少包含 100 个客户配置文件。
 
 ## <a name="set-up-connection-to-adroll"></a>设置与 AdRoll 的连接
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. 转到 **管理员** > **连接**。
 
-1. 选择 **添加连接** 并选择 **AdRoll** 以配置连接。
+1. 选择 **添加连接** 并选择 **AdRoll**。
 
 1. 在 **显示名称** 字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
 
-1. 选择可使用此连接的人员。 如果不采取任何行动，默认值将是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
+1. 选择可使用此连接的人员。 默认情况下，仅限管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-1. 选择 **我同意** 确认 **数据隐私与合规性**。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
 
-1. 选择 **连接** 以初始化与 AdRoll 的连接。
+1. 选择 **连接** 以初始化连接。
 
-1. 选择 **使用 AdRoll 进行身份验证** 并提供您的 AdRoll 管理员凭据。 
+1. 选择 **使用 AdRoll 进行身份验证** 并提供您的 AdRoll 管理员凭据。
 
 1. 选择 **将自己添加为导出用户** 并提供您的 Customer Insights 凭据。
 
@@ -55,31 +55,24 @@ ms.locfileid: "9080930"
 
 ## <a name="configure-an-export"></a>配置导出
 
-如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. 转到 **数据** > **导出**。
 
-1. 要创建新导出，请选择 **添加导出**。
+1. 选择 **添加导出**。
 
-1. 在 **导出连接** 字段中，从 AdRoll 部分选择连接。 如果看不到此部分名称，则没有此类型的连接可用。
+1. 在 **导出连接** 字段中，从 AdRoll 部分选择连接。 如果没有连接可用，请联系管理员。
 
-1. 输入您的 **AdRoll 广告厂商 ID**。 有关详细信息，请参阅 [AdRoll 广告厂商配置文件](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles)。
+1. 为导出输入名称。
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 需要将客户细分导出到 AdRoll。
+1. 输入您的 **AdRoll 广告厂商 ID**。
 
-1. 选择想要导出的细分。 选择至少包含 100 个成员的客户细分。 不能导出较小的客户细分。 此外，对于每个导出，要导出的客户细分的最大大小为 250,000 个成员。 
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。
+
+1. 选择想要导出的细分。
 
 1. 选择 **保存**。
 
-保存导出不会立即运行导出。
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 
-
-您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
-
-
-## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当您启用 Dynamics 365 Customer Insights 将数据传输到 AdRoll 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将在您的指导下传输此类数据，但您有责任确保 AdRoll 满足您可能需遵守的任何隐私或安全义务。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
-
-您的 Dynamics 365 Customer Insights 管理员可以随时删除此导出目标来中止使用此功能。
+[!INCLUDE [footer-include](includes/footer-banner.md)]

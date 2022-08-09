@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 39d68011df9e4341244af627bb71f4e3635256bb
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 403cc9dbd3bddcf67f59b5cb0be936af4d268fc2
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080965"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195647"
 ---
 # <a name="real-time-data-ingestion-preview"></a>实时数据引入（预览版）
 
@@ -28,7 +28,7 @@ ms.locfileid: "9080965"
 
 实时更新有到期时间，此时间之后，更新不再会覆盖数据源中的值。
 
-- 配置文件更新将保留 4 小时
+- 配置文件更新将保留四小时
 - 活动将保留 30 天
 
 这些值是您可以更改的 API 调用参数。 它们旨在确保源数据一直充当您的真相来源。 如果您希望实时更新保留更长时间，需要将其添加到数据源，以便在下次计划刷新期间获取它们。

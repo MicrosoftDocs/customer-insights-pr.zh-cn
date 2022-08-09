@@ -14,16 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080944"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139646"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>统一客户字段，实现数据统一
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 在统一过程的此步骤中，选择并排除要在统一配置文件实体中合并的属性。 例如，如果三个实体具有电子邮件数据，您可能希望保留所有三个单独的电子邮件字段，或将它们合并成统一配置文件的单个电子邮件字段。 某些属性由系统自动合并。 您可以创建稳定且唯一的客户 ID，并将相关配置文件分组到一个群集中。
 

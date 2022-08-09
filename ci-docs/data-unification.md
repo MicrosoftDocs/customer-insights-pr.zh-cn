@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-map
 - customerInsights
-ms.openlocfilehash: 0dbc3b2c75365e94758a1b6330e8cb557e6bd768
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 766e688cb80c50a0d620943f87b76eb84a2fb89a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080782"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139468"
 ---
 # <a name="data-unification-overview"></a>数据统一概述
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 在[设置数据源](data-sources.md)后，您可以统一数据。 数据统一允许您将以前分散的数据源统一到单个主数据集中，从而提供该数据的统一视图。 对于数据以个人为中心的个人消费者（企业对客户），统一提供了客户的统一视图。 对于数据以客户为中心的企业客户（企业对企业），统一提供了客户的统一视图。
 

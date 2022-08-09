@@ -1,7 +1,7 @@
 ---
 title: 连接 Azure Synapse 数据源（预览版）
 description: 将 Azure Synapse 中的数据库用作 Dynamics 365 Customer Insights 中的数据源。
-ms.date: 03/25/2022
+ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 54247fbcdc27f6ed8314e0755164083eb461aa64
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052688"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206896"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>连接 Azure Synapse Analytics 数据源（预览版）
 
@@ -66,3 +66,9 @@ Azure Synapse Analytics 是一项企业分析服务，可加快跨数据仓库�
 1. （可选）选择数据实体以允许对其进行数据分析。
 
 1. 选择 **保存** 以应用您的选择，并开始从链接到 Azure Synapse Analytics 中的湖数据库表的新建数据源中引入数据。 **数据源** 页面将打开，显示处于 **正在刷新** 状态的新数据源。
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+加载数据可能需要一些时间。 成功刷新后，可以从 [**实体**](entities.md)页查看引入的数据。
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

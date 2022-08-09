@@ -1,7 +1,7 @@
 ---
 title: 使用 Azure Data Lake 帐户连接到 Common Data Model 文件夹
 description: 使用 Azure Data Lake Storage 处理 Common Data Model 数据。
-ms.date: 05/30/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080786"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206988"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>在 Azure Data Lake Storage 中连接到数据
 
@@ -82,7 +82,7 @@ ms.locfileid: "9080786"
    :::image type="content" source="media/ADLS_required.png" alt-text="主键显示“必需”的对话框":::
 
    > [!TIP]
-   > 要在 JSON 编辑界面中编辑实体，选择 **显示更多** > **编辑架构文件**。 进行更改，然后选择 **保存**。
+   > 要在 JSON 编辑界面中编辑实体，选择实体，然后选择 **编辑架构文件**。 进行更改，然后选择 **保存**。
 
 1. 对于需要增量引入的选定实体，**增量刷新** 下会显示 **必需**。 对于每个实体，请参阅[为 Azure Data Lake 数据源配置增量刷新](incremental-refresh-data-sources.md)。
 
@@ -101,6 +101,10 @@ ms.locfileid: "9080786"
    1. 选择 **完成**。
 
 1. 选择 **保存**。 **数据源** 页面将打开，显示处于 **正在刷新** 状态的新数据源。
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+加载数据可能需要一些时间。 成功刷新后，可以从 [**实体**](entities.md)页查看引入的数据。
 
 ### <a name="create-a-new-schema-file"></a>创建新架构文件
 
@@ -148,6 +152,9 @@ ms.locfileid: "9080786"
 
 1. 选择 **保存**。 **数据源** 页面将打开，显示处于 **正在刷新** 状态的新数据源。
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+加载数据可能需要一些时间。 成功刷新后，可以从 [**实体**](entities.md)页查看引入的数据。
 
 ## <a name="edit-an-azure-data-lake-storage-data-source"></a>编辑 Azure Data Lake Storage 数据源
 
@@ -179,8 +186,16 @@ ms.locfileid: "9080786"
       > [!IMPORTANT]
       > 如果现有 model.json 或 manifest.json 文件以及实体集上存在依赖项，则会看到错误消息，并且无法选择其他 model.json 或 manifest.json 文件。 在更改 model.json 或 manifest.json 文件或使用想要避免删除依赖项的 model.json 或 manifest.json 文件创建新数据源之前，请删除这些依赖项。
    - 要更改数据文件位置或主键，选择 **编辑**。
-   - 要更改增量引入数据，请参阅[为 Azure Data Lake 数据源配置增量刷新](incremental-refresh-data-sources.md)
+   - 要更改增量引入数据，请参阅[为 Azure Data Lake 数据源配置增量刷新](incremental-refresh-data-sources.md)。
+   - 仅更改实体名称以匹配 .json 文件中的实体名称。
+
+     > [!NOTE]
+     > 引入后，让 Customer Insights 中的实体名称与 model.json 或 manifest.json 文件中的实体名称始终保持相同。 Customer Insights 会在每次系统刷新期间使用 model.json 或 manifest.json 验证所有实体名称。 如果在 Customer Insights 内部或外部更改实体名称，将会发生错误，因为 Customer Insights 在 .json 文件中找不到新实体名称。 如果意外更改了引入实体的名称，请在 Customer Insights 中编辑实体名称以匹配 .json 文件中的名称。
 
 1. 选择 **属性** 添加或更改属性，或启用数据分析。 然后选择 **完成**。
 
 1. 单击 **保存** 应用您的更改并返回到 **数据源** 页面。
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

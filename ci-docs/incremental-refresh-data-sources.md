@@ -11,18 +11,16 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: bff27bf7fec2bcb741846ae76bb1f616f459136c
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: de39743eb8728fac34e417724c5f73bf44309c89
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9012014"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207126"
 ---
 # <a name="incremental-refresh-for-power-query-and-azure-data-lake-data-sources"></a>Power Query 和 Azure Data Lake 数据源的增量刷新
 
-本文讨论如何为基于 Power Query 或 Azure Data Lake 的数据源配置增量刷新。
-
-对数据源进行增量刷新具有以下优点：
+基于 Power Query 或 Azure Data Lake 的数据源的增量刷新具有以下优点：
 
 - **刷新速度更快** - 仅刷新已更改的数据。 例如，可以仅刷新过去五天的历史数据集。
 - **提高可靠性** - 因为刷新量较小，所以无需长时间与不稳定源系统保持连接，从而可以降低连接问题风险。
@@ -73,6 +71,7 @@ Customer Insights 允许增量刷新连接到 Azure Data Lake Storage 的数据�
 
    1. 浏览到包含完整数据、增量数据插入和增量数据删除的 .csv 或 .parquet 文件的根文件夹。
    1. 输入完整数据和两个增量文件（\.csv 或 \.parquet）的扩展名。
+   1. 对于 .csv 文件，选择列分隔符以及是否要将文件的第一行作为列标题。
    1. 选择 **保存**。
 
 1. 对于 **上次更新时间**，选择日期时间戳属性。

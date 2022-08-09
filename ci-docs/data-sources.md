@@ -1,7 +1,7 @@
 ---
 title: 数据源概述
 description: 了解如何从各种源导入或导入数据。
-ms.date: 05/18/2022
+ms.date: 07/26/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
@@ -12,20 +12,20 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: fbe44f655bdbc20ef7f0956022395e2dcb570adf
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9051442"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207080"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
 Dynamics 365 Customer Insights 提供连接来从广泛的源获取数据。 连接到数据源通常称为 *数据引入* 过程。 引入数据后，您可以[统一](data-unification.md)、生成见解以及激活数据来构建个性化体验。
 
-## <a name="add-data-sources"></a>添加数据源
+## <a name="add-or-edit-data-sources"></a>添加或编辑数据源
 
-您可以将数据源附加或导入到 Customer Insights。 下面的链接提供了添加数据源的说明。
+您可以将数据源附加或导入到 Customer Insights。 下面的链接提供了添加和编辑数据源的说明。
 
 **附加数据源**
 
@@ -50,13 +50,18 @@ Dynamics 365 Customer Insights 提供连接来从广泛的源获取数据。 连
 
 如果您的环境不使用 Power Platform 数据流，**数据源** 页面仅包含所有数据源的列表。 不显示任何部分。
 
-转到 **数据** > **数据源** 查看每个引入的数据源的名称、状态以及上次为该源刷新数据的时间。 您可以按每一列对数据源列表进行排序。
+## <a name="manage-existing-data-sources"></a>管理现有数据源
 
-:::image type="content" source="media/configure-data-datasource-added.png" alt-text="已添加数据源。":::
+转到 **数据** > **数据源** 查看每个引入的数据源的名称、状态以及上次为该源刷新数据的时间。 您可以按任何列对数据源列表进行排序，或使用搜索框查找要管理的数据源。
 
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+选择数据源查看可用操作。
 
-加载数据可能需要一些时间。 成功刷新后，可以从 **实体** 页查看引入的数据。 有关详细信息，请参阅[实体](entities.md)。
+:::image type="content" source="media/data_sources_showmore.png" alt-text="已添加数据源。":::
+
+- [**编辑**](#add-or-edit-data-sources)数据源更改其属性。
+- [**刷新**](#refresh-data-sources)数据源以包括最新数据。
+- 在统一之前 [**扩充**](data-sources-enrichment.md)数据源。
+- **删除** 数据源。 仅当数据未用于任何处理（如统一、见解、激活或导出）时，才能删除数据源。
 
 ## <a name="refresh-data-sources"></a>刷新数据源
 
@@ -64,23 +69,12 @@ Dynamics 365 Customer Insights 提供连接来从广泛的源获取数据。 连
 
 转到 **管理** > **系统** > [**计划**](system.md#schedule-tab)配置引入的数据源的系统计划刷新。
 
-若要根据需要刷新数据源，请执行以下步骤：
+要按需刷新数据源：
 
 1. 转到 **数据** > **数据源**。
 
-1. 选择您要更改刷新的数据源旁边的竖省略号 (&vellip;)，然后从下拉列表中选择 **刷新**。 现在，将为数据源触发手动刷新。 刷新数据源将更新数据源中指定的所有实体的实体架构和数据。
+1. 选择要刷新的数据源，然后选择 **刷新**。 现在，将为数据源触发手动刷新。 刷新数据源将更新数据源中指定的所有实体的实体架构和数据。
 
-1. 如果要取消现有刷新，请选择 **停止刷新**，数据源将还原到上次刷新状态。
-
-## <a name="delete-a-data-source"></a>删除数据源
-
-仅当数据未用于任何处理（如统一、见解、激活或导出）时，才能删除数据源。
-
-1. 转到 **数据** > **数据源**。
-
-2. 选择您要删除的数据源旁边的竖省略号 (&vellip;)，然后从下拉菜单中选择 **删除**。
-
-3. 确认删除。
-
+1. 选择状态打开 **进度详细信息** 窗格，查看进度。 要取消作业，选择窗格底部的 **取消作业**。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

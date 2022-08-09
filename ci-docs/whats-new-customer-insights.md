@@ -1,19 +1,19 @@
 ---
 title: Dynamics 365 Customer Insights 中的新增功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 06/02/2022
+ms.date: 06/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 4b5b95d1774d22827b3c08c2b6ccbb7858f1b04b
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
+ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054007"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114235"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 中的新增功能
 
@@ -23,6 +23,34 @@ ms.locfileid: "9054007"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="june-2022-updates"></a>2022 年 6 月更新
+
+2022 年 6 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="updated-user-experience-for-data-sources-and-data-ingestion"></a>更新了数据源和数据引入的用户体验
+
+从广泛的数据源导入数据是在 Dynamics 365 Customer Insights 中整合您的客户数据的基础。 我们重新审视了数据源导入和连接的用户体验。 此更新的目的是让您更轻松地将数据引入到 Customer Insights。
+
+有关详细信息，请参阅[数据源概述](data-sources.md)。
+
+### <a name="export-to-inmobi"></a>导出到 InMobi
+
+InMobi 帮助品牌了解、识别、吸引和获取消费者。 您可以通过 Azure Blob 存储帐户将客户细分和其他数据导出到 InMobi 服务。
+
+有关详细信息，请参阅[导出到 InMobi（预览）](export-inmobi.md)
+
+### <a name="lockbox-support-in-customer-insights"></a>Customer Insights 中的密码箱支持
+
+客户密码箱提供了一个界面来审查和批准（或拒绝）数据访问请求。 当需要对客户数据进行数据访问以解决支持案例时，会出现这些请求。
+
+有关详细信息，请参阅[使用客户密码箱安全地访问客户数据（预览）](security-overview.md#securely-access-customer-data-with-customer-lockbox-preview)。
+
+### <a name="connect-to-your-data-using-azure-private-link"></a>使用 Azure 专用链接连接到数据
+
+Azure 专用链接让 Customer Insights 通过虚拟网络中的专用终结点连接到您的 Azure Data Lake Storage 帐户。 对于不向公共 Internet 公开的存储帐户中的数据，专用链接启用与该受限网络的连接。
+
+有关详细信息，请参阅[使用 Customer Insights 中的专用链接](security-overview.md#private-links-tab)。
 
 ## <a name="may-2022-updates"></a>2022 年 5 月更新
 

@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: fb97b721cc82ccd23cfd1df74a0712b8fc277b8a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 98e9e330e7ef9cf085caa94a506fa788cebdd67b
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080777"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207172"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>数据源扩充（预览）
 
@@ -21,9 +21,9 @@ ms.locfileid: "9080777"
 
 ## <a name="enrich-a-data-source"></a>扩充数据源
 
-您必须具有参与者或管理员权限才能创建或编辑扩充。 有关详细信息，请参阅[权限](permissions.md)。  
+您必须具有参与者或管理员[权限](permissions.md)才能创建或编辑扩充。  
 
-1. 转到 **数据** > **统一**。 选择要扩充的实体，然后选择一个属性作为实体的主键。 有关详细信息，请参阅[选择主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。
+1. 转到 **数据** > **统一**。 选择要扩充的实体，然后选择一个属性作为实体的[主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。
 
 1. 转到 **数据** > **数据源**。
 
@@ -47,8 +47,8 @@ ms.locfileid: "9080777"
 
 ## <a name="manage-existing-data-source-enrichments"></a>管理现有数据源扩充
 
-转到 **我的扩充** 选项卡以查看所有配置的扩充。
+转到 **数据** > **扩充**。 在 **我的扩充** 选项卡上，查看配置的扩充、其状态、扩充的客户数以及上次刷新数据的时间。 您可以按任何列对扩充列表进行排序，或使用搜索框查找要管理的扩充。
 
-选择扩充以查看可用选项。 您也可以选择列表项上的竖省略号 (&vellip;) 来查看选项。 如果您配置了多个扩充，则可以使用搜索框快速找到它。
+选择扩充以查看可用选项。 您也可以选择列表项上的竖省略号 (&vellip;) 来查看选项。
 
-您可以查看、编辑、运行或删除数据源扩充。 有关详细信息，请参阅[管理现有扩充](enrichment-hub.md)。
+您可以查看、编辑、运行或删除数据源扩充。 有关详细信息，请参阅[管理现有扩充](enrichment-hub.md#manage-existing-enrichments)。

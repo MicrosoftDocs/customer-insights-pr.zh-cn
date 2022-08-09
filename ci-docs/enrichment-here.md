@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052040"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196245"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>使用 HERE Technologies 扩充客户配置文件（预览版）
 
@@ -54,7 +54,7 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 1. 查看概览，然后选择 **下一步**。
 
-1. 选择连接。 如果连接不可用，请联系管理员。
+1. 选择连接。 如果没有连接可用，请联系管理员。
 
 1. 选择 **下一步**。
 

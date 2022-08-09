@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 415cd5d675512b4f434998afaa8265c8e45c562b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72aa38242df21181f142833db03c825574455986
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645933"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171038"
 ---
 # <a name="subscription-churn-prediction"></a>订阅流失预测
 
@@ -121,7 +121,7 @@ ms.locfileid: "8645933"
    - **预测名称：** 创建预测时提供的预测名称。
    - **预测类型：** 用于预测的模型类型
    - **输出实体：** 用于存储预测输出的实体的名称。 您可以在 **数据** > **实体** 中查找具有此名称的实体。    
-     在输出实体中，*ChurnScore* 是预测的流失概率，*IsChurn* 是基于 *ChurnScore* 的二进制标签，阈值为 0.5。 默认阈值可能不适合您的方案。 使用首选阈值[创建新客户细分](segments.md#create-a-new-segment)。
+     在输出实体中，*ChurnScore* 是预测的流失概率，*IsChurn* 是基于 *ChurnScore* 的二进制标签，阈值为 0.5。 默认阈值可能不适合您的方案。 使用首选阈值[创建新客户细分](segments.md#create-a-segment)。
    - **预测字段：** 系统仅为某些类型的预测填充此字段，此字段不用于订阅流失预测。
    - **状态：** 预测运行的当前状态。
         - **已排队：** 预测当前正在等待其他流程运行。

@@ -104,22 +104,26 @@
       href: enrichment-here.md
     - name: SFTP 自定义导入
       href: enrichment-SFTP-custom-import.md
-- name: 统一的配置文件
+- name: 客户配置文件和活动
   items:
-    - name: 查看统一的客户配置文件
+    - name: 查看客户配置文件
       href: customer-profiles.md
-    - name: 筛选统一的客户配置文件
+    - name: 管理搜索和筛选索引
       href: search-filter-index.md
     - name: 定义客户活动
       href: activities.md
     - name: 使用同意管理
       href: consent-management.md
+    - name: 使用 Web 数据进行个性化设置
+      href: unknown-to-known.md
 - name: Segments
   items:
     - name: 客户细分概述
       href: segments.md
-    - name: 创建客户细分
+    - name: 使用客户细分生成器创建
       href: segment-builder.md
+    - name: 使用快速客户细分创建
+      href: segment-quick.md
     - name: 基于度量的建议客户细分
       href: suggested-segments.md
     - name: 基于活动的建议客户细分
@@ -132,9 +136,9 @@
   items:
     - name: 度量概述
       href: measures.md
-    - name: 新建度量
+    - name: 使用度量生成器创建
       href: measure-builder.md
-    - name: 使用度量模板
+    - name: 使用模板创建
       href: measure-templates.md
 - name: 预测
   items:
@@ -180,6 +184,10 @@
           href: export-destinations.md
         - name: 活跃的市场活动
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: Autopilot
@@ -190,10 +198,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
         - name: Campaign Monitor
@@ -228,6 +232,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: MoEngage
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks

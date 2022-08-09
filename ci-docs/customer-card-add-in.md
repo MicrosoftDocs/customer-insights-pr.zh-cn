@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080778"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9194911"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 应用的客户卡加载项（预览版）
 
@@ -28,21 +28,25 @@ ms.locfileid: "9080778"
 
 ## <a name="prerequisites"></a>先决条件
 
-- 该加载项仅适用于 Dynamics 365 模型驱动应用，例如 Sales 或 Customer Service 版本 9.0 及更高版本。
-- 要将 Dynamics 365 数据映射到 Customer Insights 客户配置文件，建议[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)。 如果您使用不同的方法来引入 Dynamics 365 联系人（或客户），您需要确保 `contactid`（或 `accountid`）字段[在数据统一过程的映射步骤中设置为该数据源的主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。
+- Dynamics 365 模型驱动应用，如 Sales 或 Customer Service 版本 9.0 及更高版本。
+- 要将 Dynamics 365 数据映射到 Customer Insights 客户配置文件，建议[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)。 如果您使用不同的方法来引入 Dynamics 365 联系人（或客户），请确保 `contactid`（或 `accountid`）字段[在数据统一过程中设置为该数据源的主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。
 - 客户卡加载项的所有 Dynamics 365 用户都必须在 Customer Insights 中[添加为用户](permissions.md)才能查看数据。
-- 需要使用 Customer Insights 中[配置的搜索和筛选功能](search-filter-index.md)才能查找数据。
+- 在 Customer Insights 中[配置了搜索和筛选功能](search-filter-index.md)。
 - 每个加载项控件都依赖于 Customer Insights 中的特定数据。 某些数据和控件仅在特定类型的环境中可用。 加载项配置将通知您控件是否由于所选环境类型而不可用。 详细了解[环境用例](work-with-business-accounts.md)。
-  - **度量值控件**：需要配置的客户属性类型的[度量值](measures.md)。
-  - **Intelligence 控件**：需要使用[预测或自定义模型](predictions-overview.md)生成的数据。
-  - **客户详细信息控件**：配置文件的所有字段在统一客户配置文件中提供。
-  - **扩充控件**：需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。 该卡加载项支持以下扩充：Microsoft 提供的[品牌](enrichment-microsoft.md)、Microsoft 提供的[兴趣](enrichment-microsoft.md)以及 Microsoft 提供的 [Office 参与数据](enrichment-office.md)。
-  - **联系人控件**：需要定义联系人类型的语义实体。
-  - **时间线控件**：需要[配置的活动](activities.md)。
+  - **Measure 控件** 需要[配置的客户属性度量值](measures.md)。
+  - **Intelligence 控件** 需要使用[预测或自定义模型](predictions-overview.md)生成的数据。
+  - **Customer details 控件** 显示统一客户配置文件中可用配置文件的所有字段。
+  - **Enrichment 控件** 需要应用于客户配置文件的可用[扩充](enrichment-hub.md)。 该卡加载项支持以下扩充：Microsoft 提供的[品牌](enrichment-microsoft.md)、Microsoft 提供的[兴趣](enrichment-microsoft.md)以及 Microsoft 提供的 [Office 参与数据](enrichment-office.md)。
+  - **Contacts 控件** 需要联系人语义实体类型。
+  - **Timeline 控件** 需要[配置的活动](activities.md)。
 
 ## <a name="install-the-customer-card-add-in"></a>安装客户卡加载项
 
-客户卡加载项是 Dynamics 365 中的 Customer Engagement 应用的解决方案。 若要安装此解决方案，请转到 AppSource 并搜索 **Dynamics 客户卡**。 选择 [AppSource 中的客户卡加载项](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview)，然后选择 **立即获取**。
+客户卡加载项是 Dynamics 365 中的 Customer Engagement 应用的解决方案。 要安装解决方案：
+
+1. 转到 AppSource，搜索 **Dynamics 客户卡**。
+
+1. 选择 [AppSource 中的客户卡加载项](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview)，然后选择 **立即获取**。
 
 您可能需要使用管理员凭据登录来让 Dynamics 365 应用安装解决方案。 将此解决方案安装到环境中可能需要一些时间。
 

@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 27dff3551ab411a12c273536d7431d651c48573e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741606"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139418"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>统一数据之前删除重复项
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 统一过程中的此步骤可选择性地使您能够设置用于处理实体内的重复记录的规则。 *删除重复* 确定重复记录，并将它们合并到一个记录中。 源记录会通过替代 ID 链接到合并的记录。 如果未配置规则，将应用系统定义的规则。
 

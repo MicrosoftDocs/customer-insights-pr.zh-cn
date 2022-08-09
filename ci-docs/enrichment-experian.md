@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: a30e98b06ed07590ab95cae1d8db8023e49ff7f9
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053010"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195925"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>使用 Experian 中的人口统计信息扩充客户配置文件（预览）
 
@@ -59,7 +59,7 @@ Experian 是消费者和企业信用报告以及市场营销服务领域的全�
 
 1. 查看概览，然后选择 **下一步**。
 
-1. 选择连接。 如果连接不可用，请联系管理员。
+1. 选择连接。 如果没有连接可用，请联系管理员。
 
 1. 选择 **下一步**。
 

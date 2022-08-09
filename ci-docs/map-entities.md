@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: a962f1353b6e25b40c60b39a81ac936873f34d92
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a75218c996b277e00924f2b7b38ea686a1f4dc38
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740984"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139771"
 ---
 # <a name="select-source-fields-for-data-unification"></a>为数据统一选择源字段
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 统一中的第一步是选择数据集中要统一的实体和字段。 选择包含与客户相关的详细信息（如名称、地址、电话号码和电子邮件）的实体。 您可以选择一个或多个实体。
 

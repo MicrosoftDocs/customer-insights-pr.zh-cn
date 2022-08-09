@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 77b09b6eb0a916e724542d503d96d19c5581aca1
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 99fe24cb47a8c20f629182d9a1c6adfd36a1eaf7
+ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8947491"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9188036"
 ---
 # <a name="use-customer-consent"></a>使用客户同意
 
@@ -50,7 +50,7 @@ Dynamics 365 Customer Insights 通过作为 Unified customer profile 的一部�
 
 ## <a name="import-and-unify-consent-data"></a>导入和统一同意数据
 
-您可以像将其他数据源引入 Customer Insights 一样导入同意数据。 有关支持的数据源以及如何导入它们的详细信息，请参阅[数据源概述](data-sources.md)。
+像将其他数据源引入 Customer Insights 一样导入同意数据。 有关支持的数据源以及如何导入它们的详细信息，请参阅[数据源概述](data-sources.md)。
 
 有关统一数据源的详细信息，请参阅[数据统一概述](data-unification.md)。
 
@@ -71,3 +71,5 @@ Dynamics 365 Customer Insights 通过作为 Unified customer profile 的一部�
 换言之，确保导入到 Customer Insights 的源数据始终包含最新信息。
 
 有关详细信息，请参阅[手动刷新客户细分](segments.md#refresh-segments)或[配置计划刷新](system.md#schedule-tab)。
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

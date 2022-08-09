@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a8b4b8a9bdcf7cf43c47a67d547405dd20dad60d
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a0bc5dd4100b462a26660a0c51fda1fe92b6bb9
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080776"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195163"
 ---
 # <a name="connections-preview-overview"></a>连接（预览版）概述
 
@@ -27,6 +27,12 @@ ms.locfileid: "9080776"
 **连接** 选项卡显示所有可用连接。 列表显示每个连接的行。
 
 获取快速概述、描述，并了解您可以如何使用 **发现** 选项卡上的每个扩展选项。
+
+## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
+
+当您启用 Dynamics 365 Customer Insights 以将数据传输到第三方或其他 Microsoft 产品时，您允许将数据传输到 Dynamics 365 Customer Insights 合规性边界之外，包括潜在的敏感数据（如个人数据）。 Microsoft 将在您的指导下传输此类数据，但您有责任确保第三方满足您可能需遵守的任何隐私或安全义务。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
+
+您的 Dynamics 365 Customer Insights 管理员可以随时删除连接来中止使用此功能。
 
 ## <a name="exports"></a>导出
 
@@ -41,8 +47,6 @@ ms.locfileid: "9080776"
 要添加连接，您需要拥有[管理员权限](permissions.md)。 如果您连接到其他 Microsoft 服务，我们假设这两项服务都在同一个组织中。
 
 1. 转到 **管理员** > **连接（预览版）**。
-
-1. 转到 **连接** 选项卡。
 
 1. 选择 **添加连接** 以创建新连接。 从下拉菜单中选择您要创建的连接类型。
 
@@ -99,3 +103,5 @@ ms.locfileid: "9080776"
 ## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>使用您自己的密钥保管库管理的密钥设置连接
 
 有些连接需要 API 密钥或密码等密钥。 有些连接支持存储在自己的密钥保管库中的密钥。 详细了解支持的连接以及如何对[您自己的 Customer Insights 密钥保管库](use-azure-key-vault.md)进行设置。
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

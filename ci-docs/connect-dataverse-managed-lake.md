@@ -1,7 +1,7 @@
 ---
 title: 连接到 Microsoft Dataverse 托管数据湖中的数据
 description: 从 Microsoft Dataverse 托管数据湖导入数据。
-ms.date: 05/18/2022
+ms.date: 07/26/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,24 +11,25 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 9ae0b964d8d39835715b7ddadc712e2338b855af
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080779"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206942"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>连接到 Microsoft Dataverse 托管数据湖中的数据
 
-Microsoft Dataverse 用户可以快速连接到 Microsoft Dataverse 托管湖中的分析实体。
+Microsoft Dataverse 用户可以快速连接到 Microsoft Dataverse 托管湖中的分析实体。 仅环境中的一个数据源可以同时使用相同的 Dataverse 托管湖。
 
 > [!NOTE]
 > 您必须是 Dataverse 组织的管理员才能继续查看托管湖中可用的实体列表。
 
-## <a name="important-considerations"></a>重要考虑因素
+## <a name="prerequisites"></a>先决条件
 
-1. 可以将联机服务（如 Azure Data Lake Storage）中存储的数据存储到 Dynamics 365 Customer Insights 中处理或存储数据之外的位置。导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心](https://www.microsoft.com/trust-center)。
-2. 只有启用了[更改跟踪](/power-platform/admin/enable-change-tracking-control-data-synchronization)的 Dataverse 实体可见。 这些实体可以导出到 Dataverse 托管的数据湖并在 Customer Insights 中使用。 现成可用的 Dataverse 表默认已启用更改跟踪。 您需要为自定义表打开更改跟踪。 要检查 Dataverse 表是否启用了更改跟踪，请转到 [Power Apps](https://make.powerapps.com) > **数据** > **表**。 查找您感兴趣的表并选择它。 转到 **设置** > **高级选项**，查看 **跟踪更改** 设置。
+- 可以将联机服务（如 Azure Data Lake Storage）中存储的数据存储到 Dynamics 365 Customer Insights 中处理或存储数据之外的位置。导入或连接到联机服务中存储的数据即表示您同意可将数据传输到和存储到 Dynamics 365 Customer Insights。 [有关详细信息，请访问 Microsoft 信任中心](https://www.microsoft.com/trust-center)。
+
+- 只有启用了[更改跟踪](/power-platform/admin/enable-change-tracking-control-data-synchronization)的 Dataverse 实体可见。 这些实体可以导出到 Dataverse 托管的数据湖并在 Customer Insights 中使用。 现成可用的 Dataverse 表默认已启用更改跟踪。 您需要为自定义表打开更改跟踪。 要检查 Dataverse 表是否启用了更改跟踪，请转到 [Power Apps](https://make.powerapps.com) > **数据** > **表**。 查找您感兴趣的表并选择它。 转到 **设置** > **高级选项**，查看 **跟踪更改** 设置。
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>连接到 Dataverse 托管湖
 
@@ -51,7 +52,9 @@ Microsoft Dataverse 用户可以快速连接到 Microsoft Dataverse 托管湖中
 
 1. 保存您的选择，以开始同步 Dataverse 中的选定表。 您将在 **数据源** 页上找到新添加的连接。 它将排队等待刷新并将实体计数显示为 0，直到同步了所有选定表为止。
 
-仅环境中的一个数据源可以同时使用相同的 Dataverse 托管湖。
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+加载数据可能需要一些时间。 成功刷新后，可以从 [**实体**](entities.md)页查看引入的数据。
 
 ## <a name="edit-a-dataverse-managed-lake-data-source"></a>编辑 Dataverse 托管湖数据源
 
@@ -62,4 +65,10 @@ Microsoft Dataverse 用户可以快速连接到 Microsoft Dataverse 托管湖中
 
 1. 在要更新的数据源旁边，选择 **编辑**。
 
-1. 从可用实体列表中选择其他实体，然后选择 **保存**。
+1. 从可用实体列表中选择其他实体。
+
+1. 单击 **保存** 应用您的更改并返回到 **数据源** 页面。
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

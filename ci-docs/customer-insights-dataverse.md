@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Dataverse 中的 Customer Insights 数据
 description: 了解如何连接 Customer Insights 和 Microsoft Dataverse，并了解导出到 Dataverse 的输出实体。
-ms.date: 05/30/2022
+ms.date: 07/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
+ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011509"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9153393"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>使用 Microsoft Dataverse 中的 Customer Insights 数据
 
@@ -31,13 +31,25 @@ Customer Insights 提供了使输出实体可用作 [Microsoft Dataverse](/power
 - 其他 Customer Insights 环境还没有与您要连接的 Dataverse 环境关联。 了解如何[删除与 Dataverse 环境的现有连接](#remove-an-existing-connection-to-a-dataverse-environment)。
 - 一个 Microsoft Dataverse 环境只能连接到一个存储帐户。 只有将环境配置为[使用 Azure Data Lake Storage](own-data-lake-storage.md) 时，它才适用。
 
+## <a name="dataverse-storage-capacity-entitlement"></a>Dataverse 存储容量权利
+
+订阅 Customer Insights 后，您可以为组织现有的 [Dataverse 存储容量](/power-platform/admin/capacity-storage)获得额外容量。 增加的容量取决于您的订阅使用的配置文件数量。
+
+**示例：**
+
+假设您为每 100,000 个客户配置文件获取了 15 GB 的数据库存储和 20 GB 的文件存储。 如果您的订阅包括 300,000 个客户配置文件，您的总存储容量将为 45 GB (3 x 15 GB) 数据库存储和 60 GB 文件存储 (3 x 20 GB)。 同样，如果您有一个包含 30K 帐户的 B2B 订阅，您的总存储容量将为 45 GB (3 x 15 GB) 数据库存储和 60 GB 文件存储 (3 x 20 GB)。
+
+日志容量对于组织不是增量和固定的。
+
+有关详细的容量权利的详细信息，请参阅 [Dynamics 365 许可指南](https://go.microsoft.com/fwlink/?LinkId=866544)。
+
 ## <a name="connect-a-dataverse-environment-to-customer-insights"></a>将 Dataverse 环境连接到 Customer Insights
 
 通过 **Microsoft Dataverse** 步骤，您可以在[创建 Customer Insights 环境](create-environment.md)时将 Customer Insights 连接到您的 Dataverse 环境。
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="为净新环境自动启用了与 Microsoft Dataverse 的数据共享。":::
 
-管理员可以将 Customer Insights 配置为连接现有 Dataverse 环境。 通过提供 Dataverse 环境的 URL，它会附加到他们的新 Customer Insights 环境。
+管理员可以将 Customer Insights 配置为连接现有 Dataverse 环境。 通过提供 Dataverse 环境的 URL，它会连接到他们的新 Customer Insights 环境。 在 Customer Insights 和 Dataverse 之间建立连接后，不要更改 Dataverse 环境的组织名称。 Dataverse URL 中使用组织的名称，更改的名称会破坏与 Customer Insights 的连接。
 
 如果不希望使用现有 Dataverse 环境，则系统会为租户中的 Customer Insights 数据创建新环境。 [Power Platform 管理员可以控制谁可以创建环境](/power-platform/admin/control-environment-creation)。 当您设置新的 Customer Insights 环境，并且管理员已禁止为除管理员之外的所有人创建 Dataverse 环境时，您可能无法创建新环境。
 
@@ -84,7 +96,7 @@ Customer Insights 提供了使输出实体可用作 [Microsoft Dataverse](/power
 
     2. `ByolSetup.ps1`
         - 您需要在存储帐户/容器级别具有 *存储 Blob 数据负责人* 权限才能运行此脚本，否则此脚本将为您创建权限。 成功运行脚本后，您的角色分配可以手动删除。
-        - 此 PowerShell 脚本为 Microsoft Dataverse 服务和任何基于 Dataverse 的业务应用程序添加所需的基于角色的访问控制 (RBAC)。 它还为使用 `CreateSecurityGroups.ps1` 脚本创建的安全组更新 CustomerInsights 容器上的访问控制列表 (ACL)。 参与者组将具有 *rwx* 权限，读者组将仅具有 *r-x* 权限。
+        - 此 PowerShell 脚本为 Microsoft Dataverse 服务和任何基于 Dataverse 的业务应用程序添加所需的基于角色的访问控制。 它还为使用 `CreateSecurityGroups.ps1` 脚本创建的安全组更新 CustomerInsights 容器上的访问控制列表 (ACL)。 参与者组将具有 *rwx* 权限，读者组将仅具有 *r-x* 权限。
         - 通过提供包含您的 Azure Data Lake Storage、存储帐户名称、资源组名称以及读者和参与者安全组 ID 值的 Azure 订阅 ID，在 Windows PowerShell 中执行此 PowerShell 脚本。 在编辑器中打开 PowerShell 脚本查看其他信息和实现的逻辑。
         - 成功运行脚本后复制输出字符串。 输出字符串如：`https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 

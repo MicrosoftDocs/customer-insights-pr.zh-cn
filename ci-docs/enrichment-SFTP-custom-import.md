@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080791"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195785"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>使用 SFTP 自定义导入扩充客户配置文件（预览版）
 
@@ -104,7 +104,7 @@ ms.locfileid: "9080791"
 
 1. 查看概览，然后选择 **下一步**。
 
-1. 选择连接。 如果连接不可用，请联系管理员。
+1. 选择连接。 如果没有连接可用，请联系管理员。
 
 1. 选择 **客户数据集**，然后选择您想要扩充的资料或客户细分。 *客户* 实体扩充您的所有客户资料，而客户细分仅扩充该客户细分中包含的客户资料。
 

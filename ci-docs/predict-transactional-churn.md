@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e55ca8c6926fa0bda05aaf52fd799ca25f7f585f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8216b5a739964fdfff8cad7e6d6d7ce3f5308b5
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645965"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171084"
 ---
 # <a name="transaction-churn-prediction"></a>交易流失预测
 
@@ -240,7 +240,7 @@ ms.locfileid: "8645965"
    - **预测名称**：创建时提供的预测的名称。
    - **预测类型**：用于预测的模型的类型
    - **输出实体**：用于存储预测输出的实体的名称。 您可以在 **数据** > **实体** 中查找具有此名称的实体。
-     在输出实体中，*ChurnScore* 是预测的流失概率，*IsChurn* 是基于 *ChurnScore* 的二进制标签，阈值为 0.5。 默认阈值可能不适合您的方案。 使用首选阈值[创建新客户细分](segments.md#create-a-new-segment)。
+     在输出实体中，*ChurnScore* 是预测的流失概率，*IsChurn* 是基于 *ChurnScore* 的二进制标签，阈值为 0.5。 默认阈值可能不适合您的方案。 使用首选阈值[创建新客户细分](segments.md#create-a-segment)。
      并非所有客户都一定是活跃客户。 他们中的一些人可能很长一段时间没有活动，根据你的流失定义被认为是已经流失。 为已经流失的客户预测流失风险没有用处，因为他们不是受关注的访问群体。
    - **预测字段**：仅针对某些类型的预测填充此字段，而不在流失预测中使用它。
    - **状态**：预测运行的状态。

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080891"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196015"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>通过 Dun & Bradstreet 扩充公司配置文件（预览版）
 
@@ -80,7 +80,7 @@ Dun & Bradstreet 为企业提供商业数据、分析和见解。 它使那些�
 
 1. 查看概览，然后选择 **下一步**。
 
-1. 选择连接并确认。 如果连接不可用，请联系管理员。
+1. 选择连接并确认。 如果没有连接可用，请联系管理员。
 
 1. 选择 **下一步**。
 

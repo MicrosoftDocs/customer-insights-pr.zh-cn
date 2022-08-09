@@ -1,51 +1,54 @@
 ---
 title: 将客户细分导出到 Sendinblue（预览）
 description: 了解如何配置连接和导出到 Sendinblue。
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 9f6550b5c57866702631b4c294bb059279461bd6
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 816a3b242fadaa5a75db878adf0a76baf638e41c
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080956"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196935"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>将客户细分导出到 Sendinblue（预览）
 
 导出统一客户配置文件的客户细分来生成市场活动，提供电子邮件市场营销，并通过 Sendinblue 使用特定客户组。
 
-## <a name="prerequisites-for-connection"></a>连接的先决条件
+## <a name="prerequisites"></a>先决条件
 
--   您具有 [Sendinblue 帐户](https://www.sendinblue.com/)和相应的管理员凭据。
--   Sendinblue 中存在现有列表和相应的 ID。
--   您已[配置客户细分](segments.md)。
--   导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
+- [Sendinblue 帐户](https://www.sendinblue.com/)和相应的管理员凭据。
+- [SendinBlue API 密钥](https://developers.sendinblue.com/docs/getting-started#:~:text=Get%20your%20API%20key&text=You%20can%20create%20one%20from,your%20settings%20This%20API%20key)。
+- Sendinblue 中的现有列表和相应的 ID。
+- [配置的客户细分](segments.md)。
+- 导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
 
 ## <a name="known-limitations"></a>已知限制
 
-- 每次导出到 Sendinblue 最多可导出 100 万个客户配置文件。
-- 导出到 Sendinblue 仅限于客户细分。
-- 导出总计包含 100 万个客户配置文件的客户细分最长可能需要 90 分钟。 
-- 您可以导出到 Sendinblue 的客户配置文件数量取决和受限于您与 Sendinblue 的合同。
+- 一次导出最多可将 100 万个客户配置文件导出到 Sendinblue，最长可能需要 90 分钟完成。 您可以导出到 Sendinblue 的客户配置文件数量取决于您与 Sendinblue 的合同。
+- 仅客户细分。
 
 ## <a name="set-up-connection-to-sendinblue"></a>设置与 Sendinblue 的连接
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. 转到 **管理员** > **连接**。
 
-1. 选择 **添加连接** 并选择 **Sendinblue** 以配置连接。
+1. 选择 **添加连接** 并选择 **Sendinblue**。
 
 1. 在 **显示名称** 字段中为连接指定易于识别的名称。 连接的名称和类型描述了此连接。 我们建议选择一个名称来解释此连接的用途和目标。
 
 1. 选择可使用此连接的人员。 默认情况下，它只是管理员。 有关更多信息，请参阅[允许参与者使用连接进行导出](connections.md#allow-contributors-to-use-a-connection-for-exports)。
 
-1. 输入 **[SendinBlue API 密钥](https://developers.sendinblue.com/docs/getting-started#:~:text=Get%20your%20API%20key&text=You%20can%20create%20one%20from,your%20settings%20This%20API%20key)**。
+1. 输入 **SendinBlue API 密钥**。
 
-1. 选择 **我同意** 确认 **数据隐私与合规性**，然后选择 **连接** 以初始化与 Sendinblue 的连接。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
+
+1. 选择 **连接** 以初始化连接。
 
 1. 选择 **将自己添加为导出用户** 并提供您的 Customer Insights 凭据。
 
@@ -53,33 +56,26 @@ ms.locfileid: "9080956"
 
 ## <a name="configure-an-export"></a>配置导出
 
-如果您有权访问此类类型的连接，则可以配置此导出。 有关更多信息，请参阅[配置导出所需的权限](export-destinations.md#set-up-a-new-export)。
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. 转到 **数据** > **导出**。
 
-1. 要创建新导出，请选择 **添加导出**。
+1. 选择 **添加导出**。
 
-1. 在 **用于导出的连接** 字段中，从 Sendinblue 部分中选择连接。 如果您没有看到此部分名称，则您无法使用此类型的连接。
+1. 在 **用于导出的连接** 字段中，从 Sendinblue 部分中选择连接。 如果没有连接可用，请联系管理员。
 
-1. 输入您的 **Sendinblue 列表 ID** 
+1. 为导出输入名称。
 
-1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。 
+1. 输入您的 **Sendinblue 列表 ID**。
 
-1. 您也可以选择导出 **名**、**姓** 和 **电话号码** 来创建更个性化的电子邮件。 选择 **添加属性** 以映射这些字段。
+1. 在 **数据匹配** 部分的 **电子邮件** 字段中，选择表示客户电子邮件地址的字段。
 
-1. 选择想要导出的细分。 
+1. （可选）导出 **名**、**姓** 和 **电话号码** 来创建更个性化的电子邮件。 选择 **添加属性** 以映射这些字段。
+
+1. 选择想要导出的细分。
 
 1. 选择 **保存**。
 
-保存导出不会立即运行导出。
-
-每次进行[预定的刷新 ](system.md#schedule-tab)时，都会运行导出。 您也可以[按需导出数据](export-destinations.md#run-exports-on-demand)。 
-
-
-## <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当启用 Dynamics 365 Customer Insights 将数据传输到 Sendinblue 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括可能敏感的数据（例如个人数据）。 Microsoft 将根据您的指示传输此类数据，但您负责确保 Sendinblue 满足您可能承担的任何隐私或安全责任。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
-您的 Dynamics 365 Customer Insights 管理员可以随时删除此导出目标来中止使用此功能。
-
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

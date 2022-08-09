@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080781"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196337"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>使用 LiveRamp 的标识数据扩充客户资料（预览）
 
@@ -59,7 +59,7 @@ LiveRamp 提供确定性的离线标识解析和客户数据整合。 您可以�
 
 1. 查看概览，然后选择 **下一步**。
 
-1. 选择连接。 如果连接不可用，请联系管理员。
+1. 选择连接。 如果没有连接可用，请联系管理员。
 
 1. 选择 **下一步**。
 
