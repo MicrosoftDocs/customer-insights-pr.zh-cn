@@ -1,19 +1,19 @@
 ---
 title: 使用 Azure Maps 中的位置数据扩充客户配置文件（预览版）
 description: 有关 Azure Maps 第一方扩充的常规信息。
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052596"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238031"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>使用 Azure Maps 中的位置数据扩充客户配置文件（预览版）
 
@@ -35,14 +35,9 @@ Azure Maps 提供以位置为中心的数据和服务，以提供基于具有内
 
 1. 为连接输入名称并输入有效的 Azure Maps API 密钥。
 
-1. 通过选择 **我同意**，查看并同意[数据隐私与合规性](#data-privacy-and-compliance)。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
 
 1. 选择 **验证** 验证配置，然后选择 **保存**。
-
-### <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当启用 Dynamics 365 Customer Insights 将数据传输到 Azure Maps 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括可能敏感的数据（例如个人数据）。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 Azure Maps 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请转到 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
-您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 

@@ -14,12 +14,12 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139646"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213571"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>统一客户字段，实现数据统一
 
@@ -58,6 +58,9 @@ ms.locfileid: "9139646"
 
 1. 指定如何使用以下三个选项之一组合或合并字段：
     - **重要性**：根据为参与字段指定的重要性等级确定获胜者值。 这是默认的合并选项。 选择 **上移/下移** 设置重要性排名。
+
+      > [!NOTE]
+      > Customer Insights 使用第一个非 null 值。 例如，按该顺序排列的给定实体 A、B 和 C，如果 A.Name 和 B.Name 为空，则使用 C.Name 中的值。
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="合并字段对话框中的重要性选项。":::
 

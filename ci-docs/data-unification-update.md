@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 1af7f018abd412c833ff22b3880f0e4508ff4953
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a7cf06c07e4b95b848a55dfe5fe0b09397fe744e
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139561"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245583"
 ---
 # <a name="update-the-unification-settings"></a>更新统一设置
 
@@ -42,7 +42,7 @@ ms.locfileid: "9139561"
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="“数据统一”页面的屏幕截图，其中突出显示了“统一”选项。":::
 
    - [运行匹配条件](#run-matching-conditions)来快速评估匹配条件（删除重复项和匹配规则）的质量，而无需更新统一配置文件。 不会针对单个实体显示 **仅运行匹配条件** 选项。
-   - [统一客户配置文件](#run-updates-to-the-unified-customer-profile)来运行匹配条件并更新 Unified customer profile 实体，而不影响依赖项（如扩充、客户细分或度量）。 相关流程不会运行，而是将按[刷新计划中的定义](system.md#schedule-tab)进行刷新。
+   - [统一客户配置文件](#run-updates-to-the-unified-customer-profile)来运行匹配条件并更新 Unified customer profile 实体，而不影响依赖项（如扩充、客户细分或度量）。 相关流程不会运行，而是将按[刷新计划中的定义](schedule-refresh.md)进行刷新。
    - [统一客户配置文件和依赖项](#run-updates-to-the-unified-customer-profile)来运行匹配条件并更新 Unified customer profile 实体和所有依赖项（如扩充、客户细分或度量）。 所有流程都将自动重新运行。
 
 ## <a name="edit-source-fields"></a>编辑源字段
@@ -154,7 +154,7 @@ ms.locfileid: "9139561"
 
 1. 从 **数据** > **统一** 页中，选择：
 
-   - **统一客户配置文件**：运行匹配条件并更新 Unified customer profile 实体，而不影响依赖项（如扩充、客户细分或度量）。 相关流程不会运行，而是将按[刷新计划中的定义](system.md#schedule-tab)进行刷新。
+   - **统一客户配置文件**：运行匹配条件并更新 Unified customer profile 实体，而不影响依赖项（如扩充、客户细分或度量）。 相关流程不会运行，而是将按[刷新计划中的定义](schedule-refresh.md)进行刷新。
 
    - **统一客户配置文件和依赖项**：运行匹配条件并更新统一配置文件和所有依赖项。 所有流程都将自动重新运行。 所有下游流程完成后，客户配置文件会反映更新的数据。
 

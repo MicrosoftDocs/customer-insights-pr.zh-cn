@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 6b6daab480db5e37830ff58b71dcdd3bbdbe46da
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 0c2a900190b4ab6e93098d05a2fd66bcd2b847fd
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053853"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245868"
 ---
 # <a name="data-enrichment-preview-overview"></a>数据扩充（预览版）概述
 
@@ -76,7 +76,7 @@ ms.locfileid: "9053853"
 - **查看** 扩充详细信息以及扩充的客户资料的数量。
 - **编辑** 扩充配置。
 - [**运行**](#run-or-refresh-enrichments)扩充 ，以使用最新数据更新客户配置文件。 通过在列表中选择多个扩充来同时运行多个扩充。
-- **激活** 或 **停用** 扩充。  在[计划的刷新](system.md#schedule-tab)期间不会刷新停用的扩充。
+- **激活** 或 **停用** 扩充。  在[计划的刷新](schedule-refresh.md)期间不会刷新停用的扩充。
 - **删除** 扩充。
 
 您还可以从扩充项创建[客户细分](segments.md)或[度量](measures.md)。
@@ -85,7 +85,7 @@ ms.locfileid: "9053853"
 
 运行后，可以按自动计划刷新扩充，也可以按需手动刷新。
 
-1. 若要手动刷新一个或多个扩充，请选择它们并选择 **运行**。 若要 [计划自动刷新](system.md#schedule-tab)，请转到 **管理** > **系统** > **计划**。 处理时间取决于客户数据的大小。
+1. 若要手动刷新一个或多个扩充，请选择它们并选择 **运行**。 若要 [计划自动刷新](schedule-refresh.md)，请转到 **管理** > **系统** > **计划**。 处理时间取决于客户数据的大小。
 
 1. （可选）[查看扩充过程的进度](#see-the-progress-of-the-enrichment-process)。
 
@@ -102,6 +102,8 @@ ms.locfileid: "9053853"
 1. 在 **进度详细信息** 窗格中，展开 **扩充** 部分。
 1. 在要查看其进度的扩充下，选择 **查看详细信息**。
 1. 在 **任务详细信息** 窗格中，选择 **显示详细信息** 以查看更新窗口及其状态时涉及的进程。
+
+[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
 ## <a name="view-enrichment-results"></a>查看扩充结果
 

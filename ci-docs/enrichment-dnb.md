@@ -1,7 +1,7 @@
 ---
 title: 通过 Dun & Bradstreet 扩充公司配置文件（预览版）
 description: 有关 Dun & Bradstreet 第三方扩充的一般信息。
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e89b64774dcb519a071dd3d403473807a50e7f33
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196015"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237893"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>通过 Dun & Bradstreet 扩充公司配置文件（预览版）
 
@@ -55,16 +55,11 @@ Dun & Bradstreet 为企业提供商业数据、分析和见解。 它使那些�
 
 1. 提供有效的 Dun & Bradstreet 凭据和 Dun & Bradstreet 项目详细信息 *区域、放置文件夹路径和放置文件夹名称*。 您可以从 Dun & Bradstreet 项目中[获取此信息](#set-up-your-dun--bradstreet-project)。
 
-1. 通过选择 **我同意**，查看并同意[数据隐私与合规性](#data-privacy-and-compliance)。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
 
 1. 选择 **验证** 验证配置，然后选择 **保存**。
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet 连接配置页面。":::
-
-### <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当您启用 Dynamics 365 Customer Insights 将数据传输到 Dun & Bradstreet 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 Dun & Bradstreet 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
-您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 ## <a name="supported-countries-or-regions"></a>支持的国家或地区
 

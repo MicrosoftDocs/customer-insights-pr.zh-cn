@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 403cc9dbd3bddcf67f59b5cb0be936af4d268fc2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195647"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246097"
 ---
 # <a name="real-time-data-ingestion-preview"></a>实时数据引入（预览版）
 
 近实时功能让您可以在数秒内查看客户与您的产品或服务进行的最近交互。
 
-[计划刷新](system.md#schedule-tab)包括大量记录和几个复杂操作。 首先，从数据源中提取数据。 接下来统一数据，然后使用更多信息进行扩充。 每次运行此过程都可能需要数分钟到数小时时间。
+[计划刷新](schedule-refresh.md)包括大量记录和几个复杂操作。 首先，从数据源中提取数据。 接下来统一数据，然后使用更多信息进行扩充。 每次运行此过程都可能需要数分钟到数小时时间。
 
 实时功能将立即提供数据以供使用，直到后续计划刷新从数据源中提取此数据。
 
@@ -85,7 +85,7 @@ ms.locfileid: "9195647"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>了解遥测时的实时使用情况
 
-概要介绍实时 API 的请求量以及有关系统可能遇到的问题的信息。 您可以[访问实时遥测数据](system.md#api-usage-tab)。 
+概要介绍实时 API 的请求量以及有关系统可能遇到的问题的信息。 您可以[访问实时遥测数据](system.md#view-api-usage)。 
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

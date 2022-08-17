@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206988"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245776"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>在 Azure Data Lake Storage 中连接到数据
 
@@ -56,8 +56,8 @@ ms.locfileid: "9206988"
 
 1. 为 **连接存储使用的是** 选择以下选项之一。 有关详细信息，请参阅[使用 Azure 服务主体将 Customer Insights 连接到 Azure Data Lake Storage Gen2 帐户](connect-service-principal.md)。
 
-   - **Azure 资源**：输入 **资源 ID**。或者，如果要通过 Azure 专用链接从存储帐户引入数据，选择 **启用专用链接**。 有关详细信息，请参阅[专用链接](security-overview.md#private-links-tab)。
-   - **Azure 订阅**：选择 **订阅**，然后选择 **资源组** 和 **存储帐户**。 或者，如果要通过 Azure 专用链接从存储帐户引入数据，选择 **启用专用链接**。 有关详细信息，请参阅[专用链接](security-overview.md#private-links-tab)。
+   - **Azure 资源**：输入 **资源 ID**。或者，如果要通过 Azure 专用链接从存储帐户引入数据，选择 **启用专用链接**。 有关详细信息，请参阅[专用链接](security-overview.md#set-up-an-azure-private-link)。
+   - **Azure 订阅**：选择 **订阅**，然后选择 **资源组** 和 **存储帐户**。 或者，如果要通过 Azure 专用链接从存储帐户引入数据，选择 **启用专用链接**。 有关详细信息，请参阅[专用链接](security-overview.md#set-up-an-azure-private-link)。
   
    > [!NOTE]
    > 您需要容器或存储帐户的以下角色之一来创建数据源：
@@ -176,7 +176,7 @@ ms.locfileid: "9206988"
         > - 存储 Blob 数据负责人
         > - 存储 Blob 数据参与者
 
-   - 如果要通过 Azure 专用链接从存储帐户引入数据，**启用专用链接**。 有关详细信息，请参阅[专用链接](security-overview.md#private-links-tab)。
+   - 如果要通过 Azure 专用链接从存储帐户引入数据，**启用专用链接**。 有关详细信息，请参阅[专用链接](security-overview.md#set-up-an-azure-private-link)。
 
 1. 选择 **下一步**。
 1. 更改以下任一信息：

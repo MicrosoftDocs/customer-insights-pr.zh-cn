@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 4bcfbb50b893ca7e6ec4607d3c156a3c6979f775
-ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
+ms.openlocfilehash: 195a7c733f047c24f9f47a151c1cb623fe34d055
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9170670"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246282"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -58,7 +58,7 @@ ms.locfileid: "9170670"
 - **编辑** 细分以更改其属性。
 - **创建客户细分的重复项**。 您可以选择直接编辑其属性或保存重复项。
 - [**刷新**](#refresh-segments)客户细分以包括最新数据。
-- **激活** 或 **停用** 细分。 停用客户细分不会在 [计划刷新](system.md#schedule-tab)时刷新，会将 **状态** 列为 **已跳过**，指示还没有尝试刷新。 可用客户细分根据其类型刷新：静态或动态。
+- **激活** 或 **停用** 细分。 停用客户细分不会在 [计划刷新](schedule-refresh.md)时刷新，会将 **状态** 列为 **已跳过**，指示还没有尝试刷新。 可用客户细分根据其类型刷新：静态或动态。
 - **设为静态** 或 **设为动态** 客户细分类型。 必须手动刷新静态客户细分。 动态客户细分将在系统刷新期间自动刷新。
 - 从客户细分中 [**查找类似的客户**](find-similar-customer-segments.md)。
 - **重命名** 细分。
@@ -88,7 +88,7 @@ ms.locfileid: "9170670"
 
 客户细分可以按计划自动刷新，也可以根据需要手动刷新。 要手动刷新一个或多个客户细分，选择它们并选择 **刷新**。
 
-若要 [计划自动刷新](system.md#schedule-tab)，请转到 **管理** > **系统** > **计划**。 以下规则适用：
+若要 [计划自动刷新](schedule-refresh.md)，请转到 **管理** > **系统** > **计划**。 以下规则适用：
 
 - 所有类型为 **动态** 或 **扩展** 的客户细分都将按照设定的节奏自动刷新。 刷新完成后，**状态** 会指示刷新客户细分时是否存在任何问题。 **上次刷新时间** 显示上次成功刷新的时间戳。 如果发生错误，选择错误可以查看发生的情况的详细信息。
 - **静态** 类型的客户细分 *不会* 自动刷新。 **上次刷新时间** 显示上次手动运行或刷新静态客户细分的时间戳。

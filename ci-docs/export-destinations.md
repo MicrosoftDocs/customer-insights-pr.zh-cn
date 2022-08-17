@@ -12,12 +12,12 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a70aadda4fc0eff3ddb4c89665506762613c291a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fd234aff9021ded76d8226bf2f15e035cf75e7db
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194957"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245316"
 ---
 # <a name="exports-preview-overview"></a>导出(预览版)概述
 
@@ -79,7 +79,7 @@ ms.locfileid: "9194957"
 
 ## <a name="schedule-and-run-exports"></a>计划并运行导出
 
-您配置的每个导出都有一个刷新计划。 在刷新期间，系统会查找要包括在导出中的新数据或已更新数据。 默认情况下，导出在每个[计划系统刷新](system.md#schedule-tab)过程中运行。 您可以自定义刷新计划或将其关闭以手动运行导出。
+您配置的每个导出都有一个刷新计划。 在刷新期间，系统会查找要包括在导出中的新数据或已更新数据。 默认情况下，导出在每个[计划系统刷新](schedule-refresh.md)过程中运行。 您可以自定义刷新计划或将其关闭以手动运行导出。
 
 导出计划取决于您的环境状态。 如果在应启动计划导出时正在进行有关[依赖项](system.md#refresh-processes)的更新，系统将首先完成更新，然后运行导出。 **刷新时间** 列显示上次刷新导出的时间。
 

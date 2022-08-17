@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 591353bf1ba2f9ca05ddd137e1cf29dc0b0fba97
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207080"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245638"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -67,7 +67,7 @@ Dynamics 365 Customer Insights 提供连接来从广泛的源获取数据。 连
 
 数据源可以按计划自动刷新，也可以根据需要手动刷新。 [本地数据源](connect-power-query.md#add-data-from-on-premises-data-sources)根据数据引入期间设置的数据源自己的计划刷新。 对于附加的数据源，数据引入会使用该数据源中可用的最新数据。
 
-转到 **管理** > **系统** > [**计划**](system.md#schedule-tab)配置引入的数据源的系统计划刷新。
+转到 **管理** > **系统** > [**计划**](schedule-refresh.md)配置引入的数据源的系统计划刷新。
 
 要按需刷新数据源：
 

@@ -14,12 +14,12 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: ead57ccbdcaf9f86ee54d1f15de71a63f2e1081b
-ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
+ms.openlocfilehash: 99368a7ab2e8d7b3e53c04fbf25bb23bd2e550a9
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9170809"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245362"
 ---
 # <a name="measures-overview"></a>度量概述
 
@@ -53,7 +53,7 @@ ms.locfileid: "9170809"
 - **编辑** 度量以更改其属性。
 - **刷新** 度量以包括最新数据。
 - **重命名** 度量。
-- **激活** 或 **停用** 度量。 停用度量不会在 [计划刷新](system.md#schedule-tab)时刷新，会将 **状态** 列为 **已跳过**，指示还没有尝试刷新。
+- **激活** 或 **停用** 度量。 停用度量不会在 [计划刷新](schedule-refresh.md)时刷新，会将 **状态** 列为 **已跳过**，指示还没有尝试刷新。
 - 用于针对度量 [管理标记](work-with-tags-columns.md#manage-tags)的 **标记**。
 - **删除** 度量。
 - 用于 [自定义显示的列](work-with-tags-columns.md#customize-columns)的 **列**。
@@ -62,7 +62,7 @@ ms.locfileid: "9170809"
 
 ## <a name="refresh-measures"></a>刷新度量
 
-度量可以按计划自动刷新，也可以根据需要手动刷新。 若要手动刷新一个或多个度量，请选择它们并选择 **刷新**。 若要 [计划自动刷新](system.md#schedule-tab)，请转到 **管理** > **系统** > **计划**。
+度量可以按计划自动刷新，也可以根据需要手动刷新。 若要手动刷新一个或多个度量，请选择它们并选择 **刷新**。 若要 [计划自动刷新](schedule-refresh.md)，请转到 **管理** > **系统** > **计划**。
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

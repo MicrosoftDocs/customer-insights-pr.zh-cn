@@ -2,7 +2,7 @@
 title: 统一数据之前删除重复项
 description: 统一过程中的第二步是选择在发现重复项时要保留的记录。
 recommendations: false
-ms.date: 04/22/2022
+ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -13,16 +13,25 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: 7f4829cfc14af623f724c6594e834f3fac1c15a9
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139418"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213616"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>统一数据之前删除重复项
 
-统一过程中的此步骤可选择性地使您能够设置用于处理实体内的重复记录的规则。 *删除重复* 确定重复记录，并将它们合并到一个记录中。 源记录会通过替代 ID 链接到合并的记录。 如果未配置规则，将应用系统定义的规则。
+统一过程中的这个可选步骤让您能够设置用于清除实体 **内** 的重复记录的规则。 删除重复项会为客户识别多个记录并选择要保留的最佳记录（基于基本合并首选项）或将记录合并为一个（基于高级合并首选项）。 源记录会通过替代 ID 链接到合并的记录。 如果未配置规则，将应用系统定义的规则。
+
+## <a name="default-deduplication"></a>默认删除重复项
+
+如果未添加删除重复项规则，将应用系统定义的规则。
+
+- 将删除主键的重复项。
+  对于具有相同主键的记录，将保留 **最多填充** 记录（空值最少的记录）。
+- 任何跨实体匹配规则都将应用于实体。
+  例如：在匹配步骤中，如果实体 A 在 *FullName* 和 *DateofBirth* 上与实体 B 匹配，实体 A 也会被 *FullName* 和 *DateofBirth* 删除重复项。 由于 *FullName* 和 *DateofBirth* 是识别实体 A 中客户的有效键，所以这些键也可用于识别实体 A 中的重复客户。
 
 ## <a name="include-enriched-entities-preview"></a>包括扩充的实体（预览版）
 

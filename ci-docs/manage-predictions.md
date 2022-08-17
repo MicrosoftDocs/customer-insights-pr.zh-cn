@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 42abfb305efaccaeef48e32f2cc69f3d36fbe73d
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080933"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245454"
 ---
 # <a name="manage-predictions"></a>管理预测
 
@@ -58,7 +58,7 @@ ms.locfileid: "9080933"
 
 ## <a name="refresh-a-prediction"></a>刷新预测
 
-预测将按照设置中配置的相同[数据刷新计划](system.md#schedule-tab)自动刷新。 您也可以手动刷新它们。
+预测将按照设置中配置的相同[数据刷新计划](schedule-refresh.md)自动刷新。 您也可以手动刷新它们。
 
 1. 转到 **智能** > **预测**，然后选择 **我的预测** 选项卡。
 

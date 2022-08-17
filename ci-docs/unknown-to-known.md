@@ -11,16 +11,16 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: ff99721bef0004bc8cae1ec14ff9df16cbb0682e
-ms.sourcegitcommit: ece8ff732490ecd3b3421ab273f331e6fd46a7f7
+ms.openlocfilehash: 8e3477750d82f965dc2d62174fb35554d9447b7b
+ms.sourcegitcommit: 52eca81c36e93d553140f5a37cf6013aaa42623a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "9173786"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9224284"
 ---
 # <a name="personalize-your-experiences-with-data-about-known-and-unknown-users"></a>使用有关已知和未知用户的数据个性化您的体验
 
-管理客户数据并不是一个新的挑战，但随着用户浏览品牌提供的各种数字渠道，它变得越来越困难。 如果未登录，在一个渠道中已知（经过身份验证）的用户在另一个渠道中将变为未知（未经过身份验证）。 问题通常是未经过身份验证（未知）的用户没有公用 ID。 它可用于关联有意义的配置文件属性并生成统一的客户配置文件。 Customer Insights 通过从源系统上的跟踪方法引入数据来帮助解决此问题。 合并的未知和已知配置文件为组织提供最新配置文件及其历史交易、行为和人口统计数据的完整视图。 它甚至更进了一步，提供身份解析，允许您跨多个渠道统一客户活动，包括您的网站、店内购买、会员计划等。
+管理客户数据并不是一个新的挑战，但随着用户浏览品牌提供的各种数字渠道，它变得越来越困难。 如果未登录，在一个渠道中已知（经过身份验证）的用户在另一个渠道中将变为未知（未经过身份验证）。 问题通常是未经过身份验证（未知）的用户没有公用 ID。 它可用于关联有意义的配置文件属性并生成统一的客户配置文件。 Customer Insights 通过从源系统上的跟踪方法引入数据来帮助解决此问题。 合并未知和已知配置文件可为组织提供最新配置文件及其历史交易、行为和人口统计数据的完整视图。 它甚至更进了一步，提供身份解析，允许您跨多个渠道统一客户活动，包括您的网站、店内购买、会员计划等。
 
 ## <a name="sample-scenario"></a>示例方案
 

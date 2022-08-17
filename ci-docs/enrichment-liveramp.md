@@ -1,19 +1,19 @@
 ---
 title: 使用 LiveRamp 的标识数据扩充客户资料（预览）
 description: 使用 LiveRamp 数据扩充客户资料。
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0aa6dc144602741b87843a5373779855ee3e334c
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196337"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237801"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>使用 LiveRamp 的标识数据扩充客户资料（预览）
 
@@ -41,13 +41,9 @@ LiveRamp 提供确定性的离线标识解析和客户数据整合。 您可以�
 
 1. 为连接输入名称和有效的 LiveRamp 客户端 ID 和密码。
 
-1. 通过选择 **我同意**，查看并同意[数据隐私与合规性](#data-privacy-and-compliance)。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
 
 1. 选择 **验证** 验证配置，然后选择 **保存**。
-
-### <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当您启用 Dynamics 365 Customer Insights 将数据传输到 LiveRamp 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将按照您的指示传输此类数据，但您有责任确保 LiveRamp 满足您可能需要承担的任何隐私或安全责任。 有关详细信息，请查看 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。 您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 

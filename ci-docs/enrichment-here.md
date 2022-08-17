@@ -1,19 +1,19 @@
 ---
 title: 使用 HERE Technologies 扩充客户配置文件（预览版）
 description: 有关 HERE Technologies 第三方扩充的常规信息。
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 86a070342193dd7afda38823d90f4bd28c8b862e
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196245"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237847"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>使用 HERE Technologies 扩充客户配置文件（预览版）
 
@@ -33,16 +33,11 @@ HERE Technologies 是一家位置平台公司，可提供以位置为中心的�
 
 1. 为连接输入名称并输入有效的 HERE Technologies API 密钥。
 
-1. 通过选择 **我同意**，查看并同意[数据隐私与合规性](#data-privacy-and-compliance)。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
 
 1. 选择 **验证** 验证配置，然后选择 **保存**。
 
    :::image type="content" source="media/enrichment-HERE-connection.png" alt-text="HERE Technologies 连接配置页面。":::
-
-### <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当您启用 Dynamics 365 Customer Insights 将数据传输到 HERE Technologies 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括诸如个人数据的潜在敏感数据。 Microsoft 将在您的指导下传输此类数据，但您有责任确保 HERE Technologies 满足您可能需遵守的任何隐私或安全义务。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。
-您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 

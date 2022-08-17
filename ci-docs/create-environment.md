@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 33c8910b7a4dd8723c0d62f2e28228cd2d8df4b7
-ms.sourcegitcommit: 5716025eb4828425ca237377b02a892de8689f4a
+ms.openlocfilehash: 875cbbd095dfd239ab83c1c80db28ea7c0a04ed0
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "9142808"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245546"
 ---
 # <a name="how-to-create-a-new-environment"></a>如何：创建一个新环境
 
@@ -48,7 +48,7 @@ ms.locfileid: "9142808"
 
 提供以下详细信息：
 
-- **名称**：此环境的名称。 如果已从现有环境中复制，则此字段已填写，但可以更改。
+- **名称**：此环境的名称。 如果已从现有环境中复制，则此字段已填写，但可以更改。 如果您有多个工作环境，为每个工作环境提供一个易于识别的名称。
 - **选择业务**：选择新环境的主要访问群体。 您可以处理单个客户（企业到客户）或[企业客户](work-with-business-accounts.md)（企业到企业）。 如果您的组织主要与个人开展业务，例如零售商或咖啡店，请选择个人消费者。 如果您的主要访问群体是其他公司，例如汽车制造商或造纸公司，请选择企业客户。
 - **类型**：选择是要创建生产环境还是沙盒环境。 沙盒环境不允许进行计划的数据刷新，而是用于预实施和测试。 沙盒环境使用与当前选择的生产环境相同的主要访问群体。
 - **区域**：要在其中部署和托管该服务的区域。 要[使用您自己的 Azure Data Lake Storage 帐户](own-data-lake-storage.md)或[连接到现有 Microsoft Dataverse 组织](customer-insights-dataverse.md)，Customer Insights 环境必须在同一区域。

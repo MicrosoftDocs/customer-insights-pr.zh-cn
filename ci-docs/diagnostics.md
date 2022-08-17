@@ -1,7 +1,7 @@
 ---
-title: 使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
+title: 导出诊断日志（预览）
 description: 了解如何将日志发送到 Microsoft Azure Monitor。
-ms.date: 12/14/2021
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: article
@@ -11,87 +11,56 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052642"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245914"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>使用 Azure Monitor 在 Dynamics 365 Customer Insights 中转发日志（预览版）
+# <a name="export-diagnostic-logs-preview"></a>导出诊断日志（预览）
 
-Dynamics 365 Customer Insights 提供与 Azure Monitor 的直接集成。 利用 Azure Monitor 资源日志，可以监视日志并将其发送到 [Azure 存储](https://azure.microsoft.com/services/storage/)、[Azure 日志分析](/azure/azure-monitor/logs/log-analytics-overview)，或将它们流式传输至 [Azure 事件中心](https://azure.microsoft.com/services/event-hubs/)。
+使用 Azure Monitor 从 Customer Insights 转发日志。 利用 Azure Monitor 资源日志，可以监视日志并将其发送到 [Azure 存储](https://azure.microsoft.com/services/storage/)、[Azure 日志分析](/azure/azure-monitor/logs/log-analytics-overview)，或将它们流式传输至 [Azure 事件中心](https://azure.microsoft.com/services/event-hubs/)。
 
 Customer Insights 将发送以下事件日志：
 
 - **审核事件**
-  - **APIEvent** - 启用通过 Dynamics 365 Customer Insights UI 完成的更改跟踪。
+  - **APIEvent** - 启用通过 Dynamics 365 Customer Insights UI 进行的更改跟踪。
 - **操作事件**
-  - **WorkflowEvent** - 此工作流允许您设置[数据源](data-sources.md)、[统一](data-unification.md)和[扩充](enrichment-hub.md)数据，并最终将数据[导出](export-destinations.md)到其他系统。 所有这些步骤都可以单独完成（例如，触发单个导出）。 还可以协调运行这些步骤（例如，从触发统一过程的数据源刷新数据，这将引入扩充并在完成后将数据导出到另一个系统）。 有关详细信息，请参阅 [WorkflowEvent 架构](#workflow-event-schema)。
-  - **APIEvent** - 到 Dynamics 365 Customer Insights 的所有客户实例 API 调用。 有关详细信息，请参阅 [APIEvent 架构](#api-event-schema)。
+  - **WorkflowEvent** - 允许您设置[数据源](data-sources.md)、[统一](data-unification.md)和[扩充](enrichment-hub.md)数据，并将数据[导出](export-destinations.md)到其他系统。 这些步骤都可以单独完成（例如，触发单个导出）。 还可以协调运行这些步骤（例如，从触发统一过程的数据源刷新数据，这将引入扩充并将数据导出到另一个系统）。 有关详细信息，请参阅 [WorkflowEvent 架构](#workflow-event-schema)。
+  - **APIEvent** - 将客户实例的所有 API 调用发送到 Dynamics 365 Customer Insights。 有关详细信息，请参阅 [APIEvent 架构](#api-event-schema)。
 
 ## <a name="set-up-the-diagnostic-settings"></a>设置诊断设置
 
 ### <a name="prerequisites"></a>先决条件
 
-要在 Customer Insights 中配置诊断，必须满足以下先决条件：
-
-- 您有有效的 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)。
-- 您在 Customer Insights 中具有[管理员](permissions.md#admin)权限。
-- 您在 Azure 上的目标资源上拥有 **参与者** 和 **用户访问管理员** 角色。 该资源可以是 Azure Data Lake Storage 存储帐户、Azure 事件中心或 Azure Log Analytics 工作区。 有关详细信息，请参阅[使用 Azure 门户添加或删除 Azure 角色分配](/azure/role-based-access-control/role-assignments-portal)。 在 Customer Insights 中配置诊断设置时需要此权限，成功设置后可以更改此权限。
+- 一个有效的 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)。
+- Customer Insights 的[管理员](permissions.md#admin)权限。
+- Azure 上目标资源的[参与者和用户访问管理员角色](/azure/role-based-access-control/role-assignments-portal)。 该资源可以是 Azure Data Lake Storage 存储帐户、Azure 事件中心或 Azure Log Analytics 工作区。 在 Customer Insights 中配置诊断设置时需要此权限，但可以在成功设置后更改此权限。
 - 满足 Azure 存储、Azure 事件中心或 Azure 日志分析的[目标要求](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements)。
-- 您在资源所属的资源组中至少具有 **读者** 角色。
+- 在资源所属的资源组中至少具有 **读者** 角色。
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>使用 Azure Monitor 设置诊断
 
-1. 在 Customer Insights 中，选择 **系统** > **诊断** 以查看为此实例配置的诊断目标。
+1. 在 Customer Insights 中，转到 **管理** > **系统**，然后选择 **诊断** 选项卡。
 
 1. 选择 **添加目标**。
 
-   > [!div class="mx-imgBorder"]
-   > ![诊断连接](media/diagnostics-pane.png "诊断连接")
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="诊断连接。":::
 
 1. 在 **诊断目标的名称** 中提供名称。
 
-1. 选择具有目标资源的 Azure 订阅的 **租户** 并选择 **登录**。
-
 1. 选择 **资源类型**（存储帐户、事件中心或日志分析）。
 
-1. 针对目标资源选择 **订阅**。
+1. 选择目标资源的 **订阅**、**资源组** 和 **资源**。 有关权限和日志信息，请参阅[目标资源的配置](#configuration-on-the-destination-resource)。
 
-1. 针对目标资源选择 **资源组**。
-
-1. 选择 **资源**。
-
-1. 确认 **数据隐私与合规性** 声明。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
 
 1. 选择 **连接到系统** 以连接到目标资源。 如果 API 已在使用中并生成事件，则 15 分钟后日志开始显示在目标中。
 
-### <a name="remove-a-destination"></a>删除目标
-
-1. 转到 **系统** > **诊断**。
-
-1. 在列表中选择诊断目标。
-
-1. 在 **操作** 列中，选择 **删除** 图标。
-
-1. 确认删除以停止日志转发。 Azure 订阅上的资源将不会被删除。 您可以选择 **操作** 列中的链接，以针对所选资源打开 Azure 门户并删除所选资源。
-
-## <a name="log-categories-and-event-schemas"></a>记录类别和事件架构
-
-目前[支持 API 事件](apis.md)和工作流事件，并且会应用以下类别和架构。
-日志架构遵循 [Azure Monitor 通用架构](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema)。
-
-### <a name="categories"></a>类别
-
-Customer Insights 提供以下两个类别：
-
-- **审核事件**：[API 事件](#api-event-schema)，用于跟踪服务的配置更改。 `POST|PUT|DELETE|PATCH` 操作属于此类别。
-- **操作事件**：使用服务时生成的 [API 事件](#api-event-schema)或[工作流事件](#workflow-event-schema)。  例如，工作流的 `GET` 请求或执行事件。
-
 ## <a name="configuration-on-the-destination-resource"></a>目标资源配置
 
-根据您的资源类型选择，将自动应用下列步骤：
+根据您选择的资源类型，会自动进行以下更改：
 
 ### <a name="storage-account"></a>Storage account
 
@@ -102,7 +71,7 @@ Customer Insights 服务主体获得对所选资源的 **存储帐户参与者**
 
 ### <a name="event-hub"></a>事件中心
 
-Customer Insights 服务主体获得对资源的 **Azure 事件中心数据责任人** 权限，并将在所选命名空间下面创建两个事件中心：
+Customer Insights 服务主体获得对资源的 **Azure 事件中心数据责任人** 权限，并在所选命名空间下面创建两个事件中心：
 
 - 包含 **审核事件** 的 `insight-logs-audit`
 - 包含 **操作事件** 的 `insight-logs-operational`
@@ -116,9 +85,34 @@ Customer Insights 服务主体获取对资源的 **日志分析参与者** 权�
 
 在 **查询** 窗口下，展开 **审核** 解决方案并查找通过搜索 `CIEvents` 提供的示例查询。
 
+## <a name="remove-a-diagnostics-destination"></a>删除诊断目标
+
+1. 转到 **管理员** > **系统**，然后选择 **诊断** 选项卡。
+
+1. 在列表中选择诊断目标。
+
+   > [!TIP]
+   > 删除目标会停止日志转发，但不会删除 Azure 订阅上的资源。 要删除 Azure 中的资源，选择 **操作** 列中的链接，以针对所选资源打开 Azure 门户并删除所选资源。 然后删除诊断目标。
+
+1. 在 **操作** 列中，选择 **删除** 图标。
+
+1. 确认删除以删除目标并停止日志转发。
+
+## <a name="log-categories-and-event-schemas"></a>记录类别和事件架构
+
+目前[支持 API 事件](apis.md)和工作流事件，并且会应用以下类别和架构。
+日志架构遵循 [Azure Monitor 通用架构](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema)。
+
+### <a name="categories"></a>类别
+
+Customer Insights 提供以下两个类别：
+
+- **审核事件**：[API 事件](#api-event-schema)，用于跟踪服务的配置更改。 `POST|PUT|DELETE|PATCH` 操作属于此类别。
+- **操作事件**：使用服务时生成的 [API 事件](#api-event-schema)或[工作流事件](#workflow-event-schema)。  例如，工作流的 `GET` 请求或执行事件。
+
 ## <a name="event-schemas"></a>事件架构
 
-API 事件和工作流事件虽然不同，但它们具有通用的结构和详细信息，请参阅 [API 事件架构](#api-event-schema)或[工作流事件架构](#workflow-event-schema)。
+API 事件和工作流事件具有通用结构，但有一些区别。 有关详细信息，请参阅 [API 事件架构](#api-event-schema)或[工作流事件架构](#workflow-event-schema)。
 
 ### <a name="api-event-schema"></a>API 事件架构
 
@@ -220,7 +214,6 @@ API 事件和工作流事件虽然不同，但它们具有通用的结构和详�
 | `durationMs`    | Long      | 可选          | 操作的持续时间（以毫秒为单位）。                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | 可选          | 具有更多特定事件类别属性的 JSON 对象。                                                                                        | 请参阅[工作流属性](#workflow-properties-schema)子部分                                                                                                       |
 | `level`         | String    | 需要          | 事件的严重性级别。                                                                                                                                  | `Informational`、`Warning` 或 `Error`                                                                                                                                   |
-|                 |
 
 #### <a name="workflow-properties-schema"></a>工作流属性架构
 
@@ -247,3 +240,5 @@ API 事件和工作流事件虽然不同，但它们具有通用的结构和详�
 | `properties.additionalInfo.AffectedEntities` | No       | 是  | 可选。 仅适用于 OperationType `Export`。 在导出中包含已配置实体的列表。                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | No       | 是  | 可选。 仅适用于 OperationType `Export`。 导出的详细消息。                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | No       | 是  | 可选。 仅适用于 OperationType `Segmentation`。 指示此客户细分具有的成员总数。                                                                                                                                                    |
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

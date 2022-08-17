@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: 管理
   items:
-    - name: 设置系统配置
-      href: system.md
-    - name: 配置安全性设置
-      href: security-overview.md
     - name: 分派用户权限
       href: permissions.md
     - name: 引入您自己的密钥保管库
       href: use-azure-key-vault.md
+    - name: 配置安全性设置
+      href: security-overview.md
     - name: 导出诊断日志
       href: diagnostics.md
-    - name: 连接概述
+    - name: 管理连接
       href: connections.md
+    - name: 计划系统刷新
+      href: schedule-refresh.md
+    - name: 查看系统配置
+      href: system.md
 - name: API
   items:
     - name: 使用 API

@@ -1,19 +1,19 @@
 ---
 title: 使用 Experian 中的人口统计信息扩充客户配置文件（预览）
 description: 有关 Experian 第三方扩充的常规信息。
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fccb37cde3f05a70009c18b6c52db01a5ede094d
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195925"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237985"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>使用 Experian 中的人口统计信息扩充客户配置文件（预览）
 
@@ -41,13 +41,9 @@ Experian 是消费者和企业信用报告以及市场营销服务领域的全�
 
 1. 为连接输入名称，并输入您的 Experian 安全传输帐户的有效用户 ID、参与方 ID 和型号。
 
-1. 通过选择 **我同意**，查看并同意[数据隐私与合规性](#data-privacy-and-compliance)。
+1. 查看 [数据隐私和合规性](connections.md#data-privacy-and-compliance)，并选择 **我同意**。
 
 1. 选择 **验证** 验证配置，然后选择 **保存**。
-
-### <a name="data-privacy-and-compliance"></a>数据隐私与合规性
-
-当启用 Dynamics 365 Customer Insights 将数据传输到 Experian 时，您允许在 Dynamics 365 Customer Insights 的合规性边界之外传输数据，包括可能敏感的数据（例如个人数据）。 Microsoft 将根据您的指示传输此类数据，但您负责确保 Experian 满足您可能承担的任何隐私或安全责任。 有关详细信息，请参阅 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=396732)。 您的 Dynamics 365 Customer Insights 管理员可以随时删除此扩充来中止使用此功能。
 
 ## <a name="configure-the-enrichment"></a>配置扩充
 
