@@ -1,19 +1,19 @@
 ---
 title: 向 LinkedIn Ads 导出客户细分（预览版）
 description: 了解如何配置连接和导出到 LinkedIn Ads。
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196797"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304692"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>向 LinkedIn Ads 导出客户细分（预览版）
 
@@ -24,7 +24,7 @@ ms.locfileid: "9196797"
 - [LinkedIn Campaign Manager 帐户](https://business.linkedin.com/marketing-solutions/ads)和相应的管理员凭据。
 - [LinkedIn Campaign Manager 帐户 ID](https://www.linkedin.com/help/lms/answer/a424270)。
 - Customer Insights 中[配置的客户细分](segments.md)。
-- 导出的客户细分中的统一客户配置文件包含表示电子邮件地址的字段。
+- 导出的客户细分至少需要一个特定字段，具体取决于您在 LinkedIn 上选择[联系人定位](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting)还是[公司定位](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting)。 [配置导出](#configure-an-export)时的 **数据匹配** 步骤中列出了可能的字段。
 
 ## <a name="known-limitations"></a>已知限制
 

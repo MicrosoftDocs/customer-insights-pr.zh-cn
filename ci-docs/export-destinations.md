@@ -1,7 +1,7 @@
 ---
 title: 导出(预览版)概述
 description: 管理导出以共享数据。
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: overview
@@ -12,12 +12,12 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: fd234aff9021ded76d8226bf2f15e035cf75e7db
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c580b6c01e1b4ac6b095733193d86ebd0b4005f2
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245316"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304048"
 ---
 # <a name="exports-preview-overview"></a>导出(预览版)概述
 
@@ -27,8 +27,8 @@ ms.locfileid: "9245316"
 
 有两种主要导出类型：  
 
-- **数据传出导出**：导出 Customer Insights 中可用的任何类型的实体。 您选择导出的实体将与所有数据字段、元数据、架构和映射详细信息一起导出。
-- **客户细分导出**：导出 Customer Insights 中的客户细分实体。 客户细分表示客户配置文件的列表。 配置导出时，您可以根据要将数据导出到的目标系统来选择已包含的数据字段。
+- **数据传出导出** 让您可以导出 Customer Insights 中可用的任何类型的实体。 您选择导出的实体将与所有数据字段、元数据、架构和映射详细信息一起导出。
+- **客户细分导出** 让您可以导出 Customer Insights 中的客户细分实体。 对于个人消费者（企业对客户），客户细分代表客户配置文件列表。 对于企业（个人），[客户细分可以代表客户或联系人列表](segment-builder.md#create-a-new-segment-with-segment-builder)。 配置导出时，您可以根据要将数据导出到的目标系统来选择已包含的数据字段。
 
 ### <a name="export-segments"></a>导出细分
 
@@ -38,14 +38,15 @@ ms.locfileid: "9245316"
 **个人客户（企业对客户）环境中的客户细分导出**  
 - 个人客户环境上下文中的客户细分基于 *统一客户配置文件* 实体建立。 满足目标系统要求的每个客户细分（例如，电子邮件地址）都可以导出。
 
-**企业客户（企业对企业）的客户细分导出环境**  
-- 企业客户环境上下文中的客户细分基于 *客户* 实体建立。 要按原样导出客户细分，目标系统需要支持纯客户细分。 当您在定义导出的过程中选择 **公司** 选项时，[LinkedIn](export-linkedin-ads.md) 就是这种情况。
-- 所有其他目标系统都需要来自联系人实体的字段。 为确保客户细分可以从相关联系人检索数据，您的客户细分定义需要投射联系人实体的属性。 详细了解如何[配置客户细分和投射属性](segment-builder.md)。
+**企业客户（企业对企业）环境中的客户细分导出**  
+- 企业客户环境上下文中的客户细分基于 *客户* 实体或 *联系人* 实体建立。 要按原样导出客户细分，目标系统需要支持纯客户细分。 当您在定义导出的过程中选择 **公司** 选项时，[LinkedIn](export-linkedin-ads.md) 就是这种情况。
+- 所有其他目标系统都需要来自联系人实体的字段。
+- 对于两种客户细分类型（联系人和客户），Customer Insights 会根据目标系统自动识别可以导出的客户细分类型。 例如，对于 Mailchimp 等以联系人为中心的目标系统，Customer Insights 仅允许您选择要导出的联系人客户细分。
 
 **客户细分导出限制**  
 - 第三方目标系统可能会限制您可以导出的客户配置文件的数量。 
 - 对于个人客户，当您选择要导出的客户细分时，您将看到客户细分成员的实际数量。 如果客户细分太大，您会收到警告。 
-- 对于企业客户，您将看到客户细分中的客户数量；但是，可以投射的联系人数量不会显示。 在某些情况下，这可能导致导出的客户细分实际包含比目标系统接受的更多的客户配置文件。 如果超出目标系统的限制，将跳过导出。
+- 对于企业客户，您将看到取决于客户细分的客户或联系人数量。 如果客户细分太大，您会收到警告。 超出目标系统结果限制时将跳过导出。
 
 ## <a name="set-up-a-new-export"></a>设置新导出
 
@@ -110,6 +111,20 @@ ms.locfileid: "9245316"
 
 - 要运行所有导出，请在命令栏中选择 **全部运行**。 仅具有活动计划的导出会运行。 要运行不活动的导出，请运行单个导出。
 - 要运行单个导出，请在列表中选择该导出，然后在命令栏中选择 **运行**。
+
+## <a name="troubleshooting"></a>故障排除
+
+### <a name="segment-not-eligible-for-export"></a>客户细分不符合导出条件
+
+**问题** 在企业客户环境中，您的导出失败并显示错误消息：“以下客户细分不符合此导出目标的条件: '{name of segment}'。 请仅选择 ContactProfile 类型的客户细分，然后重试。”
+
+**解决** 企业客户的 Customer Insights 环境已更新，以支持除客户细分之外的联系人客户细分。 由于这一更改，需要联系人详细信息的导出仅适用于基于联系人的客户细分。
+
+1. 根据与您之前使用的客户细分相匹配的联系人[创建客户细分](segment-builder.md)。
+
+1. 该联系人客户细分运行后，编辑相应的导出并选择新客户细分。
+
+1. 选择 **保存** 保存配置或选择 **保存并运行** 立即测试此导出。
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

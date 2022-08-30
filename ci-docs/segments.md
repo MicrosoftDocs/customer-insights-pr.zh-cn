@@ -1,7 +1,7 @@
 ---
 title: 客户细分概述
 description: 概述客户细分以及如何创建和管理它们。
-ms.date: 05/20/2022
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 195a7c733f047c24f9f47a151c1cb623fe34d055
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d4de3a6af6bc7d54305a23e3fbd3cc95d464d352
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246282"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304784"
 ---
 # <a name="segments-overview"></a>客户细分概述
 
@@ -41,13 +41,19 @@ ms.locfileid: "9246282"
 
 # <a name="business-accounts-b-to-b"></a>[企业帐户(企业对企业)](#tab/b2b)
 
-- 使用客户细分生成器的简单或复杂客户细分：[生成您自己的客户细分](segment-builder.md)
+使用客户细分生成器的客户的客户细分或联系人的客户细分（预览）：[生成您自己的客户细分](segment-builder.md)
+
+> [!NOTE]
+> 大多数导出目标需要联系人信息来用于市场营销。 因此，需要创建用于这些导出的联系人的客户细分。
 
 ---
 
 ## <a name="manage-existing-segments"></a>管理现有细分
 
-转到 **客户细分** 页面查看您创建的客户细分、客户细分的状态、成员数以及上次刷新数据的时间。 您可以按任何列对客户细分列表进行排序，或使用搜索框查找要管理的客户细分。
+转到 **客户细分** 页面查看您创建的客户细分、其状态，以及上次刷新数据的时间。 您可以按任何列对客户细分列表进行排序，或使用搜索框查找要管理的客户细分。
+
+> [!TIP]
+> 在企业对企业环境中，**访问群体类型** 列标识客户细分是基于客户还是基于联系人。
 
 选择客户细分可查看可用操作。
 
@@ -82,7 +88,7 @@ ms.locfileid: "9246282"
 > [!NOTE]
 > 此列表中显示的字段基于细分的实体属性。
 >
->此列表是匹配的细分成员的预览，并显示您的细分的前 100 条记录，以便您快速评估该细分和在需要时查看其定义。 要查看所有匹配的记录，[导出客户细分](export-destinations.md)。
+> 此列表是匹配的细分成员的预览，并显示您的细分的前 100 条记录，以便您快速评估该细分和在需要时查看其定义。 要查看所有匹配记录，选择 **查看更多**，打开 [**实体**](entities.md)页面或[导出客户细分](export-destinations.md)。
 
 ## <a name="refresh-segments"></a>刷新客户细分
 

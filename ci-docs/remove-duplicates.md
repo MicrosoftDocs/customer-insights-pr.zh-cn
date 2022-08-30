@@ -6,19 +6,19 @@ ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: mukeshpo
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 7f4829cfc14af623f724c6594e834f3fac1c15a9
-ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
+ms.openlocfilehash: 3f84c1c149f0befcbe489ccdd8a666ce6d5d798a
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "9213616"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304462"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>统一数据之前删除重复项
 
@@ -47,7 +47,7 @@ ms.locfileid: "9213616"
 
 1. 在 **重复记录** 页上，选择实体并选择 **添加规则** 来定义删除重复规则。
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="“显示更多”突出显示的重复记录页面的屏幕截图":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="重复记录页面的屏幕截图，突出显示实体并显示&quot;添加规则&quot;"  lightbox="media/m3_duplicates_showmore.png":::
 
    1. 在 **添加规则** 窗格中，输入以下信息：
       - **选择字段**：从要检查重复项的实体的可用字段列表中进行选择。 选择可能为每个客户所特有的字段。 例如，电子邮件地址，或者名称、市/县和电话号码的组合。
@@ -80,9 +80,9 @@ ms.locfileid: "9213616"
       - **最多填充**：将属性字段填充最多的记录标识为入选记录。 这是默认的合并选项。
       - **最常使用**：根据最常使用标识入选记录。 需要日期或数字字段以定义近期性。
       - **最不常用**：根据最不常用标识入选记录。 需要日期或数字字段以定义近期性。
-      
+
       在平局的情况下，获胜者记录是具有 MAX(PK) 或较大主键值的记录。
-      
+
    1. （可选）要对实体的个别属性定义合并首选项，可以选择窗格底部的 **高级**。 例如，您可以选择保留来自不同记录的最新电子邮件和最完整地址。 展开实体以查看其所有属性并定义用于各个属性的选项。 如果您选择基于新近度的选项，您还需要指定定义新近度的日期/时间字段。
 
       :::image type="content" source="media/m3_adv_merge.png" alt-text="显示最近电子邮件和完整地址的高级合并首选项窗格":::
@@ -96,18 +96,5 @@ ms.locfileid: "9213616"
 
 > [!div class="nextstepaction"]
 > [多个实体的下一步：匹配条件](match-entities.md)
-
-## <a name="deduplication-output-as-an-entity"></a>实体形式的删除重复输出
-
-删除重复过程会为每个源实体创建一个新的已删除重复项的实体。 这些实体可以与名称为 **Deduplication_DataSource_Entity** 的 **实体** 页面内 **系统** 部分中的 **ConflationMatchPairs:CustomerInsights** 一起找到。
-
-删除重复输出实体包含以下信息：
-
-- ID/键
-  - 主键和备用 ID 字段。 备用 ID 字段由为记录标识的所有备用 ID 组成。
-  - Deduplication_GroupId 字段显示在实体中标识的组或群集，该组或群集根据指定的删除重复字段将所有相似记录归组。 它用于系统处理目的。 如果没有指定手动删除重复规则并且系统定义的删除重复规则适用，则您可能在重复删除输出实体中找不到此字段。
-  - Deduplication_WinnerId：此字段包含标识的组或群集中的获胜者 ID。 如果 Deduplication_WinnerId 与记录的主键值相同，则这意味着该记录是入选记录。
-- 用于定义删除重复规则的字段。
-- “规则”和“分数”字段，分别用于表示所应用的删除重复规则以及匹配算法返回的分数。
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

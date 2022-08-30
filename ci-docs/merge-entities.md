@@ -2,7 +2,7 @@
 title: 统一客户字段，实现数据统一
 description: 合并实体以创建统一客户配置文件。
 recommendations: false
-ms.date: 05/04/2022
+ms.date: 07/27/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -14,18 +14,18 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
-ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
+ms.openlocfilehash: 7ebd6ab8fa6ae141f33295a5d7723e96c8dc70ca
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "9213571"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304002"
 ---
-# <a name="unify-customer-fields-for-data-unification"></a>统一客户字段，实现数据统一
+# <a name="unify-customer-fields"></a>统一客户字段
 
-在统一过程的此步骤中，选择并排除要在统一配置文件实体中合并的属性。 例如，如果三个实体具有电子邮件数据，您可能希望保留所有三个单独的电子邮件字段，或将它们合并成统一配置文件的单个电子邮件字段。 某些属性由系统自动合并。 您可以创建稳定且唯一的客户 ID，并将相关配置文件分组到一个群集中。
+在统一过程的此步骤中，选择并排除要在统一配置文件实体中合并的属性。 例如，如果三个实体具有电子邮件数据，您可能希望保留所有三个单独的电子邮件字段，或将它们合并成统一配置文件的单个电子邮件字段。 某些属性由系统自动合并。 您可以创建稳定的唯一客户 ID。 对于个人客户，您可以将相关配置文件分组到一个群集中。
 
-:::image type="content" source="media/m3_unify.png" alt-text="数据统一进程中的合并页，其中显示带定义统一客户配置文件的合并字段的表。":::
+:::image type="content" source="media/m3_unify.png" alt-text="数据统一流程中的统一客户字段页面，其中显示带定义统一客户配置文件的合并字段的表。":::
 
 ## <a name="review-and-update-the-customer-fields"></a>查看并更新客户字段
 
@@ -47,7 +47,7 @@ ms.locfileid: "9213571"
 
 1. （可选）[生成客户 ID 配置](#configure-customer-id-generation)。
 
-1. （可选）[将配置文件分组为家庭或群集](#group-profiles-into-households-or-clusters)。
+1. （可选）对于企业对客户，[将配置文件分组为家庭或群集](#group-profiles-into-households-or-clusters)。
 
 > [!div class="nextstepaction"]
 > [下一步：查看统一](review-unification.md)
@@ -161,7 +161,7 @@ ms.locfileid: "9213571"
 
 ## <a name="group-profiles-into-households-or-clusters"></a>将配置文件分组为家庭或群集
 
-您可以定义规则以将相关配置文件分组到群集中。 目前有两种类型的群集可用 – 家庭群集和自定义群集。 如果 *Customer* 实体包含语义字段 *Person.LastName* 和 *Location.Address*，系统会自动选择具有预定义规则的家庭。 您还可以使用自己的规则和条件创建群集，类似于[匹配规则](match-entities.md#define-rules-for-match-pairs)。
+对于个人客户，您可以定义规则以将相关配置文件分组到群集中。 目前有两种类型的群集可用 – 家庭群集和自定义群集。 如果 *Customer* 实体包含语义字段 *Person.LastName* 和 *Location.Address*，系统会自动选择具有预定义规则的家庭。 您还可以使用自己的规则和条件创建群集，类似于[匹配规则](match-entities.md#define-rules-for-match-pairs)。
 
 1. 选择 **高级** > **创建群集**。
 

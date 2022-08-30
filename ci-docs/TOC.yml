@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: 查看数据统一
       href: review-unification.md
+    - name: 创建统一的联系人配置文件
+      href: data-unification-contacts.md
     - name: 更新统一设置
       href: data-unification-update.md
 - name: 数据扩充

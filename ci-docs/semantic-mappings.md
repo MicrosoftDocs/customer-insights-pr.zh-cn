@@ -1,9 +1,9 @@
 ---
 title: 语义映射(预览版)
 description: 语义映射概述以及如何使用它们。
-ms.date: 12/01/2021
+ms.date: 08/12/2022
 ms.subservice: audience-insights
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
@@ -11,18 +11,19 @@ manager: shellyha
 searchScope:
 - ci-semantic-mapping
 - customerInsights
-ms.openlocfilehash: 7c9588ac7a132ca6f43cf26ea3a744109a0dd2b8
-ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
+ms.openlocfilehash: 8780c11c8b091717349f0fd75a36b99c3a63ab49
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "9183620"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303865"
 ---
 # <a name="semantic-mappings-preview"></a>语义映射(预览版)
 
-语义映射使您可以将非活动数据映射到预定义架构。 这些架构可帮助 Customer Insights 更好地了解您的数据属性。 语义映射和提供的数据在 Customer Insights 中实现了新的见解和特征。 要将您的活动数据映射到架构，请查看[活动](activities.md)文档。
+> [!NOTE]
+> **语义映射** 页面只能用于已使用此页面创建联系人配置文件的企业环境（企业对企业）。 您可以使用 **语义映射** 页面继续创建和管理各个联系人配置文件。 或者，[统一您的联系人数据](data-unification-contacts.md)，删除重复项、识别实体间的匹配项并创建一个统一的联系人配置文件。 然后，您可以使用统一的联系人配置文件来创建联系人级别的活动。
 
-**当前已为基于企业客户的环境启用语义映射**。 *ContactProfile* 是目前 Customer Insights 中唯一可用的语义映射类型。
+语义映射使您可以将非活动数据映射到预定义架构。 这些架构可帮助 Customer Insights 更好地了解您的数据属性。 语义映射和提供的数据在 Customer Insights 中实现了新的见解和特征。 要将您的活动数据映射到架构，请查看[活动](activities.md)文档。
 
 ## <a name="define-a-contactprofile-semantic-entity-mapping"></a>定义 ContactProfile 语义实体映射
 
@@ -87,41 +88,5 @@ ms.locfileid: "9183620"
 - **刷新** 语义映射以包括最新数据。 更新任何给定的语义映射将更新所有相同类型的语义映射。
 - **重命名** 语义映射。 选择 **保存**。
 - **删除** 语义映射。 要一次删除多个语义映射，选择语义映射和删除图标。 选择 **删除** 以确认删除。
-
-## <a name="use-a-contactprofile-semantic-entity-mapping-to-create-contact-level-activities"></a>使用 ContactProfile 语义实体映射创建联系人级别的活动
-
-创建 *ContactProfile* 语义实体映射后，可以捕获联系人的活动。 它使您能够在活动时间线中查看由联系人负责每个活动的客户。 大多数步骤都采用典型活动映射配置。
-
-   > [!NOTE]
-   > 若要使联系人级别的活动正常工作，活动数据中每个记录都必须具有 **AccountID** 和 **ContactID** 属性。
-
-1. [定义 *ContactProfile* 语义实体映射](#define-a-contactprofile-semantic-entity-mapping)并运行语义映射。
-
-1. 转到 **数据** > **活动**。
-
-1. 选择 **添加活动** 以创建新活动。
-
-1. 命名活动，选择源活动实体，并选择活动实体的主键。
-
-1. 在 **关系** 步骤中，使用您的联系人数据作为中间实体，在您的活动源数据与客户之间创建间接关系。 有关详细信息，请参阅[直接和间接关系路径](relationships.md#relationship-paths)。
-   - 名为 *购买* 的活动的示例关系：
-      - 属性 **ContactID** 上的 **采购来源活动数据** > **联系人数据**
-      - 属性 **AccountID** 上的 **联系人属性** > **客户数据**
-
-   :::image type="content" source="media/Contact_Activities1.png" alt-text="所建立关系示例。":::
-
-1. 建立关系后，选择 **下一步** 并完成您的活动映射配置。 有关创建活动的详细步骤，请参阅[定义活动](activities.md)。
-
-1. 运行活动映射。
-
-1. 联系人级的活动映射运行后，选择 **客户**。 联系人级的活动在客户时间线上显示。
-
-   :::image type="content" source="media/Contact_Activities2.png" alt-text="配置联系人活动后的最终结果":::
-
-### <a name="contact-level-activity-timeline-filtering"></a>联系人级别的活动时间线筛选
-
-客户的活动时间线包括他们所执行活动的 ID 或名称，具体取决于您的 *ContactProfile* 配置。 按时间线中的联系人筛选活动，以查看您感兴趣的特定联系人。 要查看未分配给特定联系人的所有活动，选择 **未映射到联系人的活动**。
-
-:::image type="content" source="media/Contact_Activities3.png" alt-text="适用于联系人级别的活动的筛选选项。":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

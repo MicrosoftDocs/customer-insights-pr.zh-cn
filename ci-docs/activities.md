@@ -1,9 +1,9 @@
 ---
-title: 客户活动
-description: 定义客户活动，然后在客户配置文件中的时间线内查看这些客户活动。
-ms.date: 07/22/2022
+title: 客户或业务联系人活动
+description: 定义客户或业务联系人活动，然后在客户配置文件中的时间线内查看这些客户活动。
+ms.date: 08/12/2022
 ms.subservice: audience-insights
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
@@ -16,19 +16,19 @@ searchScope:
 - ci-activities-wizard
 - ci-measures
 - ci-segment-suggestions
-- customerInsight
-ms.openlocfilehash: cc21b0eeb368156437e60d851c2d144f3974c066
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+- customerInsights
+ms.openlocfilehash: bbb8bc30d079273bc935181c628915bb3c02d982
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188128"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304094"
 ---
-# <a name="customer-activities"></a>客户活动
+# <a name="customer-or-business-contact-activities"></a>客户或业务联系人活动
 
-客户活动是客户执行的操作或事件。 例如，交易、支持通话持续时间、网站评价、购买或退货。 这些活动包含在一个或多个数据源中。 使用 Customers Insights，可以整合来自这些[数据源](data-sources.md)的客户活动，并将它们与客户资料相关联。 这些活动按时间顺序显示在客户资料的时间线上。 将时间线与[客户卡加载项](customer-card-add-in.md)解决方案一起包括在 Dynamics 365 应用中。
+客户活动是客户或业务联系人执行的操作或事件。 例如，交易、支持通话持续时间、网站评价、购买或退货。 这些活动包含在一个或多个数据源中。 使用 Customers Insights，可以整合来自这些[数据源](data-sources.md)的客户活动，并将它们与客户资料相关联。 这些活动按时间顺序显示在客户资料的时间线上。 将时间线与[客户卡加载项](customer-card-add-in.md)解决方案一起包括在 Dynamics 365 应用中。
 
-## <a name="define-an-activity"></a>定义活动
+## <a name="define-a-customer-activity"></a>定义客户活动
 
 实体必须至少有一个类型为 **日期** 的属性才能包含在客户时间线中。 如果未找到此类实体，将禁用 **添加活动** 控件。
 
@@ -38,9 +38,9 @@ ms.locfileid: "9188128"
 
 1. 在 **活动数据** 步骤中，输入以下信息：
 
-   - **活动名称**：您的活动的名称。
-   - **活动实体**：包含事务数据或活动数据的实体。
-   - **主键**：唯一标识记录的字段。 其中不应包含任何重复值、空值或缺少值。
+   - **活动名称**：为您的活动选择一个名称。
+   - **活动实体**：选择包含交易数据或活动数据的实体。
+   - **主键**：选择唯一标识记录的字段。 其中不应包含任何重复值、空值或缺少值。
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="使用名称、实体和主键设置活动数据。":::
 
@@ -48,9 +48,9 @@ ms.locfileid: "9188128"
 
 1. 在 **关系** 步骤中，选择 **添加关系** 将您的活动数据连接到其相应的客户记录。 此步骤显示实体之间的连接。  
 
-   - **来自实体的外键**：活动实体中的字段，将用于与另一个实体建立关系。
+   - **外键**：活动实体中的外键字段，将用于与另一个实体建立关系。
    - **目标实体名称**：将与您的活动实体有关系的相应源客户实体。 您只能与数据统一过程中使用的源客户实体关联。
-   - **关系名称**：标识实体之间的关系的名称。 如果此活动实体与所选源客户实体之间已经存在关系，关系名称为只读。
+   - **关系名称**：如果此活动实体与所选源客户实体之间的关系已存在，则关系名称处于只读模式。 如果不存在此关系，将使用您在此框中提供的名称创建新关系。
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="定义实体关系。":::
 
@@ -90,7 +90,7 @@ ms.locfileid: "9188128"
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-## <a name="manage-existing-activities"></a>管理现有活动
+## <a name="manage-existing-customer-activities"></a>管理现有客户活动
 
 转到 **数据** > **活动** 查看您保存的活动、活动源实体、活动类型以及它们是否包含在客户时间线中。 您可以按任何列对活动列表进行排序，或使用搜索框查找要管理的活动。
 
@@ -116,9 +116,43 @@ ms.locfileid: "9188128"
 
      :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="使用筛选器面板配置筛选条件。":::
 
-1. 要删除筛选器，选择 **清除筛选器**，或选择 **筛选器**，清除筛选器复选框。
-
 > [!NOTE]
 > 当您离开客户配置文件时，活动筛选器将被删除。 您必须在每次打开客户资料时应用它们。
+
+## <a name="define-a-contact-activity"></a>定义联系人活动
+
+对于企业客户（企业对企业），使用 *ContactProfile* 实体来捕获联系人的活动。 您可以在活动时间线中查看由联系人负责每个活动的客户。 大多数步骤都采用客户活动映射配置。
+
+   > [!NOTE]
+   > 要定义联系人级别的活动，必须创建一个 *ContactProfile* 实体，作为[统一的联系人配置文件](data-unification-contacts.md)或通过[语义映射](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping)。
+   >
+   > 活动数据中每个记录都必须具有 **AccountID** 和 **ContactID** 属性。
+  
+1. 转到 **数据** > **活动**。
+
+1. 选择 **添加活动**。
+
+1. 命名活动，选择源活动实体，并选择活动实体的主键。
+
+1. 在 **关系** 步骤中，使用您的联系人数据作为中间实体，在您的活动源数据与客户之间创建间接关系。 有关详细信息，请参阅[直接和间接关系路径](relationships.md#relationship-paths)。
+   - 名为 *购买* 的活动的示例关系：
+      - 属性 **ContactID** 上的 **采购来源活动数据** > **联系人数据**
+      - 属性 **AccountID** 上的 **联系人属性** > **客户数据**
+
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="所建立关系示例。":::
+
+1. 建立关系后，选择 **下一步** 并完成您的活动映射配置。 有关创建活动的详细步骤，请参阅[定义客户活动](#define-a-customer-activity)。
+
+1. 运行活动映射。
+
+1. 现在，您的联系人级别的活动将在客户时间线上可见。
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="配置联系人活动后的最终结果":::
+
+## <a name="contact-level-activity-timeline-filtering"></a>联系人级别的活动时间线筛选
+
+配置联系人级别的活动映射并运行此映射后，将更新您的客户的活动时间线。 这包括他们所执行活动的 ID 或名称，具体取决于您的 *ContactProfile* 配置。 可以按时间线中的联系人筛选活动，以查看您感兴趣的特定联系人。 此外，您还可以通过选择 **未映射到联系人的活动** 来查看未分配给特定联系人的所有活动。
+
+   :::image type="content" source="media/Contact_Activities3.png" alt-text="适用于联系人级别的活动的筛选选项。":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -14,12 +14,12 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 6cdf47e6997f230811dcb0f2cf5542f3a6db2367
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+ms.openlocfilehash: 0c8edfd8f45ce7770d568811df2b38be1b04e73a
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188082"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303772"
 ---
 # <a name="view-customer-profiles"></a>查看客户配置文件
 
@@ -78,7 +78,7 @@ ms.locfileid: "9188082"
 **客户配置文件磁贴** 显示统一 *客户* 实体的不同值。 如果字段没有所选客户资料的值，除非是地址字段，否则不会显示。 磁贴分为几个部分：
 
 - 第一个部分显示一组预定义的字段，后跟属于搜索和筛选索引的所有字段。 所有与地址相关的字段都将合并为一行，即使资料不包含地址信息，这一行也会显示。
-- **此客户的联系人** 显示在企业客户的环境中。 每个联系人都显示有他们的字段。 空字段会被隐藏。
+- **此客户的联系人** 显示在企业客户（企业对企业）环境中。 每个联系人都显示有他们的字段。 空字段会被隐藏。
 - **其他字段** 显示选定客户的其余字段（除 ID 之外）。
 - **ID** 列出其相应实体名称下的所有 ID。 字段按语义使用 ID 标识。
 
