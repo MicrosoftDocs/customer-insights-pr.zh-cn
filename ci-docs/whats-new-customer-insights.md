@@ -1,19 +1,19 @@
 ---
 title: Dynamics 365 Customer Insights 中的新增功能
 description: 有关新功能、改进和 Bug 修复的信息。
-ms.date: 08/03/2022
+ms.date: 08/31/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246000"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387271"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 中的新增功能
 
@@ -23,6 +23,24 @@ ms.locfileid: "9246000"
 
 > [!TIP]
 > 若要提交功能请求和产品建议及投票，请访问 [Dynamics 365 应用程序意见门户](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights)。
+
+## <a name="august-2022-updates"></a>2022 年 8 月更新
+
+2022 年 8 月的更新包括新功能、性能升级和 bug 修复。
+
+### <a name="contact-unification-in-b-to-b-environments"></a>在企业到企业环境中统一联系人
+
+Customer Insights 中的企业到企业环境现在支持增强的数据统一体验。
+
+除了客户之外，您现在还可以统一联系人以全面了解您的业务联系人。 统一联系人将与统一客户关联，现在将列在客户卡上。 
+
+有关详细信息，请参阅[创建统一的联系人配置文件](data-unification-contacts.md)。
+
+### <a name="create-and-export-of-segments-based-on-unified-contacts"></a>基于统一联系人创建和导出客户细分
+
+由于新的联系人统一，您可以使用来自联系人、客户或两者的条件创建联系人的客户细分。 这些客户细分可以导出来在其他服务中激活。
+
+有关详细信息，请参阅[导出概述](export-destinations.md)。
 
 ## <a name="july-2022-updates"></a>2022 年 7 月更新
 

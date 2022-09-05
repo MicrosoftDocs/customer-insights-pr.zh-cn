@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea21163d7dd05370de28ca8340ae9583846adb26
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d20d57e9b7724e9921f9341eeaa39141b4555ff1
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246051"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387238"
 ---
 # <a name="configure-security-settings"></a>配置安全性设置
 
@@ -23,7 +23,7 @@ ms.locfileid: "9246051"
 
 查看和管理密钥以将 [Customer Insights API](apis.md) 与您环境中的数据配合使用。
 
-1. 转到 **系统** > **安全性**，然后选择 **API** 选项卡。
+1. 转到 **管理员** > **安全**，然后选择 **API** 选项卡。
 
 1. 如果尚未设置对环境的 API 访问，请选择 **启用**。 或者，要阻止 API 访问环境，选择 **禁用** 并确认。
 

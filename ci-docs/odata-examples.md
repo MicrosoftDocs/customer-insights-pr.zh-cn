@@ -1,27 +1,27 @@
 ---
 title: Customer Insights API 的 OData 查询示例
 description: 用于查询 Customer Insights API 以查看数据的 Open Data Protocol (OData) 的常用示例。
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121551"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387191"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Customer Insights API 的 OData 查询示例
 
 Open Data Protocol (OData) 是一种基于 HTTP 等核心协议构建的数据访问协议。 它使用普遍接受的方法，例如适用于 Web 的 REST。 有多种库和工具可用于使用 OData 服务。
 
-本文列出了一些经常请求的示例查询，以帮助您根据 [Customer Insights API](apis.md) 生成您自己的实施。
+为了帮助您基于 [Customer Insights APIs](apis.md) 构建您自己的实施，请查看一些经常请求的示例查询。
 
-您必须修改查询示例，使其在目标环境中能够正常工作： 
+修改查询示例，使其在目标环境中能够正常工作：
 
 - {serviceRoot}：`https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data`，其中 {instanceId} 是您要查询的 Customer Insights 环境的 GUID。 通过 [ListAllInstances 操作](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)，您可以找到您有权访问的 {InstanceId}。
 - {CID}：统一客户记录的 GUID。 示例：`ce759201f786d590bf2134bff576c369`。
@@ -31,7 +31,7 @@ Open Data Protocol (OData) 是一种基于 HTTP 等核心协议构建的数据�
 
 ## <a name="customer"></a>客户
 
-下表包含一组有关 *客户* 实体的示例查询。
+*客户* 实体的示例查询。
 
 |查询类型 |示例  | 备注  |
 |---------|---------|---------|
@@ -46,7 +46,7 @@ Open Data Protocol (OData) 是一种基于 HTTP 等核心协议构建的数据�
 
 ## <a name="unified-activity"></a>统一活动
 
-下表包含一组有关 *UnifiedActivity* 实体的示例查询。
+*UnifiedActivity* 实体的示例查询。
 
 |查询类型 |示例  | 备注  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ Open Data Protocol (OData) 是一种基于 HTTP 等核心协议构建的数据�
 
 ## <a name="other-examples"></a>其他示例
 
-下表包含一组有关其他实体的示例查询。
+其他实体的示例查询。
 
 |查询类型 |示例  | 备注  |
 |---------|---------|---------|
