@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245776"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396035"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>在 Azure Data Lake Storage 中连接到数据
 
@@ -39,6 +39,8 @@ ms.locfileid: "9245776"
   - 存储 Blob 数据读取器
   - 存储 Blob 数据负责人
   - 存储 Blob 数据参与者
+
+- 设置数据源连接的用户至少需要对存储帐户的存储 Blob 数据参与者权限。
 
 - Data Lake Storage 中的数据应遵循 Common Data Model 标准来存储数据，并应具有 Common Data Model 清单来表示数据文件的架构（*.csv 或 *.parquet）。 清单必须提供实体的详细信息，如实体列和数据类型，以及数据文件位置和文件类型。 有关详细信息，请参阅 [Common Data Model 清单](/common-data-model/sdk/manifest)。 如果清单不存在，具有存储 Blob 数据负责人或存储 Blob 数据参与者访问权限的管理员用户可以在引入数据时定义架构。
 
@@ -62,7 +64,7 @@ ms.locfileid: "9245776"
    > [!NOTE]
    > 您需要容器或存储帐户的以下角色之一来创建数据源：
    >
-   >  - 存储 Blob 数据读取器足以从存储帐户读取数据并将数据引入 Customer Insights。 
+   >  - 存储 Blob 数据读取器足以从存储帐户读取数据并将数据引入 Customer Insights。
    >  - 如果您要直接在 Customer Insights 中编辑清单文件，则必须是存储 Blob 数据参与者或负责人。  
   
 1. 选择包含要从中导入数据的数据和架构（model.json 或 manifest.json 文件）的 **容器** 的名称，然后选择 **下一步**。

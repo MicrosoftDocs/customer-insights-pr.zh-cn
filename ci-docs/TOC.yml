@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: 使用来自 Azure 机器学习的自定义模型
           href: custom-models.md
-        - name: 完成部分缺失的数据
-          href: predictions.md
     - name: 示例指南
       items:
         - name: CLV 预测示例指南

@@ -1,7 +1,7 @@
 ---
 title: 更新客户或联系人统一设置
 description: 更新客户统一设置中的重复规则、匹配规则或统一字段。
-ms.date: 08/12/2022
+ms.date: 08/26/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: Scott-Stabbert
@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: f2c14c169f5973b5f400989b9eeea593eba09182
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: e893e66fd7691b9703d51ed8f87cfad63880cc3b
+ms.sourcegitcommit: 560c4ee16376a9c6fdd7860988ce2d2440194fa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304324"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9392460"
 ---
 # <a name="update-unification-settings"></a>更新统一设置
 
@@ -38,7 +38,7 @@ ms.locfileid: "9304324"
    > 仅在选择多个实体时才会显示 **匹配条件** 磁贴。
 
 1. 选择要更新的内容：
-   - 用于添加实体或属性或更改属性类型的[源字段](#edit-source-fields)。
+   - 用于添加属性或实体或更改属性类型的[源字段](#edit-source-fields)。 要删除属性，请参阅[删除统一字段](#remove-a-unified-field)。 要删除实体，请参阅[删除统一实体](#remove-a-unified-entity)。
    - 用于管理重复记录规则或合并首选项的[重复记录](#manage-deduplication-rules)。
    - 用于跨两个或更多个实体更新匹配规则的[匹配条件](#manage-match-rules)。
    - 用于合并或排除字段的[统一客户字段](#manage-unified-fields)。 您也可以将相关配置文件分组到群集中。
@@ -53,8 +53,6 @@ ms.locfileid: "9304324"
 
 ## <a name="edit-source-fields"></a>编辑源字段
 
-如果属性或实体已经统一，则不能删除它们。
-
 1. 在 **源字段** 磁贴上选择 **编辑**。
 
    :::image type="content" source="media/m3_source_edit.png" alt-text="“源字段”页面的屏幕截图，其中显示了主键、映射和未映射字段的数量":::
@@ -66,6 +64,80 @@ ms.locfileid: "9304324"
 1. （可选）您可以更改实体的主键、更改属性类型以及打开或关闭 **智能映射**。 有关详细信息，请参阅[选择源字段](map-entities.md)。
 
 1. 选择 **下一步** 以更改删除重复项规则，或选择 **保存并关闭** 并返回[更新统一设置](#update-unification-settings)。
+
+### <a name="remove-a-unified-field"></a>删除统一字段
+
+要删除已统一的字段，必须从任何依赖项（如客户细分、度量、扩充或关系）中删除该字段。
+
+1. 删除字段的所有依赖项后，转到 **数据** > **统一**。
+
+1. 在 **统一客户字段** 磁贴上选择 **编辑**。
+
+1. 选择所有出现的字段，然后选择 **排除**。
+
+   :::image type="content" source="media/m3_remove_attribute1.png" alt-text="显示选定字段和“排除”按钮的统一字段页面的屏幕截图":::
+
+1. 选择 **完成** 确认，然后选择 **保存并关闭**。
+
+   > [!TIP]
+   > 如果您看到消息“无法保存统一操作。 由于下游依赖项的缘故，无法修改或删除指定的资源”，则说明字段仍在下游依赖项中使用。
+
+1. 如果该字段用于重复记录或匹配条件的规则中，请执行以下步骤。 否则，请转到下一步。
+   1. 在 **重复记录** 磁贴上选择 **编辑**。
+   1. 从所有使用它的规则中删除该字段（如果有），然后选择 **下一步**。
+   1. 在 **匹配条件** 页面上，从所有使用它的规则中删除该字段（如果有），然后选择 **保存并关闭**。
+   1. 选择 **统一** > **统一客户配置文件和依赖项**。 等待统一完成，然后继续下一步。
+
+1. 在 **源字段** 磁贴上选择 **编辑**。
+
+1. 选择 **选择实体和字段**，清除每个出现的字段旁边的复选框。
+
+   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="显示已清除复选框的“选择实体和字段”对话框的屏幕截图":::
+
+1. 选择 **应用**。
+
+1. 选择 **保存并关闭**。
+
+1. 选择 **统一** > **统一客户配置文件和依赖项** 更新统一配置文件。
+
+### <a name="remove-a-unified-entity"></a>删除统一实体
+
+要删除已统一的实体，必须从任何依赖项（如客户细分、度量、扩充或关系）中删除该实体。
+
+1. 删除实体的所有依赖项后，转到 **数据** > **统一**。
+
+1. 在 **统一客户字段** 磁贴上选择 **编辑**。
+
+1. 选择实体的所有字段，然后选择 **排除**。
+
+   :::image type="content" source="media/m3_remove_entity1.png" alt-text="包含选定实体的所有字段的统一字段和“排除”按钮的屏幕截图":::
+
+1. 选择 **完成** 确认，然后选择 **保存并关闭**。
+
+   > [!TIP]
+   > 如果您看到消息“无法保存统一操作。 由于下游依赖项的缘故，无法修改或删除指定的资源”，则说明实体仍在下游依赖项中使用。
+
+1. 在 **重复记录** 磁贴上选择 **编辑**。
+
+1. 从实体中删除所有规则（如果有），然后选择 **下一步**。
+
+1. 在 **匹配条件** 页面上，选择实体，然后选择 **删除**。
+
+   :::image type="content" source="media/m3_remove_entity2.png" alt-text="选择了实体的“匹配条件”和“删除”按钮的屏幕截图":::
+
+1. 选择 **保存并关闭**。
+
+1. 在 **源字段** 磁贴上选择 **编辑**。
+
+1. 选择 **选择实体和字段**，清除实体旁边的复选框。
+
+   :::image type="content" source="media/m3_remove_entity3.png" alt-text="已清除实体复选框的“选择实体和字段”对话框的屏幕截图":::
+
+1. 选择 **应用**。
+
+1. 选择 **保存并关闭**。
+
+1. 选择 **统一** > **统一客户配置文件和依赖项** 更新统一配置文件。
 
 ## <a name="manage-deduplication-rules"></a>管理删除重复项规则
 

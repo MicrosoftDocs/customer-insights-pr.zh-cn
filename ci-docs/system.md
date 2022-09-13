@@ -14,12 +14,12 @@ searchScope:
 - ci-system-general
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2498814a3d2e6330124fb97c036b9b310bcf1f7a
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 6e60bf7c18939a29f660e06989e262deeb59a39b
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246236"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9395990"
 ---
 # <a name="view-system-configuration"></a>查看系统配置
 
@@ -38,12 +38,6 @@ ms.locfileid: "9246236"
    - **API 调用** - 一个显示选定期限内的 API 调用总数的图表。
    - **数据传输** - 一个显示在选定期限内通过 API 传输的数据量的图表。
    - **操作** - 一个表，其中包含每个可用 API 操作的行以及操作使用情况的详细信息。 选择操作名称转到 [API 参考](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances)。
-
-   使用[实时数据引入](real-time-data-ingestion.md)的操作包含一个双筒望远镜符号，用于查看实时 API 的使用情况。
-
-   1. 选择双筒望远镜打开 **实时 API 使用情况** 窗格，其中包含操作的使用情况详细信息。
-   1. **选择要查看的时间范围**。
-   1. 使用 **分组依据** 框选择如何最好地呈现实时交互。 您可以按 API **方法**、**实体限定名称**（引入的实体）、**创建者**（事件来源）、**结果**（成功或失败）或 **错误代码** 对数据进行分组。 数据以历史图表和表格形式提供。
 
 ## <a name="view-system-information"></a>查看系统信息
 

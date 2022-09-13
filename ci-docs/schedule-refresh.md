@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: ce10fcfe9906d33209270f8f6930a51b045b13e2
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246332"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9395945"
 ---
 # <a name="schedule-system-refresh"></a>计划系统刷新
 
@@ -36,7 +36,7 @@ ms.locfileid: "9246332"
 
 1. 在 **每周**（默认值）和 **每日** 刷新之间选择。 如果要计划每周刷新，请选择一个或多个要运行刷新的日期。
 
-1. 设置 **时区**，然后使用 **时间** 下拉列表来设置刷新时间。 如果要将多次刷新安排在一天内，请选择 **添加其他时间**。
+1. 设置 **时区**，然后使用 **时间** 下拉列表来设置刷新时间。 如果要将多次刷新安排在一天内，请选择 **添加其他时间**。 您最多可以添加四个刷新。
 
 1. 选择 **保存** 以应用您所做的更改。
 

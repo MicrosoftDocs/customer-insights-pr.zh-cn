@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Dataverse 中的 Customer Insights 数据
 description: 了解如何连接 Customer Insights 和 Microsoft Dataverse，并了解导出到 Dataverse 的输出实体。
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
+ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9303818"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424298"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>使用 Microsoft Dataverse 中的 Customer Insights 数据
 
@@ -136,6 +136,7 @@ OR
 Customer Insights 中的某些输出实体作为表在 Dataverse 中可用。 下面的部分描述了这些表格的预期架构。
 
 - [CustomerProfile](#customerprofile)
+- [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -145,21 +146,46 @@ Customer Insights 中的某些输出实体作为表在 Dataverse 中可用。 �
 
 ### <a name="customerprofile"></a>CustomerProfile
 
-此表包含来自 Customer Insights 的统一客户配置文件。 统一的客户配置文件的架构取决于数据统一过程中使用的实体和属性。 客户配置文件架构通常包含来自 [CustomerProfile Common Data Model 定义](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)的属性子集。
+此表包含来自 Customer Insights 的统一客户配置文件。 统一的客户配置文件的架构取决于数据统一过程中使用的实体和属性。 客户配置文件架构通常包含来自 [CustomerProfile Common Data Model 定义](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile)的属性子集。 对于企业到企业场景，客户配置文件包含统一的客户，架构通常包含来自[客户 Common Data Model 定义](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account)的属性子集。
+
+### <a name="contactprofile"></a>ContactProfile
+
+ContactProfile 包含有关联系人的统一信息。 联系人是在企业到企业场景中[映射到客户的个人](data-unification-contacts.md)。
+
+| Column                       | 类型​​                | 说明      |
+| ---------------------------- | ------------------- | --------------- |
+|  BirthDate            | 日期/时间       |  联系人的出生日期               |
+|  City                 | 文本 |  联系人地址的城市               |
+|  ContactId            | 文本 |  联系人配置文件的 ID               |
+|  ContactProfileId     | 唯一标识符   |  联系人的 GUID               |
+|  CountryOrRegion      | 文本 |  联系人地址的国家/地区               |
+|  CustomerId           | 文本 |  联系人映射到的客户的 ID               |
+|  EntityName           | 文本 |  数据来自的实体                |
+|  FirstName            | 文本 |  联系人的名               |
+|  性别               | 文本 |  联系人的性别               |
+|  Id                   | 文本 |  基于 `Identifier` 的确定 GUID               |
+|  标识符           | 文本 |  联系人配置文件的内部 ID：`ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | 文本 |  联系人的职务               |
+|  LastName             | 文本 |  联系人的姓               |
+|  PostalCode           | 文本 |  联系人地址的邮政编码               |
+|  PrimaryEmail         | 文本 |  联系人的电子邮件地址               |
+|  PrimaryPhone         | 文本 |  联系人的电话号码               |
+|  省/自治区/直辖市      | 文本 |  联系人地址的省/市/自治区/直辖市               |
+|  StreetAddress        | 文本 |  联系人地址的街道               |
 
 ### <a name="alternatekey"></a>AlternateKey
 
 AlternateKey 表包含参与统一流程的实体的键。
 
-|Column  |Type  |描述  |
+|Column  |类型​​  |说明   |
 |---------|---------|---------|
-|DataSourceName    |String         | 数据源的名称。 例如: `datasource5`        |
-|EntityName        | String        | Customer Insights 中的实体名称。 例如: `contact1`        |
-|AlternateValue    |String         |映射到客户 ID 的备用 ID。 示例: `cntid_1078`         |
-|KeyRing           | 多行文本        | JSON 值  </br> 示例：[{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
-|CustomerId         | String        | 统一客户配置文件的 ID。         |
-|AlternateKeyId     | GUID         |  基于 msdynci_identifier 的 AlternateKey 确定性 GUID       |
-|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> 示例：`testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |文本         | 数据源的名称。 例如: `datasource5`        |
+|EntityName        | 文本        | Customer Insights 中的实体名称。 例如: `contact1`        |
+|AlternateValue    |文本         |映射到客户 ID 的备用 ID。 示例: `cntid_1078`         |
+|KeyRing           | 文本        | JSON 值  </br> 示例：[{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|CustomerId         | 文本        | 统一客户配置文件的 ID。         |
+|AlternateKeyId     | 唯一标识符        |  基于 `Identifier` 的 AlternateKey 确定 GUID      |
+|标识符 |   文本      |   `DataSourceName|EntityName|AlternateValue`  </br> 示例：`testdatasource|contact1|cntid_1078`    |
 
 ### <a name="unifiedactivity"></a>UnifiedActivity
 
@@ -167,43 +193,42 @@ AlternateKey 表包含参与统一流程的实体的键。
 
 | Column            | 类型​​        | 说明                                                                               |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| CustomerId        | String      | 客户配置文件 ID                                                                      |
-| ActivityId        | String      | 客户活动的内部 ID（主键）                                       |
-| SourceEntityName  | String      | 源实体的名称                                                                |
-| SourceActivityId  | String      | 源实体的主键                                                       |
-| ActivityType      | String      | 语义活动类型或自定义活动的名称                                        |
+| CustomerId        | 文本      | 客户配置文件 ID                                                                      |
+| ActivityId        | 文本      | 客户活动的内部 ID（主键）                                       |
+| SourceEntityName  | 文本      | 源实体的名称                                                                |
+| SourceActivityId  | 文本      | 源实体的主键                                                       |
+| ActivityType      | 文本      | 语义活动类型或自定义活动的名称                                        |
 | ActivityTimeStamp | 日期/时间    | 活动时间戳                                                                      |
-| 称谓             | String      | 活动的标题或名称                                                               |
-| 说明        | String      | 活动说明                                                                     |
-| URL               | String      | 特定于活动的外部 URL 的链接                                         |
-| SemanticData      | JSON 字符串 | 包括特定于活动类型的语义映射字段的键值对列表 |
-| RangeIndex        | String      | 用于排序活动时间线和有效范围查询的 Unix 时间戳 |
-| mydynci_unifiedactivityid   | GUID | 客户活动的内部 ID (ActivityId) |
+| 称谓             | 文本      | 活动的标题或名称                                                               |
+| 说明        | 文本      | 活动说明                                                                     |
+| URL               | 文本      | 特定于活动的外部 URL 的链接                                         |
+| SemanticData      | 文本 | 包括特定于活动类型的语义映射字段的键值对列表 |
+| RangeIndex        | 文本      | 用于排序活动时间线和有效范围查询的 Unix 时间戳 |
+| UnifiedActivityId   | 唯一标识符 | 客户活动的内部 ID (ActivityId) |
 
 ### <a name="customermeasure"></a>CustomerMeasure
 
 此表包含基于客户属性的度量输出数据。
 
-| Column             | Type             | 描述                 |
+| Column             | 类型​​             | 说明                  |
 |--------------------|------------------|-----------------------------|
-| CustomerId         | String           | 客户配置文件 ID        |
-| 度量           | JSON 字符串      | 包括给定客户的度量名称和值的键值对列表 | 
-| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | 客户配置文件 ID |
-
+| CustomerId         | 文本           | 客户配置文件 ID        |
+| 度量           | 文本      | 包括给定客户的度量名称和值的键值对列表 |
+| 标识符 | 文本           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | 唯一标识符     | 客户配置文件 ID |
 
 ### <a name="enrichment"></a>扩充
 
 此表包含扩充流程的输出。
 
-| Column               | Type             |  描述                                          |
+| Column               | 类型​​             |  说明                                           |
 |----------------------|------------------|------------------------------------------------------|
-| CustomerId           | String           | 客户配置文件 ID                                 |
-| EnrichmentProvider   | String           | 扩充的提供程序的名称                                  |
-| EnrichmentType       | String           | 扩充的类型                                      |
-| 值               | JSON 字符串      | 扩充流程产生的属性列表 |
-| msdynci_enrichmentid | GUID             | 通过 msdynci_identifier 产生的确定性 GUID |
-| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| CustomerId           | 文本           | 客户配置文件 ID                                 |
+| EnrichmentProvider   | 文本           | 扩充的提供程序的名称                                  |
+| EnrichmentType       | 文本           | 扩充的类型                                      |
+| 值               | 文本      | 扩充流程产生的属性列表 |
+| EnrichmentId | 唯一标识符            | 从 `Identifier` 中生成的确定 GUID |
+| 标识符   | 文本           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### <a name="prediction"></a>预测
 
@@ -211,25 +236,24 @@ AlternateKey 表包含参与统一流程的实体的键。
 
 | Column               | 类型​​        | 说明                                           |
 |----------------------|-------------|------------------------------------------------------|
-| CustomerId           | String      | 客户配置文件 ID                                  |
-| ModelProvider        | String      | 模型的提供程序的名称                                      |
-| 模型                | String      | 模型名称                                                |
-| 值               | JSON 字符串 | 模型产生的属性列表 |
-| msdynci_predictionid | GUID        | 通过 msdynci_identifier 产生的确定性 GUID | 
-| msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+| CustomerId           | 文本      | 客户配置文件 ID                                  |
+| ModelProvider        | 文本      | 模型的提供程序的名称                                      |
+| 型号                | 文本      | 模型名称                                                |
+| 值               | 文本 | 模型产生的属性列表 |
+| PredictionId | 唯一标识符       | 从 `Identifier` 中生成的确定 GUID |
+| 标识符   | 文本      |  `Model|ModelProvider|CustomerId`                      |
 
 ### <a name="segment-membership"></a>客户细分成员身份
 
 此表包含客户配置文件的客户细分成员身份信息。
 
-| Column        | 类型​​ | Description                        |
+| Column        | 类型​​ | 说明                         |
 |--------------------|--------------|-----------------------------|
-| CustomerId        | String       | 客户配置文件 ID        |
-| SegmentProvider      | String       | 发布客户细分的应用。      |
-| SegmentMembershipType | String       | 此客户细分成员身份记录的客户类型。 支持多种类型，例如顾客、联系人或客户。 默认：客户  |
-| 客户细分       | JSON 字符串  | 客户配置文件所属的独特客户细分的列表      |
-| msdynci_identifier  | String   | 客户细分成员身份记录的唯一标识符。 `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | GUID      | 从 `msdynci_identifier` 中生成的确定 GUID          |
-
+| CustomerId        | 文本       | 客户配置文件 ID        |
+| SegmentProvider      | 文本       | 发布客户细分的应用。      |
+| SegmentMembershipType | 文本       | 此客户细分成员身份记录的客户类型。 支持多种类型，例如顾客、联系人或客户。 默认：客户  |
+| Segments       | 文本  | 客户配置文件所属的独特客户细分的列表      |
+| 标识符  | 文本   | 客户细分成员身份记录的唯一标识符。 `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | 唯一标识符      | 从 `Identifier` 中生成的确定 GUID          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
