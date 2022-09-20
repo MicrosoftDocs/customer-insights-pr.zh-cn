@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411729"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463208"
 ---
 # <a name="service-limits-in-customer-insights"></a>Customer Insights 中的服务限额
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411729"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | 客户细分、度量和预测 | 300  | 组合后的[客户细分](segments.md)、[度量](measures.md)和[预测](predictions-overview.md)的总数不能超过 300。  |
 | 关系 | 实体路径中关系的 20 个深度级别。 | 使用生成器界面创建[客户细分](segments.md)或[度量](measures.md)时，实体路径在起始实体和目标实体之间最多可以有 20 个关系跃点。  |
+|数据引入| Power Query 数据源的并发评估是有限的。 | Customer Insights 具有[与 PowerBI.com 中的数据流类似的相同刷新限制](/power-query/power-query-online-limits#refresh-limits)。 |
 
 ## <a name="fair-scheduling-of-jobs"></a>合理安排作业
 

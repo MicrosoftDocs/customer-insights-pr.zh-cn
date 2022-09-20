@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 65fd80cc563b8b3b8c8874b66f179f8b0c7a19f0
+ms.sourcegitcommit: fe33cc76d015232ff8737f77193f44f2b884bb6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194911"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473631"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 应用的客户卡加载项（预览版）
 
@@ -32,7 +32,8 @@ ms.locfileid: "9194911"
 - 要将 Dynamics 365 数据映射到 Customer Insights 客户配置文件，建议[使用 Microsoft Dataverse 连接器从 Dynamics 365 应用引入](connect-power-query.md)。 如果您使用不同的方法来引入 Dynamics 365 联系人（或客户），请确保 `contactid`（或 `accountid`）字段[在数据统一过程中设置为该数据源的主键](map-entities.md#select-primary-key-and-semantic-type-for-attributes)。
 - 客户卡加载项的所有 Dynamics 365 用户都必须在 Customer Insights 中[添加为用户](permissions.md)才能查看数据。
 - 在 Customer Insights 中[配置了搜索和筛选功能](search-filter-index.md)。
-- 每个加载项控件都依赖于 Customer Insights 中的特定数据。 某些数据和控件仅在特定类型的环境中可用。 加载项配置将通知您控件是否由于所选环境类型而不可用。 详细了解[环境用例](work-with-business-accounts.md)。
+- 某些数据和控件仅在特定类型的环境中可用。 加载项配置将通知您控件是否由于所选环境类型而不可用。 此错误将在呈现控件时显示在控件中。 详细了解[环境用例](work-with-business-accounts.md)。
+- 每个加载项控件都依赖于 Customer Insights 中的特定数据。
   - **Measure 控件** 需要[配置的客户属性度量值](measures.md)。
   - **Intelligence 控件** 需要使用[预测或自定义模型](predictions-overview.md)生成的数据。
   - **Customer details 控件** 显示统一客户配置文件中可用配置文件的所有字段。

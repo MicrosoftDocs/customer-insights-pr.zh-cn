@@ -12,12 +12,12 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: c580b6c01e1b4ac6b095733193d86ebd0b4005f2
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: 44f58d694b9bd35a8d8c04d487d40743291e0566
+ms.sourcegitcommit: ef3e17134d44d2731605381ea0385dbc5aef6120
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304048"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460179"
 ---
 # <a name="exports-preview-overview"></a>导出(预览版)概述
 
@@ -81,6 +81,11 @@ ms.locfileid: "9304048"
 ## <a name="schedule-and-run-exports"></a>计划并运行导出
 
 您配置的每个导出都有一个刷新计划。 在刷新期间，系统会查找要包括在导出中的新数据或已更新数据。 默认情况下，导出在每个[计划系统刷新](schedule-refresh.md)过程中运行。 您可以自定义刷新计划或将其关闭以手动运行导出。
+
+> [!TIP]
+> 使用以下最佳做法最大限度地减少客户细分导出的处理时间：
+> - 在多个导出之间分配客户细分实体。
+> - 避免将所有导出安排在同一时间。 在每次导出的计划时间之间留出 30 分钟或 1 小时。
 
 导出计划取决于您的环境状态。 如果在应启动计划导出时正在进行有关[依赖项](system.md#refresh-processes)的更新，系统将首先完成更新，然后运行导出。 **刷新时间** 列显示上次刷新导出的时间。
 

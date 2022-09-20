@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207034"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463254"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>连接到 Power Query 数据源
 
@@ -63,7 +63,9 @@ Power Query 提供一组广泛的连接器来引入数据。 其中大多数连�
 加载数据可能需要一些时间。 成功刷新后，可以从 [**实体**](entities.md)页查看引入的数据。
 
 > [!CAUTION]
-> 基于 Power Query 的数据源将[在 Dataverse 中创建数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 不要在 Customer Insights 中使用的 Power Platform 管理中心更改数据流的名称。 重命名数据流会导致 Customer Insights 数据源和 Dataverse 数据流之间的引用出现问题。
+>
+> - 基于 Power Query 的数据源将[在 Dataverse 中创建数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 不要在 Customer Insights 中使用的 Power Platform 管理中心更改数据流的名称。 重命名数据流会导致 Customer Insights 数据源和 Dataverse 数据流之间的引用出现问题。
+> - Customer Insights 中 Power Query 数据源的并发评估具有相同的[刷新限制，如 PowerBI.com 中的数据流](/power-query/power-query-online-limits#refresh-limits)。 如果数据刷新因为达到评估限制而失败，我们建议您调整每个数据流的刷新计划，以确保不会同时处理数据源。
 
 ### <a name="available-power-query-data-sources"></a>可用 Power Query 数据源
 
@@ -77,7 +79,7 @@ Power Query 提供一组广泛的连接器来引入数据。 其中大多数连�
 
 将 Dataverse 环境与 Customer Insights 关联后创建的数据源默认使用 [Power Platform 数据流](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365)。 数据流使用数据网关支持本地连接。 您可以删除和重新创建[使用本地数据网关](/data-integration/gateway/service-gateway-app)关联 Dataverse 环境之前就存在的数据源。
 
-现有 Power BI 或 Power Apps 环境中的数据网关将可见，您可以在 Customer Insights 中重复使用它们。 数据源页面显示用于转到 Microsoft Power Platform 环境的链接，您可以在该环境中查看和配置本地数据网关。
+来自现有 Power BI 或 Power Apps 环境的数据网关将可见，如果数据网关和 Customer Insights 环境位于同一 Azure 区域，您可以在 Customer Insights 中重复使用它们。 数据源页面显示用于转到 Microsoft Power Platform 环境的链接，您可以在该环境中查看和配置本地数据网关。
 
 > [!IMPORTANT]
 > 确保网关更新到最新版本。 您可以直接从网关屏幕上显示的提示安装更新并重新配置网关，或[下载最新版本](https://powerapps.microsoft.com/downloads/)。 如果您不使用最新的网关版本，数据流刷新将失败并显示错误消息，如 **不支持关键字：配置属性。参数名称：关键字**。
