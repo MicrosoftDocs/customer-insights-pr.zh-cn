@@ -7,21 +7,21 @@
 - name: 学习目录
   items:
     - name: 获得 Microsoft 客户数据平台专家认证
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Customer Insights 入门
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: 引入数据
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: 创建统一的客户配置文件
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: 使用 Customer Insights
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: 扩充数据并进行预测
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: 管理外部连接
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: 管理 Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: 免费试用
   items:
     - name: ' 注册免费试用'
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: 使用 Web 数据进行个性化设置
       href: unknown-to-known.md
+    - name: 管理未知客户资料
+      href: manage-unknown-profiles.md
 - name: Segments
   items:
     - name: 客户细分概述
