@@ -1,7 +1,7 @@
 ---
 title: 数据源概述
 description: 了解如何从各种源导入或导入数据。
-ms.date: 07/26/2022
+ms.date: 09/29/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 591353bf1ba2f9ca05ddd137e1cf29dc0b0fba97
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: f89da3cf5b56e367bd673740f80cd82ec0907b28
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245638"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610041"
 ---
 # <a name="data-sources-overview"></a>数据源概述
 
@@ -65,7 +65,9 @@ Dynamics 365 Customer Insights 提供连接来从广泛的源获取数据。 连
 
 ## <a name="refresh-data-sources"></a>刷新数据源
 
-数据源可以按计划自动刷新，也可以根据需要手动刷新。 [本地数据源](connect-power-query.md#add-data-from-on-premises-data-sources)根据数据引入期间设置的数据源自己的计划刷新。 对于附加的数据源，数据引入会使用该数据源中可用的最新数据。
+数据源可以按计划自动刷新，也可以根据需要手动刷新。 [本地数据源](connect-power-query.md#add-data-from-on-premises-data-sources)根据数据引入期间设置的数据源自己的计划刷新。 有关故障排除提示，请参阅[解决基于 PPDF Power Query 的数据源刷新问题](connect-power-query.md#troubleshoot-ppdf-power-query-based-data-source-refresh-issues)。
+
+对于附加的数据源，数据引入会使用该数据源中可用的最新数据。
 
 转到 **管理** > **系统** > [**计划**](schedule-refresh.md)配置引入的数据源的系统计划刷新。
 
@@ -76,5 +78,37 @@ Dynamics 365 Customer Insights 提供连接来从广泛的源获取数据。 连
 1. 选择要刷新的数据源，然后选择 **刷新**。 现在，将为数据源触发手动刷新。 刷新数据源将更新数据源中指定的所有实体的实体架构和数据。
 
 1. 选择状态打开 **进度详细信息** 窗格，查看进度。 要取消作业，选择窗格底部的 **取消作业**。
+
+## <a name="corrupt-data-sources"></a>损坏的数据源
+
+正在引入的数据可能包含损坏的记录，这可能导致数据引入过程完成，但出现错误或警告。
+
+> [!NOTE]
+> 如果数据引入完成但有错误，将跳过利用此数据源的后续处理（如统一或活动创建）。 如果引入完成但出现警告，后续处理将继续，但可能不会包括某些记录。
+
+这些错误可以在任务详细信息中查看。
+
+:::image type="content" source="media/corrupt-task-error.png" alt-text="显示损坏数据错误的任务详细信息。":::
+
+损坏的记录将显示在系统创建的实体中。
+
+### <a name="fix-corrupt-data"></a>修复损坏的数据
+
+1. 要查看损坏的数据，转到 **数据** > **实体**，在 **系统** 部分中查找损坏的实体。 损坏的实体的命名架构：“DataSourceName_EntityName_corrupt”。
+
+1. 选择损坏的实体，然后选择 **数据** 选项卡。
+
+1. 确定记录中损坏的字段及其原因。
+
+   :::image type="content" source="media/corruption-reason.png" alt-text="损坏原因。" lightbox="media/corruption-reason.png":::
+
+   > [!NOTE]
+   > **数据** > **实体** 只显示一部分损坏的记录。 要查看所有损坏的记录，使用 [Customer Insights 导出流程](export-destinations.md)将文件导出到存储帐户中的容器。 如果您使用自己的存储帐户，还可以查看存储帐户中的 Customer Insights 文件夹。
+
+1. 修复损坏的数据。 例如，对于 Azure Data Lake 数据源，[修复 Data Lake Storage 中的数据或更新清单/model.json 文件中的数据类型](connect-common-data-model.md#common-reasons-for-ingestion-errors-or-corrupt-data)。 对于 Power Query 数据源，修复源文件中的数据，并在 **Power Query - 编辑查询** 页面[在转换步骤中更正数据类型](connect-power-query.md#data-type-does-not-match-data)。
+
+在下一次刷新数据源后，更正的记录被引入到 Customer Insights 中并传递到下游流程。
+
+例如，“生日”列的数据类型已被设置为“日期”。 客户记录中生日被输入为“01/01/19777”。 系统会将此记录标记为损坏。 将源系统中的生日更改为“1977”。 自动刷新数据源后，该字段现在具有有效格式，并被从损坏的实体中删除记录。
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

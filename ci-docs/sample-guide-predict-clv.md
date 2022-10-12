@@ -1,23 +1,23 @@
 ---
 title: 客户生存期值 (CLV) 预测示例指南
 description: 使用此示例指南试用客户生存期值模型。
-ms.date: 03/31/2022
+ms.date: 09/15/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 2013533ed225a396d21e51e63297d7608ce58ac6
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: fec43b279326daa17fb179181f5e310c99d48bb7
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9051626"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609627"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>客户生存期值 (CLV) 预测示例指南
 
-本指南将使用示例数据逐步向您解释 Customer Insights 中的客户生存期值 (CLV) 预测端到端示例。
+本指南将使用示例数据逐步向您解释 Customer Insights 中的客户生存期值 (CLV) 预测端到端示例。 我们建议您[在新环境中](manage-environments.md)试用此预测。
 
 ## <a name="scenario"></a>场景
 
@@ -25,18 +25,17 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Cont
 
 ## <a name="prerequisites"></a>先决条件
 
-- 至少具有 Customer Insights 中的[参与者权限](permissions.md)。
-- 我们建议您[在新环境中](manage-environments.md)实施以下步骤。
+- 至少具有[参与者权限](permissions.md)。
 
 ## <a name="task-1---ingest-data"></a>任务 1 - 引入数据
 
-查看[关于数据引入](data-sources.md)和[使用 Power Query 连接器导入数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。
+查看[关于数据引入](data-sources.md)和[连接到 Power Query 数据源](connect-power-query.md)的文章。 以下信息假设您大致了解如何引入数据。
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>从电子商务平台中引入客户数据
 
-1. 创建名为 **电子商务** 的数据源，选择导入选项，然后选择 **文本/CSV** 连接器。
+1. 创建一个名为 **eCommerce** 的 Power query 数据源，然后选择 **文本/CSV** 连接器。
 
-1. 输入电子商务联系人的 URL [https://aka.ms/ciadclasscontacts](https://aka.ms/ciadclasscontacts)。
+1. 输入电子商务联系人的 URL https://aka.ms/ciadclasscontacts。
 
 1. 编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。
 
@@ -46,7 +45,7 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Cont
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="将出生日期转换为日期。":::
 
-1. 在右侧窗格上的“名称”字段中，将您的数据源从 **Query** 重命名为 **eCommerceContacts**
+1. 在右侧窗格上的 **名称** 字段中，将您的数据源重命名为 **eCommerceContacts**
 
 1. **保存** 数据源。
 
@@ -62,15 +61,15 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Cont
    - **PurchasedOn**：日期/时间
    - **TotalPrice**：货币
 
-1. 在侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **eCommercePurchases**。
+1. 在侧窗格上的 **名称** 字段中，将您的数据源重命名为 **eCommercePurchases**。
 
 1. **保存** 数据源。
 
 ### <a name="ingest-customer-data-from-loyalty-schema"></a>从忠诚度架构中引入客户数据
 
-1. 创建名为 **LoyaltyScheme** 的数据源，选择导入选项，然后选择 **文本/CSV** 连接器。
+1. 创建一个名为 **LoyaltyScheme** 的数据源，然后选择 **文本/CSV** 连接器。
 
-1. 输入电子商务联系人的 URL https://aka.ms/ciadclasscustomerloyalty。
+1. 输入会员客户的 URL https://aka.ms/ciadclasscustomerloyalty。
 
 1. 编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。
 
@@ -79,103 +78,113 @@ Contoso 是一家生产高品质咖啡和咖啡机的公司。 他们通过 Cont
    - **RewardsPoints**：整数
    - **CreatedOn**：日期/时间
 
-1. 在右侧窗格上的 **名称** 字段中，将您的数据源从 **Query** 重命名为 **loyCustomers**。
+1. 在右侧窗格上的 **名称** 字段中，将您的数据源重命名为 **loyCustomers**。
 
 1. **保存** 数据源。
 
 ### <a name="ingest-customer-data-from-website-reviews"></a>从网站评价中引入客户数据
 
-1. 创建名为 **网站** 的数据源，选择导入选项，然后选择 **文本/CSV** 连接器。
+1. 创建一个名为 **Website** 的数据源，然后选择 **文本/CSV** 连接器。
 
-1. 输入电子商务联系人的 URL https://aka.ms/CI-ILT/WebReviews。
+1. 输入网站评论的 URL https://aka.ms/CI-ILT/WebReviews。
 
 1. 编辑数据时，选择 **转换**，然后选择 **使用第一行作为标题**。
 
 1. 更新下面列出的列的数据类型：
-
    - **ReviewRating**：十进制数
    - **ReviewDate**：日期
 
-1. 在右侧窗格上的“名称”字段中，将您的数据源从 **查询** 重命名为 **审核**。
+1. 在右侧窗格上的 **名称** 字段中，将您的数据源重命名为 **Reviews**。
 
 1. **保存** 数据源。
 
 ## <a name="task-2---data-unification"></a>任务 2 - 数据统一
 
+查看[关于数据统一](data-unification.md)的文章。 以下信息假设您大致了解数据统一。
+
 [!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
-## <a name="task-3---configure-customer-lifetime-value-prediction"></a>任务 3 - 配置客户生存期值预测
+## <a name="task-3---create-transaction-history-activity"></a>任务 3 - 创建交易历史记录活动
 
-部署了统一客户配置文件后，我们现在可以运行客户生存期值预测。 有关详细步骤，请参阅[客户生存期值预测](predict-customer-lifetime-value.md)。
+查看[关于客户活动](activities.md)的文章。 以下信息假设您大致了解如何创建活动。
 
-1. 转到 **智能**  > **预测** 并选择 **客户生存期值模型**。
+1. 使用 *eCommercePurchases:eCommerce* 实体及其主键 **PurchaseId** 创建一个名为 **eCommercePurchases** 的活动。
 
-1. 浏览侧窗格中的信息并选择 **开始**。
+1. 在 *eCommercePurchases:eCommerce* 和 *eCommerceContacts:eCommerce* 之间创建关系，将 **ContactID** 作为连接两个实体的外键。
+
+1. 对于 **EventActivity**，选择 **TotalPrice**，对于 **TimeStamp**，选择 **PurchasedOn**。
+
+1. 为 **活动类型** 选择 **SalesOrderLine**，并在语义上映射活动数据。
+
+1. 运行活动。
+
+1. 添加另一个活动并将其字段名称映射到相应的字段：
+   - **活动实体**：Reviews:Website
+   - **主键**：ReviewId
+   - **时间戳**：ReviewDate
+   - **事件活动**：ActivityTypeDisplay
+   - **其他详细信息**：ReviewRating
+   - **活动类型**：Review
+
+1. 运行活动。
+
+## <a name="task-4---configure-customer-lifetime-value-prediction"></a>任务 4 - 配置客户生存期值预测
+
+部署了统一客户配置文件并创建了活动后，运行客户生存期值 (CLV) 预测。 有关详细步骤，请参阅[客户生存期值预测](predict-customer-lifetime-value.md)。
+
+1. 转到 **智能** > **预测**。
+
+1. 在 **创建** 选项卡上，在 **客户生存期值** 磁贴上选择 **使用模型**。
+
+1. 选择 **开始**。
 
 1. 将模型命名为 **OOB 电子商务 CLV 预测**，将输出实体命名为 **OOBeCommerceCLVPrediction**。
 
-1. 定义 CLV 模型的模型首选项：
-   - **预测时间段**：**12 个月或 1 年**。 此设置定义了未来要预测客户生存期值多久。
-   - **活跃客户**：指定活跃客户对您业务的意义。 设置客户必须在其中至少有一笔交易才能被视为活跃客户的历史期限。 该模型将只预测活跃客户的 CLV。 在让模型根据历史交易数据计算时间段与提供特定期限之间进行选择。 在此示例指南中，我们 **让模型计算购买间隔**，这是默认选项。
-   - **高价值客户**：将高价值客户定义为最高付费客户的百分位数。 该模型使用此输入提供符合您的高价值客户定义的结果。 您可以选择让模型定义高价值客户。 它使用一种启发式规则来得出此百分位数。 您还可以将高价值客户定义为将来最高付费客户的百分位数。 在此示例指南中，我们将高价值客户手动定义为 **前 30% 的主动付费客户**，并选择 **下一步**。
+1. 定义模型首选项：
+   - **预测时间段**：**12 个月或 1 年**，定义要预测 CLV 的未来时长。
+   - **活跃客户**：**让模型计算购买间隔**，限定客户在此期间必须至少有一笔交易才会被视为活跃的期限。
+   - **高价值客户**：手动将高价值客户定义为 **排名在前 30% 的活跃客户**。
 
     :::image type="content" source="media/clv-model-preferences.png" alt-text="CLV 模型的引导式体验中的首选项步骤。":::
 
+1. 选择 **下一步**。
+
 1. 在 **所需数据** 步骤中，选择 **添加数据** 以提供交易历史记录数据。
 
-1. 添加 **eCommercePurchases：电子商务** 实体并映射模型所需的属性：
-   - 交易 ID：eCommerce.eCommercePurchases.PurchaseId
-   - 交易日期：eCommerce.eCommercePurchases.PurchasedOn
-   - 交易金额：eCommerce.eCommercePurchases.TotalPrice
-   - 产品 ID：eCommerce.eCommercePurchases.ProductId
+    :::image type="content" source="media/clv-model-required.png" alt-text="在 CLV 模型的引导式体验中添加所需的数据步骤。":::
+
+1. 选择 **SalesOrderLine** 和 eCommercePurchases 实体，然后选择 **下一步**。 所需数据会从活动自动填入。 选择 **保存**，然后选择 **下一步**。
+
+1. **其他数据（可选）** 步骤允许您添加更多客户活动数据以获得更多客户交互方面的见解。 对于本示例，选择 **添加数据**，添加 Web 评论活动。
 
 1. 选择 **下一步**。
 
-1. 在 **eCommercePurchases：电子商务** 实体与 **eCommerceContacts：电子商务** 之间建立关系。
+1. 在 **数据更新** 步骤中，为模型计划选择 **每月**。
 
-1. **附加数据（可选）** 步骤允许您添加更多客户活动数据。 这些数据可以帮助获得更多关于客户与企业之间的交互的见解，这可能对 CLV 有影响。 添加关键客户交互（如 Web 日志、客户服务日志或奖励计划历史记录）可以提高预测的准确性。 选择 **添加数据** 以包含更多客户活动数据。
-
-1. 添加客户活动实体，将其字段名称映射到模型所需的相应字段：
-   - 客户活动实体：Reviews:Website
-   - 主键：Website.Reviews.ReviewId
-   - 时间戳：Website.Reviews.ReviewDate
-   - 事件（活动名称）：Website.Reviews.ActivityTypeDisplay
-   - 详细信息（金额或价值）：Website.Reviews.ReviewRating
-
-1. 选择 **下一步** 并配置活动以及交易数据与客户数据之间的关系：  
-   - 活动类型：选择现有项
-   - 活动标签：审核
-   - 相应的标签：Website.Reviews.UserId
-   - 客户实体：eCommerceContacts:eCommerce
-   - 关系：WebsiteReviews
-
-1. 选择 **下一步** 以设置模型计划。
-
-   当存在引入的新数据时，模型需要定期训练以学习新模式。 对于本示例，选择 **每月**。
+1. 选择 **下一步**。
 
 1. 在查看所有详细信息后，选择 **保存并运行**。
 
-## <a name="task-4---review-model-results-and-explanations"></a>任务 4 - 审阅模型结果和说明
+## <a name="task-5---review-model-results-and-explanations"></a>任务 5 - 审阅模型结果和说明
 
-让模型完成数据的训练和评分。 接下来，您可以查看 CLV 模型的结果和解释。 有关详细信息，请参阅[审阅预测状态和结果](predict-customer-lifetime-value.md#review-prediction-status-and-results)。
+让模型完成数据的训练和评分。 查看 [CLV 模型结果和说明](predict-customer-lifetime-value.md#view-prediction-results)。
 
-## <a name="task-5---create-a-segment-of-high-value-customers"></a>任务 5 - 创建高价值客户的客户细分
+## <a name="task-6---create-a-segment-of-high-value-customers"></a>任务 6 - 创建高价值客户的客户细分
 
 运行模型可创建一个新实体，该实体列在 **数据** > **实体** 上。 您可以根据模型创建的实体创建新客户细分。
 
-1. 转到 **客户细分**。 
+1. 在结果页上，选择 **创建客户细分**。
 
-1. 选择 **新建**，然后选择 **创建自** > **智能**。
+1. 使用 **OOBeCommerceCLVPrediction** 实体创建规则并定义客户细分：
+   - **字段**：CLVScore
+   - **运算符**：大于
+   - **值**：1500
 
-   ![使用模型输出创建客户细分。](media/segment-intelligence.png)
+1. 选择 **保存** 并 **运行** 客户细分。
 
-1. 选择 **OOBeCommerceCLVPrediction** 实体并定义客户细分：
-  - 字段：CLVScore
-  - 运算符：大于
-  - 值：1500
+您现在有一个客户细分，该客户细分可识别预计在未来 12 个月内产生超过 1500 美元收入的客户。 如果引入更多数据，将动态更新此客户细分。 有关详细信息，请参阅[创建和管理客户细分](segments.md)。
 
-1. 选择 **审核** 并 **保存** 客户细分。
+> [!TIP]
+> 您还可以通过选择 **新建** 并选择 **创建自** > **智能**，从 **客户细分** 页面为预测模型创建客户细分。 有关详细信息，请参阅[使用快速客户细分创建新客户细分](segment-quick.md)。
 
-您现在有一个客户细分，该客户细分可识别预计在未来 12 个月内产生超过 1500 美元收入的客户。 如果引入更多数据，将动态更新此客户细分。
-
-有关详细信息，请参阅[创建和管理客户细分](segments.md)。
+[!INCLUDE [footer-include](includes/footer-banner.md)]

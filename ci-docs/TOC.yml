@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: 使用来自 Azure 机器学习的自定义模型
           href: custom-models.md
+        - name: 基于预测创建客户细分
+          href: prediction-based-segment.md
     - name: 示例指南
       items:
         - name: CLV 预测示例指南
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Azure 机器学习试验
           href: azure-machine-learning-experiments.md
-    - name: 管理预测
-      href: manage-predictions.md
-    - name: 基于预测创建客户细分
-      href: prediction-based-segment.md
 - name: 导出选项
   items:
     - name: 导出

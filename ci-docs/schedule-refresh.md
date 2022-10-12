@@ -1,7 +1,7 @@
 ---
 title: 计划系统刷新
 description: 计划应刷新系统的时间
-ms.date: 08/09/2022
+ms.date: 09/27/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
@@ -11,19 +11,19 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: 4aac02b570357d2086f7a9d7340b0e4837157a0b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9395945"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610317"
 ---
 # <a name="schedule-system-refresh"></a>计划系统刷新
 
 计划所有[引入数据源](data-sources.md)的自动刷新。 自动刷新可帮助确保您的数据源中的更新反映在您的统一客户配置文件中。
 
 > [!NOTE]
-> 您管理的 Power Query 数据源会按其自己的计划刷新。 要计划刷新这些 Power Query 数据源，请从 **数据源** 页面配置该特定数据源的刷新设置。
+> 您管理的 Power Query 数据源会按其自己的计划刷新。 要计划刷新这些 Power Query 数据源，请从 **数据源** 页面配置该特定数据源的刷新设置。 将时间安排与上游数据刷新计划保持一致，以不会一次刷新所有数据。
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform 数据流刷新设置。":::
 
 ## <a name="set-system-refresh-schedule"></a>设置系统刷新计划

@@ -1,7 +1,7 @@
 ---
 title: 使用 Azure Data Lake 帐户连接到 Common Data Model 文件夹
 description: 使用 Azure Data Lake Storage 处理 Common Data Model 数据。
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396035"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609931"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>在 Azure Data Lake Storage 中连接到数据
 
@@ -43,6 +43,10 @@ ms.locfileid: "9396035"
 - 设置数据源连接的用户至少需要对存储帐户的存储 Blob 数据参与者权限。
 
 - Data Lake Storage 中的数据应遵循 Common Data Model 标准来存储数据，并应具有 Common Data Model 清单来表示数据文件的架构（*.csv 或 *.parquet）。 清单必须提供实体的详细信息，如实体列和数据类型，以及数据文件位置和文件类型。 有关详细信息，请参阅 [Common Data Model 清单](/common-data-model/sdk/manifest)。 如果清单不存在，具有存储 Blob 数据负责人或存储 Blob 数据参与者访问权限的管理员用户可以在引入数据时定义架构。
+
+## <a name="recommendations"></a>建议
+
+为了获得最佳性能，Customer Insights 建议分区大小为 1 GB 或更小，文件夹中的分区文件数不能超过 1000。
 
 ## <a name="connect-to-azure-data-lake-storage"></a>连接到 Azure Data Lake Storage
 
@@ -199,5 +203,101 @@ ms.locfileid: "9396035"
 1. 单击 **保存** 应用您的更改并返回到 **数据源** 页面。
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>引入错误或数据损坏的常见原因
+
+在数据引入期间，记录可能被认为损坏的一些最常见原因包括：
+
+- 源文件和架构之间的数据类型和字段值不匹配
+- 源文件中的列数与架构不匹配
+- 字段包含导致列偏离预期架构的字符。 例如：格式不正确的引号、未转义的引号、换行符或分页字符。
+- 缺少分区文件
+- 如果存在日期时间/日期/datetimeoffset 列，则必须在架构中指定其格式（如果它没有遵循标准格式）。
+
+### <a name="schema-or-data-type-mismatch"></a>架构或数据类型不匹配
+
+如果数据不符合架构，引入过程会完成，但会显示错误。 更正源数据或架构，然后重新引入数据。
+
+### <a name="partition-files-are-missing"></a>缺少分区文件
+
+- 如果引入成功，没有任何损坏的记录，但您看不到任何数据，编辑 model.json 或 manifest.json 文件以确保指定了分区。 然后，[刷新数据源](data-sources.md#refresh-data-sources)。
+
+- 如果在自动计划刷新期间刷新数据源的同时发生数据引入，分区文件可能为空或不能由 Customer Insights 处理。 要与上游刷新计划保持一致，请更改[系统刷新计划](schedule-refresh.md)或数据源的刷新计划。 调整时间安排，让刷新不会一次同时发生，并提供要在 Customer Insights 中处理的最新数据。
+
+### <a name="datetime-fields-in-the-wrong-format"></a>格式错误的日期/时间字段
+
+实体中的日期/时间字段不是 ISO 8601 或 en-US 格式。 Customer Insights 中的默认日期/时间格式为 en-US 格式。 实体中的所有日期/时间字段应采用相同格式。 Customer Insights 还支持其他格式，前提是在模型或 manifest.json 中的源或实体级别进行注释或设置特征。 例如: 
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  在 manifest.json 中，可以在实体级别或属性级别指定日期/时间格式。 在实体级别，在 *.manifest.cdm.json 中的实体中使用“exhibitsTraits”定义日期/时间格式。 在属性级别，在 entityname.cdm.json 中的属性中使用“appliedTraits”。
+
+**实体级别的 Manifest.json**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**属性级别的 Entity.json**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

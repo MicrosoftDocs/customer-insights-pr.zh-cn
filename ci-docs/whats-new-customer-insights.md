@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
-ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
+ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "9409346"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609581"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights 中的新增功能
 
@@ -228,9 +228,9 @@ LiveRamp 提供标识解析和客户数据整合。 您可以将客户数据中�
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>数据准备过程列出损坏记录的损坏原因
 
-数据准备功能现在显示所有数据损坏的字段的损坏原因。 该信息在个人记录级别提供，以便于识别。 
+数据准备功能现在显示所有数据损坏的字段的损坏原因。 该信息在个人记录级别提供，以便于识别。
 
-有关详细信息，请参阅[损坏的数据源](entities.md#corrupted-data-sources)。
+有关详细信息，请参阅[损坏的数据源](data-sources.md#corrupt-data-sources)。
 
 ### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>参与见解功能中报告功能的预览结束
 
