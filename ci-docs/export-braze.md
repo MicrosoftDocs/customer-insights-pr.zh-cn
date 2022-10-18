@@ -1,19 +1,19 @@
 ---
 title: 将客户细分导出到 Braze（预览版）
 description: 了解如何配置连接并导出到 Braze。
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
+ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195096"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9655266"
 ---
 # <a name="export-segments-to-braze-preview"></a>将客户细分导出到 Braze（预览版）
 
@@ -23,6 +23,7 @@ ms.locfileid: "9195096"
 
 - [Braze 帐户](https://www.braze.com/)和相应的管理员凭据。
 - [Braze API 密钥](https://www.braze.com/docs/api/basics/)
+- 您的 [Braze REST 终结点](https://www.braze.com/docs/api/basics/#api-definitions) 
 - Customer Insights 中[配置的客户细分](segments.md)。
 - 导出的客户细分中的 Unified customer profile 包含一个表示电子邮件地址和 Braze 客户 ID 的字段。
 
@@ -30,6 +31,7 @@ ms.locfileid: "9195096"
 
 - 向 Braze 导出最多 100 万个客户配置文件，最长可能需要 40 分钟完成。 您可以导出到 Braze 的客户配置文件数量取决于您与 Braze 的合同。
 - 仅客户细分。
+- Braze 导出不支持 Azure 专用链接。
 
 ## <a name="set-up-connection-to-braze"></a>设置与 Braze 的连接
 
@@ -62,6 +64,8 @@ ms.locfileid: "9195096"
 1. 选择 **添加导出**。
 
 1. 在 **导出连接** 字段中，从 Braze 部分选择连接。 如果没有连接可用，请联系管理员。
+
+1. 在 **主机名** 字段中按以下格式输入 REST 终结点：`rest.iad-03.braze.com`。
 
 1. 为导出输入名称。
 
