@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
-ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
+ms.openlocfilehash: 9433c411a2c7eb0db137c6392578993d47be82a2
+ms.sourcegitcommit: 8559ca47a22d1d7cd9be13531c2eaf0c1083942b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9424298"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671240"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>使用 Microsoft Dataverse 中的 Customer Insights 数据
 
@@ -63,6 +63,9 @@ Customer Insights 提供了使输出实体在 [Microsoft Dataverse](/powerapps/m
 ## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>启用从您自己的 Azure Data Lake Storage 与 Dataverse 共享数据（预览）
 
 在 [您自己的 Azure Data Lake Storage 帐户](own-data-lake-storage.md)中，验证设置 Customer Insights 环境的用户对存储帐户中的 `customerinsights` 容器是否至少具有 **存储 Blob 数据读者** 权限。
+
+> [!NOTE]
+> 仅当您使用自己的 Azure Data Lake Storage 帐户时，数据共享才适用。 如果 Customer Insights 环境使用默认的 Dataverse 存储，此设置不可用。
 
 ### <a name="limitations"></a>限制
 
