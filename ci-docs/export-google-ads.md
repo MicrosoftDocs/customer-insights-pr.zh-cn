@@ -8,12 +8,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: fd7498ecf17ef8a3a8f22dcc49ae204bef88b47f
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: a46623e609665f8031f223593a6644147e5209d8
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196567"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725067"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>向 Google Ads 导出客户细分（预览版）
 
@@ -30,6 +30,7 @@ ms.locfileid: "9196567"
 
 ## <a name="known-limitations"></a>已知限制
 
+- 不支持专用链接与自带存储 (BYOS) 结合使用。
 - 每次最多向 Google Ads 导出 100 万个客户配置文件，由于提供商方面的限制，这最长可能需要 30 分钟完成。
 - 仅客户细分。
 - 在 Google Ads 中匹配可能最长需要 48 小时。

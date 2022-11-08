@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4d2ec29c194dc481ee40048b8ecbed813291b4d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c0affd3ed45f462696850813bd50331061dde780
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196475"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724490"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>将客户细分导出到 Constant Contact（预览版）
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196475"
 
 ## <a name="known-limitations"></a>已知限制
 
+- 不支持专用链接与自带存储 (BYOS) 结合使用。
 - 一次导出最多向 Constant Contact 导出 100 万个客户配置文件，最长可能需要一个小时完成。 您可以导出到 Constant Contact 的客户配置文件数量取决于您与 Constant Contact 的合同。
 - 仅客户细分。
 

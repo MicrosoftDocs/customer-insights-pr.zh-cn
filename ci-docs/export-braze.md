@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
-ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
+ms.openlocfilehash: a3967008ec166cb6f099659b0791f1318126c0da
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9655266"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725205"
 ---
 # <a name="export-segments-to-braze-preview"></a>将客户细分导出到 Braze（预览版）
 
@@ -29,6 +29,7 @@ ms.locfileid: "9655266"
 
 ## <a name="known-limitations"></a>已知限制
 
+- 不支持专用链接与自带存储 (BYOS) 结合使用。
 - 向 Braze 导出最多 100 万个客户配置文件，最长可能需要 40 分钟完成。 您可以导出到 Braze 的客户配置文件数量取决于您与 Braze 的合同。
 - 仅客户细分。
 - Braze 导出不支持 Azure 专用链接。

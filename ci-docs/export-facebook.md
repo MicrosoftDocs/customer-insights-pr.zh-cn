@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01be1a075db0da05dc5536aea8a33093f9a2ea13
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c7a4b1be1c959d70fad929b56452169b40e5b592
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195003"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724572"
 ---
 # <a name="export-segments-to-facebook-ads-manager-preview"></a>将客户细分导出到 Facebook 广告管理器（预览版）
 
@@ -25,11 +25,13 @@ ms.locfileid: "9195003"
 
 - 包含 [Facebook 业务帐户](https://business.facebook.com/)的 [Facebook 广告帐户](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)。
 - [Facebook 广告帐户](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)的管理员特权。
+- 在 Customer Insights 中设置连接的用户需要接受自定义访问群体条款。
 
 ## <a name="known-limitations"></a>已知限制
 
 - 每次导出最多向 Facebook Ads Manager 导出 1000 万个客户配置文件，最长可能需要 90 分钟。
 - 仅客户细分。
+- Facebook 广告集成不支持有超过 25 个广告帐户的用户。
 - 仅 [自定义访问群体](https://www.facebook.com/business/help/744354708981227?id=2469097953376494)中的 Facebook *客户列表* 类型。
   > [!NOTE]
   > 在某些情况下，您可能会在下拉列表中看到不同类型的自定义访问群体。 如果您选择 *客户列表* 以外的其他类型，导出将失败。

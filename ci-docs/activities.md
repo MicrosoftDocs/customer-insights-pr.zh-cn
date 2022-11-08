@@ -1,12 +1,12 @@
 ---
 title: 客户或业务联系人活动
 description: 定义客户或业务联系人活动，然后在客户配置文件中的时间线内查看这些客户活动。
-ms.date: 08/12/2022
+ms.date: 10/26/2022
 ms.subservice: audience-insights
 ms.reviewer: v-wendysmith
 ms.topic: conceptual
-author: CadeSanthaMSFT
-ms.author: cadesantha
+author: srivas15
+ms.author: shsri
 manager: shellyha
 searchScope:
 - ci-entities
@@ -17,12 +17,12 @@ searchScope:
 - ci-measures
 - ci-segment-suggestions
 - customerInsights
-ms.openlocfilehash: bbb8bc30d079273bc935181c628915bb3c02d982
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: d8caa477278f04c3a0a95ced15f4bea2a22aa8cd
+ms.sourcegitcommit: da6a2d189edacc8f2c0f2abedcb28245f26fe74c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304094"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9723770"
 ---
 # <a name="customer-or-business-contact-activities"></a>客户或业务联系人活动
 
@@ -41,6 +41,9 @@ ms.locfileid: "9304094"
    - **活动名称**：为您的活动选择一个名称。
    - **活动实体**：选择包含交易数据或活动数据的实体。
    - **主键**：选择唯一标识记录的字段。 其中不应包含任何重复值、空值或缺少值。
+
+     > [!NOTE]
+     > 每行的主键必须在数据源刷新期间保持一致。 如果在数据源刷新中更新了行的主键，会在输出“活动”实体中创建重复项。 
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="使用名称、实体和主键设置活动数据。":::
 
@@ -132,7 +135,15 @@ ms.locfileid: "9304094"
 
 1. 选择 **添加活动**。
 
-1. 命名活动，选择源活动实体，并选择活动实体的主键。
+1. 在 **活动数据** 步骤中，输入以下信息：
+
+   - **活动名称**：为您的活动选择一个名称。
+   - **活动实体**：选择包含交易数据或活动数据的实体。
+   - **主键**：选择唯一标识记录的字段。 其中不应包含任何重复值、空值或缺少值。
+
+     > [!NOTE]
+     > 每行的主键必须在数据源刷新期间保持一致。 如果在数据源刷新中更新了行的主键，会在输出“活动”实体中创建重复项。 
+
 
 1. 在 **关系** 步骤中，使用您的联系人数据作为中间实体，在您的活动源数据与客户之间创建间接关系。 有关详细信息，请参阅[直接和间接关系路径](relationships.md#relationship-paths)。
    - 名为 *购买* 的活动的示例关系：

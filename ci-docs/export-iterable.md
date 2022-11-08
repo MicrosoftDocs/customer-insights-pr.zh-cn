@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ccf10b6e3a28a75f9d1bd3d8da3bf870ebc2b1b2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 69e2bd207c98fc2530620018bf95dd869d1798f6
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195418"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724471"
 ---
 # <a name="export-segments-to-iterable-preview"></a>将客户细分导出到 Iterable（预览版）
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195418"
 
 ## <a name="known-limitations"></a>已知限制
 
+- 不支持专用链接与自带存储 (BYOS) 结合使用。
 - 最多向 Iterable 导出 100 万个客户配置文件，最长可能需要 30 分钟完成。 您可以导出到 Iterable 的客户配置文件数量取决于您与 Iterable 的合同。
 - 仅客户细分。
 

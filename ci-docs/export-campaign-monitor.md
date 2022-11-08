@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c04fc26dc690cf32b45913257e82b9a0f617185
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 82303c7bcb269ee68419c9639ee743e13451f273
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196291"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724537"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>将客户细分导出到 Campaign Monitor（预览版）
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196291"
 
 ## <a name="known-limitations"></a>已知限制
 
+- 不支持专用链接与自带存储 (BYOS) 结合使用。
 - 每次导出最多向 Campaign Monitor 导出 100 万个客户配置文件，最长可能需要 20 分钟完成。 您可以导出到 Campaign Monitor 的客户配置文件数量取决于您与 Campaign Monitor 的合同。
 - 仅客户细分。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c23d6d3538c4df6006c14064f95379169af06622
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fb57e2bd70592f4ce4e1a13e21901dc69734f6bf
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196153"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725159"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>将客户细分导出到 Omnisend（预览版）
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196153"
 
 ## <a name="known-limitations"></a>已知限制
 
+- 不支持专用链接与自带存储 (BYOS) 结合使用。
 - 一次导出最多可将 100 万个客户配置文件导出到 Omnisend，最长可能需要四小时完成。 您可以导出到 Omnisend 的客户配置文件数量取决于您与 Omnisend 的合同。
 - 仅客户细分。
 
