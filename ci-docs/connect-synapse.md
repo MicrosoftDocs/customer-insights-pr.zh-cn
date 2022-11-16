@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
-ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
+ms.openlocfilehash: 675fd03c44a7a7a492b111895d79c2e77f93a5b5
+ms.sourcegitcommit: 4ba74816ebfa46412c64c40a61e1f31c4ccc40f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9259787"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9738145"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>连接 Azure Synapse Analytics 数据源（预览版）
 
@@ -45,7 +45,7 @@ Azure Synapse Analytics 是一项企业分析服务，可加快跨数据仓库�
 
 - 如果数据位于并链接到 Azure Synapse 工作区，则 *[Azure Synapse 工作区托管标识](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* 需要具有对 Azure Data Lake Storage Gen2 帐户的 **存储 Blob 数据参与者** 权限。 详细了解如何[使用 Azure 门户分配用于访问 blob 和队列数据的 Azure 角色](/azure/storage/common/storage-auth-aad-rbac-portal)和[存储 Blob 数据参与者权限](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)。
 
-- 在 Azure Synapse workspace 中，需要为 *Customer Insights 的服务主体*（即“Dynamics 365 AI for Customer Insights”）分配 **Synapse 管理员** 角色。 有关详细信息，请参阅[如何为 Synapse 工作区设置访问控制](/azure/synapse-analytics/security/how-to-set-up-access-control)。
+- 在 Azure Synapse workspace 中，需要为 *Customer Insights 的服务主体*（即“Dynamics 365 AI for Customer Insights”）分配 **Synapse 管理员** 角色。 **用户** 至少需要为工作区分配 **Synapse 参与者** 角色。 有关详细信息，请参阅[如何为 Synapse 工作区设置访问控制](/azure/synapse-analytics/security/how-to-set-up-access-control)。
 
 - 如果您的 Customer Insights 环境将数据存储在您 [自己的 Azure Data Lake Storage](own-data-lake-storage.md) 中，设置与 Azure Synapse Analytics 的连接的用户至少需要 Data Lake Storage 帐户的内置 **读者** 角色。 有关详细信息，请参阅[使用 Azure 门户分配 Azure 角色](/azure/role-based-access-control/role-assignments-portal)。
 
