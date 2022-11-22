@@ -8,29 +8,29 @@ ms.topic: conceptual
 author: andtapia
 ms.author: andreatapia
 manager: shellyha
-ms.openlocfilehash: d7e5050ee5832df5ecf40a352f7ea8d42830fa45
-ms.sourcegitcommit: f6b6a4c4ce9cf12e449488b24aab80a2cbfe0c47
+ms.openlocfilehash: 0e12f64a22b93d117009fb8aee76d02a7583e699
+ms.sourcegitcommit: 24627d53dcdf607baaab1cc3c299a3584c386173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "9556385"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9776810"
 ---
 # <a name="manage-unknown-profiles-with-customer-insights"></a>使用 Customer Insights 管理未知资料
 
-Internet 用户往往是身份不明的匿名在线用户。 如果他们因为使用不同设备或渠道而没有登录，对于最忠实的客户来说更是如此。 由于第三方 Cookie 可能很快就会消失，因此基于第一方数据管理用户偏好对于实现差异化的个性化体验至关重要。 对于很多品牌，尽管客户对个性化的期望越来越高，但已知或经过身份验证的用户依然是少数派。 对于企业而言，基于可靠、详细、统一的数据了解他们的客户是谁，将是非常棒的一件事。
+Internet 用户往往是身份不明的用户或匿名的在线用户。 即使是最忠实的客户，如果他们没有通过不同的设备登录过，也可能会显示“未知”。 对于很多品牌，尽管客户对个性化的期望越来越高，但已知或经过身份验证的用户依然是少数派。 考虑到第三方 Cookie 的未来，基于第一方数据管理用户偏好对于实现个性化体验至关重要。
 
-令人难忘的个性化取决于您的客户数据的丰富性和完整性，而 Customer Insights 可以帮助您实现这些目标。 您不必限制或停止使用在客户旅程开始时收集的数据。 Customer Insights 允许您使用自己的数据为未知用户创建客户资料。 然后，尽管缺少联系信息，您仍可以使用该资料进一步采取行动。 将来自 Web、移动或 CRM 系统等来源的第一方数据导入 Customer Insights，以不断扩充客户资料。 当您统一更多交互时，[将 *未知* 客户转变为 *已知* 客户](unknown-to-known.md)。
+难忘的个性化取决于您对客户的了解程度，Customer Insights 可以通过跟踪所有客户帮助您做到这一点。  您不必限制或停止使用在客户旅程开始时收集的数据。 Customer Insights 允许您使用自己的数据为未知用户创建客户资料。 然后，尽管缺少联系信息，您仍可以使用该资料进一步采取行动。 将来自 Web、移动或 CRM 系统等来源的第一方数据导入 Customer Insights，以不断扩充客户资料。 当您统一更多交互时，[将 *未知* 客户转变为 *已知* 客户](unknown-to-known.md)。
 
 ## <a name="sample-scenario"></a>示例场景
 
-电子商务是过去十年中增长最快的渠道。 假设用户使用他们的移动设备浏览您的电子商务网站。 网站向访问者分配“mobile_guest123”作为唯一标识符，您开始根据他们的在线活动收集行为活动。 例如，他们访问了哪些页面，他们在这些页面上花费了多少时间，或者他们点击了哪些链接。 您不知道他们的姓名或电子邮件地址，但这些数据可以帮助为品牌提供有关此用户的有意义的见解。 然后，您可以在用户下次访问网站时让这些见解发挥作用。 在 Customer Insights 中查询“mobile_guest123”来检索用户的客户细分列表，如“自然流量”、“移动预订客户”、“高价值客户”等，或检索资料来创建个性化的 Web 体验。 您也可以将数据导出到任何激活系统来执行相同操作。
+假设用户使用他们的移动设备浏览您的电子商务网站。 网站向访问者分配“mobile_guest123”作为唯一标识符，您开始根据他们的在线活动收集行为活动。 例如，他们访问了哪些页面，他们在这些页面上花费了多少时间，或者他们点击了哪些链接。 您不知道他们的姓名或电子邮件地址，但这些数据可以帮助为品牌提供有关此用户的有意义的见解。 然后，您可以在用户下次访问网站时让这些见解发挥作用。 在 Customer Insights 中查询“mobile_guest123”来检索用户的客户细分列表，如“自然流量”、“移动预订客户”、“高价值客户”等，或检索资料来创建个性化的 Web 体验。 您也可以将数据导出到任何激活系统来执行相同操作。
 
 ## <a name="prerequisites"></a>先决条件
 
 - 将第一方数据引入 Customer Insights
 - 每个实体具有设置为主键的唯一 ID
 - 每个具有用于个性化的主键的实体将进行统一处理
-- 您网站的内容管理系统能够使用 API（用于基于与 Customer Insights 直接通信的 Web 个性化）
+- 您网站的内容管理系统可以使用 API（用于基于与 Customer Insights 直接通信的 Web 个性化）
 
 下表显示了如何捕获高价值 Web 事件的简化示例。
 
